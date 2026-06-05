@@ -1,338 +1,323 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Market Quick Take — 5 June 2026</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Market Quick Take — 5 June 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-    body {
-      font-family: 'Inter', sans-serif;
-      background: #ffffff;
-      color: #1a2332;
-    }
+body {
+  font-family: 'Inter', sans-serif;
+  background: #ffffff;
+  color: #1a2332;
+  border-top: 3px solid #003366;
+}
 
-    .page {
-      max-width: 860px;
-      margin: 0 auto;
-      padding: 0 24px 60px;
-    }
+/* ── MASTHEAD ── */
+.masthead {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 32px 24px 20px;
+}
+.masthead-title {
+  font-size: 42px;
+  font-weight: 700;
+  color: #003366;
+  line-height: 1.1;
+  letter-spacing: -0.5px;
+}
+.masthead-date {
+  font-size: 13px;
+  font-weight: 400;
+  color: #6b7280;
+  margin-top: 6px;
+}
+.masthead-rule {
+  border: none;
+  border-top: 1px solid #e5e7eb;
+  margin: 20px 0 0;
+}
 
-    /* MASTHEAD */
-    .masthead {
-      border-top: 3px solid #003366;
-      padding: 32px 0 20px;
-      border-bottom: 1px solid #e5e7eb;
-      margin-bottom: 0;
-    }
-    .masthead-title {
-      font-size: 42px;
-      font-weight: 700;
-      color: #003366;
-      letter-spacing: -0.5px;
-      line-height: 1;
-    }
-    .masthead-date {
-      font-size: 13px;
-      font-weight: 400;
-      color: #6b7280;
-      margin-top: 8px;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-    }
+/* ── SNAPSHOT BAR ── */
+.snapshot-bar {
+  background: #f1f5f9;
+  padding: 12px 0;
+  overflow-x: auto;
+  width: 100%;
+}
+.snapshot-inner {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.chip {
+  font-size: 12px;
+  font-weight: 500;
+  color: #1a2332;
+  text-transform: uppercase;
+  white-space: nowrap;
+  padding: 0 10px;
+}
+.chip:first-child { padding-left: 0; }
+.chip-sep { color: #9ca3af; font-size: 12px; flex-shrink: 0; }
+.pos { color: #16a34a; }
+.neg { color: #dc2626; }
+.muted { color: #6b7280; }
 
-    /* SNAPSHOT BAR */
-    .snapshot-bar {
-      background: #f1f5f9;
-      padding: 12px 24px;
-      margin: 0 -24px;
-      overflow-x: auto;
-      white-space: nowrap;
-    }
-    .snapshot-inner {
-      display: inline-flex;
-      align-items: center;
-      gap: 0;
-      max-width: 860px;
-      margin: 0 auto;
-    }
-    .snapshot-chip {
-      font-size: 12px;
-      font-weight: 500;
-      color: #1a2332;
-      text-transform: uppercase;
-      letter-spacing: 0.3px;
-      padding: 0 14px;
-    }
-    .snapshot-chip:first-child { padding-left: 0; }
-    .snapshot-sep {
-      color: #cbd5e1;
-      font-size: 14px;
-      font-weight: 300;
-    }
-    .snapshot-label { color: #6b7280; }
-    .snapshot-value { font-weight: 600; margin: 0 3px; }
-    .pos { color: #16a34a; }
-    .neg { color: #dc2626; }
-    .neu { color: #6b7280; }
+/* ── EDITOR'S BRIEF ── */
+.brief-outer {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+.editors-brief {
+  max-width: 760px;
+  margin: 28px 0;
+  border-left: 3px solid #003366;
+  padding-left: 16px;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: italic;
+  color: #374151;
+  line-height: 1.7;
+}
 
-    /* EDITOR'S BRIEF */
-    .brief {
-      font-size: 18px;
-      font-style: italic;
-      font-weight: 400;
-      color: #374151;
-      line-height: 1.7;
-      border-left: 3px solid #003366;
-      padding: 12px 0 12px 20px;
-      margin: 32px 0 28px;
-      max-width: 760px;
-    }
+/* ── SECTIONS ── */
+.sections-outer {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 0 24px 60px;
+}
+.section-rule {
+  border: none;
+  border-top: 1px solid #e5e7eb;
+  margin: 28px 0;
+}
+.watch-pill {
+  display: inline-block;
+  background: #fef3c7;
+  color: #b45309;
+  font-size: 11px;
+  font-weight: 500;
+  border-radius: 4px;
+  padding: 2px 8px;
+  margin-bottom: 10px;
+}
+.section-label {
+  font-size: 11px;
+  font-weight: 500;
+  color: #003366;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 6px;
+}
+.section-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1a2332;
+  margin-bottom: 10px;
+  line-height: 1.2;
+}
+.section-body {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.8;
+  color: #374151;
+}
+.section-body p { margin-bottom: 12px; }
+.section-body p:last-child { margin-bottom: 0; }
+.section-body ul { padding-left: 20px; margin: 6px 0; }
+.section-body li { margin-bottom: 8px; }
+.section-body li:last-child { margin-bottom: 0; }
 
-    /* SECTIONS */
-    .section { padding: 28px 0; }
-    .section + .section { border-top: 1px solid #e5e7eb; }
-
-    .section-label {
-      font-size: 11px;
-      font-weight: 500;
-      color: #003366;
-      text-transform: uppercase;
-      letter-spacing: 3px;
-      margin-bottom: 8px;
-    }
-    .section-title {
-      font-size: 24px;
-      font-weight: 700;
-      color: #1a2332;
-      margin-bottom: 14px;
-      line-height: 1.2;
-    }
-    .section-body {
-      font-size: 15px;
-      font-weight: 400;
-      color: #374151;
-      line-height: 1.8;
-    }
-    .section-body ul {
-      padding-left: 20px;
-      margin-top: 8px;
-    }
-    .section-body li { margin-bottom: 6px; }
-    .section-body p + p { margin-top: 10px; }
-
-    .watch-pill {
-      display: inline-block;
-      font-size: 11px;
-      font-weight: 500;
-      color: #b45309;
-      background: #fef3c7;
-      border-radius: 4px;
-      padding: 2px 8px;
-      margin-bottom: 8px;
-      letter-spacing: 0.3px;
-    }
-
-    /* DATA INLINE */
-    .data-val { font-weight: 600; }
-
-    /* EARNINGS TABLE */
-    .earnings-table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 14px;
-      font-size: 13px;
-    }
-    .earnings-table th {
-      text-align: left;
-      font-weight: 600;
-      font-size: 11px;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      color: #6b7280;
-      padding: 8px 12px;
-      border-bottom: 1px solid #e5e7eb;
-    }
-    .earnings-table td {
-      padding: 9px 12px;
-      border-bottom: 1px solid #f1f5f9;
-      color: #374151;
-    }
-    .earnings-table tr:last-child td { border-bottom: none; }
-
-    /* FOOTER */
-    .footer {
-      border-top: 1px solid #e5e7eb;
-      margin-top: 12px;
-      padding: 32px 0;
-      text-align: center;
-      font-size: 11px;
-      color: #9ca3af;
-      line-height: 1.7;
-    }
-  </style>
+/* ── EARNINGS TABLE ── */
+.earnings-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+  font-weight: 400;
+  margin-top: 16px;
+}
+.earnings-table th {
+  text-align: left;
+  padding: 8px 14px;
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  font-weight: 600;
+  color: #1a2332;
+}
+.earnings-table td {
+  padding: 8px 14px;
+  border: 1px solid #e5e7eb;
+  color: #374151;
+}
+.earnings-table td.na-cell {
+  text-align: center;
+  color: #6b7280;
+  font-style: italic;
+  padding: 18px;
+}
+</style>
 </head>
 <body>
 
-<div class="page">
-
-  <!-- MASTHEAD -->
-  <div class="masthead">
-    <div class="masthead-title">MARKET QUICK TAKE</div>
-    <div class="masthead-date">Thursday, 5 June 2026</div>
-  </div>
-
+<!-- ══════════════════════ MASTHEAD ══════════════════════ -->
+<div class="masthead">
+  <div class="masthead-title">MARKET QUICK TAKE</div>
+  <div class="masthead-date">Thursday, 5 June 2026</div>
+  <hr class="masthead-rule">
 </div>
 
-<!-- SNAPSHOT BAR (full-width) -->
+<!-- ══════════════════════ SNAPSHOT BAR ══════════════════════ -->
 <div class="snapshot-bar">
-  <div class="snapshot-inner" style="max-width:860px;margin:0 auto;display:flex;align-items:center;">
-    <div class="snapshot-chip">
-      <span class="snapshot-label">SPY </span><span class="snapshot-value">$757.09</span><span class="pos">+0.38%</span>
-    </div>
-    <span class="snapshot-sep">|</span>
-    <div class="snapshot-chip">
-      <span class="snapshot-label">QQQ </span><span class="snapshot-value">$740.61</span><span class="neg">-0.48%</span>
-    </div>
-    <span class="snapshot-sep">|</span>
-    <div class="snapshot-chip">
-      <span class="snapshot-label">IWM </span><span class="snapshot-value">$292.01</span><span class="pos">+1.51%</span>
-    </div>
-    <span class="snapshot-sep">|</span>
-    <div class="snapshot-chip">
-      <span class="snapshot-label">VIX </span><span class="snapshot-value neu">N/A</span>
-    </div>
-    <span class="snapshot-sep">|</span>
-    <div class="snapshot-chip">
-      <span class="snapshot-label">10Y </span><span class="snapshot-value">4.46%</span>
-    </div>
-    <span class="snapshot-sep">|</span>
-    <div class="snapshot-chip">
-      <span class="snapshot-label">EUR/USD </span><span class="snapshot-value">1.1617</span>
-    </div>
-    <span class="snapshot-sep">|</span>
-    <div class="snapshot-chip">
-      <span class="snapshot-label">GOLD </span><span class="snapshot-value">$4,472</span>
-    </div>
-    <span class="snapshot-sep">|</span>
-    <div class="snapshot-chip">
-      <span class="snapshot-label">WTI </span><span class="snapshot-value">$95.96</span><span class="pos">+5.27% w/w</span>
-    </div>
+  <div class="snapshot-inner">
+    <span class="chip">SPY &middot; $757.09 &middot; <span class="pos">+0.38%</span></span>
+    <span class="chip-sep">&nbsp;|&nbsp;</span>
+    <span class="chip">QQQ &middot; $740.61 &middot; <span class="neg">&minus;0.48%</span></span>
+    <span class="chip-sep">&nbsp;|&nbsp;</span>
+    <span class="chip">IWM &middot; $292.01 &middot; <span class="pos">+1.51%</span></span>
+    <span class="chip-sep">&nbsp;|&nbsp;</span>
+    <span class="chip">VIX &middot; <span class="muted">N/A</span></span>
+    <span class="chip-sep">&nbsp;|&nbsp;</span>
+    <span class="chip">US10Y &middot; 4.49% &middot; <span class="pos">+3bps</span></span>
+    <span class="chip-sep">&nbsp;|&nbsp;</span>
+    <span class="chip">US2Y &middot; 4.08% &middot; <span class="pos">+3bps</span></span>
+    <span class="chip-sep">&nbsp;|&nbsp;</span>
+    <span class="chip">EUR/USD &middot; 1.1630</span>
+    <span class="chip-sep">&nbsp;|&nbsp;</span>
+    <span class="chip">GOLD &middot; $4,459.74</span>
+    <span class="chip-sep">&nbsp;|&nbsp;</span>
+    <span class="chip">WTI &middot; $95.96</span>
   </div>
 </div>
 
-<div class="page">
+<!-- ══════════════════════ EDITOR'S BRIEF ══════════════════════ -->
+<div class="brief-outer">
+  <p class="editors-brief">
+    Thursday's session split along a sharp fault line: Broadcom's AI chip revenue miss sent QQQ lower as the mega-cap semiconductor trade cracked, while the Russell 2000's +1.51% outperformance signalled rotation out of concentrated tech exposure. Rising oil near $98 per barrel, CPI at 3.8%, and an explicit rate-hike call for July by Yardeni Research have sharpened the macro complexity &mdash; even as gold's climb to $4,459 and a weakening yen above 159 confirm that risk hedges are being actively loaded across asset classes.
+  </p>
+</div>
 
-  <!-- EDITOR'S BRIEF -->
-  <div class="brief">
-    Small caps and value lead as IWM outpaces a retreating Nasdaq by nearly 200bps, signalling a rotation out of mega-cap tech. Energy strength extends with WTI crossing $95, while gold's persistence above $4,400 keeps the defensive bid alive. The steepening curve — 10Y at 4.46% versus 2Y at 4.05% — suggests markets are beginning to price in an eventual easing cycle.
-  </div>
+<!-- ══════════════════════ SECTIONS ══════════════════════ -->
+<div class="sections-outer">
 
-  <!-- SECTION 1: MARKET DRIVERS -->
+  <!-- ── SECTION 1: MARKET DRIVERS ── -->
   <div class="section">
-    <div class="section-label">Section 01</div>
-    <div class="section-title">Market Drivers &amp; Catalysts</div>
+    <div class="section-label">Market Drivers</div>
+    <div class="section-title">What&rsquo;s Moving Markets</div>
     <div class="section-body">
       <ul>
-        <li>Rotation from growth to value: IWM (<span class="data-val pos">+1.51%</span>) sharply outperforms QQQ (<span class="data-val neg">-0.48%</span>), with small caps benefiting from rate-cut expectations filtering into rate-sensitive sectors.</li>
-        <li>Energy as a macro signal: WTI crude at <span class="data-val">$95.96</span> (<span class="pos">+5.27% w/w</span>) reflects tightening supply dynamics, adding an inflationary undercurrent that complicates Fed messaging.</li>
-        <li>Dollar softness supports risk-off assets: EUR/USD at <span class="data-val">1.1617</span> and gold above <span class="data-val">$4,400</span> reflect ongoing USD weakness and sustained demand for real assets.</li>
-        <li>Broad market resilience: SPY holds a modest <span class="data-val pos">+0.38%</span> gain despite tech headwinds, suggesting the rally has breadth even as Nasdaq leadership fades.</li>
+        <li><strong>Broadcom&rsquo;s AI chip miss cracked the semiconductor trade.</strong> AVGO shed 12.6% &mdash; its largest single-session drop in years &mdash; after a disappointing AI revenue forecast on 80M shares, pulling AMD, CRWD, and the broader semi complex lower and raising pointed questions about whether AI hardware capex growth is decelerating from its breakneck pace.</li>
+        <li><strong>Wells Fargo surged as the Federal Reserve lifted its decade-long asset cap.</strong> WFC gained ~4% after the Fed officially terminated its long-standing enforcement action, a structural catalyst unlocking balance sheet expansion. MUFG added 3.3% in sympathy on Bank of Japan rate-hike expectations, anchoring the financial sector as tech sold off.</li>
+        <li><strong>Oil near $98/barrel reignited the inflation and rate-hike debate.</strong> Yardeni Research issued an explicit call for a Fed rate hike on July 29 &mdash; an outlier view, but grounded in 3.8% YoY CPI and OPEC+ supply discipline. Consumer-facing stocks (DECK, CSV, RMAX, AXP) and rate-sensitive names bore the brunt of the re-pricing.</li>
+        <li><strong>Bank earnings delivered a bifurcated verdict.</strong> NII-driven strength at BNS, MUFG, and OFG contrasted with elevated credit card delinquency (~13%) at US consumer-exposed banks &mdash; a &ldquo;have vs. have-not&rdquo; dynamic within financials tied to balance sheet positioning and regulatory exposure rather than macro direction alone.</li>
       </ul>
     </div>
   </div>
 
-  <!-- SECTION 2: MACRO -->
+  <hr class="section-rule">
+
+  <!-- ── SECTION 2: MACRO ── -->
   <div class="section">
-    <div class="section-label">Section 02</div>
-    <div class="section-title">Macro</div>
+    <div class="section-label">Macro</div>
+    <div class="section-title">The Fed, Oil, and a Narrowing Policy Corridor</div>
     <div class="section-body">
-      <p>The yield curve continues to steepen with 10Y Treasuries at <span class="data-val">4.46%</span> and the 2Y at <span class="data-val">4.05%</span>, producing a positive spread of <span class="data-val">+41bps</span> — a notable shift from the deep inversion that defined 2023–2024. This steepening typically precedes the first Fed cut as markets discount easing at the long end while the front stays anchored to current policy rates.</p>
-      <p>EUR/USD at <span class="data-val">1.1617</span> reflects broad dollar softness, consistent with shifting rate differentials as ECB policy converges toward the Fed. USD/JPY holding at <span class="data-val">160.00</span> remains an outlier, with the yen under persistent pressure from the Bank of Japan's reluctance to tighten meaningfully.</p>
+      <p>The Federal Reserve faces a rapidly narrowing policy corridor: CPI at 3.8% YoY and WTI crude near $98/barrel are stoking reflation fears, yet credit card delinquency rates at 13% signal mounting consumer financial stress that makes aggressive tightening both economically and politically risky. Yardeni Research&rsquo;s call for a July 29, 2026 rate hike &mdash; an explicit outlier against the consensus hold expectation &mdash; injected fresh hawkish uncertainty into rate markets, pushing both the 2Y and 10Y yields approximately 3 basis points higher on the session. A US&ndash;Iran ceasefire agreement had offered transient crude relief in May 2026, but renewed geopolitical tensions and persistent OPEC+ supply discipline have reasserted upward oil-price pressure heading into June, complicating the Fed&rsquo;s inflation calculus and keeping dollar-denominated safe havens &mdash; gold, short-duration Treasuries &mdash; in firm demand.</p>
     </div>
   </div>
 
-  <!-- SECTION 3: EQUITIES -->
+  <hr class="section-rule">
+
+  <!-- ── SECTION 3: EQUITIES ── -->
   <div class="section">
-    <div class="section-label">Section 03</div>
-    <div class="section-title">Equities</div>
+    <div class="section-label">Equities</div>
+    <div class="section-title">Tech Stumbles, Small Caps Rotate Higher</div>
     <div class="section-body">
-      <p>The S&amp;P 500 (SPY) posts a modest <span class="data-val pos">+0.38%</span> session, masking a significant divergence beneath the surface. The Nasdaq 100 (QQQ) slides <span class="data-val neg">-0.48%</span> as high-multiple tech faces pressure from the rate environment, while the Russell 2000 (IWM) surges <span class="data-val pos">+1.51%</span> as small caps benefit from the steepening curve and rotation into domestically-focused names.</p>
-      <p>Notable movers: <span class="neu">N/A — market movers data unavailable for this session.</span></p>
+      <p>The S&amp;P 500 (SPY) eked out a <span class="pos">+0.38%</span> gain to $757.09, with financial sector strength from WFC (+~4%) and MUFG (+3.3%) offsetting deep tech weakness. The Nasdaq (QQQ) fell <span class="neg">&minus;0.48%</span> to $740.61, dragged by Broadcom&rsquo;s 12.6% plunge &mdash; the most consequential mega-cap decline of the session, reverberating across the semiconductor supply chain. The Russell 2000 (IWM) outperformed meaningfully, rising <span class="pos">+1.51%</span> to $292.01, consistent with a tactical rotation out of elevated-valuation AI and mega-cap names into domestic small-cap value.</p>
+      <p><strong>Notable movers:</strong> <strong>AVGO</strong> <span class="neg">&minus;12.6%</span> to $418.91 on 80M shares &mdash; AI chip revenue miss drove the session&rsquo;s biggest mega-cap decline. <strong>NVDA</strong> <span class="pos">+1.9%</span> to $218.66 on 164M shares &mdash; relative resilience amid the semiconductor sell-off. <strong>MRVL</strong> (Marvell) <span class="pos">+4.9%</span> to $316.43 on 85M shares &mdash; potential beneficiary as AI infrastructure capital rotates away from Broadcom. Among standout micro-caps: <strong>STI</strong> surged <span class="pos">+350.6%</span> to $22.71 on 101.5M shares (likely a special situation / corporate event) and <strong>HUBC</strong> plunged <span class="neg">&minus;68.9%</span> to $0.202 on 132.9M shares.</p>
     </div>
   </div>
 
-  <!-- SECTION 4: VOLATILITY -->
+  <hr class="section-rule">
+
+  <!-- ── SECTION 4: FIXED INCOME ── -->
   <div class="section">
-    <div class="section-label">Section 04</div>
-    <div class="section-title">Volatility</div>
+    <div class="section-label">Fixed Income</div>
+    <div class="section-title">Positive Slope Intact, Yields Drifting Higher</div>
     <div class="section-body">
-      <p>VIX data is unavailable for this session — the index level could not be derived from today's news feed. In the absence of a quantified fear gauge, the market tone inferred from equity performance (broad SPY gains, IWM leadership) suggests a risk-on posture rather than a stressed environment. A sub-20 VIX would be consistent with the price action observed.</p>
+      <p>The 10-year Treasury yield stands at <strong>4.49%</strong> and the 2-year at <strong>4.08%</strong> (both as of June 3, 2026), with both tenors up approximately 3 basis points on the session. The yield curve holds a <strong>+41 basis point spread</strong> (10Y minus 2Y) &mdash; firmly in positive territory with no inversion. The curve&rsquo;s modest steepening bias, driven by energy-fuelled long-end re-pricing, is consistent with markets beginning to discount a delayed but potentially higher terminal rate scenario; the front end is also rising as rate-cut pricing is unwound, but the long end is moving at a marginally faster pace as reflation risk commands a growing term premium.</p>
     </div>
   </div>
 
-  <!-- SECTION 5: FIXED INCOME -->
+  <hr class="section-rule">
+
+  <!-- ── SECTION 5: CURRENCIES ── -->
   <div class="section">
-    <div class="section-label">Section 05</div>
-    <div class="section-title">Fixed Income</div>
+    <div class="section-label">Currencies</div>
+    <div class="section-title">Euro Steady, Yen on Intervention Watch</div>
     <div class="section-body">
-      <p>US Treasuries show a steepening bias: the <span class="data-val">10Y yield</span> sits at <span class="data-val">4.46%</span> and the <span class="data-val">2Y at 4.05%</span>, with the 2s10s spread at a positive <span class="data-val pos">+41bps</span>. The curve has moved from deeply inverted to modestly positive — a trajectory historically associated with the transition from tightening to easing cycles.</p>
-      <p>Steepening at these levels implies the market is beginning to price in rate cuts while acknowledging that current inflation and growth data do not yet justify an immediate pivot. The long end absorbing supply without a material yield spike is a constructive signal for risk assets.</p>
+      <p>EUR/USD trades at <strong>1.1630</strong>, with the euro maintaining a firm bid against the dollar &mdash; reflecting the ECB&rsquo;s more patient monetary stance relative to the growing Fed hawkish framing, alongside continued resilience in European economic indicators. USD/JPY has extended to <strong>159.94</strong>, placing the yen at multi-year lows and keeping Japan&rsquo;s Finance Ministry firmly on intervention watch. The Bank of Japan&rsquo;s incremental yield curve control adjustments have provided insufficient support against the dollar&rsquo;s elevated rate advantage; a sustained push through 160 could trigger direct FX intervention, as Japanese authorities have repeatedly identified that level as a threshold of heightened concern.</p>
     </div>
   </div>
 
-  <!-- SECTION 6: CURRENCIES -->
+  <hr class="section-rule">
+
+  <!-- ── SECTION 6: COMMODITIES ── -->
   <div class="section">
-    <div class="section-label">Section 06</div>
-    <div class="section-title">Currencies</div>
+    <div class="section-label">Commodities</div>
+    <div class="section-title">Gold at $4,459 as Oil Approaches $100</div>
     <div class="section-body">
-      <p><span class="data-val">EUR/USD</span> trades at <span class="data-val">1.1617</span>, reflecting euro resilience as the ECB's rate trajectory aligns increasingly with a soft-landing narrative. Dollar softness at this level is broadly supportive of emerging market assets and commodity prices denominated in USD.</p>
-      <p><span class="data-val">USD/JPY</span> at <span class="data-val">160.00</span> remains elevated, keeping FX intervention risk on the table for the Bank of Japan. The pair's refusal to correct meaningfully despite a softer dollar highlights structural yen weakness tied to the yield differential with the US and persistent domestic demand for foreign assets.</p>
+      <p>Gold spot has surged to <strong>$4,459.74/oz</strong>, reflecting an extraordinary convergence of safe-haven demand drivers: persistent above-target inflation, geopolitical instability (Middle East tensions, US&ndash;Iran uncertainty), ongoing central bank reserve diversification away from dollar assets, and renewed expectations that the Fed may be forced to hike rather than cut. The price ascent shows no signs of abating while macro uncertainty remains structurally elevated. WTI crude oil stands at <strong>$95.96/barrel</strong> (latest available API data: June 1, 2026; news sources reference levels near $98 as of June 4&ndash;5, suggesting further intraday gains), with OPEC+ supply restraint and Middle East risk premia providing persistent floor support. A confirmed close above $100 would meaningfully re-accelerate inflation expectations and could force a more hawkish Fed response than currently discounted by markets.</p>
     </div>
   </div>
 
-  <!-- SECTION 7: COMMODITIES -->
+  <hr class="section-rule">
+
+  <!-- ── SECTION 7: DIGITAL ASSETS ── -->
   <div class="section">
-    <div class="section-label">Section 07</div>
-    <div class="section-title">Commodities</div>
+    <div class="section-label">Digital Assets</div>
+    <div class="section-title">Institutions Accumulate as BTC Hits Four-Month Lows</div>
     <div class="section-body">
-      <p><span class="data-val">Gold</span> holds at <span class="data-val">$4,472.07</span>, well above levels justified by real rates alone. The persistent premium reflects a combination of central bank accumulation, geopolitical hedging demand, and a broader shift away from dollar-denominated reserves. At these levels, gold is pricing in structural, not cyclical, factors.</p>
-      <p><span class="data-val">WTI crude</span> at <span class="data-val">$95.96</span> (<span class="pos">+5.27% week-on-week</span>) is approaching a psychologically significant $100 threshold. Supply discipline from OPEC+ and resilient demand data are the primary drivers. A sustained break above $100 would reignite inflation concerns and complicate the Fed's path to easing.</p>
+      <p><strong>Overall sentiment: Bullish.</strong> Despite near-term BTC price weakness, an unusually dense cluster of institutional adoption developments dominated Thursday&rsquo;s crypto tape.</p>
+      <p><strong>Dominant narrative &mdash; institutionalisation accelerates:</strong> Morgan Stanley&rsquo;s MSBT (the first spot Bitcoin ETF issued by a major US bank, launched April 8, 2026) disclosed holdings of 3,779 BTC (~$236M). Better.com and Coinbase funded the first-ever Fannie Mae-backed Bitcoin-collateralised mortgage &mdash; a landmark milestone signalling implicit GSE acceptance of BTC as loan collateral. Goldman Sachs launched a tokenised real estate fund, extending the tokenisation wave into traditional institutional asset classes.</p>
+      <p><strong>Token moves:</strong> <strong>BTC</strong> hit a four-month low (per June 4 market recap), with leveraged BTCL ETFs recording ~$900K in outflows. <strong>ETH</strong> remains under significant selling pressure &mdash; FG Nexus liquidated 38,300 ETH at an estimated $88&ndash;$100M+ loss (avg cost ~$3,860); Standard Chartered maintains a long-term $40,000 ETH price target and Bitmine (BMNR) is raising $300M to accumulate ETH opportunistically. <strong>XRP</strong> is positioned by analysts as better-placed than BTC for a near-term rebound, given neutral funding rates and cleared liquidity pools. SOL had minimal direct mention in this session&rsquo;s news feed.</p>
+      <p><strong>Regulatory / institutional:</strong> No new SEC, CFTC, or MiCA rulings this session. The Clarity Act legislative outcome is being actively traded in prediction markets, with Galaxy Digital executing a $10M OTC trade on Kalshi/Polymarket. The Fannie Mae BTC mortgage represents a significant de facto institutional recognition milestone even without a formal regulatory ruling.</p>
     </div>
   </div>
 
-  <!-- SECTION 8: EARNINGS CALENDAR -->
+  <hr class="section-rule">
+
+  <!-- ── SECTION 8: EARNINGS CALENDAR ── -->
   <div class="section">
-    <div class="section-label">Section 08</div>
-    <div class="section-title">Earnings Calendar</div>
+    <div class="section-label">Earnings Calendar</div>
+    <div class="section-title">Upcoming Earnings Radar</div>
     <div class="section-body">
-      <p>Upcoming earnings data (next 5 trading days) was unavailable for this session — the EARNINGS_CALENDAR endpoint returned no parseable results within the reporting window. The table below will populate in future runs when the API quota is refreshed and data is available.</p>
+      <p>Live earnings calendar data was unavailable at publication time due to API rate limits on the Alpha Vantage free tier. Post-AVGO results, the market will closely watch any semiconductor or AI-infrastructure names reporting in the coming sessions for read-through on AI capex trajectories. Financial sector reporters will also be scrutinised for delinquency trend updates, given the elevated 13% credit card delinquency rate surfaced in this session&rsquo;s bank earnings news feed.</p>
       <table class="earnings-table">
         <thead>
           <tr>
             <th>Company</th>
-            <th>Report Date</th>
+            <th>Date</th>
             <th>Expected Move</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td colspan="3" style="color:#9ca3af;font-style:italic;text-align:center;padding:18px 12px;">No earnings data available for this session</td>
+            <td class="na-cell" colspan="3">Earnings calendar data unavailable &mdash; API rate limit reached at publication time</td>
           </tr>
         </tbody>
       </table>
     </div>
   </div>
 
-  <!-- FOOTER -->
-  <div class="footer">
-    Data: Alpha Vantage · Free tier · 12 of 25 daily calls used · Test run using 4 June 2026 data · Not investment advice
-  </div>
+</div><!-- /sections-outer -->
 
-</div>
 </body>
 </html>
