@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Market Quick Take — 5 June 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #ffffff;
+      color: #1a2332;
+    }
+
+    .page {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 24px 60px;
+    }
+
+    /* MASTHEAD */
+    .masthead {
+      border-top: 3px solid #003366;
+      padding: 32px 0 20px;
+      border-bottom: 1px solid #e5e7eb;
+      margin-bottom: 0;
+    }
+    .masthead-title {
+      font-size: 42px;
+      font-weight: 700;
+      color: #003366;
+      letter-spacing: -0.5px;
+      line-height: 1;
+    }
+    .masthead-date {
+      font-size: 13px;
+      font-weight: 400;
+      color: #6b7280;
+      margin-top: 8px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    /* SNAPSHOT BAR */
+    .snapshot-bar {
+      background: #f1f5f9;
+      padding: 12px 24px;
+      margin: 0 -24px;
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+    .snapshot-inner {
+      display: inline-flex;
+      align-items: center;
+      gap: 0;
+      max-width: 860px;
+      margin: 0 auto;
+    }
+    .snapshot-chip {
+      font-size: 12px;
+      font-weight: 500;
+      color: #1a2332;
+      text-transform: uppercase;
+      letter-spacing: 0.3px;
+      padding: 0 14px;
+    }
+    .snapshot-chip:first-child { padding-left: 0; }
+    .snapshot-sep {
+      color: #cbd5e1;
+      font-size: 14px;
+      font-weight: 300;
+    }
+    .snapshot-label { color: #6b7280; }
+    .snapshot-value { font-weight: 600; margin: 0 3px; }
+    .pos { color: #16a34a; }
+    .neg { color: #dc2626; }
+    .neu { color: #6b7280; }
+
+    /* EDITOR'S BRIEF */
+    .brief {
+      font-size: 18px;
+      font-style: italic;
+      font-weight: 400;
+      color: #374151;
+      line-height: 1.7;
+      border-left: 3px solid #003366;
+      padding: 12px 0 12px 20px;
+      margin: 32px 0 28px;
+      max-width: 760px;
+    }
+
+    /* SECTIONS */
+    .section { padding: 28px 0; }
+    .section + .section { border-top: 1px solid #e5e7eb; }
+
+    .section-label {
+      font-size: 11px;
+      font-weight: 500;
+      color: #003366;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      margin-bottom: 8px;
+    }
+    .section-title {
+      font-size: 24px;
+      font-weight: 700;
+      color: #1a2332;
+      margin-bottom: 14px;
+      line-height: 1.2;
+    }
+    .section-body {
+      font-size: 15px;
+      font-weight: 400;
+      color: #374151;
+      line-height: 1.8;
+    }
+    .section-body ul {
+      padding-left: 20px;
+      margin-top: 8px;
+    }
+    .section-body li { margin-bottom: 6px; }
+    .section-body p + p { margin-top: 10px; }
+
+    .watch-pill {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 500;
+      color: #b45309;
+      background: #fef3c7;
+      border-radius: 4px;
+      padding: 2px 8px;
+      margin-bottom: 8px;
+      letter-spacing: 0.3px;
+    }
+
+    /* DATA INLINE */
+    .data-val { font-weight: 600; }
+
+    /* EARNINGS TABLE */
+    .earnings-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 14px;
+      font-size: 13px;
+    }
+    .earnings-table th {
+      text-align: left;
+      font-weight: 600;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #6b7280;
+      padding: 8px 12px;
+      border-bottom: 1px solid #e5e7eb;
+    }
+    .earnings-table td {
+      padding: 9px 12px;
+      border-bottom: 1px solid #f1f5f9;
+      color: #374151;
+    }
+    .earnings-table tr:last-child td { border-bottom: none; }
+
+    /* FOOTER */
+    .footer {
+      border-top: 1px solid #e5e7eb;
+      margin-top: 12px;
+      padding: 32px 0;
+      text-align: center;
+      font-size: 11px;
+      color: #9ca3af;
+      line-height: 1.7;
+    }
+  </style>
+</head>
+<body>
+
+<div class="page">
+
+  <!-- MASTHEAD -->
+  <div class="masthead">
+    <div class="masthead-title">MARKET QUICK TAKE</div>
+    <div class="masthead-date">Thursday, 5 June 2026</div>
+  </div>
+
+</div>
+
+<!-- SNAPSHOT BAR (full-width) -->
+<div class="snapshot-bar">
+  <div class="snapshot-inner" style="max-width:860px;margin:0 auto;display:flex;align-items:center;">
+    <div class="snapshot-chip">
+      <span class="snapshot-label">SPY </span><span class="snapshot-value">$757.09</span><span class="pos">+0.38%</span>
+    </div>
+    <span class="snapshot-sep">|</span>
+    <div class="snapshot-chip">
+      <span class="snapshot-label">QQQ </span><span class="snapshot-value">$740.61</span><span class="neg">-0.48%</span>
+    </div>
+    <span class="snapshot-sep">|</span>
+    <div class="snapshot-chip">
+      <span class="snapshot-label">IWM </span><span class="snapshot-value">$292.01</span><span class="pos">+1.51%</span>
+    </div>
+    <span class="snapshot-sep">|</span>
+    <div class="snapshot-chip">
+      <span class="snapshot-label">VIX </span><span class="snapshot-value neu">N/A</span>
+    </div>
+    <span class="snapshot-sep">|</span>
+    <div class="snapshot-chip">
+      <span class="snapshot-label">10Y </span><span class="snapshot-value">4.46%</span>
+    </div>
+    <span class="snapshot-sep">|</span>
+    <div class="snapshot-chip">
+      <span class="snapshot-label">EUR/USD </span><span class="snapshot-value">1.1617</span>
+    </div>
+    <span class="snapshot-sep">|</span>
+    <div class="snapshot-chip">
+      <span class="snapshot-label">GOLD </span><span class="snapshot-value">$4,472</span>
+    </div>
+    <span class="snapshot-sep">|</span>
+    <div class="snapshot-chip">
+      <span class="snapshot-label">WTI </span><span class="snapshot-value">$95.96</span><span class="pos">+5.27% w/w</span>
+    </div>
+  </div>
+</div>
+
+<div class="page">
+
+  <!-- EDITOR'S BRIEF -->
+  <div class="brief">
+    Small caps and value lead as IWM outpaces a retreating Nasdaq by nearly 200bps, signalling a rotation out of mega-cap tech. Energy strength extends with WTI crossing $95, while gold's persistence above $4,400 keeps the defensive bid alive. The steepening curve — 10Y at 4.46% versus 2Y at 4.05% — suggests markets are beginning to price in an eventual easing cycle.
+  </div>
+
+  <!-- SECTION 1: MARKET DRIVERS -->
+  <div class="section">
+    <div class="section-label">Section 01</div>
+    <div class="section-title">Market Drivers &amp; Catalysts</div>
+    <div class="section-body">
+      <ul>
+        <li>Rotation from growth to value: IWM (<span class="data-val pos">+1.51%</span>) sharply outperforms QQQ (<span class="data-val neg">-0.48%</span>), with small caps benefiting from rate-cut expectations filtering into rate-sensitive sectors.</li>
+        <li>Energy as a macro signal: WTI crude at <span class="data-val">$95.96</span> (<span class="pos">+5.27% w/w</span>) reflects tightening supply dynamics, adding an inflationary undercurrent that complicates Fed messaging.</li>
+        <li>Dollar softness supports risk-off assets: EUR/USD at <span class="data-val">1.1617</span> and gold above <span class="data-val">$4,400</span> reflect ongoing USD weakness and sustained demand for real assets.</li>
+        <li>Broad market resilience: SPY holds a modest <span class="data-val pos">+0.38%</span> gain despite tech headwinds, suggesting the rally has breadth even as Nasdaq leadership fades.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- SECTION 2: MACRO -->
+  <div class="section">
+    <div class="section-label">Section 02</div>
+    <div class="section-title">Macro</div>
+    <div class="section-body">
+      <p>The yield curve continues to steepen with 10Y Treasuries at <span class="data-val">4.46%</span> and the 2Y at <span class="data-val">4.05%</span>, producing a positive spread of <span class="data-val">+41bps</span> — a notable shift from the deep inversion that defined 2023–2024. This steepening typically precedes the first Fed cut as markets discount easing at the long end while the front stays anchored to current policy rates.</p>
+      <p>EUR/USD at <span class="data-val">1.1617</span> reflects broad dollar softness, consistent with shifting rate differentials as ECB policy converges toward the Fed. USD/JPY holding at <span class="data-val">160.00</span> remains an outlier, with the yen under persistent pressure from the Bank of Japan's reluctance to tighten meaningfully.</p>
+    </div>
+  </div>
+
+  <!-- SECTION 3: EQUITIES -->
+  <div class="section">
+    <div class="section-label">Section 03</div>
+    <div class="section-title">Equities</div>
+    <div class="section-body">
+      <p>The S&amp;P 500 (SPY) posts a modest <span class="data-val pos">+0.38%</span> session, masking a significant divergence beneath the surface. The Nasdaq 100 (QQQ) slides <span class="data-val neg">-0.48%</span> as high-multiple tech faces pressure from the rate environment, while the Russell 2000 (IWM) surges <span class="data-val pos">+1.51%</span> as small caps benefit from the steepening curve and rotation into domestically-focused names.</p>
+      <p>Notable movers: <span class="neu">N/A — market movers data unavailable for this session.</span></p>
+    </div>
+  </div>
+
+  <!-- SECTION 4: VOLATILITY -->
+  <div class="section">
+    <div class="section-label">Section 04</div>
+    <div class="section-title">Volatility</div>
+    <div class="section-body">
+      <p>VIX data is unavailable for this session — the index level could not be derived from today's news feed. In the absence of a quantified fear gauge, the market tone inferred from equity performance (broad SPY gains, IWM leadership) suggests a risk-on posture rather than a stressed environment. A sub-20 VIX would be consistent with the price action observed.</p>
+    </div>
+  </div>
+
+  <!-- SECTION 5: FIXED INCOME -->
+  <div class="section">
+    <div class="section-label">Section 05</div>
+    <div class="section-title">Fixed Income</div>
+    <div class="section-body">
+      <p>US Treasuries show a steepening bias: the <span class="data-val">10Y yield</span> sits at <span class="data-val">4.46%</span> and the <span class="data-val">2Y at 4.05%</span>, with the 2s10s spread at a positive <span class="data-val pos">+41bps</span>. The curve has moved from deeply inverted to modestly positive — a trajectory historically associated with the transition from tightening to easing cycles.</p>
+      <p>Steepening at these levels implies the market is beginning to price in rate cuts while acknowledging that current inflation and growth data do not yet justify an immediate pivot. The long end absorbing supply without a material yield spike is a constructive signal for risk assets.</p>
+    </div>
+  </div>
+
+  <!-- SECTION 6: CURRENCIES -->
+  <div class="section">
+    <div class="section-label">Section 06</div>
+    <div class="section-title">Currencies</div>
+    <div class="section-body">
+      <p><span class="data-val">EUR/USD</span> trades at <span class="data-val">1.1617</span>, reflecting euro resilience as the ECB's rate trajectory aligns increasingly with a soft-landing narrative. Dollar softness at this level is broadly supportive of emerging market assets and commodity prices denominated in USD.</p>
+      <p><span class="data-val">USD/JPY</span> at <span class="data-val">160.00</span> remains elevated, keeping FX intervention risk on the table for the Bank of Japan. The pair's refusal to correct meaningfully despite a softer dollar highlights structural yen weakness tied to the yield differential with the US and persistent domestic demand for foreign assets.</p>
+    </div>
+  </div>
+
+  <!-- SECTION 7: COMMODITIES -->
+  <div class="section">
+    <div class="section-label">Section 07</div>
+    <div class="section-title">Commodities</div>
+    <div class="section-body">
+      <p><span class="data-val">Gold</span> holds at <span class="data-val">$4,472.07</span>, well above levels justified by real rates alone. The persistent premium reflects a combination of central bank accumulation, geopolitical hedging demand, and a broader shift away from dollar-denominated reserves. At these levels, gold is pricing in structural, not cyclical, factors.</p>
+      <p><span class="data-val">WTI crude</span> at <span class="data-val">$95.96</span> (<span class="pos">+5.27% week-on-week</span>) is approaching a psychologically significant $100 threshold. Supply discipline from OPEC+ and resilient demand data are the primary drivers. A sustained break above $100 would reignite inflation concerns and complicate the Fed's path to easing.</p>
+    </div>
+  </div>
+
+  <!-- SECTION 8: EARNINGS CALENDAR -->
+  <div class="section">
+    <div class="section-label">Section 08</div>
+    <div class="section-title">Earnings Calendar</div>
+    <div class="section-body">
+      <p>Upcoming earnings data (next 5 trading days) was unavailable for this session — the EARNINGS_CALENDAR endpoint returned no parseable results within the reporting window. The table below will populate in future runs when the API quota is refreshed and data is available.</p>
+      <table class="earnings-table">
+        <thead>
+          <tr>
+            <th>Company</th>
+            <th>Report Date</th>
+            <th>Expected Move</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td colspan="3" style="color:#9ca3af;font-style:italic;text-align:center;padding:18px 12px;">No earnings data available for this session</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    Data: Alpha Vantage · Free tier · 12 of 25 daily calls used · Test run using 4 June 2026 data · Not investment advice
+  </div>
+
+</div>
+</body>
+</html>
