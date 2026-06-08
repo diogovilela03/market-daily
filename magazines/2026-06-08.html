@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Market Quick Take — Monday, 8 June 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Inter', sans-serif; background: #ffffff; color: #1a2332; line-height: 1.6; }
+
+  .container { max-width: 860px; margin: 0 auto; padding: 0 24px; }
+
+  /* Masthead */
+  .masthead { border-top: 3px solid #003366; padding: 32px 0 20px; border-bottom: 1px solid #e5e7eb; }
+  .masthead-title { font-size: 42px; font-weight: 700; color: #003366; letter-spacing: -0.5px; }
+  .masthead-date { font-size: 13px; font-weight: 400; color: #6b7280; margin-top: 4px; }
+
+  /* Snapshot Bar */
+  .snapshot-bar { background: #f1f5f9; padding: 12px 0; width: 100%; }
+  .snapshot-inner { max-width: 860px; margin: 0 auto; padding: 0 24px; display: flex; flex-wrap: wrap; align-items: center; row-gap: 6px; }
+  .chip { font-size: 12px; font-weight: 500; color: #1a2332; text-transform: uppercase; white-space: nowrap; display: flex; align-items: center; gap: 3px; }
+  .chip-sep { color: #9ca3af; margin: 0 10px; font-weight: 400; }
+  .chip-label { color: #6b7280; }
+  .chip-dot { color: #9ca3af; margin: 0 2px; }
+  .pos { color: #16a34a; }
+  .neg { color: #dc2626; }
+  .muted { color: #6b7280; }
+
+  /* Editor's Brief */
+  .editors-brief { font-size: 18px; font-weight: 400; font-style: italic; color: #374151; max-width: 760px; margin: 28px 0; border-left: 3px solid #003366; padding-left: 16px; line-height: 1.8; }
+
+  /* Sections */
+  .section { }
+  .section-divider { border: none; border-top: 1px solid #e5e7eb; margin: 28px 0; }
+  .watch-badge { display: inline-block; background: #fef3c7; color: #b45309; border-radius: 4px; font-size: 11px; font-weight: 500; padding: 2px 8px; margin-bottom: 8px; letter-spacing: 0.5px; }
+  .section-label { font-size: 11px; font-weight: 500; color: #003366; text-transform: uppercase; letter-spacing: 3px; margin-bottom: 6px; }
+  .section-title { font-size: 24px; font-weight: 700; color: #1a2332; margin-bottom: 10px; }
+  .section-body { font-size: 15px; font-weight: 400; color: #374151; line-height: 1.8; }
+  .section-body p + p { margin-top: 12px; }
+  .section-body ul { padding-left: 8px; list-style-position: outside; margin-left: 18px; }
+  .section-body li { margin-bottom: 6px; }
+
+  /* Earnings Table */
+  .earnings-table { width: 100%; border-collapse: collapse; margin-top: 16px; font-size: 13px; }
+  .earnings-table th { border: 1px solid #e5e7eb; padding: 8px 12px; text-align: left; background: #f9fafb; font-weight: 500; color: #374151; }
+  .earnings-table td { border: 1px solid #e5e7eb; padding: 8px 12px; color: #374151; }
+  .earnings-table tr:nth-child(even) td { background: #f9fafb; }
+</style>
+</head>
+<body>
+
+<!-- MASTHEAD -->
+<div class="masthead">
+  <div class="container">
+    <div class="masthead-title">MARKET QUICK TAKE</div>
+    <div class="masthead-date">Monday, 8 June 2026</div>
+  </div>
+</div>
+
+<!-- SNAPSHOT BAR -->
+<div class="snapshot-bar">
+  <div class="snapshot-inner">
+
+    <div class="chip">
+      <span class="chip-label">SPY</span>
+      <span class="chip-dot">·</span>
+      <span>737.55</span>
+      <span class="chip-dot">·</span>
+      <span class="neg">-2.58%</span>
+    </div>
+    <span class="chip-sep">|</span>
+
+    <div class="chip">
+      <span class="chip-label">QQQ</span>
+      <span class="chip-dot">·</span>
+      <span>705.06</span>
+      <span class="chip-dot">·</span>
+      <span class="neg">-4.80%</span>
+    </div>
+    <span class="chip-sep">|</span>
+
+    <div class="chip">
+      <span class="chip-label">IWM</span>
+      <span class="chip-dot">·</span>
+      <span>281.65</span>
+      <span class="chip-dot">·</span>
+      <span class="neg">-3.55%</span>
+    </div>
+    <span class="chip-sep">|</span>
+
+    <div class="chip">
+      <span class="chip-label">VIX</span>
+      <span class="chip-dot">·</span>
+      <span class="muted">N/A</span>
+    </div>
+    <span class="chip-sep">|</span>
+
+    <div class="chip">
+      <span class="chip-label">US10Y</span>
+      <span class="chip-dot">·</span>
+      <span>4.47%</span>
+      <span class="chip-dot">·</span>
+      <span class="neg">-2bps</span>
+    </div>
+    <span class="chip-sep">|</span>
+
+    <div class="chip">
+      <span class="chip-label">US2Y</span>
+      <span class="chip-dot">·</span>
+      <span>4.05%</span>
+      <span class="chip-dot">·</span>
+      <span class="neg">-3bps</span>
+    </div>
+    <span class="chip-sep">|</span>
+
+    <div class="chip">
+      <span class="chip-label">EUR/USD</span>
+      <span class="chip-dot">·</span>
+      <span>1.1555</span>
+      <span class="chip-dot">·</span>
+      <span class="muted">—</span>
+    </div>
+    <span class="chip-sep">|</span>
+
+    <div class="chip">
+      <span class="chip-label">GOLD</span>
+      <span class="chip-dot">·</span>
+      <span>4,337.84</span>
+      <span class="chip-dot">·</span>
+      <span class="muted">—</span>
+    </div>
+    <span class="chip-sep">|</span>
+
+    <div class="chip">
+      <span class="chip-label">WTI</span>
+      <span class="chip-dot">·</span>
+      <span>95.96</span>
+      <span class="chip-dot">·</span>
+      <span class="muted">—</span>
+    </div>
+
+  </div>
+</div>
+
+<!-- MAIN CONTENT -->
+<div class="container">
+
+  <!-- EDITOR'S BRIEF -->
+  <div class="editors-brief">
+    A hotter-than-forecast May payrolls print has repriced the Federal Reserve path sharply higher, eliminating near-term cut expectations and sending the Nasdaq-100 to its worst single-session loss in months. Broadcom's disappointing AI chip revenue guidance compounded the semiconductor selloff, and with May CPI due later this week, markets are on high alert for the next inflation catalyst that could cement — or challenge — the growing conviction that the Fed may not cut, and may yet hike, in 2026.
+  </div>
+
+  <!-- SECTION 1: MARKET DRIVERS -->
+  <div class="section">
+    <div class="watch-badge">⚡ WATCH</div>
+    <div class="section-label">01 — Market Drivers</div>
+    <div class="section-title">Jobs Shock Meets Broadcom Miss</div>
+    <div class="section-body">
+      <ul>
+        <li>A stronger-than-expected May non-farm payrolls report eliminated market expectations for near-term Fed rate cuts, pushed 30-year Treasury yields above 5%, and triggered broad risk-off selling — the dominant macro catalyst behind Friday's equity rout across all cap sizes.</li>
+        <li>Broadcom (AVGO) fell 13%+ pre-market on a soft AI chip revenue forecast, acting as a second front in the technology selloff and dragging the entire semiconductor complex lower; the 3× leveraged inverse SOXS ETF surged 31.7% while the 3× bull SOXL lost over 30% on the session.</li>
+        <li>NVIDIA shed 6.2% to $205.10 and Intel plunged 11.3% to $99.17 on massive volume; KLA Corp and SanDisk fell 6–10% apiece as China export control pressure on semiconductor shipments compounded the macro headwind.</li>
+        <li>Macro strategist Ed Yardeni formally called for a Federal Reserve <em>rate hike</em> at the July 29 FOMC meeting — the most consequential contrarian call of the week — citing resilient labor markets, oil-driven inflation, and a year-end S&amp;P 500 target of 8,250 underpinned by earnings momentum.</li>
+      </ul>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 2: MACRO -->
+  <div class="section">
+    <div class="watch-badge">⚡ WATCH</div>
+    <div class="section-label">02 — Macro</div>
+    <div class="section-title">Higher-for-Longer Hardens</div>
+    <div class="section-body">
+      <p>The May jobs report has materially narrowed the Fed's room to maneuver; with crude oil approaching the $96–98/barrel range — a threshold multiple analysts cite as reigniting consumer inflation — the combination of tight labor markets and sticky energy prices confronts the FOMC with its most challenging policy calculus of 2026. The Morningstar weekly market preview flagged May CPI and PPI as the pivotal events for this week; a second consecutive upside inflation surprise would materially advance the case for the Yardeni rate-hike scenario and force a fresh re-rating of growth asset valuations. A tentative U.S.–Iran ceasefire briefly pressured oil earlier in the month, but OPEC+ supply discipline has reasserted itself, limiting any sustained commodity-driven relief.</p>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 3: EQUITIES -->
+  <div class="section">
+    <div class="section-label">03 — Equities</div>
+    <div class="section-title">Nasdaq Leads Broad Market Selloff</div>
+    <div class="section-body">
+      <p>The S&amp;P 500 ETF (SPY) closed Friday at $737.55, down 2.58%, while the Nasdaq-100 ETF (QQQ) lost 4.80% to $705.06 in its sharpest single-session decline in recent months. Small-caps (IWM, -3.55% to $281.65) underperformed the S&amp;P but lagged behind mega-cap tech's losses, with regional banks — benefiting from higher-for-longer net interest margin expansion — providing a partial offset to broader index pressure. Among notable movers from the day's most active list, NVIDIA (NVDA) shed 6.2% to $205.10 on record volume as AI-related positioning unwound sharply in response to the Broadcom guidance miss. On the upside, STI surged +57.3% to $35.72, the standout gainer from the session's top-movers list.</p>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 4: FIXED INCOME -->
+  <div class="section">
+    <div class="section-label">04 — Fixed Income</div>
+    <div class="section-title">Curve Holds Positive Slope at +42bps</div>
+    <div class="section-body">
+      <p>The 10-year Treasury yield eased to 4.47% (from 4.49% the prior session) while the 2-year pulled back to 4.05% (from 4.08%), leaving the 2Y–10Y spread at a positive +42 basis points — a normally-sloped, gently steepening curve. The paradox of yields falling on a strong payrolls print reflects a flight-to-safety bid in Treasuries as equities de-risked, rather than any genuine shift in rate expectations. The decisive inflection point is May CPI, due this week: an above-consensus print would likely push the 10-year back toward 4.60%+ and flatten the curve meaningfully, bringing the Yardeni rate-hike scenario into the mainstream conversation.</p>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 5: CURRENCIES -->
+  <div class="section">
+    <div class="section-label">05 — Currencies</div>
+    <div class="section-title">EUR Holds; USD/JPY Approaches Critical 160 Level</div>
+    <div class="section-body">
+      <p>EUR/USD holds at 1.1555, underpinned by firm ECB rate expectations and relative European economic resilience that has offset dollar strength from the hot payrolls print. USD/JPY at 159.96 is approaching the psychologically critical 160 handle — a level that has historically triggered verbal intervention warnings from Japanese officials. The Bank of Japan's anticipated rate hike has so far failed to meaningfully appreciate the yen, as the persistent U.S.–Japan rate differential and risk-off yen carry unwind dynamics continue to dominate. A clean breach above 160 would likely invite renewed scrutiny of intervention risk and Ministry of Finance commentary.</p>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 6: COMMODITIES -->
+  <div class="section">
+    <div class="section-label">06 — Commodities</div>
+    <div class="section-title">Gold Surges; Oil Near Multi-Month High</div>
+    <div class="section-body">
+      <p>Gold hit $4,337.84/oz, combining safe-haven demand from the equity selloff with lingering inflation uncertainty — the metal is overriding the usual headwind from elevated real rates as macro tail-risk rises. WTI crude at $95.96/barrel is within striking distance of the $98 level flagged by analysts as the next threshold for renewed Fed concern; consumer companies including Campbell's Soup are already citing tariff-driven commodity cost pressures squeezing margins, foreshadowing what a fresh oil spike could do to corporate earnings guidance through Q3. The convergence of near-$100 oil and a structurally tight labor market presents a genuine stagflationary configuration that the Fed's conventional playbook struggles to cleanly address.</p>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 7: DIGITAL ASSETS -->
+  <div class="section">
+    <div class="watch-badge">⚡ WATCH</div>
+    <div class="section-label">07 — Digital Assets</div>
+    <div class="section-title">Bitcoin Reclaims $63K; UK FCA Opens Door to Retail Crypto ETN Exposure</div>
+    <div class="section-body">
+      <p>Bitcoin crashed intraday to $59,100 before staging a sharp recovery above $63,000, liquidating $540M in short positions in a 7-week high squeeze. On-chain indicators are cautiously constructive: the MVRV ratio has fallen to 1.1 — a 27-month low historically associated with major cycle bottoms since 2018 — suggesting the recent flush may represent a structural low rather than a mid-cycle correction. Strategy continued its institutional accumulation, adding 1,550 BTC ($101M) during the dip.</p>
+      <p>Ethereum trades near $1,630; Bitmine Immersion Technologies (BMNR) disclosed total ETH holdings of 5.54 million tokens (~$9B, representing approximately 4.59% of the entire ETH supply), with Fundstrat's Tom Lee framing ETH as an AI-era infrastructure asset. XRP is recovering from the $1.10–$1.15 range, with Binance XRP reserves at a 3-month low — a bullish withdrawal signal. NEAR Protocol gained 12.3% and TAO (Bittensor) surged ~12%, leading the CoinDesk 20 index on the session.</p>
+      <p><strong>Regulatory:</strong> The UK's Financial Conduct Authority proposed a <strong>10% cap for UCITS and retail investment funds investing in crypto ETNs</strong> — a meaningful step toward formally integrating digital assets into regulated UK retail investment products. The consultation is live. If adopted, this would open a new institutional and retail capital channel into crypto at scale for the first time in the UK. Overall crypto market sentiment: <strong>cautiously bullish</strong>.</p>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 8: EARNINGS CALENDAR -->
+  <div class="section">
+    <div class="section-label">08 — Earnings Radar</div>
+    <div class="section-title">Oracle and Adobe Headline a Critical AI Software Week</div>
+    <div class="section-body">
+      <p>The next five trading days (June 8–12) are headlined by two bellwether software names whose AI commentary will carry outsized market significance following Friday's Broadcom-driven AI sentiment reset. Oracle's cloud infrastructure trajectory and Adobe's Creative Cloud pricing power in the face of generative AI disruption are the two narratives most likely to either amplify or counteract the sector's current headwinds. Lennar's mortgage rate sensitivity adds a macro read-through on housing affordability.</p>
+      <table class="earnings-table">
+        <thead>
+          <tr>
+            <th>Company</th>
+            <th>Date</th>
+            <th>Expected Move</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Oracle (ORCL)</strong></td>
+            <td>Jun 10 · Post-market</td>
+            <td>EPS est. $1.58 — AI/cloud capex commentary in focus after AVGO guidance miss</td>
+          </tr>
+          <tr>
+            <td><strong>Adobe (ADBE)</strong></td>
+            <td>Jun 11 · Post-market</td>
+            <td>EPS est. $4.74 — Creative Cloud resilience vs. generative AI disruption narrative</td>
+          </tr>
+          <tr>
+            <td><strong>Lennar (LEN)</strong></td>
+            <td>Jun 11 · Post-market</td>
+            <td>EPS est. $1.24 — rate sensitivity key; watch mortgage lock and cancellation data</td>
+          </tr>
+          <tr>
+            <td><strong>Chewy (CHWY)</strong></td>
+            <td>Jun 10 · Pre-market</td>
+            <td>EPS est. $0.24 — pet retail margin trajectory and autoship customer retention</td>
+          </tr>
+          <tr>
+            <td><strong>Campbell's (CPB)</strong></td>
+            <td>Jun 8 · Pre-market</td>
+            <td>EPS est. $0.48 — tariff-driven input cost headwinds already pressuring margins</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</div><!-- end container -->
+
+</body>
+</html>
