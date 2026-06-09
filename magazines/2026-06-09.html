@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Market Quick Take — Monday, 9 June 2026</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #ffffff;
+      color: #1a2332;
+    }
+
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* MASTHEAD */
+    .masthead {
+      border-top: 3px solid #003366;
+      padding: 32px 0 20px;
+      border-bottom: 1px solid #e5e7eb;
+    }
+
+    .masthead h1 {
+      font-size: 42px;
+      font-weight: 700;
+      color: #003366;
+      letter-spacing: -0.5px;
+      line-height: 1.1;
+    }
+
+    .masthead .date {
+      font-size: 13px;
+      font-weight: 400;
+      color: #6b7280;
+      margin-top: 6px;
+    }
+
+    /* SNAPSHOT BAR */
+    .snapshot-bar {
+      background: #f1f5f9;
+      padding: 12px 0;
+      width: 100%;
+    }
+
+    .snapshot-inner {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 24px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0;
+    }
+
+    .chip {
+      font-size: 12px;
+      font-weight: 500;
+      color: #1a2332;
+      text-transform: uppercase;
+      white-space: nowrap;
+      padding: 2px 0;
+    }
+
+    .chip-sep {
+      color: #9ca3af;
+      font-size: 12px;
+      padding: 0 8px;
+    }
+
+    .pos { color: #16a34a; }
+    .neg { color: #dc2626; }
+    .muted { color: #6b7280; }
+
+    /* EDITOR'S BRIEF */
+    .brief {
+      font-size: 18px;
+      font-style: italic;
+      font-weight: 400;
+      color: #374151;
+      line-height: 1.8;
+      max-width: 760px;
+      margin: 28px 0;
+      border-left: 3px solid #003366;
+      padding-left: 16px;
+    }
+
+    /* SECTIONS */
+    .sections {
+      max-width: 860px;
+    }
+
+    .section { margin-bottom: 0; }
+
+    .section-hr {
+      border: none;
+      border-top: 1px solid #e5e7eb;
+      margin: 28px 0;
+    }
+
+    .watch-pill {
+      display: inline-block;
+      background: #fef3c7;
+      color: #b45309;
+      border-radius: 4px;
+      font-size: 11px;
+      font-weight: 500;
+      padding: 2px 8px;
+      margin-bottom: 8px;
+      letter-spacing: 0.5px;
+    }
+
+    .section-label {
+      font-size: 11px;
+      font-weight: 500;
+      color: #003366;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      margin-bottom: 6px;
+    }
+
+    .section-title {
+      font-size: 24px;
+      font-weight: 700;
+      color: #1a2332;
+      margin-bottom: 10px;
+    }
+
+    .section-body {
+      font-size: 15px;
+      line-height: 1.8;
+      color: #374151;
+    }
+
+    .section-body p + p {
+      margin-top: 12px;
+    }
+
+    .section-body ul {
+      list-style: disc;
+      padding-left: 20px;
+      margin-top: 8px;
+    }
+
+    .section-body ul li {
+      margin-bottom: 10px;
+    }
+
+    /* EARNINGS TABLE */
+    .earnings-table {
+      width: 100%;
+      border-collapse: collapse;
+      border: 1px solid #e5e7eb;
+      font-size: 13px;
+      font-weight: 400;
+      margin-top: 14px;
+    }
+
+    .earnings-table th {
+      background: #f1f5f9;
+      color: #003366;
+      font-weight: 600;
+      text-align: left;
+      padding: 10px 14px;
+      border-bottom: 1px solid #e5e7eb;
+    }
+
+    .earnings-table td {
+      padding: 10px 14px;
+      border-bottom: 1px solid #e5e7eb;
+      color: #374151;
+      vertical-align: top;
+      line-height: 1.6;
+    }
+
+    .earnings-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .earnings-table tr:nth-child(even) td {
+      background: #fafafa;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- MASTHEAD -->
+  <div class="container">
+    <div class="masthead">
+      <h1>MARKET QUICK TAKE</h1>
+      <p class="date">Monday, 9 June 2026</p>
+    </div>
+  </div>
+
+  <!-- SNAPSHOT BAR -->
+  <div class="snapshot-bar">
+    <div class="snapshot-inner">
+      <span class="chip">SPY &middot; $739.22 &middot; <span class="pos">+0.23%</span></span>
+      <span class="chip-sep">|</span>
+      <span class="chip">QQQ &middot; $716.07 &middot; <span class="pos">+1.56%</span></span>
+      <span class="chip-sep">|</span>
+      <span class="chip">IWM &middot; $284.11 &middot; <span class="pos">+0.87%</span></span>
+      <span class="chip-sep">|</span>
+      <span class="chip">VIX &middot; <span class="muted">N/A</span></span>
+      <span class="chip-sep">|</span>
+      <span class="chip">US10Y &middot; 4.55%</span>
+      <span class="chip-sep">|</span>
+      <span class="chip">US2Y &middot; 4.17%</span>
+      <span class="chip-sep">|</span>
+      <span class="chip">EUR/USD &middot; 1.1547</span>
+      <span class="chip-sep">|</span>
+      <span class="chip">GOLD &middot; $4,332.74</span>
+      <span class="chip-sep">|</span>
+      <span class="chip">WTI &middot; $95.96</span>
+    </div>
+  </div>
+
+  <!-- EDITOR'S BRIEF -->
+  <div class="container">
+    <p class="brief">
+      US equities gained broad ground Monday as AI infrastructure enthusiasm — anchored by Nvidia CEO Jensen Huang's "buy the dip" call and a landmark $35 billion Apollo/Blackstone private credit deal for Anthropic compute — drove semiconductors and megacap tech sharply higher. Oracle's post-close earnings Tuesday and Wednesday's US CPI print (consensus: +4.2% YoY) set up a two-day gauntlet where the AI capex narrative meets hard macro data.
+    </p>
+
+    <!-- SECTIONS -->
+    <div class="sections">
+
+      <!-- SECTION 1: MARKET DRIVERS -->
+      <div class="section">
+        <div class="section-label">01 &mdash; Market Drivers</div>
+        <h2 class="section-title">What's Moving Markets</h2>
+        <div class="section-body">
+          <ul>
+            <li><strong>AI infrastructure leads the tape.</strong> Intel (INTC) surged 11.19% and Marvell Technology (MRVL) gained 9.63% as Nvidia's Jensen Huang publicly backed AI's early-stage thesis. Apollo and Blackstone completed a landmark $35 billion private credit deal — one of the largest ever — to fund Anthropic's GPU compute expansion via a Google TPU-backed SPV, cementing institutional conviction in AI infrastructure as a structural long-cycle investment.</li>
+            <li><strong>Defense and aerospace outperform on durable geopolitical demand.</strong> General Dynamics, Howmet Aerospace (75 hedge fund holders), TransDigm, and Parker-Hannifin each carried fresh analyst upgrades and beat-and-raise Q1 results. Iran/Israel conflict risk and NATO rearming were cited as durable revenue tailwinds through 2026 and beyond.</li>
+            <li><strong>Healthcare managed care stages a recovery.</strong> Morgan Stanley and Mizuho simultaneously raised UnitedHealth (UNH) price targets to $453–$460 (Overweight/Outperform), citing softer utilization trends and AI-driven cost management upside — a possible sector re-rating signal after months of pressure.</li>
+            <li><strong>Consumer discretionary bounces on easing risk premiums.</strong> Retail and consumer names recovered on reports of tentative Iran/Israel ceasefire steps and retreating short-dated Treasury yields, with ISM data showing five consecutive months of industrial expansion providing a constructive macro backdrop.</li>
+          </ul>
+        </div>
+      </div>
+      <hr class="section-hr">
+
+      <!-- SECTION 2: MACRO -->
+      <div class="section">
+        <div class="watch-pill">&#9889; WATCH</div>
+        <div class="section-label">02 &mdash; Macro</div>
+        <h2 class="section-title">Rates, Fed &amp; Geopolitics</h2>
+        <div class="section-body">
+          <p>Wednesday's US CPI release is the week's defining macro event: consensus forecasts headline inflation accelerating to +4.2% YoY (from 3.8% prior), a print that — if confirmed — would push Fed rate-hike odds, already at 68–70% for year-end, materially higher. The 10-year Treasury yield holds at 4.55%, near 2026 highs, while WTI crude near $96/bbl from the Iran/Israel conflict creates persistent inflationary feedback that complicates the Fed's path. The ECB is expected to hike 25 basis points Thursday, adding cross-market rate volatility into the back half of the week. The Fed remains in a watch-and-assess posture ahead of the print, with BNP Paribas now forecasting three Fed hikes beginning December 2026 — a sharp reversal from 2025's three cuts.</p>
+        </div>
+      </div>
+      <hr class="section-hr">
+
+      <!-- SECTION 3: EQUITIES -->
+      <div class="section">
+        <div class="section-label">03 &mdash; Equities</div>
+        <h2 class="section-title">US Markets</h2>
+        <div class="section-body">
+          <p>All three benchmark ETFs advanced Monday. <strong>QQQ</strong> led with a +1.56% gain ($716.07) as megacap tech reclaimed ground; <strong>IWM</strong> added +0.87% ($284.11) on improved risk sentiment; <strong>SPY</strong> gained a measured +0.23% ($739.22), reflecting a more muted broader-market backdrop outside tech.</p>
+          <p><strong>Notable movers:</strong> <strong>Intel (INTC +11.19%)</strong> posted its strongest session in months on record volume, driven by Nvidia CEO Jensen Huang's endorsement of AI infrastructure as early-innings — lifting AI chip suppliers broadly. AMD also received a Mizuho price-target raise to $615, citing agentic AI demand keeping suppliers supply-constrained through 2027. <strong>Marvell Technology (MRVL +9.63%)</strong> extended a recent run on the same AI datacenter thesis. On the negative side, <strong>Honeywell (HON)</strong> extended its losing streak to six consecutive sessions (–11% cumulative), shedding $17B in market cap on mounting valuation concerns despite moderate operating performance.</p>
+        </div>
+      </div>
+      <hr class="section-hr">
+
+      <!-- SECTION 4: FIXED INCOME -->
+      <div class="section">
+        <div class="section-label">04 &mdash; Fixed Income</div>
+        <h2 class="section-title">Treasuries &amp; Yield Curve</h2>
+        <div class="section-body">
+          <p>The US Treasury curve maintains a modest steepening bias. The <strong>10-year yield</strong> sits at <strong>4.55%</strong> while the <strong>2-year yield</strong> retreated to <strong>4.17%</strong>, leaving a <strong>+38-basis-point positive spread</strong> — a near-normal, un-inverted slope following the prolonged 2023–2024 inversion. The steepening reflects markets gradually pricing in eventual Fed cuts while the front end remains anchored by sticky inflation. A hotter-than-expected CPI print Wednesday could push the 2-year back above 4.20%, compressing the nascent positive spread and testing the steepening thesis.</p>
+        </div>
+      </div>
+      <hr class="section-hr">
+
+      <!-- SECTION 5: CURRENCIES -->
+      <div class="section">
+        <div class="section-label">05 &mdash; Currencies</div>
+        <h2 class="section-title">FX Markets</h2>
+        <div class="section-body">
+          <p><strong>EUR/USD at 1.1547</strong> reflects a firm Euro, supported by expectations of a 25bp ECB rate hike Thursday that narrows the US–Eurozone rate differential and adds carry appeal to the single currency. <strong>USD/JPY at 160.16</strong> keeps the yen at multi-year weakness levels historically associated with Bank of Japan intervention risk; the BOJ's yield curve control policy holds domestic rates near zero while US 10-year yields at 4.55% sustain the carry trade that has pressured the yen throughout 2025–2026. Both pairs face sharp repricing risk from Wednesday's US CPI data, where an upside surprise would reinforce USD strength and further stress yen carry positions.</p>
+        </div>
+      </div>
+      <hr class="section-hr">
+
+      <!-- SECTION 6: COMMODITIES -->
+      <div class="section">
+        <div class="section-label">06 &mdash; Commodities</div>
+        <h2 class="section-title">Gold &amp; Crude</h2>
+        <div class="section-body">
+          <p><strong>Gold at $4,332.74/oz</strong> holds near record territory, underpinned by geopolitical risk hedging (Iran/Israel conflict, global safe-haven demand), relative dollar softness, and continued central bank accumulation that has structurally elevated gold's role as a reserve asset. The level reflects a multi-year secular bull run built on persistent macro uncertainty and de-dollarization momentum. <strong>WTI crude at $95.96/bbl</strong> prices in an explicit Iran/Israel conflict risk premium, driven by Strait of Hormuz supply-disruption concerns. Oil at this level feeds directly into Wednesday's CPI energy components, creating inflationary feedback that constrains the Fed's room to maneuver. A genuine ceasefire development could unwind $5–10/bbl of geopolitical premium rapidly.</p>
+        </div>
+      </div>
+      <hr class="section-hr">
+
+      <!-- SECTION 7: DIGITAL ASSETS -->
+      <div class="section">
+        <div class="watch-pill">&#9889; WATCH</div>
+        <div class="section-label">07 &mdash; Digital Assets</div>
+        <h2 class="section-title">Crypto Markets</h2>
+        <div class="section-body">
+          <p><strong>Bitcoin</strong> consolidates near <strong>$62,000–$63,000</strong> after a ~22% monthly drawdown that briefly breached the 200-week moving average (~$61,800) on Sunday — a historically significant support level. Spot BTC ETFs saw $91.4M in net outflows June 8, with BlackRock IBIT alone logging –$232.9M, partially offset by Fidelity and Ark inflows. Institutional accumulation continues to provide a visible floor: Strategy purchased 1,550 BTC ($101M) last week, bringing total holdings to 845,256 BTC. Wednesday's US CPI print is the immediate directional catalyst, with rate-hike odds at 70% amplifying macro headwinds.</p>
+          <p><strong>Ethereum</strong> briefly hit a one-year low of $1,505 Sunday before recovering to ~<strong>$1,687</strong> (+4.8% intraday). Bitmine announced its largest 2026 ETH purchase — 126,971 ETH (~$214M) — bringing institutional confidence forward. Spot ETH ETFs logged a second consecutive day of net inflows (+$68M, led by Fidelity FETH and BlackRock ETHB). <strong>XRP</strong> recovered to ~$1.15–$1.18; Ripple was confirmed among 50+ institutions in DTCC's July 2026 live tokenized asset launch alongside BlackRock, JPMorgan, and Goldman Sachs.</p>
+          <p><strong>Regulatory developments to watch:</strong> Russia announced new restrictions targeting BTC, ETH, and USDT — imposing fees and transaction limits to reroute domestic crypto activity toward local platforms, representing a partial-ban framework for a significant market. In the US, a coalition of 200+ crypto firms (Coinbase, Circle, Ripple, Binance.US) urgently pushed Senate leaders Thune and Schumer for a floor vote on the CLARITY Act market structure bill, with passage odds at 60% but a congested Senate calendar creating timing risk. Overall sentiment is <strong>bearish</strong> on macro-driven headwinds, but institutional accumulation at these levels suggests a possible capitulation-floor formation.</p>
+        </div>
+      </div>
+      <hr class="section-hr">
+
+      <!-- SECTION 8: EARNINGS RADAR -->
+      <div class="section">
+        <div class="section-label">08 &mdash; Earnings Radar</div>
+        <h2 class="section-title">Next 5 Trading Days</h2>
+        <div class="section-body">
+          <p>The week's calendar is front-loaded with AI infrastructure and consumer bellwethers. Oracle on Tuesday post-close is the marquee event, arriving after multiple analyst price-target raises on ~20% AI-driven revenue growth expectations.</p>
+          <table class="earnings-table">
+            <thead>
+              <tr>
+                <th>Company</th>
+                <th>Date</th>
+                <th>Expected Move</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>J.M. Smucker (SJM)</strong></td>
+                <td>Mon Jun 9 &middot; Pre-market</td>
+                <td>EPS est $2.65 — consumer staples pricing power vs. persistent cost inflation; branded food demand resilience</td>
+              </tr>
+              <tr>
+                <td><strong>Oracle (ORCL)</strong></td>
+                <td>Tue Jun 10 &middot; Post-market</td>
+                <td>EPS est $1.58 — ~20% Q4 revenue growth expected on AI/GPU cloud demand; Evercore ISI, TD Cowen, Oppenheimer all raised targets ahead of print</td>
+              </tr>
+              <tr>
+                <td><strong>Chewy (CHWY)</strong></td>
+                <td>Tue Jun 10 &middot; Pre-market</td>
+                <td>EPS est $0.24 — pet retail autoship subscription growth and customer acquisition cost trends in focus</td>
+              </tr>
+              <tr>
+                <td><strong>Adobe (ADBE)</strong></td>
+                <td>Wed Jun 11 &middot; Post-market</td>
+                <td>EPS est $4.74 — AI-integrated Creative Cloud subscriptions and Firefly monetization are the key watch items</td>
+              </tr>
+              <tr>
+                <td><strong>Lennar (LEN)</strong></td>
+                <td>Wed Jun 11 &middot; Post-market</td>
+                <td>EPS est $1.24 — housing demand resilience vs. elevated mortgage rates; new order trends and community-count guidance critical</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </div><!-- .sections -->
+  </div><!-- .container -->
+
+</body>
+</html>
