@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Market Quick Take · Thursday, 11 June 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Inter', sans-serif; background: #ffffff; color: #1a2332; }
+
+  .container { max-width: 860px; margin: 0 auto; padding: 0 24px; }
+
+  /* Masthead */
+  .masthead { border-top: 3px solid #003366; padding: 32px 0 20px; border-bottom: 1px solid #e5e7eb; }
+  .masthead-title { font-size: 42px; font-weight: 700; color: #003366; line-height: 1.1; margin-bottom: 8px; letter-spacing: -0.5px; }
+  .masthead-date { font-size: 13px; font-weight: 400; color: #6b7280; }
+
+  /* Snapshot Bar */
+  .snapshot-bar { background: #f1f5f9; padding: 12px 0; width: 100%; }
+  .snapshot-inner { max-width: 860px; margin: 0 auto; padding: 0 24px; display: flex; flex-wrap: wrap; align-items: center; gap: 0; }
+  .chip { font-size: 12px; font-weight: 500; color: #1a2332; text-transform: uppercase; white-space: nowrap; display: flex; align-items: center; gap: 4px; }
+  .chip-sep { color: #9ca3af; padding: 0 10px; font-size: 12px; }
+  .chip-label { color: #1a2332; }
+  .chip-value { color: #1a2332; }
+  .pos { color: #16a34a; }
+  .neg { color: #dc2626; }
+  .muted-change { color: #6b7280; }
+
+  /* Editor's Brief */
+  .brief { font-size: 18px; font-weight: 400; font-style: italic; color: #374151; max-width: 760px; margin: 28px 0; border-left: 3px solid #003366; padding-left: 16px; line-height: 1.7; }
+
+  /* Sections */
+  .section-divider { border: none; border-top: 1px solid #e5e7eb; margin: 28px 0; }
+  .section-label { font-size: 11px; font-weight: 500; color: #003366; text-transform: uppercase; letter-spacing: 3px; margin-bottom: 6px; }
+  .section-title { font-size: 24px; font-weight: 700; color: #1a2332; margin-bottom: 10px; }
+  .section-body { font-size: 15px; font-weight: 400; line-height: 1.8; color: #374151; }
+  .section-body ul { padding-left: 20px; }
+  .section-body li { margin-bottom: 8px; }
+  .section-body p + p { margin-top: 12px; }
+
+  /* WATCH pill */
+  .watch-pill { display: inline-block; color: #b45309; background: #fef3c7; border-radius: 4px; font-size: 11px; font-weight: 500; padding: 3px 8px; margin-bottom: 8px; }
+
+  /* Earnings table */
+  .earnings-table { width: 100%; border-collapse: collapse; border: 1px solid #e5e7eb; font-size: 13px; font-weight: 400; margin-top: 12px; }
+  .earnings-table th { background: #f1f5f9; font-weight: 600; padding: 8px 14px; text-align: left; border-bottom: 1px solid #e5e7eb; color: #1a2332; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; }
+  .earnings-table td { padding: 9px 14px; border-bottom: 1px solid #e5e7eb; color: #374151; }
+  .earnings-table tr:last-child td { border-bottom: none; }
+  .earnings-table tr:hover td { background: #f9fafb; }
+
+  /* Footer */
+  .footer { background: #f1f5f9; border-top: 1px solid #e5e7eb; margin-top: 48px; padding: 20px 0; }
+  .footer-inner { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; }
+  .footer-brand { font-size: 12px; font-weight: 400; color: #6b7280; }
+  .footer-disclaimer { font-size: 12px; font-weight: 400; color: #9ca3af; }
+</style>
+</head>
+<body>
+
+<!-- Masthead -->
+<div class="container">
+  <div class="masthead">
+    <div class="masthead-title">MARKET QUICK TAKE</div>
+    <div class="masthead-date">Thursday, 11 June 2026</div>
+  </div>
+</div>
+
+<!-- Snapshot Bar (full-width) -->
+<div class="snapshot-bar">
+  <div class="snapshot-inner">
+    <div class="chip">
+      <span class="chip-label">SPY</span>
+      <span class="chip-value">$725.43</span>
+      <span class="neg">&#8722;1.58%</span>
+    </div>
+    <span class="chip-sep">|</span>
+    <div class="chip">
+      <span class="chip-label">QQQ</span>
+      <span class="chip-value">$693.69</span>
+      <span class="neg">&#8722;2.00%</span>
+    </div>
+    <span class="chip-sep">|</span>
+    <div class="chip">
+      <span class="chip-label">IWM</span>
+      <span class="chip-value">$282.05</span>
+      <span class="neg">&#8722;1.04%</span>
+    </div>
+    <span class="chip-sep">|</span>
+    <div class="chip">
+      <span class="chip-label">VIX</span>
+      <span class="chip-value">22.22</span>
+      <span class="neg">+10.58%</span>
+    </div>
+    <span class="chip-sep">|</span>
+    <div class="chip">
+      <span class="chip-label">US10Y</span>
+      <span class="chip-value">4.53%</span>
+      <span class="neg">&#8722;0.66%</span>
+    </div>
+    <span class="chip-sep">|</span>
+    <div class="chip">
+      <span class="chip-label">US2Y</span>
+      <span class="chip-value">4.13%</span>
+      <span class="neg">&#8722;0.48%</span>
+    </div>
+    <span class="chip-sep">|</span>
+    <div class="chip">
+      <span class="chip-label">EUR/USD</span>
+      <span class="chip-value">1.1557</span>
+      <span class="muted-change">N/A</span>
+    </div>
+    <span class="chip-sep">|</span>
+    <div class="chip">
+      <span class="chip-label">GOLD</span>
+      <span class="chip-value">$4,094.78</span>
+      <span class="muted-change">N/A</span>
+    </div>
+    <span class="chip-sep">|</span>
+    <div class="chip">
+      <span class="chip-label">WTI</span>
+      <span class="chip-value">$95.00</span>
+      <span class="pos">+0.72%</span>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+
+  <!-- Editor's Brief -->
+  <p class="brief">
+    Today's session is defined by a powerful collision of May's blowout jobs report and a firming CPI print, forcing a rapid repricing of Federal Reserve expectations from rate cuts toward potential hikes and triggering a broad, tech-led equity selloff. AI infrastructure names bore the brunt as growing capex-ROI skepticism compounded rate sensitivity, while crude oil near $95/bbl signals that Strait of Hormuz disruption risks — and their inflationary implications — remain firmly on the table.
+  </p>
+
+  <!-- SECTION 1: Market Drivers -->
+  <div class="watch-pill">&#9889; WATCH</div>
+  <div class="section-label">Section 1</div>
+  <div class="section-title">Market Drivers</div>
+  <div class="section-body">
+    <ul>
+      <li><strong>Jobs blowout repriced the Fed:</strong> May 2026 payrolls came in dramatically above consensus, erasing near-term rate-cut expectations and prompting active debate about potential hikes — the dominant driver of the multi-day equity selloff.</li>
+      <li><strong>May CPI: headline up, core contained:</strong> Headline inflation ticked higher while food and core CPI remained subdued, triggering defensive rotation into staples and consumer brands with pass-through pricing power.</li>
+      <li><strong>Strait of Hormuz closure elevates crude:</strong> Ongoing Middle East supply disruption fears kept WTI near $95/bbl, supporting energy majors (COP +3.46%) even as the broader market sold off — a stagflationary signal that complicates the Fed's path.</li>
+      <li><strong>AI capex-ROI skepticism deepens:</strong> A "show me the returns" narrative is gaining momentum against hyperscaler infrastructure spending, exerting additional pressure on NVIDIA, SMCI, and Broadcom beyond the rate repricing.</li>
+    </ul>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 2: Macro -->
+  <div class="section-label">Section 2</div>
+  <div class="section-title">Macro</div>
+  <div class="section-body">
+    <p>The May payrolls blowout forced markets to abandon the soft-landing and imminent-cut narrative, with rate futures now pricing a prolonged hold — and some participants flagging a possible additional hike — a pivot that is compressing equity multiples across growth and duration-sensitive sectors. Adding a secondary inflationary layer, the ongoing Strait of Hormuz closure is supporting WTI toward multi-year highs, complicating the Fed's calculus precisely as May CPI confirmed headline firming. The geopolitical backdrop remains a meaningful overhang: an Israel-Iran ceasefire provided a brief tailwind earlier in the week that has since fully retraced, underscoring that Middle East risk is not resolved.</p>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 3: Equities -->
+  <div class="section-label">Section 3</div>
+  <div class="section-title">Equities</div>
+  <div class="section-body">
+    <p>All three major US ETFs fell on June 10: <strong>SPY &#8722;1.58%</strong> to $725.43, <strong>QQQ &#8722;2.00%</strong> to $693.69, and <strong>IWM &#8722;1.04%</strong> to $282.05. Tech led the selloff, with QQQ's outperformance to the downside reflecting concentrated selling in mega-cap names and semiconductors. Small-caps (IWM) showed relative resilience, in part because regional banks — benefiting from "higher-for-longer" net interest margin expansion — partially offset broader weakness.</p>
+    <p><strong>Notable movers:</strong> SMCI (Super Micro Computer) plunged 27.98% to $29.27, topping the most-active losers by value amid heavy institutional selling and AI infrastructure skepticism — SMCI has now shed nearly a third of its value in two sessions. On the upside, DSY surged 291.30% to $7.20 on volume exceeding 112 million shares, leading the session's percentage-gain leaderboard.</p>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 4: Volatility -->
+  <div class="watch-pill">&#9889; WATCH</div>
+  <div class="section-label">Section 4</div>
+  <div class="section-title">Volatility</div>
+  <div class="section-body">
+    <p>The CBOE VIX surged <strong>10.58%</strong> to settle at <strong>22.22</strong> (15-minute delayed), firmly above the 20 threshold that signals elevated fear. The index opened at 20.97, hit an intraday high of 22.66, and closed at 22.22 — confirming that anxiety is not momentary but sustained. Tactical hedging demand is running hot: SOXS (3&#215; inverse semiconductor ETF) gained 10.88%, SQQQ (3&#215; inverse QQQ) rose 6.05%, and TZA (3&#215; inverse small-cap) added 3.08%, collectively the session's most-traded instruments by share volume. Notably, QQQ's index options market reportedly stayed relatively controlled in implied vol, suggesting sophisticated players may view this as a sector-rotation event rather than a systemic shock.</p>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 5: Fixed Income -->
+  <div class="section-label">Section 5</div>
+  <div class="section-title">Fixed Income</div>
+  <div class="section-body">
+    <p>The 10-year Treasury yield stands at <strong>4.53%</strong> (June 9 close), easing 3bps from 4.56% the prior session, while the 2-year yield holds at <strong>4.13%</strong>, down 2bps from 4.15%. The <strong>10Y&#8211;2Y spread is +40bps</strong> — maintaining a positively-sloped, normal curve that reflects market expectations for eventual Fed easing over the long run, even as the near-term rate path steepens. The long end is finding modest flight-to-quality support from equity weakness, while the front end remains anchored by the jobs data. Reports of the 30-year breaching 5% earlier in the week add context: duration risk remains elevated, and the curve's moderate steepening is consistent with a macro environment where inflation fears are pushing long-run rates higher.</p>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 6: Currencies -->
+  <div class="section-label">Section 6</div>
+  <div class="section-title">Currencies</div>
+  <div class="section-body">
+    <p>EUR/USD trades at <strong>1.1557</strong>, with the euro holding elevated ground as fragmented dollar demand creates a two-way pull: rate-hike repricing in the US is broadly supportive of the dollar, but European macro resilience and geopolitical safe-haven flows provide offsetting support for the single currency. USD/JPY at <strong>160.49</strong> remains at historically stretched levels — the widest US-Japan yield differential in decades continues to overwhelm yen demand, though the level is notable enough that market participants are monitoring for any Bank of Japan verbal intervention or policy surprise. The yen's fragility introduces meaningful FX risk for US investors with unhedged Asia-Pacific equity exposure.</p>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 7: Commodities -->
+  <div class="section-label">Section 7</div>
+  <div class="section-title">Commodities</div>
+  <div class="section-body">
+    <p>Gold trades at <strong>$4,094.78/oz</strong> — near record levels that reflect a powerful combination of central bank accumulation, persistent inflation expectations, and geopolitical risk premium. Notably, gold's resilience persists despite a stronger dollar and rate-hike repricing that would ordinarily pressure the metal, underscoring the "dual-fear" premium the market is embedding. WTI crude stands at <strong>$95.00/bbl</strong> (June 8 close, +0.72% vs. prior session), driven by the Strait of Hormuz closure fears and OPEC supply discipline; the energy complex is one of the few sectors finding broad support in the current risk-off environment, with ConocoPhillips (COP) gaining 3.46% and oil-majors broadly outperforming.</p>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 8: Digital Assets -->
+  <div class="watch-pill">&#9889; WATCH</div>
+  <div class="section-label">Section 8</div>
+  <div class="section-title">Digital Assets</div>
+  <div class="section-body">
+    <p>Bitcoin holds above <strong>$62,000</strong> after a modest 2.3% 24-hour recovery, though on-chain PnL indicators remain in a "transition phase" historically associated with cycle proximity to bottoms — but not immediate reversals. A notable ETF divergence emerged on June 9: <strong>XRP spot ETFs attracted $7.44M in net inflows</strong> while <strong>US spot BTC ETFs posted $77M in outflows</strong> the same session, signaling a shift in institutional near-term preference. The dominant narrative among TradFi advisors, per Bitwise research, is pivoting toward stablecoins and asset tokenization rather than direct BTC allocation; Mastercard and Ripple's joint commentary on AI-integrated payments infrastructure reinforces this institutional reorientation.</p>
+    <p><strong>Regulatory:</strong> The CFTC issued its first proposed rulemaking for prediction markets on June 10, establishing a standardized framework for event contracts — a consequential development for DeFi-adjacent platforms and on-chain derivatives. South Korean law enforcement launched a multi-agency crypto crime task force with Chainalysis as intelligence partner, expanding enforcement capacity across the Asia-Pacific region. Overall crypto sentiment: <strong>Neutral</strong>, constrained by macro headwinds from rate-hike fears, BTC ETF outflows, and sustained geopolitical uncertainty.</p>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 9: Earnings Calendar -->
+  <div class="section-label">Section 9</div>
+  <div class="section-title">Earnings Calendar</div>
+  <div class="section-body">
+    <p>The marquee event is <strong>Adobe (ADBE)</strong> tonight — the first full quarter with Firefly AI monetization fully in stride. Consensus EPS is $4.74; focus will be on net new ARR from AI-powered Creative Cloud subscriptions and whether management's AI commentary can arrest the stock's recent rate-driven slide. Homebuilder <strong>Lennar (LEN)</strong> also reports tonight, with rate sensitivity a key swing factor after the jobs-driven repricing. <strong>CarMax (KMX)</strong> on June 17 will test whether the auto-consumer is holding up under higher financing costs.</p>
+    <table class="earnings-table">
+      <thead>
+        <tr>
+          <th>Company</th>
+          <th>Date</th>
+          <th>EPS Est.</th>
+          <th>Time</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>ADBE</strong> &mdash; Adobe</td>
+          <td>Jun 11</td>
+          <td>$4.74</td>
+          <td>Post-market</td>
+        </tr>
+        <tr>
+          <td><strong>LEN</strong> &mdash; Lennar</td>
+          <td>Jun 11</td>
+          <td>$1.24</td>
+          <td>Post-market</td>
+        </tr>
+        <tr>
+          <td><strong>RH</strong> &mdash; Restoration Hardware</td>
+          <td>Jun 11</td>
+          <td>&minus;$1.70</td>
+          <td>Post-market</td>
+        </tr>
+        <tr>
+          <td><strong>PLAY</strong> &mdash; Dave &amp; Buster&apos;s</td>
+          <td>Jun 15</td>
+          <td>$0.37</td>
+          <td>Post-market</td>
+        </tr>
+        <tr>
+          <td><strong>KMX</strong> &mdash; CarMax</td>
+          <td>Jun 17</td>
+          <td>$0.94</td>
+          <td>Pre-market</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</div>
+
+<!-- Footer (outside container, full-width) -->
+<div class="footer">
+  <div class="container footer-inner">
+    <span class="footer-brand">Market Quick Take &middot; Thursday, 11 June 2026</span>
+    <span class="footer-disclaimer">For informational purposes only. Not investment advice.</span>
+  </div>
+</div>
+
+</body>
+</html>
