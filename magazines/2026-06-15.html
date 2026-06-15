@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Market Quick Take — Monday, 15 June 2026</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #ffffff;
+      color: #1a2332;
+      border-top: 3px solid #003366;
+    }
+
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* MASTHEAD */
+    .masthead {
+      padding: 32px 0 20px;
+      border-bottom: 1px solid #e5e7eb;
+    }
+    .masthead-title {
+      font-size: 42px;
+      font-weight: 700;
+      color: #003366;
+      line-height: 1;
+      margin-bottom: 8px;
+      letter-spacing: -0.5px;
+    }
+    .masthead-date {
+      font-size: 13px;
+      font-weight: 400;
+      color: #6b7280;
+    }
+
+    /* SNAPSHOT BAR */
+    .snapshot-bar {
+      background-color: #f1f5f9;
+      padding: 12px 0;
+    }
+    .snapshot-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+      align-items: center;
+      font-size: 12px;
+      font-weight: 500;
+      color: #1a2332;
+      text-transform: uppercase;
+    }
+    .chip { white-space: nowrap; }
+    .chip-sep { color: #9ca3af; padding: 0 4px; }
+    .pos { color: #16a34a; }
+    .neg { color: #dc2626; }
+    .na  { color: #6b7280; }
+
+    /* EDITOR'S BRIEF */
+    .editors-brief {
+      font-size: 18px;
+      font-weight: 400;
+      font-style: italic;
+      color: #374151;
+      max-width: 760px;
+      margin: 28px 0;
+      border-left: 3px solid #003366;
+      padding-left: 16px;
+      line-height: 1.6;
+    }
+
+    /* SECTIONS */
+    .section-divider {
+      border: none;
+      border-top: 1px solid #e5e7eb;
+      margin: 28px 0;
+    }
+    .watch-pill {
+      display: inline-block;
+      color: #b45309;
+      background-color: #fef3c7;
+      border-radius: 4px;
+      font-size: 11px;
+      font-weight: 500;
+      padding: 2px 8px;
+      margin-bottom: 8px;
+    }
+    .section-label {
+      font-size: 11px;
+      font-weight: 500;
+      color: #003366;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      margin-bottom: 6px;
+    }
+    .section-title {
+      font-size: 24px;
+      font-weight: 700;
+      color: #1a2332;
+      margin-bottom: 10px;
+    }
+    .section-body {
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 1.8;
+      color: #374151;
+    }
+    .section-body p + p {
+      margin-top: 12px;
+    }
+    .section-body ul {
+      padding-left: 8px;
+      list-style-type: disc;
+      list-style-position: inside;
+    }
+    .section-body ul li {
+      margin-bottom: 8px;
+    }
+
+    /* EARNINGS TABLE */
+    .earnings-table {
+      width: 100%;
+      border-collapse: collapse;
+      border: 1px solid #e5e7eb;
+      font-size: 13px;
+      font-weight: 400;
+      margin-top: 14px;
+    }
+    .earnings-table th {
+      background-color: #f9fafb;
+      padding: 10px 14px;
+      text-align: left;
+      font-weight: 600;
+      color: #1a2332;
+      border-bottom: 1px solid #e5e7eb;
+    }
+    .earnings-table td {
+      padding: 10px 14px;
+      color: #374151;
+      border-bottom: 1px solid #e5e7eb;
+    }
+    .earnings-table tr:last-child td { border-bottom: none; }
+    .earnings-note {
+      margin-top: 12px;
+      font-size: 13px;
+      color: #6b7280;
+      line-height: 1.6;
+    }
+
+    /* FOOTER */
+    .footer {
+      background-color: #f1f5f9;
+      border-top: 1px solid #e5e7eb;
+      margin-top: 48px;
+      padding: 20px 0;
+    }
+    .footer .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .footer-brand {
+      font-size: 12px;
+      font-weight: 400;
+      color: #6b7280;
+    }
+    .footer-disclaimer {
+      font-size: 12px;
+      font-weight: 400;
+      color: #9ca3af;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- MASTHEAD -->
+  <div class="container">
+    <div class="masthead">
+      <div class="masthead-title">MARKET QUICK TAKE</div>
+      <div class="masthead-date">Monday, 15 June 2026</div>
+    </div>
+  </div>
+
+  <!-- SNAPSHOT BAR -->
+  <div class="snapshot-bar">
+    <div class="container">
+      <div class="snapshot-chips">
+        <span class="chip">SPY · $741.75 · <span class="pos">+0.54%</span></span>
+        <span class="chip-sep">|</span>
+        <span class="chip">QQQ · $721.34 · <span class="pos">+0.59%</span></span>
+        <span class="chip-sep">|</span>
+        <span class="chip">IWM · $292.95 · <span class="pos">+0.87%</span></span>
+        <span class="chip-sep">|</span>
+        <span class="chip">VIX · 17.68 · <span class="neg">-9.95%</span></span>
+        <span class="chip-sep">|</span>
+        <span class="chip">US10Y · 4.45% · <span class="neg">-2.20%</span></span>
+        <span class="chip-sep">|</span>
+        <span class="chip">US2Y · 4.05% · <span class="neg">-1.94%</span></span>
+        <span class="chip-sep">|</span>
+        <span class="chip">EUR/USD · 1.1614 · <span class="na">N/A</span></span>
+        <span class="chip-sep">|</span>
+        <span class="chip">GOLD · $4,312.87 · <span class="na">N/A</span></span>
+        <span class="chip-sep">|</span>
+        <span class="chip">WTI · $95.00 · <span class="pos">+0.72%</span></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <div class="container">
+
+    <!-- EDITOR'S BRIEF -->
+    <p class="editors-brief">Global risk appetite surged at the start of the week as a surprise US-Iran peace deal and commitments to keep the Strait of Hormuz open cleared a key geopolitical overhang, lifting equities and pushing Bitcoin to two-week highs near $66,000. A blowout May jobs report and rising CPI/PPI data earlier this month continue to suppress rate-cut expectations, keeping the Fed in higher-for-longer mode — a complex backdrop where geopolitical tailwinds and structural inflation headwinds compete for dominance heading into a week anchored by Accenture and Kroger earnings.</p>
+
+    <!-- SECTION 01 — MARKET DRIVERS -->
+    <div class="section">
+      <div class="watch-pill">&#x26A1; WATCH</div>
+      <div class="section-label">Section 01</div>
+      <div class="section-title">Market Drivers</div>
+      <div class="section-body">
+        <ul>
+          <li><strong>US-Iran Peace Deal Clears Geopolitical Overhang:</strong> President Trump announced a peace agreement with Iran including commitments to keep the Strait of Hormuz open. The deal removed a major energy supply risk premium and catalysed a broad rally in equities, crypto, and risk assets — while lifting pressure on oil's scarcity-driven bid.</li>
+          <li><strong>May NFP Blowout Reprices the Fed:</strong> The June 5 payrolls report fully reversed rate-cut expectations and introduced rate-hike scenarios. The repricing sent 2-year yields sharply higher and triggered a broad tech selloff (QQQ -4.8% on June 5, NVDA -3.46%, CSCO -4.78%, CAT -4.32%); higher-for-longer is now the market baseline.</li>
+          <li><strong>Inflation Data Compound Rate Fears:</strong> May CPI and PPI (released June 10–11) confirmed elevated readings driven by energy-cost pass-through and AI hardware component inflation, sparking defensive rotation into consumer staples and weighing on rate-sensitive growth names.</li>
+          <li><strong>AI Capex ROI Skepticism Builds:</strong> Hyperscalers face growing scrutiny over returns on AI infrastructure spending. Analyst downgrades on NVDA and AVGO cite valuation, competition risk, and potential data center buildout delays, softening the AI-as-tailwind narrative that drove the prior bull leg.</li>
+        </ul>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- SECTION 02 — MACRO -->
+    <div class="section">
+      <div class="section-label">Section 02</div>
+      <div class="section-title">Macro</div>
+      <div class="section-body">
+        <p>The dominant macro tension is between fading geopolitical risk and entrenched inflation-driven rate pressure. J.P. Morgan's CIO framed the environment as "hot, hot, hot" — strong earnings and fiscal stimulus lifting risk-asset valuations while energy prices, elevated bond yields, and AI component cost inflation threaten to extend the higher-for-longer cycle beyond consensus expectations. The Fed has no scheduled meeting or policy announcement in the next two sessions, giving markets space to reprice the Iran peace deal without an immediate policy overlay. However, the Bank of Japan meets on Tuesday, and with yen short positions at a nine-year high, any hawkish BOJ signal carries carry-trade unwind risk that could ripple across global risk assets.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- SECTION 03 — EQUITIES -->
+    <div class="section">
+      <div class="section-label">Section 03</div>
+      <div class="section-title">Equities</div>
+      <div class="section-body">
+        <p>All three major US equity benchmarks posted gains in the prior session: SPY +0.54% to $741.75, QQQ +0.59% to $721.34, and small-cap IWM leading with +0.87% to $292.95 — the outperformance reflecting improved small-cap confidence on the US-Iran deal's implied boost to domestic business activity. Intel (INTC) was the standout large-cap mover, surging +6.5% to $124.57 on heavy volume of 148 million shares, potentially signalling renewed confidence in legacy semiconductor demand. CPOP led the losers, collapsing -81.4% on massive volume (86M shares); Sleep Number (SNBR) fell -40.9% as rate-sensitive consumer discretionary remains structurally challenged. The 3× leveraged semiconductor bear ETF (SOXS) was the second-most-active name, falling -5.2%, confirming a relief rotation back into tech hardware.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- SECTION 04 — VOLATILITY -->
+    <div class="section">
+      <div class="section-label">Section 04</div>
+      <div class="section-title">Volatility</div>
+      <div class="section-body">
+        <p>The CBOE VIX settled at 17.68 on Friday, declining nearly 10% on the session as the US-Iran peace deal reduced immediate tail-risk concerns. The reading sits in neutral territory — below the &gt;20 distress threshold but well above the &lt;15 complacency zone, consistent with a market still pricing residual macro uncertainty. Notably, VIX traded as high as 19.85 intraday before retreating, leaving a significant upper wick that warrants attention if equities stall at the open. The IV30 on the VIX itself stands at 77.97, substantially elevated, indicating that options markets are pricing continued uncertainty in forward volatility levels despite the near-term surface calm.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- SECTION 05 — FIXED INCOME -->
+    <div class="section">
+      <div class="section-label">Section 05</div>
+      <div class="section-title">Fixed Income</div>
+      <div class="section-body">
+        <p>The 10-year Treasury yield eased to 4.45% from 4.55% — a 10-basis-point decline — while the 2-year fell to 4.05% from 4.13%, producing a 2Y–10Y spread of +40 basis points. The yield curve is positively sloped (normal) and modestly steepening, as the long end continues to absorb an inflation risk premium while the short end eases on mixed rate-path expectations. The spread is historically narrow but no longer inverted, removing one of the key recession-signal flags that had characterised the prior macro backdrop. Whether the steepening dynamic can hold will depend on the trajectory of incoming inflation data and any shift in Fed forward guidance.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- SECTION 06 — CURRENCIES -->
+    <div class="section">
+      <div class="section-label">Section 06</div>
+      <div class="section-title">Currencies</div>
+      <div class="section-body">
+        <p>EUR/USD trades at 1.1614, with the euro holding near recent highs as dollar demand softens from its rate-hike-premium peak. USD/JPY at 160.08 sits uncomfortably close to levels that previously triggered Japanese Ministry of Finance intervention; speculative short-yen positions have reached a nine-year high according to CoinDesk, creating a material squeeze risk if the Bank of Japan signals more aggressive policy normalisation at Tuesday's meeting. An unwind of yen-funded carry trades would send shockwaves across risk assets — from equities to crypto — making the BOJ decision the single most actionable currency catalyst on this week's calendar.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- SECTION 07 — COMMODITIES -->
+    <div class="section">
+      <div class="section-label">Section 07</div>
+      <div class="section-title">Commodities</div>
+      <div class="section-body">
+        <p>Gold spot trades at $4,312.87/oz, holding near all-time highs supported by persistent de-dollarisation flows, central bank accumulation, and a safe-haven bid that has endured despite the Iran peace breakthrough — a sign that broader macro uncertainty remains elevated. WTI crude oil stands at $95.00/barrel (most recent data: June 8); the Strait of Hormuz reopening should ease the geopolitical supply risk premium that built in preceding weeks, though OPEC+ production discipline and residual inflationary dynamics provide a structural floor under prices. ConocoPhillips (COP) led energy outperformers on the peace deal, gaining +3.46% on strong volume. Gold miners faced headwinds earlier in the week as rising Treasury yields compressed the relative appeal of the non-yielding metal.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- SECTION 08 — DIGITAL ASSETS -->
+    <div class="section">
+      <div class="watch-pill">&#x26A1; WATCH</div>
+      <div class="section-label">Section 08</div>
+      <div class="section-title">Digital Assets</div>
+      <div class="section-body">
+        <p>Bitcoin is trading near $66,000 — a two-week high — after Trump's US-Iran peace announcement catalysed a risk-on rally that liquidated approximately $246 million in short positions and expanded total crypto market cap by ~$60 billion (+1.56%) to approximately $2.24 trillion. The geopolitical de-escalation is the dominant session narrative, amplified by Standard Chartered's high-conviction call that current levels represent a cycle low for the broader market. Ethereum exchange balances hover near multi-year lows — a supply squeeze setup — though spot ETH ETFs saw ~$216 million in late-May outflows as the SpaceX (SPCX) IPO competes for risk-allocation bandwidth. XRP faces a broken technical support structure with exposed liquidity below.</p>
+        <p>The primary regulatory headline is the US CLARITY Act, which the White House is actively pushing to clear Congress before the July 4 recess — a decisive legislative deadline for US crypto market structure. The CFTC simultaneously filed suit against Kalshi (a regulated prediction markets platform), adding a new enforcement flashpoint in the derivatives space. In a legacy-case conclusion, FTX founder Sam Bankman-Fried lost his appeal of a 25-year sentence. On the institutional side: Citi announced tokenisation of pre-IPO equity, Digital Asset raised $355M, and Blockworks acquired Messari — signals of deepening TradFi integration. Overall sentiment: <strong>Bullish</strong>.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- SECTION 09 — EARNINGS RADAR -->
+    <div class="section">
+      <div class="section-label">Section 09</div>
+      <div class="section-title">Earnings Radar</div>
+      <div class="section-body">
+        <p>Key corporate reports due in the next five trading days (June 15–22, 2026; June 19 Juneteenth holiday excluded):</p>
+        <table class="earnings-table">
+          <thead>
+            <tr>
+              <th>Company</th>
+              <th>Date</th>
+              <th>EPS Estimate</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Dave &amp; Buster's Entertainment (PLAY)</td>
+              <td>Mon Jun 15 · Post-Mkt</td>
+              <td>$0.37</td>
+            </tr>
+            <tr>
+              <td>Jabil Inc. (JBL)</td>
+              <td>Wed Jun 17 · Pre-Mkt</td>
+              <td>$2.92</td>
+            </tr>
+            <tr>
+              <td>CarMax (KMX)</td>
+              <td>Wed Jun 17 · Pre-Mkt</td>
+              <td>$0.94</td>
+            </tr>
+            <tr>
+              <td>Accenture (ACN)</td>
+              <td>Thu Jun 18 · Pre-Mkt</td>
+              <td>$3.70</td>
+            </tr>
+            <tr>
+              <td>Kroger (KR)</td>
+              <td>Thu Jun 18 · Pre-Mkt</td>
+              <td>$1.58</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="earnings-note">Accenture (ACN) is the marquee name: as a global IT services bellwether, its guidance on enterprise AI adoption and discretionary consulting demand will be closely watched in the context of ongoing AI capex ROI scrutiny. Jabil (JBL) provides a read on electronics manufacturing and supply chain health. CarMax (KMX) offers consumer credit and used-auto-demand signals in an elevated-rate environment. Dave &amp; Buster's (PLAY) opens the week's earnings with a read on leisure consumer discretionary spending.</p>
+      </div>
+    </div>
+
+  </div><!-- end .container -->
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <span class="footer-brand">Market Quick Take · Monday, 15 June 2026</span>
+      <span class="footer-disclaimer">For informational purposes only. Not investment advice.</span>
+    </div>
+  </footer>
+
+</body>
+</html>
