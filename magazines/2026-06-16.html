@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Market Quick Take — Tuesday, 16 June 2026</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #ffffff;
+      color: #1a2332;
+      border-top: 3px solid #003366;
+    }
+
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* MASTHEAD */
+    .masthead {
+      padding: 32px 0 20px;
+      border-bottom: 1px solid #e5e7eb;
+    }
+    .masthead-title {
+      font-size: 42px;
+      font-weight: 700;
+      color: #003366;
+      line-height: 1;
+      margin-bottom: 8px;
+      letter-spacing: -0.5px;
+    }
+    .masthead-date {
+      font-size: 13px;
+      font-weight: 400;
+      color: #6b7280;
+    }
+
+    /* SNAPSHOT BAR */
+    .snapshot-bar {
+      background-color: #f1f5f9;
+      padding: 12px 0;
+    }
+    .snapshot-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+      align-items: center;
+      font-size: 12px;
+      font-weight: 500;
+      color: #1a2332;
+      text-transform: uppercase;
+    }
+    .chip { white-space: nowrap; }
+    .chip-sep { color: #9ca3af; padding: 0 4px; }
+    .pos { color: #16a34a; }
+    .neg { color: #dc2626; }
+    .na  { color: #6b7280; }
+
+    /* EDITOR'S BRIEF */
+    .editors-brief {
+      font-size: 18px;
+      font-weight: 400;
+      font-style: italic;
+      color: #374151;
+      max-width: 760px;
+      margin: 28px 0;
+      border-left: 3px solid #003366;
+      padding-left: 16px;
+      line-height: 1.6;
+    }
+
+    /* SECTIONS */
+    .section-divider {
+      border: none;
+      border-top: 1px solid #e5e7eb;
+      margin: 28px 0;
+    }
+    .watch-pill {
+      display: inline-block;
+      color: #b45309;
+      background-color: #fef3c7;
+      border-radius: 4px;
+      font-size: 11px;
+      font-weight: 500;
+      padding: 2px 8px;
+      margin-bottom: 8px;
+    }
+    .section-label {
+      font-size: 11px;
+      font-weight: 500;
+      color: #003366;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      margin-bottom: 6px;
+    }
+    .section-title {
+      font-size: 24px;
+      font-weight: 700;
+      color: #1a2332;
+      margin-bottom: 10px;
+    }
+    .section-body {
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 1.8;
+      color: #374151;
+    }
+    .section-body p + p {
+      margin-top: 12px;
+    }
+    .section-body ul {
+      padding-left: 8px;
+      list-style-type: disc;
+      list-style-position: inside;
+    }
+    .section-body ul li {
+      margin-bottom: 8px;
+    }
+
+    /* EARNINGS TABLE */
+    .earnings-table {
+      width: 100%;
+      border-collapse: collapse;
+      border: 1px solid #e5e7eb;
+      font-size: 13px;
+      font-weight: 400;
+      margin-top: 14px;
+    }
+    .earnings-table th {
+      background-color: #f9fafb;
+      padding: 10px 14px;
+      text-align: left;
+      font-weight: 600;
+      color: #1a2332;
+      border-bottom: 1px solid #e5e7eb;
+    }
+    .earnings-table td {
+      padding: 10px 14px;
+      color: #374151;
+      border-bottom: 1px solid #e5e7eb;
+    }
+    .earnings-table tr:last-child td { border-bottom: none; }
+    .earnings-note {
+      margin-top: 12px;
+      font-size: 13px;
+      color: #6b7280;
+      line-height: 1.6;
+    }
+
+    /* FOOTER */
+    .footer {
+      background-color: #f1f5f9;
+      border-top: 1px solid #e5e7eb;
+      margin-top: 48px;
+      padding: 20px 0;
+    }
+    .footer .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .footer-brand {
+      font-size: 12px;
+      font-weight: 400;
+      color: #6b7280;
+    }
+    .footer-disclaimer {
+      font-size: 12px;
+      font-weight: 400;
+      color: #9ca3af;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- MASTHEAD -->
+  <div class="container">
+    <div class="masthead">
+      <div class="masthead-title">MARKET QUICK TAKE</div>
+      <div class="masthead-date">Tuesday, 16 June 2026</div>
+    </div>
+  </div>
+
+  <!-- SNAPSHOT BAR -->
+  <div class="snapshot-bar">
+    <div class="container">
+      <div class="snapshot-chips">
+        <span class="chip">SPY · $754.83 · <span class="pos">+1.76%</span></span>
+        <span class="chip-sep">|</span>
+        <span class="chip">QQQ · $744.00 · <span class="pos">+3.14%</span></span>
+        <span class="chip-sep">|</span>
+        <span class="chip">IWM · $294.64 · <span class="pos">+0.81%</span></span>
+        <span class="chip-sep">|</span>
+        <span class="chip">VIX · 16.20 · <span class="neg">-9.14%</span></span>
+        <span class="chip-sep">|</span>
+        <span class="chip">US10Y · 4.48% · <span class="na">N/A</span></span>
+        <span class="chip-sep">|</span>
+        <span class="chip">US2Y · 4.09% · <span class="na">N/A</span></span>
+        <span class="chip-sep">|</span>
+        <span class="chip">EUR/USD · 1.1594 · <span class="na">N/A</span></span>
+        <span class="chip-sep">|</span>
+        <span class="chip">GOLD · $4,327.62 · <span class="na">N/A</span></span>
+        <span class="chip-sep">|</span>
+        <span class="chip">WTI · <span class="na">N/A</span></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <div class="container">
+
+    <!-- EDITOR'S BRIEF -->
+    <p class="editors-brief">Equity markets extended the geopolitical relief rally on Monday, with QQQ surging 3.14% and the S&amp;P 500 gaining 1.76% as investors re-engaged with risk in the wake of the Israel-Iran ceasefire and looked through hawkish Federal Reserve repricing triggered by May's blowout non-farm payrolls report. Gold held above $4,300 in record territory on structural inflation-hedging demand, while the yen remained pinned near 160 against the dollar — a carry-trade anchor that Japanese authorities continue to monitor for intervention risk.</p>
+
+    <!-- SECTION 01 — MARKET DRIVERS -->
+    <div class="section">
+      <div class="watch-pill">&#x26A1; WATCH</div>
+      <div class="section-label">Section 01</div>
+      <div class="section-title">Market Drivers</div>
+      <div class="section-body">
+        <ul>
+          <li><strong>Risk-On Resurgence Post-Ceasefire:</strong> The Israel-Iran peace agreement removed a key geopolitical risk premium that had weighed on equities and energy markets, unleashing a broad risk-on bid that propelled QQQ up 3.14% and SPY up 1.76% on June 15 — the strongest single-session equity gain in weeks.</li>
+          <li><strong>NFP-Shock Recovery Complete:</strong> Following the June 5 non-farm payrolls blowout that sent QQQ down 4.8% and triggered aggressive rate-hike repricing, markets have staged a full recovery as investors interpret strong economic data as a demand-strength signal rather than evidence of a Fed policy error.</li>
+          <li><strong>"Hot, Hot, Hot" Macro Narrative:</strong> J.P. Morgan's Chief Investment Officer cited rising risk-asset valuations driven by strong corporate earnings and fiscal stimulus, even as energy-led inflation and rising goods prices create a complex backdrop for Federal Reserve policymakers.</li>
+          <li><strong>CPI-Driven Defensive Rotation Unwinding:</strong> The shift toward consumer staples triggered by the May CPI report is reversing as risk appetite returns, with growth and cyclical sectors reclaiming leadership ahead of Q2 2026 earnings season.</li>
+        </ul>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- SECTION 02 — MACRO -->
+    <div class="section">
+      <div class="section-label">Section 02</div>
+      <div class="section-title">Macro</div>
+      <div class="section-body">
+        <p>The Federal Reserve faces a delicate balancing act: May's blowout jobs report triggered rapid repricing toward potential rate hikes rather than cuts, while rising energy prices continue to lift goods and services inflation — confirming the J.P. Morgan CIO's "hot, hot, hot" characterisation of the current environment. Despite the hawkish recalibration, equity markets have recovered strongly, interpreting solid economic data as evidence of demand resilience rather than an imminent policy error. Geopolitical de-escalation via the Israel-Iran ceasefire has provided an additional tailwind, compressing risk premiums across asset classes and sustaining the risk-on bid heading into Q2 earnings season.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- SECTION 03 — EQUITIES -->
+    <div class="section">
+      <div class="section-label">Section 03</div>
+      <div class="section-title">Equities</div>
+      <div class="section-body">
+        <p>SPY added 1.76% to $754.83 and QQQ surged 3.14% to $744.00 on June 15, signalling decisive tech and growth leadership as markets recovered from the NFP-driven June 5 selloff. Small-cap IWM lagged at +0.81% to $294.64, as higher rate expectations weigh disproportionately on smaller companies carrying floating-rate debt. Notable equity-specific momentum: MarketAxess received a BofA Securities upgrade citing electronic trading reacceleration and abating competitive pressure — a positive signal for financial market infrastructure. Itaú Unibanco shares rose following a capital-management move with domestic inflation data in focus. News sentiment from the AV feed showed high-conviction coverage (relevance scores above 0.9) concentrated across financials and rate-sensitive sectors, underscoring elevated earnings focus heading into Q2 season.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- SECTION 04 — VOLATILITY -->
+    <div class="section">
+      <div class="section-label">Section 04</div>
+      <div class="section-title">Volatility</div>
+      <div class="section-body">
+        <p>The CBOE VIX settled at 16.20 on June 15, declining 9.1% on the session as geopolitical risk premiums unwound following the Israel-Iran peace agreement. At 16.20, the index sits in neutral territory — below the &gt;20 distress threshold but above the &lt;15 complacency zone — consistent with a market still pricing residual macro uncertainty despite the renewed risk-on tone. The options market remained notably calm through QQQ's sharp June 5 drop, suggesting professional hedges are well-positioned and the market is not aggressively pricing tail risk at current volatility levels.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- SECTION 05 — FIXED INCOME -->
+    <div class="section">
+      <div class="section-label">Section 05</div>
+      <div class="section-title">Fixed Income</div>
+      <div class="section-body">
+        <p>The 10-year Treasury yield stands at 4.48% and the 2-year at 4.09% (latest available data as of June 12), producing a 10Y–2Y spread of +39 basis points — a positively sloped and modestly steepening curve. The 10-year at 4.48% reflects the repriced Fed path following May's strong jobs print, which shifted market pricing toward potential hikes. The positive curve slope, however modest, signals improving long-run growth expectations relative to near-term policy risk and marks a meaningful departure from the prolonged inversion that characterised the prior macro regime. Whether this steepening dynamic holds will depend on incoming inflation prints and any Fed forward-guidance shift.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- SECTION 06 — CURRENCIES -->
+    <div class="section">
+      <div class="section-label">Section 06</div>
+      <div class="section-title">Currencies</div>
+      <div class="section-body">
+        <p>EUR/USD holds at 1.1594, with the euro maintaining elevated levels supported by improving global risk appetite and market reassessment that the ECB may be closer to the end of its easing cycle than the Fed — a relative policy-divergence narrative that continues to underpin euro strength. USD/JPY is pinned at 160.23, near multi-decade lows for the yen, as the Bank of Japan's accommodative stance sustains a wide yield differential and keeps yen carry trades firmly intact. Japanese authorities are likely monitoring the 160 handle closely for signs requiring intervention, as sustained yen weakness adds import-cost pressure to Japan's domestic inflation picture and risks eroding real purchasing power.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- SECTION 07 — COMMODITIES -->
+    <div class="section">
+      <div class="section-label">Section 07</div>
+      <div class="section-title">Commodities</div>
+      <div class="section-body">
+        <p>Gold trades at $4,327.62/oz, remaining well above $4,000 in record territory, underpinned by persistent inflation-hedging demand, continued central-bank reserve diversification, and a structurally weaker dollar narrative. J.P. Morgan's CIO commentary highlighted rising energy prices trickling through to goods and services costs — a macro backdrop that historically reinforces gold's role as a real-return hedge. WTI crude oil data was unavailable this session due to API rate limits; however, macro commentary from the news feed continues to flag rising energy prices as a key driver of current inflationary dynamics, consistent with the broader "hot" economic environment.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- SECTION 08 — DIGITAL ASSETS -->
+    <div class="section">
+      <div class="watch-pill">&#x26A1; WATCH</div>
+      <div class="section-label">Section 08</div>
+      <div class="section-title">Digital Assets</div>
+      <div class="section-body">
+        <p><strong>Dominant narrative:</strong> Regulatory clarity optimism is fuelling an altcoin-led rally. XRP surged ~10% on speculation that a U.S. crypto "clarity bill" could be signed by July 4, which community commentators describe as both "symbolic and strategic" ahead of midterm elections. XLM (Stellar) jumped 14% on PayFi ecosystem developments, and Ethereum rebounded ~3% approaching the key $2,000 level. Bitcoin hovers near $67,000 but faces headwinds from 13 consecutive sessions of U.S. spot ETF outflows, with LVRG Research warning of a "volatile path" if the US-Iran ceasefire breaks down — underscoring the recovery's geopolitical dependency.</p>
+        <p><strong>Regulatory / macro headlines:</strong> Kraken launched CFTC-supervised perpetual futures contracts for eligible U.S. users — a landmark structural moment for regulated crypto derivatives onshore and a policy milestone for the industry. The U.S. Government Accountability Office (GAO) placed blockchain risks on its High Risk List, subjecting the FDIC to fresh scrutiny over fragmented oversight of crypto exposures at regulated banks. In Europe, Cecabank launched a MiCA-compliant crypto custody service with Renta 4 Banco as its inaugural client. Citi became the first global financial institution to both issue and custody tokenized depositary receipts on a regulated blockchain. On-chain leverage across DeFi has climbed to ~38% — a level last seen during the 2021 cycle — flagging elevated forced-deleveraging risk.</p>
+        <p><strong>Overall sentiment: Bullish</strong> on altcoins (XRP, XLM, ETH) driven by regulatory optimism; <strong>cautious</strong> on BTC near-term given persistent ETF outflows and geopolitical dependency in the recovery thesis.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- SECTION 09 — EARNINGS RADAR -->
+    <div class="section">
+      <div class="section-label">Section 09</div>
+      <div class="section-title">Earnings Radar</div>
+      <div class="section-body">
+        <p>Earnings calendar data was unavailable this session due to Alpha Vantage API rate limits being reached during data collection. The coming weeks represent the early stages of Q2 2026 earnings season; investors should monitor announcements from major financials, technology, and consumer discretionary names for any forward-guidance revisions in the context of the current higher-for-longer rate environment and resilient consumer demand backdrop.</p>
+        <table class="earnings-table">
+          <thead>
+            <tr>
+              <th>Company</th>
+              <th>Date</th>
+              <th>Expected Move</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td colspan="3" style="color: #6b7280; font-style: italic; text-align: center; padding: 16px 14px;">Calendar data unavailable — API rate limit reached</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="earnings-note">Note: Top gainers and losers data was also unavailable this session due to the same API constraint (free-tier 25 requests/day limit). This may be resolved in subsequent sessions.</p>
+      </div>
+    </div>
+
+  </div><!-- /.container -->
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <div class="container">
+      <span class="footer-brand">Market Quick Take · Tuesday, 16 June 2026</span>
+      <span class="footer-disclaimer">For informational purposes only. Not investment advice.</span>
+    </div>
+  </div>
+
+</body>
+</html>
