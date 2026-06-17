@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Market Quick Take — Tuesday, 17 June 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: #ffffff;
+    color: #1a2332;
+  }
+
+  .container {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  /* MASTHEAD */
+  .masthead {
+    border-top: 3px solid #003366;
+    padding: 32px 0 20px;
+    border-bottom: 1px solid #e5e7eb;
+    margin-bottom: 0;
+  }
+  .masthead-title {
+    font-size: 42px;
+    font-weight: 700;
+    color: #003366;
+    letter-spacing: -0.5px;
+    line-height: 1;
+  }
+  .masthead-date {
+    font-size: 13px;
+    font-weight: 400;
+    color: #6b7280;
+    margin-top: 8px;
+  }
+
+  /* SNAPSHOT BAR */
+  .snapshot-bar {
+    background: #f1f5f9;
+    padding: 12px 0;
+    width: 100%;
+  }
+  .snapshot-inner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 0;
+    align-items: center;
+  }
+  .chip {
+    font-size: 12px;
+    font-weight: 500;
+    color: #1a2332;
+    text-transform: uppercase;
+    padding: 0 14px;
+    white-space: nowrap;
+  }
+  .chip:not(:last-child)::after {
+    content: '|';
+    margin-left: 14px;
+    color: #d1d5db;
+  }
+  .chip .pos { color: #16a34a; }
+  .chip .neg { color: #dc2626; }
+  .chip .na  { color: #6b7280; }
+
+  /* EDITOR'S BRIEF */
+  .brief {
+    font-size: 18px;
+    font-weight: 400;
+    font-style: italic;
+    color: #374151;
+    max-width: 760px;
+    margin: 28px 0;
+    border-left: 3px solid #003366;
+    padding-left: 16px;
+    line-height: 1.7;
+  }
+
+  /* SECTIONS */
+  .section { margin-bottom: 0; }
+
+  .section-label {
+    font-size: 11px;
+    font-weight: 500;
+    color: #003366;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 6px;
+  }
+
+  .section-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1a2332;
+    margin-bottom: 10px;
+  }
+
+  .section-body {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.8;
+    color: #374151;
+  }
+
+  .section-body ul {
+    padding-left: 8px;
+    list-style: disc;
+    margin-left: 16px;
+  }
+
+  .section-body ul li {
+    margin-bottom: 6px;
+  }
+
+  .divider {
+    border: none;
+    border-top: 1px solid #e5e7eb;
+    margin: 28px 0;
+  }
+
+  /* WATCH PILL */
+  .watch-pill {
+    display: inline-block;
+    background: #fef3c7;
+    color: #b45309;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 500;
+    padding: 2px 8px;
+    margin-bottom: 8px;
+    letter-spacing: 0.3px;
+  }
+
+  /* EARNINGS TABLE */
+  .earnings-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #e5e7eb;
+    font-size: 13px;
+    font-weight: 400;
+    margin-top: 12px;
+  }
+  .earnings-table th {
+    background: #f1f5f9;
+    color: #1a2332;
+    font-weight: 600;
+    text-align: left;
+    padding: 10px 14px;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  .earnings-table td {
+    padding: 10px 14px;
+    border-bottom: 1px solid #e5e7eb;
+    color: #374151;
+  }
+  .earnings-table tr:last-child td { border-bottom: none; }
+
+  /* FOOTER */
+  .footer {
+    background: #f1f5f9;
+    border-top: 1px solid #e5e7eb;
+    margin-top: 48px;
+    padding: 20px 0;
+  }
+  .footer-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .footer-brand {
+    font-size: 12px;
+    font-weight: 400;
+    color: #6b7280;
+  }
+  .footer-disclaimer {
+    font-size: 12px;
+    font-weight: 400;
+    color: #9ca3af;
+  }
+</style>
+</head>
+<body>
+
+<!-- MASTHEAD -->
+<div class="container">
+  <div class="masthead">
+    <div class="masthead-title">MARKET QUICK TAKE</div>
+    <div class="masthead-date">Tuesday, 17 June 2026</div>
+  </div>
+</div>
+
+<!-- SNAPSHOT BAR -->
+<div class="snapshot-bar">
+  <div class="container">
+    <div class="snapshot-inner">
+      <span class="chip">SPY · <span class="na">N/A</span></span>
+      <span class="chip">QQQ · <span class="na">N/A</span></span>
+      <span class="chip">IWM · <span class="na">N/A</span></span>
+      <span class="chip">VIX · 16.41 · <span class="pos">+1.28%</span></span>
+      <span class="chip">US10Y · <span class="na">N/A</span></span>
+      <span class="chip">US2Y · <span class="na">N/A</span></span>
+      <span class="chip">EUR/USD · <span class="na">N/A</span></span>
+      <span class="chip">GOLD · <span class="na">N/A</span></span>
+      <span class="chip">WTI · <span class="na">N/A</span></span>
+    </div>
+  </div>
+</div>
+
+<!-- EDITOR'S BRIEF -->
+<div class="container">
+  <p class="brief">
+    Markets are in wait-and-see mode ahead of an imminent Federal Reserve rate decision, with traders widely expecting a hold but closely parsing any shift in forward guidance. Bitcoin holds near $65–66k, buoyed by a US–Iran interim peace deal, while BitMine's relentless ETH accumulation — treasury now ~5.62 million ETH — keeps the institutional crypto narrative firmly in play. A dense regulatory week for digital assets sees Binance reportedly set to lose its EU MiCA licence and Congress embedding a CBDC ban until 2030 in housing legislation, layering fresh policy uncertainty onto an already cautious macro backdrop.
+  </p>
+
+  <!-- SECTION 1: MARKET DRIVERS -->
+  <div class="section">
+    <div class="section-label">Section 1</div>
+    <div class="section-title">Market Drivers</div>
+    <div class="section-body">
+      <ul>
+        <li><strong>Fed in the spotlight.</strong> Markets are anchored by the approaching Federal Reserve rate decision. A hold is the consensus expectation, but forward guidance on the "higher-for-longer" posture is the live question — any dovish signal could re-price rate-sensitive assets sharply, while a hawkish tone reinforces dollar strength and pressures commodities.</li>
+        <li><strong>Geopolitical relief.</strong> A US–Iran interim peace deal has provided a modest risk-on impulse, with Bitcoin rebounding near $66k on the headline. Easing Middle East tensions historically correlate with softer energy prices and improved investor risk appetite.</li>
+        <li><strong>Crypto political capital deepens.</strong> Fairshake PAC spent $12 million to help elect pro-crypto Barry Moore in the Alabama Senate GOP primary, capturing ~56% of the vote. With $164 million deployed by April and $160 million in remaining reserves, crypto's political lobbying machine shows no signs of slowing ahead of the November cycle.</li>
+        <li><strong>Institutional ETH demand narrative strengthens.</strong> BitMine added 76,881 ETH (~$136 million) in the week ending June 15, lifting its treasury to approximately 5.62 million ETH, partially funded by a 9.50% Series A preferred stock offering. The scale and cadence of purchases is reviving the "Wall Street ETH trade" playbook among institutional desks.</li>
+      </ul>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- SECTION 2: MACRO -->
+  <div class="section">
+    <div class="watch-pill">⚡ WATCH</div>
+    <div class="section-label">Section 2</div>
+    <div class="section-title">Macro</div>
+    <div class="section-body">
+      <p>The Federal Reserve's rate decision is the dominant near-term catalyst: the CME FedWatch Tool points firmly to a hold, but stronger-than-expected employment data and persistent inflation have meaningfully reduced near-term rate-cut probability. Forward guidance — any adjustment in the statement or Powell's press conference tone — will drive the next directional leg for equities, bonds, and gold.</p>
+      <p style="margin-top: 10px;">The US–Iran interim peace deal provides a secondary macro input, historically associated with softer crude and eased geopolitical risk premiums in energy-importing economies. Dollar strength and elevated Treasury yields remain the structural headwinds for non-yielding assets; gold and Bitcoin have each been navigating this regime in differing ways.</p>
+      <p style="margin-top: 10px;">Separately, M2-adjusted valuations for both BTC and the S&amp;P 500 are flashing cautionary signals according to CoinDesk analysis, suggesting that nominal price stability may be masking real purchasing-power erosion in risk assets — a theme worth tracking as the Fed's balance-sheet trajectory evolves.</p>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- SECTION 3: EQUITIES -->
+  <div class="section">
+    <div class="section-label">Section 3</div>
+    <div class="section-title">Equities</div>
+    <div class="section-body">
+      <p>Equity data is unavailable today due to a market data feed issue. SPY, QQQ, and IWM levels and change figures are not available for this edition. Notable movers from the Top Gainers/Losers feed are also unavailable.</p>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- SECTION 4: VOLATILITY -->
+  <div class="section">
+    <div class="section-label">Section 4</div>
+    <div class="section-title">Volatility</div>
+    <div class="section-body">
+      <p>The CBOE VIX closed Monday at <strong>16.41</strong>, edging up +0.21 points (+1.28%) in early Tuesday trading per 15-minute delayed CBOE data. At this level VIX sits comfortably in complacent territory (sub-20), suggesting options markets are not pricing an imminent volatility shock despite the Fed event risk directly ahead. The session low of 15.77 underscores that any intraday fear faded quickly. A sustained move above 20 — particularly if the Fed's language surprises markets — would re-price hedging demand and warrant reassessment of short-vol positioning.</p>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- SECTION 5: FIXED INCOME -->
+  <div class="section">
+    <div class="section-label">Section 5</div>
+    <div class="section-title">Fixed Income</div>
+    <div class="section-body">
+      <p>Treasury yield data is unavailable today due to a market data feed issue. 10-year and 2-year yield levels and the yield-curve shape (steepening, flattening, or inversion status) cannot be reported for this edition. Context from digital asset news sources notes that Treasury yields "remained elevated," reinforcing the higher-for-longer rate regime into the Fed decision.</p>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- SECTION 6: CURRENCIES -->
+  <div class="section">
+    <div class="section-label">Section 6</div>
+    <div class="section-title">Currencies</div>
+    <div class="section-body">
+      <p>FX data is unavailable today due to a market data feed issue. EUR/USD and USD/JPY spot levels cannot be reported. Qualitative context from market commentary indicates the US Dollar Index held near recent highs ahead of the Fed, making dollar-denominated commodities more expensive for foreign buyers and contributing to the mild headwinds in gold and risk assets.</p>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- SECTION 7: COMMODITIES -->
+  <div class="section">
+    <div class="section-label">Section 7</div>
+    <div class="section-title">Commodities</div>
+    <div class="section-body">
+      <p>Gold and WTI crude spot prices are unavailable today due to a market data feed issue. Qualitative context from market reporting indicates gold was trading with a mild negative bias in early European hours Tuesday, with the Fed's policy stance and dollar strength acting as the primary headwinds for the non-yielding metal. WTI direction remains tied to Middle East geopolitics; the US–Iran interim peace deal introduced modest downside pressure on crude risk premia, though specific levels cannot be confirmed.</p>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- SECTION 8: DIGITAL ASSETS -->
+  <div class="section">
+    <div class="watch-pill">⚡ WATCH</div>
+    <div class="section-label">Section 8</div>
+    <div class="section-title">Digital Assets</div>
+    <div class="section-body">
+      <p><strong>Dominant narrative:</strong> Bitcoin holds near $65–66k, recovering post-US-Iran peace deal, while the Fed meeting suppresses broader risk appetite. On-chain data shows accumulation wallets gathered approximately 125,000 BTC in early June, though the Sharpe ratio has dropped to -20 — signalling recent return-to-risk metrics are strained even as smart-money accumulation continues. Bitcoin and S&amp;P 500 look significantly more stretched when M2-adjusted, flagging potential real purchasing-power concerns for risk assets at current levels.</p>
+
+      <p style="margin-top: 10px;"><strong>Notable token moves:</strong></p>
+      <ul>
+        <li><strong>XRP (~$1.28–1.30):</strong> Hit its near-term bullish target but faces a potential sell-off from resistance just below $1.30. XRP is attracting additional narrative: Standard Chartered's integration of BRICS Pay and Ripple's network into the same institutional infrastructure is being cited as a structural cross-border payments catalyst.</li>
+        <li><strong>ETH:</strong> BitMine's $136M purchase (76,881 ETH) in the week to June 15 lifts its treasury to ~5.62M ETH. The corporate ETH treasury trade is gaining attention as the firm pairs accumulation with a 9.50% preferred equity raise, though the high financing cost raises questions about carry sustainability.</li>
+        <li><strong>WLD (Worldcoin):</strong> Surging on renewed rotation into AI-linked cryptocurrencies, with OpenAI speculation and rising social dominance cited as supporting catalysts.</li>
+        <li><strong>AERO:</strong> Rallied ~22% with ~$46.25M in derivatives volume following Dromos Labs' announcement of "Predictive Allocation" — a July 2026 upgrade replacing Aerodrome's weekly gauge voting with a forecasting-based liquidity mechanism that could reward AI agents for accurate demand prediction.</li>
+        <li><strong>LAB:</strong> Up ~57% over seven days and ~40% in 24 hours (near $13.91) as whale wallets added ~$540k in long positions within a single hour, with long-to-short ratio reaching 260.67%.</li>
+        <li><strong>HYPE:</strong> Spot HYPE ETFs posted net inflows every trading day since their May 12 debut, reaching ~$185.68M AUM by June 5. The Ventuals platform (Hyperliquid-based) announced a shutdown and settlement of all HIP-3 markets, a live test of venue-concentration risk for ETF investors.</li>
+      </ul>
+
+      <p style="margin-top: 10px;"><strong>Regulatory &amp; macro headlines:</strong></p>
+      <ul>
+        <li><strong>Binance set to lose EU MiCA licence bid (Reuters):</strong> Sources indicate Binance is set to lose both its EU licence application and permission to offer services in the bloc. This is a major setback for the world's largest exchange and could accelerate migration of EU crypto trading to licensed competitors.</li>
+        <li><strong>CBDC ban until 2030 embedded in US housing bill:</strong> Congress reached a deal on the 21st Century Road to Housing Act that includes a provision banning a central bank digital currency until 2030 — a significant legislative signal about US government appetite for state-issued digital money in the near term.</li>
+        <li><strong>BitGo offers MiCA compliance lifeline:</strong> BaFin-regulated BitGo is marketing its Crypto-as-a-Service platform to eligible European crypto firms as the MiCA licence deadline looms, positioning itself as an infrastructure bridge for firms that cannot or will not pursue their own licences.</li>
+        <li><strong>Illinois crypto transaction tax under fire:</strong> The Crypto Council for Innovation is urging Illinois Governor Pritzker to veto Article 3 of SB 3019 (the Digital Asset Privilege Tax Act), which would impose a 0.2% tax on digital asset exchanges, transfers, and custody activities.</li>
+        <li><strong>Fairshake PAC wins Alabama Senate seat:</strong> The crypto super PAC spent ~$12M on Barry Moore's GOP primary campaign; Moore captured ~56% of the vote. Fairshake now holds $160M+ in reserves to continue backing pro-crypto candidates.</li>
+      </ul>
+
+      <p style="margin-top: 10px;"><strong>Overall sentiment: Cautiously Bullish / Neutral.</strong> BTC stability near $65–66k and deep ETH corporate accumulation provide constructive underpinning. However, the regulatory pipeline is dense and mixed: a Binance EU setback creates competitive dislocation, the CBDC ban signals US digital currency resistance, and M2-adjusted valuations raise medium-term caution. Selective altcoin momentum (AI tokens, DEX governance innovations) is active, but the Fed meeting remains the near-term swing factor for all risk assets including crypto.</p>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- SECTION 9: EARNINGS CALENDAR -->
+  <div class="section">
+    <div class="section-label">Section 9</div>
+    <div class="section-title">Earnings Radar</div>
+    <div class="section-body">
+      <p>Earnings calendar data is unavailable today due to a market data feed issue. The table below reflects the absence of data for the next five trading days (June 17–23, 2026).</p>
+      <table class="earnings-table">
+        <thead>
+          <tr>
+            <th>Company</th>
+            <th>Date</th>
+            <th>Expected Move</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td colspan="3" style="color:#6b7280; text-align:center; padding: 16px 14px;">Earnings calendar data unavailable — market data feed issue</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</div><!-- /.container -->
+
+<!-- FOOTER -->
+<div class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <span class="footer-brand">Market Quick Take · Tuesday, 17 June 2026</span>
+      <span class="footer-disclaimer">For informational purposes only. Not investment advice.</span>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
