@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Market Quick Take — Friday, 19 June 2026</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #ffffff;
+      color: #1a2332;
+    }
+
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* ── MASTHEAD ── */
+    .masthead {
+      border-top: 3px solid #003366;
+      padding: 32px 0 20px;
+    }
+    .masthead-brand {
+      font-weight: 700;
+      font-size: 42px;
+      color: #003366;
+      letter-spacing: -1px;
+      line-height: 1;
+    }
+    .masthead-date {
+      font-weight: 400;
+      font-size: 13px;
+      color: #6b7280;
+      margin-top: 8px;
+    }
+    .masthead-rule {
+      border: none;
+      border-bottom: 1px solid #e5e7eb;
+      margin-top: 20px;
+    }
+
+    /* ── SNAPSHOT BAR ── */
+    .snapshot-bar {
+      background: #f1f5f9;
+      padding: 12px 0;
+      width: 100%;
+    }
+    .snapshot-inner {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 24px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      row-gap: 6px;
+    }
+    .chip {
+      font-weight: 500;
+      font-size: 12px;
+      text-transform: uppercase;
+      color: #1a2332;
+      white-space: nowrap;
+    }
+    .chip-sep {
+      color: #9ca3af;
+      margin: 0 10px;
+      font-size: 12px;
+      font-weight: 400;
+    }
+    .chip-lbl { color: #6b7280; }
+    .chip-val { color: #1a2332; }
+    .pos { color: #16a34a; }
+    .neg { color: #dc2626; }
+
+    /* ── EDITOR'S BRIEF ── */
+    .brief {
+      font-weight: 400;
+      font-style: italic;
+      font-size: 18px;
+      color: #374151;
+      max-width: 760px;
+      line-height: 1.7;
+      margin: 28px 0;
+      border-left: 3px solid #003366;
+      padding-left: 16px;
+    }
+
+    /* ── SECTIONS ── */
+    .section-divider {
+      border: none;
+      border-bottom: 1px solid #e5e7eb;
+      margin: 28px 0;
+    }
+    .section-label {
+      font-weight: 500;
+      font-size: 11px;
+      color: #003366;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      margin-bottom: 6px;
+    }
+    .watch-pill {
+      display: inline-block;
+      color: #b45309;
+      background: #fef3c7;
+      border-radius: 4px;
+      font-weight: 500;
+      font-size: 11px;
+      padding: 2px 8px;
+      margin-bottom: 8px;
+    }
+    .section-title {
+      font-weight: 700;
+      font-size: 24px;
+      color: #1a2332;
+      margin-bottom: 10px;
+    }
+    .section-body {
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 1.8;
+      color: #374151;
+    }
+    .section-body p + p { margin-top: 10px; }
+    .section-body ul {
+      padding-left: 20px;
+    }
+    .section-body ul li {
+      margin-bottom: 8px;
+    }
+
+    /* ── EARNINGS TABLE ── */
+    .earnings-table {
+      width: 100%;
+      border-collapse: collapse;
+      border: 1px solid #e5e7eb;
+      font-size: 13px;
+      margin-top: 14px;
+    }
+    .earnings-table th {
+      background: #f1f5f9;
+      padding: 9px 14px;
+      text-align: left;
+      font-weight: 600;
+      color: #1a2332;
+      border-bottom: 1px solid #e5e7eb;
+    }
+    .earnings-table td {
+      padding: 9px 14px;
+      border-bottom: 1px solid #e5e7eb;
+      color: #374151;
+      vertical-align: top;
+    }
+    .earnings-table tr:last-child td { border-bottom: none; }
+    .earnings-table tr:nth-child(even) td { background: #fafafa; }
+
+    /* ── FOOTER ── */
+    .footer {
+      background: #f1f5f9;
+      border-top: 1px solid #e5e7eb;
+      margin-top: 48px;
+      padding: 20px 0;
+    }
+    .footer-inner {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .footer-brand { color: #6b7280; font-size: 12px; }
+    .footer-disc  { color: #9ca3af; font-size: 12px; }
+  </style>
+</head>
+<body>
+
+  <!-- ══ MASTHEAD ══ -->
+  <div class="container">
+    <div class="masthead">
+      <div class="masthead-brand">MARKET QUICK TAKE</div>
+      <div class="masthead-date">Friday, 19 June 2026</div>
+      <hr class="masthead-rule">
+    </div>
+  </div>
+
+  <!-- ══ SNAPSHOT BAR ══ -->
+  <div class="snapshot-bar">
+    <div class="snapshot-inner">
+      <span class="chip"><span class="chip-lbl">SPY</span> · <span class="chip-val">$746.74</span> · <span class="pos">+1.04%</span></span>
+      <span class="chip-sep">|</span>
+      <span class="chip"><span class="chip-lbl">QQQ</span> · <span class="chip-val">$740.62</span> · <span class="pos">+2.51%</span></span>
+      <span class="chip-sep">|</span>
+      <span class="chip"><span class="chip-lbl">IWM</span> · <span class="chip-val">$295.59</span> · <span class="pos">+1.97%</span></span>
+      <span class="chip-sep">|</span>
+      <span class="chip"><span class="chip-lbl">VIX</span> · <span class="chip-val">16.40</span> · <span class="neg">−12.44%</span></span>
+      <span class="chip-sep">|</span>
+      <span class="chip"><span class="chip-lbl">US10Y</span> · <span class="chip-val">4.49%</span> · <span class="pos">+6bps</span></span>
+      <span class="chip-sep">|</span>
+      <span class="chip"><span class="chip-lbl">US2Y</span> · <span class="chip-val">4.20%</span> · <span class="pos">+15bps</span></span>
+      <span class="chip-sep">|</span>
+      <span class="chip"><span class="chip-lbl">EUR/USD</span> · <span class="chip-val">1.1452</span></span>
+      <span class="chip-sep">|</span>
+      <span class="chip"><span class="chip-lbl">GOLD</span> · <span class="chip-val">N/A</span></span>
+      <span class="chip-sep">|</span>
+      <span class="chip"><span class="chip-lbl">WTI</span> · <span class="chip-val">$84.65</span> · <span class="neg">−4.49%</span></span>
+    </div>
+  </div>
+
+  <!-- ══ MAIN CONTENT ══ -->
+  <div class="container">
+
+    <!-- EDITOR'S BRIEF -->
+    <p class="brief">US equities stage a broad-based recovery on Friday — the Nasdaq-100 surging 2.5% — as markets recalibrate after Federal Reserve Chair Kevin Warsh's hawkish hold, whose updated dot plot signalled a potential year-end rate hike. The rebound coexists with a yen hovering near historic lows despite the Bank of Japan's landmark rate increase, while crude oil slides on diplomatic progress in US-Iran negotiations and Bitcoin breaks below $62,400 on institutional ETF outflows and Fed-driven risk aversion.</p>
+
+    <!-- ── SECTION 1: MARKET DRIVERS ── -->
+    <div class="section-label">01 — MARKET DRIVERS</div>
+    <h2 class="section-title">What's Moving Markets Today</h2>
+    <div class="section-body">
+      <ul>
+        <li><strong>Fed hawkish hold under Warsh:</strong> The FOMC kept rates steady at its June 18 meeting but revised the dot plot to project a potential additional hike by year-end — catching markets off-guard, spiking the 2-year yield 15bps, and triggering a sharp initial selloff in rate-sensitive and dividend-paying equities (PEP, HSY, SHOP all fell 3–5%).</li>
+        <li><strong>Friday recovery led by Nasdaq-100:</strong> Markets are rebounding broadly after Wednesday-Thursday's FOMC shock; the Nasdaq-100 (+2.51%) is outperforming, consistent with investors recalibrating growth-stock valuations at higher discount rates rather than capitulating from risk assets entirely.</li>
+        <li><strong>US-Iran diplomatic breakthrough:</strong> A peace agreement between Washington and Tehran is compressing the geopolitical risk premium in energy and defense markets — RTX fell 3.47% Thursday as conflict-driven demand for defense contractors faded, and crude oil has been trending meaningfully lower.</li>
+        <li><strong>Bank of Japan hikes to 3-decade high:</strong> The BOJ raised its benchmark rate to levels unseen since the 1990s, boosting Japanese financial stocks (MUFG +3.13%) but providing only a muted lift to the yen as carry-trade dynamics and the persistent Fed-BOJ rate differential continue to dominate FX flows.</li>
+      </ul>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- ── SECTION 2: MACRO ── -->
+    <div class="section-label">02 — MACRO</div>
+    <span class="watch-pill">⚡ WATCH</span>
+    <h2 class="section-title">Rates, Fed Posture &amp; Geopolitics</h2>
+    <div class="section-body">
+      <p>Federal Reserve Chair Kevin Warsh held the federal funds rate at the June 18 FOMC meeting but delivered a hawkish surprise via the updated Summary of Economic Projections: the dot plot now signals at least one additional rate hike by year-end, triggering an outsized repricing of the 2-year Treasury yield (+15bps to 4.20%) and renewed pressure on duration-sensitive assets. Multiple news articles from the AV sentiment feed scored relevance of 1.0 against monetary-policy topics, underscoring the event's market-wide significance.</p>
+      <p>Simultaneously, the Bank of Japan raised its policy rate to a three-decade high — yet USD/JPY remains elevated near ¥161, as the persistent Fed-BOJ differential and entrenched carry trades continue to overwhelm the policy signal. Advancing US-Iran negotiations represent a meaningful geopolitical de-escalation that markets are beginning to price as a reduction in energy and defense risk premiums, reinforcing the decline in WTI crude and weighing on RTX and peers.</p>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- ── SECTION 3: EQUITIES ── -->
+    <div class="section-label">03 — EQUITIES</div>
+    <h2 class="section-title">US Equity Markets</h2>
+    <div class="section-body">
+      <p>All three major US benchmarks are higher Friday: <strong>SPY $746.74 (+1.04%)</strong>, <strong>QQQ $740.62 (+2.51%)</strong>, and <strong>IWM $295.59 (+1.97%)</strong>. The Nasdaq-100's clear outperformance points to a rotation back into large-cap technology and growth following Wednesday-Thursday's hawkish-shock compression; small-caps in IWM also participate broadly, suggesting the recovery extends beyond mega-caps and reflects genuine risk appetite rather than mere short-covering.</p>
+      <p>Among notable movers, <strong>Sleep Number (SNBR) fell −46.87%</strong> Friday, registering as the session's most significant single-stock decline and likely attributable to a severe earnings or guidance miss. On Thursday, defense name <strong>RTX declined −3.47%</strong> on reduced geopolitical risk premiums following the US-Iran agreement, while <strong>IBM fell −3.19%</strong> and <strong>Shopify dropped −4.70%</strong> as the hawkish Fed dot-plot weighed on capital-intensive and high-multiple technology names.</p>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- ── SECTION 4: VOLATILITY ── -->
+    <div class="section-label">04 — VOLATILITY</div>
+    <h2 class="section-title">VIX Fear Gauge</h2>
+    <div class="section-body">
+      <p><strong>VIX: 16.40 (−12.44% from prior session; prior close ~18.44).</strong> The fear index sits comfortably below the 20 threshold that historically signals elevated uncertainty, having retreated sharply from yesterday's post-FOMC spike. The rapid normalization of implied volatility is consistent with a market that is interpreting the Fed's hawkish signal as a contingent tightening path rather than an imminent hike, and with options dealers unwinding the event-day hedges they had accumulated ahead of the June 18 decision. At 16.40, the VIX signals a complacent-to-neutral tone — not a contrarian warning in either direction.</p>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- ── SECTION 5: FIXED INCOME ── -->
+    <div class="section-label">05 — FIXED INCOME</div>
+    <h2 class="section-title">Treasuries &amp; Yield Curve</h2>
+    <div class="section-body">
+      <p>The <strong>10-year Treasury yield stands at 4.49%</strong> (as of June 17, +6bps from prior session), while the <strong>2-year yield surged to 4.20%</strong> (+15bps) — an asymmetric move that directly reflects the short-end's sensitivity to near-term Fed rate expectations following the hawkish dot-plot update. The disproportionate rise in the 2-year is a clean signal that the market is repricing the probability of a year-end hike, not the longer-run neutral rate.</p>
+      <p>The <strong>2s/10s spread holds at +29 basis points</strong>, maintaining a normally-sloped curve that offers no immediate recession signal. However, the short end's sharper reaction represents modest flattening pressure; a sustained move toward inversion from this level would require either further hawkish Fed rhetoric or a deterioration in the growth outlook. For now, the curve's shape is consistent with a soft-landing scenario in which the Fed retains the option to hike once more without triggering a credit or growth shock.</p>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- ── SECTION 6: CURRENCIES ── -->
+    <div class="section-label">06 — CURRENCIES</div>
+    <h2 class="section-title">FX Markets</h2>
+    <div class="section-body">
+      <p><strong>EUR/USD: 1.1452</strong> — the euro holds near multi-month highs against the dollar, supported by a relatively stable ECB rate path and positive European risk sentiment, even as the Fed's hawkish shift places modest upward pressure on the greenback globally. The pair's resilience above 1.14 suggests the euro zone's rate trajectory is not materially diverging from the US at this stage.</p>
+      <p><strong>USD/JPY: 161.25</strong> — the yen remains near historic lows despite the Bank of Japan's landmark rate hike, underscoring the dominance of the Fed-BOJ rate differential (approximately 390bps) and the persistence of yen-funded carry trades. A sustained USD/JPY above 160 historically invites verbal guidance or outright intervention from Japanese authorities; traders are watching the 162–163 level as potential action thresholds. The tension between BOJ rate normalisation and the entrenched carry dynamic makes USD/JPY one of the most event-sensitive pairs in the current macro environment.</p>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- ── SECTION 7: COMMODITIES ── -->
+    <div class="section-label">07 — COMMODITIES</div>
+    <h2 class="section-title">Oil &amp; Precious Metals</h2>
+    <div class="section-body">
+      <p><strong>WTI crude: $84.65</strong> (most recent Alpha Vantage reading, 2026-06-15) — the declining trend from $91.58 on June 11 to $84.65 by June 15 reflects advancing US-Iran diplomatic negotiations that, if concluded, could restore meaningful Iranian crude exports to global markets. A CoinDesk market report published this morning cites WTI above $75.50, suggesting the sell-off may have accelerated materially during this week's intra-week sessions; the AV daily series will reflect the full move on the next data update.</p>
+      <p><strong>Gold: N/A</strong> — spot gold data was unavailable from the Alpha Vantage free-tier endpoints used in this edition (GOLD_SILVER_SPOT returned an API error). In the absence of spot data, it is worth noting that gold has historically benefitted from safe-haven demand around FOMC uncertainty events while facing headwinds from a firmer dollar; the net direction will depend on whether rate-hike fears or geopolitical de-escalation narratives dominate.</p>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- ── SECTION 8: DIGITAL ASSETS ── -->
+    <div class="section-label">08 — DIGITAL ASSETS</div>
+    <span class="watch-pill">⚡ WATCH</span>
+    <h2 class="section-title">Crypto &amp; Blockchain</h2>
+    <div class="section-body">
+      <p><strong>Bitcoin (BTC) has fallen below $64,000, touching $62,400 Friday</strong> — a weekly loss driven by the Federal Reserve's hawkish hold, residual uncertainty around US-Iran negotiations, and institutional caution evidenced by ETF outflows. Downside positioning has surged: put options with $52,000 and $55,000 strikes attracted heavy volume for late-July expiry, signalling meaningful bearish conviction among sophisticated derivatives market participants. A <strong>$2.1 billion crypto options expiry</strong> (~$1.9B Bitcoin + ~$200M Ethereum) is settling today, adding short-term price pressure.</p>
+      <p>On the regulatory front, the <strong>Federal Reserve proposed customer identification (KYC/AML) rules for stablecoin issuers</strong> — the most significant US regulatory stablecoin development in months, potentially extending bank-like compliance obligations to non-bank stablecoin operators. In other headlines, <strong>XRP</strong> is attracting attention via ISO 20022 SWIFT interoperability developments, while <strong>AllUnity</strong> launched a Swedish krona-backed stablecoin (SEKAU) regulated under the EU's MiCA framework, reflecting continued expansion of the regulated stablecoin ecosystem in Europe. <strong>Overall crypto sentiment: Bearish.</strong></p>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- ── SECTION 9: EARNINGS CALENDAR ── -->
+    <div class="section-label">09 — EARNINGS CALENDAR</div>
+    <h2 class="section-title">Earnings Radar — Next 5 Trading Days</h2>
+    <div class="section-body">
+      <p>Key reports due June 19–25, ranked by market cap significance:</p>
+      <table class="earnings-table">
+        <thead>
+          <tr>
+            <th>Company</th>
+            <th>Date</th>
+            <th>Expected Move</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Micron Technology (MU)</strong><br><span style="color:#6b7280;">EPS est. $19.40 · post-market</span></td>
+            <td>Jun 24</td>
+            <td>±10–12% · Semiconductor cycle bellwether; memory demand and AI DRAM outlook closely watched</td>
+          </tr>
+          <tr>
+            <td><strong>FedEx Corporation (FDX)</strong><br><span style="color:#6b7280;">EPS est. $5.84 · post-market</span></td>
+            <td>Jun 23</td>
+            <td>±6–8% · Logistics demand barometer; cost-reduction progress vs. volume softness in focus</td>
+          </tr>
+          <tr>
+            <td><strong>Carnival Corporation (CCL)</strong><br><span style="color:#6b7280;">EPS est. $0.34 · pre-market</span></td>
+            <td>Jun 23</td>
+            <td>±7–10% · Cruise booking trends and consumer discretionary spending outlook</td>
+          </tr>
+          <tr>
+            <td><strong>Paychex (PAYX)</strong><br><span style="color:#6b7280;">EPS est. $1.32 · pre-market</span></td>
+            <td>Jun 24</td>
+            <td>±3–5% · Payroll processing trends and SMB employment health; read-through for NFP</td>
+          </tr>
+          <tr>
+            <td><strong>Darden Restaurants (DRI)</strong><br><span style="color:#6b7280;">EPS est. $3.63 · pre-market</span></td>
+            <td>Jun 25</td>
+            <td>±4–6% · Same-store sales and consumer spending resilience; Olive Garden and LongHorn comp trends</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div><!-- /container -->
+
+  <!-- ══ FOOTER ══ -->
+  <div class="footer">
+    <div class="footer-inner">
+      <span class="footer-brand">Market Quick Take · Friday, 19 June 2026</span>
+      <span class="footer-disc">For informational purposes only. Not investment advice.</span>
+    </div>
+  </div>
+
+</body>
+</html>
