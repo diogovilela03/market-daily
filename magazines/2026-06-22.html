@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Market Quick Take — Monday, 22 June 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Inter', sans-serif; background: #ffffff; color: #1a2332; }
+    .container { max-width: 860px; margin: 0 auto; padding: 0 24px; }
+
+    /* MASTHEAD */
+    .masthead { border-top: 3px solid #003366; padding: 32px 0 20px; border-bottom: 1px solid #e5e7eb; }
+    .masthead-title { font-weight: 700; font-size: 42px; color: #003366; line-height: 1.1; letter-spacing: -0.5px; }
+    .masthead-date { font-weight: 400; font-size: 13px; color: #6b7280; margin-top: 6px; }
+
+    /* SNAPSHOT BAR */
+    .snapshot { background: #f1f5f9; padding: 12px 0; width: 100%; }
+    .snapshot-inner { max-width: 860px; margin: 0 auto; padding: 0 24px; display: flex; flex-wrap: wrap; align-items: center; gap: 0; }
+    .chip { font-weight: 500; font-size: 12px; text-transform: uppercase; color: #1a2332; white-space: nowrap; }
+    .chip-sep { color: #9ca3af; margin: 0 8px; font-size: 12px; }
+    .pos { color: #16a34a; }
+    .neg { color: #dc2626; }
+    .neu { color: #6b7280; }
+
+    /* EDITOR'S BRIEF */
+    .brief { font-weight: 400; font-style: italic; font-size: 18px; color: #374151; max-width: 760px; margin: 28px 0; border-left: 3px solid #003366; padding-left: 16px; line-height: 1.8; }
+
+    /* SECTIONS */
+    .section { }
+    .section-label { font-weight: 500; font-size: 11px; color: #003366; text-transform: uppercase; letter-spacing: 3px; margin-bottom: 6px; display: block; }
+    .section-title { font-weight: 700; font-size: 24px; color: #1a2332; margin-bottom: 10px; }
+    .section-body { font-weight: 400; font-size: 15px; line-height: 1.8; color: #374151; }
+    .section-body ul { padding-left: 8px; list-style-position: inside; }
+    .section-body li { margin-bottom: 8px; }
+    .section-body p + p { margin-top: 10px; }
+    .divider { border: none; border-top: 1px solid #e5e7eb; margin: 28px 0; }
+    .watch-badge { display: inline-block; color: #b45309; background: #fef3c7; border-radius: 4px; font-weight: 500; font-size: 11px; padding: 2px 8px; margin-bottom: 8px; }
+
+    /* EARNINGS TABLE */
+    .earnings-table { width: 100%; border-collapse: collapse; border: 1px solid #e5e7eb; font-size: 13px; margin-top: 14px; }
+    .earnings-table th { font-weight: 600; color: #1a2332; background: #f1f5f9; padding: 8px 12px; text-align: left; border-bottom: 1px solid #e5e7eb; }
+    .earnings-table td { padding: 8px 12px; border-bottom: 1px solid #e5e7eb; color: #374151; font-weight: 400; }
+    .earnings-table tr:last-child td { border-bottom: none; }
+    .earnings-table tbody tr:hover { background: #fafafa; }
+
+    /* FOOTER */
+    .footer { background: #f1f5f9; border-top: 1px solid #e5e7eb; margin-top: 48px; padding: 20px 0; }
+    .footer-inner { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; }
+    .footer span { font-weight: 400; font-size: 12px; }
+  </style>
+</head>
+<body>
+
+  <!-- MASTHEAD -->
+  <div class="container">
+    <div class="masthead">
+      <div class="masthead-title">MARKET QUICK TAKE</div>
+      <div class="masthead-date">Monday, 22 June 2026</div>
+    </div>
+  </div>
+
+  <!-- SNAPSHOT BAR -->
+  <div class="snapshot">
+    <div class="snapshot-inner">
+      <span class="chip">SPY · $746.74 · <span class="pos">+1.04%</span></span>
+      <span class="chip-sep">|</span>
+      <span class="chip">QQQ · $740.62 · <span class="pos">+2.51%</span></span>
+      <span class="chip-sep">|</span>
+      <span class="chip">IWM · $295.59 · <span class="pos">+1.97%</span></span>
+      <span class="chip-sep">|</span>
+      <span class="chip">VIX · 16.78 · <span class="pos">+2.32%</span></span>
+      <span class="chip-sep">|</span>
+      <span class="chip">US10Y · 4.49% · <span class="pos">+1.35%</span></span>
+      <span class="chip-sep">|</span>
+      <span class="chip">US2Y · 4.20% · <span class="pos">+3.70%</span></span>
+      <span class="chip-sep">|</span>
+      <span class="chip">EUR/USD · 1.1468 · <span class="pos">+0.11%</span></span>
+      <span class="chip-sep">|</span>
+      <span class="chip">GOLD · $4,200.18 · <span class="neu">N/A</span></span>
+      <span class="chip-sep">|</span>
+      <span class="chip">WTI · $84.65 · <span class="neg">-4.48%</span></span>
+    </div>
+  </div>
+
+  <div class="container">
+
+    <!-- EDITOR'S BRIEF -->
+    <div class="brief">
+      Markets surged on twin catalysts: a US-Iran peace deal reopened the Strait of Hormuz and removed a key geopolitical risk premium, while a surprise Apple-Intel partnership sent semiconductors soaring — INTC +10.6%, QQQ +2.5%. The Federal Reserve's hawkish hold under new chair Kevin Warsh served as the session's sobering counterweight, reviving "higher for longer" fears and rotating capital out of rate-sensitive software, staples, and high-multiple tech.
+    </div>
+
+    <!-- SECTION 1 — MARKET DRIVERS -->
+    <div class="section">
+      <span class="watch-badge">⚡ WATCH</span>
+      <span class="section-label">01 — Analysis</span>
+      <h2 class="section-title">Market Drivers</h2>
+      <div class="section-body">
+        <ul>
+          <li><strong>US-Iran peace deal, Strait of Hormuz reopened</strong> — The diplomatic breakthrough removed a significant supply disruption risk premium from energy markets, hammering defense proxies (RTX –3.47%) while lifting services and Middle East normalization beneficiaries such as Amentum and Robert Half.</li>
+          <li><strong>Apple-Intel partnership ignites semiconductors</strong> — An announced strategic collaboration drove INTC +10.64% and broadened into a sector-wide rally: MRVL +7.27%, NVDA +2.95%, STM +6.82% — confirming the Apple-Intel news as the single largest intraday catalyst.</li>
+          <li><strong>Fed hawkish pause — "higher for longer" returns</strong> — New Fed chair Kevin Warsh held rates but guided toward a potential future hike via a revised dot plot. Software (PAYC, ADBE), consumer staples (PEP –3%, HSY), and high-multiple tech (IBM –3.2%, SHOP –4.7%) sold off sharply in response.</li>
+          <li><strong>Bank of Japan raises rates to a three-decade high</strong> — The BOJ's decisive tightening move drove MUFG +3.13%, reinforced the yen bull thesis, and added a new dimension to global central bank divergence with the ECB still on an easing path.</li>
+        </ul>
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <!-- SECTION 2 — MACRO -->
+    <div class="section">
+      <span class="watch-badge">⚡ WATCH</span>
+      <span class="section-label">02 — Macro</span>
+      <h2 class="section-title">Macro Backdrop</h2>
+      <div class="section-body">
+        <p>The June FOMC under incoming chair Kevin Warsh delivered a hawkish hold — rates were unchanged but the dot plot was revised higher, signaling the Fed's readiness to hike if inflation remains sticky. This marks the most assertive Fed communication in months and has materially repriced rate-sensitive equity sectors. Geopolitically, the US-Iran peace agreement is the week's dominant macro event, reshaping energy dynamics and opening Strait of Hormuz-dependent supply corridors. Meanwhile, the Bank of Japan's rate hike to a three-decade high amplifies the divergence with a still-easing ECB. Brazil faces above-target inflation ahead of its central bank meeting, and Chile holds at 4.50%, underscoring a fragmented EM monetary landscape that adds complexity to any global risk-on thesis.</p>
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <!-- SECTION 3 — EQUITIES -->
+    <div class="section">
+      <span class="section-label">03 — Equities</span>
+      <h2 class="section-title">Equity Markets</h2>
+      <div class="section-body">
+        <p>US equities posted a broad-based rally as of the June 18 close. SPY gained +1.04% to $746.74, the Nasdaq-100 (QQQ) surged +2.51% to $740.62 on outsized tech and semiconductor strength, and small-cap IWM rose +1.97% to $295.59 — suggesting the risk-on session had genuine breadth. The day's standout movers: <strong>Intel (INTC)</strong> surged +10.64% on Apple partnership news, its largest single-session gain in recent memory, while <strong>Marvell Technology (MRVL)</strong> climbed +7.27% as the catalyst rippled across the broader semiconductor complex. The inverse semiconductor ETF SOXS collapsed -19.73%, underlining the scale of the chip rally.</p>
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <!-- SECTION 4 — VOLATILITY -->
+    <div class="section">
+      <span class="section-label">04 — Volatility</span>
+      <h2 class="section-title">Volatility</h2>
+      <div class="section-body">
+        <p>The CBOE Volatility Index (VIX) sits at <strong>16.78</strong>, up +2.32% from its prior close of 16.40. This reading falls in the moderate zone — below the 20 threshold that typically signals elevated fear, but above the 15 level associated with complacency. The uptick reflects options markets hedging residual uncertainty from the Fed's hawkish pivot and a still-evolving geopolitical picture, even as the equity session printed broadly green. The VIX intraday high of 17.44 suggests some early nervousness that faded into the close.</p>
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <!-- SECTION 5 — FIXED INCOME -->
+    <div class="section">
+      <span class="section-label">05 — Fixed Income</span>
+      <h2 class="section-title">Fixed Income</h2>
+      <div class="section-body">
+        <p>The US 10-year Treasury yield stands at <strong>4.49%</strong> (as of June 17), with the 2-year at <strong>4.20%</strong> — a positive 2Y–10Y spread of +29 basis points, indicating a normally-sloped and modestly steepening curve. This steepening from near-inversion levels typically reflects markets beginning to price in eventual rate cuts at the long end, even as the Fed's current hawkish posture keeps the short end elevated. The 2-year climbed +15bps in the latest reading, the sharpest one-session move in weeks, directly reflecting Chair Warsh's hawkish dot-plot guidance and repricing for a potential hike.</p>
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <!-- SECTION 6 — CURRENCIES -->
+    <div class="section">
+      <span class="section-label">06 — Currencies</span>
+      <h2 class="section-title">Currencies</h2>
+      <div class="section-body">
+        <p><strong>EUR/USD</strong> trades at 1.1468 (June 19 close), up slightly from the prior session's 1.1456 (+0.11%), but well off the 1.16+ levels seen earlier in June as the Fed's hawkish pivot lends incremental support to the dollar. The pair has softened from the 1.19 highs of February 2026 as US–EU rate differentials have begun to reassert themselves. <strong>USD/JPY</strong> eased marginally to 161.28 from 161.37 (–0.06%), with the Bank of Japan's historic rate hike maintaining downward pressure on the pair. At 161, the yen remains historically weak, and any further BOJ tightening signal could drive a sharper recovery — a risk worth monitoring for USD-denominated assets.</p>
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <!-- SECTION 7 — COMMODITIES -->
+    <div class="section">
+      <span class="section-label">07 — Commodities</span>
+      <h2 class="section-title">Commodities</h2>
+      <div class="section-body">
+        <p><strong>Gold</strong> holds at a striking <strong>$4,200.18/oz</strong> (live spot), near record territory and underpinned by central bank accumulation, geopolitical hedging demand, and uncertainty around the Fed's next move. The US-Iran deal has reduced some safe-haven urgency at the margin but has not dented gold's structural bid. <strong>WTI crude</strong> retreated to <strong>$84.65/bbl</strong> as of June 15, down from $88.62 on June 12 (–4.48%), directly reflecting the Strait of Hormuz supply risk premium being unwound as diplomatic momentum materialized. A sustained peace deal would remove a meaningful floor from oil prices, though OPEC+ production discipline remains a counterbalancing factor.</p>
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <!-- SECTION 8 — DIGITAL ASSETS -->
+    <div class="section">
+      <span class="watch-badge">⚡ WATCH</span>
+      <span class="section-label">08 — Digital Assets</span>
+      <h2 class="section-title">Digital Assets</h2>
+      <div class="section-body">
+        <p>The dominant narrative is <strong>institutional ETF expansion</strong>: Morgan Stanley filed second-amended SEC registrations for spot Ethereum and Solana ETFs at an ultra-competitive 0.14% fee — including staking rewards passed to investors — while Franklin Templeton filed for two dividend-to-Bitcoin ETFs (starting 95% equities / 5% BTC, 20% BTC cap). These are material regulatory catalysts for structural crypto adoption. Despite this constructive pipeline, spot prices remain under pressure. <strong>ETH</strong> trades near $1,730 — effectively erasing five years of gains — with a whale opening a $72.4M short at $1,735. <strong>ADA</strong> slid 11% on the week, though whale cohorts accumulated 370M tokens on the dip. Thailand raided 14 illegal mining sites seizing 315 Bitcoin rigs, underscoring ongoing enforcement asymmetry globally. Near-term sentiment: <strong>bearish</strong>; medium-term structural bid building from the ETF pipeline.</p>
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <!-- SECTION 9 — EARNINGS CALENDAR -->
+    <div class="section">
+      <span class="section-label">09 — Earnings Radar</span>
+      <h2 class="section-title">Earnings Calendar</h2>
+      <div class="section-body">
+        <p>Five marquee reports land over the next five trading days. <strong>Micron (MU)</strong> on Wednesday evening is the most consequential — consensus expects $19.54/share as AI memory (HBM) pricing surges, making it a key barometer for the datacenter capex cycle. <strong>FedEx (FDX)</strong> Monday post-close speaks to freight volumes and industrial demand. <strong>Carnival (CCL)</strong> captures consumer spending durability in travel. <strong>Paychex (PAYX)</strong> offers a real-time read on small-business employment. <strong>Darden (DRI)</strong> rounds out the week as a barometer for casual dining resilience under sticky inflation.</p>
+        <table class="earnings-table">
+          <thead>
+            <tr>
+              <th>Company</th>
+              <th>Date</th>
+              <th>Consensus EPS</th>
+              <th>Timing</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>FedEx (FDX)</td>
+              <td>Jun 23</td>
+              <td>$5.91</td>
+              <td>Post-market</td>
+            </tr>
+            <tr>
+              <td>Carnival Corp (CCL)</td>
+              <td>Jun 23</td>
+              <td>$0.34</td>
+              <td>Pre-market</td>
+            </tr>
+            <tr>
+              <td>Micron Technology (MU)</td>
+              <td>Jun 24</td>
+              <td>$19.54</td>
+              <td>Post-market</td>
+            </tr>
+            <tr>
+              <td>Paychex (PAYX)</td>
+              <td>Jun 24</td>
+              <td>$1.31</td>
+              <td>Pre-market</td>
+            </tr>
+            <tr>
+              <td>Darden Restaurants (DRI)</td>
+              <td>Jun 25</td>
+              <td>$3.63</td>
+              <td>Pre-market</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div><!-- /container -->
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <span style="color:#6b7280;">Market Quick Take · Monday, 22 June 2026</span>
+        <span style="color:#9ca3af;">For informational purposes only. Not investment advice.</span>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
