@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Market Quick Take — Monday, 23 June 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #ffffff;
+      color: #1a2332;
+    }
+
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* MASTHEAD */
+    .masthead {
+      border-top: 3px solid #003366;
+      padding: 32px 0 20px;
+      border-bottom: 1px solid #e5e7eb;
+    }
+    .masthead__title {
+      font-size: 42px;
+      font-weight: 700;
+      color: #003366;
+      letter-spacing: -0.5px;
+      line-height: 1;
+    }
+    .masthead__date {
+      font-size: 13px;
+      font-weight: 400;
+      color: #6b7280;
+      margin-top: 8px;
+    }
+
+    /* SNAPSHOT BAR */
+    .snapshot {
+      background: #f1f5f9;
+      padding: 12px 0;
+      width: 100%;
+    }
+    .snapshot__inner {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 24px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 4px 0;
+    }
+    .chip {
+      font-size: 12px;
+      font-weight: 500;
+      color: #1a2332;
+      text-transform: uppercase;
+      white-space: nowrap;
+      padding: 0 10px;
+    }
+    .chip + .chip::before {
+      content: '|';
+      margin-right: 10px;
+      color: #9ca3af;
+    }
+    .chip__label { color: #6b7280; }
+    .chip__value { color: #1a2332; }
+    .pos { color: #16a34a; }
+    .neg { color: #dc2626; }
+
+    /* EDITOR'S BRIEF */
+    .brief {
+      border-left: 3px solid #003366;
+      padding-left: 16px;
+      margin: 28px 0;
+      max-width: 760px;
+    }
+    .brief p {
+      font-size: 18px;
+      font-weight: 400;
+      font-style: italic;
+      color: #374151;
+      line-height: 1.7;
+    }
+
+    /* SECTIONS */
+    .sections {
+      max-width: 860px;
+    }
+
+    hr.section-divider {
+      border: none;
+      border-top: 1px solid #e5e7eb;
+      margin: 28px 0;
+    }
+
+    .section-label {
+      font-size: 11px;
+      font-weight: 500;
+      color: #003366;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      display: block;
+      margin-bottom: 6px;
+    }
+
+    .section-title {
+      font-size: 24px;
+      font-weight: 700;
+      color: #1a2332;
+      margin-bottom: 10px;
+    }
+
+    .section-body {
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 1.8;
+      color: #374151;
+    }
+
+    .section-body ul {
+      padding-left: 8px;
+      list-style-type: disc;
+      list-style-position: outside;
+      padding-left: 20px;
+    }
+    .section-body ul li {
+      margin-bottom: 8px;
+    }
+
+    /* WATCH pill */
+    .watch-pill {
+      display: inline-block;
+      background: #fef3c7;
+      color: #b45309;
+      font-size: 11px;
+      font-weight: 500;
+      border-radius: 4px;
+      padding: 2px 8px;
+      margin-bottom: 8px;
+    }
+
+    /* EARNINGS TABLE */
+    .earnings-table {
+      width: 100%;
+      border-collapse: collapse;
+      border: 1px solid #e5e7eb;
+      font-size: 13px;
+      font-weight: 400;
+      color: #374151;
+      margin-top: 12px;
+    }
+    .earnings-table th {
+      background: #f1f5f9;
+      font-weight: 600;
+      color: #1a2332;
+      padding: 10px 14px;
+      text-align: left;
+      border-bottom: 1px solid #e5e7eb;
+    }
+    .earnings-table td {
+      padding: 10px 14px;
+      border-bottom: 1px solid #e5e7eb;
+    }
+    .earnings-table tr:last-child td { border-bottom: none; }
+
+    /* FOOTER */
+    .footer {
+      background: #f1f5f9;
+      border-top: 1px solid #e5e7eb;
+      margin-top: 48px;
+      padding: 20px 0;
+    }
+    .footer__inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .footer span {
+      font-size: 12px;
+      font-weight: 400;
+    }
+    .footer__brand { color: #6b7280; }
+    .footer__disclaimer { color: #9ca3af; }
+  </style>
+</head>
+<body>
+
+  <!-- MASTHEAD -->
+  <div class="container">
+    <div class="masthead">
+      <div class="masthead__title">MARKET QUICK TAKE</div>
+      <div class="masthead__date">Monday, 23 June 2026</div>
+    </div>
+  </div>
+
+  <!-- SNAPSHOT BAR -->
+  <div class="snapshot">
+    <div class="snapshot__inner">
+      <div class="chip">
+        <span class="chip__label">SPY </span>
+        <span class="chip__value">744.39 </span>
+        <span class="neg">&#8722;0.31%</span>
+      </div>
+      <div class="chip">
+        <span class="chip__label">QQQ </span>
+        <span class="chip__value">737.95 </span>
+        <span class="neg">&#8722;0.25%</span>
+      </div>
+      <div class="chip">
+        <span class="chip__label">IWM </span>
+        <span class="chip__value">298.18 </span>
+        <span class="pos">+0.88%</span>
+      </div>
+      <div class="chip">
+        <span class="chip__label">VIX </span>
+        <span class="chip__value">17.28 </span>
+        <span class="neg">+5.09%</span>
+      </div>
+      <div class="chip">
+        <span class="chip__label">US10Y </span>
+        <span class="chip__value">4.46% </span>
+        <span class="pos">&#8722;0.67%</span>
+      </div>
+      <div class="chip">
+        <span class="chip__label">US2Y </span>
+        <span class="chip__value">4.19% </span>
+        <span class="pos">&#8722;0.24%</span>
+      </div>
+      <div class="chip">
+        <span class="chip__label">EUR/USD </span>
+        <span class="chip__value">1.1431 </span>
+        <span style="color:#6b7280;">N/A</span>
+      </div>
+      <div class="chip">
+        <span class="chip__label">GOLD </span>
+        <span class="chip__value">N/A</span>
+      </div>
+      <div class="chip">
+        <span class="chip__label">WTI </span>
+        <span class="chip__value">84.65 </span>
+        <span style="color:#6b7280;">N/A</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <div class="container">
+
+    <!-- EDITOR'S BRIEF -->
+    <div class="brief">
+      <p>The Federal Reserve's hawkish surprise under Chair Kevin Warsh — holding rates while flagging a potential future hike — dominated Monday's session, lifting Treasury yields, strengthening the dollar, and igniting a $500 million crypto liquidation wave. Small caps bucked the large-cap selloff as rotation into cyclicals gathered pace, while a US-Iran peace deal reshaped the energy and defense landscape, pulling WTI crude sharply off recent highs.</p>
+    </div>
+
+    <!-- SECTIONS -->
+    <div class="sections">
+
+      <!-- SECTION 1: MARKET DRIVERS -->
+      <span class="watch-pill">⚡ WATCH</span>
+      <span class="section-label">Section 01</span>
+      <h2 class="section-title">Market Drivers</h2>
+      <div class="section-body">
+        <ul>
+          <li><strong>Fed hawkish pivot:</strong> Under new Chair Kevin Warsh, the FOMC held its benchmark rate steady but issued updated projections signalling a potential rate hike — not a cut — reversing near-consensus easing expectations and roiling rate-sensitive assets across equities, bonds, and crypto. Multiple news stories on this theme scored sentiment relevance above 0.93 in today's feed.</li>
+          <li><strong>Geopolitical reset:</strong> A US-Iran peace agreement and the reopening of the Strait of Hormuz removed a key supply-disruption premium from energy markets, sending WTI crude toward $84–85/bbl and simultaneously deflating defense-sector risk premiums (RTX fell 3.47% on the news earlier this week).</li>
+          <li><strong>Tech and growth under pressure:</strong> Rising Treasury yields and Nasdaq-100/S&amp;P 500 index rebalancing flows hit high-duration growth names hard — Broadcom (AVGO) fell 3.88%, Shopify (SHOP) dropped 4.70%, and IBM lost 3.19%, reflecting the market's repricing of long-duration risk.</li>
+          <li><strong>Small-cap divergence:</strong> IWM outperformed both SPY and QQQ (+0.88% vs. &#8722;0.31% / &#8722;0.25%), consistent with a rotation into domestically oriented cyclicals that benefit less from the macro rate-hike risk weighing on large-cap growth.</li>
+        </ul>
+      </div>
+
+      <hr class="section-divider" />
+
+      <!-- SECTION 2: MACRO -->
+      <span class="section-label">Section 02</span>
+      <h2 class="section-title">Macro</h2>
+      <div class="section-body">
+        <p>The Federal Reserve's decision under Chair Kevin Warsh to hold rates while publishing dot-plot projections hinting at a future tightening marks a decisive pivot away from the easing path markets had priced in — PVH fell 6% and multiple consumer discretionary names sold off in its wake. The 10-year Treasury yield stands at 4.46% and the 2-year at 4.19%, a modest +27 basis-point spread that reflects a mildly normal curve; the risk is that the short end climbs as rate-hike expectations solidify, potentially re-inverting the curve and tightening financial conditions. A broader geopolitical recalibration — anchored by the US-Iran peace deal and the Strait of Hormuz reopening — has reshuffled risk premiums across commodities, currencies, and emerging markets, creating a mixed macro backdrop where deflationary energy tailwinds compete with inflationary monetary signals.</p>
+      </div>
+
+      <hr class="section-divider" />
+
+      <!-- SECTION 3: EQUITIES -->
+      <span class="section-label">Section 03</span>
+      <h2 class="section-title">Equities</h2>
+      <div class="section-body">
+        <p>SPY closed at <strong>$744.39 (&#8722;0.31%)</strong> and QQQ at <strong>$737.95 (&#8722;0.25%)</strong>, weighed by rising yields and index rebalancing flows, while IWM outperformed at <strong>$298.18 (+0.88%)</strong> as investors rotated toward smaller-cap cyclicals. On the notable movers front, <strong>Intel (INTC) surged +5.19% to $140.94</strong> following news of an Apple-Intel semiconductor partnership, bucking the broad tech selloff and reinforcing the AI-driven hardware demand theme. <strong>Broadcom (AVGO) fell 3.88%</strong> on macroeconomic headwinds and index rebalancing, a notable move given its recent AI-driven run. <strong>APGE spiked +46.66% to $132.55</strong> on unusually heavy volume (61M shares), likely on an undisclosed catalyst, while <strong>Super Micro Computer (SMCI) gained +15.66%</strong> as AI server infrastructure demand reasserted itself in the session.</p>
+      </div>
+
+      <hr class="section-divider" />
+
+      <!-- SECTION 4: VOLATILITY -->
+      <span class="section-label">Section 04</span>
+      <h2 class="section-title">Volatility</h2>
+      <div class="section-body">
+        <p>The CBOE VIX closed at <strong>17.28</strong>, up +0.88 points (+5.09%) on the session — comfortably below the 20-handle that marks elevated fear, but meaningfully above recent complacency troughs. The single-session spike reflects options markets beginning to reprice near-term uncertainty in response to the Fed's hawkish pivot; the VIX moving sharply higher even while equities registered relatively modest declines suggests traders are hedging against the potential for a more disorderly repricing should incoming economic data support a rate-hike narrative.</p>
+      </div>
+
+      <hr class="section-divider" />
+
+      <!-- SECTION 5: FIXED INCOME -->
+      <span class="section-label">Section 05</span>
+      <h2 class="section-title">Fixed Income</h2>
+      <div class="section-body">
+        <p>The 10-year Treasury yield sits at <strong>4.46%</strong> and the 2-year at <strong>4.19%</strong>, a spread of approximately <strong>+27 basis points</strong> — a modestly normal upward-sloping curve that is a far cry from the deep inversions of 2023–2024. Chair Warsh's hawkish tone risks pushing the short end higher: if the 2-year climbs back toward or above the 10-year, re-inversion would signal renewed recession concern and add another headwind for equities. Bond traders will be closely monitoring upcoming economic data — particularly inflation prints and employment figures — to determine whether the Fed's hawkish pivot is justified by the data or represents a policy overshoot.</p>
+      </div>
+
+      <hr class="section-divider" />
+
+      <!-- SECTION 6: CURRENCIES -->
+      <span class="section-label">Section 06</span>
+      <h2 class="section-title">Currencies</h2>
+      <div class="section-body">
+        <p><strong>EUR/USD</strong> held at <strong>1.1431</strong>, finding support above the 1.14 figure as the eurozone benefits from reduced energy tail risk following the Strait of Hormuz reopening and ongoing geopolitical stabilization across the Middle East. <strong>USD/JPY</strong> advanced to <strong>161.48</strong>, resuming its yen-weakening trend as the dollar reasserted strength on the back of the Fed's hawkish signals; at this level, the pair is drawing renewed scrutiny from Japanese authorities, who have previously intervened in the 155–160 range. A sustained dollar rally fuelled by rate-hike expectations would add further pressure on EM currencies and commodities priced in USD.</p>
+      </div>
+
+      <hr class="section-divider" />
+
+      <!-- SECTION 7: COMMODITIES -->
+      <span class="section-label">Section 07</span>
+      <h2 class="section-title">Commodities</h2>
+      <div class="section-body">
+        <p><strong>WTI crude</strong> most recently settled at <strong>$84.65/bbl</strong>, down sharply from the $91–94 range seen earlier this month, as the US-Iran peace agreement and the reopening of the Strait of Hormuz removed a key geopolitical supply premium; further downside is possible if the diplomatic framework holds and OPEC+ production normalises. <strong>Gold data is unavailable</strong> for today's session due to an API feed error; however, macro conditions — a rising dollar and higher real yields following the Fed's hawkish pivot — are broadly bearish for bullion, consistent with reporting indicating gold slipped to near two-week lows this week on Fed rate-hike bets. The disinflationary impulse from cheaper energy, combined with a strong dollar, sets a challenging backdrop for commodity bulls broadly.</p>
+      </div>
+
+      <hr class="section-divider" />
+
+      <!-- SECTION 8: DIGITAL ASSETS -->
+      <span class="watch-pill">⚡ WATCH</span>
+      <span class="section-label">Section 08</span>
+      <h2 class="section-title">Digital Assets</h2>
+      <div class="section-body">
+        <p><strong>Bitcoin fell below $63,000</strong> with liquidations exceeding <strong>$500 million</strong> as the Fed's hawkish pivot triggered a dollar rally and extinguished near-term risk appetite across digital assets; ETF outflows compound the selling pressure as institutional money managers de-risk. MicroStrategy parent <strong>Strategy</strong> added 1,587 BTC for approximately $100 million — lifting total holdings to <strong>846,842 BTC</strong> — providing a partial demand floor at current levels. On the regulatory front, the <strong>Bank of England published formal stablecoin guidelines</strong> for UK issuers, a significant milestone in the regulatory maturation of digital assets and a WATCH-level development for sector positioning. Contrasting the macro gloom, institutional blockchain adoption is accelerating: Securitize-related assets on the <strong>Aptos</strong> network surged <strong>632% in June</strong> to $276 million as BlackRock's BUIDL fund and Apollo-affiliated products expand on-chain. <strong>Overall sentiment: Bearish.</strong> XRP remains in a corrective phase after completing a 68% drawdown from its cycle high; altcoins are showing tentative early-bull-market signals per technical analysts, but the macro headwind dominates near-term.</p>
+      </div>
+
+      <hr class="section-divider" />
+
+      <!-- SECTION 9: EARNINGS RADAR -->
+      <span class="section-label">Section 09</span>
+      <h2 class="section-title">Earnings Radar</h2>
+      <div class="section-body">
+        <p>High-profile reporters over the next five trading days (23–27 June 2026):</p>
+        <table class="earnings-table">
+          <thead>
+            <tr>
+              <th>Company</th>
+              <th>Date</th>
+              <th>Expected EPS</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>FedEx (FDX)</td>
+              <td>Jun 23 — Post-market</td>
+              <td>$5.91</td>
+            </tr>
+            <tr>
+              <td>Carnival Corp (CCL)</td>
+              <td>Jun 23 — Pre-market</td>
+              <td>$0.34</td>
+            </tr>
+            <tr>
+              <td>KB Home (KBH)</td>
+              <td>Jun 23 — Post-market</td>
+              <td>$0.44</td>
+            </tr>
+            <tr>
+              <td>Micron Technology (MU)</td>
+              <td>Jun 24 — Post-market</td>
+              <td>$19.54</td>
+            </tr>
+            <tr>
+              <td>Paychex (PAYX)</td>
+              <td>Jun 24 — Pre-market</td>
+              <td>$1.31</td>
+            </tr>
+          </tbody>
+        </table>
+        <p style="margin-top:12px;"><strong>FedEx</strong> is a macro bellwether for global trade flows — guidance on shipping volumes and margins will be closely watched in the context of a slowing global cycle. <strong>Micron</strong> is the week's highest-stakes print: AI memory demand commentary and forward guidance will move the entire semiconductor sector, particularly given INTC and AVGO's divergent sessions today. <strong>KB Home</strong> will offer a real-time read on homebuilder resilience as high mortgage rates suppress affordability; the housing data backdrop has been described as "cooling but robust."</p>
+      </div>
+
+    </div><!-- /sections -->
+  </div><!-- /container -->
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <span class="footer__brand">Market Quick Take &middot; Monday, 23 June 2026</span>
+        <span class="footer__disclaimer">For informational purposes only. Not investment advice.</span>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
