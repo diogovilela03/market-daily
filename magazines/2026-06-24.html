@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Market Quick Take — Tuesday, 24 June 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body { font-family: 'Inter', sans-serif; background: #ffffff; color: #1a2332; }
+
+    .container { max-width: 860px; margin: 0 auto; padding: 0 24px; }
+
+    /* MASTHEAD */
+    .masthead { border-top: 3px solid #003366; padding: 32px 0 20px; border-bottom: 1px solid #e5e7eb; }
+    .masthead-title { font-size: 42px; font-weight: 700; color: #003366; letter-spacing: -0.5px; line-height: 1.1; }
+    .masthead-date { font-size: 13px; font-weight: 400; color: #6b7280; margin-top: 8px; }
+
+    /* SNAPSHOT BAR */
+    .snapshot { background: #f1f5f9; padding: 12px 0; width: 100%; }
+    .snapshot-inner { max-width: 860px; margin: 0 auto; padding: 0 24px; display: flex; flex-wrap: wrap; align-items: center; row-gap: 6px; }
+    .chip { font-size: 12px; font-weight: 500; text-transform: uppercase; color: #1a2332; white-space: nowrap; }
+    .chip-sep { font-size: 12px; color: #6b7280; margin: 0 10px; }
+    .pos { color: #16a34a; }
+    .neg { color: #dc2626; }
+
+    /* EDITOR'S BRIEF */
+    .brief { font-size: 18px; font-weight: 400; font-style: italic; color: #374151; line-height: 1.7; max-width: 760px; margin: 28px 0; border-left: 3px solid #003366; padding-left: 16px; }
+
+    /* SECTIONS */
+    .section-divider { border: none; border-top: 1px solid #e5e7eb; margin: 28px 0; }
+    .watch-pill { display: inline-block; background: #fef3c7; color: #b45309; font-size: 11px; font-weight: 500; border-radius: 4px; padding: 3px 8px; margin-bottom: 8px; }
+    .section-label { font-size: 11px; font-weight: 500; color: #003366; text-transform: uppercase; letter-spacing: 3px; margin-bottom: 6px; }
+    .section-title { font-size: 24px; font-weight: 700; color: #1a2332; margin-bottom: 10px; }
+    .section-body { font-size: 15px; line-height: 1.8; color: #374151; }
+    .section-body ul { padding-left: 8px; list-style: disc; list-style-position: inside; }
+    .section-body ul li { margin-bottom: 6px; }
+    .section-body p + p { margin-top: 10px; }
+
+    /* EARNINGS TABLE */
+    .earnings-table { width: 100%; border-collapse: collapse; border: 1px solid #e5e7eb; font-size: 13px; margin-top: 14px; }
+    .earnings-table th { background: #f1f5f9; padding: 9px 12px; text-align: left; font-weight: 600; color: #1a2332; border-bottom: 1px solid #e5e7eb; }
+    .earnings-table td { padding: 9px 12px; border-bottom: 1px solid #e5e7eb; color: #374151; }
+    .earnings-table tr:last-child td { border-bottom: none; }
+
+    /* FOOTER */
+    .footer { background: #f1f5f9; border-top: 1px solid #e5e7eb; margin-top: 48px; padding: 20px 0; }
+    .footer-inner { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; }
+    .footer span { font-size: 12px; font-weight: 400; }
+  </style>
+</head>
+<body>
+
+  <!-- MASTHEAD -->
+  <div class="masthead">
+    <div class="container">
+      <div class="masthead-title">MARKET QUICK TAKE</div>
+      <div class="masthead-date">Tuesday, 24 June 2026</div>
+    </div>
+  </div>
+
+  <!-- SNAPSHOT BAR -->
+  <div class="snapshot">
+    <div class="snapshot-inner">
+      <span class="chip">SPY · $733.58 · <span class="neg">−1.45%</span></span>
+      <span class="chip-sep">|</span>
+      <span class="chip">QQQ · $713.65 · <span class="neg">−3.29%</span></span>
+      <span class="chip-sep">|</span>
+      <span class="chip">IWM · $295.32 · <span class="neg">−0.96%</span></span>
+      <span class="chip-sep">|</span>
+      <span class="chip">VIX · 19.49 · <span class="pos">+11.34%</span></span>
+      <span class="chip-sep">|</span>
+      <span class="chip">US10Y · 4.51% · <span class="pos">+1.12%</span></span>
+      <span class="chip-sep">|</span>
+      <span class="chip">US2Y · 4.24% · <span class="pos">+1.19%</span></span>
+      <span class="chip-sep">|</span>
+      <span class="chip">EUR/USD · 1.1370 · <span>N/A</span></span>
+      <span class="chip-sep">|</span>
+      <span class="chip">GOLD · $4,184 · <span class="pos">+0.68%</span></span>
+      <span class="chip-sep">|</span>
+      <span class="chip">WTI · $84.65 · <span class="neg">−4.48%</span></span>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <div class="container">
+
+    <!-- EDITOR'S BRIEF -->
+    <p class="brief">Markets sold off broadly on Tuesday after the Federal Reserve held interest rates steady but pivoted hawkish — signalling a potential rate increase rather than the widely anticipated cuts — a shock that disproportionately punished the Nasdaq, with QQQ falling 3.3% as semiconductor names led the rout. All eyes turn to Micron Technology's earnings after the close today, a pivotal read-through for chip demand in an environment where rate-sensitive growth stocks face renewed structural headwinds.</p>
+
+    <!-- SECTION 1: MARKET DRIVERS -->
+    <div class="section">
+      <div class="watch-pill">⚡ WATCH</div>
+      <div class="section-label">Market Drivers</div>
+      <div class="section-title">What Is Moving Markets</div>
+      <div class="section-body">
+        <ul>
+          <li><strong>Fed hawkish pivot:</strong> The FOMC held rates unchanged but signalled a potential future hike, inverting prior rate-cut expectations and triggering broad risk-off sentiment. Stocks pricing in easier policy were hit hardest; the "higher for longer" narrative reasserts itself with conviction.</li>
+          <li><strong>Semiconductor sector rout:</strong> NVDA fell 4.15% to $200.00 and INTC dropped 6.14% to $132.28; the 3× inverse semiconductor ETF SOXS surged 23.98%, reflecting highly concentrated bearish positioning ahead of tonight's Micron (MU) earnings.</li>
+          <li><strong>Defensive rotation underway:</strong> Strategists are recommending low-beta consumer staples and dividend-paying names. PVH fell 6.0% directly attributed to the Fed signalling a potential hike; financial stocks with rate-sensitive net interest margins drew mixed reactions.</li>
+          <li><strong>Small caps outperformed relatively:</strong> IWM −0.96% vs QQQ −3.29%, reflecting the selloff's concentration in tech-heavy mega-caps rather than the broader economy.</li>
+        </ul>
+      </div>
+    </div>
+
+    <hr class="section-divider" />
+
+    <!-- SECTION 2: MACRO -->
+    <div class="section">
+      <div class="watch-pill">⚡ WATCH</div>
+      <div class="section-label">Macro</div>
+      <div class="section-title">Rates, Policy &amp; Global Backdrop</div>
+      <div class="section-body">
+        <p>The Federal Reserve's decision to hold rates steady while simultaneously signalling a potential hike marks a meaningful inflection in the policy narrative — one that erases months of accumulated "pivot" optimism and forces a comprehensive repricing across equities, fixed income, and currencies. The hawkish lean lifts real yields and pressures long-duration assets at a delicate moment, just as Q2 earnings season opens. The front end of the yield curve faces particular upside pressure, as 2-year rates are most sensitive to near-term rate path reassessment. Separately, Qatar's anticipated return to full LNG production within weeks is contributing to a softening in energy prices, providing a minor offset to the inflationary impulse from the hawkish Fed stance.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider" />
+
+    <!-- SECTION 3: EQUITIES -->
+    <div class="section">
+      <div class="watch-pill">⚡ WATCH</div>
+      <div class="section-label">Equities</div>
+      <div class="section-title">US Equity Markets</div>
+      <div class="section-body">
+        <p>SPY closed at <strong>$733.58 (−1.45%)</strong>, QQQ at <strong>$713.65 (−3.29%)</strong>, and IWM at <strong>$295.32 (−0.96%)</strong>. The 230bp performance gap between the Nasdaq and small caps underscores that this is a tech-specific de-rating, not a broad economic fear event — for now. <strong>NVDA −4.15%</strong> to $200.00, a psychologically meaningful round number; the market is reassessing AI infrastructure capex assumptions under a higher-rate scenario. <strong>INTC −6.14%</strong> to $132.28 on combined semiconductor sector pressure and company-specific momentum concerns. Micron's post-close print tonight is the single most consequential near-term catalyst: a strong quarter could stabilise the space; a miss or cautious guide risks amplifying the selloff.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider" />
+
+    <!-- SECTION 4: VOLATILITY -->
+    <div class="section">
+      <div class="section-label">Volatility</div>
+      <div class="section-title">Fear Gauge</div>
+      <div class="section-body">
+        <p>VIX closed at <strong>19.49</strong>, surging 11.34% in a single session — the sharpest single-day move in implied volatility in weeks and a clear signal of how unexpected the Fed's hawkish shift was for a market priced for easing. The index sits just below the key 20 threshold; a close above that level would mark a transition to an elevated-fear regime and historically correlates with increased forced de-risking, options hedging, and potential margin pressure. The 30-day implied volatility measure (iv30) rose to 94.67%, confirming that options markets are pricing in sustained turbulence through the near-term horizon. The current VIX level suggests caution but not panic — the market is repricing rather than capitulating.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider" />
+
+    <!-- SECTION 5: FIXED INCOME -->
+    <div class="section">
+      <div class="section-label">Fixed Income</div>
+      <div class="section-title">Treasury Yields &amp; the Curve</div>
+      <div class="section-body">
+        <p>The US 10-year yield stands at <strong>4.51%</strong> (as of Jun 22), with the 2-year at <strong>4.24%</strong>, producing a 2Y–10Y spread of <strong>+27 basis points</strong> — a modestly positive and gradually steepening curve. The curve shape is neither inverted nor aggressively steep, sitting in a transitional zone as the market absorbs the Fed's renewed hawkishness. The 2-year is most exposed to further upside repricing as investors price in a potential hike cycle; the 10-year faces competing forces — higher policy rates push it up, but a slowing growth outlook and safe-haven demand cap the move. A spread narrowing back toward flat — or a new inversion — would signal that markets are again pricing in eventual recession risk.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider" />
+
+    <!-- SECTION 6: CURRENCIES -->
+    <div class="section">
+      <div class="section-label">Currencies</div>
+      <div class="section-title">FX &amp; Rate Differentials</div>
+      <div class="section-body">
+        <p>EUR/USD trades at <strong>1.1370</strong>, with the euro maintaining its footing against the dollar despite the hawkish Fed signal — the greenback's response has been restrained, likely reflecting dollar shorts being squeezed rather than fresh dollar buying. USD/JPY sits at <strong>161.71</strong>, the yen extending its prolonged structural weakness against the backdrop of persistent rate differentials between the Fed and the Bank of Japan. At these levels, BoJ intervention risk is elevated; Tokyo has previously acted in the 155–160 zone and the current level breaches that range meaningfully. Any further move toward 163–165 would intensify pressure on the BoJ to step in, particularly as Japan's authorities have signalled intent to defend against disorderly yen moves.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider" />
+
+    <!-- SECTION 7: COMMODITIES -->
+    <div class="section">
+      <div class="section-label">Commodities</div>
+      <div class="section-title">Gold &amp; Crude Oil</div>
+      <div class="section-body">
+        <p>Gold trades at <strong>$4,184/oz</strong> (+0.68% session-over-session), holding firmly above the $4,000 level despite marginal dollar firmness. Safe-haven demand, central bank accumulation, and geopolitical uncertainty continue to provide structural support — and gold's resilience in the face of rising real yields underscores the breadth of demand that has driven its historic run. WTI crude stands at <strong>$84.65/bbl</strong> (most recent data: Jun 15), having retreated sharply from the $100+ prints seen in late May and early June; Qatar's anticipated return to full LNG production within weeks and easing global demand growth assumptions are the primary drivers of the energy complex's softening. The WTI decline from recent highs represents a meaningful disinflationary impulse that partially offsets the rate-driven tightening of financial conditions.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider" />
+
+    <!-- SECTION 8: DIGITAL ASSETS -->
+    <div class="section">
+      <div class="watch-pill">⚡ WATCH</div>
+      <div class="section-label">Digital Assets</div>
+      <div class="section-title">Crypto Markets</div>
+      <div class="section-body">
+        <p>Bitcoin is trading below <strong>$63,000</strong>, weighed down by rate fears and notable ETF outflows. Wintermute analysts identify <strong>$59,000</strong> as the next key support level — a break there would represent a meaningful technical deterioration. CryptoQuant has issued a public warning to Strategy (formerly MicroStrategy) to halt further BTC purchases and shore up cash reserves, raising questions about leveraged corporate crypto treasury positions in a higher-rate environment. Ethereum remains stuck below <strong>$1,800</strong> with bullish momentum continuing to fade. XRP trades near <strong>$1.13</strong> at the apex of a multi-month consolidation triangle, with analysts split on direction.</p>
+        <p>On the regulatory front: the CFTC has sued Kentucky in relation to Cboe's S&amp;P 500 prediction markets (Kalshi and Polymarket), raising broad questions about the permissible scope of crypto-adjacent derivatives — a development worth monitoring for precedent-setting implications across decentralised prediction and derivatives platforms. Constructively, NYSE parent ICE's partnership with OKX to offer tokenised stocks to 120 million traders represents a notable institutional adoption signal. Overall crypto sentiment: <strong>bearish</strong>, with macro headwinds from rate fears dominating near-term price action.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider" />
+
+    <!-- SECTION 9: EARNINGS CALENDAR -->
+    <div class="section">
+      <div class="section-label">Earnings Radar</div>
+      <div class="section-title">Next 5 Trading Days</div>
+      <div class="section-body">
+        <table class="earnings-table">
+          <thead>
+            <tr>
+              <th>Company</th>
+              <th>Date</th>
+              <th>Expected Move</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Micron Technology (MU)</strong></td>
+              <td>Jun 24 — Post-Market</td>
+              <td>Est. $19.54 EPS. Critical sector catalyst — a miss or cautious guide risks amplifying the semiconductor selloff; a beat could stem the tide for NVDA and INTC.</td>
+            </tr>
+            <tr>
+              <td><strong>Paychex (PAYX)</strong></td>
+              <td>Jun 24 — Pre-Market</td>
+              <td>Est. $1.31 EPS. Labour market health bellwether; payroll growth commentary will inform views on the Fed's next move.</td>
+            </tr>
+            <tr>
+              <td><strong>Darden Restaurants (DRI)</strong></td>
+              <td>Jun 25 — Pre-Market</td>
+              <td>Est. $3.63 EPS. Consumer spending read-through for full-service dining; watch same-store sales guidance and cost commentary.</td>
+            </tr>
+            <tr>
+              <td><strong>Nike (NKE)</strong></td>
+              <td>Jun 30 — Post-Market</td>
+              <td>Est. $0.11 EPS. Watch China demand recovery and tariff impact on margins; inventory normalisation progress is key.</td>
+            </tr>
+            <tr>
+              <td><strong>Constellation Brands (STZ)</strong></td>
+              <td>Jun 30 — Post-Market</td>
+              <td>Est. $3.28 EPS. Premium beer volume trends and FX headwinds from Mexican peso exposure in focus.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div><!-- /.container -->
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <span style="color: #6b7280;">Market Quick Take · Tuesday, 24 June 2026</span>
+        <span style="color: #9ca3af;">For informational purposes only. Not investment advice.</span>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
