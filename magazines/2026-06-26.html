@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Market Quick Take — Friday, 26 June 2026</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: #ffffff; color: #1a2332; font-family: 'Inter', sans-serif; }
+    .container { max-width: 860px; margin: 0 auto; padding: 0 24px; }
+
+    .masthead { border-top: 3px solid #003366; padding: 32px 0 20px; border-bottom: 1px solid #e5e7eb; }
+    .masthead-title { font-size: 42px; font-weight: 700; color: #003366; line-height: 1; letter-spacing: -0.5px; }
+    .masthead-date { font-size: 13px; font-weight: 400; color: #6b7280; margin-top: 6px; }
+
+    .snapshot-bar { background: #f1f5f9; padding: 12px 0; }
+    .snapshot-inner { display: flex; flex-wrap: wrap; align-items: center; gap: 0; font-size: 12px; font-weight: 500; color: #1a2332; text-transform: uppercase; }
+    .chip { display: inline-flex; align-items: center; gap: 4px; padding: 0 12px; white-space: nowrap; }
+    .chip + .chip::before { content: '|'; margin-right: 12px; color: #9ca3af; }
+    .chip-label { color: #6b7280; margin-right: 2px; }
+    .chip-value { color: #1a2332; font-weight: 600; }
+    .chip-change { font-size: 11px; margin-left: 2px; }
+    .pos { color: #16a34a; }
+    .neg { color: #dc2626; }
+
+    .editors-brief { font-size: 18px; font-weight: 400; font-style: italic; color: #374151; line-height: 1.7; max-width: 760px; margin: 28px 0; border-left: 3px solid #003366; padding-left: 16px; }
+
+    .section { }
+    .section-divider { border: none; border-top: 1px solid #e5e7eb; margin: 28px 0; }
+    .section-label { font-size: 11px; font-weight: 500; color: #003366; text-transform: uppercase; letter-spacing: 3px; margin-bottom: 6px; }
+    .section-title { font-size: 24px; font-weight: 700; color: #1a2332; margin-bottom: 10px; }
+    .section-body { font-size: 15px; font-weight: 400; line-height: 1.8; color: #374151; }
+    .section-body ul { padding-left: 8px; list-style-position: outside; margin-left: 16px; }
+    .section-body ul li { margin-bottom: 6px; }
+    .section-body p + p { margin-top: 10px; }
+    .watch-pill { display: inline-block; background: #fef3c7; color: #b45309; border-radius: 4px; font-size: 11px; font-weight: 500; padding: 2px 8px; margin-bottom: 8px; font-style: normal; }
+    .na { color: #9ca3af; font-style: italic; }
+
+    .earnings-table { width: 100%; border-collapse: collapse; border: 1px solid #e5e7eb; font-size: 13px; font-weight: 400; margin-top: 12px; }
+    .earnings-table th { background: #f1f5f9; padding: 8px 12px; text-align: left; color: #6b7280; font-weight: 500; border-bottom: 1px solid #e5e7eb; }
+    .earnings-table td { padding: 8px 12px; border-bottom: 1px solid #e5e7eb; color: #374151; }
+    .earnings-table tr:last-child td { border-bottom: none; }
+
+    .footer { background: #f1f5f9; border-top: 1px solid #e5e7eb; margin-top: 48px; padding: 20px 0; }
+    .footer-inner { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; }
+    .footer-brand { font-size: 12px; font-weight: 400; color: #6b7280; }
+    .footer-disclaimer { font-size: 12px; font-weight: 400; color: #9ca3af; }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="masthead">
+      <div class="masthead-title">MARKET QUICK TAKE</div>
+      <div class="masthead-date">Friday, 26 June 2026</div>
+    </div>
+  </div>
+
+  <div class="snapshot-bar">
+    <div class="container">
+      <div class="snapshot-inner">
+        <div class="chip">
+          <span class="chip-label">SPY</span>
+          <span class="chip-value">N/A</span>
+        </div>
+        <div class="chip">
+          <span class="chip-label">QQQ</span>
+          <span class="chip-value">N/A</span>
+        </div>
+        <div class="chip">
+          <span class="chip-label">IWM</span>
+          <span class="chip-value">N/A</span>
+        </div>
+        <div class="chip">
+          <span class="chip-label">VIX</span>
+          <span class="chip-value">18.89</span>
+          <span class="chip-change pos">+1.38%</span>
+        </div>
+        <div class="chip">
+          <span class="chip-label">US10Y</span>
+          <span class="chip-value">N/A</span>
+        </div>
+        <div class="chip">
+          <span class="chip-label">US2Y</span>
+          <span class="chip-value">N/A</span>
+        </div>
+        <div class="chip">
+          <span class="chip-label">EUR/USD</span>
+          <span class="chip-value">N/A</span>
+        </div>
+        <div class="chip">
+          <span class="chip-label">GOLD</span>
+          <span class="chip-value">N/A</span>
+        </div>
+        <div class="chip">
+          <span class="chip-label">WTI</span>
+          <span class="chip-value">N/A</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+
+    <div class="editors-brief">
+      Market price data is unavailable today — the Alpha Vantage free-tier API limit of 25 daily calls was exhausted prior to this run, leaving equity indices, yields, FX, and commodities as N/A. Volatility is sourced from CBOE (VIX 18.89, a moderate reading nearing the 20 fear threshold). The lead story of the session is a sweeping crypto risk-off wave: Bitcoin hit a 21-month low of $58,115 on June 25, Ethereum trades near $1,500 for the first time since April 2025, and over $1.5 billion in leveraged positions were liquidated in 24 hours.
+    </div>
+
+    <div class="section">
+      <div class="section-label">Section 1</div>
+      <div class="section-title">Market Drivers</div>
+      <div class="section-body">
+        <p class="na">Alpha Vantage NEWS_SENTIMENT data unavailable — daily rate limit of 25 calls was exhausted before this routine could run. Equity market news feed could not be retrieved for this session. See Digital Assets (Section 8) for the dominant narrative available from CoinDesk.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <div class="section">
+      <div class="section-label">Section 2</div>
+      <div class="section-title">Macro</div>
+      <div class="section-body">
+        <p class="na">Macro data unavailable — Alpha Vantage rate limit exhausted. Treasury yield, Fed posture, and macro news sentiment data could not be retrieved for this session.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <div class="section">
+      <div class="section-label">Section 3</div>
+      <div class="section-title">Equities</div>
+      <div class="section-body">
+        <p>SPY: <span class="na">N/A</span> &nbsp;·&nbsp; QQQ: <span class="na">N/A</span> &nbsp;·&nbsp; IWM: <span class="na">N/A</span></p>
+        <p class="na">Index price data and top gainers/losers unavailable — Alpha Vantage rate limit exhausted. Note: CoinDesk reporting cites broad tech-stock weakness and South Korea's KOSPI triggering circuit breakers after an 8%+ decline, consistent with a global risk-off session.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <div class="section">
+      <div class="section-label">Section 4</div>
+      <div class="section-title">Volatility</div>
+      <div class="section-body">
+        <p>VIX closed at <strong>18.89</strong> (+1.38% on the session; CBOE 15-minute delayed data, last trade 16:15 ET June 25). At this level the fear gauge sits in the moderate zone — above the complacency threshold of 15 but still below the elevated-fear threshold of 20. The intraday high of 19.95 signals traders are actively pricing near-term risk, consistent with the broad risk-off tone across crypto markets and the KOSPI circuit-breaker event. A break above 20 in Friday trading would formally enter elevated-fear territory.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <div class="section">
+      <div class="section-label">Section 5</div>
+      <div class="section-title">Fixed Income</div>
+      <div class="section-body">
+        <p>US 10-Year Yield: <span class="na">N/A</span> &nbsp;·&nbsp; US 2-Year Yield: <span class="na">N/A</span></p>
+        <p class="na">Treasury yield data unavailable — Alpha Vantage rate limit exhausted. Yield curve shape (steepening / flattening / inverted) cannot be assessed for this session.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <div class="section">
+      <div class="section-label">Section 6</div>
+      <div class="section-title">Currencies</div>
+      <div class="section-body">
+        <p>EUR/USD: <span class="na">N/A</span> &nbsp;·&nbsp; USD/JPY: <span class="na">N/A</span></p>
+        <p class="na">FX rate data unavailable — Alpha Vantage rate limit exhausted.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <div class="section">
+      <div class="section-label">Section 7</div>
+      <div class="section-title">Commodities</div>
+      <div class="section-body">
+        <p>Gold: <span class="na">N/A</span> &nbsp;·&nbsp; WTI Crude: <span class="na">N/A</span></p>
+        <p class="na">Commodities price data unavailable — Alpha Vantage rate limit exhausted.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <div class="section">
+      <span class="watch-pill">⚡ WATCH</span>
+      <div class="section-label">Section 8</div>
+      <div class="section-title">Digital Assets</div>
+      <div class="section-body">
+        <p><strong>Dominant Narrative — Extended Capitulation:</strong> Crypto markets are in a deepening risk-off wave. Bitcoin struck a 21-month low of <strong>$58,115</strong> on June 25 before recovering to ~$59,800, with total crypto market cap shedding over $180 billion since Monday. A $1.5 billion liquidation cascade took out 217,700 traders in 24 hours — $665M in BTC longs, $359M in ETH longs. An additional $826M in long exposure sits on the liquidation cliff just below $60,163. End-of-quarter options expiry looms with $11B notional and a max pain price near $72,000 — roughly $13,000 above spot.</p>
+
+        <p><strong>Notable Token Moves:</strong></p>
+        <ul>
+          <li><strong>BTC</strong> — 21-month low at $58,115 intraday; recovered to ~$59,800. Down ~5% on the week, ~20% for the month. Max pain for end-of-quarter options is $72,000.</li>
+          <li><strong>ETH</strong> — Trading near $1,500 (levels last seen October 2023 / April 2025). Tether (USDT) has flipped Ether by market cap. Ethereum whale wallets (&gt;1,000 ETH) are in net unrealized losses for the first time since 2019.</li>
+          <li><strong>XRP</strong> — Lost key support at $1.09. Next downside targets cited at $0.90 and $0.87 (0.854 Fibonacci retracement).</li>
+          <li><strong>MSTR (Strategy)</strong> — Slipped below $100 for the first time since March 2024, carrying an estimated $13 billion paper loss on its Bitcoin holdings.</li>
+          <li><strong>Metaplanet</strong> — Down 87% over 12 months, yet tripled its BTC stack to 40,177 BTC, adding 27,832 BTC at distressed prices.</li>
+        </ul>
+
+        <p><strong>Regulatory Headlines:</strong></p>
+        <ul>
+          <li><strong>Binance MiCA — Hard Deadline July 1:</strong> Binance's temporary MiCA operating permit expires July 1, 2026. The exchange withdrew its CASP license application in Greece and is preparing to suspend EU services pending a reapplication. This is a hard regulatory event affecting one of the world's largest exchanges within 5 days.</li>
+          <li><strong>CLARITY Act — Senate Vote Targeted July 2026:</strong> Senator Cynthia Lummis confirmed the US crypto market-structure bill is expected to be finalized and pushed to a Senate vote in July, with roughly 20 legislative days before August recess.</li>
+          <li><strong>Bitcoin ETF Outflows — 7th Consecutive Week:</strong> US spot Bitcoin ETFs recorded $469M in single-day outflows on June 25, extending an unbroken 7-week outflow streak. US spot Ethereum ETFs saw $81.5M in outflows, led by BlackRock's ETHA.</li>
+          <li><strong>BlackRock Guidance:</strong> BlackRock set a 1–2% Bitcoin allocation as the recommended risk budget for advisor-managed portfolios.</li>
+        </ul>
+
+        <p><strong>Overall Sentiment: <span class="neg">BEARISH</span></strong> — 22 of 50 sampled CoinDesk articles carry negative sentiment vs. 12 positive. The core narrative is capitulation: whale unrealized losses at 2019 levels, Tether flipping ETH by market cap, 7 straight weeks of ETF outflows, a KOSPI circuit-breaker macro shock, and options max pain $13,000 above spot with end-of-quarter expiry approaching.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <div class="section">
+      <div class="section-label">Section 9</div>
+      <div class="section-title">Earnings Radar</div>
+      <div class="section-body">
+        <p class="na">Earnings calendar data unavailable — the Alpha Vantage EARNINGS_CALENDAR call could not be completed due to daily rate limit exhaustion. No upcoming earnings data can be shown for the next 5 trading days.</p>
+        <table class="earnings-table">
+          <thead>
+            <tr>
+              <th>Company</th>
+              <th>Date</th>
+              <th>Expected Move</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td colspan="3" style="text-align:center; color:#9ca3af; font-style:italic; padding: 16px;">Data unavailable — API rate limit exhausted</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <span class="footer-brand">Market Quick Take · Friday, 26 June 2026</span>
+        <span class="footer-disclaimer">For informational purposes only. Not investment advice.</span>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
