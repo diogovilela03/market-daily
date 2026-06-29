@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Market Quick Take — Monday, 29 June 2026</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #ffffff;
+      color: #1a2332;
+    }
+
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* MASTHEAD */
+    .masthead-wrap {
+      border-top: 3px solid #003366;
+    }
+    .masthead {
+      padding: 32px 0 20px;
+      border-bottom: 1px solid #e5e7eb;
+    }
+    .masthead-title {
+      font-size: 42px;
+      font-weight: 700;
+      color: #003366;
+      letter-spacing: -0.5px;
+      line-height: 1;
+    }
+    .masthead-date {
+      font-size: 13px;
+      font-weight: 400;
+      color: #6b7280;
+      margin-top: 8px;
+    }
+
+    /* SNAPSHOT BAR */
+    .snapshot-bar {
+      width: 100%;
+      background: #f1f5f9;
+      padding: 12px 0;
+    }
+    .snapshot-chips {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0;
+    }
+    .chip {
+      font-size: 12px;
+      font-weight: 500;
+      color: #1a2332;
+      text-transform: uppercase;
+      white-space: nowrap;
+      padding: 2px 10px;
+    }
+    .chip-sep {
+      font-size: 12px;
+      color: #9ca3af;
+      font-weight: 400;
+    }
+    .chip-label { color: #6b7280; }
+    .chip-dot { color: #9ca3af; margin: 0 3px; }
+    .pos { color: #16a34a; }
+    .neg { color: #dc2626; }
+    .neutral { color: #6b7280; }
+
+    /* EDITOR'S BRIEF */
+    .editors-brief {
+      font-size: 18px;
+      font-weight: 400;
+      font-style: italic;
+      color: #374151;
+      max-width: 760px;
+      margin: 28px 0;
+      border-left: 3px solid #003366;
+      padding-left: 16px;
+      line-height: 1.7;
+    }
+
+    /* SECTIONS */
+    .section { margin: 0; }
+    .section-divider {
+      border: none;
+      border-top: 1px solid #e5e7eb;
+      margin: 28px 0;
+    }
+    .section-label {
+      font-size: 11px;
+      font-weight: 500;
+      color: #003366;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      margin-bottom: 8px;
+      display: block;
+    }
+    .section-title {
+      font-size: 24px;
+      font-weight: 700;
+      color: #1a2332;
+      margin-bottom: 10px;
+      line-height: 1.25;
+    }
+    .section-body {
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 1.8;
+      color: #374151;
+    }
+    .section-body ul {
+      padding-left: 8px;
+      list-style: disc;
+      margin-left: 16px;
+    }
+    .section-body ul li {
+      margin-bottom: 6px;
+    }
+    .section-body p {
+      margin-bottom: 10px;
+    }
+    .section-body p:last-child { margin-bottom: 0; }
+
+    /* WATCH PILL */
+    .watch-pill {
+      display: inline-block;
+      color: #b45309;
+      background: #fef3c7;
+      border-radius: 4px;
+      font-size: 11px;
+      font-weight: 500;
+      padding: 2px 8px;
+      margin-bottom: 8px;
+    }
+
+    /* EARNINGS TABLE */
+    .earnings-table {
+      width: 100%;
+      border-collapse: collapse;
+      border: 1px solid #e5e7eb;
+      font-size: 13px;
+      font-weight: 400;
+      margin-top: 12px;
+    }
+    .earnings-table th {
+      background: #f1f5f9;
+      color: #6b7280;
+      font-weight: 500;
+      text-align: left;
+      padding: 8px 12px;
+      border-bottom: 1px solid #e5e7eb;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .earnings-table td {
+      padding: 8px 12px;
+      border-bottom: 1px solid #e5e7eb;
+      color: #374151;
+    }
+    .earnings-table tr:last-child td { border-bottom: none; }
+
+    /* FOOTER */
+    .footer {
+      width: 100%;
+      background: #f1f5f9;
+      border-top: 1px solid #e5e7eb;
+      margin-top: 48px;
+      padding: 20px 0;
+    }
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .footer-left {
+      font-size: 12px;
+      font-weight: 400;
+      color: #6b7280;
+    }
+    .footer-right {
+      font-size: 12px;
+      font-weight: 400;
+      color: #9ca3af;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- MASTHEAD -->
+  <div class="masthead-wrap">
+    <div class="container">
+      <div class="masthead">
+        <div class="masthead-title">MARKET QUICK TAKE</div>
+        <div class="masthead-date">Monday, 29 June 2026</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SNAPSHOT BAR -->
+  <div class="snapshot-bar">
+    <div class="container">
+      <div class="snapshot-chips">
+
+        <div class="chip">
+          <span class="chip-label">SPY</span><span class="chip-dot">·</span>$728.99<span class="chip-dot">·</span><span class="neg">−0.72%</span>
+        </div>
+        <span class="chip-sep">|</span>
+        <div class="chip">
+          <span class="chip-label">QQQ</span><span class="chip-dot">·</span><span class="neutral">N/A</span>
+        </div>
+        <span class="chip-sep">|</span>
+        <div class="chip">
+          <span class="chip-label">IWM</span><span class="chip-dot">·</span><span class="neutral">N/A</span>
+        </div>
+        <span class="chip-sep">|</span>
+        <div class="chip">
+          <span class="chip-label">VIX</span><span class="chip-dot">·</span>18.41<span class="chip-dot">·</span><span class="neg">−2.61%</span>
+        </div>
+        <span class="chip-sep">|</span>
+        <div class="chip">
+          <span class="chip-label">US10Y</span><span class="chip-dot">·</span><span class="neutral">N/A</span>
+        </div>
+        <span class="chip-sep">|</span>
+        <div class="chip">
+          <span class="chip-label">US2Y</span><span class="chip-dot">·</span><span class="neutral">N/A</span>
+        </div>
+        <span class="chip-sep">|</span>
+        <div class="chip">
+          <span class="chip-label">EUR/USD</span><span class="chip-dot">·</span><span class="neutral">N/A</span>
+        </div>
+        <span class="chip-sep">|</span>
+        <div class="chip">
+          <span class="chip-label">GOLD</span><span class="chip-dot">·</span><span class="neutral">N/A</span>
+        </div>
+        <span class="chip-sep">|</span>
+        <div class="chip">
+          <span class="chip-label">WTI</span><span class="chip-dot">·</span><span class="neutral">N/A</span>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <div class="container">
+
+    <!-- EDITOR'S BRIEF -->
+    <blockquote class="editors-brief">
+      Markets enter Monday's Q2 close with cautious optimism after a weekend US–Iran agreement to halt direct strikes eased geopolitical risk, lifting equity futures — yet Bitcoin's failure to reclaim $60,000 underlines a deepening decoupling between crypto and equities as the AI capital cycle and persistently high US inflation keep institutional money on the defensive.
+    </blockquote>
+
+    <!-- SECTION 1: MARKET DRIVERS -->
+    <div class="section">
+      <span class="section-label">01 · Market Drivers</span>
+      <h2 class="section-title">Iran De-Escalation Lifts Futures; Crypto Decouples</h2>
+      <div class="section-body">
+        <ul>
+          <li>The US and Iran reached an emergency agreement to halt direct strikes over the weekend, restoring commercial vessel passage through the Strait of Hormuz and transitioning maritime disputes to technical talks in Doha (Tuesday) — reducing the immediate risk-off premium and lifting equity futures into Monday's open.</li>
+          <li>Bitcoin closed near $59,700 (-6.8% on the week), diverging sharply from equity relief: the $60,000 level absorbed a Monday breakout attempt and has flipped from support to resistance, while spot BTC ETFs have logged over $7 billion in net outflows over the past two months.</li>
+          <li>US PCE inflation running at 4.1% has locked in the Fed's higher-for-longer posture, continuing to divert institutional capital into AI infrastructure; South Korea's announced $518 billion AI chip buildout (Samsung, SK Hynix) underscores the scale of the rotation away from crypto and speculative risk.</li>
+          <li>The ECB's annual Sintra forum begins Tuesday with both ECB President Lagarde and Fed Chair Powell scheduled to speak — a potential catalyst for rates and currency volatility heading into key US inflation data later this week.</li>
+        </ul>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- SECTION 2: MACRO -->
+    <div class="section">
+      <span class="section-label">02 · Macro</span>
+      <h2 class="section-title">Sintra Forum Opens Amid Elevated Rates and Easing Tensions</h2>
+      <div class="section-body">
+        <p>The US–Iran emergency ceasefire agreement — halting direct strikes and reopening Hormuz to commercial traffic — removed the immediate threat of regional escalation, though structural maritime blockades and underlying nuclear negotiations remain unresolved and subject to rapid deterioration. The ECB's annual forum in Sintra, Portugal opens Tuesday with both Christine Lagarde and Jerome Powell on the programme, making this a high-sensitivity event for rates and FX markets as participants look for any shift in tone after this week's US inflation data. US PCE printing at 4.1% has effectively eliminated near-term Fed rate-cut expectations, keeping borrowing costs elevated and reinforcing a rotation toward AI equities over broader risk assets.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- SECTION 3: EQUITIES -->
+    <div class="section">
+      <span class="section-label">03 · Equities</span>
+      <h2 class="section-title">SPY Closes Q2 Weakly; Futures Recover on Iran Relief</h2>
+      <div class="section-body">
+        <p>SPY closed at $728.99 on Friday (-$5.31, -0.72%), capping a difficult final week of Q2 2026. QQQ and IWM data are unavailable due to Alpha Vantage API quota constraints. US equity futures pointed modestly higher heading into Monday's open as the Iran de-escalation news improved risk appetite, but actual Monday session movers are similarly unavailable.</p>
+        <p>The Friday SPY data reflects a market digesting both the geopolitical escalation through the week and quarter-end positioning. VIX touched an intraday high of 20.72 on Friday before pulling back sharply to close at 18.41, consistent with a late-session de-escalation relief. Top gainers and losers data is unavailable for this edition; full market mover data will resume when the API daily quota resets.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- SECTION 4: VOLATILITY -->
+    <div class="section">
+      <span class="section-label">04 · Volatility</span>
+      <h2 class="section-title">VIX Closes at 18.41 — Touched 20 Before Iran Relief</h2>
+      <div class="section-body">
+        <p>VIX closed at 18.41 on Friday, down 0.48 points (-2.61%) from the prior session's close of 18.89, but the intraday range told a more volatile story: the index touched 20.72 at the session high before rapidly unwinding as Iran de-escalation reports filtered through. The Friday open at 20.34 captures the degree of fear priced in at the start of the session.</p>
+        <p>At 18.41, VIX sits in neutral territory — above the complacency threshold of 15 but below the fear zone of 20. The failure to sustain above 20 is a modest positive signal; should Monday's session bring fresh geopolitical headlines or a US inflation surprise, a re-test of 20+ is the key level to watch.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- SECTION 5: FIXED INCOME -->
+    <div class="section">
+      <span class="section-label">05 · Fixed Income</span>
+      <h2 class="section-title">Yield Data Unavailable; Sintra and PCE in Focus</h2>
+      <div class="section-body">
+        <p>US 10-year and 2-year Treasury yield data are unavailable this session due to Alpha Vantage API quota constraints; yield curve shape and spread cannot be confirmed. Key context: with PCE at 4.1%, the front end of the curve remains anchored at restrictive levels, while the Sintra forum (Tuesday) and US inflation data due later this week represent the primary catalysts for rates direction. Treasury yield data will resume in the next edition.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- SECTION 6: CURRENCIES -->
+    <div class="section">
+      <span class="section-label">06 · Currencies</span>
+      <h2 class="section-title">EUR/USD and USD/JPY Data Unavailable; ECB Sintra Ahead</h2>
+      <div class="section-body">
+        <p>EUR/USD and USD/JPY spot rates are unavailable this session due to API quota constraints. Contextually, the euro edged lower against the pound ahead of the ECB Sintra forum, with EUR/GBP near support at 0.8450; traders are positioned cautiously ahead of Tuesday speeches from Lagarde and Powell. India's USDT premium surging above 8.5% (vs. a typical 3–4% range) reflects acute localized FX pressure following an Enforcement Directorate crackdown on stablecoin-mediated money transfers. Currency data will resume in the next edition.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- SECTION 7: COMMODITIES -->
+    <div class="section">
+      <span class="section-label">07 · Commodities</span>
+      <h2 class="section-title">Gold and WTI Data Unavailable; Iran Ceasefire Removes Supply Risk Premium</h2>
+      <div class="section-body">
+        <p>Gold and WTI crude direct price data are unavailable this session due to API quota constraints. The dominant commodity narrative remains the Iran situation: the US–Iran agreement to halt strikes and restore Hormuz shipping lanes removes the most acute supply-disruption risk from oil markets. A breakdown of Tuesday's Doha negotiations could rapidly reprice WTI higher. Gold likely absorbed safe-haven demand through last week's escalation and may face modest selling pressure on the de-escalation, though persistent PCE inflation provides a countervailing tailwind. Commodities data will resume in the next edition.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- SECTION 8: DIGITAL ASSETS -->
+    <div class="section">
+      <span class="watch-pill">⚡ WATCH</span>
+      <span class="section-label">08 · Digital Assets</span>
+      <h2 class="section-title">Bitcoin Fails to Reclaim $60K; EU MiCA Review Vote Set for July 7</h2>
+      <div class="section-body">
+        <p>Bitcoin hovered near $59,700, down 6.8% for the week and 18.7% over the past month, as crypto markets conspicuously failed to participate in equity relief following the Iran de-escalation. The $60,000 level has flipped from multi-cycle support to active resistance: early Monday buying pushed BTC above $60K briefly before heavy spot selling from long-term holders and institutional investors absorbed the move and sent it lower. BTC spot ETFs have registered over $7 billion in net outflows over the past two months, and $147.4 million in crypto positions were liquidated in a 12-hour window — $64.3 million from Bitcoin alone, with $116.1 million of the total from long positions. Bitcoin is also heading into a rare back-to-back quarterly loss.</p>
+        <ul>
+          <li><strong>ETH:</strong> Four dormant OG wallets ended an eight-year holding streak, selling 33,623 ETH (~$52.5 million) — a notable distribution signal from historically patient holders.</li>
+          <li><strong>XRP:</strong> XRP Ledger stablecoin market cap surged to $948.6 million (up 2.5× from $377 million in January), with RLUSD alone accounting for $810.6 million. ODL volume hit $1.2 billion in Q1 2026, up 45% year-over-year.</li>
+          <li><strong>BitMEX:</strong> CEO Stephan Lutz, CFO, and head of growth were all removed; global general counsel Peter Wilkinson assumes the CEO role.</li>
+          <li><strong>India USDT:</strong> Tether premium surged above 8.5% (vs. typical 3–4%) amid an Enforcement Directorate crackdown on alleged illegal money transfers via stablecoins.</li>
+          <li><strong>Macro overhang:</strong> South Korea's $518B AI chip investment push (Samsung, SK Hynix) is the latest signal that the AI capital cycle is drawing institutional flows away from crypto at scale.</li>
+        </ul>
+        <p style="margin-top:10px;"><strong>⚡ Regulatory watch:</strong> The European Parliament's economic affairs committee has urged the Commission to assess whether DeFi, staking, lending, and NFTs should fall under MiCA rules. A full Parliament vote is scheduled for <strong>7 July 2026</strong>. A positive vote would materially expand MiCA's scope and create new compliance obligations across the EU crypto ecosystem.</p>
+        <p><strong>Overall sentiment: Bearish.</strong></p>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- SECTION 9: EARNINGS RADAR -->
+    <div class="section">
+      <span class="section-label">09 · Earnings Radar</span>
+      <h2 class="section-title">Earnings Calendar Unavailable This Edition</h2>
+      <div class="section-body">
+        <p>Earnings calendar data (next 5 trading days) is unavailable this session due to Alpha Vantage API quota constraints. The earnings radar will resume in the next edition. Key Q2 reporting season begins in earnest in mid-July — watch for major financial sector names (banks) traditionally among the first to report.</p>
+        <table class="earnings-table">
+          <thead>
+            <tr>
+              <th>Company</th>
+              <th>Date</th>
+              <th>Expected Move</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td colspan="3" style="color:#9ca3af; text-align:center; padding:16px 12px;">Data unavailable — API quota reached. Will resume next edition.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div><!-- /.container -->
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <span class="footer-left">Market Quick Take &middot; Monday, 29 June 2026</span>
+        <span class="footer-right">For informational purposes only. Not investment advice.</span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
