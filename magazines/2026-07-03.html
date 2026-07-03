@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Market Quick Take — Friday, 3 July 2026</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #ffffff;
+      color: #1a2332;
+    }
+
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* MASTHEAD */
+    .masthead {
+      border-top: 3px solid #003366;
+      padding: 32px 0 20px;
+      border-bottom: 1px solid #e5e7eb;
+    }
+    .masthead-title {
+      font-weight: 700;
+      font-size: 42px;
+      color: #003366;
+      line-height: 1;
+      letter-spacing: -0.5px;
+    }
+    .masthead-date {
+      font-weight: 400;
+      font-size: 13px;
+      color: #6b7280;
+      margin-top: 6px;
+    }
+
+    /* SNAPSHOT BAR */
+    .snapshot-bar {
+      background: #f1f5f9;
+      padding: 12px 0;
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+    .snapshot-inner {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 24px;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0;
+    }
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      font-weight: 500;
+      font-size: 12px;
+      text-transform: uppercase;
+      color: #1a2332;
+      letter-spacing: 0.02em;
+      padding: 0 10px;
+    }
+    .chip:first-child { padding-left: 0; }
+    .chip-sep {
+      color: #9ca3af;
+      font-size: 12px;
+      font-weight: 400;
+    }
+    .chip-label { color: #6b7280; }
+    .chip-dot { color: #9ca3af; margin: 0 1px; }
+    .pos { color: #16a34a; }
+    .neg { color: #dc2626; }
+    .neu { color: #6b7280; }
+
+    /* EDITOR'S BRIEF */
+    .editors-brief {
+      font-weight: 400;
+      font-style: italic;
+      font-size: 18px;
+      color: #374151;
+      line-height: 1.7;
+      max-width: 760px;
+      margin: 28px 0;
+      border-left: 3px solid #003366;
+      padding-left: 16px;
+    }
+
+    /* SECTIONS */
+    .section { margin: 0; }
+    .watch-pill {
+      display: inline-block;
+      background: #fef3c7;
+      color: #b45309;
+      border-radius: 4px;
+      font-weight: 500;
+      font-size: 11px;
+      padding: 2px 8px;
+      margin-bottom: 8px;
+      letter-spacing: 0.03em;
+    }
+    .section-label {
+      font-weight: 500;
+      font-size: 11px;
+      color: #003366;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      margin-bottom: 6px;
+    }
+    .section-title {
+      font-weight: 700;
+      font-size: 24px;
+      color: #1a2332;
+      margin-bottom: 10px;
+      line-height: 1.25;
+    }
+    .section-body {
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 1.8;
+      color: #374151;
+    }
+    .section-body ul {
+      padding-left: 8px;
+      list-style: disc;
+      list-style-position: inside;
+    }
+    .section-body li {
+      margin-bottom: 6px;
+    }
+    .section-body p { margin-bottom: 10px; }
+    .section-body p:last-child { margin-bottom: 0; }
+
+    /* DIVIDER */
+    .divider {
+      border: none;
+      border-top: 1px solid #e5e7eb;
+      margin: 28px 0;
+    }
+
+    /* EARNINGS TABLE */
+    .earnings-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+      font-weight: 400;
+      margin-top: 12px;
+      overflow-x: auto;
+      display: block;
+    }
+    .earnings-table thead tr {
+      background: #f1f5f9;
+    }
+    .earnings-table th {
+      text-align: left;
+      padding: 8px 12px;
+      font-weight: 500;
+      font-size: 11px;
+      color: #6b7280;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      border: 1px solid #e5e7eb;
+    }
+    .earnings-table td {
+      padding: 8px 12px;
+      border: 1px solid #e5e7eb;
+      color: #374151;
+    }
+    .earnings-table tr:hover td { background: #f9fafb; }
+
+    /* FOOTER */
+    .footer {
+      background: #f1f5f9;
+      border-top: 1px solid #e5e7eb;
+      margin-top: 48px;
+      padding: 20px 0;
+    }
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .footer-inner span {
+      font-size: 12px;
+      font-weight: 400;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- MASTHEAD -->
+  <div class="masthead">
+    <div class="container">
+      <div class="masthead-title">MARKET QUICK TAKE</div>
+      <div class="masthead-date">Friday, 3 July 2026</div>
+    </div>
+  </div>
+
+  <!-- SNAPSHOT BAR -->
+  <div class="snapshot-bar">
+    <div class="snapshot-inner">
+      <div class="chip">
+        <span class="chip-label">SPY</span>
+        <span class="chip-dot">·</span>
+        <span>$744.78</span>
+        <span class="chip-dot">·</span>
+        <span class="neg">−0.13%</span>
+      </div>
+      <span class="chip-sep">|</span>
+      <div class="chip">
+        <span class="chip-label">QQQ</span>
+        <span class="chip-dot">·</span>
+        <span>$712.60</span>
+        <span class="chip-dot">·</span>
+        <span class="neg">−1.73%</span>
+      </div>
+      <span class="chip-sep">|</span>
+      <div class="chip">
+        <span class="chip-label">IWM</span>
+        <span class="chip-dot">·</span>
+        <span>$297.58</span>
+        <span class="chip-dot">·</span>
+        <span class="neg">−0.58%</span>
+      </div>
+      <span class="chip-sep">|</span>
+      <div class="chip">
+        <span class="chip-label">VIX</span>
+        <span class="chip-dot">·</span>
+        <span>16.15</span>
+        <span class="chip-dot">·</span>
+        <span class="pos">−2.72%</span>
+      </div>
+      <span class="chip-sep">|</span>
+      <div class="chip">
+        <span class="chip-label">US10Y</span>
+        <span class="chip-dot">·</span>
+        <span>4.48%</span>
+        <span class="chip-dot">·</span>
+        <span class="neg">+0.04%</span>
+      </div>
+      <span class="chip-sep">|</span>
+      <div class="chip">
+        <span class="chip-label">US2Y</span>
+        <span class="chip-dot">·</span>
+        <span>4.17%</span>
+        <span class="chip-dot">·</span>
+        <span class="neg">+0.03%</span>
+      </div>
+      <span class="chip-sep">|</span>
+      <div class="chip">
+        <span class="chip-label">EUR/USD</span>
+        <span class="chip-dot">·</span>
+        <span>1.1457</span>
+        <span class="chip-dot">·</span>
+        <span class="neu">N/A</span>
+      </div>
+      <span class="chip-sep">|</span>
+      <div class="chip">
+        <span class="chip-label">GOLD</span>
+        <span class="chip-dot">·</span>
+        <span>$4,179</span>
+        <span class="chip-dot">·</span>
+        <span class="neu">N/A</span>
+      </div>
+      <span class="chip-sep">|</span>
+      <div class="chip">
+        <span class="chip-label">WTI</span>
+        <span class="chip-dot">·</span>
+        <span>$71.87</span>
+        <span class="chip-dot">·</span>
+        <span class="pos">+2.23%</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <div class="container">
+
+    <!-- EDITOR'S BRIEF -->
+    <p class="editors-brief">
+      Markets entered the abbreviated July 4th holiday week on a bifurcated note: the S&amp;P 500 barely moved while the Nasdaq slid nearly 2% as the Fed's hawkish pivot — signalling a potential rate hike over a cut — continued to reprice growth multiples. Semiconductors led the decline, even as J.P. Morgan's bullish year-end target upgrade offered a partial floor.
+    </p>
+
+    <!-- SECTION 1: MARKET DRIVERS -->
+    <div class="section">
+      <div class="watch-pill">⚡ WATCH</div>
+      <div class="section-label">01 — Market Drivers</div>
+      <h2 class="section-title">Fed Hawkish Pivot Pressures Growth; Semis Lead Decline</h2>
+      <div class="section-body">
+        <ul>
+          <li><strong>Fed signals rate hike over cut:</strong> The Federal Reserve held rates steady but pivoted to a hawkish stance, signalling a potential rate hike as its next move rather than an easing. The shift rattled rate-sensitive growth assets, particularly in tech and semiconductors, as markets reprice the "higher for longer" premium.</li>
+          <li><strong>Semiconductor sector leads the selloff:</strong> Lam Research (LRCX) fell 7.40% amid earnings and forward-guidance concerns. The 3× semiconductor bear ETF SOXS surged 17%, reflecting concentrated institutional hedging activity in the chip sector — a continuation of the tech-sector rotation that began in late June.</li>
+          <li><strong>J.P. Morgan raises S&amp;P 500 year-end target to 7,800:</strong> The bullish call — citing higher rates lifting bank earnings and ongoing equity momentum — provided a backstop for the broader index. Financial stocks outperformed as a result, limiting S&amp;P 500 downside to −0.13% despite the Nasdaq's 1.73% loss.</li>
+          <li><strong>Pre-holiday liquidity compression:</strong> With US markets closed July 4 (Saturday observed), thin Friday volumes risk amplifying intraday moves. Participants are cautious about holding large positions through the long weekend given elevated geopolitical and macro uncertainty.</li>
+        </ul>
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <!-- SECTION 2: MACRO -->
+    <div class="section">
+      <div class="watch-pill">⚡ WATCH</div>
+      <div class="section-label">02 — Macro</div>
+      <h2 class="section-title">Fed's Hawkish Tilt Resets Rate-Path Expectations</h2>
+      <div class="section-body">
+        <p>The Federal Reserve's recent decision to hold rates steady was overshadowed by its hawkish signal that a rate <em>hike</em> — rather than a cut — could be the next policy action, marking a meaningful pivot in the policy narrative. This has reinforced the "higher for longer" consensus, with the 10-year Treasury climbing to 4.48% and the 2-year at 4.17%, maintaining a positively-sloped curve. Markets are now recalibrating rate-cut expectations that had been priced in for H2 2026, creating headwinds for duration-sensitive equities and credit spreads heading into the second half of the year.</p>
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <!-- SECTION 3: EQUITIES -->
+    <div class="section">
+      <div class="section-label">03 — Equities</div>
+      <h2 class="section-title">Nasdaq Bears the Brunt as Tech Rotation Deepens</h2>
+      <div class="section-body">
+        <p>SPY −0.13% to $744.78 &nbsp;|&nbsp; QQQ −1.73% to $712.60 &nbsp;|&nbsp; IWM −0.58% to $297.58</p>
+        <p>The near-2% divergence between the Nasdaq (QQQ) and the S&amp;P 500 (SPY) illustrates the market's ongoing rotation away from growth and toward value and financials. Large-cap tech names with extended multiples are bearing the greatest pressure as the rate-hike narrative re-emerges. Small-caps (IWM) underperformed the broader market modestly, reflecting sensitivity to the domestic credit cycle. Notable movers: <strong>Lam Research (LRCX) −7.40%</strong> extended the semiconductor equipment sector's drawdown, while the leveraged semiconductor bear ETF <strong>SOXS +17.10%</strong> became the session's most actively traded name, signalling pronounced institutional hedging in chip names.</p>
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <!-- SECTION 4: VOLATILITY -->
+    <div class="section">
+      <div class="section-label">04 — Volatility</div>
+      <h2 class="section-title">VIX Stays Complacent Despite Tech Selloff</h2>
+      <div class="section-body">
+        <p>The CBOE Volatility Index (VIX) eased to <strong>16.15</strong> (−2.72%), remaining squarely in the "complacent" zone below 20. Despite a notable Nasdaq selloff and renewed hawkish Fed rhetoric, markets have not yet triggered meaningful protection-buying in options. The calm reading could reflect pre-holiday window dressing or a genuinely sanguine macro outlook — but it also creates asymmetric risk: a vol regime shift toward 20+ would quickly alter risk-parity positioning and could amplify any post-holiday macro shock.</p>
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <!-- SECTION 5: FIXED INCOME -->
+    <div class="section">
+      <div class="section-label">05 — Fixed Income</div>
+      <h2 class="section-title">Yields Edge Higher; Curve Holds Positive Slope at +31bps</h2>
+      <div class="section-body">
+        <p>The 10-year Treasury yield rose to <strong>4.48%</strong> (+4bps) and the 2-year sits at <strong>4.17%</strong> (+3bps), maintaining a positively-sloped curve with a 2Y–10Y spread of +31 basis points. The curve's moderate steepness — holding well clear of inversion — signals that the market is not yet pricing a hard recession, but the gradual rise at the long end reflects the market's absorption of the Fed's hawkish tilt. "Higher for longer" rates continue to weigh on leveraged balance sheets, REITs, and growth equities. Credit markets will be closely watched for any widening in spreads as the rate-hike narrative takes hold.</p>
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <!-- SECTION 6: CURRENCIES -->
+    <div class="section">
+      <div class="section-label">06 — Currencies</div>
+      <h2 class="section-title">Dollar Holds Firm; Yen Remains Structurally Weak at 160.85</h2>
+      <div class="section-body">
+        <p><strong>EUR/USD at 1.1457:</strong> The euro holds modestly above the 1.14 handle, with the ECB's easing bias versus the Fed's hawkish pivot creating a widening policy differential that theoretically favours a stronger dollar. EUR/USD resilience likely reflects broad dollar softness amid pre-holiday thin flows and position squaring.</p>
+        <p><strong>USD/JPY at 160.85:</strong> The yen remains at historically weak levels, sustained by the BOJ–Fed policy divergence. Japanese monetary authorities have previously flagged 155–160 as an intervention threshold, making the current level geopolitically sensitive. BOJ officials have hinted at further rate normalisation, but any rate-hike signalling has yet to materially shift yen dynamics. Risk of intervention remains elevated.</p>
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <!-- SECTION 7: COMMODITIES -->
+    <div class="section">
+      <div class="section-label">07 — Commodities</div>
+      <h2 class="section-title">Gold Elevated at $4,179; WTI Bounces to $71.87</h2>
+      <div class="section-body">
+        <p><strong>Gold at $4,179.39/oz:</strong> Spot gold remains at historically elevated levels, underpinned by central bank demand, geopolitical safe-haven flows, and persistent inflation premia. Notably, gold mining equities experienced their worst quarterly drawdown in 13 years in Q2 — a divergence from spot prices that suggests equity investors are discounting margin compression, cost inflation, and idiosyncratic operational risks in the mining sector rather than fading the gold thesis itself.</p>
+        <p><strong>WTI at $71.87/bbl (+2.23%):</strong> Crude bounced from multi-week lows, aided by OPEC+ supply discipline and a short-squeeze in an oversold market. However, demand headwinds from a potentially slowing global economy — amplified by the Fed's renewed hawkish posture — continue to cap meaningful upside. The $70–$75 range remains the near-term battleground.</p>
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <!-- SECTION 8: EARNINGS CALENDAR -->
+    <div class="section">
+      <div class="section-label">08 — Earnings Radar</div>
+      <h2 class="section-title">Q2 Earnings Season Heats Up Post-Holiday</h2>
+      <div class="section-body">
+        <p>With US markets reopening after Independence Day, Q2 earnings season accelerates. Key names in the next five trading days (July 3–9):</p>
+        <table class="earnings-table">
+          <thead>
+            <tr>
+              <th>Company</th>
+              <th>Ticker</th>
+              <th>Date</th>
+              <th>EPS Estimate</th>
+              <th>Context</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>PepsiCo</td>
+              <td>PEP</td>
+              <td>9 Jul</td>
+              <td>$2.19</td>
+              <td>Key consumer bellwether; pricing power vs. volume trade-off in focus</td>
+            </tr>
+            <tr>
+              <td>Levi Strauss</td>
+              <td>LEVI</td>
+              <td>8 Jul</td>
+              <td>$0.24</td>
+              <td>Apparel brand navigating tariff headwinds and wholesale channel shifts</td>
+            </tr>
+            <tr>
+              <td>AZZ Inc.</td>
+              <td>AZZ</td>
+              <td>8 Jul</td>
+              <td>$1.63</td>
+              <td>Industrial coatings firm; infrastructure spend and margin execution watched</td>
+            </tr>
+            <tr>
+              <td>WD-40 Company</td>
+              <td>WDFC</td>
+              <td>9 Jul</td>
+              <td>$1.58</td>
+              <td>Consumer/industrial brand; input cost trends and international FX drag key</td>
+            </tr>
+            <tr>
+              <td>Penguin Solutions</td>
+              <td>PENG</td>
+              <td>7 Jul</td>
+              <td>$0.49</td>
+              <td>Memory solutions provider; semi-sector sentiment will heavily influence read-through</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div><!-- /container -->
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span style="color:#6b7280;">Market Quick Take &middot; Friday, 3 July 2026</span>
+      <span style="color:#9ca3af;">For informational purposes only. Not investment advice.</span>
+    </div>
+  </footer>
+
+</body>
+</html>
