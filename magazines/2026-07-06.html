@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Market Quick Take — Monday, 6 July 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Inter', sans-serif;
+    background: #ffffff;
+    color: #1a2332;
+  }
+  .container {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  /* MASTHEAD */
+  .masthead {
+    border-top: 3px solid #003366;
+    padding: 32px 0 20px;
+    border-bottom: 1px solid #e5e7eb;
+    margin-bottom: 0;
+  }
+  .masthead-title {
+    font-size: 42px;
+    font-weight: 700;
+    color: #003366;
+    line-height: 1.1;
+    letter-spacing: -0.5px;
+  }
+  .masthead-date {
+    font-size: 13px;
+    font-weight: 400;
+    color: #6b7280;
+    margin-top: 6px;
+  }
+
+  /* SNAPSHOT BAR */
+  .snapshot-bar {
+    background: #f1f5f9;
+    padding: 12px 0;
+    width: 100%;
+  }
+  .snapshot-inner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 0;
+    align-items: center;
+  }
+  .chip {
+    font-size: 12px;
+    font-weight: 500;
+    color: #1a2332;
+    text-transform: uppercase;
+    white-space: nowrap;
+    padding: 0 10px;
+  }
+  .chip:not(:last-child)::after {
+    content: '|';
+    margin-left: 10px;
+    color: #d1d5db;
+  }
+  .chip-label { color: #6b7280; }
+  .chip-value { margin: 0 3px; }
+  .chip-change { }
+  .positive { color: #16a34a; }
+  .negative { color: #dc2626; }
+  .neutral { color: #6b7280; }
+
+  /* EDITOR'S BRIEF */
+  .editors-brief {
+    font-size: 18px;
+    font-weight: 400;
+    font-style: italic;
+    color: #374151;
+    max-width: 760px;
+    margin: 28px 0;
+    border-left: 3px solid #003366;
+    padding-left: 16px;
+    line-height: 1.7;
+  }
+
+  /* SECTIONS */
+  .sections {
+    max-width: 860px;
+  }
+  .section-divider {
+    border: none;
+    border-top: 1px solid #e5e7eb;
+    margin: 28px 0;
+  }
+  .watch-pill {
+    display: inline-block;
+    background: #fef3c7;
+    color: #b45309;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 500;
+    padding: 2px 8px;
+    margin-bottom: 8px;
+    letter-spacing: 0.3px;
+  }
+  .section-label {
+    font-size: 11px;
+    font-weight: 500;
+    color: #003366;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 6px;
+  }
+  .section-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1a2332;
+    margin-bottom: 10px;
+    line-height: 1.2;
+  }
+  .section-body {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.8;
+    color: #374151;
+  }
+  .section-body ul {
+    padding-left: 8px;
+    list-style: disc;
+    margin-left: 16px;
+  }
+  .section-body ul li {
+    margin-bottom: 6px;
+  }
+  .section-body p + p {
+    margin-top: 10px;
+  }
+
+  /* EARNINGS TABLE */
+  .earnings-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #e5e7eb;
+    font-size: 13px;
+    font-weight: 400;
+    margin-top: 12px;
+  }
+  .earnings-table th {
+    background: #f1f5f9;
+    color: #003366;
+    font-weight: 600;
+    text-align: left;
+    padding: 8px 12px;
+    border-bottom: 1px solid #e5e7eb;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  .earnings-table td {
+    padding: 8px 12px;
+    border-bottom: 1px solid #e5e7eb;
+    color: #374151;
+  }
+  .earnings-table tr:last-child td {
+    border-bottom: none;
+  }
+  .earnings-table tr:hover td {
+    background: #f9fafb;
+  }
+
+  /* FOOTER */
+  .footer {
+    background: #f1f5f9;
+    border-top: 1px solid #e5e7eb;
+    margin-top: 48px;
+    padding: 20px 0;
+  }
+  .footer-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .footer-brand {
+    font-size: 12px;
+    font-weight: 400;
+    color: #6b7280;
+  }
+  .footer-disclaimer {
+    font-size: 12px;
+    font-weight: 400;
+    color: #9ca3af;
+  }
+  .data-note {
+    background: #fff7ed;
+    border-left: 3px solid #f59e0b;
+    padding: 10px 14px;
+    font-size: 13px;
+    color: #92400e;
+    margin-bottom: 14px;
+    border-radius: 0 4px 4px 0;
+  }
+</style>
+</head>
+<body>
+
+<!-- MASTHEAD -->
+<div class="container">
+  <div class="masthead">
+    <div class="masthead-title">MARKET QUICK TAKE</div>
+    <div class="masthead-date">Monday, 6 July 2026</div>
+  </div>
+</div>
+
+<!-- SNAPSHOT BAR -->
+<div class="snapshot-bar">
+  <div class="container">
+    <div class="snapshot-inner">
+      <div class="chip">
+        <span class="chip-label">SPY</span>
+        <span class="chip-value">744.78</span>
+        <span class="chip-change negative">−0.13%</span>
+      </div>
+      <div class="chip">
+        <span class="chip-label">QQQ</span>
+        <span class="chip-value">N/A</span>
+        <span class="chip-change neutral">N/A</span>
+      </div>
+      <div class="chip">
+        <span class="chip-label">IWM</span>
+        <span class="chip-value">N/A</span>
+        <span class="chip-change neutral">N/A</span>
+      </div>
+      <div class="chip">
+        <span class="chip-label">VIX</span>
+        <span class="chip-value">15.81</span>
+        <span class="chip-change positive">−2.11%</span>
+      </div>
+      <div class="chip">
+        <span class="chip-label">US10Y</span>
+        <span class="chip-value">N/A</span>
+        <span class="chip-change neutral">N/A</span>
+      </div>
+      <div class="chip">
+        <span class="chip-label">US2Y</span>
+        <span class="chip-value">N/A</span>
+        <span class="chip-change neutral">N/A</span>
+      </div>
+      <div class="chip">
+        <span class="chip-label">EUR/USD</span>
+        <span class="chip-value">N/A</span>
+        <span class="chip-change neutral">N/A</span>
+      </div>
+      <div class="chip">
+        <span class="chip-label">GOLD</span>
+        <span class="chip-value">N/A</span>
+        <span class="chip-change neutral">N/A</span>
+      </div>
+      <div class="chip">
+        <span class="chip-label">WTI</span>
+        <span class="chip-value">N/A</span>
+        <span class="chip-change neutral">N/A</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- EDITOR'S BRIEF -->
+<div class="container">
+  <div class="editors-brief">
+    Markets return from the July 4th Independence Day holiday weekend. SPY closed at $744.78 on Thursday July 2nd, off a modest 0.13%, while the CBOE VIX eased to 15.81 — comfortably in the calm zone — suggesting investors head into Monday's reopening without elevated hedging demand. Broad market data for QQQ, IWM, fixed income, currencies, and commodities was unavailable due to API rate limits being reached prior to this run; available data points are presented below.
+  </div>
+</div>
+
+<!-- SECTIONS -->
+<div class="container sections">
+
+  <!-- DATA NOTE -->
+  <div class="data-note">
+    Data note: The Alpha Vantage free-tier daily limit (25 calls) was exhausted before this run completed. Only SPY quote data and CBOE VIX are available. All other market data fields display as N/A. Digital Assets data is also unavailable (CoinDesk requires interactive authentication). The next run will have a fresh daily quota.
+  </div>
+
+  <!-- SECTION 1: MARKET DRIVERS -->
+  <div class="section-label">Section 1</div>
+  <div class="section-title">Market Drivers</div>
+  <div class="section-body">
+    <ul>
+      <li>News sentiment data unavailable (API rate limit reached). No dominant narrative can be confirmed from live data feeds.</li>
+      <li>Markets reopen from the July 4th Independence Day long weekend — typical post-holiday sessions see lower volumes in the first half of the day.</li>
+      <li>SPY recorded a marginal decline of 0.13% on July 2, the last trading session before the holiday, suggesting no meaningful pre-holiday selling pressure.</li>
+      <li>VIX at 15.81 (down 2.11% from prior close of 16.15) indicates the options market does not price elevated near-term risk on Monday's open.</li>
+    </ul>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 2: MACRO -->
+  <div class="section-label">Section 2</div>
+  <div class="section-title">Macro</div>
+  <div class="section-body">
+    <p>Macro data — including treasury yields, Fed posture commentary, and geopolitical news — was unavailable due to the Alpha Vantage daily API quota being exhausted before this edition's run.</p>
+    <p>Yield curve shape (2Y vs 10Y spread), rate expectations, and any Fed communication from the holiday weekend cannot be confirmed. Readers should consult primary sources for current fixed-income and macro conditions.</p>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 3: EQUITIES -->
+  <div class="section-label">Section 3</div>
+  <div class="section-title">Equities</div>
+  <div class="section-body">
+    <p><strong>SPY</strong> (S&amp;P 500 ETF): Closed at <strong>$744.78</strong> on July 2, down <span class="negative">$0.98 (−0.13%)</span> from the prior close of $745.76. Intraday range was $740.03–$751.31 on volume of ~57.5M shares. The mild pullback from intraday highs suggests some end-of-week trimming ahead of the holiday.</p>
+    <p><strong>QQQ</strong> (Nasdaq-100 ETF): N/A — data unavailable.</p>
+    <p><strong>IWM</strong> (Russell 2000 ETF): N/A — data unavailable.</p>
+    <p>Top gainers and losers for the session are unavailable; API quota was exhausted before the TOP_GAINERS_LOSERS call.</p>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 4: VOLATILITY -->
+  <div class="section-label">Section 4</div>
+  <div class="section-title">Volatility</div>
+  <div class="section-body">
+    <p>The CBOE VIX stands at <strong>15.81</strong>, down 0.34 points (−2.11%) from the previous close of 16.15. At this level, VIX is firmly in the <em>complacent zone</em> (below 15 is historically euphoric; 15–20 is neutral). The intraday high of 17.21 and current reading of 15.81 suggest that any early-session fear quickly faded.</p>
+    <p>With VIX below 20, options pricing does not reflect elevated risk premium heading into the post-holiday week. Watch for any uptick above 18 as a sign of re-emerging caution.</p>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 5: FIXED INCOME -->
+  <div class="section-label">Section 5</div>
+  <div class="section-title">Fixed Income</div>
+  <div class="section-body">
+    <p>US 10-Year and 2-Year Treasury yield data is unavailable for this edition — the Alpha Vantage TREASURY_YIELD calls were not completed before the daily API quota was exhausted.</p>
+    <p>Yield curve shape (steepening, flattening, or inverted) cannot be assessed. Readers should check the US Treasury website or Bloomberg for current yield levels.</p>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 6: CURRENCIES -->
+  <div class="section-label">Section 6</div>
+  <div class="section-title">Currencies</div>
+  <div class="section-body">
+    <p>EUR/USD and USD/JPY exchange rates are unavailable for this edition — the CURRENCY_EXCHANGE_RATE calls were not completed before the daily API quota was exhausted.</p>
+    <p>No notable currency moves can be confirmed from live data for this issue.</p>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 7: COMMODITIES -->
+  <div class="section-label">Section 7</div>
+  <div class="section-title">Commodities</div>
+  <div class="section-body">
+    <p>Gold spot price and WTI crude oil data are unavailable for this edition — the GOLD_SILVER_SPOT and WTI calls were not completed before the daily API quota was exhausted.</p>
+    <p>Commodity levels and drivers cannot be confirmed from live data for this issue.</p>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 8: EARNINGS CALENDAR -->
+  <div class="section-label">Section 8</div>
+  <div class="section-title">Earnings Radar</div>
+  <div class="section-body">
+    <p>Earnings calendar data is unavailable for this edition — the EARNINGS_CALENDAR call was not completed before the daily API quota was exhausted. The table below shows no entries as a result.</p>
+    <table class="earnings-table">
+      <thead>
+        <tr>
+          <th>Company</th>
+          <th>Date</th>
+          <th>Expected Move</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td colspan="3" style="text-align:center; color:#9ca3af; font-style:italic;">No earnings data available — API quota exhausted</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</div><!-- /sections -->
+
+<!-- FOOTER -->
+<div class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <span class="footer-brand">Market Quick Take &middot; Monday, 6 July 2026</span>
+      <span class="footer-disclaimer">For informational purposes only. Not investment advice.</span>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
