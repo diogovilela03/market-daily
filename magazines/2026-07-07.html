@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Market Quick Take — Tuesday, 7 July 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #ffffff;
+      color: #1a2332;
+    }
+
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* MASTHEAD */
+    .masthead {
+      border-top: 3px solid #003366;
+      padding: 32px 0 20px;
+      border-bottom: 1px solid #e5e7eb;
+    }
+    .masthead h1 {
+      font-size: 42px;
+      font-weight: 700;
+      color: #003366;
+      letter-spacing: -0.5px;
+    }
+    .masthead .date {
+      font-size: 13px;
+      font-weight: 400;
+      color: #6b7280;
+      margin-top: 6px;
+    }
+
+    /* SNAPSHOT BAR */
+    .snapshot-bar {
+      background: #f1f5f9;
+      padding: 12px 0;
+      width: 100%;
+    }
+    .snapshot-inner {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 24px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px 0;
+      align-items: center;
+    }
+    .chip {
+      font-size: 12px;
+      font-weight: 500;
+      color: #1a2332;
+      text-transform: uppercase;
+      white-space: nowrap;
+      padding: 0 10px;
+    }
+    .chip:not(:last-child)::after {
+      content: '|';
+      margin-left: 10px;
+      color: #9ca3af;
+    }
+    .chip .label { color: #6b7280; }
+    .chip .value { margin: 0 3px; }
+    .chip .pos { color: #16a34a; }
+    .chip .neg { color: #dc2626; }
+    .chip .na  { color: #9ca3af; }
+
+    /* EDITOR'S BRIEF */
+    .editors-brief {
+      font-size: 18px;
+      font-weight: 400;
+      font-style: italic;
+      color: #374151;
+      max-width: 760px;
+      margin: 28px 0;
+      border-left: 3px solid #003366;
+      padding-left: 16px;
+      line-height: 1.7;
+    }
+
+    /* SECTIONS */
+    .section { margin-bottom: 0; }
+    .section-label {
+      font-size: 11px;
+      font-weight: 500;
+      color: #003366;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      margin-bottom: 6px;
+    }
+    .section-title {
+      font-size: 24px;
+      font-weight: 700;
+      color: #1a2332;
+      margin-bottom: 10px;
+    }
+    .section-body {
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 1.8;
+      color: #374151;
+    }
+    .section-body ul {
+      padding-left: 8px;
+      list-style: disc;
+      list-style-position: inside;
+    }
+    .section-body ul li { margin-bottom: 6px; }
+
+    .section-divider {
+      border: none;
+      border-top: 1px solid #e5e7eb;
+      margin: 28px 0;
+    }
+
+    /* WATCH BADGE */
+    .watch-badge {
+      display: inline-block;
+      background: #fef3c7;
+      color: #b45309;
+      border-radius: 4px;
+      font-size: 11px;
+      font-weight: 500;
+      padding: 2px 8px;
+      margin-bottom: 8px;
+    }
+
+    /* EARNINGS TABLE */
+    .earnings-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+      font-weight: 400;
+      color: #374151;
+      margin-top: 12px;
+    }
+    .earnings-table th {
+      text-align: left;
+      font-weight: 600;
+      color: #1a2332;
+      border: 1px solid #e5e7eb;
+      padding: 8px 12px;
+      background: #f9fafb;
+    }
+    .earnings-table td {
+      border: 1px solid #e5e7eb;
+      padding: 8px 12px;
+    }
+
+    /* DATA UNAVAILABLE NOTE */
+    .data-note {
+      font-size: 13px;
+      color: #9ca3af;
+      font-style: italic;
+      margin-top: 6px;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #f1f5f9;
+      border-top: 1px solid #e5e7eb;
+      margin-top: 48px;
+      padding: 20px 0;
+    }
+    footer .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    footer span {
+      font-size: 12px;
+      font-weight: 400;
+    }
+    .footer-brand { color: #6b7280; }
+    .footer-legal { color: #9ca3af; }
+
+    @media (prefers-color-scheme: dark) {
+      body { background: #0f172a; color: #e2e8f0; }
+      .masthead h1 { color: #60a5fa; }
+      .masthead { border-top-color: #60a5fa; border-bottom-color: #1e293b; }
+      .masthead .date { color: #94a3b8; }
+      .snapshot-bar { background: #1e293b; }
+      .chip { color: #e2e8f0; }
+      .chip .label { color: #94a3b8; }
+      .section-label { color: #60a5fa; }
+      .section-title { color: #f1f5f9; }
+      .section-body { color: #cbd5e1; }
+      .section-divider { border-top-color: #1e293b; }
+      .editors-brief { color: #cbd5e1; border-left-color: #60a5fa; }
+      .earnings-table th { background: #1e293b; color: #f1f5f9; border-color: #334155; }
+      .earnings-table td { border-color: #334155; color: #cbd5e1; }
+      footer { background: #1e293b; border-top-color: #334155; }
+      .footer-brand { color: #94a3b8; }
+      .footer-legal { color: #64748b; }
+      .data-note { color: #64748b; }
+    }
+    :root[data-theme="dark"] {
+      --body-bg: #0f172a;
+    }
+    :root[data-theme="light"] body { background: #ffffff; color: #1a2332; }
+    :root[data-theme="dark"] body { background: #0f172a; color: #e2e8f0; }
+    :root[data-theme="dark"] .masthead h1 { color: #60a5fa; }
+    :root[data-theme="dark"] .masthead { border-top-color: #60a5fa; border-bottom-color: #1e293b; }
+    :root[data-theme="dark"] .masthead .date { color: #94a3b8; }
+    :root[data-theme="dark"] .snapshot-bar { background: #1e293b; }
+    :root[data-theme="dark"] .chip { color: #e2e8f0; }
+    :root[data-theme="dark"] .chip .label { color: #94a3b8; }
+    :root[data-theme="dark"] .section-label { color: #60a5fa; }
+    :root[data-theme="dark"] .section-title { color: #f1f5f9; }
+    :root[data-theme="dark"] .section-body { color: #cbd5e1; }
+    :root[data-theme="dark"] .section-divider { border-top-color: #1e293b; }
+    :root[data-theme="dark"] .editors-brief { color: #cbd5e1; border-left-color: #60a5fa; }
+    :root[data-theme="dark"] .earnings-table th { background: #1e293b; color: #f1f5f9; border-color: #334155; }
+    :root[data-theme="dark"] .earnings-table td { border-color: #334155; color: #cbd5e1; }
+    :root[data-theme="dark"] footer { background: #1e293b; border-top-color: #334155; }
+    :root[data-theme="dark"] .footer-brand { color: #94a3b8; }
+    :root[data-theme="dark"] .footer-legal { color: #64748b; }
+    :root[data-theme="dark"] .data-note { color: #64748b; }
+  </style>
+</head>
+<body>
+
+  <!-- MASTHEAD -->
+  <div class="container">
+    <div class="masthead">
+      <h1>MARKET QUICK TAKE</h1>
+      <div class="date">Tuesday, 7 July 2026</div>
+    </div>
+  </div>
+
+  <!-- SNAPSHOT BAR -->
+  <div class="snapshot-bar">
+    <div class="snapshot-inner">
+      <div class="chip">
+        <span class="label">SPY</span>
+        <span class="value na">N/A</span>
+      </div>
+      <div class="chip">
+        <span class="label">QQQ</span>
+        <span class="value na">N/A</span>
+      </div>
+      <div class="chip">
+        <span class="label">IWM</span>
+        <span class="value na">N/A</span>
+      </div>
+      <div class="chip">
+        <span class="label">VIX</span>
+        <span class="value">15.57</span>
+        <span class="neg">−3.73%</span>
+      </div>
+      <div class="chip">
+        <span class="label">US10Y</span>
+        <span class="value na">N/A</span>
+      </div>
+      <div class="chip">
+        <span class="label">US2Y</span>
+        <span class="value na">N/A</span>
+      </div>
+      <div class="chip">
+        <span class="label">EUR/USD</span>
+        <span class="value na">N/A</span>
+      </div>
+      <div class="chip">
+        <span class="label">GOLD</span>
+        <span class="value na">N/A</span>
+      </div>
+      <div class="chip">
+        <span class="label">WTI</span>
+        <span class="value na">N/A</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <div class="container">
+
+    <!-- EDITOR'S BRIEF -->
+    <p class="editors-brief">
+      Today's edition is compiled under constrained data conditions: the Alpha Vantage free-tier daily quota (25 calls) was exhausted prior to this run, leaving equity, yield, currency, commodity, and news data unavailable. The sole confirmed data point is VIX at 15.57, indicating a complacent volatility environment heading into the Tuesday session.
+    </p>
+
+    <!-- SECTION 1: MARKET DRIVERS -->
+    <div class="section">
+      <div class="section-label">Section 1</div>
+      <div class="section-title">Market Drivers</div>
+      <div class="section-body">
+        <p class="data-note">Market news and sentiment data unavailable — Alpha Vantage daily quota exhausted before this run. No narrative bullets can be sourced from live data.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider" />
+
+    <!-- SECTION 2: MACRO -->
+    <div class="section">
+      <div class="section-label">Section 2</div>
+      <div class="section-title">Macro</div>
+      <div class="section-body">
+        <p class="data-note">Treasury yield and macro sentiment data unavailable. Rates, Fed posture, and geopolitical backdrop cannot be assessed without live data.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider" />
+
+    <!-- SECTION 3: EQUITIES -->
+    <div class="section">
+      <div class="section-label">Section 3</div>
+      <div class="section-title">Equities</div>
+      <div class="section-body">
+        <ul>
+          <li><strong>SPY:</strong> N/A — price data unavailable</li>
+          <li><strong>QQQ:</strong> N/A — price data unavailable</li>
+          <li><strong>IWM:</strong> N/A — price data unavailable</li>
+        </ul>
+        <p class="data-note" style="margin-top:10px;">Top movers (gainers/losers) unavailable — AV quota exhausted.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider" />
+
+    <!-- SECTION 4: VOLATILITY -->
+    <div class="section">
+      <div class="section-label">Section 4</div>
+      <div class="section-title">Volatility</div>
+      <div class="section-body">
+        <p>The CBOE VIX closed Monday at <strong>15.57</strong>, down 0.58 points (−3.73%) on the session. At this level, implied volatility sits in the <em>complacent</em> zone (below 20), signalling that options markets are pricing limited near-term stress. A reading below 15 would indicate extreme complacency; the current level is neutral-to-calm. Traders should watch for any catalyst that could spike fear toward the 20+ threshold.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider" />
+
+    <!-- SECTION 5: FIXED INCOME -->
+    <div class="section">
+      <div class="section-label">Section 5</div>
+      <div class="section-title">Fixed Income</div>
+      <div class="section-body">
+        <p class="data-note">10-year and 2-year Treasury yield data unavailable — Alpha Vantage TREASURY_YIELD endpoint could not be reached. Yield curve shape (steepening / flattening / inverted) cannot be assessed.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider" />
+
+    <!-- SECTION 6: CURRENCIES -->
+    <div class="section">
+      <div class="section-label">Section 6</div>
+      <div class="section-title">Currencies</div>
+      <div class="section-body">
+        <p class="data-note">EUR/USD and USD/JPY exchange rate data unavailable — Alpha Vantage CURRENCY_EXCHANGE_RATE endpoint could not be reached.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider" />
+
+    <!-- SECTION 7: COMMODITIES -->
+    <div class="section">
+      <div class="section-label">Section 7</div>
+      <div class="section-title">Commodities</div>
+      <div class="section-body">
+        <p class="data-note">Gold and WTI crude oil price data unavailable — Alpha Vantage GOLD_SILVER_SPOT and WTI endpoints could not be reached.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider" />
+
+    <!-- SECTION 8: EARNINGS CALENDAR -->
+    <div class="section">
+      <div class="section-label">Section 8</div>
+      <div class="section-title">Earnings Calendar</div>
+      <div class="section-body">
+        <p class="data-note">Earnings calendar data unavailable — Alpha Vantage EARNINGS_CALENDAR endpoint could not be reached. Scheduled reports for the next 5 trading days (Jul 8–14) cannot be displayed.</p>
+        <table class="earnings-table" style="margin-top:12px;">
+          <thead>
+            <tr>
+              <th>Company</th>
+              <th>Date</th>
+              <th>Expected Move</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td colspan="3" style="text-align:center;color:#9ca3af;font-style:italic;">Data unavailable</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div><!-- /.container -->
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <span class="footer-brand">Market Quick Take · Tuesday, 7 July 2026</span>
+      <span class="footer-legal">For informational purposes only. Not investment advice.</span>
+    </div>
+  </footer>
+
+</body>
+</html>
