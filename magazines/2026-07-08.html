@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Market Quick Take — 8 July 2026</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #ffffff;
+      color: #1a2332;
+    }
+
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* ── MASTHEAD ── */
+    .masthead {
+      border-top: 3px solid #003366;
+      padding: 32px 0 20px;
+      border-bottom: 1px solid #e5e7eb;
+    }
+    .masthead__title {
+      font-size: 42px;
+      font-weight: 700;
+      color: #003366;
+      letter-spacing: -0.5px;
+    }
+    .masthead__date {
+      font-size: 13px;
+      font-weight: 400;
+      color: #6b7280;
+      margin-top: 6px;
+    }
+
+    /* ── SNAPSHOT BAR ── */
+    .snapshot-bar {
+      background: #f1f5f9;
+      padding: 12px 0;
+      width: 100%;
+    }
+    .snapshot-bar .container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px 0;
+      align-items: center;
+    }
+    .chip {
+      font-size: 12px;
+      font-weight: 500;
+      color: #1a2332;
+      text-transform: uppercase;
+      white-space: nowrap;
+      padding: 0 10px;
+    }
+    .chip-sep {
+      color: #9ca3af;
+      font-size: 12px;
+      font-weight: 400;
+    }
+    .cdot { color: #9ca3af; }
+    .pos  { color: #16a34a; }
+    .neg  { color: #dc2626; }
+    .na   { color: #9ca3af; }
+
+    /* ── EDITOR'S BRIEF ── */
+    .editors-brief {
+      font-size: 18px;
+      font-style: italic;
+      font-weight: 400;
+      color: #374151;
+      line-height: 1.8;
+      max-width: 760px;
+      margin: 28px 0;
+      border-left: 3px solid #003366;
+      padding-left: 16px;
+    }
+
+    /* ── SECTIONS ── */
+    .section-label {
+      font-size: 11px;
+      font-weight: 500;
+      color: #003366;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      margin-bottom: 6px;
+    }
+    .section-title {
+      font-size: 24px;
+      font-weight: 700;
+      color: #1a2332;
+      margin-bottom: 10px;
+    }
+    .section-body {
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 1.8;
+      color: #374151;
+    }
+    .section-body ul {
+      list-style: disc;
+      margin-left: 20px;
+      padding-left: 4px;
+    }
+    .section-body ul li {
+      margin-bottom: 6px;
+    }
+    .section-body p + p {
+      margin-top: 10px;
+    }
+    .watch-pill {
+      display: inline-block;
+      background: #fef3c7;
+      color: #b45309;
+      font-size: 11px;
+      font-weight: 500;
+      border-radius: 4px;
+      padding: 2px 8px;
+      margin-bottom: 8px;
+    }
+    hr.divider {
+      border: none;
+      border-top: 1px solid #e5e7eb;
+      margin: 28px 0;
+    }
+
+    /* ── EARNINGS TABLE ── */
+    .earnings-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+      border: 1px solid #e5e7eb;
+      margin-top: 14px;
+    }
+    .earnings-table th {
+      text-align: left;
+      padding: 8px 12px;
+      background: #f1f5f9;
+      font-weight: 500;
+      color: #1a2332;
+      border-bottom: 1px solid #e5e7eb;
+    }
+    .earnings-table td {
+      padding: 8px 12px;
+      border-bottom: 1px solid #e5e7eb;
+      color: #374151;
+    }
+    .earnings-table tr:last-child td {
+      border-bottom: none;
+    }
+    .table-empty {
+      text-align: center;
+      padding: 20px 12px !important;
+      color: #9ca3af !important;
+    }
+
+    /* ── FOOTER ── */
+    .footer {
+      background: #f1f5f9;
+      border-top: 1px solid #e5e7eb;
+      margin-top: 48px;
+      padding: 20px 0;
+    }
+    .footer .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .footer-brand  { font-size: 12px; font-weight: 400; color: #6b7280; }
+    .footer-legal  { font-size: 12px; font-weight: 400; color: #9ca3af; }
+  </style>
+</head>
+<body>
+
+  <!-- MASTHEAD -->
+  <div class="container">
+    <div class="masthead">
+      <div class="masthead__title">MARKET QUICK TAKE</div>
+      <div class="masthead__date">Wednesday, 8 July 2026</div>
+    </div>
+  </div>
+
+  <!-- SNAPSHOT BAR -->
+  <div class="snapshot-bar">
+    <div class="container">
+      <span class="chip">SPY <span class="cdot">·</span> 747.71 <span class="cdot">·</span> <span class="neg">-0.48%</span></span>
+      <span class="chip-sep">|</span>
+      <span class="chip">QQQ <span class="cdot">·</span> 709.43 <span class="cdot">·</span> <span class="neg">-1.85%</span></span>
+      <span class="chip-sep">|</span>
+      <span class="chip">IWM <span class="cdot">·</span> <span class="na">N/A</span></span>
+      <span class="chip-sep">|</span>
+      <span class="chip">VIX <span class="cdot">·</span> 16.13 <span class="cdot">·</span> <span class="pos">+3.47%</span></span>
+      <span class="chip-sep">|</span>
+      <span class="chip">US10Y <span class="cdot">·</span> <span class="na">N/A</span></span>
+      <span class="chip-sep">|</span>
+      <span class="chip">US2Y <span class="cdot">·</span> <span class="na">N/A</span></span>
+      <span class="chip-sep">|</span>
+      <span class="chip">EUR/USD <span class="cdot">·</span> <span class="na">N/A</span></span>
+      <span class="chip-sep">|</span>
+      <span class="chip">GOLD <span class="cdot">·</span> <span class="na">N/A</span></span>
+      <span class="chip-sep">|</span>
+      <span class="chip">WTI <span class="cdot">·</span> <span class="na">N/A</span></span>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <div class="container">
+
+    <!-- EDITOR'S BRIEF -->
+    <p class="editors-brief">
+      Equity markets sold off on Tuesday, July 7, with the Nasdaq-100 bearing the brunt as QQQ dropped 1.85% against a far milder 0.48% decline in the S&P 500. The wide performance gap between growth and the broad market points to a concentrated rotation out of mega-cap tech, while a VIX reading of 16.13 confirms caution rather than outright fear. Rate, FX, commodities, and movers data is unavailable today due to the data provider's daily call limit being exhausted; full coverage resumes tomorrow.
+    </p>
+
+    <!-- 1. MARKET DRIVERS -->
+    <div class="section">
+      <div class="section-label">Section 01</div>
+      <div class="section-title">Market Drivers</div>
+      <div class="section-body">
+        <ul>
+          <li>Tech-led rotation dominated Tuesday's session: QQQ fell 1.85% (from 722.82 to 709.43) while SPY declined only 0.48% (from 751.28 to 747.71), a divergence of approximately 137 basis points — a signal of concentrated selling in growth and mega-cap names rather than broad market stress.</li>
+          <li>QQQ's intraday range of 704.90–716.35 (swing of ~$11.45) dwarfed SPY's tighter 745.21–750.96 range, underscoring the magnitude of pressure on technology-heavy names versus the defensive tilt of the broader index.</li>
+          <li>VIX nudged up 3.47% to 16.13, consistent with increased hedging activity on the tech retreat but far below the 20 threshold that historically marks elevated institutional fear or systemic concern.</li>
+          <li>News sentiment data unavailable this session (data provider rate limit reached). Catalyst detail — including any macro, earnings, or Fed-related triggers — will be incorporated in the next edition.</li>
+        </ul>
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <!-- 2. MACRO -->
+    <div class="section">
+      <div class="section-label">Section 02</div>
+      <div class="section-title">Macro</div>
+      <div class="section-body">
+        Treasury yield and macro sentiment data are unavailable in this edition. The Federal Reserve's current rate posture, upcoming data releases, and geopolitical backdrop will be covered in full tomorrow. The contained VIX print of 16.13 suggests markets are not pricing in an imminent macro shock; the tech underperformance is more consistent with rotation or profit-taking dynamics than a broad macro catalyst.
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <!-- 3. EQUITIES -->
+    <div class="section">
+      <div class="section-label">Section 03</div>
+      <div class="section-title">Equities</div>
+      <div class="section-body">
+        <p><strong>SPY</strong> (S&amp;P 500 ETF) closed at <strong>747.71</strong>, down <span class="neg">$3.57 (−0.48%)</span> from a prior close of 751.28. The ETF opened at 750.22 and held a narrow intraday range of 745.21–750.96, with volume of 43.7M shares broadly in line with recent norms.</p>
+        <p><strong>QQQ</strong> (Nasdaq-100 ETF) closed at <strong>709.43</strong>, down <span class="neg">$13.39 (−1.85%)</span> from a prior close of 722.82. The ETF opened at 714.17, slid to a session low of 704.90, and recovered to close near 709 — a range of $11.45, reflecting sustained intraday selling pressure on technology. Volume of 42.5M shares was elevated relative to trend.</p>
+        <p><strong>IWM</strong> (Russell 2000 ETF): <span class="na">N/A</span> — data unavailable this session.</p>
+        <p>Top gainers and top losers data unavailable this session.</p>
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <!-- 4. VOLATILITY -->
+    <div class="section">
+      <div class="section-label">Section 04</div>
+      <div class="section-title">Volatility</div>
+      <div class="section-body">
+        The <strong>CBOE VIX</strong> closed Tuesday at <strong>16.13</strong>, up 0.56 points (<span class="pos">+3.47%</span>) from the prior session. At 16.13, the index sits in a neutral band — above the complacency threshold of 15 but comfortably below the 20 level that signals elevated fear. The intraday range of 15.53–16.64 reflects modest oscillation without any sustained spike. The combination of a mild VIX lift alongside a sharp QQQ decline suggests targeted hedging in the tech complex, not broad market de-risking.
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <!-- 5. FIXED INCOME -->
+    <div class="section">
+      <div class="section-label">Section 05</div>
+      <div class="section-title">Fixed Income</div>
+      <div class="section-body">
+        US Treasury yield data (10-year and 2-year) and yield curve shape are unavailable this edition. Coverage of the rate environment and curve steepening or inversion dynamics will resume in the next session.
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <!-- 6. CURRENCIES -->
+    <div class="section">
+      <div class="section-label">Section 06</div>
+      <div class="section-title">Currencies</div>
+      <div class="section-body">
+        EUR/USD and USD/JPY levels and directional commentary are unavailable this edition due to data provider rate constraints. Currency market coverage resumes tomorrow.
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <!-- 7. COMMODITIES -->
+    <div class="section">
+      <div class="section-label">Section 07</div>
+      <div class="section-title">Commodities</div>
+      <div class="section-body">
+        Gold spot and WTI crude oil data are unavailable this edition. Commodities coverage, including any macro or supply drivers, resumes in the next session.
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <!-- 8. EARNINGS CALENDAR -->
+    <div class="section">
+      <div class="section-label">Section 08</div>
+      <div class="section-title">Earnings Calendar</div>
+      <div class="section-body">
+        Upcoming earnings data for the next 5 trading days is unavailable this edition.
+        <table class="earnings-table">
+          <thead>
+            <tr>
+              <th>Company</th>
+              <th>Date</th>
+              <th>Expected Move</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="table-empty" colspan="3">Data unavailable — API daily limit reached</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div><!-- /.container -->
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <div class="container">
+      <span class="footer-brand">Market Quick Take · Wednesday, 8 July 2026</span>
+      <span class="footer-legal">For informational purposes only. Not investment advice.</span>
+    </div>
+  </div>
+
+</body>
+</html>
