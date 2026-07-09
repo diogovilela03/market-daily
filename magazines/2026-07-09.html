@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Market Quick Take — Thursday, 9 July 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #ffffff;
+      color: #1a2332;
+    }
+
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* MASTHEAD */
+    .masthead {
+      border-top: 3px solid #003366;
+      padding: 32px 0 20px;
+      border-bottom: 1px solid #e5e7eb;
+      margin-bottom: 0;
+    }
+    .masthead-title {
+      font-size: 42px;
+      font-weight: 700;
+      color: #003366;
+      letter-spacing: -0.5px;
+      line-height: 1;
+    }
+    .masthead-date {
+      font-size: 13px;
+      font-weight: 400;
+      color: #6b7280;
+      margin-top: 6px;
+    }
+
+    /* SNAPSHOT BAR */
+    .snapshot-bar {
+      background: #f1f5f9;
+      padding: 12px 0;
+      width: 100%;
+    }
+    .snapshot-inner {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px 0;
+      align-items: center;
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+    .chip {
+      font-size: 12px;
+      font-weight: 500;
+      color: #1a2332;
+      text-transform: uppercase;
+      white-space: nowrap;
+      padding: 0 10px;
+    }
+    .chip:not(:last-child)::after {
+      content: '|';
+      margin-left: 10px;
+      color: #9ca3af;
+    }
+    .chip .label { color: #6b7280; }
+    .chip .val { font-weight: 600; }
+    .chip .pos { color: #16a34a; }
+    .chip .neg { color: #dc2626; }
+    .chip .neu { color: #6b7280; }
+
+    /* EDITOR'S BRIEF */
+    .editors-brief {
+      font-size: 18px;
+      font-style: italic;
+      font-weight: 400;
+      color: #374151;
+      max-width: 760px;
+      line-height: 1.7;
+      margin: 28px 0;
+      border-left: 3px solid #003366;
+      padding-left: 16px;
+    }
+
+    /* SECTIONS */
+    .section { margin-bottom: 0; }
+    .section-divider {
+      border: none;
+      border-top: 1px solid #e5e7eb;
+      margin: 28px 0;
+    }
+    .section-label {
+      font-size: 11px;
+      font-weight: 500;
+      color: #003366;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      margin-bottom: 8px;
+    }
+    .watch-pill {
+      display: inline-block;
+      background: #fef3c7;
+      color: #b45309;
+      border-radius: 4px;
+      font-size: 11px;
+      font-weight: 500;
+      padding: 2px 8px;
+      margin-bottom: 8px;
+    }
+    .section-title {
+      font-size: 24px;
+      font-weight: 700;
+      color: #1a2332;
+      margin-bottom: 10px;
+    }
+    .section-body {
+      font-size: 15px;
+      font-weight: 400;
+      color: #374151;
+      line-height: 1.8;
+    }
+    .section-body ul {
+      padding-left: 20px;
+    }
+    .section-body ul li {
+      margin-bottom: 6px;
+    }
+    .pos { color: #16a34a; font-weight: 600; }
+    .neg { color: #dc2626; font-weight: 600; }
+
+    /* EARNINGS TABLE */
+    .earnings-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+      font-weight: 400;
+      margin-top: 12px;
+      border: 1px solid #e5e7eb;
+    }
+    .earnings-table th {
+      background: #f1f5f9;
+      color: #6b7280;
+      font-weight: 600;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      padding: 10px 14px;
+      text-align: left;
+      border-bottom: 1px solid #e5e7eb;
+    }
+    .earnings-table td {
+      padding: 10px 14px;
+      border-bottom: 1px solid #e5e7eb;
+      color: #374151;
+    }
+    .earnings-table tr:last-child td { border-bottom: none; }
+    .earnings-table tr:hover td { background: #f9fafb; }
+    .ticker { font-weight: 600; color: #003366; }
+
+    /* FOOTER */
+    footer {
+      background: #f1f5f9;
+      border-top: 1px solid #e5e7eb;
+      margin-top: 48px;
+      padding: 20px 0;
+    }
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .footer-inner span {
+      font-size: 12px;
+      font-weight: 400;
+    }
+    .footer-date { color: #6b7280; }
+    .footer-disclaimer { color: #9ca3af; }
+  </style>
+</head>
+<body>
+
+  <!-- MASTHEAD -->
+  <div class="container">
+    <div class="masthead">
+      <div class="masthead-title">MARKET QUICK TAKE</div>
+      <div class="masthead-date">Thursday, 9 July 2026</div>
+    </div>
+  </div>
+
+  <!-- SNAPSHOT BAR -->
+  <div class="snapshot-bar">
+    <div class="snapshot-inner">
+      <div class="chip">
+        <span class="label">SPY</span> &nbsp;
+        <span class="val">$743.14</span> &nbsp;
+        <span class="neg">-0.59%</span>
+      </div>
+      <div class="chip">
+        <span class="label">QQQ</span> &nbsp;
+        <span class="val">$711.44</span> &nbsp;
+        <span class="neg">-0.50%</span>
+      </div>
+      <div class="chip">
+        <span class="label">IWM</span> &nbsp;
+        <span class="val">$293.48</span> &nbsp;
+        <span class="neg">-0.91%</span>
+      </div>
+      <div class="chip">
+        <span class="label">VIX</span> &nbsp;
+        <span class="val">16.90</span> &nbsp;
+        <span class="neg">+4.56%</span>
+      </div>
+      <div class="chip">
+        <span class="label">US10Y</span> &nbsp;
+        <span class="val">4.56%</span> &nbsp;
+        <span class="neu">N/A</span>
+      </div>
+      <div class="chip">
+        <span class="label">US2Y</span> &nbsp;
+        <span class="val">4.21%</span> &nbsp;
+        <span class="neg">+2bps</span>
+      </div>
+      <div class="chip">
+        <span class="label">EUR/USD</span> &nbsp;
+        <span class="val">1.1419</span> &nbsp;
+        <span class="pos">+0.06%</span>
+      </div>
+      <div class="chip">
+        <span class="label">GOLD</span> &nbsp;
+        <span class="val">$4,075</span> &nbsp;
+        <span class="neu">N/A</span>
+      </div>
+      <div class="chip">
+        <span class="label">WTI</span> &nbsp;
+        <span class="val">$74.04</span> &nbsp;
+        <span class="neg">+5.12%</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <div class="container">
+
+    <!-- EDITOR'S BRIEF -->
+    <p class="editors-brief">
+      Geopolitical shock roiled markets on Wednesday as President Trump declared the US–Iran ceasefire "over" and resumed strikes, triggering a 5% surge in crude oil and broad equity weakness. Tech found selective support from Broadcom and Nvidia chip-deal momentum, but financials and credit-sensitive names bore the brunt of rising yield anxiety as energy-driven inflation risk re-entered the macro calculus.
+    </p>
+
+    <!-- SECTION 1: MARKET DRIVERS -->
+    <div class="section">
+      <div class="section-label">Section 1</div>
+      <div class="watch-pill">⚡ WATCH</div>
+      <div class="section-title">Market Drivers</div>
+      <div class="section-body">
+        <ul>
+          <li><strong>Iran ceasefire collapses:</strong> President Trump declared the tentative US–Iran ceasefire "over," saying "We hit them very hard last night — we'll probably hit them hard again tonight." The announcement reignited geopolitical risk premium across energy and safe-haven assets.</li>
+          <li><strong>Oil shock cascades into rates:</strong> WTI crude surged 5.12% to $74.04/barrel on fears of Middle East supply disruption. Treasury yields edged higher as investors repriced the inflation risk from an energy spike, complicating the Fed's path toward rate normalisation.</li>
+          <li><strong>Chip deals provide a tech floor:</strong> Broadcom rallied 4.8% after expanding its agreement with Apple to manufacture US-made components, while Nvidia gained 3.6% on reports that Chinese firms plan to significantly increase H200 chip purchases.</li>
+          <li><strong>Credit-sensitive names sold off:</strong> JPMorgan shed 2.5% and Visa fell 1.3% as rising yields and a deteriorating macro backdrop pressured financials and consumer payment volumes ahead of Q2 bank earnings.</li>
+        </ul>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- SECTION 2: MACRO -->
+    <div class="section">
+      <div class="section-label">Section 2</div>
+      <div class="section-title">Macro</div>
+      <div class="section-body">
+        <p>The Fed's disinflation narrative took a fresh hit as oil's geopolitical surge reintroduced upside inflation risk ahead of the June CPI print (due July 14). The 10-year Treasury yield climbed to 4.56% — its highest level since early June — as investors repositioned for a potentially stickier price environment, while the 2-year yield ticked up 2 basis points to 4.21%, keeping the yield curve in positive territory at +35bps. With no Fed speakers scheduled in the next two sessions and the FOMC's next meeting still weeks away, the market will be laser-focused on the CPI data as the swing factor for rate-cut timing.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- SECTION 3: EQUITIES -->
+    <div class="section">
+      <div class="section-label">Section 3</div>
+      <div class="section-title">Equities</div>
+      <div class="section-body">
+        <p>US equities closed broadly lower on Wednesday, with the S&P 500 proxy <strong>SPY</strong> off <span class="neg">0.59%</span> to <strong>$743.14</strong>, <strong>QQQ</strong> (Nasdaq-100) down <span class="neg">0.50%</span> to <strong>$711.44</strong>, and small-cap <strong>IWM</strong> (Russell 2000) the relative laggard at <span class="neg">-0.91%</span> to <strong>$293.48</strong> — reflecting small-caps' heightened sensitivity to both rate moves and domestic economic sentiment.</p>
+        <p style="margin-top: 12px;"><strong>Notable movers:</strong></p>
+        <ul>
+          <li><strong>Broadcom (AVGO) <span class="pos">+4.8%</span></strong> — Expanded US chip manufacturing agreement with Apple boosted sentiment around domestic semiconductor supply chains.</li>
+          <li><strong>Nvidia (NVDA) <span class="pos">+3.6%</span></strong> — Reports that major Chinese firms plan to ramp purchases of H200 GPUs provided a strong demand catalyst.</li>
+          <li><strong>JPMorgan (JPM) <span class="neg">-2.5%</span></strong> — Financials bore the brunt of yield uncertainty and geopolitical risk ahead of Q2 earnings on July 14.</li>
+          <li><strong>Visa (V) <span class="neg">-1.3%</span></strong> — Consumer payment stocks weakened on macro uncertainty tied to oil-driven inflation headwinds.</li>
+        </ul>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- SECTION 4: VOLATILITY -->
+    <div class="section">
+      <div class="section-label">Section 4</div>
+      <div class="section-title">Volatility</div>
+      <div class="section-body">
+        <p>The CBOE VIX index closed at <strong>16.90</strong>, rising <span class="neg">+4.56%</span> (+0.77 points) on the session — reflecting a measured uptick in hedging demand as geopolitical risk resurfaced, though still comfortably in the neutral zone (15–20). The VIX has not yet breached the psychologically significant 20 threshold that signals elevated market fear, suggesting investors are nervous but not yet in panic mode. The intraday high of 18.56 is worth monitoring; a sustained push through 20 could trigger a more defensive repositioning across risk assets.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- SECTION 5: FIXED INCOME -->
+    <div class="section">
+      <div class="section-label">Section 5</div>
+      <div class="section-title">Fixed Income</div>
+      <div class="section-body">
+        <p>The US 10-year Treasury yield settled at <strong>4.56%</strong>, its highest close in several weeks, as energy-driven inflation concerns prompted a sell-off in longer-dated bonds. The 2-year yield edged up 2bps to <strong>4.21%</strong>, leaving the 10Y–2Y spread at a positive <strong>+35bps</strong> — a moderately steep, normally shaped curve. The curve's continued positive slope reflects the market's baseline assumption that near-term Fed policy will remain restrictive, with cuts priced later rather than sooner. A further oil spike or a hot June CPI reading next week could push the 10-year materially higher.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- SECTION 6: CURRENCIES -->
+    <div class="section">
+      <div class="section-label">Section 6</div>
+      <div class="section-title">Currencies</div>
+      <div class="section-body">
+        <p><strong>EUR/USD</strong> edged fractionally higher to <strong>1.1419</strong> (<span class="pos">+0.06%</span>), demonstrating relative resilience as the dollar lost mild safe-haven momentum versus the euro despite the risk-off backdrop — suggesting the euro is benefiting from some diversification flows. <strong>USD/JPY</strong> held firm near <strong>162.55</strong> (essentially unchanged from a prior close of 162.58), as the yen's traditional safe-haven appeal was offset by the Bank of Japan's still-accommodative policy stance relative to the Fed. The yen's failure to strengthen meaningfully during a geopolitical risk episode underscores the carry trade's continued structural support for USD/JPY at elevated levels.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- SECTION 7: COMMODITIES -->
+    <div class="section">
+      <div class="section-label">Section 7</div>
+      <div class="watch-pill">⚡ WATCH</div>
+      <div class="section-title">Commodities</div>
+      <div class="section-body">
+        <p><strong>WTI Crude Oil</strong> surged <span class="neg">+5.12%</span> to <strong>$74.04/barrel</strong> — the sharpest single-session move in months — as Trump's announcement of renewed US–Iran strikes stoked fears of disruption to Middle Eastern supply routes. The move reinstates a meaningful geopolitical risk premium in energy markets and raises the stakes for June CPI data; a sustained move above $75 would materially complicate the Fed's disinflationary narrative.</p>
+        <p style="margin-top: 12px;"><strong>Gold</strong> held firm at <strong>$4,075/troy oz</strong>, trading essentially flat on the session. Despite the geopolitical shock, gold's muted response suggests the surge in real yields and a modestly firmer dollar offset typical safe-haven buying. At these levels, gold remains elevated on a historical basis, underpinned by central bank accumulation and residual macro uncertainty.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- SECTION 8: EARNINGS RADAR -->
+    <div class="section">
+      <div class="section-label">Section 8</div>
+      <div class="section-title">Earnings Radar</div>
+      <div class="section-body">
+        <p>Q2 2026 earnings season kicks off in earnest over the next five trading days, headlined by the major US bank cohort on Monday — widely watched for signals on net interest margin trajectory, credit quality, and capital markets activity.</p>
+        <table class="earnings-table">
+          <thead>
+            <tr>
+              <th>Company</th>
+              <th>Date</th>
+              <th>Expected Move / Context</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="ticker">PEP</span> — PepsiCo</td>
+              <td>Thu, Jul 9</td>
+              <td>Organic growth and pricing power under scrutiny; analysts watching for guidance revision on consumer trade-down.</td>
+            </tr>
+            <tr>
+              <td><span class="ticker">PGR</span> — Progressive Corp</td>
+              <td>Thu, Jul 9</td>
+              <td>Auto insurance loss ratios and premium growth in focus; sector re-rating candidate.</td>
+            </tr>
+            <tr>
+              <td><span class="ticker">DAL</span> — Delta Air Lines</td>
+              <td>Fri, Jul 10</td>
+              <td>Summer travel demand vs. fuel cost impact from WTI surge; forward bookings guidance key.</td>
+            </tr>
+            <tr>
+              <td><span class="ticker">JPM / WFC / GS / BAC / C</span> — Big Banks</td>
+              <td>Mon, Jul 14</td>
+              <td>Q2 bank earnings day; consensus expects JPM EPS of $5.49 (+10.7% YoY). NII outlook, credit card delinquencies, and IB fee recovery are the key read-throughs for the sector.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div><!-- /.container -->
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <span class="footer-date">Market Quick Take &middot; Thursday, 9 July 2026</span>
+        <span class="footer-disclaimer">For informational purposes only. Not investment advice.</span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
