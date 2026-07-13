@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Market Quick Take · Monday, 13 July 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Inter', sans-serif; background: #ffffff; color: #1a2332; }
+
+  .container { max-width: 860px; margin: 0 auto; padding: 0 24px; }
+
+  /* MASTHEAD */
+  .masthead { border-top: 3px solid #003366; padding: 32px 0 20px; border-bottom: 1px solid #e5e7eb; }
+  .masthead h1 { font-size: 42px; font-weight: 700; color: #003366; line-height: 1.1; }
+  .masthead .date { font-size: 13px; font-weight: 400; color: #6b7280; margin-top: 6px; }
+
+  /* SNAPSHOT BAR */
+  .snapshot-bar { background: #f1f5f9; padding: 12px 0; width: 100%; }
+  .snapshot-inner { display: flex; flex-wrap: wrap; gap: 4px 0; align-items: center; padding: 0 24px; max-width: 860px; margin: 0 auto; }
+  .chip { font-family: 'Inter', sans-serif; font-size: 12px; font-weight: 500; color: #1a2332; text-transform: uppercase; white-space: nowrap; padding: 2px 0; }
+  .chip-sep { color: #9ca3af; margin: 0 10px; }
+  .pos { color: #16a34a; }
+  .neg { color: #dc2626; }
+
+  /* EDITOR'S BRIEF */
+  .editors-brief { font-size: 18px; font-weight: 400; font-style: italic; color: #374151; line-height: 1.7; max-width: 760px; margin: 28px 0; border-left: 3px solid #003366; padding-left: 16px; }
+
+  /* SECTIONS */
+  .sections { max-width: 860px; }
+  .section { margin-bottom: 0; }
+  .section-divider { border: none; border-top: 1px solid #e5e7eb; margin: 28px 0; }
+  .section-label { font-size: 11px; font-weight: 500; color: #003366; text-transform: uppercase; letter-spacing: 3px; display: block; margin-bottom: 8px; }
+  .section-title { font-size: 24px; font-weight: 700; color: #1a2332; margin-bottom: 10px; }
+  .section-body { font-size: 15px; font-weight: 400; color: #374151; line-height: 1.8; }
+  .section-body ul { padding-left: 20px; }
+  .section-body ul li { margin-bottom: 4px; }
+
+  /* WATCH PILL */
+  .watch-pill { display: inline-block; background: #fef3c7; color: #b45309; border-radius: 4px; font-size: 11px; font-weight: 500; padding: 2px 8px; margin-bottom: 8px; }
+
+  /* EARNINGS TABLE */
+  .earnings-table { width: 100%; border-collapse: collapse; border: 1px solid #e5e7eb; font-size: 13px; font-weight: 400; color: #374151; margin-top: 12px; overflow-x: auto; display: block; }
+  .earnings-table thead { background: #f1f5f9; }
+  .earnings-table th { padding: 10px 14px; text-align: left; font-weight: 600; color: #1a2332; border-bottom: 1px solid #e5e7eb; white-space: nowrap; }
+  .earnings-table td { padding: 9px 14px; border-bottom: 1px solid #e5e7eb; white-space: nowrap; }
+  .earnings-table tr:last-child td { border-bottom: none; }
+  .earnings-table tr:hover { background: #f9fafb; }
+
+  /* FOOTER */
+  .footer { background: #f1f5f9; border-top: 1px solid #e5e7eb; margin-top: 48px; padding: 20px 0; }
+  .footer-inner { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; }
+  .footer span { font-size: 12px; font-weight: 400; }
+  .footer .f-brand { color: #6b7280; }
+  .footer .f-disclaimer { color: #9ca3af; }
+</style>
+</head>
+<body>
+
+<!-- MASTHEAD -->
+<div class="container">
+  <div class="masthead">
+    <h1>MARKET QUICK TAKE</h1>
+    <div class="date">Monday, 13 July 2026</div>
+  </div>
+</div>
+
+<!-- SNAPSHOT BAR -->
+<div class="snapshot-bar">
+  <div class="snapshot-inner">
+    <span class="chip">SPY &middot; 754.95 &middot; <span class="pos">+0.43%</span></span>
+    <span class="chip-sep">|</span>
+    <span class="chip">QQQ &middot; 725.51 &middot; <span class="pos">+0.31%</span></span>
+    <span class="chip-sep">|</span>
+    <span class="chip">IWM &middot; 295.99 &middot; <span class="neg">-0.42%</span></span>
+    <span class="chip-sep">|</span>
+    <span class="chip">VIX &middot; 15.03 &middot; <span class="neg">-5.39%</span></span>
+    <span class="chip-sep">|</span>
+    <span class="chip">US10Y &middot; 4.54%</span>
+    <span class="chip-sep">|</span>
+    <span class="chip">US2Y &middot; 4.16%</span>
+    <span class="chip-sep">|</span>
+    <span class="chip">EUR/USD &middot; 1.1413</span>
+    <span class="chip-sep">|</span>
+    <span class="chip">GOLD &middot; $4,059</span>
+    <span class="chip-sep">|</span>
+    <span class="chip">WTI &middot; $69.60</span>
+  </div>
+</div>
+
+<!-- EDITOR'S BRIEF -->
+<div class="container">
+  <p class="editors-brief">
+    Markets ended last week in a bifurcated state — large-cap technology surged (led by Nvidia's 4% gain) while small-caps stumbled, setting the stage for the most consequential week of Q2 earnings season as the five largest U.S. banks prepare to report tomorrow. With gold printing above $4,000 per ounce and CPI data expected to land imminently, investors face a dual catalyst that could define the summer's directional trade.
+  </p>
+
+  <!-- SECTIONS -->
+  <div class="sections">
+
+    <!-- Section 1: Market Drivers -->
+    <div class="section">
+      <span class="section-label">Section 1</span>
+      <div class="section-title">Market Drivers</div>
+      <div class="section-body">
+        <ul>
+          <li><strong>Bank earnings countdown:</strong> JPMorgan Chase, Goldman Sachs, Bank of America, Citigroup, and Wells Fargo all report on July 14 — the most concentrated single-day bank earnings event of the cycle. Analyst focus centers on net interest income trajectories, credit quality, and capital market revenues in a higher-for-longer rate environment.</li>
+          <li><strong>CPI data in the crosshairs:</strong> Multiple market narratives this week are anchored to the upcoming June CPI print, with sector rotation underway as investors position between rate-sensitive and inflation-resilient assets. Consumer staples and financials are being repriced accordingly.</li>
+          <li><strong>AI spending scrutiny deepens:</strong> Nvidia (+4.03%) surged on continued AI infrastructure demand optimism, even as Oracle's $638 billion order backlog faces a $42 billion cash flow gap flagged by S&P Global — a signal that AI-driven capex cycles must ultimately produce cash, not just bookings.</li>
+          <li><strong>Consumer demand cracks emerging:</strong> PepsiCo flagged tighter U.S. consumer budgets slowing food and beverage demand, adding pressure to an already-cautious consumer discretionary outlook and reinforcing defensive positioning among staples names.</li>
+        </ul>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- Section 2: Macro -->
+    <div class="section">
+      <span class="watch-pill">⚡ WATCH</span>
+      <span class="section-label">Section 2</span>
+      <div class="section-title">Macro</div>
+      <div class="section-body">
+        <p>The June CPI release — expected this week — sits at the center of the macro debate: a hotter-than-expected print would reinforce the Fed's "higher-for-longer" posture, while a surprise deceleration could reignite rate-cut speculation. The Fed remains in its pre-meeting quiet period, with markets pricing one to two cuts in 2026 but growing skeptical given the resilient labor market and sticky services inflation. Geopolitical backdrop remains a secondary driver, with crude oil contained near $70 and China producer price pressure casting a deflationary shadow on global goods. The Morgan Stanley strategy desk flagged a "$1.2 trillion question" for the equity rally — whether corporate earnings can justify stretched valuations as the Fed's tightening lag works through the economy.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- Section 3: Equities -->
+    <div class="section">
+      <span class="section-label">Section 3</span>
+      <div class="section-title">Equities</div>
+      <div class="section-body">
+        <p>U.S. large-caps and tech led the session while small-caps lagged — a divergence reflecting the ongoing concentration of market gains in mega-cap names. <strong>SPY</strong> gained +0.43% to 754.95, <strong>QQQ</strong> added +0.31% to 725.51, while <strong>IWM</strong> slipped -0.42% to 295.99, underscoring the split between growth-driven mega-caps and rate-sensitive small companies.</p>
+        <p style="margin-top: 10px;"><strong>Notable movers:</strong> <strong>Nvidia (NVDA)</strong> surged +4.03% to $210.96 on heavy volume (147M shares), extending its AI infrastructure rally as the most actively traded name in the market. On the downside, <strong>Opendoor Technologies (OPEN)</strong> fell -10.09% to $4.77 amid continued real estate sector headwinds, with commercial and residential property names broadly under pressure.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- Section 4: Volatility -->
+    <div class="section">
+      <span class="section-label">Section 4</span>
+      <div class="section-title">Volatility</div>
+      <div class="section-body">
+        <p>The CBOE Volatility Index (VIX) fell -5.39% to <strong>15.03</strong>, comfortably in the complacency zone below 15 — a signal that options markets are not pricing significant near-term risk despite a packed macro calendar. The low VIX reading ahead of major bank earnings and CPI data is notable: historically, such low realized volatility before high-impact events can precede sharp moves in either direction. Implied volatility on individual bank names is likely elevated even as the index-level VIX remains subdued.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- Section 5: Fixed Income -->
+    <div class="section">
+      <span class="section-label">Section 5</span>
+      <div class="section-title">Fixed Income</div>
+      <div class="section-body">
+        <p>The U.S. Treasury curve remains positively sloped with the <strong>10-year yield at 4.54%</strong> and the <strong>2-year at 4.16%</strong>, producing a 38-basis-point term premium — a curve that is steepening from last year's deep inversion. The modest steepening reflects markets beginning to price in eventual Fed easing, though the pace remains constrained by inflation uncertainty. Duration buyers continue to face headline risk from the upcoming CPI print; a hotter number could push the 10-year back toward 4.70%+. The 2Y-10Y spread at +38bps is well clear of inversion territory but still below historical norms, suggesting the market expects a shallow, gradual easing cycle rather than aggressive cuts.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- Section 6: Currencies -->
+    <div class="section">
+      <span class="section-label">Section 6</span>
+      <div class="section-title">Currencies</div>
+      <div class="section-body">
+        <p><strong>EUR/USD</strong> trades at <strong>1.1413</strong>, holding above the 1.14 handle as the euro benefits from relative ECB hawkishness and a softer near-term U.S. dollar narrative tied to rate-cut expectations. <strong>USD/JPY</strong> remains elevated at <strong>162.17</strong>, keeping the yen near multi-year lows as the Bank of Japan's ultra-accommodative policy stance persists — a dynamic that continues to fuel yen carry trades and raises the risk of a sharp unwind if global risk sentiment deteriorates. A hot CPI print could strengthen the dollar meaningfully in the near term, compressing EUR/USD toward 1.13 while pushing USD/JPY higher. Yen weakness at these levels remains a focal point for Japanese authorities, though verbal intervention has so far failed to produce lasting moves.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- Section 7: Commodities -->
+    <div class="section">
+      <span class="section-label">Section 7</span>
+      <div class="section-title">Commodities</div>
+      <div class="section-body">
+        <p><strong>Gold</strong> is printing at <strong>$4,059 per troy ounce</strong> — deep into record territory — underpinned by a combination of central bank accumulation, dollar hedging demand, and geopolitical safe-haven flows. The $4,000+ level represents a structural repricing of gold as a reserve asset, accelerated by de-dollarization trends among emerging market central banks. <strong>WTI crude</strong> sits at <strong>$69.60 per barrel</strong>, trading range-bound as OPEC+ supply discipline is offset by demand uncertainty stemming from China's deflationary pressure and the softening U.S. consumer. Absent a geopolitical supply shock, crude is likely to remain anchored in the $65–75 range through summer. The divergence between gold's record highs and crude's subdued price action highlights a market pricing inflation uncertainty rather than demand-driven commodity strength.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- Section 8: Earnings Calendar (renumbered from 9) -->
+    <div class="section">
+      <span class="section-label">Section 8</span>
+      <div class="section-title">Earnings Radar</div>
+      <div class="section-body">
+        <p>The next five trading days deliver the most data-rich stretch of Q2 earnings season, headlined by the major U.S. banks tomorrow and followed by semiconductor, streaming, and healthcare giants later in the week.</p>
+        <div style="overflow-x: auto;">
+          <table class="earnings-table">
+            <thead>
+              <tr>
+                <th>Company</th>
+                <th>Ticker</th>
+                <th>Date</th>
+                <th>EPS Estimate</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>JPMorgan Chase</td>
+                <td>JPM</td>
+                <td>Jul 14</td>
+                <td>$5.52 — largest U.S. bank; NII and IB outlook key</td>
+              </tr>
+              <tr>
+                <td>Goldman Sachs</td>
+                <td>GS</td>
+                <td>Jul 14</td>
+                <td>$14.47 — trading and M&amp;A pipeline in focus</td>
+              </tr>
+              <tr>
+                <td>Wells Fargo</td>
+                <td>WFC</td>
+                <td>Jul 14</td>
+                <td>$1.73 — net interest income trajectory watched closely</td>
+              </tr>
+              <tr>
+                <td>Bank of America</td>
+                <td>BAC</td>
+                <td>Jul 14</td>
+                <td>$1.13 — deposit repricing and credit quality in view</td>
+              </tr>
+              <tr>
+                <td>Citigroup</td>
+                <td>C</td>
+                <td>Jul 14</td>
+                <td>$2.72 — transformation progress and capital return</td>
+              </tr>
+              <tr>
+                <td>ASML Holding</td>
+                <td>ASML</td>
+                <td>Jul 15</td>
+                <td>€7.98 — semiconductor equipment orders signal chip cycle</td>
+              </tr>
+              <tr>
+                <td>BlackRock</td>
+                <td>BLK</td>
+                <td>Jul 15</td>
+                <td>$12.63 — AUM growth and private markets expansion</td>
+              </tr>
+              <tr>
+                <td>Morgan Stanley</td>
+                <td>MS</td>
+                <td>Jul 15</td>
+                <td>$2.89 — wealth management flows and trading revenues</td>
+              </tr>
+              <tr>
+                <td>Netflix</td>
+                <td>NFLX</td>
+                <td>Jul 16</td>
+                <td>$0.79 — subscriber growth and ad-tier monetization</td>
+              </tr>
+              <tr>
+                <td>Taiwan Semiconductor</td>
+                <td>TSM</td>
+                <td>Jul 16</td>
+                <td>$3.80 — AI chip demand and capacity utilization guidance</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- end .sections -->
+</div><!-- end .container -->
+
+<!-- FOOTER -->
+<div class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <span class="f-brand">Market Quick Take &middot; Monday, 13 July 2026</span>
+      <span class="f-disclaimer">For informational purposes only. Not investment advice.</span>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
