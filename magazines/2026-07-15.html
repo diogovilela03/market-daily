@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Market Quick Take — Wednesday, 15 July 2026</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #ffffff;
+      color: #1a2332;
+    }
+
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* MASTHEAD */
+    .masthead {
+      border-top: 3px solid #003366;
+      padding: 32px 0 20px;
+      border-bottom: 1px solid #e5e7eb;
+    }
+
+    .masthead-title {
+      font-size: 42px;
+      font-weight: 700;
+      color: #003366;
+      letter-spacing: -0.5px;
+      line-height: 1.1;
+    }
+
+    .masthead-date {
+      font-size: 13px;
+      font-weight: 400;
+      color: #6b7280;
+      margin-top: 6px;
+    }
+
+    /* SNAPSHOT BAR */
+    .snapshot-bar {
+      background: #f1f5f9;
+      padding: 12px 0;
+      width: 100%;
+    }
+
+    .snapshot-inner {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 24px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px 0;
+      align-items: center;
+    }
+
+    .chip {
+      font-size: 12px;
+      font-weight: 500;
+      color: #1a2332;
+      text-transform: uppercase;
+      letter-spacing: 0.3px;
+      white-space: nowrap;
+      padding: 2px 10px;
+    }
+
+    .chip:not(:last-child)::after {
+      content: ' |';
+      color: #9ca3af;
+      margin-left: 10px;
+    }
+
+    .chip-label { color: #6b7280; margin-right: 4px; }
+    .chip-value { margin-right: 4px; }
+    .pos { color: #16a34a; }
+    .neg { color: #dc2626; }
+    .muted { color: #6b7280; }
+
+    /* EDITOR'S BRIEF */
+    .editors-brief {
+      font-size: 18px;
+      font-weight: 400;
+      font-style: italic;
+      color: #374151;
+      max-width: 760px;
+      margin: 28px 0;
+      border-left: 3px solid #003366;
+      padding-left: 16px;
+      line-height: 1.7;
+    }
+
+    /* SECTIONS */
+    .section {
+      margin-bottom: 0;
+    }
+
+    .section-divider {
+      border: none;
+      border-top: 1px solid #e5e7eb;
+      margin: 28px 0;
+    }
+
+    .watch-badge {
+      display: inline-block;
+      background: #fef3c7;
+      color: #b45309;
+      font-size: 11px;
+      font-weight: 500;
+      padding: 3px 8px;
+      border-radius: 4px;
+      margin-bottom: 8px;
+      letter-spacing: 0.3px;
+    }
+
+    .section-label {
+      font-size: 11px;
+      font-weight: 500;
+      color: #003366;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      margin-bottom: 6px;
+    }
+
+    .section-title {
+      font-size: 24px;
+      font-weight: 700;
+      color: #1a2332;
+      margin-bottom: 10px;
+    }
+
+    .section-body {
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 1.8;
+      color: #374151;
+    }
+
+    .section-body ul {
+      list-style: disc;
+      margin-left: 20px;
+      padding-left: 4px;
+    }
+
+    .section-body ul li {
+      margin-bottom: 8px;
+    }
+
+    .section-body p + p {
+      margin-top: 10px;
+    }
+
+    /* EARNINGS TABLE */
+    .earnings-table {
+      width: 100%;
+      border-collapse: collapse;
+      border: 1px solid #e5e7eb;
+      font-size: 13px;
+      margin-top: 14px;
+    }
+
+    .earnings-table th {
+      background: #f1f5f9;
+      font-weight: 600;
+      color: #1a2332;
+      padding: 9px 12px;
+      text-align: left;
+      border-bottom: 1px solid #e5e7eb;
+    }
+
+    .earnings-table td {
+      padding: 9px 12px;
+      color: #374151;
+      border-bottom: 1px solid #e5e7eb;
+      vertical-align: top;
+    }
+
+    .earnings-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .earnings-table tr:nth-child(even) td {
+      background: #f9fafb;
+    }
+
+    /* FOOTER */
+    .footer {
+      background: #f1f5f9;
+      border-top: 1px solid #e5e7eb;
+      margin-top: 48px;
+      padding: 20px 0;
+    }
+
+    .footer-inner {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .footer-name {
+      font-size: 12px;
+      font-weight: 400;
+      color: #6b7280;
+    }
+
+    .footer-disclaimer {
+      font-size: 12px;
+      font-weight: 400;
+      color: #9ca3af;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- MASTHEAD -->
+  <div class="container">
+    <div class="masthead">
+      <div class="masthead-title">MARKET QUICK TAKE</div>
+      <div class="masthead-date">Wednesday, 15 July 2026</div>
+    </div>
+  </div>
+
+  <!-- SNAPSHOT BAR -->
+  <div class="snapshot-bar">
+    <div class="snapshot-inner">
+      <div class="chip">
+        <span class="chip-label">SPY</span><span class="chip-value">$751.83</span><span class="pos">+0.36%</span>
+      </div>
+      <div class="chip">
+        <span class="chip-label">QQQ</span><span class="chip-value">$719.69</span><span class="pos">+1.12%</span>
+      </div>
+      <div class="chip">
+        <span class="chip-label">IWM</span><span class="chip-value">$294.51</span><span class="pos">+0.35%</span>
+      </div>
+      <div class="chip">
+        <span class="chip-label">VIX</span><span class="chip-value">16.50</span><span class="neg">−4.00%</span>
+      </div>
+      <div class="chip">
+        <span class="chip-label">US10Y</span><span class="chip-value">4.62%</span><span class="pos">+1.32%</span>
+      </div>
+      <div class="chip">
+        <span class="chip-label">US2Y</span><span class="chip-value">4.26%</span><span class="pos">+1.19%</span>
+      </div>
+      <div class="chip">
+        <span class="chip-label">EUR/USD</span><span class="chip-value">1.1432</span><span class="muted">N/A</span>
+      </div>
+      <div class="chip">
+        <span class="chip-label">GOLD</span><span class="chip-value">$4,030.41</span><span class="muted">N/A</span>
+      </div>
+      <div class="chip">
+        <span class="chip-label">WTI</span><span class="chip-value">$69.60</span><span class="muted">N/A</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+
+    <!-- EDITOR'S BRIEF -->
+    <div class="editors-brief">
+      Equities pushed broadly higher Tuesday as tech continued to lead, with QQQ outpacing the broader market at +1.12% fuelled by semiconductor strength and a blockbuster M&amp;A bid. The dominant story is Stripe and Advent International's reported $53 billion offer to acquire PayPal, sending PYPL surging ~15% and injecting fresh deal premium into the fintech sector. Beneath the surface, gold holding firmly above $4,000/oz and crude softening near $69.60 reflect a market that remains constructive on risk assets even as macro undercurrents continue to simmer.
+    </div>
+
+    <!-- SECTIONS -->
+
+    <!-- Section 1: Market Drivers -->
+    <div class="section">
+      <div class="watch-badge">⚡ WATCH</div>
+      <div class="section-label">Section 01</div>
+      <div class="section-title">Market Drivers</div>
+      <div class="section-body">
+        <ul>
+          <li><strong>M&amp;A bombshell in fintech:</strong> PayPal (PYPL) surged ~15% after Reuters reported that Stripe and Advent International have jointly offered to acquire the company for ~$53 billion. The bid injects meaningful M&amp;A premium across payments and fintech, with knock-on enthusiasm for adjacent names and a broad re-rating of the sector.</li>
+          <li><strong>Semiconductor renaissance:</strong> NVIDIA (+4.06%) and Intel (+4.50%) led chip stocks higher amid continued institutional conviction in AI hardware demand. SOXS—the inverse semiconductor ETF—fell 7.53%, confirming broad sector upside rather than isolated single-stock moves.</li>
+          <li><strong>Q2 earnings season opens strongly:</strong> Major bank results from JPMorgan Chase, Goldman Sachs, Bank of America, Wells Fargo, and Citigroup—reported on July 14—delivered broadly positive beats, underpinning the risk-on tone heading into a packed mid-week earnings docket.</li>
+          <li><strong>Tech outperformance gap widens:</strong> QQQ (+1.12%) meaningfully outpaced SPY (+0.36%) and IWM (+0.35%), reinforcing large-cap tech dominance and the AI-driven valuation premium embedded in Nasdaq-100 constituents.</li>
+        </ul>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- Section 2: Macro -->
+    <div class="section">
+      <div class="section-label">Section 02</div>
+      <div class="section-title">Macro</div>
+      <div class="section-body">
+        <p>The Federal Reserve remains in a data-dependent, patient posture as Treasury yields edge higher—the 10-year at 4.62% and the 2-year at 4.26%—without disrupting the risk rally, suggesting markets interpret the drift as a reflection of resilient growth rather than renewed inflationary pressure. The 10Y–2Y spread at +36 basis points continues to gently steepen, extending the post-inversion normalization that has accompanied improved confidence in the economic soft-landing narrative. Meanwhile, USD/JPY at 162.22 hovers close to intervention-watch territory, a persistent reminder that global monetary policy divergence remains a live macro risk—the BOJ's cautious pivot toward normalization stands in sharp contrast to a Fed that is on hold and a market pricing in eventual rate cuts.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- Section 3: Equities -->
+    <div class="section">
+      <div class="section-label">Section 03</div>
+      <div class="section-title">Equities</div>
+      <div class="section-body">
+        <p>SPY added +0.36% to $751.83, QQQ led with +1.12% to $719.69, and IWM posted a modest +0.35% to $294.51—a familiar pattern of large-cap tech dominance over rate-sensitive small-cap value. The spread between QQQ and IWM performance underscores the continued investor preference for AI-levered mega-cap names over the interest-rate-sensitive Russell 2000 universe.</p>
+        <p><strong>Notable movers:</strong> PYPL was the session's standout, surging ~15% on the Stripe/Advent acquisition report—the most significant single-name event of the week. On the semiconductor side, INTC (+4.50%) and NVDA (+4.06%) reflected continued accumulation in AI infrastructure plays. On the downside, Lucid Group (LCID) fell 16.15% on heavy volume, as EV demand concerns and execution uncertainties continued to weigh on the stock. Leslie's (LESL) shed 41.07%, marking one of the session's most severe single-stock declines.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- Section 4: Volatility -->
+    <div class="section">
+      <div class="section-label">Section 04</div>
+      <div class="section-title">Volatility</div>
+      <div class="section-body">
+        <p>The CBOE VIX fell 4.00% to 16.50, comfortably below the 20 threshold that typically signals elevated market stress. At sub-17, the index reflects investor complacency—or confidence—heading into a dense week of Q2 earnings. Options markets are not pricing in meaningful near-term tail risk despite the M&amp;A volatility in individual names. A VIX reading below 15 would signal extreme complacency; at 16.50, the market sits in a measured range that historically correlates with stable uptrend conditions and provides little urgency for defensive hedging.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- Section 5: Fixed Income -->
+    <div class="section">
+      <div class="section-label">Section 05</div>
+      <div class="section-title">Fixed Income</div>
+      <div class="section-body">
+        <p>The US 10-year Treasury yield stands at 4.62%, with the 2-year at 4.26%, producing a 10Y–2Y spread of +36 basis points—a positively-sloped curve that reflects the ongoing normalization after the extended inversion of 2023–2025. The steepening trend implies markets are increasingly pricing in a soft-landing scenario, with longer-duration rates reflecting moderate growth expectations rather than policy panic. Absent a hawkish Fed catalyst or a surprise inflation print, the current curve shape appears broadly constructive for risk assets, though the 4.62% 10-year remains a meaningful hurdle for equity valuations in rate-sensitive sectors such as utilities and real estate.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- Section 6: Currencies -->
+    <div class="section">
+      <div class="section-label">Section 06</div>
+      <div class="section-title">Currencies</div>
+      <div class="section-body">
+        <p><strong>EUR/USD: 1.1432.</strong> The euro holds near multi-month highs against the dollar, buoyed by a relatively hawkish ECB stance compared to a Fed that has been in an extended pause. Dollar weakness has been the dominant FX theme through mid-2026, as markets price in eventual Fed easing while European growth data has stabilized.</p>
+        <p><strong>USD/JPY: 162.22.</strong> The yen remains pinned near historically weak levels—a persistent source of tension given the BOJ's gradual shift toward policy normalization. At 162, USD/JPY is well within the range that has previously prompted verbal guidance and formal intervention from Japanese authorities. The yen's trajectory is a key macro signal: a sharper BOJ tightening surprise could swiftly unwind carry trades and send ripples through global risk markets.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- Section 7: Commodities -->
+    <div class="section">
+      <div class="section-label">Section 07</div>
+      <div class="section-title">Commodities</div>
+      <div class="section-body">
+        <p><strong>Gold: $4,030.41/oz.</strong> The yellow metal has consolidated firmly above $4,000—a psychologically significant level—sustained by central bank accumulation, de-dollarization flows from emerging market reserve managers, and residual geopolitical uncertainty. Gold's ability to hold this threshold despite a broadly risk-on equity backdrop underscores structural demand dynamics rather than purely haven-driven short-term positioning.</p>
+        <p><strong>WTI Crude: $69.60/bbl.</strong> Crude has softened materially from the $80+ levels seen earlier in Q2, drifting toward the lower end of a $69–$75 range. The decline reflects a combination of demand uncertainty in China and Europe, higher-than-expected OPEC+ production levels, and a compressed geopolitical risk premium. A sustained break below $68 could accelerate selling pressure and weigh on energy sector earnings revisions through the remainder of the year.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- Section 8: Earnings Radar (renumbered from 9; Section 8 Digital Assets omitted) -->
+    <div class="section">
+      <div class="section-label">Section 08</div>
+      <div class="section-title">Earnings Radar</div>
+      <div class="section-body">
+        <p>The Q2 earnings season accelerates over the next five trading days with a high-impact docket spanning chip equipment, financials, streaming, semiconductors, and managed care.</p>
+        <table class="earnings-table">
+          <thead>
+            <tr>
+              <th>Company</th>
+              <th>Date</th>
+              <th>Est. EPS</th>
+              <th>Expected-Move Context</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>ASML Holding (ASML)</strong></td>
+              <td>Jul 15, pre-mkt</td>
+              <td>$7.98</td>
+              <td>Key read on EUV lithography demand and semiconductor capex; bookings guidance will move the global chip equipment sector</td>
+            </tr>
+            <tr>
+              <td><strong>Morgan Stanley (MS)</strong></td>
+              <td>Jul 15, pre-mkt</td>
+              <td>$2.89</td>
+              <td>Wealth management flows and IB fee recovery are in focus after Goldman's strong print; M&amp;A pipeline commentary closely watched</td>
+            </tr>
+            <tr>
+              <td><strong>Netflix (NFLX)</strong></td>
+              <td>Jul 16, post-mkt</td>
+              <td>$0.79</td>
+              <td>Streaming bellwether; ad-tier revenue scale and subscriber growth are the metrics for a high-multiple stock prone to large moves</td>
+            </tr>
+            <tr>
+              <td><strong>TSMC (TSM)</strong></td>
+              <td>Jul 16, pre-mkt</td>
+              <td>$3.80</td>
+              <td>Critical AI chip demand indicator; commentary on CoWoS advanced packaging capacity and 2nm yield ramp will set the tone for semis</td>
+            </tr>
+            <tr>
+              <td><strong>UnitedHealth (UNH)</strong></td>
+              <td>Jul 16, pre-mkt</td>
+              <td>$4.84</td>
+              <td>Managed care bellwether; medical cost ratio trends and 2026 guidance revisions will anchor sentiment across the health insurance sector</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div><!-- /container -->
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <div class="footer-inner">
+      <span class="footer-name">Market Quick Take · Wednesday, 15 July 2026</span>
+      <span class="footer-disclaimer">For informational purposes only. Not investment advice.</span>
+    </div>
+  </div>
+
+</body>
+</html>
