@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Market Quick Take · Thursday, 17 July 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: #ffffff;
+    color: #1a2332;
+  }
+
+  .container {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  /* MASTHEAD */
+  .masthead {
+    border-top: 3px solid #003366;
+    padding: 32px 0 20px;
+  }
+  .masthead-title {
+    font-size: 42px;
+    font-weight: 700;
+    color: #003366;
+    letter-spacing: -0.5px;
+    line-height: 1;
+  }
+  .masthead-date {
+    font-size: 13px;
+    font-weight: 400;
+    color: #6b7280;
+    margin-top: 6px;
+  }
+  .masthead-rule {
+    border: none;
+    border-bottom: 1px solid #e5e7eb;
+    margin-top: 20px;
+  }
+
+  /* SNAPSHOT BAR */
+  .snapshot-bar {
+    background: #f1f5f9;
+    padding: 12px 0;
+    width: 100%;
+  }
+  .snapshot-inner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 0;
+    align-items: center;
+    padding: 0 24px;
+    max-width: 860px;
+    margin: 0 auto;
+  }
+  .chip {
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #1a2332;
+    letter-spacing: 0.02em;
+    white-space: nowrap;
+    padding: 0 10px;
+  }
+  .chip:first-child { padding-left: 0; }
+  .chip-sep {
+    color: #9ca3af;
+    font-size: 12px;
+    font-weight: 400;
+  }
+  .pos { color: #16a34a; }
+  .neg { color: #dc2626; }
+
+  /* EDITOR'S BRIEF */
+  .brief {
+    font-size: 18px;
+    font-weight: 400;
+    font-style: italic;
+    color: #374151;
+    line-height: 1.7;
+    max-width: 760px;
+    border-left: 3px solid #003366;
+    padding-left: 16px;
+    margin: 28px 0;
+  }
+
+  /* SECTIONS */
+  .section {
+    margin-bottom: 0;
+  }
+  .section-label {
+    font-size: 11px;
+    font-weight: 500;
+    color: #003366;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 6px;
+  }
+  .section-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1a2332;
+    margin-bottom: 10px;
+    line-height: 1.2;
+  }
+  .section-body {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.8;
+    color: #374151;
+  }
+  .section-body ul {
+    padding-left: 8px;
+    list-style: disc;
+    list-style-position: inside;
+  }
+  .section-body ul li {
+    margin-bottom: 6px;
+  }
+  .section-rule {
+    border: none;
+    border-bottom: 1px solid #e5e7eb;
+    margin: 28px 0;
+  }
+  .watch-pill {
+    display: inline-block;
+    color: #b45309;
+    background: #fef3c7;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 500;
+    padding: 2px 8px;
+    margin-bottom: 8px;
+    letter-spacing: 0.05em;
+  }
+
+  /* EARNINGS TABLE */
+  .earnings-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    font-weight: 400;
+    margin-top: 12px;
+    border: 1px solid #e5e7eb;
+  }
+  .earnings-table th {
+    background: #f1f5f9;
+    font-weight: 600;
+    color: #374151;
+    padding: 8px 12px;
+    text-align: left;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  .earnings-table td {
+    padding: 8px 12px;
+    border-bottom: 1px solid #e5e7eb;
+    color: #374151;
+  }
+  .earnings-table tr:last-child td {
+    border-bottom: none;
+  }
+  .earnings-table tr:nth-child(even) td {
+    background: #f9fafb;
+  }
+
+  /* FOOTER */
+  .footer {
+    background: #f1f5f9;
+    border-top: 1px solid #e5e7eb;
+    margin-top: 48px;
+    padding: 20px 0;
+  }
+  .footer-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+  .footer span {
+    font-size: 12px;
+    font-weight: 400;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <!-- MASTHEAD -->
+  <div class="masthead">
+    <div class="masthead-title">MARKET QUICK TAKE</div>
+    <div class="masthead-date">Thursday, 17 July 2026</div>
+    <hr class="masthead-rule">
+  </div>
+</div>
+
+<!-- SNAPSHOT BAR -->
+<div class="snapshot-bar">
+  <div class="snapshot-inner">
+    <span class="chip">SPY · $750.72 · <span class="neg">-0.54%</span></span>
+    <span class="chip-sep">|</span>
+    <span class="chip">QQQ · $705.94 · <span class="neg">-1.64%</span></span>
+    <span class="chip-sep">|</span>
+    <span class="chip">IWM · $295.59 · <span class="neg">-0.06%</span></span>
+    <span class="chip-sep">|</span>
+    <span class="chip">VIX · 16.73 · <span class="neg">+6.34%</span></span>
+    <span class="chip-sep">|</span>
+    <span class="chip">US10Y · 4.55% · <span class="neg">-3bps</span></span>
+    <span class="chip-sep">|</span>
+    <span class="chip">US2Y · 4.13% · <span class="neg">-5bps</span></span>
+    <span class="chip-sep">|</span>
+    <span class="chip">EUR/USD · 1.1453</span>
+    <span class="chip-sep">|</span>
+    <span class="chip">GOLD · $3,995.79</span>
+    <span class="chip-sep">|</span>
+    <span class="chip">WTI · $79.20</span>
+  </div>
+</div>
+
+<div class="container">
+
+  <!-- EDITOR'S BRIEF -->
+  <p class="brief">
+    A softer-than-expected inflation print lit a fire under rate-sensitive financials Thursday morning, with regional banks surging broadly as Fed pause hopes solidified — yet the Nasdaq retreated 1.64% as investors rotated out of growth into value ahead of a pivotal earnings week. With Tesla, Alphabet, and IBM all reporting Tuesday, markets face a fundamental reckoning: can Big Tech justify premium valuations at current yield levels?
+  </p>
+
+  <!-- SECTION 1: MARKET DRIVERS -->
+  <div class="section">
+    <div class="watch-pill">⚡ WATCH</div>
+    <div class="section-label">Section 01</div>
+    <div class="section-title">Market Drivers</div>
+    <div class="section-body">
+      <ul>
+        <li>Softer-than-expected June inflation data — a fresh catalyst for Fed pause speculation — sent regional bank shares sharply higher, with multiple mid-cap lenders posting double-digit gains as net interest income outlooks improved.</li>
+        <li>Strong Q2 earnings from major financial institutions provided a stabilizing floor: stabilized NII and easing deposit costs signal the sector has navigated the post-hike landscape more gracefully than feared.</li>
+        <li>Consumer spending remains resilient; Costco (COST) climbed 3.16% Wednesday on strong membership momentum and favorable macro conditions, reinforcing the bifurcated market narrative — defensive consumer strength vs. growth pressure.</li>
+        <li>Divergence between QQQ (-1.64%) and IWM (-0.06%) highlights an ongoing rotation from growth to rate-sensitive and value names as yields edge lower on the softer CPI reading.</li>
+      </ul>
+    </div>
+  </div>
+
+  <hr class="section-rule">
+
+  <!-- SECTION 2: MACRO -->
+  <div class="section">
+    <div class="section-label">Section 02</div>
+    <div class="section-title">Macro</div>
+    <div class="section-body">
+      <p>The softer June CPI print is rekindling debate about whether the Federal Reserve's tightening cycle has reached its terminal rate — a pivot narrative that has kept equities buoyant even as yields remain historically elevated. The 10-year Treasury at 4.55% has dipped 3 basis points from the prior session, while the 2-year yield fell 5 basis points to 4.13%, suggesting markets are incrementally pricing a more dovish path. Geopolitically, USD/JPY at 162.22 underscores the widening gap between Fed and Bank of Japan policy stances, with yen weakness persisting despite escalating intervention language from Tokyo — a dynamic that bears watching for reversal risk in the coming sessions.</p>
+    </div>
+  </div>
+
+  <hr class="section-rule">
+
+  <!-- SECTION 3: EQUITIES -->
+  <div class="section">
+    <div class="section-label">Section 03</div>
+    <div class="section-title">Equities</div>
+    <div class="section-body">
+      <p>SPY declined 0.54% to $750.72 as broad market selling pressure was concentrated in mega-cap technology names, pulling the S&amp;P 500 off recent highs. QQQ led losses at -1.64%, closing at $705.94 as Nasdaq heavyweights — including NVIDIA (-2.40% to $207.40) and Intel (-5.84% to $96.98) — faced renewed multiple compression amid elevated rate uncertainty. IWM outperformed with a fractional loss of just 0.06% to $295.59, consistent with the rate-relief rotation into small-cap value. Among notable individual movers, <strong>CareDx (CDNA)</strong> surged 35.6% to $40.34 on heavy volume following a clinical catalyst, while <strong>Nuvve Holding Corp (NVVE)</strong> collapsed 61.1% to $8.38 on adverse company-specific developments.</p>
+    </div>
+  </div>
+
+  <hr class="section-rule">
+
+  <!-- SECTION 4: VOLATILITY -->
+  <div class="section">
+    <div class="section-label">Section 04</div>
+    <div class="section-title">Volatility</div>
+    <div class="section-body">
+      <p>The CBOE VIX edged up 6.34% to 16.73, a notable one-day move that still leaves the fear gauge below the 20 threshold that signals elevated broad-market anxiety. The rise reflects genuine uncertainty heading into the heaviest earnings week of the quarter, with Tesla, Alphabet, IBM, and General Motors all reporting over the next three sessions. Implied volatility in individual names is likely running higher than the index-level VIX suggests — options markets are pricing meaningful event risk into megacap prints. A break above 20 would signal that the current nervousness has shifted to outright fear; watch for that level as a key sentiment indicator.</p>
+    </div>
+  </div>
+
+  <hr class="section-rule">
+
+  <!-- SECTION 5: FIXED INCOME -->
+  <div class="section">
+    <div class="section-label">Section 05</div>
+    <div class="section-title">Fixed Income</div>
+    <div class="section-body">
+      <p>The 10-year Treasury yield settled at 4.55%, down 3 basis points from the prior session, while the 2-year yield fell 5 basis points to 4.13%. The resulting 2Y–10Y spread sits at a positive 42 basis points, maintaining a normally sloped curve that is gently steepening as near-term rate expectations soften on today's inflation data. This dynamic is broadly constructive for risk assets if sustained, though the absolute level of the 10-year remains a headwind for long-duration equities and real estate. Fixed income traders will closely monitor next week's Fed communications for any formal acknowledgment of the improving inflation trajectory.</p>
+    </div>
+  </div>
+
+  <hr class="section-rule">
+
+  <!-- SECTION 6: CURRENCIES -->
+  <div class="section">
+    <div class="section-label">Section 06</div>
+    <div class="section-title">Currencies</div>
+    <div class="section-body">
+      <p>EUR/USD trades at 1.1453, holding firm near recent highs as dollar demand wanes in response to the softer U.S. inflation print. The euro is drawing modest support from improving Eurozone activity data and reduced ECB rate-cut urgency. USD/JPY at 162.22 remains pinned near multi-decade highs as the Bank of Japan's ultra-accommodative monetary stance continues to drive yen outflows — a level that has historically triggered verbal and potential physical intervention from Japanese authorities. A reversal in USD/JPY could generate significant cross-asset ripples, particularly for Japanese exporters and global carry-trade positions currently funded in yen.</p>
+    </div>
+  </div>
+
+  <hr class="section-rule">
+
+  <!-- SECTION 7: COMMODITIES -->
+  <div class="section">
+    <div class="section-label">Section 07</div>
+    <div class="section-title">Commodities</div>
+    <div class="section-body">
+      <p>Gold sits just shy of the $4,000/oz milestone at $3,995.79, drawing support from a confluence of softening real yields, a modestly weaker dollar, and persistent geopolitical safe-haven demand. The psychological significance of $4,000 is considerable — a sustained break above that level would represent a structural new high and could attract fresh momentum buying across the precious metals complex. WTI crude trades at $79.20/bbl, recovering from recent lows as softer inflation data improves the demand outlook and fuels hopes that a Fed pivot could reignite economic activity. OPEC+ supply discipline continues to provide a floor, though sluggish Chinese demand data remains a capping factor on the upside.</p>
+    </div>
+  </div>
+
+  <hr class="section-rule">
+
+  <!-- SECTION 8: EARNINGS RADAR -->
+  <div class="section">
+    <div class="section-label">Section 08</div>
+    <div class="section-title">Earnings Radar</div>
+    <div class="section-body">
+      <p>The next five trading days deliver some of the quarter's most consequential prints. Tesla's autonomous progress and margin trajectory, Alphabet's AI monetization commentary, and Intel's foundry transition update will collectively shape the narrative for the technology sector's second half. GM's print will offer a read on auto demand resilience under elevated rates and tariff pressures.</p>
+      <table class="earnings-table">
+        <thead>
+          <tr>
+            <th>Company</th>
+            <th>Date</th>
+            <th>Expected EPS</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>General Motors (GM)</strong></td>
+            <td>Mon, Jul 21 · Pre-market</td>
+            <td>$3.11</td>
+          </tr>
+          <tr>
+            <td><strong>Tesla (TSLA)</strong></td>
+            <td>Tue, Jul 22 · Post-market</td>
+            <td>$0.28</td>
+          </tr>
+          <tr>
+            <td><strong>Alphabet (GOOG/GOOGL)</strong></td>
+            <td>Tue, Jul 22 · Post-market</td>
+            <td>$2.86</td>
+          </tr>
+          <tr>
+            <td><strong>IBM</strong></td>
+            <td>Tue, Jul 22 · Post-market</td>
+            <td>$3.02</td>
+          </tr>
+          <tr>
+            <td><strong>Intel (INTC)</strong></td>
+            <td>Thu, Jul 23 · Post-market</td>
+            <td>$0.10</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+  <div class="footer-inner">
+    <span style="color:#6b7280;">Market Quick Take · Thursday, 17 July 2026</span>
+    <span style="color:#9ca3af;">For informational purposes only. Not investment advice.</span>
+  </div>
+</div>
+
+</body>
+</html>
