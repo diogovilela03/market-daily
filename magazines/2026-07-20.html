@@ -1,0 +1,413 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Market Quick Take — Monday, 20 July 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: #ffffff;
+    color: #1a2332;
+  }
+
+  .container {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  /* MASTHEAD */
+  .masthead {
+    border-top: 3px solid #003366;
+    padding: 32px 0 20px;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  .masthead-title {
+    font-size: 42px;
+    font-weight: 700;
+    color: #003366;
+    letter-spacing: -0.5px;
+    line-height: 1.1;
+  }
+  .masthead-date {
+    font-size: 13px;
+    font-weight: 400;
+    color: #6b7280;
+    margin-top: 6px;
+  }
+
+  /* SNAPSHOT BAR */
+  .snapshot-bar {
+    background: #f1f5f9;
+    padding: 12px 0;
+    border-bottom: 1px solid #e5e7eb;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  .snapshot-bar .container {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 0;
+    align-items: center;
+  }
+  .chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #1a2332;
+    text-transform: uppercase;
+    padding: 0 10px;
+  }
+  .chip:not(:last-child)::after {
+    content: '|';
+    margin-left: 10px;
+    color: #9ca3af;
+    font-weight: 400;
+  }
+  .chip-label { color: #6b7280; }
+  .chip-value { color: #1a2332; }
+  .pos { color: #16a34a; }
+  .neg { color: #dc2626; }
+
+  /* EDITOR'S BRIEF */
+  .editors-brief {
+    font-size: 18px;
+    font-weight: 400;
+    font-style: italic;
+    color: #374151;
+    line-height: 1.7;
+    margin: 28px 0;
+    max-width: 760px;
+    border-left: 3px solid #003366;
+    padding-left: 16px;
+  }
+
+  /* SECTIONS */
+  .section { padding: 0; }
+  .section-divider { border: none; border-top: 1px solid #e5e7eb; margin: 28px 0; }
+  .section-label {
+    font-size: 11px;
+    font-weight: 500;
+    color: #003366;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 6px;
+  }
+  .section-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1a2332;
+    margin-bottom: 10px;
+  }
+  .section-body {
+    font-size: 15px;
+    font-weight: 400;
+    color: #374151;
+    line-height: 1.8;
+  }
+  .section-body ul {
+    padding-left: 20px;
+    margin-top: 6px;
+  }
+  .section-body ul li {
+    margin-bottom: 6px;
+  }
+  .section-body p + p { margin-top: 10px; }
+
+  /* WATCH BADGE */
+  .watch-badge {
+    display: inline-block;
+    background: #fef3c7;
+    color: #b45309;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 500;
+    padding: 2px 8px;
+    margin-bottom: 8px;
+    letter-spacing: 0.5px;
+  }
+
+  /* EARNINGS TABLE */
+  .earnings-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #e5e7eb;
+    font-size: 13px;
+    font-weight: 400;
+    margin-top: 12px;
+  }
+  .earnings-table th {
+    background: #f1f5f9;
+    color: #6b7280;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 8px 12px;
+    text-align: left;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  .earnings-table td {
+    padding: 9px 12px;
+    color: #374151;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  .earnings-table tr:last-child td { border-bottom: none; }
+  .earnings-table tr:nth-child(even) td { background: #fafafa; }
+
+  /* FOOTER */
+  .footer {
+    background: #f1f5f9;
+    border-top: 1px solid #e5e7eb;
+    margin-top: 48px;
+    padding: 20px 0;
+  }
+  .footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .footer span {
+    font-size: 12px;
+    font-weight: 400;
+  }
+  .footer-brand { color: #6b7280; }
+  .footer-disclaimer { color: #9ca3af; }
+
+  @media (max-width: 600px) {
+    .masthead-title { font-size: 28px; }
+    .section-title { font-size: 20px; }
+    .editors-brief { font-size: 16px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- MASTHEAD -->
+<div class="container">
+  <div class="masthead">
+    <div class="masthead-title">MARKET QUICK TAKE</div>
+    <div class="masthead-date">Monday, 20 July 2026</div>
+  </div>
+</div>
+
+<!-- SNAPSHOT BAR -->
+<div class="snapshot-bar">
+  <div class="container">
+    <div class="chip">
+      <span class="chip-label">SPY</span>
+      <span class="chip-value">$743.29</span>
+      <span class="neg">−0.99%</span>
+    </div>
+    <div class="chip">
+      <span class="chip-label">QQQ</span>
+      <span class="chip-value">$695.33</span>
+      <span class="neg">−1.50%</span>
+    </div>
+    <div class="chip">
+      <span class="chip-label">IWM</span>
+      <span class="chip-value">$294.04</span>
+      <span class="neg">−0.52%</span>
+    </div>
+    <div class="chip">
+      <span class="chip-label">VIX</span>
+      <span class="chip-value">18.77</span>
+      <span class="neg">+10.87%</span>
+    </div>
+    <div class="chip">
+      <span class="chip-label">US10Y</span>
+      <span class="chip-value">4.57%</span>
+    </div>
+    <div class="chip">
+      <span class="chip-label">US2Y</span>
+      <span class="chip-value">4.16%</span>
+    </div>
+    <div class="chip">
+      <span class="chip-label">EUR/USD</span>
+      <span class="chip-value">1.1441</span>
+    </div>
+    <div class="chip">
+      <span class="chip-label">GOLD</span>
+      <span class="chip-value">$4,005.58</span>
+    </div>
+    <div class="chip">
+      <span class="chip-label">WTI</span>
+      <span class="chip-value">$79.20</span>
+    </div>
+  </div>
+</div>
+
+<!-- EDITOR'S BRIEF -->
+<div class="container">
+  <div class="editors-brief">
+    Risk assets fell sharply on Friday as semiconductor stocks led a broad technology selloff, geopolitical uncertainty from the escalating US-Iran conflict weighed on sentiment, and options markets began pricing in a packed mega-cap earnings week. Gold surged through the $4,000 mark for the first time — a safe-haven milestone — while the VIX spiked over 10% in a single session, ending the week at 18.77 and underscoring a market on edge heading into Monday.
+  </div>
+
+  <!-- SECTION 1: MARKET DRIVERS -->
+  <div class="section">
+    <div class="watch-badge">⚡ WATCH</div>
+    <div class="section-label">Section 1</div>
+    <div class="section-title">Market Drivers</div>
+    <div class="section-body">
+      <ul>
+        <li><strong>US-Iran war escalation.</strong> The ongoing conflict is the dominant macro overlay as markets price in potential energy supply disruptions, a widening of hostilities, and elevated geopolitical risk premium across asset classes. Risk-off sentiment is palpable: gold above $4,000 and a VIX surge of over 10% in a single day confirm investor unease.</li>
+        <li><strong>Semiconductor sector rout.</strong> AI and chip stocks bore the brunt of the equity selloff — ARM −7.3%, AMD −5.0%, Marvell −6.6%, Western Digital −9.1%, Lam Research −3.6%, Texas Instruments −3.4%, and NVIDIA −2.2% on record volume. The VanEck Semiconductor ETF (SMH) tested key technical support as funds rotated out of extended valuations.</li>
+        <li><strong>Banking earnings divergence.</strong> JPMorgan Chase posted a record Q2 profit on a trading surge, Charles Schwab held steady on higher net interest revenue, and ING/Barclays/European banks showed resilience — a stark contrast to the technology selloff and a reminder that earnings quality varies widely across sectors.</li>
+        <li><strong>Mega-cap earnings week begins.</strong> With Alphabet, Tesla, Intel, and General Motors all reporting this week, markets are entering a critical window. Pre-report caution contributed to Friday's risk reduction, particularly in names where consensus expectations appear stretched after a strong H1 run.</li>
+      </ul>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 2: MACRO -->
+  <div class="section">
+    <div class="section-label">Section 2</div>
+    <div class="section-title">Macro</div>
+    <div class="section-body">
+      <p>The US-Iran conflict has become the dominant macro risk, threatening to disrupt energy supply channels through the Strait of Hormuz and sustaining a geopolitical risk premium across oil, gold, and global equity markets. The European Central Bank is widely expected to hold rates at its upcoming decision this week, but its guidance on the trajectory of cuts will be parsed closely given slowing European growth and energy import exposure to Middle East instability. The Federal Reserve, meanwhile, remains in data-dependent mode: recent disinflation readings have modestly reinforced the case for one or two cuts in late 2026, but an energy price spike driven by the conflict could complicate that path if it reignites headline inflation. Investors are positioning defensively as uncertainty on both the geopolitical and monetary policy fronts peaks simultaneously ahead of a high-stakes earnings week.</p>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 3: EQUITIES -->
+  <div class="section">
+    <div class="section-label">Section 3</div>
+    <div class="section-title">Equities</div>
+    <div class="section-body">
+      <p>US equity indices retreated across the board on Friday. The S&amp;P 500 proxy SPY fell 0.99% to $743.29, with the tech-heavy QQQ underperforming at −1.50% to $695.33. Small-caps (IWM) were relatively resilient at −0.52% to $294.04, a dynamic consistent with rotation out of extended large-cap growth names. Two movers stand out:</p>
+      <ul>
+        <li><strong>NVIDIA (NVDA) −2.21% to $202.81</strong> on volume of 143.4 million shares — the semiconductor giant remained under pressure as the broader AI and chip complex sold off, with leveraged semiconductor ETF SOXL shedding 5.16% and its inverse SOXS gaining 5.57%, confirming broad sector de-risking.</li>
+        <li><strong>Netflix (NFLX) −7.26% to $68.95</strong> on elevated volume of 141.2 million shares — a sharp single-session decline that raises questions about either a post-earnings reaction or sector-level multiple compression as higher-for-longer rate expectations temper valuations for high-multiple growth names.</li>
+      </ul>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 4: VOLATILITY -->
+  <div class="section">
+    <div class="section-label">Section 4</div>
+    <div class="section-title">Volatility</div>
+    <div class="section-body">
+      <p>The CBOE VIX closed Friday at <strong>18.77</strong>, surging +2.04 points (+10.87%) in a single session — a sharp single-day spike reflecting the intersection of geopolitical shock, semiconductor sector weakness, and pre-earnings hedging demand. At 18.77, the VIX remains below the psychologically significant 20 "elevated fear" threshold, suggesting the market has not yet entered panic mode. However, the magnitude and speed of Friday's move warrants attention: a continuation above 20 on Monday would indicate broader options-market repricing as mega-cap earnings season begins in earnest. The current level places volatility in "cautious" territory — not complacent (&lt;15), but not yet fearful (&gt;20).</p>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 5: FIXED INCOME -->
+  <div class="section">
+    <div class="section-label">Section 5</div>
+    <div class="section-title">Fixed Income</div>
+    <div class="section-body">
+      <p>The 10-year Treasury yield stands at <strong>4.57%</strong> while the 2-year yield sits at <strong>4.16%</strong>, leaving the 2Y–10Y spread at a positive <strong>+41 basis points</strong> — a modestly upward-sloping curve consistent with a normalizing post-inversion environment. The curve has been steepening as markets gradually push out Fed cut expectations, with the long end pricing in stronger nominal growth and a fiscal risk premium. Watch the 10-year: if the US-Iran conflict escalates and drives an oil price spike, a new inflationary impulse could push the long end higher while the short end anchors on near-term Fed positioning, steepening the curve further. Conversely, a sharp equity selloff triggering flight-to-safety flows could pull yields lower across the board.</p>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 6: CURRENCIES -->
+  <div class="section">
+    <div class="section-label">Section 6</div>
+    <div class="section-title">Currencies</div>
+    <div class="section-body">
+      <p><strong>EUR/USD at 1.1441</strong> — the euro is holding firm ahead of this week's ECB rate decision, with markets pricing in an unchanged rate but closely watching for dovish or hawkish language shifts. European banks have outperformed recently, providing a macro support narrative for the currency, though energy import vulnerability tied to Middle East instability remains an asymmetric downside risk. <strong>USD/JPY at 162.42</strong> — the yen remains near historically weak levels versus the dollar, a persistent anomaly given the Bank of Japan's gradual policy normalization path. Any escalation of the US-Iran conflict or a sharp risk-off episode could accelerate safe-haven yen flows, driving the pair materially lower. Japanese equities' tech exposure also means the semiconductor selloff narrative could bleed into USD/JPY positioning this week.</p>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 7: COMMODITIES -->
+  <div class="section">
+    <div class="watch-badge">⚡ WATCH</div>
+    <div class="section-label">Section 7</div>
+    <div class="section-title">Commodities</div>
+    <div class="section-body">
+      <p><strong>Gold: $4,005.58/oz</strong> — the precious metal has crossed the psychologically significant $4,000 threshold for the first time, driven by a confluence of forces: geopolitical risk premium from the US-Iran war, sustained central bank buying, a weakening US dollar on a trade-weighted basis, and rotation away from high-beta equities. The $4,000 level is now the battleground; a sustained hold above it could trigger further momentum buying and accelerate flows out of risk assets. BP (+4.27%) and Chevron (+3.16%) gained earlier in the week, consistent with an oil supply-disruption bid.</p>
+      <p><strong>WTI Crude: $79.20/bbl</strong> — oil has rebounded from recent lows, with the US-Iran conflict introducing a supply-risk premium given Iran's significant production (~3.4 mb/d) and its ability to threaten Strait of Hormuz shipping lanes. The move aligns with broader safe-haven commodity demand and energy sector outperformance. Watch crude closely: a spike through $85 would likely transmit meaningfully into headline CPI and complicate the Fed's easing trajectory.</p>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 8: EARNINGS CALENDAR (renumbered from 9) -->
+  <div class="section">
+    <div class="section-label">Section 8</div>
+    <div class="section-title">Earnings Calendar</div>
+    <div class="section-body">
+      <p>A landmark week for earnings: mega-cap technology, automotive, and financial names all report, with Alphabet and Tesla on Wednesday headlining what could be a market-moving 48-hour window. Intel and Lockheed Martin on Thursday are particularly notable given the semiconductor sector selloff and elevated defense spending in a conflict environment.</p>
+      <table class="earnings-table">
+        <thead>
+          <tr>
+            <th>Company</th>
+            <th>Date</th>
+            <th>Time</th>
+            <th>Est. EPS</th>
+            <th>Expected Move</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Alphabet (GOOG)</strong></td>
+            <td>Tue 22 Jul</td>
+            <td>Post-market</td>
+            <td>$2.86</td>
+            <td>±5–8% historically</td>
+          </tr>
+          <tr>
+            <td><strong>Tesla (TSLA)</strong></td>
+            <td>Tue 22 Jul</td>
+            <td>Post-market</td>
+            <td>$0.31</td>
+            <td>±8–12% historically</td>
+          </tr>
+          <tr>
+            <td><strong>General Motors (GM)</strong></td>
+            <td>Mon 21 Jul</td>
+            <td>Pre-market</td>
+            <td>$3.13</td>
+            <td>±3–5% historically</td>
+          </tr>
+          <tr>
+            <td><strong>Intel (INTC)</strong></td>
+            <td>Wed 23 Jul</td>
+            <td>Post-market</td>
+            <td>$0.10</td>
+            <td>±6–9% historically</td>
+          </tr>
+          <tr>
+            <td><strong>Charles Schwab (SCHW)</strong></td>
+            <td>Mon 21 Jul</td>
+            <td>Pre-market</td>
+            <td>$1.53</td>
+            <td>±3–5% historically</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</div><!-- /.container -->
+
+<!-- FOOTER -->
+<div class="footer">
+  <div class="container">
+    <span class="footer-brand">Market Quick Take &middot; Monday, 20 July 2026</span>
+    <span class="footer-disclaimer">For informational purposes only. Not investment advice.</span>
+  </div>
+</div>
+
+</body>
+</html>
