@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Market Quick Take — Wednesday, 23 July 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: #ffffff;
+    color: #1a2332;
+  }
+
+  .container {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  /* MASTHEAD */
+  .masthead {
+    border-top: 3px solid #003366;
+    padding: 32px 0 20px;
+    border-bottom: 1px solid #e5e7eb;
+    margin-bottom: 0;
+  }
+  .masthead h1 {
+    font-size: 42px;
+    font-weight: 700;
+    color: #003366;
+    line-height: 1.1;
+    letter-spacing: -0.5px;
+  }
+  .masthead .date {
+    font-size: 13px;
+    font-weight: 400;
+    color: #6b7280;
+    margin-top: 6px;
+  }
+
+  /* SNAPSHOT BAR */
+  .snapshot-bar {
+    background: #f1f5f9;
+    padding: 12px 0;
+    width: 100%;
+    overflow-x: auto;
+  }
+  .snapshot-inner {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 0;
+    align-items: center;
+  }
+  .chip {
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    color: #1a2332;
+    text-transform: uppercase;
+    white-space: nowrap;
+    padding: 0 10px;
+  }
+  .chip:not(:last-child)::after {
+    content: ' |';
+    color: #9ca3af;
+    margin-left: 10px;
+  }
+  .pos { color: #16a34a; }
+  .neg { color: #dc2626; }
+
+  /* EDITOR'S BRIEF */
+  .editors-brief {
+    font-size: 18px;
+    font-weight: 400;
+    font-style: italic;
+    color: #374151;
+    line-height: 1.7;
+    max-width: 760px;
+    margin: 28px 0;
+    border-left: 3px solid #003366;
+    padding-left: 16px;
+  }
+
+  /* SECTIONS */
+  .section {
+    margin-bottom: 0;
+  }
+  .section-divider {
+    border: none;
+    border-top: 1px solid #e5e7eb;
+    margin: 28px 0;
+  }
+  .section-label {
+    font-size: 11px;
+    font-weight: 500;
+    color: #003366;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 6px;
+  }
+  .section-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1a2332;
+    margin-bottom: 10px;
+    line-height: 1.2;
+  }
+  .section-body {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.8;
+    color: #374151;
+  }
+  .section-body ul {
+    padding-left: 8px;
+    list-style: disc;
+    list-style-position: inside;
+  }
+  .section-body ul li {
+    margin-bottom: 6px;
+  }
+  .watch-pill {
+    display: inline-block;
+    background: #fef3c7;
+    color: #b45309;
+    font-size: 11px;
+    font-weight: 500;
+    border-radius: 4px;
+    padding: 2px 8px;
+    margin-bottom: 8px;
+  }
+
+  /* EARNINGS TABLE */
+  .earnings-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    font-weight: 400;
+    margin-top: 12px;
+    border: 1px solid #e5e7eb;
+  }
+  .earnings-table th {
+    background: #f1f5f9;
+    color: #1a2332;
+    font-weight: 600;
+    text-align: left;
+    padding: 8px 12px;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  .earnings-table td {
+    padding: 8px 12px;
+    border-bottom: 1px solid #e5e7eb;
+    color: #374151;
+  }
+  .earnings-table tr:last-child td {
+    border-bottom: none;
+  }
+  .earnings-table tr:hover td {
+    background: #f9fafb;
+  }
+
+  /* FOOTER */
+  .footer {
+    background: #f1f5f9;
+    border-top: 1px solid #e5e7eb;
+    margin-top: 48px;
+    padding: 20px 0;
+  }
+  .footer-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .footer span {
+    font-size: 12px;
+    font-weight: 400;
+  }
+  .footer-brand { color: #6b7280; }
+  .footer-disclaimer { color: #9ca3af; }
+
+  @media (prefers-color-scheme: dark) {
+    body { background: #0f1724; color: #e2e8f0; }
+    .masthead h1 { color: #6b9fd4; }
+    .masthead { border-top-color: #6b9fd4; border-bottom-color: #1e2d42; }
+    .masthead .date { color: #9ca3af; }
+    .snapshot-bar { background: #1a2740; }
+    .chip { color: #e2e8f0; }
+    .editors-brief { color: #cbd5e1; border-left-color: #6b9fd4; }
+    .section-label { color: #6b9fd4; }
+    .section-title { color: #e2e8f0; }
+    .section-body { color: #cbd5e1; }
+    .section-divider { border-top-color: #1e2d42; }
+    .earnings-table { border-color: #1e2d42; }
+    .earnings-table th { background: #1a2740; color: #e2e8f0; border-bottom-color: #1e2d42; }
+    .earnings-table td { color: #cbd5e1; border-bottom-color: #1e2d42; }
+    .earnings-table tr:hover td { background: #1e2d42; }
+    .footer { background: #1a2740; border-top-color: #1e2d42; }
+    .footer-brand { color: #9ca3af; }
+    .footer-disclaimer { color: #6b7280; }
+    .watch-pill { background: #451a03; color: #fbbf24; }
+  }
+
+  :root[data-theme="dark"] body { background: #0f1724; color: #e2e8f0; }
+  :root[data-theme="dark"] .masthead h1 { color: #6b9fd4; }
+  :root[data-theme="dark"] .masthead { border-top-color: #6b9fd4; border-bottom-color: #1e2d42; }
+  :root[data-theme="dark"] .masthead .date { color: #9ca3af; }
+  :root[data-theme="dark"] .snapshot-bar { background: #1a2740; }
+  :root[data-theme="dark"] .chip { color: #e2e8f0; }
+  :root[data-theme="dark"] .editors-brief { color: #cbd5e1; border-left-color: #6b9fd4; }
+  :root[data-theme="dark"] .section-label { color: #6b9fd4; }
+  :root[data-theme="dark"] .section-title { color: #e2e8f0; }
+  :root[data-theme="dark"] .section-body { color: #cbd5e1; }
+  :root[data-theme="dark"] .section-divider { border-top-color: #1e2d42; }
+  :root[data-theme="dark"] .earnings-table { border-color: #1e2d42; }
+  :root[data-theme="dark"] .earnings-table th { background: #1a2740; color: #e2e8f0; border-bottom-color: #1e2d42; }
+  :root[data-theme="dark"] .earnings-table td { color: #cbd5e1; border-bottom-color: #1e2d42; }
+  :root[data-theme="dark"] .earnings-table tr:hover td { background: #1e2d42; }
+  :root[data-theme="dark"] .footer { background: #1a2740; border-top-color: #1e2d42; }
+  :root[data-theme="dark"] .footer-brand { color: #9ca3af; }
+  :root[data-theme="dark"] .footer-disclaimer { color: #6b7280; }
+  :root[data-theme="dark"] .watch-pill { background: #451a03; color: #fbbf24; }
+  :root[data-theme="light"] body { background: #ffffff; color: #1a2332; }
+</style>
+</head>
+<body>
+
+<!-- MASTHEAD -->
+<div class="container">
+  <div class="masthead">
+    <h1>MARKET QUICK TAKE</h1>
+    <div class="date">Wednesday, 23 July 2026</div>
+  </div>
+</div>
+
+<!-- SNAPSHOT BAR -->
+<div class="snapshot-bar">
+  <div class="snapshot-inner">
+    <div class="chip">SPY · $747.41 · <span class="neg">-0.12%</span></div>
+    <div class="chip">QQQ · $705.35 · <span class="neg">-0.51%</span></div>
+    <div class="chip">IWM · $293.79 · <span class="neg">-0.93%</span></div>
+    <div class="chip">VIX · 16.64 · <span class="neg">-2.46%</span></div>
+    <div class="chip">US10Y · 4.63%</div>
+    <div class="chip">US2Y · 4.26%</div>
+    <div class="chip">EUR/USD · 1.1426</div>
+    <div class="chip">GOLD · $4,109</div>
+    <div class="chip">WTI · $84.38</div>
+  </div>
+</div>
+
+<!-- BODY -->
+<div class="container">
+
+  <!-- EDITOR'S BRIEF -->
+  <p class="editors-brief">
+    Markets retreated modestly on Wednesday as investors balanced a packed earnings calendar against a persistent geopolitical risk premium from the US-Iran conflict, with equities broadly softer, small-caps underperforming, and gold sustaining its record-territory run above $4,100. Technology diverged sharply along the AI fault line — server infrastructure names surged while legacy semiconductor stocks buckled under renewed export-control fears — setting up a consequential few days as Intel, Lockheed Martin, and a broad slate of financials reported pre-bell.
+  </p>
+
+  <!-- SECTION 1: MARKET DRIVERS -->
+  <div class="section">
+    <div class="section-label">Section 01</div>
+    <div class="section-title">Market Drivers</div>
+    <div class="section-body">
+      <ul>
+        <li><strong>Earnings season in full swing, financials leading:</strong> Q2 2026 bank earnings dominated headlines, with regional lenders reporting their eighth consecutive quarter of net interest margin expansion; broad beat rates in financials kept the sector constructive even as broader equity indices pulled back.</li>
+        <li><strong>Inflation data cooling rate-hike fears:</strong> Softer-than-expected inflation readings earlier in the week tempered expectations for further Fed tightening, supporting risk assets at the margin but leaving equities consolidating near multi-month highs after a robust July rally.</li>
+        <li><strong>US-Iran war sustaining geopolitical premium:</strong> The ongoing conflict continues to underpin oil and gold, with safe-haven demand keeping the yellow metal near all-time highs above $4,100/oz and WTI crude holding firmly above $84.</li>
+        <li><strong>AI infrastructure vs. legacy chips diverge sharply:</strong> Super Micro Computer (SMCI) surged +19.8% on AI server demand, NVIDIA added +2.3%, while Lam Research, Texas Instruments, and Intel faced export-control headwinds — a widening bifurcation within the semiconductor complex.</li>
+      </ul>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 2: MACRO -->
+  <div class="section">
+    <div class="section-label">Section 02</div>
+    <div class="section-title">Macro</div>
+    <div class="section-body">
+      <p>The Federal Reserve remains on hold as softer inflation prints have diminished the urgency for further hikes, yet the 10-year yield at 4.63% signals that markets are not yet pricing meaningful rate relief — the 2Y/10Y spread's return to positive territory at +37bps reflects a gradual normalization rather than imminent easing. The US-Iran conflict injects a sustained geopolitical risk premium that supports energy and haven assets while complicating the global growth outlook; the conflict is expected to remain a week-ahead variable for risk sentiment. Consumer stress is quietly building at the lower-income tier, with Equifax flagging deteriorating credit quality among price-sensitive households even as aggregate corporate earnings continue to broadly beat estimates.</p>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 3: EQUITIES -->
+  <div class="section">
+    <div class="section-label">Section 03</div>
+    <div class="section-title">Equities</div>
+    <div class="section-body">
+      <p>All three major index ETFs finished Wednesday in the red: SPY slipped <span class="neg">-0.12%</span> to <strong>$747.41</strong>, QQQ declined <span class="neg">-0.51%</span> to <strong>$705.35</strong>, and small-caps bore the brunt with IWM off <span class="neg">-0.93%</span> to <strong>$293.79</strong> as rate sensitivity and domestic cyclical headwinds weighed on Russell 2000 components. Notable movers on the session: <strong>Super Micro Computer (SMCI) surged +19.84%</strong> to $30.56 on heavy volume of 161.7M shares, driven by robust AI server demand signals and likely short-covering; <strong>UiPath (PATH) plunged -11.05%</strong> to $10.71 on 105.6M shares as enterprise software sentiment soured amid growth concerns.</p>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 4: VOLATILITY -->
+  <div class="section">
+    <div class="section-label">Section 04</div>
+    <div class="section-title">Volatility</div>
+    <div class="section-body">
+      <p>The CBOE VIX settled at <strong>16.64</strong>, declining <span class="neg">-2.46%</span> on the day from its session high of 19.49 — a meaningful intraday reversal that underscores ongoing market complacency despite geopolitical headwinds. At 16.64, the fear gauge sits in the neutral 15–20 band, suggesting options markets are not pricing acute near-term stress. The elevated intraday high (19.49) warrants monitoring; a sustained break above 20 would indicate a shift in the risk regime.</p>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 5: FIXED INCOME -->
+  <div class="section">
+    <div class="section-label">Section 05</div>
+    <div class="section-title">Fixed Income</div>
+    <div class="section-body">
+      <p>The US 10-year Treasury yield stands at <strong>4.63%</strong> while the 2-year sits at <strong>4.26%</strong>, leaving the 2Y/10Y spread at a positive <strong>+37 basis points</strong> — a mildly steepening curve that has moved decisively out of inversion. The steepening dynamic is driven primarily by long-end selling as markets absorb elevated Treasury supply and price durable inflation risks rather than a front-end rally on cut expectations. The curve shape implies a soft-landing base case is priced, though the Fed's data-dependent posture means any upside inflation surprise could quickly flatten the curve again.</p>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 6: CURRENCIES -->
+  <div class="section">
+    <div class="section-label">Section 06</div>
+    <div class="section-title">Currencies</div>
+    <div class="section-body">
+      <p><strong>EUR/USD at 1.1426</strong> holds near recent range highs, reflecting relative stability between a cautious Fed and a comparably steady ECB posture. <strong>USD/JPY at 163.14</strong> remains firm, sustaining the persistent yen weakness driven by the deep interest-rate differential between US yields and Japan's ultra-loose policy stance. At these levels, the yen's depreciation continues to be a political and economic pressure point for the Bank of Japan; prior intervention thresholds have historically clustered around 155–160, meaning the current level may invite fresh scrutiny. No immediate intervention signals are evident, but the trajectory bears watching heading into the next BOJ meeting.</p>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 7: COMMODITIES -->
+  <div class="section">
+    <div class="section-label">Section 07</div>
+    <div class="section-title">Commodities</div>
+    <div class="section-body">
+      <p><strong>Gold (XAU/USD) at $4,109.03/oz</strong> sustains its position near all-time highs, underpinned by the geopolitical risk premium from the US-Iran war, consistent central bank accumulation, and dollar hedging demand. The metal's resilience above $4,000 speaks to a structural shift in the demand base rather than a speculative spike. <strong>WTI crude at $84.38/bbl</strong> (most recent: July 20) reflects the supply-risk premium embedded in Middle East tensions; OPEC+ compliance remains a key variable, and any escalation in the Strait of Hormuz would be a direct upside catalyst for front-month prices. Weekly EIA inventory data will be the next directional signal.</p>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 8: EARNINGS CALENDAR (renumbered as Section 8 since Digital Assets is omitted) -->
+  <div class="section">
+    <div class="section-label">Section 08</div>
+    <div class="section-title">Earnings Radar</div>
+    <div class="section-body">
+      <p>A landmark week for corporate earnings with major names across defense, financials, payments, and Big Tech reporting through July 29. Alphabet and Tesla reported yesterday (July 22); the coming days bring Intel's closely-watched post-market result today and Meta/Microsoft next Wednesday.</p>
+      <div style="overflow-x: auto;">
+        <table class="earnings-table">
+          <thead>
+            <tr>
+              <th>Company</th>
+              <th>Date</th>
+              <th>Timing</th>
+              <th>EPS Est.</th>
+              <th>Expected Move Context</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Lockheed Martin (LMT)</strong></td>
+              <td>Jul 23</td>
+              <td>Pre-market</td>
+              <td>$7.28</td>
+              <td>Defense bellwether; geopolitical backdrop supportive</td>
+            </tr>
+            <tr>
+              <td><strong>RTX Corp (RTX)</strong></td>
+              <td>Jul 23</td>
+              <td>Pre-market</td>
+              <td>$1.66</td>
+              <td>Engine/aerospace margins in focus; supply chain normalization</td>
+            </tr>
+            <tr>
+              <td><strong>Honeywell (HON)</strong></td>
+              <td>Jul 23</td>
+              <td>Pre-market</td>
+              <td>$1.80</td>
+              <td>Industrial cycle indicator; guidance key for macro read-through</td>
+            </tr>
+            <tr>
+              <td><strong>Comcast (CMCSA)</strong></td>
+              <td>Jul 23</td>
+              <td>Pre-market</td>
+              <td>$0.97</td>
+              <td>Broadband subscriber trends and streaming competition</td>
+            </tr>
+            <tr>
+              <td><strong>Intel (INTC)</strong></td>
+              <td>Jul 23</td>
+              <td>Post-market</td>
+              <td>$0.10</td>
+              <td>Recovery credibility test; foundry ramp and export controls key</td>
+            </tr>
+            <tr>
+              <td><strong>American Express (AXP)</strong></td>
+              <td>Jul 24</td>
+              <td>Pre-market</td>
+              <td>$4.40</td>
+              <td>Premium consumer spending health; credit loss trends</td>
+            </tr>
+            <tr>
+              <td><strong>Verizon (VZ)</strong></td>
+              <td>Jul 24</td>
+              <td>Pre-market</td>
+              <td>$1.27</td>
+              <td>Wireless subscriber net adds; fiber broadband progress</td>
+            </tr>
+            <tr>
+              <td><strong>Visa (V)</strong></td>
+              <td>Jul 28</td>
+              <td>Post-market</td>
+              <td>$3.22</td>
+              <td>Payment volume trends; cross-border recovery pace</td>
+            </tr>
+            <tr>
+              <td><strong>Meta Platforms (META)</strong></td>
+              <td>Jul 29</td>
+              <td>Post-market</td>
+              <td>$7.09</td>
+              <td>AI-driven ad revenue acceleration; capex guidance key</td>
+            </tr>
+            <tr>
+              <td><strong>Microsoft (MSFT)</strong></td>
+              <td>Jul 29</td>
+              <td>Post-market</td>
+              <td>$4.21</td>
+              <td>Azure AI cloud growth rate; Copilot monetization signals</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+</div><!-- end .container -->
+
+<!-- FOOTER -->
+<div class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <span class="footer-brand">Market Quick Take · Wednesday, 23 July 2026</span>
+      <span class="footer-disclaimer">For informational purposes only. Not investment advice.</span>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
