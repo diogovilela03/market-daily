@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Market Quick Take — Monday, 27 July 2026</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #ffffff;
+      color: #1a2332;
+    }
+
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* ── MASTHEAD ── */
+    .masthead {
+      border-top: 3px solid #003366;
+      padding: 32px 0 20px;
+      border-bottom: 1px solid #e5e7eb;
+    }
+    .masthead h1 {
+      font-size: 42px;
+      font-weight: 700;
+      color: #003366;
+      letter-spacing: -1px;
+      line-height: 1;
+    }
+    .masthead .date {
+      font-size: 13px;
+      font-weight: 400;
+      color: #6b7280;
+      margin-top: 8px;
+    }
+
+    /* ── SNAPSHOT BAR ── */
+    .snapshot-bar {
+      background: #f1f5f9;
+      padding: 12px 0;
+      overflow-x: auto;
+    }
+    .snapshot-bar .container {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 2px 0;
+    }
+    .chip {
+      font-size: 12px;
+      font-weight: 500;
+      color: #1a2332;
+      text-transform: uppercase;
+      white-space: nowrap;
+      padding: 2px 10px;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .chip + .chip::before {
+      content: '|';
+      margin-right: 10px;
+      color: #9ca3af;
+    }
+    .chip-label { color: #6b7280; }
+    .chip-dot { color: #9ca3af; margin: 0 1px; }
+    .positive { color: #16a34a; }
+    .negative { color: #dc2626; }
+    .neutral-chg { color: #6b7280; }
+
+    /* ── EDITOR'S BRIEF ── */
+    .brief {
+      font-size: 18px;
+      font-style: italic;
+      font-weight: 400;
+      color: #374151;
+      line-height: 1.75;
+      max-width: 760px;
+      margin: 28px 0;
+      border-left: 3px solid #003366;
+      padding-left: 16px;
+    }
+
+    /* ── SECTION SHARED STYLES ── */
+    .section-label {
+      font-size: 11px;
+      font-weight: 500;
+      color: #003366;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      margin-bottom: 6px;
+    }
+    .section-title {
+      font-size: 24px;
+      font-weight: 700;
+      color: #1a2332;
+      margin-bottom: 10px;
+    }
+    .section-body {
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 1.8;
+      color: #374151;
+    }
+    .section-body ul {
+      padding-left: 20px;
+    }
+    .section-body ul li {
+      margin-bottom: 6px;
+    }
+    .section-body p + p {
+      margin-top: 10px;
+    }
+    .section-body p + ul,
+    .section-body ul + p {
+      margin-top: 10px;
+    }
+
+    .watch-pill {
+      display: inline-block;
+      background: #fef3c7;
+      color: #b45309;
+      font-size: 11px;
+      font-weight: 500;
+      border-radius: 4px;
+      padding: 2px 8px;
+      margin-bottom: 8px;
+    }
+
+    .section-divider {
+      border: none;
+      border-top: 1px solid #e5e7eb;
+      margin: 28px 0;
+    }
+
+    /* ── EARNINGS TABLE ── */
+    .earnings-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+      font-weight: 400;
+      margin-top: 14px;
+      overflow-x: auto;
+    }
+    .earnings-table th {
+      text-align: left;
+      padding: 9px 14px;
+      background: #f1f5f9;
+      border: 1px solid #e5e7eb;
+      font-weight: 600;
+      color: #1a2332;
+    }
+    .earnings-table td {
+      padding: 9px 14px;
+      border: 1px solid #e5e7eb;
+      color: #374151;
+      vertical-align: top;
+    }
+    .earnings-table tr:nth-child(even) td {
+      background: #f9fafb;
+    }
+    .table-wrap {
+      overflow-x: auto;
+    }
+
+    /* ── FOOTER ── */
+    .footer {
+      background: #f1f5f9;
+      border-top: 1px solid #e5e7eb;
+      margin-top: 48px;
+      padding: 20px 0;
+    }
+    .footer .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .footer span {
+      font-size: 12px;
+      font-weight: 400;
+    }
+    .footer .copy { color: #6b7280; }
+    .footer .disclaimer { color: #9ca3af; }
+  </style>
+</head>
+<body>
+
+  <!-- MASTHEAD -->
+  <div class="container">
+    <div class="masthead">
+      <h1>MARKET QUICK TAKE</h1>
+      <p class="date">Monday, 27 July 2026</p>
+    </div>
+  </div>
+
+  <!-- SNAPSHOT BAR -->
+  <div class="snapshot-bar">
+    <div class="container">
+      <div class="chip">
+        <span class="chip-label">SPY</span><span class="chip-dot">·</span><span>738.93</span><span class="chip-dot">·</span><span class="positive">+0.10%</span>
+      </div>
+      <div class="chip">
+        <span class="chip-label">QQQ</span><span class="chip-dot">·</span><span>684.23</span><span class="chip-dot">·</span><span class="negative">−1.12%</span>
+      </div>
+      <div class="chip">
+        <span class="chip-label">IWM</span><span class="chip-dot">·</span><span>291.17</span><span class="chip-dot">·</span><span class="negative">−0.32%</span>
+      </div>
+      <div class="chip">
+        <span class="chip-label">VIX</span><span class="chip-dot">·</span><span>18.58</span><span class="chip-dot">·</span><span class="negative">−0.65%</span>
+      </div>
+      <div class="chip">
+        <span class="chip-label">US10Y</span><span class="chip-dot">·</span><span>4.71%</span><span class="chip-dot">·</span><span class="positive">+4bps</span>
+      </div>
+      <div class="chip">
+        <span class="chip-label">US2Y</span><span class="chip-dot">·</span><span>4.37%</span><span class="chip-dot">·</span><span class="positive">+6bps</span>
+      </div>
+      <div class="chip">
+        <span class="chip-label">EUR/USD</span><span class="chip-dot">·</span><span>1.1412</span><span class="chip-dot">·</span><span class="neutral-chg">—</span>
+      </div>
+      <div class="chip">
+        <span class="chip-label">GOLD</span><span class="chip-dot">·</span><span>$4,102</span><span class="chip-dot">·</span><span class="neutral-chg">—</span>
+      </div>
+      <div class="chip">
+        <span class="chip-label">WTI</span><span class="chip-dot">·</span><span>$84.38</span><span class="chip-dot">·</span><span class="positive">+1.14%</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <div class="container">
+
+    <!-- EDITOR'S BRIEF -->
+    <p class="brief">
+      Big Tech's earnings gauntlet dominates the week as Microsoft and Meta report Wednesday alongside the Fed's July rate decision, then Apple and Amazon follow Thursday — four of the five largest S&P 500 constituents in a 48-hour window. Intel's 7.9% collapse on Friday, triggered by weak peer guidance across the semiconductor complex, already underscores how rapidly the AI-spending narrative can fracture, making this the most consequential earnings cluster of 2026 so far.
+    </p>
+
+    <!-- SECTION 1: MARKET DRIVERS -->
+    <div class="section">
+      <div class="watch-pill">⚡ WATCH</div>
+      <p class="section-label">Market Drivers</p>
+      <h2 class="section-title">What Is Moving Markets Today</h2>
+      <div class="section-body">
+        <ul>
+          <li><strong>Big Tech earnings week:</strong> Microsoft and Meta report Wednesday post-market; Apple and Amazon follow Thursday. Options markets are pricing large single-day swings (±3–5%) for each, and pre-earnings positioning is the dominant equity flow driver heading into the open.</li>
+          <li><strong>Semiconductor selloff accelerates:</strong> Intel (INTC) shed 7.9% on 179 million shares Friday — the session's largest large-cap decline — after weak guidance from sector peers AMAT (−3.8%), MRVL (−5.2%), and WDC (−5.1%) flagged cooling cloud infrastructure spend and tightening trade restrictions on chip exports.</li>
+          <li><strong>FOMC decision Wednesday:</strong> The July Fed meeting concludes July 29 with consensus firmly expecting rates held. The statement's language on the pace of eventual cuts — and any upgrade to the inflation outlook — will set the near-term rate narrative and could reprice both duration and equity multiples.</li>
+          <li><strong>Consumer resilience as counterweight:</strong> McDonald's trades near record highs on robust U.S. comparable sales, effective cost management, and sustained pricing power. Walmart also cited for healthy fundamentals, offering a partial offset to the tech-driven macro unease.</li>
+        </ul>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- SECTION 2: MACRO -->
+    <div class="section">
+      <div class="watch-pill">⚡ WATCH</div>
+      <p class="section-label">Macro</p>
+      <h2 class="section-title">Fed Decision Looms; Yields Tick Higher</h2>
+      <div class="section-body">
+        <p>The Federal Reserve's July FOMC meeting concludes Wednesday, July 29, with near-universal market consensus expecting rates held steady. Treasury yields edged higher last session — the 10-year rising 4 basis points to 4.71% and the 2-year climbing 6 basis points to 4.37% — as persistent inflation prints and a resilient labour market leave policymakers with limited justification to ease. The focus will be on whether the statement acknowledges progress on disinflation or signals a longer hold than markets have priced.</p>
+        <p>USD/JPY holds above 163.48, underscoring the widening rate differential between the Fed's restrictive stance and the Bank of Japan's ultra-accommodative posture. Tokyo's verbal intervention threats have so far failed to durably reverse yen weakness, and any surprise hawkishness from the Fed on Wednesday could push the pair toward 165 — a level that would intensify pressure on Japanese authorities to act.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- SECTION 3: EQUITIES -->
+    <div class="section">
+      <p class="section-label">Equities</p>
+      <h2 class="section-title">Bifurcated Market: Tech Sells Off as Value Holds</h2>
+      <div class="section-body">
+        <p>SPY closed Friday at 738.93 (+0.10%), essentially flat as consumer staples and financials absorbed the blow from technology. QQQ fell to 684.23 (−1.12%), weighed by the semiconductor complex and pre-earnings de-risking in mega-cap tech names. IWM slipped to 291.17 (−0.32%), with small caps showing relative resilience against Nasdaq's underperformance.</p>
+        <ul>
+          <li><strong>Intel (INTC) −7.89%</strong> on volume of 179M shares — the session's standout large-cap loser, as guidance cuts from sector peers signalled broader demand deterioration in the chip cycle. Applied Materials, Marvell, and Western Digital all fell 3–5% in sympathy.</li>
+          <li><strong>STAK +602%</strong> on 58.9M shares — an extraordinary single-day spike driven by a company-specific catalyst; not representative of broader market sentiment but notable for follow-through risk.</li>
+        </ul>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- SECTION 4: VOLATILITY -->
+    <div class="section">
+      <p class="section-label">Volatility</p>
+      <h2 class="section-title">VIX at 18.58 — Cautious, Not Panicked</h2>
+      <div class="section-body">
+        <p>VIX closed Friday at 18.58, down 0.65% on the session, sitting in the moderate zone between the complacency threshold (&lt;15) and the elevated-fear threshold (&gt;20). Despite a historically heavy earnings calendar and an imminent FOMC decision, options markets are not pricing outright panic — a sign that the base case remains a soft-landing trajectory. A sustained move above 20 would signal a material regime shift and warrant repositioning in volatility-sensitive strategies.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- SECTION 5: FIXED INCOME -->
+    <div class="section">
+      <p class="section-label">Fixed Income</p>
+      <h2 class="section-title">Curve Steepening Continues; 10Y at 4.71%</h2>
+      <div class="section-body">
+        <p>The 10-year Treasury yield rose to 4.71% (+4bps from the prior session), while the 2-year yield climbed to 4.37% (+6bps). The 2Y–10Y spread stands at +34 basis points, reflecting a gently steepening curve in which longer-dated rates are rising faster than the front end — a pattern typically associated with markets pricing sustained elevated rates rather than an imminent Fed easing cycle. Watch for the spread to widen further if Wednesday's FOMC statement reinforces a "higher for longer" stance; a compression back toward zero would instead signal renewed inversion fears.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- SECTION 6: CURRENCIES -->
+    <div class="section">
+      <p class="section-label">Currencies</p>
+      <h2 class="section-title">EUR/USD Steady at 1.14; Yen Remains Under Pressure</h2>
+      <div class="section-body">
+        <p>EUR/USD trades at 1.1412, holding steady as dollar demand remains contained ahead of Wednesday's FOMC outcome. A hawkish surprise — or language ruling out near-term cuts — could push the pair toward the 1.13 handle as dollar bulls step in. USD/JPY holds at 163.48, a level that has historically triggered verbal intervention from Tokyo; the yen's structural weakness reflects the 350+ basis point carry advantage the dollar commands over Japanese government bond yields, a gap the Bank of Japan shows no urgency to close. Any BOJ surprise — while unlikely — would be a high-volatility catalyst for the pair.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- SECTION 7: COMMODITIES -->
+    <div class="section">
+      <p class="section-label">Commodities</p>
+      <h2 class="section-title">Gold Above $4,100; WTI Firm at $84</h2>
+      <div class="section-body">
+        <p>Gold spot reached $4,102.16, a historically elevated level reflecting persistent safe-haven demand, sustained central bank accumulation from emerging market reserve managers, and a global fiscal backdrop that anchors real rates below nominal yields. The metal has now held above $4,000 for multiple sessions, suggesting structural demand rather than tactical repositioning.</p>
+        <p>WTI crude stands at $84.38, supported by OPEC+ supply discipline and geopolitical risk premiums in the Middle East. Demand-side risks from China's uneven recovery and rising U.S. shale output remain the primary headwinds against a sustained push toward $90, though energy sector stocks have been responding positively to the elevated price environment.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- SECTION 8: EARNINGS RADAR (formerly Section 9; Section 8/Digital Assets omitted) -->
+    <div class="section">
+      <p class="section-label">Earnings Radar</p>
+      <h2 class="section-title">Next 5 Trading Days — Key Names to Watch</h2>
+      <div class="section-body">
+        <p>Five marquee names dominate the next five sessions, anchored by a mega-cap tech cluster on Wednesday and Thursday that will set the tone for AI-spending narratives and index valuations into year-end.</p>
+        <div class="table-wrap">
+          <table class="earnings-table">
+            <thead>
+              <tr>
+                <th>Company</th>
+                <th>Date</th>
+                <th>Expected Move &amp; Context</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Visa (V)</strong><br>Est. EPS $3.23</td>
+                <td>Jul 28<br>Post-market</td>
+                <td>±2% — Cross-border travel volumes and consumer spending durability; bellwether for global transaction activity</td>
+              </tr>
+              <tr>
+                <td><strong>Microsoft (MSFT)</strong><br>Est. EPS $4.21</td>
+                <td>Jul 29<br>Post-market</td>
+                <td>±4% — Azure cloud growth trajectory and Copilot enterprise monetisation; key AI capex read-through</td>
+              </tr>
+              <tr>
+                <td><strong>Meta Platforms (META)</strong><br>Est. EPS $7.13</td>
+                <td>Jul 29<br>Post-market</td>
+                <td>±5% — Advertising revenue resilience and Llama AI infrastructure spending guidance; dual catalyst alongside FOMC</td>
+              </tr>
+              <tr>
+                <td><strong>Apple (AAPL)</strong><br>Est. EPS $1.88</td>
+                <td>Jul 30<br>Post-market</td>
+                <td>±3% — iPhone upgrade cycle cadence, India manufacturing diversification, and services margin progression</td>
+              </tr>
+              <tr>
+                <td><strong>Amazon (AMZN)</strong><br>Est. EPS $1.81</td>
+                <td>Jul 30<br>Post-market</td>
+                <td>±5% — AWS reacceleration vs. AI infrastructure capital expenditure burn; advertising segment as swing factor</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /.container -->
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <div class="container">
+      <span class="copy">Market Quick Take &middot; Monday, 27 July 2026</span>
+      <span class="disclaimer">For informational purposes only. Not investment advice.</span>
+    </div>
+  </div>
+
+</body>
+</html>
