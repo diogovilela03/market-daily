@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Market Quick Take — Friday, 31 July 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: #ffffff;
+    color: #1a2332;
+  }
+
+  .container {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  /* MASTHEAD */
+  .masthead {
+    border-top: 3px solid #003366;
+    padding: 32px 0 20px;
+    border-bottom: 1px solid #e5e7eb;
+    margin-bottom: 0;
+  }
+  .masthead-title {
+    font-size: 42px;
+    font-weight: 700;
+    color: #003366;
+    letter-spacing: -0.5px;
+    line-height: 1;
+  }
+  .masthead-date {
+    font-size: 13px;
+    font-weight: 400;
+    color: #6b7280;
+    margin-top: 6px;
+  }
+
+  /* SNAPSHOT BAR */
+  .snapshot-bar {
+    background: #f1f5f9;
+    padding: 12px 0;
+    width: 100%;
+  }
+  .snapshot-inner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 0;
+    align-items: center;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+  .chip {
+    font-size: 12px;
+    font-weight: 500;
+    color: #1a2332;
+    text-transform: uppercase;
+    white-space: nowrap;
+    padding: 0 10px;
+    border-right: 1px solid #cbd5e1;
+    line-height: 1.4;
+  }
+  .chip:last-child { border-right: none; }
+  .chip .label { color: #6b7280; }
+  .chip .val { margin-left: 2px; }
+  .chip .chg { margin-left: 3px; }
+  .pos { color: #16a34a; }
+  .neg { color: #dc2626; }
+  .neu { color: #6b7280; }
+
+  /* EDITOR'S BRIEF */
+  .brief {
+    font-size: 18px;
+    font-weight: 400;
+    font-style: italic;
+    color: #374151;
+    max-width: 760px;
+    margin: 28px 0;
+    border-left: 3px solid #003366;
+    padding-left: 16px;
+    line-height: 1.7;
+  }
+
+  /* SECTIONS */
+  .section { margin-bottom: 0; }
+  hr.divider {
+    border: none;
+    border-top: 1px solid #e5e7eb;
+    margin: 28px 0;
+  }
+  .section-label {
+    font-size: 11px;
+    font-weight: 500;
+    color: #003366;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 6px;
+  }
+  .section-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1a2332;
+    margin-bottom: 10px;
+  }
+  .body-text {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.8;
+    color: #374151;
+  }
+  .body-text ul {
+    padding-left: 20px;
+    margin-top: 6px;
+  }
+  .body-text ul li { margin-bottom: 6px; }
+
+  /* WATCH PILL */
+  .watch-pill {
+    display: inline-block;
+    background: #fef3c7;
+    color: #b45309;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 500;
+    padding: 2px 8px;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  /* EARNINGS TABLE */
+  .earnings-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    margin-top: 12px;
+    border: 1px solid #e5e7eb;
+  }
+  .earnings-table th {
+    background: #f1f5f9;
+    font-weight: 600;
+    color: #1a2332;
+    padding: 8px 12px;
+    text-align: left;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  .earnings-table td {
+    padding: 8px 12px;
+    border-bottom: 1px solid #e5e7eb;
+    color: #374151;
+  }
+  .earnings-table tr:last-child td { border-bottom: none; }
+
+  /* FOOTER */
+  .footer {
+    background: #f1f5f9;
+    border-top: 1px solid #e5e7eb;
+    margin-top: 48px;
+    padding: 20px 0;
+  }
+  .footer-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .footer span {
+    font-size: 12px;
+    font-weight: 400;
+    color: #6b7280;
+  }
+  .footer span.disclaimer { color: #9ca3af; }
+</style>
+</head>
+<body>
+
+<!-- MASTHEAD -->
+<div class="container">
+  <div class="masthead">
+    <div class="masthead-title">MARKET QUICK TAKE</div>
+    <div class="masthead-date">Friday, 31 July 2026</div>
+  </div>
+</div>
+
+<!-- SNAPSHOT BAR -->
+<div class="snapshot-bar">
+  <div class="snapshot-inner">
+    <div class="chip">
+      <span class="label">SPY</span>
+      <span class="val">$741.69</span>
+      <span class="chg pos">+1.68%</span>
+    </div>
+    <div class="chip">
+      <span class="label">QQQ</span>
+      <span class="val">$683.55</span>
+      <span class="chg pos">+3.30%</span>
+    </div>
+    <div class="chip">
+      <span class="label">IWM</span>
+      <span class="val">$292.59</span>
+      <span class="chg pos">+1.39%</span>
+    </div>
+    <div class="chip">
+      <span class="label">VIX</span>
+      <span class="val">17.09</span>
+      <span class="chg pos">−20.89%</span>
+    </div>
+    <div class="chip">
+      <span class="label">US10Y</span>
+      <span class="val">4.67%</span>
+      <span class="chg neu">N/A</span>
+    </div>
+    <div class="chip">
+      <span class="label">US2Y</span>
+      <span class="val">4.22%</span>
+      <span class="chg neu">N/A</span>
+    </div>
+    <div class="chip">
+      <span class="label">EUR/USD</span>
+      <span class="val">1.1519</span>
+      <span class="chg neu">N/A</span>
+    </div>
+    <div class="chip">
+      <span class="label">GOLD</span>
+      <span class="val">$4,077.50</span>
+      <span class="chg neu">N/A</span>
+    </div>
+    <div class="chip">
+      <span class="label">WTI</span>
+      <span class="val">$84.25</span>
+      <span class="chg neu">N/A</span>
+    </div>
+  </div>
+</div>
+
+<!-- EDITOR'S BRIEF -->
+<div class="container">
+  <div class="brief">
+    Markets staged a decisive rebound on Thursday as a wave of strong corporate earnings overwhelmed the Federal Reserve's hawkish hold, with Microsoft surging 15.5% and Intel jumping 11.3% to power the Nasdaq to its best session in weeks. The VIX plunged more than 20% to 17.09, signalling a swift de-escalation of Fed-induced fear, while gold's hold above $4,000 and WTI near $84 reflect a backdrop still shaped by geopolitical tension and stubborn inflation.
+  </div>
+
+  <!-- SECTION 1: MARKET DRIVERS -->
+  <div class="section">
+    <div class="watch-pill">⚡ WATCH</div>
+    <div class="section-label">Section 1</div>
+    <div class="section-title">Market Drivers</div>
+    <div class="body-text">
+      <ul>
+        <li><strong>Fed holds, markets pivot:</strong> The Federal Reserve kept rates unchanged at its July 30 meeting amid persistent above-target inflation and below-expectation GDP growth. After an initial three-day losing streak, investors quickly re-focused on earnings momentum and pushed equities sharply higher.</li>
+        <li><strong>Big Tech split — MSFT and INTC soar, META stumbles:</strong> Microsoft surged ~15.5% on blockbuster cloud and AI monetisation results, while Intel gained ~11.3% on a surprise profitability beat. Meta fell 8.6% after reporting higher-than-expected AI capex guidance that alarmed investors on margin sustainability.</li>
+        <li><strong>Earnings breadth impresses:</strong> Beyond mega-cap tech, Caterpillar (+3.06%), Broadcom (+3.98%), and Banco Santander (+5.16%) all exceeded consensus estimates, pointing to resilience in industrial demand and European banking profitability.</li>
+        <li><strong>Fear gauge collapses:</strong> The VIX fell more than 20% from above 20 to 17.09, confirming that the prior session's anxiety was event-driven rather than structural, and options markets are re-pricing for a calmer near-term outlook.</li>
+      </ul>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- SECTION 2: MACRO -->
+  <div class="section">
+    <div class="section-label">Section 2</div>
+    <div class="section-title">Macro</div>
+    <div class="body-text">
+      <p>The Fed's July 30 decision to hold rates steady underscores the central bank's continued vigilance on inflation, even as GDP growth trails expectations. Chair Powell's commentary reinforced a "higher for longer" posture, with the committee signalling it needs sustained disinflation before pivoting to cuts. Meanwhile, geopolitical pressures — particularly in the Middle East — continue to prop up energy prices, adding an inflationary impulse that complicates the Fed's path. The Eurozone, by contrast, is showing incremental improvement, as reflected in strong European bank results and a firmer euro.</p>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- SECTION 3: EQUITIES -->
+  <div class="section">
+    <div class="section-label">Section 3</div>
+    <div class="section-title">Equities</div>
+    <div class="body-text">
+      <p>The S&amp;P 500 (SPY) advanced 1.68% to close at $741.69, snapping a three-session losing streak as earnings momentum overwhelmed policy uncertainty. The Nasdaq 100 (QQQ) outperformed with a 3.30% gain to $683.55, its strongest session in several weeks, powered by Microsoft's double-digit surge. Small-caps (IWM) gained 1.39% to $292.59, reflecting broad-based risk appetite extending beyond mega-cap technology.</p>
+      <p style="margin-top:10px;"><strong>Notable movers (July 30):</strong></p>
+      <ul>
+        <li><strong>MSFT +15.51%</strong> to $451.10 (vol: 109M shares) — blowout cloud and AI revenue beat drove one of the largest single-day gains for the stock in years.</li>
+        <li><strong>INTC +11.30%</strong> to $91.13 (vol: 136M shares) — surprise profitability recovery provided relief to investors who had written off Intel's turnaround.</li>
+      </ul>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- SECTION 4: VOLATILITY -->
+  <div class="section">
+    <div class="section-label">Section 4</div>
+    <div class="section-title">Volatility</div>
+    <div class="body-text">
+      <p>The CBOE VIX settled at <strong>17.09</strong> on July 30, tumbling 3.57 points (−20.89%) from the prior session's close above 20. The sharp reversal confirms that last week's spike in implied volatility was driven primarily by Fed uncertainty and pre-earnings anxiety rather than systemic risk. At 17.09, the VIX sits in neutral territory — above the "complacent" sub-15 threshold but well clear of the "elevated fear" zone above 20. Options markets are now pricing a materially calmer near-term outlook, consistent with the broader risk-on tone across equities.</p>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- SECTION 5: FIXED INCOME -->
+  <div class="section">
+    <div class="section-label">Section 5</div>
+    <div class="section-title">Fixed Income</div>
+    <div class="body-text">
+      <p>The 10-year Treasury yield stands at <strong>4.67%</strong> (as of July 29), while the 2-year yield is at <strong>4.22%</strong>, producing a positive spread of approximately <strong>+45 basis points</strong>. The curve shape is modestly steepening — a constructive signal relative to the deep inversions seen in 2022–2023 — but elevated absolute yield levels reflect the market's expectation that the Fed will remain on hold for an extended period. The Fed's hawkish hold does not alter the near-term fixed income picture materially; duration risk remains a consideration given persistent inflation and ongoing Treasury supply pressures.</p>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- SECTION 6: CURRENCIES -->
+  <div class="section">
+    <div class="section-label">Section 6</div>
+    <div class="section-title">Currencies</div>
+    <div class="body-text">
+      <p><strong>EUR/USD</strong> trades at <strong>1.1519</strong>, with the euro well-supported by improving Eurozone economic data and strong earnings from major European banks — Santander (+5.16%) and BBVA reported robust Q2 results earlier in the week. The single currency's strength also reflects relative optimism about the ECB's policy trajectory versus the Fed's hawkish pause. <strong>USD/JPY</strong> remains elevated at <strong>160.39</strong>, as the yen continues to struggle against the backdrop of the Bank of Japan's accommodative stance. The yen's persistent weakness at these levels adds pressure on Japanese authorities and keeps intervention risk on the table.</p>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- SECTION 7: COMMODITIES -->
+  <div class="section">
+    <div class="section-label">Section 7</div>
+    <div class="section-title">Commodities</div>
+    <div class="body-text">
+      <p><strong>Gold</strong> commands a spot price of <strong>$4,077.50/oz</strong>, holding above the psychologically significant $4,000 level driven by a combination of geopolitical safe-haven demand, central bank accumulation, and ongoing dollar-hedging amid fiscal uncertainty. <strong>WTI crude</strong> stands at <strong>$84.25/bbl</strong> (as of July 27), elevated from mid-year lows near $69. Oil's recent strength is attributed to Middle East supply concerns and OPEC+ production discipline; however, the hawkish Fed stance and demand uncertainty cap the upside. Consumer lender stress — highlighted in Thursday's news flow — may signal softening demand ahead.</p>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- SECTION 8: EARNINGS CALENDAR (renumbered from 9) -->
+  <div class="section">
+    <div class="section-label">Section 8</div>
+    <div class="section-title">Earnings Radar</div>
+    <div class="body-text">
+      <p>A heavy slate of large-cap reporters closes out the week on Friday, with energy majors and industrials in focus. AMD's Tuesday slot will be the next major read on AI chip demand following the INTC beat.</p>
+      <table class="earnings-table">
+        <thead>
+          <tr>
+            <th>Company</th>
+            <th>Date</th>
+            <th>Est. EPS</th>
+            <th>Watch</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>CVX</strong> — Chevron Corp.</td>
+            <td>Jul 31</td>
+            <td>$5.79</td>
+            <td>Oil price sensitivity; upstream margin vs. $84 WTI</td>
+          </tr>
+          <tr>
+            <td><strong>XOM</strong> — ExxonMobil</td>
+            <td>Jul 31</td>
+            <td>$3.79</td>
+            <td>Refining margins and capital return commentary</td>
+          </tr>
+          <tr>
+            <td><strong>ABBV</strong> — AbbVie</td>
+            <td>Jul 31</td>
+            <td>$3.66</td>
+            <td>Humira successor uptake; pipeline visibility</td>
+          </tr>
+          <tr>
+            <td><strong>LIN</strong> — Linde</td>
+            <td>Jul 31</td>
+            <td>$4.49</td>
+            <td>Industrial gas demand as global growth barometer</td>
+          </tr>
+          <tr>
+            <td><strong>AMD</strong> — Advanced Micro Devices</td>
+            <td>Aug 4</td>
+            <td>$1.35</td>
+            <td>AI accelerator demand; read-through after INTC beat</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</div><!-- /.container -->
+
+<!-- FOOTER -->
+<div class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <span>Market Quick Take &middot; Friday, 31 July 2026</span>
+      <span class="disclaimer">For informational purposes only. Not investment advice.</span>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
