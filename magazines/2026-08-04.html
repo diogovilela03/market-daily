@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Market Quick Take — Tuesday, 4 August 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: #ffffff;
+    color: #1a2332;
+    line-height: 1.6;
+  }
+
+  .container {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  /* MASTHEAD */
+  .masthead {
+    border-top: 3px solid #003366;
+    padding: 32px 0 20px;
+    border-bottom: 1px solid #e5e7eb;
+    margin-bottom: 0;
+  }
+  .masthead-title {
+    font-size: 42px;
+    font-weight: 700;
+    color: #003366;
+    letter-spacing: -0.5px;
+    line-height: 1;
+  }
+  .masthead-date {
+    font-size: 13px;
+    font-weight: 400;
+    color: #6b7280;
+    margin-top: 6px;
+  }
+
+  /* SNAPSHOT BAR */
+  .snapshot-bar {
+    background: #f1f5f9;
+    padding: 12px 0;
+    width: 100%;
+    overflow-x: auto;
+  }
+  .snapshot-inner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+    align-items: center;
+    padding: 0 24px;
+    max-width: 860px;
+    margin: 0 auto;
+  }
+  .chip {
+    font-size: 12px;
+    font-weight: 500;
+    color: #1a2332;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    white-space: nowrap;
+    padding: 2px 0;
+  }
+  .chip-sep {
+    color: #9ca3af;
+    padding: 0 10px;
+    font-size: 12px;
+  }
+  .chip-label { color: #6b7280; }
+  .chip-value { color: #1a2332; margin: 0 3px; }
+  .pos { color: #16a34a; }
+  .neg { color: #dc2626; }
+  .neutral { color: #6b7280; }
+
+  /* EDITOR'S BRIEF */
+  .editors-brief {
+    font-size: 18px;
+    font-weight: 400;
+    font-style: italic;
+    color: #374151;
+    line-height: 1.7;
+    max-width: 760px;
+    margin: 28px 0;
+    border-left: 3px solid #003366;
+    padding-left: 16px;
+  }
+
+  /* SECTIONS */
+  .sections { padding-bottom: 20px; }
+
+  .section-divider {
+    border: none;
+    border-top: 1px solid #e5e7eb;
+    margin: 28px 0;
+  }
+
+  .watch-pill {
+    display: inline-block;
+    background: #fef3c7;
+    color: #b45309;
+    font-size: 11px;
+    font-weight: 500;
+    border-radius: 4px;
+    padding: 2px 8px;
+    margin-bottom: 6px;
+    letter-spacing: 0.02em;
+  }
+
+  .section-label {
+    font-size: 11px;
+    font-weight: 500;
+    color: #003366;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 6px;
+  }
+
+  .section-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1a2332;
+    margin-bottom: 10px;
+    line-height: 1.2;
+  }
+
+  .section-body {
+    font-size: 15px;
+    font-weight: 400;
+    color: #374151;
+    line-height: 1.8;
+  }
+
+  .section-body ul {
+    padding-left: 8px;
+    list-style: disc;
+    padding-left: 20px;
+  }
+
+  .section-body ul li {
+    margin-bottom: 6px;
+  }
+
+  /* EARNINGS TABLE */
+  .earnings-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    font-weight: 400;
+    color: #374151;
+    margin-top: 14px;
+    overflow-x: auto;
+    display: block;
+  }
+  .earnings-table th {
+    background: #f1f5f9;
+    font-weight: 600;
+    color: #1a2332;
+    padding: 8px 12px;
+    text-align: left;
+    border: 1px solid #e5e7eb;
+    white-space: nowrap;
+  }
+  .earnings-table td {
+    padding: 8px 12px;
+    border: 1px solid #e5e7eb;
+    vertical-align: top;
+  }
+  .earnings-table tr:nth-child(even) td {
+    background: #fafafa;
+  }
+
+  /* FOOTER */
+  .footer {
+    background: #f1f5f9;
+    border-top: 1px solid #e5e7eb;
+    margin-top: 48px;
+    padding: 20px 0;
+  }
+  .footer-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+  .footer span {
+    font-size: 12px;
+    font-weight: 400;
+  }
+</style>
+</head>
+<body>
+
+<!-- MASTHEAD -->
+<div class="container">
+  <div class="masthead">
+    <div class="masthead-title">MARKET QUICK TAKE</div>
+    <div class="masthead-date">Tuesday, 4 August 2026</div>
+  </div>
+</div>
+
+<!-- SNAPSHOT BAR -->
+<div class="snapshot-bar">
+  <div class="snapshot-inner">
+    <span class="chip"><span class="chip-label">SPY</span><span class="chip-value">757.67</span><span class="pos">+1.42%</span></span>
+    <span class="chip-sep">|</span>
+    <span class="chip"><span class="chip-label">QQQ</span><span class="chip-value">700.07</span><span class="pos">+1.76%</span></span>
+    <span class="chip-sep">|</span>
+    <span class="chip"><span class="chip-label">IWM</span><span class="chip-value">296.22</span><span class="pos">+1.72%</span></span>
+    <span class="chip-sep">|</span>
+    <span class="chip"><span class="chip-label">VIX</span><span class="chip-value">15.86</span><span class="neg">-0.82%</span></span>
+    <span class="chip-sep">|</span>
+    <span class="chip"><span class="chip-label">US10Y</span><span class="chip-value">4.75%</span><span class="pos">+7bps</span></span>
+    <span class="chip-sep">|</span>
+    <span class="chip"><span class="chip-label">US2Y</span><span class="chip-value">4.28%</span><span class="pos">+5bps</span></span>
+    <span class="chip-sep">|</span>
+    <span class="chip"><span class="chip-label">EUR/USD</span><span class="chip-value">1.1515</span><span class="neutral">N/A</span></span>
+    <span class="chip-sep">|</span>
+    <span class="chip"><span class="chip-label">GOLD</span><span class="chip-value">4,064.32</span><span class="neutral">N/A</span></span>
+    <span class="chip-sep">|</span>
+    <span class="chip"><span class="chip-label">WTI</span><span class="chip-value">84.25</span><span class="neutral">N/A</span></span>
+  </div>
+</div>
+
+<!-- EDITOR'S BRIEF -->
+<div class="container">
+  <div class="editors-brief">
+    A broad risk-on advance carried all three major U.S. equity benchmarks above +1.4% Monday, powered by an earnings season that is running firmly ahead of expectations — with semiconductors, industrials, and consumer staples leading the beat cycle. Attention now pivots to today's mega-cap gauntlet: AMD, McDonald's, Amgen, Spotify, and Arista Networks all report after the bell or before Tuesday's open, against a backdrop of resilient yields and a dollar holding multi-month lows against the euro.
+  </div>
+</div>
+
+<!-- SECTIONS -->
+<div class="container sections">
+
+  <!-- Section 1: Market Drivers -->
+  <div class="section-label">Section 01</div>
+  <div class="section-title">Market Drivers</div>
+  <div class="section-body">
+    <ul>
+      <li><strong>Earnings momentum broad-based:</strong> Q2 reporting season continues to surprise to the upside — ON Semiconductor posted 9% revenue growth and a 33% EPS surge; Sherwin-Williams logged 7.5% net sales growth; Oneok beat on both revenue and earnings. Sentiment across financial-market-tagged articles leaned Somewhat-Bullish.</li>
+      <li><strong>M&amp;A wave amplifying risk appetite:</strong> Prologis announced a recommended acquisition of UK logistics giant SEGRO in a deal that underscores continued industrial real-estate conviction; ON Semiconductor also unveiled an all-stock acquisition of Synaptics, adding breadth to the semiconductor consolidation theme.</li>
+      <li><strong>Amazon rally fades on Bezos sale news:</strong> AMZN surged +4.58% intraday to $284.02 on strong volume before trimming gains after-hours as reports emerged of a planned share sale by founder Jeff Bezos — a classic "sell-the-news" dynamic for the mega-cap consumer-and-cloud bellwether.</li>
+      <li><strong>Mega-cap earnings calendar front-loaded:</strong> AMD, Amgen, McDonald's, Spotify, Arista Networks, and Apollo Global Management all report today, with Disney and eBay following on Wednesday — keeping event risk elevated through the first half of the week.</li>
+    </ul>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- Section 2: Macro -->
+  <div class="section-label">Section 02</div>
+  <div class="section-title">Macro</div>
+  <div class="section-body">
+    <p>The macro backdrop remains constructively mixed: the U.S. yield curve steepened modestly last week, with the 10-year Treasury touching 4.75% and the 2-year holding at 4.28%, extending the positive spread to +47 basis points — a signal that markets are pricing a "soft-landing" scenario rather than a near-term recession. Fed posture remains data-dependent and in a holding pattern, with no rate decision or major macro release (CPI, NFP) on the immediate calendar. On the geopolitical front, Citi strategists highlighted that Japan retains multiple yen-defense tools beyond Treasury sales, suggesting the Bank of Japan's options are broader than consensus assumes — a factor worth watching should USD/JPY accelerate toward the 160 handle.</p>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- Section 3: Equities -->
+  <div class="section-label">Section 03</div>
+  <div class="section-title">Equities</div>
+  <div class="section-body">
+    <p>All three major U.S. equity benchmarks closed solidly higher Monday. The S&amp;P 500 proxy <strong>SPY</strong> gained <span class="pos">+1.42%</span> to 757.67; the Nasdaq-100 proxy <strong>QQQ</strong> outperformed at <span class="pos">+1.76%</span> to 700.07, reflecting tech and semiconductor leadership; the small-cap <strong>IWM</strong> also participated strongly at <span class="pos">+1.72%</span> to 296.22, indicating broad market breadth rather than a narrow mega-cap-only rally.</p>
+    <p style="margin-top:12px;"><strong>Notable movers:</strong></p>
+    <ul>
+      <li><strong>DFNS</strong> surged <span class="pos">+122.18%</span> to $61.50 on volume of 13.7 million shares — a rare high-conviction move in the defense sector that dominated the top-gainers list for the session.</li>
+      <li><strong>PN</strong> collapsed <span class="neg">-51.19%</span> to $8.43, leading losers with no offsetting catalyst; the sharp move on limited volume suggests forced selling or a company-specific shock.</li>
+    </ul>
+    <p style="margin-top:10px;">Among large-caps, <strong>NVDA</strong> added <span class="pos">+2.93%</span> to $206.64 on massive volume (127.6M shares), while <strong>AAPL</strong> underperformed with a <span class="neg">-1.78%</span> decline to $303.42.</p>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- Section 4: Volatility -->
+  <div class="section-label">Section 04</div>
+  <div class="section-title">Volatility</div>
+  <div class="section-body">
+    <p>The CBOE Volatility Index (<strong>VIX</strong>) eased <span class="neg">-0.82%</span> to <strong>15.86</strong> (15-minute delayed), settling in the "complacent" zone below 20. At this level, options markets are pricing a relatively benign near-term environment — a reading that sits between the classic fear threshold of 20 and the sub-15 extreme complacency band. With a dense earnings calendar through Wednesday and elevated Treasury yields, some vol re-pricing risk remains if today's mega-cap results disappoint.</p>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- Section 5: Fixed Income -->
+  <div class="section-label">Section 05</div>
+  <div class="section-title">Fixed Income</div>
+  <div class="section-body">
+    <p>The U.S. Treasury curve is in a <strong>steepening</strong> configuration: the 10-year yield closed last week at <strong>4.75%</strong> (+7bps day-over-day) while the 2-year yield held at <strong>4.28%</strong> (+5bps), producing a 2s/10s spread of <strong>+47 basis points</strong> — firmly uninverted and widening. A steepening curve typically reflects confidence in near-term growth alongside re-pricing of longer-duration inflation risk. The combination of resilient risk assets, sticky longer yields, and a Fed on hold supports the "higher-for-longer" carry trade narrative that has dominated fixed income positioning in 2026.</p>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- Section 6: Currencies -->
+  <div class="section-label">Section 06</div>
+  <div class="section-title">Currencies</div>
+  <div class="section-body">
+    <p><strong>EUR/USD</strong> trades at <strong>1.1515</strong>, with the euro holding multi-month strength against the dollar — reflecting a narrowing U.S. growth premium and improving European sentiment. <strong>USD/JPY</strong> sits at <strong>157.71</strong>, keeping the yen near its weakest levels of the year. Citi analysts noted Monday that Japan retains yen-defense tools beyond Treasury liquidation, introducing a potential intervention tail risk if the pair accelerates toward 160. Markets appear comfortable pricing in further yen weakness for now, but the asymmetry of a BOJ-coordinated intervention remains a live risk for dollar-yen longs.</p>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- Section 7: Commodities -->
+  <div class="section-label">Section 07</div>
+  <div class="section-title">Commodities</div>
+  <div class="section-body">
+    <p><strong>Gold</strong> (XAU/USD) is bid at <strong>$4,064.32/oz</strong> — firmly above the $4,000 psychological threshold — sustained by a weaker dollar, persistent central bank buying from EM reserve managers, and residual geopolitical hedging demand. The metal has now held above $4,000 for several sessions, confirming the level as new support. <strong>WTI crude</strong> most recently settled at <strong>$84.25/barrel</strong> (latest available data: July 27), having retreated from a recent high near $93.08 on July 23, suggesting demand softness or OPEC supply normalisation pressures. The pullback in crude provides a partial offset to inflationary pressures in the macro backdrop.</p>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- Section 8: Earnings Radar -->
+  <div class="section-label">Section 08</div>
+  <div class="section-title">Earnings Radar</div>
+  <div class="section-body">
+    <p>Earnings season hits its most consequential stretch of the week. Five major names report today, with Disney following Wednesday morning. Options markets are pricing elevated implied volatility for each name ahead of print.</p>
+    <table class="earnings-table">
+      <thead>
+        <tr>
+          <th>Company</th>
+          <th>Ticker</th>
+          <th>Date</th>
+          <th>Time</th>
+          <th>EPS Estimate</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Advanced Micro Devices</td>
+          <td><strong>AMD</strong></td>
+          <td>Aug 4</td>
+          <td>Post-market</td>
+          <td>$1.35 — AI GPU demand and data-center share gains are the key watch items</td>
+        </tr>
+        <tr>
+          <td>McDonald's Corporation</td>
+          <td><strong>MCD</strong></td>
+          <td>Aug 4</td>
+          <td>Pre-market</td>
+          <td>$3.32 — Same-store sales and consumer spending resilience in focus</td>
+        </tr>
+        <tr>
+          <td>Amgen</td>
+          <td><strong>AMGN</strong></td>
+          <td>Aug 4</td>
+          <td>Post-market</td>
+          <td>$5.60 — Weight-loss drug pipeline and biosimilar erosion are swing factors</td>
+        </tr>
+        <tr>
+          <td>Spotify Technology</td>
+          <td><strong>SPOT</strong></td>
+          <td>Aug 4</td>
+          <td>Pre-market</td>
+          <td>$3.27 — Monthly active users and gross margin trajectory are consensus concerns</td>
+        </tr>
+        <tr>
+          <td>Walt Disney Company</td>
+          <td><strong>DIS</strong></td>
+          <td>Aug 5</td>
+          <td>Pre-market</td>
+          <td>$1.89 — Streaming profitability and theme-park attendance trends are key</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</div><!-- /.container -->
+
+<!-- FOOTER -->
+<div class="footer">
+  <div class="footer-inner">
+    <span style="color:#6b7280;">Market Quick Take &middot; Tuesday, 4 August 2026</span>
+    <span style="color:#9ca3af;">For informational purposes only. Not investment advice.</span>
+  </div>
+</div>
+
+</body>
+</html>
