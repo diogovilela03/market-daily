@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Market Quick Take — Wednesday, 5 August 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: #ffffff;
+    color: #1a2332;
+  }
+
+  .container {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  /* MASTHEAD */
+  .masthead {
+    border-top: 3px solid #003366;
+    padding: 32px 0 20px;
+    border-bottom: 1px solid #e5e7eb;
+    margin-bottom: 0;
+  }
+  .masthead-title {
+    font-weight: 700;
+    font-size: 42px;
+    color: #003366;
+    letter-spacing: -0.5px;
+    line-height: 1;
+  }
+  .masthead-date {
+    font-weight: 400;
+    font-size: 13px;
+    color: #6b7280;
+    margin-top: 6px;
+  }
+
+  /* SNAPSHOT BAR */
+  .snapshot-bar {
+    background: #f1f5f9;
+    padding: 12px 0;
+    width: 100%;
+  }
+  .snapshot-inner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 0;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: 'Inter', sans-serif;
+    color: #1a2332;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+  }
+  .chip {
+    white-space: nowrap;
+    padding: 0 10px;
+  }
+  .chip-sep {
+    color: #9ca3af;
+    padding: 0 2px;
+  }
+  .pos { color: #16a34a; }
+  .neg { color: #dc2626; }
+
+  /* EDITOR'S BRIEF */
+  .editors-brief {
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 400;
+    color: #374151;
+    line-height: 1.7;
+    max-width: 760px;
+    margin: 28px 0;
+    border-left: 3px solid #003366;
+    padding-left: 16px;
+  }
+
+  /* SECTIONS */
+  .sections {
+    max-width: 860px;
+  }
+  .section {
+    margin-bottom: 0;
+  }
+  .section-divider {
+    border: none;
+    border-top: 1px solid #e5e7eb;
+    margin: 28px 0;
+  }
+  .watch-pill {
+    display: inline-block;
+    background: #fef3c7;
+    color: #b45309;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 500;
+    font-family: 'Inter', sans-serif;
+    padding: 3px 8px;
+    margin-bottom: 6px;
+    letter-spacing: 0.02em;
+  }
+  .section-label {
+    font-size: 11px;
+    font-weight: 500;
+    color: #003366;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 4px;
+  }
+  .section-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1a2332;
+    margin-bottom: 10px;
+    line-height: 1.2;
+  }
+  .section-body {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.8;
+    color: #374151;
+  }
+  .section-body ul {
+    padding-left: 8px;
+    list-style: disc;
+    padding-left: 20px;
+  }
+  .section-body ul li {
+    margin-bottom: 6px;
+  }
+
+  /* EARNINGS TABLE */
+  .earnings-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #e5e7eb;
+    font-size: 13px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    margin-top: 12px;
+  }
+  .earnings-table th {
+    background: #f1f5f9;
+    color: #003366;
+    font-weight: 600;
+    text-align: left;
+    padding: 9px 12px;
+    border-bottom: 1px solid #e5e7eb;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  .earnings-table td {
+    padding: 9px 12px;
+    border-bottom: 1px solid #e5e7eb;
+    color: #374151;
+    vertical-align: top;
+  }
+  .earnings-table tr:last-child td {
+    border-bottom: none;
+  }
+  .earnings-table tr:hover td {
+    background: #f9fafb;
+  }
+  .ticker-badge {
+    font-weight: 600;
+    color: #003366;
+  }
+
+  /* FOOTER */
+  .footer {
+    background: #f1f5f9;
+    border-top: 1px solid #e5e7eb;
+    margin-top: 48px;
+    padding: 20px 0;
+  }
+  .footer-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .footer-brand {
+    font-size: 12px;
+    font-weight: 400;
+    color: #6b7280;
+    font-family: 'Inter', sans-serif;
+  }
+  .footer-disclaimer {
+    font-size: 12px;
+    font-weight: 400;
+    color: #9ca3af;
+    font-family: 'Inter', sans-serif;
+  }
+</style>
+</head>
+<body>
+
+<!-- MASTHEAD -->
+<div class="container">
+  <div class="masthead">
+    <div class="masthead-title">MARKET QUICK TAKE</div>
+    <div class="masthead-date">Wednesday, 5 August 2026</div>
+  </div>
+</div>
+
+<!-- SNAPSHOT BAR -->
+<div class="snapshot-bar">
+  <div class="container">
+    <div class="snapshot-inner">
+      <span class="chip">SPY · $771.33 · <span class="pos">+1.80%</span></span>
+      <span class="chip-sep">|</span>
+      <span class="chip">QQQ · $723.85 · <span class="pos">+3.40%</span></span>
+      <span class="chip-sep">|</span>
+      <span class="chip">IWM · $301.71 · <span class="pos">+1.85%</span></span>
+      <span class="chip-sep">|</span>
+      <span class="chip">VIX · 16.50 · <span class="pos">+3.88%</span></span>
+      <span class="chip-sep">|</span>
+      <span class="chip">US10Y · 4.70%</span>
+      <span class="chip-sep">|</span>
+      <span class="chip">US2Y · 4.25%</span>
+      <span class="chip-sep">|</span>
+      <span class="chip">EUR/USD · 1.1542</span>
+      <span class="chip-sep">|</span>
+      <span class="chip">GOLD · $4,168.57</span>
+      <span class="chip-sep">|</span>
+      <span class="chip">WTI · $84.25</span>
+    </div>
+  </div>
+</div>
+
+<!-- MAIN CONTENT -->
+<div class="container">
+
+  <!-- EDITOR'S BRIEF -->
+  <p class="editors-brief">
+    Palantir's blockbuster Q2 AI platform earnings sent the stock up nearly 30% and lit a fuse under enterprise software, cybersecurity, and cloud infrastructure names, driving the Nasdaq to a 3.4% gain. The rally was reinforced by Middle East geopolitical de-escalation and a string of strong Big Tech reports, as investors rotated decisively back into growth equities on a classic risk-on session.
+  </p>
+
+  <div class="sections">
+
+    <!-- SECTION 1: MARKET DRIVERS -->
+    <div class="section">
+      <div class="section-label">Section 1</div>
+      <div class="section-title">Market Drivers</div>
+      <div class="section-body">
+        <ul>
+          <li>Palantir's Q2 2026 results dramatically exceeded expectations, with its AI Platform recording surging enterprise demand; the stock added ~30% and catalysed broad gains across enterprise software (Atlassian, RingCentral), cybersecurity (CrowdStrike, Rapid7), and cloud infrastructure names in premarket and Tuesday's session.</li>
+          <li>Middle East geopolitical de-escalation compressed Treasury yields and crude oil prices, reinforcing the "risk-on" rotation back into growth equities and lowering the macro-risk discount on longer-duration assets.</li>
+          <li>Consecutive Big Tech earnings beats from Amazon, Alphabet (+3.1% on Google Cloud profitability), and NVIDIA (+2.6% on continued Blackwell infrastructure scaling) confirmed that AI capital spending cycles remain intact, buoying sentiment across the semiconductor and hyperscaler supply chain.</li>
+          <li>Cooling inflation data and a modest improvement in US consumer sentiment (55.2 vs. 54.4 prior) provided macro tailwinds, with lower energy prices beginning to ease household spending pressure.</li>
+        </ul>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- SECTION 2: MACRO -->
+    <div class="section">
+      <div class="section-label">Section 2</div>
+      <div class="section-title">Macro</div>
+      <div class="section-body">
+        <p>The macro backdrop is broadly supportive this week: inflation continues to cool, reducing pressure on the Federal Reserve to sustain its restrictive rate posture, while no Fed meeting or major data release (CPI, NFP) is scheduled in the near term, leaving earnings as the dominant market catalyst. Geopolitical risk in the Middle East has moderated meaningfully, easing the risk premium embedded in energy markets and contributing to a calmer global backdrop for risk assets. Japan's banking sector posted robust results — Mitsubishi UFJ Financial Group (MUFG) reported a 48% jump in net income — reflecting the divergence between an improving earnings cycle in Asia and the continued weight of the Bank of Japan's accommodative policy stance on the yen.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- SECTION 3: EQUITIES -->
+    <div class="section">
+      <span class="watch-pill">⚡ WATCH</span>
+      <div class="section-label">Section 3</div>
+      <div class="section-title">Equities</div>
+      <div class="section-body">
+        <p>All three major US equity benchmarks advanced, with the Nasdaq-heavy QQQ leading at +3.40% to $723.85, powered by AI-linked mega-caps. The S&P 500 ETF (SPY) gained 1.80% to $771.33, and the small-cap IWM added 1.85% to $301.71, reflecting broad market participation rather than a narrow concentration trade.</p>
+        <p style="margin-top:10px;"><strong>Notable movers:</strong> <span class="ticker-badge">PLTR</span> surged 29.45% to $162.66 following a blockbuster AI platform earnings report, becoming the session's most actively traded name by volume. <span class="ticker-badge">INTC</span> rallied 10.84% to $100.86 on an incremental recovery catalyst in the PC and data-centre segment, adding to a broader chip-sector rebound.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- SECTION 4: VOLATILITY -->
+    <div class="section">
+      <div class="section-label">Section 4</div>
+      <div class="section-title">Volatility</div>
+      <div class="section-body">
+        <p>The CBOE VIX edged up 3.88% to <strong>16.50</strong>, remaining squarely in neutral territory — above the complacency threshold of 15 but well below the 20 level that signals elevated fear. The modest uptick likely reflects incremental hedging activity ahead of today's heavy earnings slate (Eli Lilly, Disney, Uber, Shopify) rather than any macro deterioration, and is consistent with a market that is broadly constructive but not complacent.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- SECTION 5: FIXED INCOME -->
+    <div class="section">
+      <div class="section-label">Section 5</div>
+      <div class="section-title">Fixed Income</div>
+      <div class="section-body">
+        <p>The US 10-year Treasury yield stands at <strong>4.70%</strong> and the 2-year at <strong>4.25%</strong>, producing a 2s–10s spread of <strong>+45 basis points</strong>. The curve is positively sloped and modestly steepening — a constructive signal suggesting that the market is not pricing in imminent recession risk. The Middle East de-escalation trimmed a modest geopolitical risk premium from longer-dated bonds, pushing the 10-year slightly lower this week. However, the absolute level of yields remains elevated by historical standards, maintaining a meaningful cost-of-capital headwind for long-duration growth equities.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- SECTION 6: CURRENCIES -->
+    <div class="section">
+      <div class="section-label">Section 6</div>
+      <div class="section-title">Currencies</div>
+      <div class="section-body">
+        <p><strong>EUR/USD</strong> trades at <strong>1.1542</strong>, with the euro firm as a softening US dollar accompanies the risk-on sentiment shift and cooling inflation expectations. The pair reflects a market beginning to price a narrowing US rate advantage as Fed rate-cut speculation builds. <strong>USD/JPY</strong> holds at <strong>157.68</strong>, keeping the yen near multi-year lows despite robust Japanese bank earnings; the Bank of Japan's persistently accommodative stance continues to weigh on the currency, and absent a credible pivot signal from Tokyo, yen weakness looks likely to persist.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- SECTION 7: COMMODITIES -->
+    <div class="section">
+      <div class="section-label">Section 7</div>
+      <div class="section-title">Commodities</div>
+      <div class="section-body">
+        <p><strong>Gold</strong> trades at <strong>$4,168.57</strong> per troy ounce, sustaining its position near record territory and underscoring persistent macro uncertainty, central bank demand, and the currency-hedge bid. The metal's resilience despite a risk-on session points to structural rather than cyclical buying. <strong>WTI crude</strong> stands at <strong>$84.25</strong> — moderated by the easing of Middle East geopolitical tensions, which trimmed the risk premium embedded in oil markets. While the demand backdrop remains supportive amid broader global economic stability, the supply-side relief from reduced regional risk may cap near-term upside.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- SECTION 8: EARNINGS RADAR -->
+    <div class="section">
+      <div class="section-label">Section 8</div>
+      <div class="section-title">Earnings Radar</div>
+      <div class="section-body">
+        <p>A dense earnings slate over the next five trading days features several market-moving names across healthcare, consumer, travel, and e-commerce — all reporting Q2 2026 fiscal results.</p>
+        <table class="earnings-table">
+          <thead>
+            <tr>
+              <th>Company</th>
+              <th>Date</th>
+              <th>Expected Move</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="ticker-badge">LLY</span> · Eli Lilly</td>
+              <td>Aug 5 · Pre-market</td>
+              <td>Est. EPS $6.71 — GLP-1 drug volume and pricing power in focus</td>
+            </tr>
+            <tr>
+              <td><span class="ticker-badge">DIS</span> · Walt Disney</td>
+              <td>Aug 5 · Pre-market</td>
+              <td>Est. EPS $1.89 — Streaming profitability and parks attendance key metrics</td>
+            </tr>
+            <tr>
+              <td><span class="ticker-badge">UBER</span> · Uber Technologies</td>
+              <td>Aug 5 · Pre-market</td>
+              <td>Est. EPS $0.83 — Gross bookings growth and autonomous vehicle strategy watched</td>
+            </tr>
+            <tr>
+              <td><span class="ticker-badge">MELI</span> · MercadoLibre</td>
+              <td>Aug 5 · Post-market</td>
+              <td>Est. EPS $8.69 — LatAm e-commerce volumes and fintech momentum in focus</td>
+            </tr>
+            <tr>
+              <td><span class="ticker-badge">ABNB</span> · Airbnb</td>
+              <td>Aug 6 · Post-market</td>
+              <td>Est. EPS $1.20 — Nights booked, ADR trends, and forward guidance key</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div><!-- /.sections -->
+</div><!-- /.container -->
+
+<!-- FOOTER -->
+<div class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <span class="footer-brand">Market Quick Take · Wednesday, 5 August 2026</span>
+      <span class="footer-disclaimer">For informational purposes only. Not investment advice.</span>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
