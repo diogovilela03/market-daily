@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Market Quick Take — Friday, 7 August 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: #ffffff;
+    color: #1a2332;
+  }
+
+  .container {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  /* MASTHEAD */
+  .masthead {
+    border-top: 3px solid #003366;
+    padding: 32px 0 20px;
+  }
+  .masthead-title {
+    font-weight: 700;
+    font-size: 42px;
+    color: #003366;
+    letter-spacing: -0.5px;
+    line-height: 1;
+  }
+  .masthead-date {
+    font-weight: 400;
+    font-size: 13px;
+    color: #6b7280;
+    margin-top: 6px;
+  }
+  .masthead-divider {
+    border: none;
+    border-bottom: 1px solid #e5e7eb;
+    margin-top: 20px;
+  }
+
+  /* SNAPSHOT BAR */
+  .snapshot-bar {
+    background: #f1f5f9;
+    padding: 12px 0;
+    width: 100%;
+  }
+  .snapshot-inner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 0;
+    align-items: center;
+  }
+  .chip {
+    font-weight: 500;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #1a2332;
+    white-space: nowrap;
+    padding: 0 10px;
+  }
+  .chip-sep {
+    color: #9ca3af;
+    font-size: 12px;
+  }
+  .chip-label { color: #6b7280; }
+  .chip-value { color: #1a2332; }
+  .chip-change-pos { color: #16a34a; }
+  .chip-change-neg { color: #dc2626; }
+  .chip-change-neutral { color: #6b7280; }
+
+  /* EDITOR'S BRIEF */
+  .editors-brief {
+    font-weight: 400;
+    font-style: italic;
+    font-size: 18px;
+    color: #374151;
+    max-width: 760px;
+    margin: 28px 0;
+    border-left: 3px solid #003366;
+    padding-left: 16px;
+    line-height: 1.7;
+  }
+
+  /* SECTIONS */
+  .section { margin-bottom: 0; }
+  .section-divider {
+    border: none;
+    border-bottom: 1px solid #e5e7eb;
+    margin: 28px 0;
+  }
+  .watch-pill {
+    display: inline-block;
+    color: #b45309;
+    background: #fef3c7;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 11px;
+    padding: 2px 8px;
+    margin-bottom: 8px;
+    letter-spacing: 0.3px;
+  }
+  .section-label {
+    font-weight: 500;
+    font-size: 11px;
+    color: #003366;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 6px;
+  }
+  .section-title {
+    font-weight: 700;
+    font-size: 24px;
+    color: #1a2332;
+    margin-bottom: 10px;
+  }
+  .section-body {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.8;
+    color: #374151;
+  }
+  .section-body ul {
+    padding-left: 20px;
+    margin-top: 6px;
+  }
+  .section-body li {
+    margin-bottom: 8px;
+  }
+  .pos { color: #16a34a; font-weight: 500; }
+  .neg { color: #dc2626; font-weight: 500; }
+  .neutral { color: #6b7280; }
+
+  /* EARNINGS TABLE */
+  .earnings-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    margin-top: 12px;
+    border: 1px solid #e5e7eb;
+  }
+  .earnings-table th {
+    background: #f1f5f9;
+    font-weight: 600;
+    text-align: left;
+    padding: 8px 12px;
+    border-bottom: 1px solid #e5e7eb;
+    color: #1a2332;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  .earnings-table td {
+    padding: 8px 12px;
+    border-bottom: 1px solid #e5e7eb;
+    color: #374151;
+  }
+  .earnings-table tr:last-child td { border-bottom: none; }
+  .earnings-table tr:nth-child(even) td { background: #fafafa; }
+
+  /* FOOTER */
+  .footer {
+    background: #f1f5f9;
+    border-top: 1px solid #e5e7eb;
+    margin-top: 48px;
+    padding: 20px 0;
+  }
+  .footer-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .footer-brand {
+    font-size: 12px;
+    color: #6b7280;
+  }
+  .footer-disclaimer {
+    font-size: 12px;
+    color: #9ca3af;
+  }
+</style>
+</head>
+<body>
+
+<!-- MASTHEAD -->
+<div class="container">
+  <div class="masthead">
+    <div class="masthead-title">MARKET QUICK TAKE</div>
+    <div class="masthead-date">Friday, 7 August 2026</div>
+    <hr class="masthead-divider">
+  </div>
+</div>
+
+<!-- SNAPSHOT BAR -->
+<div class="snapshot-bar">
+  <div class="container">
+    <div class="snapshot-inner">
+      <span class="chip">
+        <span class="chip-label">SPY</span> · <span class="chip-value">768.56</span> · <span class="chip-change-neg">-0.16%</span>
+      </span>
+      <span class="chip-sep">|</span>
+      <span class="chip">
+        <span class="chip-label">QQQ</span> · <span class="chip-value">714.65</span> · <span class="chip-change-neg">-0.37%</span>
+      </span>
+      <span class="chip-sep">|</span>
+      <span class="chip">
+        <span class="chip-label">IWM</span> · <span class="chip-value">298.25</span> · <span class="chip-change-neg">-0.51%</span>
+      </span>
+      <span class="chip-sep">|</span>
+      <span class="chip">
+        <span class="chip-label">VIX</span> · <span class="chip-value">15.15</span> · <span class="chip-change-neg">-4.36%</span>
+      </span>
+      <span class="chip-sep">|</span>
+      <span class="chip">
+        <span class="chip-label">US10Y</span> · <span class="chip-value">4.63%</span> · <span class="chip-change-neutral">0.00%</span>
+      </span>
+      <span class="chip-sep">|</span>
+      <span class="chip">
+        <span class="chip-label">US2Y</span> · <span class="chip-value">4.18%</span> · <span class="chip-change-neg">-0.48%</span>
+      </span>
+      <span class="chip-sep">|</span>
+      <span class="chip">
+        <span class="chip-label">EUR/USD</span> · <span class="chip-value">1.1526</span>
+      </span>
+      <span class="chip-sep">|</span>
+      <span class="chip">
+        <span class="chip-label">GOLD</span> · <span class="chip-value">$4,291.77</span>
+      </span>
+      <span class="chip-sep">|</span>
+      <span class="chip">
+        <span class="chip-label">WTI</span> · <span class="chip-value">$81.96</span> · <span class="chip-change-neg">-4.87%</span>
+      </span>
+    </div>
+  </div>
+</div>
+
+<!-- EDITOR'S BRIEF -->
+<div class="container">
+  <p class="editors-brief">
+    U.S. equities drifted lower on Thursday as Big Tech AI exuberance collided with a Fed on hold and a critical NFP print due this morning. Manufacturing activity roared to a four-year high while Microsoft Azure crossed $100 billion in annual revenue — yet persistent monetary tightness continued to weigh on rate-sensitive sectors from small-caps to mortgage origination.
+  </p>
+
+  <!-- SECTION 1: MARKET DRIVERS -->
+  <div class="section">
+    <div class="watch-pill">⚡ WATCH</div>
+    <div class="section-label">Section 01</div>
+    <div class="section-title">Market Drivers</div>
+    <div class="section-body">
+      <ul>
+        <li><strong>AI infrastructure boom sustains Big Tech premium.</strong> NVIDIA surged 3.01% on Blackwell GPU demand from cloud hyperscalers; Microsoft Azure crossed $100B in annual revenue; Alphabet Cloud achieved profitability — the AI capex cycle shows no signs of decelerating and continues to anchor technology sector multiples.</li>
+        <li><strong>Manufacturing renaissance.</strong> ISM Manufacturing PMI hit 55.6 in July — its highest reading since May 2022 — marking the seventh consecutive month of expansion. Robust goods demand, rising employment within the sector, and easing energy input costs are driving the industrial recovery.</li>
+        <li><strong>Fed on hold, data dependency elevated.</strong> The Federal Reserve left rates unchanged at its July 30 meeting, signaling caution on inflation while GDP growth came in slower than expected. Markets are pricing a data-dependent path forward, with the August NFP print (due today) the critical next input for rate-cut timing.</li>
+        <li><strong>Geopolitical tail risks remain in play.</strong> Developing US-Iran tensions are cited as a near-term flashpoint for S&P 500 direction alongside earnings season volatility, with enterprise software and industrial names reflecting mixed macro signals.</li>
+      </ul>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 2: MACRO -->
+  <div class="section">
+    <div class="watch-pill">⚡ WATCH</div>
+    <div class="section-label">Section 02</div>
+    <div class="section-title">Macro</div>
+    <div class="section-body">
+      <p>The Federal Reserve held rates steady at its July 30 meeting — the latest in a series of pauses — as policymakers weighed still-elevated inflation against a softer-than-expected GDP print. High short-end rates continue to suppress activity in rate-sensitive sectors including residential mortgage origination (United Wholesale Mortgage fell 35.6%) and growth-stage technology valuations. The August Nonfarm Payrolls report releases this morning (August 7); a materially above-consensus print could push back rate-cut expectations further and reprice the front end of the curve, while a miss would likely revive dovish bets. Separately, cooling consumer inflation and a strengthening manufacturing backdrop suggest the soft-landing scenario remains intact — but policy timing uncertainty keeps volatility regime risks elevated heading into Q3.</p>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 3: EQUITIES -->
+  <div class="section">
+    <div class="section-label">Section 03</div>
+    <div class="section-title">Equities</div>
+    <div class="section-body">
+      <p>
+        Broad U.S. equity benchmarks slipped modestly on August 6: <strong>SPY</strong> fell <span class="neg">-0.16%</span> to <strong>768.56</strong>, <strong>QQQ</strong> declined <span class="neg">-0.37%</span> to <strong>714.65</strong>, and <strong>IWM</strong> underperformed at <span class="neg">-0.51%</span> to <strong>298.25</strong> — small-caps remaining most exposed to the prolonged high-rate environment. The tech-heavy Nasdaq softness reflected investor caution ahead of the NFP print despite strong underlying AI earnings momentum.
+      </p>
+      <p style="margin-top:10px;"><strong>Notable movers:</strong></p>
+      <ul>
+        <li><strong>Hertz (HTZ)</strong> surged <span class="pos">+29.49%</span> to $2.02 on 129 million shares — one of the most actively traded sessions in recent history, driven by a sharp short-squeeze dynamic as retail interest converged.</li>
+        <li><strong>United Wholesale Mortgage (UWMC)</strong> plunged <span class="neg">-35.60%</span> to $1.185 on 110 million shares, as persistently high mortgage rates continue to compress origination volumes and margins for non-bank lenders.</li>
+      </ul>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 4: VOLATILITY -->
+  <div class="section">
+    <div class="section-label">Section 04</div>
+    <div class="section-title">Volatility</div>
+    <div class="section-body">
+      <p>The CBOE VIX settled at <strong>15.15</strong>, down <span class="neg">-4.36%</span> on the session — firmly in complacent territory below the 20-threshold. The market's implied volatility premium reflects broad confidence in the soft-landing narrative and continued Big Tech earnings beats, though the compressed VIX reading heading into NFP morning creates an asymmetric setup: a significant payrolls surprise to either direction could reprice risk premiums quickly. At 15.15, hedging protection is relatively cheap for positioning ahead of key macro catalysts.</p>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 5: FIXED INCOME -->
+  <div class="section">
+    <div class="section-label">Section 05</div>
+    <div class="section-title">Fixed Income</div>
+    <div class="section-body">
+      <p>The <strong>10-year Treasury yield</strong> held steady at <strong>4.63%</strong> (unchanged from the prior session), while the <strong>2-year yield</strong> eased to <strong>4.18%</strong> from 4.20%, leaving the <strong>2Y–10Y spread at +45 basis points</strong> — positively sloped and continuing its normalization from the deep inversion seen in late 2024. The curve's steepening trajectory reflects growing market confidence in eventual Fed easing further out the curve, even as front-end rates remain anchored by the Fed's steady-hand posture. The sustained 4%+ yield environment across the curve continues to pose a valuation headwind for growth-oriented equities, while making short-duration paper an attractive risk-free carry alternative.</p>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 6: CURRENCIES -->
+  <div class="section">
+    <div class="section-label">Section 06</div>
+    <div class="section-title">Currencies</div>
+    <div class="section-body">
+      <p><strong>EUR/USD</strong> held at <strong>1.1526</strong>, reflecting continued euro resilience as improving European economic data and a pause in Fed tightening narrow the interest rate differential. <strong>USD/JPY</strong> remained elevated at <strong>158.34</strong>, keeping pressure on the Bank of Japan to continue its policy normalization cycle. The persistent yen weakness has been a structural tailwind for Japanese financials — Mizuho (MFG) and Mitsubishi UFJ (MUFG) both posted multi-percent gains this week, driven by rising net interest margins and strong institutional investor demand as BoJ rate expectations shift higher. Any acceleration in BoJ hikes or Fed dovishness could catalyze a significant USD/JPY repricing.</p>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 7: COMMODITIES -->
+  <div class="section">
+    <div class="section-label">Section 07</div>
+    <div class="section-title">Commodities</div>
+    <div class="section-body">
+      <p><strong>Gold</strong> spot reached <strong>$4,291.77/oz</strong>, reflecting sustained safe-haven and inflation-hedge demand as investors position defensively around the NFP print and ongoing geopolitical uncertainty. Precious metals streaming names (Wheaton Precious Metals gained 6.85% on August 5) and gold miners (AngloGold Ashanti reporting today) benefit directly from elevated spot prices. <strong>WTI crude</strong> stood at <strong>$81.96/bbl</strong> as of August 3 — down sharply from $91.74 on July 24 (<span class="neg">-4.87% w/w</span>) — as OPEC+ supply management concerns ease and a cooling demand outlook from slower global growth moderates oil's upside. US-Iran tensions remain a geopolitical wildcard that could introduce a risk premium if diplomatic conditions deteriorate.</p>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 8: EARNINGS RADAR (renumbered from 9) -->
+  <div class="section">
+    <div class="section-label">Section 08</div>
+    <div class="section-title">Earnings Radar</div>
+    <div class="section-body">
+      <p>Key earnings releases over the next five trading days (Aug 7–13). Berkshire Hathaway reports today alongside Take-Two Interactive; Simon Property Group and Ferguson Enterprises follow on Monday; Cardinal Health on Tuesday.</p>
+      <table class="earnings-table">
+        <thead>
+          <tr>
+            <th>Company</th>
+            <th>Ticker</th>
+            <th>Date</th>
+            <th>EPS Est.</th>
+            <th>Timing</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Berkshire Hathaway</td>
+            <td>BRK.B</td>
+            <td>Aug 7</td>
+            <td>$5.24</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <td>Take-Two Interactive</td>
+            <td>TTWO</td>
+            <td>Aug 7</td>
+            <td>$0.08</td>
+            <td>Pre-Market</td>
+          </tr>
+          <tr>
+            <td>Ferguson Enterprises</td>
+            <td>FERG</td>
+            <td>Aug 10</td>
+            <td>$3.23</td>
+            <td>Pre-Market</td>
+          </tr>
+          <tr>
+            <td>Simon Property Group</td>
+            <td>SPG</td>
+            <td>Aug 10</td>
+            <td>$3.18</td>
+            <td>Post-Market</td>
+          </tr>
+          <tr>
+            <td>Cardinal Health</td>
+            <td>CAH</td>
+            <td>Aug 11</td>
+            <td>$2.42</td>
+            <td>Pre-Market</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</div><!-- end .container -->
+
+<!-- FOOTER -->
+<div class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <span class="footer-brand">Market Quick Take · Friday, 7 August 2026</span>
+      <span class="footer-disclaimer">For informational purposes only. Not investment advice.</span>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
