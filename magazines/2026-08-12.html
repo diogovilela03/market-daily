@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Market Quick Take</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: #ffffff;
+    color: #1a2332;
+  }
+
+  .container {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  /* MASTHEAD */
+  .masthead {
+    border-top: 3px solid #003366;
+    padding: 32px 0 20px;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  .masthead__title {
+    font-size: 42px;
+    font-weight: 700;
+    color: #003366;
+    letter-spacing: -0.5px;
+    line-height: 1;
+  }
+  .masthead__date {
+    font-size: 13px;
+    font-weight: 400;
+    color: #6b7280;
+    margin-top: 8px;
+  }
+
+  /* SNAPSHOT BAR */
+  .snapshot {
+    background: #f1f5f9;
+    padding: 12px 0;
+    width: 100%;
+    overflow-x: auto;
+  }
+  .snapshot__inner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+    align-items: center;
+    padding: 0 24px;
+    max-width: 860px;
+    margin: 0 auto;
+  }
+  .snapshot__chip {
+    font-size: 12px;
+    font-weight: 500;
+    color: #1a2332;
+    text-transform: uppercase;
+    white-space: nowrap;
+    padding: 2px 10px 2px 0;
+  }
+  .snapshot__sep {
+    color: #9ca3af;
+    padding: 0 6px 0 0;
+    font-size: 12px;
+  }
+  .snapshot__chip .pos { color: #16a34a; }
+  .snapshot__chip .neg { color: #dc2626; }
+
+  /* EDITOR'S BRIEF */
+  .brief {
+    font-size: 18px;
+    font-weight: 400;
+    font-style: italic;
+    color: #374151;
+    max-width: 760px;
+    line-height: 1.7;
+    margin: 28px 0;
+    border-left: 3px solid #003366;
+    padding-left: 16px;
+  }
+
+  /* SECTIONS */
+  .section {
+    margin-bottom: 0;
+  }
+  .section__label {
+    font-size: 11px;
+    font-weight: 500;
+    color: #003366;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 6px;
+    display: block;
+  }
+  .section__title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1a2332;
+    margin-bottom: 10px;
+    line-height: 1.2;
+  }
+  .section__body {
+    font-size: 15px;
+    font-weight: 400;
+    color: #374151;
+    line-height: 1.8;
+  }
+  .section__body ul {
+    padding-left: 8px;
+    list-style: disc;
+    padding-left: 20px;
+  }
+  .section__body ul li {
+    margin-bottom: 6px;
+  }
+  .divider {
+    border: none;
+    border-top: 1px solid #e5e7eb;
+    margin: 28px 0;
+  }
+
+  /* WATCH PILL */
+  .watch-pill {
+    display: inline-block;
+    background: #fef3c7;
+    color: #b45309;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 500;
+    padding: 3px 8px;
+    margin-bottom: 8px;
+    letter-spacing: 0.5px;
+  }
+
+  /* EARNINGS TABLE */
+  .earnings-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    font-weight: 400;
+    margin-top: 12px;
+    overflow-x: auto;
+    display: block;
+  }
+  .earnings-table th {
+    text-align: left;
+    padding: 8px 12px;
+    border: 1px solid #e5e7eb;
+    background: #f1f5f9;
+    color: #1a2332;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+  .earnings-table td {
+    padding: 8px 12px;
+    border: 1px solid #e5e7eb;
+    color: #374151;
+    vertical-align: top;
+  }
+  .earnings-table tr:nth-child(even) td {
+    background: #f9fafb;
+  }
+
+  /* FOOTER */
+  .footer {
+    background: #f1f5f9;
+    border-top: 1px solid #e5e7eb;
+    margin-top: 48px;
+    padding: 20px 0;
+    width: 100%;
+  }
+  .footer__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+  .footer__brand { color: #6b7280; font-size: 12px; }
+  .footer__disclaimer { color: #9ca3af; font-size: 12px; }
+
+  /* POSITIVE / NEGATIVE helpers */
+  .pos { color: #16a34a; }
+  .neg { color: #dc2626; }
+</style>
+</head>
+<body>
+
+<!-- MASTHEAD -->
+<div class="container">
+  <div class="masthead">
+    <div class="masthead__title">MARKET QUICK TAKE</div>
+    <div class="masthead__date">Wednesday, 12 August 2026</div>
+  </div>
+</div>
+
+<!-- SNAPSHOT BAR -->
+<div class="snapshot">
+  <div class="snapshot__inner">
+    <span class="snapshot__chip">SPY · 770.56 · <span class="neg">-0.32%</span></span>
+    <span class="snapshot__sep">|</span>
+    <span class="snapshot__chip">QQQ · 718.45 · <span class="neg">-0.34%</span></span>
+    <span class="snapshot__sep">|</span>
+    <span class="snapshot__chip">IWM · 300.99 · <span class="pos">+0.34%</span></span>
+    <span class="snapshot__sep">|</span>
+    <span class="snapshot__chip">VIX · 15.28 · <span class="neg">-1.18%</span></span>
+    <span class="snapshot__sep">|</span>
+    <span class="snapshot__chip">US10Y · 4.72% · <span class="pos">+7bps</span></span>
+    <span class="snapshot__sep">|</span>
+    <span class="snapshot__chip">US2Y · 4.25% · <span class="pos">+6bps</span></span>
+    <span class="snapshot__sep">|</span>
+    <span class="snapshot__chip">EUR/USD · 1.1543</span>
+    <span class="snapshot__sep">|</span>
+    <span class="snapshot__chip">GOLD · $4,399</span>
+    <span class="snapshot__sep">|</span>
+    <span class="snapshot__chip">WTI · $81.96</span>
+  </div>
+</div>
+
+<!-- EDITOR'S BRIEF -->
+<div class="container">
+  <p class="brief">Markets are navigating the aftermath of a jobs shock: July's surprise payroll contraction collapsed rate-hike bets, propelling the S&amp;P 500 to record highs last week and unleashing gold's best miner rally since 2008. Today's session is a modest consolidation — large-caps dip while small-caps outperform — as investors await Cisco's earnings after the close and parse what softer labor data means for the Fed's September meeting.</p>
+</div>
+
+<!-- MAIN CONTENT -->
+<div class="container">
+
+  <!-- SECTION 1: Market Drivers -->
+  <div class="section">
+    <span class="watch-pill">⚡ WATCH</span>
+    <span class="section__label">Section 1</span>
+    <h2 class="section__title">Market Drivers</h2>
+    <div class="section__body">
+      <ul>
+        <li><strong>Jobs shock reshapes Fed expectations.</strong> July payrolls contracted unexpectedly while wage growth undershot forecasts, all but eliminating bets on a September Fed rate hike and triggering a sharp rally in rate-sensitive assets. The S&amp;P 500 hit a record last week on this pivot repricing.</li>
+        <li><strong>Gold and precious metals surge.</strong> Gold miners (GDX) posted their best weekly performance since 2008, with spot gold climbing over 7% as real yields compressed following the labor data. Gold consolidates above $4,399 today, sustaining the safe-haven bid.</li>
+        <li><strong>Tech rotation underway.</strong> Sector-wide profit-taking and concerns over cooling AI capex weighed on semiconductors and hardware — ARM Holdings fell 4.64%, Corning dropped 3.35%, and Seagate slid 8.62% on hyperscale data center spending caution. Optical networking names (AAOI +13%, Coherent +13%) bucked the trend on strong demand prints.</li>
+        <li><strong>Small-caps outperform today.</strong> IWM (+0.34%) diverges from SPY (-0.32%) and QQQ (-0.34%), signaling rotation into rate-sensitive, domestically-oriented names as the dovish repricing extends through the curve.</li>
+      </ul>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- SECTION 2: Macro -->
+  <div class="section">
+    <span class="section__label">Section 2</span>
+    <h2 class="section__title">Macro</h2>
+    <div class="section__body">
+      <p>The July payrolls report — delivering a surprise contraction alongside subdued wage growth — marked a decisive inflection in the Fed's rate trajectory, effectively removing near-term hike risk and opening the door to a potential September cut or extended hold. Markets are now pricing the Fed as firmly on pause, with any further labor market deterioration potentially accelerating the timeline for easing. Gold's sustained climb to all-time highs above $4,399 and the 10Y yield's elevation at 4.72% reflect a nuanced picture: investors are hedging both a prolonged low-growth scenario and residual inflation risk that hasn't fully cleared. The dollar continues to weaken on the dovish repricing, reinforcing the broad commodity rally and supporting EM currencies.</p>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- SECTION 3: Equities -->
+  <div class="section">
+    <span class="section__label">Section 3</span>
+    <h2 class="section__title">Equities</h2>
+    <div class="section__body">
+      <p>SPY slips 0.32% to 770.56 and QQQ retreats 0.34% to 718.45 as large-cap indices digest last week's record-setting surge. Small-caps are the standout today: IWM advances 0.34% to 300.99, reflecting rotation into rate-sensitive, domestically-oriented names benefiting from dovish Fed repricing. On the day's notable movers: Quantum Corporation (QMCO) surged 64.7% on heavy volume of 16.3 million shares, suggesting a significant corporate catalyst. Planet Labs (PLAG) exploded +909% in speculative trading on extreme volume. On the downside, PDS Biotech (PDSB) collapsed 64.9% and CleanCore Solutions (ZONE) fell 55.2%, both on high turnover consistent with adverse corporate news. Bank of America trades at record highs amid strong Q2 earnings, while Spotify rallied 5%+ on a bullish Q3 revenue outlook of ~€5 billion.</p>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- SECTION 4: Volatility -->
+  <div class="section">
+    <span class="section__label">Section 4</span>
+    <h2 class="section__title">Volatility</h2>
+    <div class="section__body">
+      <p>The VIX sits at 15.28, down 1.18% on the session — firmly in complacent territory well below the fear threshold of 20. Options markets are ascribing minimal near-term risk premium despite elevated macro uncertainty around the Fed path and upcoming earnings season catalysts. The low VIX reading suggests consensus confidence in the dovish pivot narrative and the absence of binary event risk on the immediate horizon. Investors appear to be selling volatility into strength, consistent with the post-payroll relief rally environment.</p>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- SECTION 5: Fixed Income -->
+  <div class="section">
+    <span class="section__label">Section 5</span>
+    <h2 class="section__title">Fixed Income</h2>
+    <div class="section__body">
+      <p>The US 10-year yield stands at 4.72% while the 2-year yield holds at 4.25%, producing a positive 47-basis-point spread — a normally sloped, gently steepening curve. The steepening dynamic reflects the post-payroll repricing: short-end yields fell more aggressively as near-term Fed hike expectations evaporated, while the long end remains elevated on residual inflation risk and robust Treasury supply. No inversion risk is present near-term, and the curve's positive slope reduces recession signal risk. The 10Y–2Y differential has been widening since the jobs shock, a pattern historically consistent with the early phases of a dovish pivot cycle.</p>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- SECTION 6: Currencies -->
+  <div class="section">
+    <span class="section__label">Section 6</span>
+    <h2 class="section__title">Currencies</h2>
+    <div class="section__body">
+      <p>EUR/USD trades at 1.1543, with the euro benefiting from broad dollar weakness as the greenback faces persistent headwinds from retreating US rate-hike expectations. A softer dollar underpins commodity prices and supports risk appetite across EM and developed markets. USD/JPY holds at 159.37 — the yen remains structurally pressured despite the Bank of Japan's gradual policy normalization, as the wide rate differential between the US and Japan continues to attract carry positioning. Any acceleration in BOJ tightening signals or a further US data miss could compress the pair sharply; the 155–160 range remains a watched technical zone for intervention risk.</p>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- SECTION 7: Commodities -->
+  <div class="section">
+    <span class="section__label">Section 7</span>
+    <h2 class="section__title">Commodities</h2>
+    <div class="section__body">
+      <p>Gold consolidates at $4,399 per troy ounce, near all-time highs, driven by a weaker dollar, compressed real yields following the payrolls shock, and sustained safe-haven demand amid geopolitical uncertainty. Gold miners are extending last week's historic rally — their best performance since 2008 — as leverage to the spot price amplifies returns; Newmont (NEM), Wheaton Precious Metals (WPM), and Agnico Eagle (AEM) all posted multi-percent gains in recent sessions. WTI crude trades at $81.96 per barrel, reflecting balanced supply-demand fundamentals; energy stocks with long-term contract structures are attracting investor rotation, though the trajectory remains sensitive to OPEC+ compliance data and global demand revisions tied to the evolving macro picture.</p>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- SECTION 8: Earnings Radar (renumbered from 9 — Section 8 Digital Assets omitted) -->
+  <div class="section">
+    <span class="section__label">Section 8</span>
+    <h2 class="section__title">Earnings Radar</h2>
+    <div class="section__body">
+      <p>Key reports due in the next five trading days (Aug 12–18). With the AI infrastructure cycle and consumer resilience in focus, Cisco and Applied Materials are the marquee bellwethers to watch.</p>
+      <div style="overflow-x: auto;">
+        <table class="earnings-table">
+          <thead>
+            <tr>
+              <th>Company</th>
+              <th>Date</th>
+              <th>Timing</th>
+              <th>EPS Estimate</th>
+              <th>Expected Move Context</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Cisco Systems (CSCO)</strong></td>
+              <td>Aug 12</td>
+              <td>Post-market</td>
+              <td>$0.99</td>
+              <td>AI networking demand and enterprise spending momentum are the key watch items; any guidance cut on IT budget caution could reverberate across tech</td>
+            </tr>
+            <tr>
+              <td><strong>Amcor (AMCR)</strong></td>
+              <td>Aug 12</td>
+              <td>Pre-market</td>
+              <td>$1.20</td>
+              <td>Packaging bellwether for consumer staples and healthcare volumes; margin trends amid input cost normalization in focus</td>
+            </tr>
+            <tr>
+              <td><strong>Brinker International (EAT)</strong></td>
+              <td>Aug 12</td>
+              <td>Pre-market</td>
+              <td>$3.07</td>
+              <td>Casual dining read on consumer spending resilience; same-store sales trends and labor cost outlook watched closely</td>
+            </tr>
+            <tr>
+              <td><strong>Applied Materials (AMAT)</strong></td>
+              <td>Aug 13</td>
+              <td>Post-market</td>
+              <td>$3.36</td>
+              <td>Semiconductor equipment bellwether; China export controls and leading-edge node capex trajectory are pivotal for the semi cycle narrative</td>
+            </tr>
+            <tr>
+              <td><strong>Tapestry (TPR)</strong></td>
+              <td>Aug 13</td>
+              <td>Pre-market</td>
+              <td>$1.26</td>
+              <td>Luxury consumer health check; China demand recovery and North America full-price selling rate are the key variables</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+</div><!-- /.container -->
+
+<!-- FOOTER -->
+<div class="footer">
+  <div class="footer__inner">
+    <span class="footer__brand">Market Quick Take · Wednesday, 12 August 2026</span>
+    <span class="footer__disclaimer">For informational purposes only. Not investment advice.</span>
+  </div>
+</div>
+
+</body>
+</html>
