@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Market Quick Take — Thursday, 13 August 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #ffffff;
+      color: #1a2332;
+    }
+
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* MASTHEAD */
+    .masthead {
+      border-top: 3px solid #003366;
+      padding: 32px 0 20px;
+      border-bottom: 1px solid #e5e7eb;
+    }
+
+    .masthead-title {
+      font-size: 42px;
+      font-weight: 700;
+      color: #003366;
+      line-height: 1;
+      letter-spacing: -0.5px;
+    }
+
+    .masthead-date {
+      font-size: 13px;
+      font-weight: 400;
+      color: #6b7280;
+      margin-top: 8px;
+    }
+
+    /* SNAPSHOT BAR */
+    .snapshot-bar {
+      background: #f1f5f9;
+      padding: 12px 0;
+      width: 100%;
+    }
+
+    .snapshot-inner {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 4px 0;
+    }
+
+    .chip {
+      font-size: 12px;
+      font-weight: 500;
+      color: #1a2332;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    .chip-sep {
+      color: #9ca3af;
+      margin: 0 10px;
+      font-size: 12px;
+      font-weight: 400;
+    }
+
+    .pos { color: #16a34a; }
+    .neg { color: #dc2626; }
+    .na  { color: #6b7280; }
+
+    /* EDITOR'S BRIEF */
+    .editors-brief {
+      font-size: 18px;
+      font-weight: 400;
+      font-style: italic;
+      color: #374151;
+      line-height: 1.8;
+      max-width: 760px;
+      margin: 28px 0;
+      border-left: 3px solid #003366;
+      padding-left: 16px;
+    }
+
+    /* SECTIONS */
+    .section-divider {
+      border: none;
+      border-top: 1px solid #e5e7eb;
+      margin: 28px 0;
+    }
+
+    .section-label {
+      font-size: 11px;
+      font-weight: 500;
+      color: #003366;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      margin-bottom: 6px;
+    }
+
+    .section-title {
+      font-size: 24px;
+      font-weight: 700;
+      color: #1a2332;
+      margin-bottom: 10px;
+    }
+
+    .section-body {
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 1.8;
+      color: #374151;
+    }
+
+    .section-body ul {
+      padding-left: 20px;
+    }
+
+    .section-body ul li {
+      margin-bottom: 8px;
+    }
+
+    .section-body p + p {
+      margin-top: 12px;
+    }
+
+    .watch-pill {
+      display: inline-block;
+      background: #fef3c7;
+      color: #b45309;
+      border-radius: 4px;
+      font-size: 11px;
+      font-weight: 500;
+      padding: 2px 8px;
+      margin-bottom: 8px;
+    }
+
+    /* EARNINGS TABLE */
+    .earnings-table {
+      width: 100%;
+      border-collapse: collapse;
+      border: 1px solid #e5e7eb;
+      font-size: 13px;
+      font-weight: 400;
+      margin-top: 14px;
+      overflow-x: auto;
+    }
+
+    .earnings-table th {
+      background: #f1f5f9;
+      color: #374151;
+      font-weight: 600;
+      padding: 9px 14px;
+      text-align: left;
+      border-bottom: 1px solid #e5e7eb;
+    }
+
+    .earnings-table td {
+      padding: 9px 14px;
+      border-bottom: 1px solid #e5e7eb;
+      color: #374151;
+      vertical-align: top;
+    }
+
+    .earnings-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .table-wrap {
+      overflow-x: auto;
+    }
+
+    /* FOOTER */
+    .footer {
+      background: #f1f5f9;
+      border-top: 1px solid #e5e7eb;
+      margin-top: 48px;
+      padding: 20px 0;
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .footer-text      { font-size: 12px; font-weight: 400; color: #6b7280; }
+    .footer-disclaimer { font-size: 12px; font-weight: 400; color: #9ca3af; }
+  </style>
+</head>
+<body>
+
+<!-- MASTHEAD -->
+<div class="container">
+  <div class="masthead">
+    <div class="masthead-title">MARKET QUICK TAKE</div>
+    <div class="masthead-date">Thursday, 13 August 2026</div>
+  </div>
+</div>
+
+<!-- SNAPSHOT BAR -->
+<div class="snapshot-bar">
+  <div class="container">
+    <div class="snapshot-inner">
+      <span class="chip">SPY &middot; $772.49 &middot; <span class="pos">+0.25%</span></span>
+      <span class="chip-sep">|</span>
+      <span class="chip">QQQ &middot; $723.70 &middot; <span class="pos">+0.73%</span></span>
+      <span class="chip-sep">|</span>
+      <span class="chip">IWM &middot; $302.71 &middot; <span class="pos">+0.57%</span></span>
+      <span class="chip-sep">|</span>
+      <span class="chip">VIX &middot; 14.55 &middot; <span class="pos">-5.02%</span></span>
+      <span class="chip-sep">|</span>
+      <span class="chip">US10Y &middot; 4.70% &middot; <span class="pos">-0.02pp</span></span>
+      <span class="chip-sep">|</span>
+      <span class="chip">US2Y &middot; 4.22% &middot; <span class="pos">-0.03pp</span></span>
+      <span class="chip-sep">|</span>
+      <span class="chip">EUR/USD &middot; 1.1523 &middot; <span class="na">N/A</span></span>
+      <span class="chip-sep">|</span>
+      <span class="chip">GOLD &middot; $4,375 &middot; <span class="na">N/A</span></span>
+      <span class="chip-sep">|</span>
+      <span class="chip">WTI &middot; $84.77 &middot; <span class="pos">+1.21%</span></span>
+    </div>
+  </div>
+</div>
+
+<!-- MAIN CONTENT -->
+<div class="container">
+
+  <!-- EDITOR'S BRIEF -->
+  <p class="editors-brief">
+    Markets extended their summer advance Wednesday as AI infrastructure investment drove near-20% surges in CoreWeave and Super Micro Computer, the VIX dipped to a complacent 14.55, and all three major U.S. benchmarks posted gains. A four-year manufacturing high, fading rate-hike expectations, and a strong bank earnings season underpin the soft-landing narrative heading into a retail-heavy earnings week anchored by Home Depot, Lowe's, and Target.
+  </p>
+
+  <!-- SECTION 01: MARKET DRIVERS -->
+  <div class="section">
+    <div class="watch-pill">&#9889; WATCH</div>
+    <div class="section-label">01</div>
+    <div class="section-title">Market Drivers</div>
+    <div class="section-body">
+      <ul>
+        <li><strong>AI infrastructure buildout accelerates:</strong> CoreWeave (CRWV) surged 19.3% and Super Micro Computer (SMCI) jumped 19.0% on robust hyperscaler cloud demand, while NVIDIA added 3.0% on continued Blackwell platform adoption — optical networking names rallied in sympathy after Applied Optoelectronics nearly doubled quarterly revenue on AI datacenter orders.</li>
+        <li><strong>Manufacturing at a four-year high:</strong> U.S. manufacturing activity marked its seventh consecutive month of expansion in July, bolstering the soft-landing narrative and lifting industrial and materials names across the board.</li>
+        <li><strong>Rate-hike expectations extinguished:</strong> Weaker payrolls data released earlier this week erased lingering Fed tightening bets, sending growth stocks broadly higher; the S&P 500 subsequently hit fresh record territory.</li>
+        <li><strong>Strong Q2 earnings season:</strong> Bank of America delivered an 8% EPS beat with 34% investment banking fee growth and now trades at record highs; MUFG reported a 48% net income surge — setting a confident tone heading into AMAT's post-market print tonight.</li>
+      </ul>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 02: MACRO -->
+  <div class="section">
+    <div class="section-label">02</div>
+    <div class="section-title">Macro</div>
+    <div class="section-body">
+      The Federal Reserve's tightening cycle appears effectively concluded, with weaker-than-expected payrolls data this week eliminating residual rate-hike bets and shifting market focus squarely to first-cut timing. Inflation continues to moderate — consumer staples companies cite easing input cost pressures, and consumer sentiment is visibly strengthening — while seven consecutive months of manufacturing expansion at a pace not seen since 2022 argues for durable economic momentum. Geopolitically, yen weakness at 159.40 against the dollar reflects the enduring U.S.–Japan rate differential and keeps Bank of Japan normalisation in the spotlight; any sharp yen appreciation remains the key macro tail-risk for global equity positioning.
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 03: EQUITIES -->
+  <div class="section">
+    <div class="section-label">03</div>
+    <div class="section-title">Equities</div>
+    <div class="section-body">
+      <p>All three major U.S. benchmarks advanced Wednesday in broad-based fashion. SPY gained 0.25% to $772.49; QQQ outperformed with a 0.73% rise to $723.70 as tech and growth led; IWM added 0.57% to $302.71, signalling healthy participation beyond mega-cap names.</p>
+      <p><strong>Notable movers:</strong> CoreWeave (CRWV) +19.3% to $107.73 on AI cloud infrastructure momentum; Super Micro Computer (SMCI) +19.0% to $37.61 on strong datacenter order flow; Intel (INTC) +3.3% to $100.95 in exceptionally heavy volume, extending its semiconductor recovery; NVIDIA (NVDA) +3.0% to $224.09 on sustained Blackwell system demand from cloud hyperscalers.</p>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 04: VOLATILITY -->
+  <div class="section">
+    <div class="section-label">04</div>
+    <div class="section-title">Volatility</div>
+    <div class="section-body">
+      The CBOE VIX settled at 14.55, declining 5.0% on the session and breaching the conventional "complacency" threshold of 15. The subdued reading reflects broad investor confidence in the soft-landing scenario and limited near-term macro uncertainty. Historically, sustained VIX readings below 15 can signal crowded positioning — any meaningful miss on tonight's AMAT print, or an upside inflation surprise in the coming days, could trigger a sharper-than-expected volatility repricing.
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 05: FIXED INCOME -->
+  <div class="section">
+    <div class="section-label">05</div>
+    <div class="section-title">Fixed Income</div>
+    <div class="section-body">
+      The 10-year Treasury yield eased to 4.70% and the 2-year declined to 4.22%, leaving the 10Y–2Y spread at a constructive +48 basis points — well within positive territory and continuing the post-inversion normalisation trend. This modest steepening bias aligns with improving growth expectations rather than reignited inflation fears, keeping duration risk manageable for now. The long end remains sensitive to any upside surprise in the upcoming August retail sales or jobs data; a meaningful re-acceleration in those prints could push the 10Y back toward 5%.
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 06: CURRENCIES -->
+  <div class="section">
+    <div class="section-label">06</div>
+    <div class="section-title">Currencies</div>
+    <div class="section-body">
+      EUR/USD holds firm at 1.1523, underpinned by a softer dollar as U.S. rate-hike expectations fade and eurozone data prints remain resilient. USD/JPY sits at 159.40, with the yen under persistent structural pressure despite the Bank of Japan's cautious policy normalisation steps — the enduring U.S.–Japan yield differential continues to attract yen-funded carry trades. A sharp and rapid yen appreciation would be the most significant near-term risk flag for global equities, given the potential scale of carry-trade unwinds still embedded in positioning.
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 07: COMMODITIES -->
+  <div class="section">
+    <div class="section-label">07</div>
+    <div class="section-title">Commodities</div>
+    <div class="section-body">
+      Gold spot extended its historic run to $4,375.37/oz, supported by dollar weakness, persistent central bank accumulation, and residual safe-haven demand. Gold miners posted their best weekly performance since 2008 earlier this month — Newmont (NEM) and Wheaton Precious Metals (WPM) each surged over 5–6% in recent sessions — as the metal's continued breakout attracts momentum flows. WTI crude firmed to $84.77/bbl, buoyed by the manufacturing revival's implied demand uplift and OPEC+ production discipline, though further upside faces headwinds from demand uncertainty in China and global consumer softness.
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 08: EARNINGS RADAR -->
+  <div class="section">
+    <div class="section-label">08</div>
+    <div class="section-title">Earnings Radar</div>
+    <div class="section-body">
+      <p>Five high-profile reports over the next five trading days, with semiconductor equipment leading off tonight and retail giants dominating the back half of the week.</p>
+      <div class="table-wrap">
+        <table class="earnings-table">
+          <thead>
+            <tr>
+              <th>Company</th>
+              <th>Date</th>
+              <th>Expected Move</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Applied Materials (AMAT)</strong></td>
+              <td>Aug 13 &middot; Post-Mkt</td>
+              <td>EPS est. $3.36 — AI capex cycle and semiconductor equipment demand in focus; key read on fab spending intentions</td>
+            </tr>
+            <tr>
+              <td><strong>Home Depot (HD)</strong></td>
+              <td>Aug 18 &middot; Pre-Mkt</td>
+              <td>EPS est. $4.71 — housing market health and big-ticket consumer spending bellwether; comp-store sales the key metric</td>
+            </tr>
+            <tr>
+              <td><strong>Analog Devices (ADI)</strong></td>
+              <td>Aug 19 &middot; Pre-Mkt</td>
+              <td>EPS est. $3.33 — industrial and automotive semiconductor demand; inventory cycle recovery read</td>
+            </tr>
+            <tr>
+              <td><strong>Lowe's Companies (LOW)</strong></td>
+              <td>Aug 19 &middot; Pre-Mkt</td>
+              <td>EPS est. $4.25 — home improvement spending trend; read-across to HD on housing activity</td>
+            </tr>
+            <tr>
+              <td><strong>Target (TGT)</strong></td>
+              <td>Aug 19 &middot; Pre-Mkt</td>
+              <td>EPS est. $2.21 — consumer discretionary health check; discretionary vs. essentials mix and inventory management</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+</div><!-- /.container -->
+
+<!-- FOOTER -->
+<div class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <span class="footer-text">Market Quick Take &middot; Thursday, 13 August 2026</span>
+      <span class="footer-disclaimer">For informational purposes only. Not investment advice.</span>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
