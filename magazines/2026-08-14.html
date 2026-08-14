@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Market Quick Take — Friday, 14 August 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: #ffffff;
+    color: #1a2332;
+  }
+
+  .container {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  /* MASTHEAD */
+  .masthead {
+    border-top: 3px solid #003366;
+    padding: 32px 0 20px;
+    border-bottom: 1px solid #e5e7eb;
+    margin-bottom: 0;
+  }
+  .masthead-title {
+    font-size: 42px;
+    font-weight: 700;
+    color: #003366;
+    line-height: 1.1;
+    letter-spacing: -0.5px;
+  }
+  .masthead-date {
+    font-size: 13px;
+    font-weight: 400;
+    color: #6b7280;
+    margin-top: 6px;
+  }
+
+  /* SNAPSHOT BAR */
+  .snapshot-bar {
+    background: #f1f5f9;
+    padding: 12px 0;
+    width: 100%;
+    overflow-x: auto;
+  }
+  .snapshot-inner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+    align-items: center;
+    padding: 0 24px;
+    max-width: 860px;
+    margin: 0 auto;
+  }
+  .chip {
+    font-size: 12px;
+    font-weight: 500;
+    color: #1a2332;
+    text-transform: uppercase;
+    white-space: nowrap;
+    padding: 2px 0;
+  }
+  .chip + .chip::before {
+    content: '|';
+    margin: 0 10px;
+    color: #9ca3af;
+  }
+  .chip-label { color: #6b7280; }
+  .chip-value { margin: 0 3px; }
+  .positive { color: #16a34a; }
+  .negative { color: #dc2626; }
+  .neutral-change { color: #6b7280; }
+
+  /* EDITOR'S BRIEF */
+  .editors-brief {
+    font-size: 18px;
+    font-weight: 400;
+    font-style: italic;
+    color: #374151;
+    line-height: 1.7;
+    max-width: 760px;
+    margin: 28px 0;
+    border-left: 3px solid #003366;
+    padding-left: 16px;
+  }
+
+  /* SECTIONS */
+  .section { margin-bottom: 0; }
+
+  .section-divider {
+    border: none;
+    border-top: 1px solid #e5e7eb;
+    margin: 28px 0;
+  }
+
+  .watch-pill {
+    display: inline-block;
+    background: #fef3c7;
+    color: #b45309;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 500;
+    padding: 2px 8px;
+    margin-bottom: 8px;
+    letter-spacing: 0.5px;
+  }
+
+  .section-label {
+    font-size: 11px;
+    font-weight: 500;
+    color: #003366;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 6px;
+  }
+
+  .section-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1a2332;
+    margin-bottom: 10px;
+    line-height: 1.2;
+  }
+
+  .section-body {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.8;
+    color: #374151;
+  }
+
+  .section-body ul {
+    padding-left: 18px;
+    margin-top: 4px;
+  }
+
+  .section-body ul li {
+    margin-bottom: 6px;
+  }
+
+  /* EARNINGS TABLE */
+  .earnings-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    margin-top: 12px;
+    border: 1px solid #e5e7eb;
+  }
+  .earnings-table th {
+    background: #f1f5f9;
+    color: #003366;
+    font-weight: 600;
+    text-align: left;
+    padding: 10px 14px;
+    border-bottom: 1px solid #e5e7eb;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  .earnings-table td {
+    padding: 9px 14px;
+    border-bottom: 1px solid #e5e7eb;
+    color: #374151;
+    vertical-align: top;
+  }
+  .earnings-table tr:last-child td { border-bottom: none; }
+  .earnings-table tr:nth-child(even) td { background: #fafafa; }
+  .ticker-badge {
+    font-weight: 600;
+    color: #003366;
+  }
+
+  /* FOOTER */
+  .footer {
+    background: #f1f5f9;
+    border-top: 1px solid #e5e7eb;
+    margin-top: 48px;
+    padding: 20px 0;
+  }
+  .footer-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .footer-left {
+    font-size: 12px;
+    font-weight: 400;
+    color: #6b7280;
+  }
+  .footer-right {
+    font-size: 12px;
+    font-weight: 400;
+    color: #9ca3af;
+  }
+</style>
+</head>
+<body>
+
+<!-- MASTHEAD -->
+<div class="container">
+  <div class="masthead">
+    <div class="masthead-title">MARKET QUICK TAKE</div>
+    <div class="masthead-date">Friday, 14 August 2026</div>
+  </div>
+</div>
+
+<!-- SNAPSHOT BAR -->
+<div class="snapshot-bar">
+  <div class="snapshot-inner">
+    <div class="chip">
+      <span class="chip-label">SPY</span>
+      <span class="chip-value">777.88</span>
+      <span class="positive">+0.70%</span>
+    </div>
+    <div class="chip">
+      <span class="chip-label">QQQ</span>
+      <span class="chip-value">732.07</span>
+      <span class="positive">+1.16%</span>
+    </div>
+    <div class="chip">
+      <span class="chip-label">IWM</span>
+      <span class="chip-value">303.50</span>
+      <span class="positive">+0.26%</span>
+    </div>
+    <div class="chip">
+      <span class="chip-label">VIX</span>
+      <span class="chip-value">14.64</span>
+      <span class="positive">+0.07%</span>
+    </div>
+    <div class="chip">
+      <span class="chip-label">US10Y</span>
+      <span class="chip-value">4.68%</span>
+      <span class="negative">-0.02%</span>
+    </div>
+    <div class="chip">
+      <span class="chip-label">US2Y</span>
+      <span class="chip-value">4.20%</span>
+      <span class="negative">-0.02%</span>
+    </div>
+    <div class="chip">
+      <span class="chip-label">EUR/USD</span>
+      <span class="chip-value">1.1556</span>
+      <span class="neutral-change">N/A</span>
+    </div>
+    <div class="chip">
+      <span class="chip-label">GOLD</span>
+      <span class="chip-value">$4,337.78</span>
+      <span class="neutral-change">N/A</span>
+    </div>
+    <div class="chip">
+      <span class="chip-label">WTI</span>
+      <span class="chip-value">$84.77</span>
+      <span class="positive">+1.21%</span>
+    </div>
+  </div>
+</div>
+
+<!-- EDITOR'S BRIEF -->
+<div class="container">
+  <p class="editors-brief">
+    A shocking contraction in July payrolls has rewritten the Fed playbook overnight, vaporising rate-hike bets and catapulting the S&amp;P 500 to a fresh record high. Gold is in full flight—up more than 7% on the week—as softer real yields and a weakening dollar set up precious metals for their best performance in years. With VIX sitting in complacent territory at 14.64, markets are pricing a soft-landing scenario with unusual confidence.
+  </p>
+
+  <!-- Section 1: Market Drivers -->
+  <div class="section">
+    <div class="section-label">Section 1</div>
+    <h2 class="section-title">Market Drivers</h2>
+    <div class="section-body">
+      <ul>
+        <li><strong>Jobs shock reprices the Fed curve:</strong> July payrolls unexpectedly contracted while wage growth undershot forecasts, eliminating residual bets on a September rate hike. The surprise was large enough to move markets decisively—growth stocks led the rally as the front end of the Treasury curve rallied sharply.</li>
+        <li><strong>Gold and miners in historic run:</strong> Spot gold has surged over 7% on the week, driving gold miners (VanEck GDX +21%) to their best weekly performance since 2008. The rally is underpinned by falling real yields, dollar weakness, and safe-haven positioning ahead of Fed recalibration.</li>
+        <li><strong>Tech diverges on AI spend signals:</strong> Ciena (CIEN) surged 12.38% on new AI networking contracts and rising data-centre infrastructure demand, while Arm Holdings (ARM) slid 4.64% amid investor concerns about cooling hyperscale capex and stretched valuations.</li>
+        <li><strong>Financials at record highs:</strong> Bank of America (BAC) continued its record-setting run after Q2 earnings delivered an 8% EPS beat and strong investment banking revenue, reflecting an improving capital markets backdrop as rate volatility subsides.</li>
+      </ul>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- Section 2: Macro -->
+  <div class="section">
+    <div class="section-label">Section 2</div>
+    <h2 class="section-title">Macro</h2>
+    <div class="section-body">
+      <p>The July payrolls contraction marks a meaningful inflection in the economic narrative—moving the debate squarely from "when will the Fed hike?" to "when will the Fed cut?" With wage growth undershooting and labour-market conditions visibly softening, the Fed faces a classic dilemma: inflation remains above target, but the jobs market is signalling real stress. Market participants are now pricing a first cut significantly earlier than the Fed's own projections suggested just weeks ago. EUR/USD above 1.1555 and gold near all-time highs confirm the dollar is absorbing the adjustment. The macro backdrop has shifted from "higher for longer" to a tentative soft-landing narrative—but the next CPI print will be the decisive arbitrator.</p>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- Section 3: Equities -->
+  <div class="section">
+    <div class="section-label">Section 3</div>
+    <h2 class="section-title">Equities</h2>
+    <div class="section-body">
+      <p>US equities closed broadly higher as the jobs shock triggered a rotation into rate-sensitive growth. <strong>SPY +0.70%</strong> (777.88), <strong>QQQ +1.16%</strong> (732.07) outperformed as mega-cap tech and software re-rated on lower rate expectations, while <strong>IWM +0.26%</strong> (303.50) saw a more modest small-cap response—suggesting some caution around the economic growth read-through. NVIDIA (NVDA) gained 0.54% on continued AI infrastructure optimism, while Super Micro Computer (SMCI) added 4.12% on strong AI server demand.</p>
+      <p style="margin-top:10px;"><strong>Notable movers:</strong> Leslie's Pool Supply (LESL) crashed 41.67% on earnings disappointment and deteriorating consumer demand signals in discretionary categories. FGI Industries (FGI) surged 147.78% on heavy speculative volume—a reminder that single-day extreme moves in micro-caps can distort sentiment reads.</p>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- Section 4: Volatility -->
+  <div class="section">
+    <div class="section-label">Section 4</div>
+    <h2 class="section-title">Volatility</h2>
+    <div class="section-body">
+      <p>VIX stands at <strong>14.64</strong>—firmly in the complacent zone (below 15), signalling that options markets are not pricing material tail risk despite a meaningful macro surprise in the payrolls data. The subdued volatility reading is consistent with the risk-on tone: when central bank easing is repriced forward, implied volatility typically compresses as the "bad scenario" moves further out of the money. Traders should note that low VIX environments can see sharp, fast reversals if the next data point (e.g., CPI) contradicts the soft-landing consensus.</p>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- Section 5: Fixed Income -->
+  <div class="section">
+    <div class="section-label">Section 5</div>
+    <h2 class="section-title">Fixed Income</h2>
+    <div class="section-body">
+      <p>The 10-year Treasury yield eased to <strong>4.68%</strong> while the 2-year settled at <strong>4.20%</strong>, leaving the 10Y–2Y spread at a positive <strong>+48 basis points</strong>—a normally-shaped, upward-sloping curve. The front end responded more aggressively to the jobs data (2Y falling faster than the 10Y) in a classic bull-steepener pattern, reflecting markets pulling forward their rate-cut expectations. At 48bps, the curve is meaningfully steeper than the inversion seen in recent cycles and signals growing market conviction that the easing cycle has begun, or is imminent. Duration-sensitive assets are benefiting.</p>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- Section 6: Currencies -->
+  <div class="section">
+    <div class="section-label">Section 6</div>
+    <h2 class="section-title">Currencies</h2>
+    <div class="section-body">
+      <p><strong>EUR/USD at 1.1556</strong>—the euro is trading near multi-month highs against the dollar, as the soft payrolls print removes a key support pillar for the greenback. With the ECB on a cautious easing path and the Fed now facing pressure to follow, the rate-differential trade is compressing in the euro's favour. <strong>USD/JPY holds at 159.26</strong>—the yen has been notably restrained in its response to the dollar's broad weakness. Persistent uncertainty around the Bank of Japan's policy normalisation trajectory, and carry trade dynamics, are limiting JPY appreciation. A sustained dollar decline would typically offer the yen more support; the absence of it here is worth monitoring.</p>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- Section 7: Commodities -->
+  <div class="section">
+    <div class="section-label">Section 7</div>
+    <h2 class="section-title">Commodities</h2>
+    <div class="section-body">
+      <p><strong>Gold at $4,337.78/oz</strong>—near all-time highs and accelerating. The combination of collapsing real yields, a weaker dollar, and broad safe-haven rotation is fuelling one of the most powerful gold rallies in recent memory. Gold miners are amplifying the move, with GDX gaining 21% on the week. The structural tailwinds remain intact: central bank buying, dedollarisation trends, and now a renewed dovish Fed posture. <strong>WTI crude at $84.77/bbl</strong>—oil has benefited from improved demand expectations as rate-cut repricing lifts the growth outlook. Supply discipline from OPEC+ remains a floor, while geopolitical risk in key producing regions continues to underpin prices. The $80–$90 range remains the near-term technical corridor to watch.</p>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- Section 8: Earnings Calendar (renumbered from 9, Digital Assets omitted) -->
+  <div class="section">
+    <div class="section-label">Section 8</div>
+    <h2 class="section-title">Earnings Radar</h2>
+    <div class="section-body">
+      <p>The week of August 17–20 is headlined by major US consumer and industrial bellwethers. Home Depot, Lowe's, and Target will provide a critical read on US consumer health amid a softening labour market; Walmart rounds out the retail picture. Deere will offer a window into agricultural and heavy-equipment spending cycles, which are sensitive to both credit conditions and export demand.</p>
+      <table class="earnings-table">
+        <thead>
+          <tr>
+            <th>Company</th>
+            <th>Date</th>
+            <th>Expected Move</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="ticker-badge">HD</span> — Home Depot</td>
+            <td>Tue, Aug 18 (Pre-mkt)</td>
+            <td>EPS est. $4.71 · Consumer home improvement read; key watch for housing-cycle signals post jobs data</td>
+          </tr>
+          <tr>
+            <td><span class="ticker-badge">LOW</span> — Lowe's</td>
+            <td>Wed, Aug 19 (Pre-mkt)</td>
+            <td>EPS est. $4.25 · Direct comp to HD; pro vs. DIY mix shift a key narrative</td>
+          </tr>
+          <tr>
+            <td><span class="ticker-badge">TGT</span> — Target</td>
+            <td>Wed, Aug 19 (Pre-mkt)</td>
+            <td>EPS est. $2.21 · Discretionary/staples mix, inventory management and margin recovery in focus</td>
+          </tr>
+          <tr>
+            <td><span class="ticker-badge">WMT</span> — Walmart</td>
+            <td>Thu, Aug 20 (Pre-mkt)</td>
+            <td>EPS est. $0.73 · Broadest consumer bellwether; price rollback strategy vs. margin pressure</td>
+          </tr>
+          <tr>
+            <td><span class="ticker-badge">DE</span> — Deere &amp; Co.</td>
+            <td>Thu, Aug 20 (Pre-mkt)</td>
+            <td>EPS est. $4.85 · Agricultural equipment demand and guidance amid cooling farm-income cycle</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</div><!-- end .container -->
+
+<!-- FOOTER -->
+<div class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <span class="footer-left">Market Quick Take &middot; Friday, 14 August 2026</span>
+      <span class="footer-right">For informational purposes only. Not investment advice.</span>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
