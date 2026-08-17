@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Market Quick Take — Monday, 17 August 2026</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: #ffffff;
+    color: #1a2332;
+  }
+
+  .container {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  /* MASTHEAD */
+  .masthead {
+    border-top: 3px solid #003366;
+    padding: 32px 0 20px;
+  }
+  .masthead-title {
+    font-size: 42px;
+    font-weight: 700;
+    color: #003366;
+    letter-spacing: -0.5px;
+    line-height: 1.1;
+  }
+  .masthead-date {
+    font-size: 13px;
+    font-weight: 400;
+    color: #6b7280;
+    margin-top: 6px;
+  }
+  .masthead-divider {
+    border: none;
+    border-bottom: 1px solid #e5e7eb;
+    margin-top: 20px;
+  }
+
+  /* SNAPSHOT BAR */
+  .snapshot-bar {
+    background: #f1f5f9;
+    padding: 12px 0;
+    width: 100%;
+  }
+  .snapshot-inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 4px 0;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: 'Inter', sans-serif;
+    color: #1a2332;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    padding: 0 24px;
+    max-width: 860px;
+    margin: 0 auto;
+  }
+  .chip {
+    white-space: nowrap;
+    padding: 0 10px;
+  }
+  .chip:first-child { padding-left: 0; }
+  .sep {
+    color: #9ca3af;
+    font-weight: 400;
+  }
+  .pos { color: #16a34a; }
+  .neg { color: #dc2626; }
+  .na  { color: #6b7280; }
+
+  /* EDITOR'S BRIEF */
+  .brief {
+    font-size: 18px;
+    font-weight: 400;
+    font-style: italic;
+    color: #374151;
+    line-height: 1.7;
+    max-width: 760px;
+    margin: 28px 0;
+    border-left: 3px solid #003366;
+    padding-left: 16px;
+  }
+
+  /* SECTIONS */
+  .section-divider {
+    border: none;
+    border-bottom: 1px solid #e5e7eb;
+    margin: 28px 0;
+  }
+  .section-label {
+    font-size: 11px;
+    font-weight: 500;
+    color: #003366;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 4px;
+  }
+  .section-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1a2332;
+    margin-bottom: 10px;
+  }
+  .section-body {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.8;
+    color: #374151;
+  }
+  .section-body ul {
+    padding-left: 8px;
+    list-style: disc;
+    list-style-position: inside;
+  }
+  .section-body ul li {
+    margin-bottom: 6px;
+  }
+  .watch-pill {
+    display: inline-block;
+    background: #fef3c7;
+    color: #b45309;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 500;
+    padding: 2px 8px;
+    margin-bottom: 6px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  /* EARNINGS TABLE */
+  .earnings-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #e5e7eb;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    margin-top: 12px;
+  }
+  .earnings-table th {
+    background: #f1f5f9;
+    color: #374151;
+    font-weight: 600;
+    padding: 8px 12px;
+    text-align: left;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  .earnings-table td {
+    padding: 8px 12px;
+    border-bottom: 1px solid #e5e7eb;
+    color: #374151;
+  }
+  .earnings-table tr:last-child td { border-bottom: none; }
+  .earnings-table tr:hover td { background: #f9fafb; }
+
+  /* FOOTER */
+  .footer {
+    background: #f1f5f9;
+    border-top: 1px solid #e5e7eb;
+    margin-top: 48px;
+    padding: 20px 0;
+  }
+  .footer-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .footer span {
+    font-size: 12px;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+  }
+  .footer-brand { color: #6b7280; }
+  .footer-disclaimer { color: #9ca3af; }
+</style>
+</head>
+<body>
+
+<!-- MASTHEAD -->
+<div class="container">
+  <div class="masthead">
+    <div class="masthead-title">MARKET QUICK TAKE</div>
+    <div class="masthead-date">Monday, 17 August 2026</div>
+    <hr class="masthead-divider">
+  </div>
+</div>
+
+<!-- SNAPSHOT BAR -->
+<div class="snapshot-bar">
+  <div class="snapshot-inner">
+    <span class="chip">SPY · $776.34 · <span class="neg">-0.20%</span></span>
+    <span class="sep">|</span>
+    <span class="chip">QQQ · $731.07 · <span class="neg">-0.14%</span></span>
+    <span class="sep">|</span>
+    <span class="chip">IWM · $305.09 · <span class="pos">+0.52%</span></span>
+    <span class="sep">|</span>
+    <span class="chip">VIX · 14.25 · <span class="neg">-2.67%</span></span>
+    <span class="sep">|</span>
+    <span class="chip">US10Y · 4.63% · <span class="neg">-1.07%</span></span>
+    <span class="sep">|</span>
+    <span class="chip">US2Y · 4.15% · <span class="neg">-1.19%</span></span>
+    <span class="sep">|</span>
+    <span class="chip">EUR/USD · 1.1609 · <span class="na">N/A</span></span>
+    <span class="sep">|</span>
+    <span class="chip">GOLD · $4,402.70 · <span class="na">N/A</span></span>
+    <span class="sep">|</span>
+    <span class="chip">WTI · $84.77 · <span class="pos">+1.21%</span></span>
+  </div>
+</div>
+
+<!-- EDITOR'S BRIEF -->
+<div class="container">
+  <p class="brief">
+    The market's prevailing theme this week is disinflation-led relief — a flat July PPI has firmed expectations of a September Fed rate cut, driving AI software stocks higher while small caps quietly outperform their large-cap peers. With FOMC minutes due Wednesday and a dense earnings calendar from Home Depot to Walmart, the week promises significant data flow to either validate or challenge the soft-landing narrative.
+  </p>
+
+  <!-- SECTION 1: MARKET DRIVERS -->
+  <hr class="section-divider">
+  <div class="watch-pill">⚡ WATCH</div>
+  <div class="section-label">Section 1</div>
+  <div class="section-title">Market Drivers</div>
+  <div class="section-body">
+    <ul>
+      <li>The July Producer Price Index came in flat, extending a run of cooling inflation data and sharpening expectations for a Federal Reserve rate cut in September — the most direct macro driver of last Friday's risk-on tone in growth and tech.</li>
+      <li>AI infrastructure stocks — led by AMD, Arista Networks (ANET), and Monolithic Power Systems (MPWR) — are attracting renewed capital as lower-rate scenarios extend duration-sensitive valuations; enterprise AI earnings beats from monday.com and MongoDB added fuel.</li>
+      <li>Softer July payroll data, reported earlier this month, has structurally reduced the bar for Fed action, with growth-sensitive cyclicals like RXO rebounding sharply and small-cap IWM outperforming on Friday.</li>
+      <li>FOMC minutes (Wednesday, August 19) are the week's pivotal event — markets are pricing a September cut, and any hawkish dissent within the committee could trigger a sharp repricing of the front end of the curve.</li>
+    </ul>
+  </div>
+
+  <!-- SECTION 2: MACRO -->
+  <hr class="section-divider">
+  <div class="watch-pill">⚡ WATCH</div>
+  <div class="section-label">Section 2</div>
+  <div class="section-title">Macro</div>
+  <div class="section-body">
+    <p>The July PPI print came in flat, following a sequence of cooler CPI readings, building consensus around a softening inflation trend and bringing the Federal Reserve closer to an easing pivot. The FOMC minutes, due Wednesday August 19, will reveal the internal debate around the pace and depth of cuts — with the market firmly priced for a September move, any indication of deeper disagreement on the committee could shift expectations materially. Geopolitically, the backdrop remains broadly stable, though persistent U.S. dollar weakness — fed by easing expectations — continues to support gold, emerging market currencies, and commodity-exporting economies.</p>
+  </div>
+
+  <!-- SECTION 3: EQUITIES -->
+  <hr class="section-divider">
+  <div class="section-label">Section 3</div>
+  <div class="section-title">Equities</div>
+  <div class="section-body">
+    <p>The major U.S. equity benchmarks ended last Friday in mixed-to-soft territory: SPY dipped -0.20% to $776.34 and QQQ lost -0.14% to $731.07, while IWM (small caps) diverged positively, rising +0.52% to $305.09 — a rotation pattern consistent with markets pricing more imminent Fed easing. Among the session's notable movers, <strong>WETO</strong> surged +127.7% on volume of 58 million shares, an event-driven outlier in the small-cap space. On the downside, <strong>BZAI</strong> collapsed -49.3% on 56 million shares, underlining the idiosyncratic volatility still present in speculative tech and AI-adjacent names.</p>
+  </div>
+
+  <!-- SECTION 4: VOLATILITY -->
+  <hr class="section-divider">
+  <div class="section-label">Section 4</div>
+  <div class="section-title">Volatility</div>
+  <div class="section-body">
+    <p>VIX stands at <strong>14.25</strong>, a decline of -2.67% from the prior session and firmly in the "complacent" zone below 15. Options markets are pricing in minimal near-term turbulence, reflecting broad confidence in the soft-landing narrative. However, complacency at this level historically warrants attention — the FOMC minutes on Wednesday represent a plausible catalyst for a volatility re-rating if policymakers signal a slower path to easing than currently discounted.</p>
+  </div>
+
+  <!-- SECTION 5: FIXED INCOME -->
+  <hr class="section-divider">
+  <div class="section-label">Section 5</div>
+  <div class="section-title">Fixed Income</div>
+  <div class="section-body">
+    <p>The 10-year Treasury yield sits at <strong>4.63%</strong> and the 2-year at <strong>4.15%</strong>, placing the 2Y–10Y spread at a positive <strong>+48 basis points</strong>. The curve has been modestly steepening in recent sessions — a pattern consistent with pre-easing cycles, where the front end rallies in anticipation of rate cuts while the long end stays anchored on resilient nominal growth expectations. The spread remains well above zero; no inversion or inversion-reversal risk at current levels. Wednesday's FOMC minutes will be the near-term anchor for the 2-year.</p>
+  </div>
+
+  <!-- SECTION 6: CURRENCIES -->
+  <hr class="section-divider">
+  <div class="section-label">Section 6</div>
+  <div class="section-title">Currencies</div>
+  <div class="section-body">
+    <p><strong>EUR/USD</strong> trades at <strong>1.1609</strong>, sustained at elevated levels by a broadly weaker U.S. dollar as rate-cut expectations erode the greenback's interest-rate advantage. <strong>USD/JPY</strong> remains elevated at <strong>158.91</strong>, reflecting the Bank of Japan's cautious pace of policy normalization — while the BoJ has begun a tightening cycle, it has yet to accelerate meaningfully, keeping the yen on the back foot. The broad dollar softness is a key macro tailwind for commodities, EM assets, and non-U.S. equities.</p>
+  </div>
+
+  <!-- SECTION 7: COMMODITIES -->
+  <hr class="section-divider">
+  <div class="section-label">Section 7</div>
+  <div class="section-title">Commodities</div>
+  <div class="section-body">
+    <p><strong>Gold</strong> has extended its extraordinary run to <strong>$4,402.70/oz</strong>, anchored by a combination of U.S. dollar weakness, persistent inflation hedge demand, and sustained central bank accumulation globally. The metal has now broken well above $4,000 — a level that would have been considered extreme only recently — and is finding structural support from investors seeking real assets amid an uncertain rate environment. <strong>WTI crude</strong> trades at <strong>$84.77/bbl</strong>, recovering from sub-$80 levels seen earlier in August, supported by OPEC+ supply discipline and tentative improvement in Chinese demand signals. Energy equities remain constructive on the supply-constrained backdrop.</p>
+  </div>
+
+  <!-- SECTION 8: EARNINGS RADAR -->
+  <hr class="section-divider">
+  <div class="section-label">Section 8</div>
+  <div class="section-title">Earnings Radar</div>
+  <div class="section-body">
+    <p>A heavy consumer-facing earnings week begins Monday with a double dose of housing and retail reads, followed by a large-cap retail sweep mid-week. Key names and what to watch:</p>
+    <table class="earnings-table">
+      <thead>
+        <tr>
+          <th>Company</th>
+          <th>Date</th>
+          <th>Est. EPS</th>
+          <th>Expected-Move Context</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Home Depot (HD)</strong></td>
+          <td>Aug 18</td>
+          <td>$4.71</td>
+          <td>Housing market bellwether; renovation demand and big-ticket spend in focus amid rate-sensitive housing backdrop</td>
+        </tr>
+        <tr>
+          <td><strong>Lowe's (LOW)</strong></td>
+          <td>Aug 19</td>
+          <td>$4.22</td>
+          <td>Key housing complement to HD; margin trajectory and pro-contractor segment critical read-through</td>
+        </tr>
+        <tr>
+          <td><strong>Target (TGT)</strong></td>
+          <td>Aug 19</td>
+          <td>$2.25</td>
+          <td>Discretionary pressure test; inventory dynamics, shrink trends, and private-label mix shift expected to drive guidance</td>
+        </tr>
+        <tr>
+          <td><strong>Walmart (WMT)</strong></td>
+          <td>Aug 20</td>
+          <td>$0.73</td>
+          <td>Consumer staples litmus test; digital sales growth and commentary on consumer trade-down vs. discretionary recovery</td>
+        </tr>
+        <tr>
+          <td><strong>Alibaba (BABA)</strong></td>
+          <td>Aug 20</td>
+          <td>$1.77</td>
+          <td>China macro signal; cloud revenue growth and AI investment momentum vs. domestic consumer softness</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</div><!-- /.container -->
+
+<!-- FOOTER -->
+<div class="footer">
+  <div class="container footer-inner">
+    <span class="footer-brand">Market Quick Take · Monday, 17 August 2026</span>
+    <span class="footer-disclaimer">For informational purposes only. Not investment advice.</span>
+  </div>
+</div>
+
+</body>
+</html>
