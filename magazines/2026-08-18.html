@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Market Quick Take</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Inter', sans-serif; background: #ffffff; color: #1a2332; }
+
+  .container { max-width: 860px; margin: 0 auto; padding: 0 24px; }
+
+  /* MASTHEAD */
+  .masthead { border-top: 3px solid #003366; padding: 32px 0 20px; border-bottom: 1px solid #e5e7eb; }
+  .masthead-title { font-size: 42px; font-weight: 700; color: #003366; line-height: 1.1; }
+  .masthead-date { font-size: 13px; font-weight: 400; color: #6b7280; margin-top: 6px; }
+
+  /* SNAPSHOT BAR */
+  .snapshot-bar { background: #f1f5f9; padding: 12px 0; width: 100%; }
+  .snapshot-inner { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 0; padding: 0 24px; max-width: 860px; margin: 0 auto; }
+  .chip { font-size: 12px; font-weight: 500; color: #1a2332; text-transform: uppercase; white-space: nowrap; padding: 0 10px; }
+  .chip:not(:last-child)::after { content: '|'; margin-left: 10px; color: #9ca3af; }
+  .chip-label { }
+  .chip-value { margin: 0 2px; }
+  .chip-change { }
+  .pos { color: #16a34a; }
+  .neg { color: #dc2626; }
+  .neutral { color: #6b7280; }
+
+  /* EDITOR'S BRIEF */
+  .brief { font-size: 18px; font-style: italic; font-weight: 400; color: #374151; line-height: 1.7; max-width: 760px; margin: 28px 0; border-left: 3px solid #003366; padding-left: 16px; }
+
+  /* SECTIONS */
+  .sections { max-width: 860px; }
+  .section { margin-bottom: 0; }
+  .section-divider { border: none; border-top: 1px solid #e5e7eb; margin: 28px 0; }
+  .watch-pill { display: inline-block; background: #fef3c7; color: #b45309; border-radius: 4px; font-size: 11px; font-weight: 500; padding: 2px 8px; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+  .section-label { font-size: 11px; font-weight: 500; color: #003366; text-transform: uppercase; letter-spacing: 3px; margin-bottom: 6px; }
+  .section-title { font-size: 24px; font-weight: 700; color: #1a2332; margin-bottom: 10px; line-height: 1.2; }
+  .section-body { font-size: 15px; font-weight: 400; color: #374151; line-height: 1.8; }
+  .section-body ul { padding-left: 20px; }
+  .section-body ul li { margin-bottom: 6px; }
+
+  /* EARNINGS TABLE */
+  .earnings-table { width: 100%; border-collapse: collapse; font-size: 13px; margin-top: 12px; }
+  .earnings-table th, .earnings-table td { border: 1px solid #e5e7eb; padding: 8px 12px; text-align: left; }
+  .earnings-table th { font-weight: 600; background: #f9fafb; color: #374151; }
+  .earnings-table td { color: #374151; }
+
+  /* FOOTER */
+  .footer { background: #f1f5f9; border-top: 1px solid #e5e7eb; margin-top: 48px; padding: 20px 0; }
+  .footer-inner { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; max-width: 860px; margin: 0 auto; padding: 0 24px; }
+  .footer-inner span { font-size: 12px; font-weight: 400; }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <!-- MASTHEAD -->
+  <div class="masthead">
+    <div class="masthead-title">MARKET QUICK TAKE</div>
+    <div class="masthead-date">Monday, 18 August 2026</div>
+  </div>
+</div>
+
+<!-- SNAPSHOT BAR -->
+<div class="snapshot-bar">
+  <div class="snapshot-inner">
+    <div class="chip">
+      <span class="chip-label">SPY</span>
+      <span class="chip-value">· 772.67 ·</span>
+      <span class="chip-change neg">-0.47%</span>
+    </div>
+    <div class="chip">
+      <span class="chip-label">QQQ</span>
+      <span class="chip-value">· 729.87 ·</span>
+      <span class="chip-change neg">-0.16%</span>
+    </div>
+    <div class="chip">
+      <span class="chip-label">IWM</span>
+      <span class="chip-value">· 304.06 ·</span>
+      <span class="chip-change neg">-0.34%</span>
+    </div>
+    <div class="chip">
+      <span class="chip-label">VIX</span>
+      <span class="chip-value">· 15.19 ·</span>
+      <span class="chip-change pos">+6.19%</span>
+    </div>
+    <div class="chip">
+      <span class="chip-label">US10Y</span>
+      <span class="chip-value">· 4.68%</span>
+    </div>
+    <div class="chip">
+      <span class="chip-label">US2Y</span>
+      <span class="chip-value">· 4.17%</span>
+    </div>
+    <div class="chip">
+      <span class="chip-label">EUR/USD</span>
+      <span class="chip-value">· 1.1578</span>
+    </div>
+    <div class="chip">
+      <span class="chip-label">GOLD</span>
+      <span class="chip-value">· $4,398.77</span>
+    </div>
+    <div class="chip">
+      <span class="chip-label">WTI</span>
+      <span class="chip-value">· $84.77</span>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+
+  <!-- EDITOR'S BRIEF -->
+  <p class="brief">
+    Markets open the week on a cautious note as investors brace for a pivotal stretch: July FOMC minutes due mid-week, gold approaching $4,400 on continued dollar softness, and a heavyweight retail earnings parade — Home Depot, Target, Walmart, and Lowe's — that will provide the clearest read yet on whether the US consumer is holding firm amid elevated rates and plateauing inflation.
+  </p>
+
+  <!-- SECTIONS -->
+  <div class="sections">
+
+    <!-- SECTION 1: Market Drivers -->
+    <div class="section">
+      <div class="watch-pill">⚡ WATCH</div>
+      <div class="section-label">Section 1</div>
+      <div class="section-title">Market Drivers</div>
+      <div class="section-body">
+        <ul>
+          <li>Moderating inflation data — a flat July PPI print and cooling CPI — is materially reducing expectations for further Fed tightening, supporting rate-sensitive growth stocks and compressing the dollar.</li>
+          <li>A surprising contraction in July non-farm payrolls has reinforced the "soft landing" thesis and pushed gold miners to their best weekly rally since 2008 (GDX +21%), with gold spot approaching $4,400/oz.</li>
+          <li>This week's retail earnings block (HD today; TGT, LOW, TJX Tuesday; WMT, BABA, DE Wednesday) will be the primary gauge of consumer spending durability and margin resilience heading into Q3.</li>
+          <li>July FOMC meeting minutes, due this week, represent the most significant macro event: markets will parse committee language for any hint of a rate-cut pivot timeline given the shifting economic data.</li>
+        </ul>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- SECTION 2: Macro -->
+    <div class="section">
+      <div class="watch-pill">⚡ WATCH</div>
+      <div class="section-label">Section 2</div>
+      <div class="section-title">Macro</div>
+      <div class="section-body">
+        <p>The Federal Reserve's July FOMC meeting minutes are scheduled for release this week — a critical inflection point that could clarify the committee's rate-path intentions following a surprisingly weak July jobs report that briefly rattled markets. With the 10-year Treasury at 4.68% and the 2-year at 4.17%, the yield curve has steepened to a +51 basis-point spread, reflecting a meaningful repricing of the near-term rate trajectory. Moderating inflation — flat July PPI, softening CPI — is giving the Fed room to maneuver, while geopolitical uncertainty and currency market volatility (USD/JPY near 159.74) add complexity to the committee's framework. The Empire State Manufacturing Survey and Canada CPI data are also due today, offering early reads on regional economic momentum.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- SECTION 3: Equities -->
+    <div class="section">
+      <div class="section-label">Section 3</div>
+      <div class="section-title">Equities</div>
+      <div class="section-body">
+        <p>All three benchmark ETFs edged lower in Monday's session: <strong>SPY</strong> at 772.67 (<span class="neg">-0.47%</span>), <strong>QQQ</strong> at 729.87 (<span class="neg">-0.16%</span>), and <strong>IWM</strong> at 304.06 (<span class="neg">-0.34%</span>). The broad but modest pullback follows a strong prior-week rally fuelled by the soft payrolls surprise and comes amid a wait-and-see posture ahead of the week's macro and earnings catalysts. Among notable movers, <strong>IPST</strong> surged <span class="pos">+235.9%</span> on extraordinary volume (~100M shares), reflecting a company-specific catalyst, while <strong>EYPT</strong> collapsed <span class="neg">-67%</span> (~52M shares) on material adverse news. Mega-cap technology was broadly range-bound, with NVDA near $225.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- SECTION 4: Volatility -->
+    <div class="section">
+      <div class="section-label">Section 4</div>
+      <div class="section-title">Volatility</div>
+      <div class="section-body">
+        <p>The CBOE VIX stands at <strong>15.19</strong>, up <span class="pos">+6.19%</span> on the session (+0.94 points), yet remains firmly in "complacent" territory below the 20 threshold. The intraday uptick signals hedging activity building ahead of this week's FOMC minutes release and the concentrated retail earnings calendar. At current levels, options markets are not pricing in elevated near-term tail risk, though the session's directional drift bears watching if FOMC language proves more hawkish than expected.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- SECTION 5: Fixed Income -->
+    <div class="section">
+      <div class="section-label">Section 5</div>
+      <div class="section-title">Fixed Income</div>
+      <div class="section-body">
+        <p>The US 10-year Treasury yield sits at <strong>4.68%</strong> with the 2-year at <strong>4.17%</strong>, maintaining a positively sloped curve with a spread of <strong>+51 basis points</strong>. The curve has been steepening as markets price out near-term rate hikes: front-end yields have fallen faster than long-end yields following the weak July payrolls print and moderating inflation data. A steeper curve at this level is broadly consistent with improved economic growth expectations and reduced recessionary pressure, though the FOMC minutes could prompt a re-rating of the curve's shape if committee commentary signals a more cautious or hawkish stance than currently priced.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- SECTION 6: Currencies -->
+    <div class="section">
+      <div class="section-label">Section 6</div>
+      <div class="section-title">Currencies</div>
+      <div class="section-body">
+        <p><strong>EUR/USD</strong> trades at <strong>1.1578</strong>, reflecting sustained euro strength as markets scale back Federal Reserve tightening expectations and the dollar softens on the rate-cut pricing narrative. <strong>USD/JPY</strong> holds at <strong>159.74</strong>, hovering near the psychologically significant 160 level that has historically attracted scrutiny from Japanese monetary authorities. The Bank of Japan has previously intervened verbally and directly to support the yen at elevated levels; a sustained break above 160 could reinvigorate intervention discussions. The yen's weakness reflects the persistent policy divergence between the Fed — still in hold mode — and the BoJ, which remains on a gradual normalisation path.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- SECTION 7: Commodities -->
+    <div class="section">
+      <div class="section-label">Section 7</div>
+      <div class="section-title">Commodities</div>
+      <div class="section-body">
+        <p><strong>Gold</strong> trades at <strong>$4,398.77/oz</strong>, approaching the $4,400 psychological threshold in a rally driven by a weakening US dollar, declining real yields, and broad safe-haven demand amid geopolitical uncertainty. Precious metals miners have benefited disproportionately, with gold streaming companies like Wheaton Precious Metals (WPM) reporting record H1 revenues of US$1.8 billion. <strong>WTI crude</strong> stands at <strong>$84.77/bbl</strong>, supported by ongoing OPEC+ production discipline and stronger-than-expected demand signals from Asian markets. Energy sector stocks tracking long-term contracts and oil price exposure — including names in offshore services and midstream infrastructure — have attracted renewed interest as oil holds above $80.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- SECTION 8: Earnings Radar -->
+    <div class="section">
+      <div class="section-label">Section 8</div>
+      <div class="section-title">Earnings Radar</div>
+      <div class="section-body">
+        <p>A major retail earnings week dominates the near-term calendar, with results from consumer bellwethers and a global tech giant clustered across Monday through Wednesday. Consensus estimates below:</p>
+        <table class="earnings-table">
+          <thead>
+            <tr>
+              <th>Company</th>
+              <th>Date</th>
+              <th>EPS Estimate</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Home Depot (HD)</td>
+              <td>Mon, Aug 18</td>
+              <td>$4.71</td>
+            </tr>
+            <tr>
+              <td>Baidu (BIDU)</td>
+              <td>Mon, Aug 18</td>
+              <td>$1.19</td>
+            </tr>
+            <tr>
+              <td>Target (TGT)</td>
+              <td>Tue, Aug 19</td>
+              <td>$2.25</td>
+            </tr>
+            <tr>
+              <td>Lowe's Companies (LOW)</td>
+              <td>Tue, Aug 19</td>
+              <td>$4.22</td>
+            </tr>
+            <tr>
+              <td>TJX Companies (TJX)</td>
+              <td>Tue, Aug 19</td>
+              <td>$1.18</td>
+            </tr>
+            <tr>
+              <td>Walmart (WMT)</td>
+              <td>Wed, Aug 20</td>
+              <td>$0.73</td>
+            </tr>
+            <tr>
+              <td>Alibaba Group (BABA)</td>
+              <td>Wed, Aug 20</td>
+              <td>$1.77</td>
+            </tr>
+            <tr>
+              <td>Deere &amp; Company (DE)</td>
+              <td>Wed, Aug 20</td>
+              <td>$4.85</td>
+            </tr>
+            <tr>
+              <td>Ross Stores (ROST)</td>
+              <td>Wed, Aug 20</td>
+              <td>$1.92</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div><!-- /sections -->
+
+</div><!-- /container -->
+
+<!-- FOOTER -->
+<div class="footer">
+  <div class="footer-inner">
+    <span style="color:#6b7280;">Market Quick Take &middot; Monday, 18 August 2026</span>
+    <span style="color:#9ca3af;">For informational purposes only. Not investment advice.</span>
+  </div>
+</div>
+
+</body>
+</html>
