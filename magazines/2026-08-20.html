@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Market Quick Take — 20 August 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: #ffffff;
+    color: #1a2332;
+  }
+
+  .container {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  /* MASTHEAD */
+  .masthead {
+    border-top: 3px solid #003366;
+    padding: 32px 0 20px;
+    border-bottom: 1px solid #e5e7eb;
+    margin-bottom: 0;
+  }
+  .masthead-title {
+    font-size: 42px;
+    font-weight: 700;
+    color: #003366;
+    letter-spacing: -0.5px;
+    line-height: 1;
+  }
+  .masthead-date {
+    font-size: 13px;
+    font-weight: 400;
+    color: #6b7280;
+    margin-top: 6px;
+  }
+
+  /* SNAPSHOT BAR */
+  .snapshot-bar {
+    background: #f1f5f9;
+    padding: 12px 0;
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  .snapshot-inner {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+  .chip {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 500;
+    color: #1a2332;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+  }
+  .chip-sep {
+    display: inline-block;
+    margin: 0 10px;
+    color: #9ca3af;
+  }
+  .chip-label { color: #6b7280; }
+  .chip-value { color: #1a2332; font-weight: 600; }
+  .pos { color: #16a34a; }
+  .neg { color: #dc2626; }
+
+  /* EDITOR'S BRIEF */
+  .editors-brief {
+    font-size: 18px;
+    font-weight: 400;
+    font-style: italic;
+    color: #374151;
+    line-height: 1.7;
+    max-width: 760px;
+    margin: 28px 0;
+    border-left: 3px solid #003366;
+    padding-left: 16px;
+  }
+
+  /* SECTIONS */
+  .section {
+    margin-bottom: 0;
+  }
+  .section-hr {
+    border: none;
+    border-top: 1px solid #e5e7eb;
+    margin: 28px 0;
+  }
+  .section-label {
+    font-size: 11px;
+    font-weight: 500;
+    color: #003366;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 6px;
+  }
+  .section-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1a2332;
+    margin-bottom: 10px;
+  }
+  .section-body {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.8;
+    color: #374151;
+  }
+  .section-body ul {
+    padding-left: 8px;
+    list-style: none;
+  }
+  .section-body ul li {
+    padding-left: 16px;
+    position: relative;
+    margin-bottom: 6px;
+  }
+  .section-body ul li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: #003366;
+  }
+  .section-body p + p {
+    margin-top: 10px;
+  }
+
+  /* WATCH pill */
+  .watch-pill {
+    display: inline-block;
+    background: #fef3c7;
+    color: #b45309;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 500;
+    padding: 2px 8px;
+    margin-bottom: 8px;
+    letter-spacing: 0.3px;
+  }
+
+  /* EARNINGS TABLE */
+  .earnings-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    font-weight: 400;
+    margin-top: 12px;
+    border: 1px solid #e5e7eb;
+  }
+  .earnings-table th {
+    background: #f1f5f9;
+    color: #6b7280;
+    font-weight: 600;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 8px 12px;
+    text-align: left;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  .earnings-table td {
+    padding: 9px 12px;
+    border-bottom: 1px solid #e5e7eb;
+    color: #374151;
+    vertical-align: top;
+  }
+  .earnings-table tr:last-child td {
+    border-bottom: none;
+  }
+  .earnings-table tr:nth-child(even) td {
+    background: #f9fafb;
+  }
+  .ticker-tag {
+    font-weight: 600;
+    color: #003366;
+  }
+
+  /* FOOTER */
+  .footer {
+    background: #f1f5f9;
+    border-top: 1px solid #e5e7eb;
+    margin-top: 48px;
+    padding: 20px 0;
+  }
+  .footer-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .footer-brand {
+    font-size: 12px;
+    font-weight: 400;
+    color: #6b7280;
+  }
+  .footer-disclaimer {
+    font-size: 12px;
+    font-weight: 400;
+    color: #9ca3af;
+  }
+</style>
+</head>
+<body>
+
+<!-- MASTHEAD -->
+<div class="container">
+  <div class="masthead">
+    <div class="masthead-title">MARKET QUICK TAKE</div>
+    <div class="masthead-date">Wednesday, 20 August 2026</div>
+  </div>
+</div>
+
+<!-- SNAPSHOT BAR -->
+<div class="snapshot-bar">
+  <div class="snapshot-inner">
+    <span class="chip">
+      <span class="chip-label">SPY</span>&nbsp;<span class="chip-value">$769.06</span>&nbsp;<span class="pos">+0.21%</span>
+    </span>
+    <span class="chip-sep">|</span>
+    <span class="chip">
+      <span class="chip-label">QQQ</span>&nbsp;<span class="chip-value">$716.08</span>&nbsp;<span class="neg">−0.20%</span>
+    </span>
+    <span class="chip-sep">|</span>
+    <span class="chip">
+      <span class="chip-label">IWM</span>&nbsp;<span class="chip-value">$301.72</span>&nbsp;<span class="pos">+0.50%</span>
+    </span>
+    <span class="chip-sep">|</span>
+    <span class="chip">
+      <span class="chip-label">VIX</span>&nbsp;<span class="chip-value">14.89</span>&nbsp;<span class="neg">−6.38%</span>
+    </span>
+    <span class="chip-sep">|</span>
+    <span class="chip">
+      <span class="chip-label">US10Y</span>&nbsp;<span class="chip-value">4.71%</span>
+    </span>
+    <span class="chip-sep">|</span>
+    <span class="chip">
+      <span class="chip-label">US2Y</span>&nbsp;<span class="chip-value">4.19%</span>
+    </span>
+    <span class="chip-sep">|</span>
+    <span class="chip">
+      <span class="chip-label">EUR/USD</span>&nbsp;<span class="chip-value">1.1685</span>
+    </span>
+    <span class="chip-sep">|</span>
+    <span class="chip">
+      <span class="chip-label">GOLD</span>&nbsp;<span class="chip-value">$4,488</span>
+    </span>
+    <span class="chip-sep">|</span>
+    <span class="chip">
+      <span class="chip-label">WTI</span>&nbsp;<span class="chip-value">$86.48</span>
+    </span>
+  </div>
+</div>
+
+<!-- MAIN CONTENT -->
+<div class="container">
+
+  <!-- EDITOR'S BRIEF -->
+  <div class="editors-brief">
+    Markets traded in a bifurcated fashion Wednesday as surging long-term Treasury yields — with the 30-year reportedly near 19-year highs — continued to rotate capital out of tech and into value, while gold extended its record-setting run above $4,488 per ounce and Moderna surged 177% on exceptional volume in what appears to be a major catalyst event. Small caps outperformed as investors positioned ahead of marquee earnings from Walmart and Deere today, with NVIDIA's results looming on the horizon next Wednesday.
+  </div>
+
+  <!-- SECTION 1: MARKET DRIVERS -->
+  <div class="section">
+    <div class="section-label">Section 1</div>
+    <div class="watch-pill">⚡ WATCH</div>
+    <div class="section-title">Market Drivers</div>
+    <div class="section-body">
+      <ul>
+        <li>Long-term Treasury yields remain acutely elevated — 10Y at 4.71%, 30-year reportedly approaching 19-year highs — pressuring high-multiple technology and semiconductor valuations while lifting financials, value, and life insurance stocks that benefit from steeper curves.</li>
+        <li>Moderna (MRNA) surged 177% to $174.38 on massive volume, dominating the tape in what appears to be a major clinical or regulatory catalyst; related biotech names MRNX (+353%) and MRNY (+169%) tracked the surge in one of the session's most striking single-stock moves.</li>
+        <li>Gold extended its record rally above $4,488/oz, with gold miners posting their best weekly performance since 2008 as investors seek inflation hedges amid persistent long-end yield pressure and dollar softness.</li>
+        <li>An earlier-August jobs shock cooled rate-hike expectations and propelled the S&amp;P 500 to fresh records; the structural question now is whether elevated long-term yields will eventually crimp the equity multiple or whether resilient consumer spending data (Walmart reports today) offsets macro headwinds.</li>
+      </ul>
+    </div>
+  </div>
+
+  <hr class="section-hr">
+
+  <!-- SECTION 2: MACRO -->
+  <div class="section">
+    <div class="section-label">Section 2</div>
+    <div class="section-title">Macro</div>
+    <div class="section-body">
+      <p>The dominant macro theme entering this week is the relentless climb in long-duration U.S. yields: the 30-year Treasury has reportedly touched levels not seen since 2007, reflecting the bond market's judgment that structural inflation risk has not been fully tamed despite the Fed's pause. While a surprise jobs miss earlier in August sank near-term rate-hike bets and provided equities with a relief rally, the persistence of elevated longer-dated yields signals that markets are not yet pricing a return to the low-rate regime.</p>
+      <p>Canada's CPI release today and the Empire State Manufacturing Survey offer near-term reads on North American inflation and factory activity, though the bigger near-term catalyst is NVIDIA's earnings on 26 August — a result that will serve as a proxy for AI infrastructure spending durability and could meaningfully shift the tech narrative. The Fed's next meeting remains data-dependent, with the market watching each CPI and labor print for any evidence that would justify either a cut or a resumption of hikes.</p>
+    </div>
+  </div>
+
+  <hr class="section-hr">
+
+  <!-- SECTION 3: EQUITIES -->
+  <div class="section">
+    <div class="section-label">Section 3</div>
+    <div class="watch-pill">⚡ WATCH</div>
+    <div class="section-title">Equities</div>
+    <div class="section-body">
+      <p>Wednesday's session reflected a clear rotation: SPY added a modest <span class="pos">+0.21%</span> to $769.06, while tech-heavy QQQ slipped <span class="neg">−0.20%</span> to $716.08 and small-cap IWM outperformed at <span class="pos">+0.50%</span> to $301.72 — a pattern consistent with rising rate sensitivity penalising long-duration growth names. SOXL (3× Semiconductors ETF) fell <span class="neg">−6.58%</span>, and Intel (INTC) dropped <span class="neg">−4.02%</span>, confirming chip pressure under the yield overhang. NVIDIA (NVDA) slipped <span class="neg">−0.99%</span> to $217.56 in heavy volume ahead of next Wednesday's earnings.</p>
+      <p><strong>Notable movers:</strong> Moderna (MRNA) surged <span class="pos">+177%</span> to $174.38 — the standout event of the session — on outsized volume of 187 million shares with no confirmed catalyst available at time of publication; related ticker MRNX added <span class="pos">+353%</span>. On the downside, PFSA fell <span class="neg">−50.6%</span> and LGCL shed <span class="neg">−47%</span>, both on specific company events unrelated to broad market tone.</p>
+    </div>
+  </div>
+
+  <hr class="section-hr">
+
+  <!-- SECTION 4: VOLATILITY -->
+  <div class="section">
+    <div class="section-label">Section 4</div>
+    <div class="section-title">Volatility</div>
+    <div class="section-body">
+      <p>The CBOE VIX closed at <strong>14.89</strong> on Tuesday (<span class="neg">−6.38%</span> on the session), comfortably below the 15 threshold that analysts associate with investor complacency. The options market is effectively pricing near-zero systemic risk despite an environment of elevated long-end yields, record gold prices, and a concentrated biotech catalyst (MRNA) that illustrates how idiosyncratic shocks can materialise without warning. Historically, VIX readings sub-15 heading into a dense earnings period — particularly one featuring NVIDIA — have preceded sharp, short-lived vol spikes. Traders long complacency should be aware that the asymmetry favours vol buyers at current levels.</p>
+    </div>
+  </div>
+
+  <hr class="section-hr">
+
+  <!-- SECTION 5: FIXED INCOME -->
+  <div class="section">
+    <div class="section-label">Section 5</div>
+    <div class="watch-pill">⚡ WATCH</div>
+    <div class="section-title">Fixed Income</div>
+    <div class="section-body">
+      <p>The 10-year Treasury yield stands at <strong>4.71%</strong> and the 2-year at <strong>4.19%</strong>, placing the 10Y–2Y spread at <strong>+52 basis points</strong> — a curve that is positively sloped and gently steepening from recent months. With the 30-year reportedly near 19-year highs, the sell-off in long-duration bonds is the structural story of the summer: the bond market is pricing persistent inflation and growing concern about the US fiscal trajectory, even as the Fed holds rates steady.</p>
+      <p>The steepening curve creates a bifurcated environment: financials, life insurers, and banks benefit from widening net interest margins, while rate-sensitive growth and technology equities face multiple compression. For fixed income portfolios, the risk of further long-end repricing remains elevated until there is a clear downside inflation surprise or a credible signal from the Fed on the terminal rate path.</p>
+    </div>
+  </div>
+
+  <hr class="section-hr">
+
+  <!-- SECTION 6: CURRENCIES -->
+  <div class="section">
+    <div class="section-label">Section 6</div>
+    <div class="section-title">Currencies</div>
+    <div class="section-body">
+      <p>EUR/USD trades at <strong>1.1685</strong>, reflecting a broadly softer dollar as markets price lower odds of additional Fed tightening following recent labor market softness. The euro is benefiting from dollar weakness rather than any European-specific catalyst, and the pair remains in a constructive medium-term uptrend.</p>
+      <p>USD/JPY stands at <strong>158.43</strong>, near the upper end of its recent range as the yen continues to bear the brunt of the US-Japan yield differential. With the Bank of Japan maintaining its gradual policy normalisation, the yen's structural weakness persists; a move above 160 would likely revive Bank of Japan intervention speculation, similar to episodes seen in 2024–2025. Japanese equities (SMFG fell 4.78% Tuesday) are also suffering as global yield fears trigger broad sell-offs in rate-sensitive financial stocks.</p>
+    </div>
+  </div>
+
+  <hr class="section-hr">
+
+  <!-- SECTION 7: COMMODITIES -->
+  <div class="section">
+    <div class="section-label">Section 7</div>
+    <div class="watch-pill">⚡ WATCH</div>
+    <div class="section-title">Commodities</div>
+    <div class="section-body">
+      <p>Gold spot has climbed to <strong>$4,488/oz</strong>, extending an extraordinary bull run that pushed gold miners to their best week since 2008. The rally is being driven by a confluence of factors: dollar softness, structurally elevated inflation expectations, safe-haven demand from geopolitical uncertainty, and central bank accumulation. The fact that gold is surging alongside elevated nominal yields — rather than waiting for rate cuts — signals that real-rate dynamics and reserve diversification are the dominant drivers, not simply the opportunity cost of holding bullion.</p>
+      <p>WTI crude stands at <strong>$86.48/bbl</strong> (as of 18 August), remaining elevated on supply-side constraints and resilient demand, particularly from emerging markets. The persistence of crude above $85 is adding to inflation stickiness and complicating the Fed's path; energy stocks are in focus as oil sustains levels that support production economics while keeping fuel-cost pressure in the consumer basket.</p>
+    </div>
+  </div>
+
+  <hr class="section-hr">
+
+  <!-- SECTION 8: EARNINGS CALENDAR (was Section 9, renumbered) -->
+  <div class="section">
+    <div class="section-label">Section 8</div>
+    <div class="section-title">Earnings Radar</div>
+    <div class="section-body">
+      <p>The next five trading days (20–26 August) feature several marquee reports. Walmart and Deere report today, providing the market's first read on consumer demand and industrial activity for the July quarter. NVIDIA on 26 August is the crowning event — with the stock pricing significant AI-driven growth expectations, any guidance miss or capacity constraint language could send ripples across the entire semiconductor and AI infrastructure ecosystem.</p>
+
+      <table class="earnings-table">
+        <thead>
+          <tr>
+            <th>Company</th>
+            <th>Date</th>
+            <th>EPS Estimate</th>
+            <th>Context</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="ticker-tag">WMT</span> Walmart</td>
+            <td>Aug 20 (Today)</td>
+            <td>$0.73</td>
+            <td>Key consumer spending barometer; inflation plateau impact on margins</td>
+          </tr>
+          <tr>
+            <td><span class="ticker-tag">DE</span> Deere &amp; Co.</td>
+            <td>Aug 20 (Today)</td>
+            <td>$4.85</td>
+            <td>Agricultural equipment demand; order book guidance critical</td>
+          </tr>
+          <tr>
+            <td><span class="ticker-tag">BABA</span> Alibaba</td>
+            <td>Aug 20 (Today)</td>
+            <td>$1.77</td>
+            <td>China consumer recovery signal; cloud and AI revenue mix</td>
+          </tr>
+          <tr>
+            <td><span class="ticker-tag">INTU</span> Intuit</td>
+            <td>Aug 25</td>
+            <td>$2.14</td>
+            <td>AI-enhanced tax and accounting tools; SMB health read</td>
+          </tr>
+          <tr>
+            <td><span class="ticker-tag">NVDA</span> NVIDIA</td>
+            <td>Aug 26</td>
+            <td>$2.01</td>
+            <td>Marquee AI infrastructure report; Blackwell ramp &amp; data-center guidance in focus — expected move ±8–10%</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</div><!-- /.container -->
+
+<!-- FOOTER -->
+<div class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <span class="footer-brand">Market Quick Take &middot; Wednesday, 20 August 2026</span>
+      <span class="footer-disclaimer">For informational purposes only. Not investment advice.</span>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
