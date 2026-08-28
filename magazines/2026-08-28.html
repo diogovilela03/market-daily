@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Market Quick Take</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg: #ffffff;
+    --text-primary: #1a2332;
+    --text-muted: #6b7280;
+    --accent-navy: #003366;
+    --border: #e5e7eb;
+    --positive: #16a34a;
+    --negative: #dc2626;
+    --watch-amber: #b45309;
+    --watch-bg: #fef3c7;
+    --snapshot-bg: #f1f5f9;
+    --footer-bg: #f1f5f9;
+    --body-text: #374151;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #0f1724;
+      --text-primary: #e5e9f0;
+      --text-muted: #9ca3af;
+      --accent-navy: #5b8dd9;
+      --border: #1f2d3d;
+      --positive: #22c55e;
+      --negative: #f87171;
+      --watch-amber: #f59e0b;
+      --watch-bg: #2d2006;
+      --snapshot-bg: #111d2b;
+      --footer-bg: #111d2b;
+      --body-text: #c9d1da;
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --bg: #0f1724;
+    --text-primary: #e5e9f0;
+    --text-muted: #9ca3af;
+    --accent-navy: #5b8dd9;
+    --border: #1f2d3d;
+    --positive: #22c55e;
+    --negative: #f87171;
+    --watch-amber: #f59e0b;
+    --watch-bg: #2d2006;
+    --snapshot-bg: #111d2b;
+    --footer-bg: #111d2b;
+    --body-text: #c9d1da;
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--text-primary);
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    line-height: 1.8;
+  }
+
+  .container {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  /* MASTHEAD */
+  .masthead {
+    border-top: 3px solid var(--accent-navy);
+    padding: 32px 0 20px;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 0;
+  }
+  .masthead-title {
+    font-size: 42px;
+    font-weight: 700;
+    color: var(--accent-navy);
+    letter-spacing: -0.5px;
+    line-height: 1.1;
+  }
+  .masthead-date {
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--text-muted);
+    margin-top: 6px;
+  }
+
+  /* SNAPSHOT BAR */
+  .snapshot-bar {
+    background: var(--snapshot-bg);
+    padding: 12px 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .snapshot-inner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 0;
+    align-items: center;
+  }
+  .chip {
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--text-primary);
+    text-transform: uppercase;
+    white-space: nowrap;
+    padding: 0 10px;
+  }
+  .chip:not(:last-child)::after {
+    content: ' |';
+    color: var(--text-muted);
+    margin-left: 10px;
+  }
+  .chip .label { color: var(--text-muted); }
+  .chip .val { margin: 0 2px; }
+  .chip .pos { color: var(--positive); }
+  .chip .neg { color: var(--negative); }
+  .chip .neu { color: var(--text-muted); }
+
+  /* EDITOR'S BRIEF */
+  .editors-brief {
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 400;
+    color: var(--body-text);
+    max-width: 760px;
+    margin: 28px 0;
+    border-left: 3px solid var(--accent-navy);
+    padding-left: 16px;
+    line-height: 1.7;
+  }
+
+  /* SECTIONS */
+  .section { margin-bottom: 0; }
+
+  .section-divider {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 28px 0;
+  }
+
+  .section-label {
+    font-size: 11px;
+    font-weight: 500;
+    color: var(--accent-navy);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    display: block;
+    margin-bottom: 6px;
+  }
+
+  .section-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 10px;
+    line-height: 1.2;
+  }
+
+  .section-body {
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--body-text);
+    line-height: 1.8;
+  }
+
+  .section-body ul {
+    padding-left: 8px;
+    list-style: none;
+  }
+
+  .section-body ul li {
+    position: relative;
+    padding-left: 16px;
+    margin-bottom: 6px;
+  }
+
+  .section-body ul li::before {
+    content: '·';
+    position: absolute;
+    left: 0;
+    color: var(--accent-navy);
+    font-weight: 700;
+  }
+
+  /* WATCH PILL */
+  .watch-pill {
+    display: inline-block;
+    background: var(--watch-bg);
+    color: var(--watch-amber);
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 500;
+    padding: 2px 8px;
+    margin-bottom: 8px;
+    font-family: 'Inter', sans-serif;
+  }
+
+  /* EARNINGS TABLE */
+  .earnings-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid var(--border);
+    font-size: 13px;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    margin-top: 12px;
+  }
+  .earnings-table th {
+    background: var(--snapshot-bg);
+    color: var(--text-muted);
+    font-weight: 500;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 8px 12px;
+    text-align: left;
+    border-bottom: 1px solid var(--border);
+  }
+  .earnings-table td {
+    padding: 9px 12px;
+    border-bottom: 1px solid var(--border);
+    color: var(--body-text);
+    vertical-align: top;
+  }
+  .earnings-table tr:last-child td { border-bottom: none; }
+  .earnings-table td:first-child { font-weight: 500; color: var(--text-primary); }
+
+  /* FOOTER */
+  .footer {
+    background: var(--footer-bg);
+    border-top: 1px solid var(--border);
+    margin-top: 48px;
+    padding: 20px 0;
+  }
+  .footer-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .footer-left {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--text-muted);
+  }
+  .footer-right {
+    font-size: 12px;
+    font-weight: 400;
+    color: #9ca3af;
+  }
+
+  @media (max-width: 600px) {
+    .masthead-title { font-size: 28px; }
+    .editors-brief { font-size: 16px; }
+    .section-title { font-size: 20px; }
+    .snapshot-inner { gap: 2px 0; }
+    .chip { font-size: 11px; padding: 0 7px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- MASTHEAD -->
+<div class="container">
+  <div class="masthead">
+    <div class="masthead-title">MARKET QUICK TAKE</div>
+    <div class="masthead-date">Friday, 28 August 2026</div>
+  </div>
+</div>
+
+<!-- SNAPSHOT BAR -->
+<div class="snapshot-bar">
+  <div class="container">
+    <div class="snapshot-inner">
+      <span class="chip">
+        <span class="label">SPY</span>
+        <span class="val">771.10</span>
+        <span class="pos">+0.66%</span>
+      </span>
+      <span class="chip">
+        <span class="label">QQQ</span>
+        <span class="val">721.11</span>
+        <span class="pos">+1.37%</span>
+      </span>
+      <span class="chip">
+        <span class="label">IWM</span>
+        <span class="val">299.81</span>
+        <span class="pos">+0.29%</span>
+      </span>
+      <span class="chip">
+        <span class="label">VIX</span>
+        <span class="val">14.51</span>
+        <span class="neg">−4.82%</span>
+      </span>
+      <span class="chip">
+        <span class="label">US10Y</span>
+        <span class="val">4.66%</span>
+        <span class="pos">+2bp</span>
+      </span>
+      <span class="chip">
+        <span class="label">US2Y</span>
+        <span class="val">4.19%</span>
+        <span class="pos">+2bp</span>
+      </span>
+      <span class="chip">
+        <span class="label">EUR/USD</span>
+        <span class="val">1.1649</span>
+        <span class="neu">—</span>
+      </span>
+      <span class="chip">
+        <span class="label">GOLD</span>
+        <span class="val">$4,605.82</span>
+        <span class="neu">—</span>
+      </span>
+      <span class="chip">
+        <span class="label">WTI</span>
+        <span class="val">$83.90</span>
+        <span class="neg">−2.83%</span>
+      </span>
+    </div>
+  </div>
+</div>
+
+<!-- EDITOR'S BRIEF -->
+<div class="container">
+  <p class="editors-brief">
+    Markets advanced broadly on Thursday, powered by a technology-driven rally as investors pre-positioned ahead of Nvidia's highly anticipated earnings report — the quarter's defining catalyst — while subdued volatility and resilient macro data supported risk appetite across asset classes. The Nasdaq-100 outpaced broader averages, gold held near historic highs, and crude oil retreated on demand concerns, setting up a consequential end to August with a packed earnings calendar on the horizon.
+  </p>
+
+  <!-- SECTION 1: MARKET DRIVERS -->
+  <div class="section">
+    <span class="watch-pill">⚡ WATCH</span>
+    <span class="section-label">Section 1</span>
+    <h2 class="section-title">Market Drivers</h2>
+    <div class="section-body">
+      <ul>
+        <li><strong>Nvidia earnings fever:</strong> NVDA surged 8.74% on 293 million shares — the most actively traded stock in the US market — as investors positioned aggressively ahead of what analysts describe as "the report the entire market is waiting on." AI-linked semiconductor demand remains the dominant macro-financial narrative.</li>
+        <li><strong>Mega-cap tech lifts Nasdaq:</strong> QQQ's 1.37% gain significantly outpaced SPY (+0.66%) and IWM (+0.29%), underscoring continued large-cap growth dominance. AI software, networking, and semiconductor names drove the bulk of the advance.</li>
+        <li><strong>Goldman Sachs investment banking recovery:</strong> GS shares gained 3.73% earlier this week as recovering capital markets and M&A pipeline data highlighted improving conditions for Wall Street fee revenue — a positive signal for the financial sector's second-half outlook.</li>
+        <li><strong>Home Depot beats, stock dips:</strong> HD posted above-consensus Q2 revenues and earnings but shed approximately 1% as declining transaction volumes signal ongoing consumer restraint in housing-linked spending — a macro caution flag for cyclicals.</li>
+      </ul>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 2: MACRO -->
+  <div class="section">
+    <span class="section-label">Section 2</span>
+    <h2 class="section-title">Macro</h2>
+    <div class="section-body">
+      <p>The Federal Reserve's "higher for longer" posture remains firmly intact, with the 10-year Treasury holding at 4.66% and the 2-year at 4.19% — a modestly steepening curve that reflects investor confidence in a soft landing rather than imminent recession risk. Dollar strength against the yen (USD/JPY 159.49) reflects the persistent divergence between the Fed's hawkish hold and the Bank of Japan's gradual normalization pace, sustaining yen-funded carry trades that underpin US equity flows. EUR/USD's firmness above 1.16 signals that European macro data has been resilient enough to prevent euro weakness, providing a broadly neutral FX backdrop heading into September's catalyst-heavy calendar.</p>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 3: EQUITIES -->
+  <div class="section">
+    <span class="section-label">Section 3</span>
+    <h2 class="section-title">Equities</h2>
+    <div class="section-body">
+      <p>SPY added 0.66% to close at 771.10, QQQ outperformed with a 1.37% advance to 721.11, and IWM lagged at +0.29% to 299.81 — a pattern of large-cap growth dominance over small-cap breadth that has characterized 2026's equity landscape. The bifurcation signals investor selectivity: AI and technology leadership continues to command premium positioning while rate-sensitive small-caps struggle to break out.</p>
+      <p style="margin-top: 10px;"><strong>Notable movers:</strong></p>
+      <ul>
+        <li><strong style="color: var(--positive);">NVDA +8.74%</strong> to $227.98 on 293M shares: Nvidia was the session's defining move, reflecting massive pre-earnings positioning in the world's most strategically important semiconductor company. Consensus expects another record quarter of AI infrastructure revenue.</li>
+        <li><strong style="color: var(--negative);">BBW −27.31%</strong> to $28.42 on 5.3M shares: Build-A-Bear Workshop suffered a sharp session decline, consistent with a disappointing earnings or guidance miss in an environment where consumer-facing discretionary names face execution scrutiny.</li>
+      </ul>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 4: VOLATILITY -->
+  <div class="section">
+    <span class="section-label">Section 4</span>
+    <h2 class="section-title">Volatility</h2>
+    <div class="section-body">
+      <p>The CBOE VIX settled at <strong>14.51</strong>, declining 4.82% on the session and firmly in "complacent" territory (below 15). Markets are pricing very limited near-term tail risk despite a packed earnings calendar — DELL, AVGO, SNOW, and MongoDB all report next week — and elevated single-stock implied volatility in AI names ahead of NVDA. The divergence between low macro vol and high single-stock vol is a structural feature of the AI-era equity market, where idiosyncratic earnings catalysts dominate index-level calm.</p>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 5: FIXED INCOME -->
+  <div class="section">
+    <span class="section-label">Section 5</span>
+    <h2 class="section-title">Fixed Income</h2>
+    <div class="section-body">
+      <p>The 10-year Treasury yield stands at <strong>4.66%</strong> and the 2-year at <strong>4.19%</strong>, producing a curve spread of +47 basis points — a positively sloped, modestly steepening configuration. The curve's normalization from its prior inversion reflects expectations of a gradual Fed easing cycle ahead, though the persistence of elevated short-end yields confirms that the market is not pricing aggressive cuts in the near term. Term premium demand at the long end is being supported by fiscal deficit concerns and robust auction demand from international buyers, keeping the curve's steepening orderly rather than disruptive.</p>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 6: CURRENCIES -->
+  <div class="section">
+    <span class="section-label">Section 6</span>
+    <h2 class="section-title">Currencies</h2>
+    <div class="section-body">
+      <p>EUR/USD trades at <strong>1.1649</strong>, near multi-month highs, underpinned by a narrowing in US-EU rate differentials and resilient eurozone data that has prevented a sustained dollar breakout. USD/JPY sits at <strong>159.49</strong>, near levels that previously prompted Japanese Ministry of Finance verbal intervention, keeping traders alert to official yen-support actions. The yen's persistent weakness reflects the structural carry trade dynamic: as long as the Fed-BoJ rate differential remains wide, yen-funded equity and carry positions will sustain dollar demand, though intervention risk limits the downside beyond 160.</p>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 7: COMMODITIES -->
+  <div class="section">
+    <span class="section-label">Section 7</span>
+    <h2 class="section-title">Commodities</h2>
+    <div class="section-body">
+      <p>Gold trades at <strong>$4,605.82/oz</strong>, a marginal retreat from recent record highs as a modest pullback in spot prices triggered profit-taking in gold mining equities — Agnico Eagle (AEM) shed 3.56% on Thursday on combined pressure from lower gold prices and elevated capital expenditure guidance. Despite the near-term dip, gold's structural bid remains intact, driven by central bank accumulation, geopolitical risk hedging, and dollar debasement concerns. WTI crude last settled at <strong>$83.90/bbl</strong>, sliding from recent highs above $87 as demand signals from China and Europe have softened, while OPEC+ production flexibility signals reduce the supply-constraint premium. The WTI trend is bearish short-term, though geopolitical risk floor support persists.</p>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 8: EARNINGS CALENDAR (renumbered from 9; Digital Assets omitted) -->
+  <div class="section">
+    <span class="section-label">Section 8</span>
+    <h2 class="section-title">Earnings Radar</h2>
+    <div class="section-body">
+      <p>Key reports over the next five trading days. NVDA is expected to report in the very near term (news-flagged as the market's top catalyst) but does not appear in the formal 5-day calendar window below.</p>
+      <table class="earnings-table">
+        <thead>
+          <tr>
+            <th>Company</th>
+            <th>Date</th>
+            <th>Expected Move Context</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>DELL — Dell Technologies</td>
+            <td>Sep 1</td>
+            <td>Est. $4.63 EPS; AI-driven server demand, enterprise hardware cycle and margin resilience in focus</td>
+          </tr>
+          <tr>
+            <td>MDT — Medtronic</td>
+            <td>Sep 1</td>
+            <td>Est. $1.38 EPS; FY guidance and procedure volume recovery key; margin outlook versus cost headwinds</td>
+          </tr>
+          <tr>
+            <td>MDB — MongoDB</td>
+            <td>Sep 1</td>
+            <td>Est. $0.08 EPS; cloud consumption trajectory and Atlas growth; AI-native database positioning watched</td>
+          </tr>
+          <tr>
+            <td>AVGO — Broadcom</td>
+            <td>Sep 2</td>
+            <td>Est. $2.83 EPS; custom AI ASIC revenue ramp and hyperscaler contract visibility central to outlook</td>
+          </tr>
+          <tr>
+            <td>SNOW — Snowflake</td>
+            <td>Sep 2</td>
+            <td>Est. −$0.51 EPS; RPO growth and AI/Cortex integration adoption are the key proof points for valuation</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</div><!-- end .container -->
+
+<!-- FOOTER -->
+<div class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <span class="footer-left">Market Quick Take &middot; Friday, 28 August 2026</span>
+      <span class="footer-right">For informational purposes only. Not investment advice.</span>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
