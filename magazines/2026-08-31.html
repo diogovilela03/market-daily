@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Market Quick Take — 31 August 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: #ffffff;
+    color: #1a2332;
+    font-family: 'Inter', system-ui, sans-serif;
+    font-size: 15px;
+    line-height: 1.8;
+  }
+
+  .container {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  /* MASTHEAD */
+  .masthead-wrap {
+    border-top: 3px solid #003366;
+    padding: 32px 0 20px;
+    border-bottom: 1px solid #e5e7eb;
+    margin-bottom: 0;
+  }
+  .masthead-title {
+    font-size: 42px;
+    font-weight: 700;
+    color: #003366;
+    letter-spacing: -0.5px;
+    line-height: 1.1;
+  }
+  .masthead-date {
+    font-size: 13px;
+    font-weight: 400;
+    color: #6b7280;
+    margin-top: 6px;
+  }
+
+  /* SNAPSHOT BAR */
+  .snapshot-bar {
+    background: #f1f5f9;
+    padding: 12px 0;
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  .snapshot-inner {
+    padding: 0 24px;
+    max-width: 860px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+    align-items: center;
+  }
+  .chip {
+    font-size: 12px;
+    font-weight: 500;
+    color: #1a2332;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    padding: 0 10px;
+    white-space: nowrap;
+  }
+  .chip:first-child { padding-left: 0; }
+  .chip-sep {
+    color: #9ca3af;
+    font-size: 12px;
+    font-weight: 400;
+    user-select: none;
+  }
+  .pos { color: #16a34a; }
+  .neg { color: #dc2626; }
+  .muted { color: #6b7280; }
+
+  /* EDITOR'S BRIEF */
+  .editors-brief {
+    font-size: 18px;
+    font-weight: 400;
+    font-style: italic;
+    color: #374151;
+    max-width: 760px;
+    margin: 28px 0;
+    border-left: 3px solid #003366;
+    padding-left: 16px;
+    line-height: 1.7;
+  }
+
+  /* SECTIONS */
+  .section { margin-bottom: 0; }
+  .section-divider { border: none; border-top: 1px solid #e5e7eb; margin: 28px 0; }
+
+  .section-label {
+    font-size: 11px;
+    font-weight: 500;
+    color: #003366;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    display: block;
+    margin-bottom: 6px;
+  }
+  .section-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1a2332;
+    margin-bottom: 10px;
+    line-height: 1.2;
+  }
+  .section-body {
+    font-size: 15px;
+    font-weight: 400;
+    color: #374151;
+    line-height: 1.8;
+  }
+  .section-body ul {
+    padding-left: 8px;
+    list-style: disc;
+    list-style-position: outside;
+    margin-left: 16px;
+  }
+  .section-body li {
+    margin-bottom: 6px;
+  }
+  .section-body p + p { margin-top: 10px; }
+
+  /* WATCH BADGE */
+  .watch-badge {
+    display: inline-block;
+    background: #fef3c7;
+    color: #b45309;
+    font-size: 11px;
+    font-weight: 500;
+    border-radius: 4px;
+    padding: 2px 8px;
+    margin-bottom: 8px;
+    letter-spacing: 0.3px;
+  }
+
+  /* EARNINGS TABLE */
+  .earnings-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    font-weight: 400;
+    color: #374151;
+    margin-top: 12px;
+    overflow-x: auto;
+    display: block;
+  }
+  .earnings-table th {
+    background: #f1f5f9;
+    color: #003366;
+    font-weight: 600;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 8px 12px;
+    text-align: left;
+    border: 1px solid #e5e7eb;
+    white-space: nowrap;
+  }
+  .earnings-table td {
+    padding: 8px 12px;
+    border: 1px solid #e5e7eb;
+    vertical-align: top;
+  }
+  .earnings-table tr:nth-child(even) td { background: #fafafa; }
+
+  /* FOOTER */
+  .footer {
+    background: #f1f5f9;
+    border-top: 1px solid #e5e7eb;
+    margin-top: 48px;
+    padding: 20px 0;
+  }
+  .footer-inner {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .footer-name { font-size: 12px; font-weight: 400; color: #6b7280; }
+  .footer-disclaimer { font-size: 12px; font-weight: 400; color: #9ca3af; }
+</style>
+</head>
+<body>
+
+<!-- MASTHEAD -->
+<div class="container">
+  <div class="masthead-wrap">
+    <div class="masthead-title">MARKET QUICK TAKE</div>
+    <div class="masthead-date">Monday, 31 August 2026</div>
+  </div>
+</div>
+
+<!-- SNAPSHOT BAR -->
+<div class="snapshot-bar">
+  <div class="snapshot-inner">
+    <span class="chip">SPY&nbsp;·&nbsp;$769.35&nbsp;·&nbsp;<span class="neg">-0.23%</span></span>
+    <span class="chip-sep">|</span>
+    <span class="chip">QQQ&nbsp;·&nbsp;$716.43&nbsp;·&nbsp;<span class="neg">-0.65%</span></span>
+    <span class="chip-sep">|</span>
+    <span class="chip">IWM&nbsp;·&nbsp;$295.75&nbsp;·&nbsp;<span class="neg">-1.35%</span></span>
+    <span class="chip-sep">|</span>
+    <span class="chip">VIX&nbsp;·&nbsp;14.43&nbsp;·&nbsp;<span class="neg">-0.55%</span></span>
+    <span class="chip-sep">|</span>
+    <span class="chip">US10Y&nbsp;·&nbsp;4.67%&nbsp;·&nbsp;<span class="pos">+1bp</span></span>
+    <span class="chip-sep">|</span>
+    <span class="chip">US2Y&nbsp;·&nbsp;4.20%&nbsp;·&nbsp;<span class="pos">+1bp</span></span>
+    <span class="chip-sep">|</span>
+    <span class="chip">EUR/USD&nbsp;·&nbsp;1.1594&nbsp;·&nbsp;<span class="muted">N/A</span></span>
+    <span class="chip-sep">|</span>
+    <span class="chip">GOLD&nbsp;·&nbsp;$4,440&nbsp;·&nbsp;<span class="muted">N/A</span></span>
+    <span class="chip-sep">|</span>
+    <span class="chip">WTI&nbsp;·&nbsp;$83.90&nbsp;·&nbsp;<span class="neg">-2.83%</span></span>
+  </div>
+</div>
+
+<!-- EDITOR'S BRIEF -->
+<div class="container">
+  <div class="editors-brief">
+    A broad risk-off tone closed out August as surging long-end Treasury yields — with the 30-year reportedly near 19-year highs — hammered homebuilders, utilities, and growth tech, while NVIDIA fell sharply on post-earnings profit-taking despite robust AI demand. Small caps bore the brunt (-1.35%), gold soared to a fresh record above $4,440, and a pivotal week of enterprise tech earnings — headlined by Broadcom and Dell — now commands the market's full attention.
+  </div>
+
+  <!-- SECTION 1: MARKET DRIVERS -->
+  <div class="section">
+    <span class="watch-badge">⚡ WATCH</span>
+    <span class="section-label">Section 1</span>
+    <h2 class="section-title">Market Drivers</h2>
+    <div class="section-body">
+      <ul>
+        <li><strong>Treasury yield surge as primary headwind.</strong> The 10-year yield held at 4.67% and the 30-year reportedly touched a 19-year high, compressing multiples across rate-sensitive sectors — homebuilders (KB Home, Meritage, LGI Homes plunged), utilities, and high-duration tech all sold off materially.</li>
+        <li><strong>NVIDIA post-earnings selloff.</strong> NVDA fell -4.58% on record volume (~193M shares traded), reflecting a classic "sell the news" reaction after its highly anticipated AI-driven earnings report. The stock remains the single most important barometer for AI capital-expenditure sentiment.</li>
+        <li><strong>Frozen housing market deepens.</strong> Hovnanian reported a quarterly loss and a 12% revenue decline, citing stagnant demand driven by high mortgage rates and consumer hesitancy — underscoring that the rate transmission to the real economy is ongoing.</li>
+        <li><strong>Divergent sector rotation.</strong> Financials held up, with Goldman Sachs surging earlier in the week on investment banking recovery and yield-volatility benefits. Defensive dividend names and life insurers found bids as higher-for-longer rates boosted annuity franchise value.</li>
+      </ul>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 2: MACRO -->
+  <div class="section">
+    <span class="section-label">Section 2</span>
+    <h2 class="section-title">Macro</h2>
+    <div class="section-body">
+      <p>The macro environment remains defined by a sharp tension: July's flat Producer Price Index offered a cautious signal that headline inflation is plateauing, yet long-end Treasury yields continue to grind higher — driven by fiscal supply concerns and sticky nominal growth expectations — keeping financial conditions tight. The Federal Reserve appears on hold, with no near-term rate decision scheduled, and market pricing has adjusted to a prolonged pause as "higher for longer" becomes the consensus. A mixed Q2 earnings season — featuring strong beats in financials, AI infrastructure, and select tech, alongside misses in regional banks and consumer discretionary — leaves the macro picture murky heading into September. Weaker July jobs data did offer a brief growth-stock reprieve, but the dominant force remains yield pressure rather than rate-cut optimism.</p>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 3: EQUITIES -->
+  <div class="section">
+    <span class="section-label">Section 3</span>
+    <h2 class="section-title">Equities</h2>
+    <div class="section-body">
+      <p>Major benchmarks finished August on the back foot: SPY -0.23%, QQQ -0.65%, and IWM -1.35% on the final trading session of the month. Tech led losses as NVIDIA's post-earnings decline rippled into semiconductor proxies — SOXL shed -9.48% and INTC slid -2.85%. The small-cap underperformance in IWM is notable, suggesting investors are rotating defensively rather than embracing the rate-sensitive growth bets that characterize the Russell 2000.</p>
+      <p><strong>Notable movers (Aug 28):</strong></p>
+      <ul>
+        <li><strong>NVDA -4.58%</strong> ($217.55): Post-earnings selloff on the most actively traded session in recent memory (~193M shares). AI revenue growth robust but lofty valuation leaves no room for guidance misses; the magnitude of the move reflects crowded positioning unwinding.</li>
+        <li><strong>IREN -12.53%</strong> ($35.45): Bitcoin mining and AI infrastructure company caught in a double-whammy of crypto weakness (IBIT -3.07%) and broad AI infrastructure profit-taking following the NVDA reaction.</li>
+      </ul>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 4: VOLATILITY -->
+  <div class="section">
+    <span class="section-label">Section 4</span>
+    <h2 class="section-title">Volatility</h2>
+    <div class="section-body">
+      <p>VIX at 14.43 (-0.55%) sits firmly in complacent territory — well below the 20-level threshold that signals elevated fear. Despite the day's sector turbulence, implied volatility markets remain sanguine, suggesting options markets do not anticipate a broad-based shock. The VIX sub-15 reading contrasts with genuine stress in individual names (IREN -12%, NVDA -4.6%, SOXL -9.5%), indicating that idiosyncratic risk is dominating rather than systemic contagion. Watch for vol repricing into Broadcom earnings (Sep 2) and the first full week of September macro data — historically a seasonally choppy period.</p>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 5: FIXED INCOME -->
+  <div class="section">
+    <span class="section-label">Section 5</span>
+    <h2 class="section-title">Fixed Income</h2>
+    <div class="section-body">
+      <p>The 10-year Treasury yield stands at 4.67% and the 2-year at 4.20%, placing the 2Y-10Y spread at +47 basis points — a positively sloped curve with no inversion. The bear steepener dynamic persists: long-end yields are rising faster than short-end rates, driven by fiscal supply concerns (elevated deficit spending), term premium normalization, and diminishing Fed-cut expectations. At these absolute yield levels, equities face a meaningful valuation headwind — the earnings yield on SPY (~1.6-1.7% estimated) remains well below the risk-free 10-year rate, challenging the traditional equity risk premium framework. Homebuilder stocks were the most direct casualty of Friday's yield move, as mortgage rate sensitivity is acute at current levels.</p>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 6: CURRENCIES -->
+  <div class="section">
+    <span class="section-label">Section 6</span>
+    <h2 class="section-title">Currencies</h2>
+    <div class="section-body">
+      <p>EUR/USD trades at 1.1594, with the euro finding support from an ECB posture that remains relatively hawkish compared to Fed pause expectations. The dollar has not materially strengthened despite elevated U.S. yields, reflecting global reserve diversification and geopolitical hedging flows. USD/JPY at 159.64 continues to test multi-decade extremes: the yen remains structurally weak under the BOJ's cautious policy normalization path, but the gap between U.S. and Japanese policy rates — with U.S. at 4.67% and JGB yields a fraction of that — sustains the carry trade dynamic. BOJ intervention risk rises materially above the 160 handle and should be monitored as a tail risk for global volatility.</p>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 7: COMMODITIES -->
+  <div class="section">
+    <span class="section-label">Section 7</span>
+    <h2 class="section-title">Commodities</h2>
+    <div class="section-body">
+      <p>Gold reached $4,440.40/oz — a continuation of its record-setting run through 2026. The primary drivers are: (1) sustained central bank accumulation from emerging market reserve managers diversifying away from dollar assets; (2) real rate dynamics that, despite elevated nominal yields, remain supportive as inflation expectations stay anchored; and (3) persistent geopolitical risk premium. Wheaton Precious Metals recently reported record H1 revenues, validating the structural gold bull case. WTI crude at $83.90/bbl (Aug 25) has pulled back from a recent peak above $90, driven by demand-side concerns as global growth signals soften. OPEC+ supply discipline provides a floor, but a decelerating U.S. consumer and Chinese economic uncertainty cap the upside. Energy stocks remain bifurcated between long-term contract holders benefiting from elevated prices and short-cycle operators exposed to spot rate volatility.</p>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 8: EARNINGS CALENDAR -->
+  <div class="section">
+    <span class="section-label">Section 8</span>
+    <h2 class="section-title">Earnings Calendar</h2>
+    <div class="section-body">
+      <p>The next five trading days (Aug 31 – Sep 4) deliver a critical cluster of enterprise tech and consumer reports that will set the tone for September:</p>
+      <div style="overflow-x:auto;">
+        <table class="earnings-table">
+          <thead>
+            <tr>
+              <th>Company</th>
+              <th>Date</th>
+              <th>EPS Estimate</th>
+              <th>Expected Move</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Dell Technologies (DELL)</strong><br><span style="color:#6b7280;font-size:12px;">AI server bellwether; key read on enterprise capex cycle</span></td>
+              <td>Sep 1<br><span style="color:#6b7280;font-size:12px;">Post-market</span></td>
+              <td>$4.72</td>
+              <td>N/A</td>
+            </tr>
+            <tr>
+              <td><strong>MongoDB (MDB)</strong><br><span style="color:#6b7280;font-size:12px;">AI-native database demand; enterprise software signal</span></td>
+              <td>Sep 1<br><span style="color:#6b7280;font-size:12px;">Post-market</span></td>
+              <td>$0.08</td>
+              <td>N/A</td>
+            </tr>
+            <tr>
+              <td><strong>Broadcom (AVGO)</strong><br><span style="color:#6b7280;font-size:12px;">Critical AI chip &amp; networking report after NVDA reaction</span></td>
+              <td>Sep 2<br><span style="color:#6b7280;font-size:12px;">Post-market</span></td>
+              <td>$2.83</td>
+              <td>N/A</td>
+            </tr>
+            <tr>
+              <td><strong>Snowflake (SNOW)</strong><br><span style="color:#6b7280;font-size:12px;">Cloud data platform; AI workload monetization progress</span></td>
+              <td>Sep 2<br><span style="color:#6b7280;font-size:12px;">Post-market</span></td>
+              <td>-$0.51</td>
+              <td>N/A</td>
+            </tr>
+            <tr>
+              <td><strong>Lululemon Athletica (LULU)</strong><br><span style="color:#6b7280;font-size:12px;">Consumer discretionary health check; North America demand</span></td>
+              <td>Sep 3<br><span style="color:#6b7280;font-size:12px;">Post-market</span></td>
+              <td>$1.79</td>
+              <td>N/A</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="margin-top:12px; font-size:13px; color:#6b7280;">EPS estimates sourced from Alpha Vantage Earnings Calendar. Expected move data unavailable — options pricing not included in data set.</p>
+    </div>
+  </div>
+
+</div><!-- end .container -->
+
+<!-- FOOTER -->
+<div class="footer">
+  <div class="footer-inner">
+    <span class="footer-name">Market Quick Take &nbsp;·&nbsp; Monday, 31 August 2026</span>
+    <span class="footer-disclaimer">For informational purposes only. Not investment advice.</span>
+  </div>
+</div>
+
+</body>
+</html>
