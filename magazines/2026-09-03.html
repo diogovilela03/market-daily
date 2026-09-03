@@ -1,0 +1,374 @@
+<title>Market Quick Take</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+  *, *::before, *::after { box-sizing: border-box; }
+
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+    background: #ffffff;
+    color: #1a2332;
+    margin: 0;
+    padding: 0;
+  }
+
+  .container {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  /* MASTHEAD */
+  .masthead {
+    border-top: 3px solid #003366;
+    padding: 32px 0 20px;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  .masthead__title {
+    font-size: 42px;
+    font-weight: 700;
+    color: #003366;
+    letter-spacing: -0.5px;
+    margin: 0 0 6px 0;
+  }
+  .masthead__date {
+    font-size: 13px;
+    font-weight: 400;
+    color: #6b7280;
+    margin: 0;
+  }
+
+  /* SNAPSHOT BAR */
+  .snapshot-bar {
+    background: #f1f5f9;
+    padding: 12px 0;
+    width: 100%;
+  }
+  .snapshot-bar__inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0;
+    padding: 0 24px;
+    max-width: 860px;
+    margin: 0 auto;
+  }
+  .chip {
+    font-size: 12px;
+    font-weight: 500;
+    color: #1a2332;
+    text-transform: uppercase;
+    white-space: nowrap;
+    padding: 0 10px;
+    border-right: 1px solid #cbd5e1;
+    line-height: 1.4;
+  }
+  .chip:first-child { padding-left: 0; }
+  .chip:last-child { border-right: none; }
+  .pos { color: #16a34a; }
+  .neg { color: #dc2626; }
+  .muted { color: #6b7280; }
+
+  /* EDITOR'S BRIEF */
+  .brief {
+    font-size: 18px;
+    font-weight: 400;
+    font-style: italic;
+    color: #374151;
+    max-width: 760px;
+    margin: 28px 0;
+    border-left: 3px solid #003366;
+    padding-left: 16px;
+    line-height: 1.7;
+  }
+
+  /* SECTIONS */
+  .section {
+    margin-bottom: 0;
+  }
+  .section-label {
+    font-size: 11px;
+    font-weight: 500;
+    color: #003366;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin: 0 0 6px 0;
+    display: block;
+  }
+  .section-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1a2332;
+    margin: 0 0 10px 0;
+  }
+  .section-body {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.8;
+    color: #374151;
+  }
+  .section-body ul {
+    margin: 8px 0;
+    padding-left: 8px;
+    list-style: disc;
+    padding-left: 20px;
+  }
+  .section-body li {
+    margin-bottom: 6px;
+  }
+
+  hr.divider {
+    border: none;
+    border-top: 1px solid #e5e7eb;
+    margin: 28px 0;
+  }
+
+  /* WATCH PILL */
+  .watch-pill {
+    display: inline-block;
+    background: #fef3c7;
+    color: #b45309;
+    font-size: 11px;
+    font-weight: 500;
+    border-radius: 4px;
+    padding: 2px 8px;
+    margin-bottom: 8px;
+  }
+
+  /* EARNINGS TABLE */
+  .earnings-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    margin-top: 12px;
+    overflow-x: auto;
+    display: block;
+  }
+  .earnings-table thead th {
+    background: #f1f5f9;
+    font-weight: 600;
+    text-align: left;
+    padding: 8px 12px;
+    border: 1px solid #e5e7eb;
+    color: #1a2332;
+    white-space: nowrap;
+  }
+  .earnings-table tbody td {
+    padding: 8px 12px;
+    border: 1px solid #e5e7eb;
+    color: #374151;
+    vertical-align: top;
+  }
+  .earnings-table tbody tr:nth-child(even) td {
+    background: #f9fafb;
+  }
+
+  /* FOOTER */
+  .footer {
+    background: #f1f5f9;
+    border-top: 1px solid #e5e7eb;
+    margin-top: 48px;
+    padding: 20px 0;
+  }
+  .footer__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .footer span {
+    font-size: 12px;
+    font-weight: 400;
+  }
+  .footer__name { color: #6b7280; }
+  .footer__disclaimer { color: #9ca3af; }
+</style>
+
+<!-- MASTHEAD -->
+<div class="container">
+  <div class="masthead">
+    <h1 class="masthead__title">MARKET QUICK TAKE</h1>
+    <p class="masthead__date">Thursday, 3 September 2026</p>
+  </div>
+</div>
+
+<!-- SNAPSHOT BAR -->
+<div class="snapshot-bar">
+  <div class="snapshot-bar__inner">
+    <span class="chip">SPY · 765.16 · <span class="pos">+0.44%</span></span>
+    <span class="chip">QQQ · 709.24 · <span class="pos">+0.23%</span></span>
+    <span class="chip">IWM · 294.01 · <span class="pos">+1.18%</span></span>
+    <span class="chip">VIX · 15.20 · <span class="neg">-7.50%</span></span>
+    <span class="chip">US10Y · 4.79% · <span class="neg">+4bp</span></span>
+    <span class="chip">US2Y · 4.39% · <span class="neg">+5bp</span></span>
+    <span class="chip">EUR/USD · 1.1617 · <span class="muted">N/A</span></span>
+    <span class="chip">GOLD · 4,422.83 · <span class="muted">N/A</span></span>
+    <span class="chip">WTI · 91.48 · <span class="pos">+5.12%</span></span>
+  </div>
+</div>
+
+<!-- EDITOR'S BRIEF -->
+<div class="container">
+  <p class="brief">
+    US equities opened September on a broadly positive note, with small-caps leading the charge as IWM gained 1.18% while investors braced for the week's heaviest earnings slate — headlined by Nvidia's pivotal report. Risk appetite remained measured but constructive, even as WTI crude surged past $91 and the 10-year Treasury held near 4.79%, keeping the reflation trade firmly in focus.
+  </p>
+
+  <!-- SECTION 1: MARKET DRIVERS -->
+  <div class="section">
+    <span class="watch-pill">⚡ WATCH</span>
+    <span class="section-label">Section 1</span>
+    <h2 class="section-title">Market Drivers</h2>
+    <div class="section-body">
+      <ul>
+        <li><strong>Nvidia earnings in the spotlight.</strong> The AI chipmaker's results — due this week — are the single most anticipated market event of the month. With a relevance score of 0.95 in the financial markets news feed, Nvidia's report is expected to set the directional tone for technology, semiconductors, and AI-adjacent equities broadly.</li>
+        <li><strong>WTI crude surges above $91.</strong> Oil jumped sharply from $87.03 to $91.48/bbl, a 5.1% single-session move, driven by tightening supply signals from OPEC+ and a pickup in seasonal demand. Energy stocks are moving in sympathy, putting inflationary pressures back under the microscope.</li>
+        <li><strong>Small-caps outperform.</strong> IWM's 1.18% advance relative to SPY's 0.44% suggests improving risk appetite and growing confidence in domestic economic resilience — typically a constructive signal when the rally broadens beyond mega-cap tech.</li>
+        <li><strong>Rate uncertainty persists.</strong> The 10-year yield firmed to 4.79% (+4bp), reflecting the market's recalibration away from near-term Fed cuts. Fed posture remains one of cautious patience, with the curve steepening modestly — a theme echoed across fixed income and bank equity narratives.</li>
+      </ul>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- SECTION 2: MACRO -->
+  <div class="section">
+    <span class="section-label">Section 2</span>
+    <h2 class="section-title">Macro</h2>
+    <div class="section-body">
+      <p>The 10-year Treasury yield held at 4.79%, extending its August climb as the market weighs a resilient labor market against sticky services inflation — with no imminent Fed rate cut priced in. The Fed's posture remains one of patient observation, and the latest commodity surge (WTI +5%) risks adding renewed impetus to the reflation argument, complicating any dovish pivot narrative. Geopolitically, elevated energy prices are functioning as a de facto tax on consumers and a tailwind for producers, keeping the growth-versus-inflation tradeoff live into Q4.</p>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- SECTION 3: EQUITIES -->
+  <div class="section">
+    <span class="watch-pill">⚡ WATCH</span>
+    <span class="section-label">Section 3</span>
+    <h2 class="section-title">Equities</h2>
+    <div class="section-body">
+      <p>All three major ETFs closed higher: <strong>SPY +0.44%</strong> (765.16), <strong>QQQ +0.23%</strong> (709.24), and <strong>IWM +1.18%</strong> (294.01) — with the Russell 2000 clearly leading on breadth. Notable movers:</p>
+      <ul>
+        <li><strong>NVDA +3.21% ($224.41)</strong> on 153M shares — markets are front-running what promises to be a market-defining earnings report. Analysts expect strong AI infrastructure demand; any miss would reverberate across the sector.</li>
+        <li><strong>GPRO +37.40% ($1.69)</strong> on extraordinary volume of 235M shares — the GoPro spike reflects either a short-squeeze dynamic or event-driven catalysis, worth monitoring for follow-through.</li>
+      </ul>
+      <p>Earlier in the week, Goldman Sachs rose 3.73% on reviving investment banking and capital markets momentum — a signal that deal activity may be returning as rate uncertainty stabilizes.</p>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- SECTION 4: VOLATILITY -->
+  <div class="section">
+    <span class="section-label">Section 4</span>
+    <h2 class="section-title">Volatility</h2>
+    <div class="section-body">
+      <p>The CBOE VIX (15-minute delayed) sits at <strong>15.20</strong>, down 7.50% from the prior close — comfortably in the "complacent" zone below 20. Despite a busy earnings calendar and an oil supply shock, markets are not positioning defensively near-term. The low VIX heading into Nvidia's report is notable: either participants are confident in a positive outcome, or hedges are simply being unwound after August's elevated period. A VIX spike above 20 on an earnings miss would be the clearest volatility signal to watch.</p>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- SECTION 5: FIXED INCOME -->
+  <div class="section">
+    <span class="section-label">Section 5</span>
+    <h2 class="section-title">Fixed Income</h2>
+    <div class="section-body">
+      <p>The <strong>US 10-year yield</strong> stands at <strong>4.79%</strong>, up 4 basis points from the prior session, while the <strong>US 2-year yield</strong> is at <strong>4.39%</strong> (+5bp). The <strong>10Y–2Y spread</strong> is a positive <strong>+40 basis points</strong> — a normally sloped curve that reflects a meaningful steepening from the deep inversion of 2023–2024. The un-inversion signals waning recession anxiety, but the elevated absolute yield level is keeping pressure on rate-sensitive sectors including housing, utilities, and growth equities. No imminent Fed action is priced by the market.</p>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- SECTION 6: CURRENCIES -->
+  <div class="section">
+    <span class="section-label">Section 6</span>
+    <h2 class="section-title">Currencies</h2>
+    <div class="section-body">
+      <p><strong>EUR/USD at 1.1617</strong> reflects a modestly soft dollar against the euro — consistent with the market's gradual repricing away from US exceptionalism as European growth data surprises to the upside. <strong>USD/JPY at 156.68</strong> — the yen remains under pressure from the wide rate differential between the Bank of Japan's structurally accommodative policy and elevated US yields. While the pair has stabilized from recent highs, any hawkish pivot from the BoJ or a dovish Fed surprise could sharply unwind yen carry trades, presenting a tail risk for global equity positioning.</p>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- SECTION 7: COMMODITIES -->
+  <div class="section">
+    <span class="section-label">Section 7</span>
+    <h2 class="section-title">Commodities</h2>
+    <div class="section-body">
+      <p><strong>Gold spot at $4,422.83/oz</strong> — the yellow metal continues to trade near multi-year highs, supported by persistent macro uncertainty, robust central bank demand, and the ongoing debasement narrative. Earlier this week, Agnico Eagle (AEM) pulled back 3.56% on a spot gold correction, suggesting some profit-taking, but the structural bid remains intact.</p>
+      <p><strong>WTI crude at $91.48/bbl</strong> — a sharp 5.1% session gain from $87.03 signals a significant supply-side development. OPEC+ production discipline and a drawdown in global inventories appear to be the primary drivers. With oil approaching the psychologically important $92–95 range, the inflation outlook for Q4 becomes materially more complex, and energy stocks are the direct beneficiary in the near term.</p>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- SECTION 8: EARNINGS RADAR (renumbered from 9, Digital Assets omitted) -->
+  <div class="section">
+    <span class="section-label">Section 8</span>
+    <h2 class="section-title">Earnings Radar</h2>
+    <div class="section-body">
+      <p>A busy reporting week with multiple consumer, SaaS, and enterprise names in focus. The market will be paying particular attention to any commentary on consumer spending, AI infrastructure demand, and the impact of elevated energy costs on margins.</p>
+      <div style="overflow-x: auto;">
+        <table class="earnings-table">
+          <thead>
+            <tr>
+              <th>Company</th>
+              <th>Ticker</th>
+              <th>Date</th>
+              <th>EPS Estimate</th>
+              <th>Expected Move Context</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Lululemon Athletica</td>
+              <td>LULU</td>
+              <td>Sept 3</td>
+              <td>$1.79</td>
+              <td>Consumer health check; any softness in traffic signals discretionary slowdown</td>
+            </tr>
+            <tr>
+              <td>DocuSign</td>
+              <td>DOCU</td>
+              <td>Sept 3</td>
+              <td>$0.44</td>
+              <td>SaaS spending indicator; investor focus on seat growth and net dollar retention</td>
+            </tr>
+            <tr>
+              <td>Copart</td>
+              <td>CPRT</td>
+              <td>Sept 3</td>
+              <td>$0.39</td>
+              <td>Auto market bellwether; salvage volumes reflect claims trends and used-car pricing</td>
+            </tr>
+            <tr>
+              <td>Oracle</td>
+              <td>ORCL</td>
+              <td>Sept 8</td>
+              <td>$1.40</td>
+              <td>Cloud infrastructure demand; AI workload commentary closely watched after NVDA results</td>
+            </tr>
+            <tr>
+              <td>Casey's General Stores</td>
+              <td>CASY</td>
+              <td>Sept 8</td>
+              <td>$6.59</td>
+              <td>Energy/consumer crossover; fuel margin and inside-sales trends in focus given WTI surge</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+</div><!-- /.container -->
+
+<!-- FOOTER -->
+<div class="footer">
+  <div class="container footer__inner">
+    <span class="footer__name">Market Quick Take · Thursday, 3 September 2026</span>
+    <span class="footer__disclaimer">For informational purposes only. Not investment advice.</span>
+  </div>
+</div>
