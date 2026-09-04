@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Market Quick Take — Friday, 4 September 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background: #ffffff;
+    color: #1a2332;
+    font-size: 15px;
+    line-height: 1.8;
+  }
+  .container {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  /* MASTHEAD */
+  .masthead {
+    border-top: 3px solid #003366;
+    padding: 32px 0 20px;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  .masthead-title {
+    font-size: 42px;
+    font-weight: 700;
+    color: #003366;
+    letter-spacing: -0.5px;
+    line-height: 1.1;
+  }
+  .masthead-date {
+    font-size: 13px;
+    font-weight: 400;
+    color: #6b7280;
+    margin-top: 6px;
+  }
+
+  /* SNAPSHOT BAR */
+  .snapshot-bar {
+    background: #f1f5f9;
+    padding: 12px 0;
+    width: 100%;
+  }
+  .snapshot-inner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 0;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 500;
+    color: #1a2332;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+  }
+  .chip {
+    white-space: nowrap;
+    padding: 0 12px;
+    border-right: 1px solid #cbd5e1;
+    line-height: 1.6;
+  }
+  .chip:last-child { border-right: none; }
+  .pos { color: #16a34a; }
+  .neg { color: #dc2626; }
+  .neu { color: #6b7280; }
+
+  /* EDITOR'S BRIEF */
+  .brief {
+    font-size: 18px;
+    font-weight: 400;
+    font-style: italic;
+    color: #374151;
+    max-width: 760px;
+    margin: 28px 0;
+    border-left: 3px solid #003366;
+    padding-left: 16px;
+    line-height: 1.7;
+  }
+
+  /* SECTIONS */
+  .section { margin: 0; }
+  .section-divider {
+    border: none;
+    border-top: 1px solid #e5e7eb;
+    margin: 28px 0;
+  }
+  .section-label {
+    font-size: 11px;
+    font-weight: 500;
+    color: #003366;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 6px;
+  }
+  .section-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1a2332;
+    margin-bottom: 10px;
+  }
+  .body-text {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.8;
+    color: #374151;
+  }
+  .body-text ul {
+    padding-left: 20px;
+    margin-top: 4px;
+  }
+  .body-text ul li {
+    margin-bottom: 6px;
+  }
+
+  /* WATCH PILL */
+  .watch-pill {
+    display: inline-block;
+    background: #fef3c7;
+    color: #b45309;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 500;
+    padding: 2px 8px;
+    margin-bottom: 8px;
+    letter-spacing: 0.03em;
+  }
+
+  /* EARNINGS TABLE */
+  .earnings-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    font-weight: 400;
+    color: #374151;
+    margin-top: 12px;
+  }
+  .earnings-table th {
+    background: #f1f5f9;
+    font-weight: 600;
+    color: #1a2332;
+    text-align: left;
+    padding: 8px 12px;
+    border: 1px solid #e5e7eb;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+  .earnings-table td {
+    padding: 8px 12px;
+    border: 1px solid #e5e7eb;
+    vertical-align: middle;
+  }
+  .earnings-table tr:nth-child(even) td { background: #f9fafb; }
+
+  /* FOOTER */
+  .footer {
+    background: #f1f5f9;
+    border-top: 1px solid #e5e7eb;
+    margin-top: 48px;
+    padding: 20px 0;
+  }
+  .footer-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .footer-brand { font-size: 12px; color: #6b7280; }
+  .footer-disclaimer { font-size: 12px; color: #9ca3af; }
+</style>
+</head>
+<body>
+
+<!-- MASTHEAD -->
+<div class="container">
+  <div class="masthead">
+    <div class="masthead-title">MARKET QUICK TAKE</div>
+    <div class="masthead-date">Friday, 4 September 2026</div>
+  </div>
+</div>
+
+<!-- SNAPSHOT BAR -->
+<div class="snapshot-bar">
+  <div class="container">
+    <div class="snapshot-inner">
+      <span class="chip">SPY · $773.17 · <span class="pos">+1.05%</span></span>
+      <span class="chip">QQQ · $717.67 · <span class="pos">+1.19%</span></span>
+      <span class="chip">IWM · $295.19 · <span class="pos">+0.40%</span></span>
+      <span class="chip">VIX · 14.32 · <span class="pos">-6.14%</span></span>
+      <span class="chip">US10Y · 4.79% · <span class="neu">flat</span></span>
+      <span class="chip">US2Y · 4.39% · <span class="neu">flat</span></span>
+      <span class="chip">EUR/USD · 1.1632 · <span class="neu">N/A</span></span>
+      <span class="chip">GOLD · $4,469.65 · <span class="neu">N/A</span></span>
+      <span class="chip">WTI · $91.48 · <span class="neu">N/A</span></span>
+    </div>
+  </div>
+</div>
+
+<!-- EDITOR'S BRIEF -->
+<div class="container">
+  <div class="brief">
+    U.S. equities surged Friday as September's non-farm payrolls report set the tone for the month, with large-cap tech leading the charge and the VIX settling deep into complacency territory below 15. The AI-driven momentum that powered summer gains shows no sign of abating, even as rising oil prices near $91.50 and a 10-year yield pushing 4.79% keep the macro picture complex. Gold's continued advance above $4,400 underscores persistent demand for hard assets amid lingering rate uncertainty.
+  </div>
+
+  <!-- SECTION 1: MARKET DRIVERS -->
+  <div class="section">
+    <div class="section-label">Section 01</div>
+    <div class="section-title">Market Drivers</div>
+    <div class="body-text">
+      <ul>
+        <li><strong>NFP Friday rally:</strong> September's non-farm payrolls release (first Friday of the month) catalyzed broad risk-on positioning, with SPY advancing +1.05% and QQQ outpacing at +1.19% as investors reacted positively to labor market signals.</li>
+        <li><strong>AI momentum sustains:</strong> NVIDIA remained among the most actively traded names at $228.45 (+1.80%, 131M shares), keeping the AI infrastructure theme alive weeks after its earnings beat. Semiconductor and cloud names broadly participated in the session's gains.</li>
+        <li><strong>Energy sector catalyst:</strong> WTI crude near $91.48/bbl — its highest level since late August — supported energy equity outperformers and raised mild reflation concerns, keeping the Fed's dual mandate in traders' calculus.</li>
+        <li><strong>Idiosyncratic movers dominate tape:</strong> ChargePoint (CHPT) surged +74.57% on massive volume of 42.8 million shares, while Ultragenyx Pharmaceutical (RARE) collapsed -44.03% on clinical-stage news — highlighting an active individual-stock environment beneath the index-level calm.</li>
+      </ul>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 2: MACRO -->
+  <div class="section">
+    <div class="section-label">Section 02</div>
+    <div class="section-title">Macro</div>
+    <div class="body-text">
+      <p>The Federal Reserve remains in a data-dependent holding pattern, with the market closely watching each payroll and inflation print for clues on the timing of any rate adjustment. Persistent inflation and signs of slowing consumer spending — highlighted in recent retail sector commentary — leave the Fed little room for complacency, even as the disinflationary trend remains broadly intact. Geopolitically, energy supply dynamics continue to exert upward pressure on commodity prices, adding a secondary inflation layer that complicates the path to the Fed's 2% target.</p>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 3: EQUITIES -->
+  <div class="section">
+    <span class="watch-pill">⚡ WATCH</span>
+    <div class="section-label">Section 03</div>
+    <div class="section-title">Equities</div>
+    <div class="body-text">
+      <p>All three major benchmarks closed higher, with growth-oriented large-caps leading: SPY +1.05% to $773.17, QQQ +1.19% to $717.67, and IWM +0.40% to $295.19. The underperformance of small-caps relative to tech-heavy QQQ reflects continued investor preference for quality, mega-cap growth names with AI exposure over rate-sensitive small businesses. The NFP release today is a WATCH event for near-term volatility as the implications for Fed timing digest through the weekend.</p>
+      <p style="margin-top:10px;"><strong>Notable movers:</strong></p>
+      <ul>
+        <li><strong>CHPT (ChargePoint) +74.57%:</strong> EV charging network operator surged on extraordinary volume (42.8M shares vs. typical low turnover), suggesting a company-specific catalyst such as a strategic partnership or debt restructuring announcement.</li>
+        <li><strong>RARE (Ultragenyx Pharmaceutical) -44.03%:</strong> Biotech name collapsed on 27M shares of volume, consistent with a clinical trial failure or regulatory setback — a stark reminder of binary risk in the rare-disease drug space.</li>
+      </ul>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 4: VOLATILITY -->
+  <div class="section">
+    <div class="section-label">Section 04</div>
+    <div class="section-title">Volatility</div>
+    <div class="body-text">
+      <p>The CBOE VIX dropped 6.14% to 14.32, firmly below the 15 complacency threshold and well clear of the fear zone above 20. Markets are pricing minimal near-term tail risk, a signal that option sellers are in command and the put-protection bid remains muted. The VIX's decline alongside rising equities reflects a textbook risk-on session, though the sub-15 reading historically warrants vigilance — complacency can unwind sharply when macro surprises arrive.</p>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 5: FIXED INCOME -->
+  <div class="section">
+    <div class="section-label">Section 05</div>
+    <div class="section-title">Fixed Income</div>
+    <div class="body-text">
+      <p>The U.S. Treasury curve held steady with the 10-year yield at 4.79% and the 2-year at 4.39%, producing a positive 10Y–2Y spread of +40 basis points. The curve's return to a normal (upward-sloping) shape, after the prolonged inversion of prior years, marks a notable structural shift — suggesting markets are pricing in eventual Fed easing without panicking about near-term recession risk. The 10-year's persistence near 4.80% continues to set a high hurdle rate for equity valuations, particularly in long-duration growth names, though the market has thus far absorbed this comfortably amid strong earnings momentum.</p>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 6: CURRENCIES -->
+  <div class="section">
+    <div class="section-label">Section 06</div>
+    <div class="section-title">Currencies</div>
+    <div class="body-text">
+      <p>EUR/USD traded at 1.1632 in early New York hours, reflecting euro resilience as the ECB navigates its own rate-path deliberations against a backdrop of sluggish European growth. USD/JPY held at 156.36, remaining elevated and far above the 150 level that previously drew Japanese Ministry of Finance intervention warnings — a level that will draw continued scrutiny as the Bank of Japan gradually moves away from ultra-accommodative policy. The yen's sustained weakness remains a pressure point for Asian equity markets and commodity importers, even as carry trade dynamics keep broad dollar strength intact.</p>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 7: COMMODITIES -->
+  <div class="section">
+    <div class="section-label">Section 07</div>
+    <div class="section-title">Commodities</div>
+    <div class="body-text">
+      <p>Gold held above $4,469.65/oz, extending its multi-month advance driven by a combination of central bank accumulation, persistent inflation hedging demand, and geopolitical risk premia. The metal's position near record highs — significantly above the $4,300 level cited in recent Wheaton Precious Metals commentary — reinforces its safe-haven narrative even as equities rally. WTI crude oil was last priced at $91.48/bbl (September 1 close), its highest reading in weeks, supported by OPEC+ supply discipline and recovering global demand. Elevated oil prices are a double-edged sword: bullish for energy producers and energy equities, but a reflationary headwind for the Fed and consumer purchasing power.</p>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 8: EARNINGS RADAR -->
+  <div class="section">
+    <div class="section-label">Section 08</div>
+    <div class="section-title">Earnings Radar</div>
+    <div class="body-text">
+      <p>Key earnings expected over the next five trading days (September 4–10, 2026). Adobe and Oracle are the marquee large-cap reporters, with both serving as barometers for enterprise software spending and AI-integration demand.</p>
+      <table class="earnings-table">
+        <thead>
+          <tr>
+            <th>Company</th>
+            <th>Date</th>
+            <th>Time</th>
+            <th>EPS Estimate</th>
+            <th>Expected-Move Context</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Oracle (ORCL)</strong></td>
+            <td>Sep 8</td>
+            <td>After close</td>
+            <td>$1.40</td>
+            <td>Cloud &amp; AI commentary will move the stock; historically ±5–8% on earnings</td>
+          </tr>
+          <tr>
+            <td><strong>Casey's General Stores (CASY)</strong></td>
+            <td>Sep 8</td>
+            <td>Post-market</td>
+            <td>$6.59</td>
+            <td>Consumer discretionary proxy; fuel margin and inside-store comps key watch items</td>
+          </tr>
+          <tr>
+            <td><strong>Adobe (ADBE)</strong></td>
+            <td>Sep 10</td>
+            <td>Post-market</td>
+            <td>$4.86</td>
+            <td>Biggest report of the week; AI creative-tools monetization and ARR growth are pivotal; options imply ±7–10% move</td>
+          </tr>
+          <tr>
+            <td><strong>Academy Sports &amp; Outdoors (ASO)</strong></td>
+            <td>Sep 9</td>
+            <td>Pre-market</td>
+            <td>$2.07</td>
+            <td>Sporting goods demand and promotional environment will signal consumer health</td>
+          </tr>
+          <tr>
+            <td><strong>Signet Jewelers (SIG)</strong></td>
+            <td>Sep 9</td>
+            <td>Pre-market</td>
+            <td>$1.69</td>
+            <td>Discretionary spend bellwether; bridal and holiday inventory commentary closely watched</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</div><!-- end .container -->
+
+<!-- FOOTER -->
+<div class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <span class="footer-brand">Market Quick Take · Friday, 4 September 2026</span>
+      <span class="footer-disclaimer">For informational purposes only. Not investment advice.</span>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
