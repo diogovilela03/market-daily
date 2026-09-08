@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Market Quick Take — Tuesday, 8 September 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: #ffffff;
+    color: #1a2332;
+  }
+
+  .container {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  /* MASTHEAD */
+  .masthead {
+    border-top: 3px solid #003366;
+    padding: 32px 0 20px;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  .masthead h1 {
+    font-size: 42px;
+    font-weight: 700;
+    color: #003366;
+    letter-spacing: -0.5px;
+    line-height: 1.1;
+  }
+  .masthead .date {
+    font-size: 13px;
+    font-weight: 400;
+    color: #6b7280;
+    margin-top: 6px;
+  }
+
+  /* SNAPSHOT BAR */
+  .snapshot-bar {
+    background: #f1f5f9;
+    padding: 12px 0;
+    width: 100%;
+  }
+  .snapshot-inner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 0;
+    align-items: center;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+  .chip {
+    font-size: 12px;
+    font-weight: 500;
+    color: #1a2332;
+    text-transform: uppercase;
+    white-space: nowrap;
+    padding: 0 10px;
+  }
+  .chip:not(:last-child)::after {
+    content: '|';
+    margin-left: 10px;
+    color: #9ca3af;
+  }
+  .chip .label { color: #6b7280; }
+  .chip .val { color: #1a2332; margin: 0 2px; }
+  .chip .pos { color: #16a34a; }
+  .chip .neg { color: #dc2626; }
+  .chip .neu { color: #6b7280; }
+
+  /* EDITOR'S BRIEF */
+  .editors-brief {
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 400;
+    color: #374151;
+    max-width: 760px;
+    margin: 28px 0;
+    border-left: 3px solid #003366;
+    padding-left: 16px;
+    line-height: 1.7;
+  }
+
+  /* SECTIONS */
+  .section { margin: 0 0 4px; }
+
+  .section-hr {
+    border: none;
+    border-top: 1px solid #e5e7eb;
+    margin: 28px 0;
+  }
+
+  .section-label {
+    font-size: 11px;
+    font-weight: 500;
+    color: #003366;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 6px;
+  }
+
+  .section-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1a2332;
+    margin-bottom: 10px;
+  }
+
+  .section-body {
+    font-size: 15px;
+    font-weight: 400;
+    color: #374151;
+    line-height: 1.8;
+  }
+
+  .section-body ul {
+    padding-left: 8px;
+    list-style: disc;
+    margin-left: 16px;
+  }
+
+  .section-body ul li {
+    margin-bottom: 6px;
+  }
+
+  .watch-pill {
+    display: inline-block;
+    background: #fef3c7;
+    color: #b45309;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 500;
+    padding: 2px 8px;
+    margin-bottom: 8px;
+  }
+
+  /* EARNINGS TABLE */
+  .earnings-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #e5e7eb;
+    font-size: 13px;
+    font-weight: 400;
+    color: #374151;
+    margin-top: 12px;
+  }
+  .earnings-table th {
+    background: #f1f5f9;
+    font-weight: 600;
+    color: #1a2332;
+    padding: 8px 12px;
+    text-align: left;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  .earnings-table td {
+    padding: 8px 12px;
+    border-bottom: 1px solid #e5e7eb;
+    vertical-align: top;
+  }
+  .earnings-table tr:last-child td {
+    border-bottom: none;
+  }
+  .earnings-table tr:hover td {
+    background: #f9fafb;
+  }
+
+  /* FOOTER */
+  .footer {
+    background: #f1f5f9;
+    border-top: 1px solid #e5e7eb;
+    margin-top: 48px;
+    padding: 20px 0;
+  }
+  .footer-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .footer span {
+    font-size: 12px;
+    font-weight: 400;
+  }
+  .footer .footer-brand { color: #6b7280; }
+  .footer .footer-disc { color: #9ca3af; }
+</style>
+</head>
+<body>
+
+<!-- MASTHEAD -->
+<div class="container">
+  <div class="masthead">
+    <h1>MARKET QUICK TAKE</h1>
+    <div class="date">Tuesday, 8 September 2026</div>
+  </div>
+</div>
+
+<!-- SNAPSHOT BAR -->
+<div class="snapshot-bar">
+  <div class="snapshot-inner">
+    <div class="chip">
+      <span class="label">SPY</span>
+      <span class="val">770.19</span>
+      <span class="neg">−0.39%</span>
+    </div>
+    <div class="chip">
+      <span class="label">QQQ</span>
+      <span class="val">718.96</span>
+      <span class="pos">+0.18%</span>
+    </div>
+    <div class="chip">
+      <span class="label">IWM</span>
+      <span class="val">296.01</span>
+      <span class="pos">+0.28%</span>
+    </div>
+    <div class="chip">
+      <span class="label">VIX</span>
+      <span class="val">15.30</span>
+      <span class="neg">+5.30%</span>
+    </div>
+    <div class="chip">
+      <span class="label">US10Y</span>
+      <span class="val">4.77%</span>
+      <span class="neg">−0.42%</span>
+    </div>
+    <div class="chip">
+      <span class="label">US2Y</span>
+      <span class="val">4.34%</span>
+      <span class="neg">−1.14%</span>
+    </div>
+    <div class="chip">
+      <span class="label">EUR/USD</span>
+      <span class="val">1.1623</span>
+      <span class="neu">—</span>
+    </div>
+    <div class="chip">
+      <span class="label">GOLD</span>
+      <span class="val">$4,405.61</span>
+      <span class="neu">—</span>
+    </div>
+    <div class="chip">
+      <span class="label">WTI</span>
+      <span class="val">$91.48</span>
+      <span class="pos">+5.11%</span>
+    </div>
+  </div>
+</div>
+
+<!-- MAIN CONTENT -->
+<div class="container">
+
+  <!-- EDITOR'S BRIEF -->
+  <p class="editors-brief">
+    Markets traded with a bifurcated tone on Tuesday as a hot August payrolls report reinforced Federal Reserve rate-hike expectations, pushing the 10-year Treasury yield to 4.77% and weighing on rate-sensitive sectors — yet technology names diverged higher on AI-driven supply scarcity narratives. Gold extended its historic run above $4,400, while WTI crude jumped to $91.48 as OPEC+ discipline and demand resilience kept energy markets tight.
+  </p>
+
+  <!-- SECTION 1: MARKET DRIVERS -->
+  <div class="section">
+    <div class="section-label">Section 1</div>
+    <div class="watch-pill">⚡ WATCH</div>
+    <div class="section-title">Market Drivers</div>
+    <div class="section-body">
+      <ul>
+        <li><strong>Hot NFP sparks Fed repricing:</strong> A stronger-than-expected August non-farm payrolls report raised the probability of another Federal Reserve rate hike, sending the 10-year Treasury yield higher and amplifying selling pressure on rate-sensitive sectors including homebuilders and regional banks.</li>
+        <li><strong>Memory stocks buck the tide:</strong> Micron (MU) and SanDisk (SNDK) each surged ~4% despite the hawkish macro print, as ongoing DRAM and NAND supply shortages — fuelled by AI infrastructure buildout demand — drove expectations of sharp price increases that outweighed rate concerns.</li>
+        <li><strong>Homebuilders plummet on yield surge:</strong> KB Home, Meritage Homes, and LGI Homes all posted sharp declines as rising long-term yields threatened to push mortgage rates higher, directly dampening housing affordability and demand forecasts.</li>
+        <li><strong>GLOBALFOUNDRIES (GFS) stands out:</strong> GFS rallied strongly following its first-ever quarterly cash dividend announcement and robust CID (Communications Infrastructure &amp; Data Center) segment growth, illustrating that company-specific catalysts can overcome macro headwinds.</li>
+      </ul>
+    </div>
+  </div>
+
+  <hr class="section-hr">
+
+  <!-- SECTION 2: MACRO -->
+  <div class="section">
+    <div class="section-label">Section 2</div>
+    <div class="section-title">Macro</div>
+    <div class="section-body">
+      <p>The August non-farm payrolls report delivered a beat on expectations, reinforcing the Federal Reserve's data-dependent case for sustained monetary tightening — with bond markets now fully pricing at least one additional hike. The 10Y-2Y yield spread at +43 basis points signals a steepening curve, suggesting that while near-term rates remain anchored to Fed policy, investors are pricing in a structurally higher rate environment for longer, not an imminent pivot. Geopolitically, energy market tensions underpin the commodity complex, adding to the Fed's inflation challenge as crude prices approach levels not seen since 2024.</p>
+    </div>
+  </div>
+
+  <hr class="section-hr">
+
+  <!-- SECTION 3: EQUITIES -->
+  <div class="section">
+    <div class="section-label">Section 3</div>
+    <div class="section-title">Equities</div>
+    <div class="section-body">
+      <p>The S&amp;P 500 (SPY) dipped <span style="color:#dc2626;">−0.39%</span> to 770.19 as rate fears pressured the broad market, while the Nasdaq (QQQ) eked out a <span style="color:#16a34a;">+0.18%</span> gain to 718.96 as tech outperformed on AI sector strength. Small-caps (IWM) added <span style="color:#16a34a;">+0.28%</span> to 296.01, with value-oriented names cushioning the index.</p>
+      <ul style="margin-top: 12px;">
+        <li><strong>Tesla (TSLA) −5.92% → $354.08:</strong> Broad risk-off positioning on rate fears hit high-multiple growth stocks hard, with Tesla bearing outsized losses on heavy volume (64M shares traded).</li>
+        <li><strong>SOXL (3× Semiconductor ETF) +10.12% → $117.54:</strong> The leveraged semiconductor ETF surged on AI-fueled demand enthusiasm, tracking strength in Nvidia (+0.84% to $230.36) and the broader chip complex ahead of key industry events.</li>
+      </ul>
+    </div>
+  </div>
+
+  <hr class="section-hr">
+
+  <!-- SECTION 4: VOLATILITY -->
+  <div class="section">
+    <div class="section-label">Section 4</div>
+    <div class="section-title">Volatility</div>
+    <div class="section-body">
+      <p>The CBOE VIX (15-minute delayed) rose <span style="color:#dc2626;">+5.30%</span> to <strong>15.30</strong>, remaining comfortably below the 20-level associated with elevated fear. The intraday uptick reflects the market's sensitivity to the NFP surprise and rate repricing, but the overall VIX reading signals that investors are not yet in panic territory — complacency rather than crisis still describes the volatility backdrop. Option premiums remain relatively subdued, suggesting no systemic hedging demand has emerged.</p>
+    </div>
+  </div>
+
+  <hr class="section-hr">
+
+  <!-- SECTION 5: FIXED INCOME -->
+  <div class="section">
+    <div class="section-label">Section 5</div>
+    <div class="watch-pill">⚡ WATCH</div>
+    <div class="section-title">Fixed Income</div>
+    <div class="section-body">
+      <p>The 10-year Treasury yield stands at <strong>4.77%</strong> (−2bps from Friday) and the 2-year at <strong>4.34%</strong> (−5bps), producing a 10Y-2Y spread of <strong>+43 basis points</strong> — a positively sloped, steepening curve. The long end's persistence above 4.75% is generating real-world consequences: homebuilder stocks tumbled as investors modeled higher mortgage rates into housing demand, and life insurer stocks rallied as higher long-term yields boost annuity attractiveness. The steepening dynamic suggests the bond market anticipates growth will remain resilient even as the Fed holds rates higher-for-longer rather than pivoting to cuts.</p>
+    </div>
+  </div>
+
+  <hr class="section-hr">
+
+  <!-- SECTION 6: CURRENCIES -->
+  <div class="section">
+    <div class="section-label">Section 6</div>
+    <div class="section-title">Currencies</div>
+    <div class="section-body">
+      <p>EUR/USD trades at <strong>1.1623</strong>, holding above the psychologically important 1.16 handle as relative euro-area economic resilience and ECB hawkishness provide a floor. USD/JPY remains elevated at <strong>153.93</strong>, keeping market participants alert to potential intervention signals from Japan's Ministry of Finance — the pair has been flirting with levels that historically trigger verbal warnings from Tokyo. Persistent US-Japan rate differentials (US10Y at 4.77% vs. near-zero JGB yields) continue to structurally pressure the yen, though any dovish Fed signals could trigger sharp yen relief rallies.</p>
+    </div>
+  </div>
+
+  <hr class="section-hr">
+
+  <!-- SECTION 7: COMMODITIES -->
+  <div class="section">
+    <div class="section-label">Section 7</div>
+    <div class="section-title">Commodities</div>
+    <div class="section-body">
+      <p>Gold (XAUUSD) extended its record-setting run to <strong>$4,405.61/oz</strong>, driven by safe-haven demand as uncertainty around the Fed's terminal rate intensifies — and despite the stronger dollar that typically weighs on precious metals. WTI crude rose to <strong>$91.48/barrel</strong> (<span style="color:#16a34a;">+5.11%</span> from the prior session), supported by OPEC+ production discipline and resilient summer travel/industrial demand. Elevated oil prices above $90 feed directly into headline inflation, potentially complicating the Fed's path and keeping energy stocks in focus as an inflation hedge.</p>
+    </div>
+  </div>
+
+  <hr class="section-hr">
+
+  <!-- SECTION 8: EARNINGS CALENDAR -->
+  <div class="section">
+    <div class="section-label">Section 8</div>
+    <div class="section-title">Earnings Radar</div>
+    <div class="section-body">
+      <p>Key earnings reports over the next five trading days (Sep 8–12):</p>
+      <table class="earnings-table">
+        <thead>
+          <tr>
+            <th>Company</th>
+            <th>Date</th>
+            <th>Time</th>
+            <th>EPS Est.</th>
+            <th>Expected-Move Context</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Adobe (ADBE)</strong></td>
+            <td>Sep 10</td>
+            <td>Post-market</td>
+            <td>$4.86</td>
+            <td>AI monetization of Creative Cloud in focus; market pricing meaningful implied move on cloud ARR guidance.</td>
+          </tr>
+          <tr>
+            <td><strong>Oracle (ORCL)</strong></td>
+            <td>Sep 10</td>
+            <td>Post-market</td>
+            <td>$1.40</td>
+            <td>Cloud infrastructure growth vs. legacy database deceleration; partnership revenue with AI hyperscalers key watch item.</td>
+          </tr>
+          <tr>
+            <td><strong>Braze (BRZE)</strong></td>
+            <td>Sep 8</td>
+            <td>Post-market</td>
+            <td>−$0.21</td>
+            <td>Customer engagement SaaS under margin scrutiny; net revenue retention and seat expansion guidance critical for sentiment.</td>
+          </tr>
+          <tr>
+            <td><strong>Kroger (KR)</strong></td>
+            <td>Sep 11</td>
+            <td>Pre-market</td>
+            <td>$1.05</td>
+            <td>Grocery deflation and food-at-home demand trends in focus; digital &amp; fuel margin mix closely watched.</td>
+          </tr>
+          <tr>
+            <td><strong>GameStop (GME)</strong></td>
+            <td>Sep 8</td>
+            <td>—</td>
+            <td>N/A</td>
+            <td>Meme stock wildcard; strategic pivot narrative and cash deployment plans may drive outsized reaction regardless of fundamentals.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</div><!-- /.container -->
+
+<!-- FOOTER -->
+<div class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <span class="footer-brand">Market Quick Take · Tuesday, 8 September 2026</span>
+      <span class="footer-disc">For informational purposes only. Not investment advice.</span>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
