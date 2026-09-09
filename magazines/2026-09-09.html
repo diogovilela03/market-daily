@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Market Quick Take — Tuesday, 9 September 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: #ffffff;
+    color: #1a2332;
+  }
+
+  .container {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  /* MASTHEAD */
+  .masthead {
+    border-top: 3px solid #003366;
+    padding: 32px 0 20px;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  .masthead-title {
+    font-size: 42px;
+    font-weight: 700;
+    color: #003366;
+    letter-spacing: -0.5px;
+    line-height: 1;
+  }
+  .masthead-date {
+    font-size: 13px;
+    font-weight: 400;
+    color: #6b7280;
+    margin-top: 8px;
+  }
+
+  /* SNAPSHOT BAR */
+  .snapshot-bar {
+    background: #f1f5f9;
+    padding: 12px 0;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  .snapshot-inner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 0;
+    align-items: center;
+  }
+  .chip {
+    font-size: 12px;
+    font-weight: 500;
+    color: #1a2332;
+    text-transform: uppercase;
+    white-space: nowrap;
+    padding: 0 10px;
+  }
+  .chip:not(:last-child)::after {
+    content: '|';
+    margin-left: 10px;
+    color: #9ca3af;
+  }
+  .pos { color: #16a34a; }
+  .neg { color: #dc2626; }
+  .muted { color: #6b7280; }
+
+  /* EDITOR'S BRIEF */
+  .editors-brief {
+    font-size: 18px;
+    font-weight: 400;
+    font-style: italic;
+    color: #374151;
+    max-width: 760px;
+    margin: 28px 0;
+    border-left: 3px solid #003366;
+    padding-left: 16px;
+    line-height: 1.7;
+  }
+
+  /* SECTIONS */
+  .section {
+    padding: 0;
+  }
+  .section-label {
+    font-size: 11px;
+    font-weight: 500;
+    color: #003366;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 6px;
+  }
+  .section-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1a2332;
+    margin-bottom: 10px;
+  }
+  .section-body {
+    font-size: 15px;
+    font-weight: 400;
+    color: #374151;
+    line-height: 1.8;
+  }
+  .section-body ul {
+    padding-left: 20px;
+    margin-top: 6px;
+  }
+  .section-body ul li {
+    margin-bottom: 6px;
+  }
+  .section-divider {
+    border: none;
+    border-top: 1px solid #e5e7eb;
+    margin: 28px 0;
+  }
+
+  /* WATCH PILL */
+  .watch-pill {
+    display: inline-block;
+    background: #fef3c7;
+    color: #b45309;
+    font-size: 11px;
+    font-weight: 500;
+    border-radius: 4px;
+    padding: 3px 8px;
+    margin-bottom: 8px;
+  }
+
+  /* EARNINGS TABLE */
+  .earnings-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    font-weight: 400;
+    color: #374151;
+    margin-top: 12px;
+  }
+  .earnings-table th {
+    text-align: left;
+    border: 1px solid #e5e7eb;
+    padding: 8px 12px;
+    background: #f1f5f9;
+    font-weight: 600;
+    color: #1a2332;
+  }
+  .earnings-table td {
+    border: 1px solid #e5e7eb;
+    padding: 8px 12px;
+  }
+  .earnings-table tr:nth-child(even) td {
+    background: #fafafa;
+  }
+
+  /* FOOTER */
+  .site-footer {
+    background: #f1f5f9;
+    border-top: 1px solid #e5e7eb;
+    margin-top: 48px;
+    padding: 20px 0;
+  }
+  .footer-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .footer-name {
+    font-size: 12px;
+    font-weight: 400;
+    color: #6b7280;
+  }
+  .footer-disclaimer {
+    font-size: 12px;
+    font-weight: 400;
+    color: #9ca3af;
+  }
+</style>
+</head>
+<body>
+
+<!-- MASTHEAD -->
+<div class="container">
+  <div class="masthead">
+    <div class="masthead-title">MARKET QUICK TAKE</div>
+    <div class="masthead-date">Tuesday, 9 September 2026</div>
+  </div>
+</div>
+
+<!-- SNAPSHOT BAR -->
+<div class="snapshot-bar">
+  <div class="container">
+    <div class="snapshot-inner">
+      <span class="chip">SPY &middot; $765.96 &middot; <span class="neg">-0.55%</span></span>
+      <span class="chip">QQQ &middot; $718.36 &middot; <span class="neg">-0.08%</span></span>
+      <span class="chip">IWM &middot; $294.67 &middot; <span class="neg">-0.45%</span></span>
+      <span class="chip">VIX &middot; 15.72 &middot; <span class="neg">+7.57%</span></span>
+      <span class="chip">US10Y &middot; 4.78%</span>
+      <span class="chip">US2Y &middot; 4.37%</span>
+      <span class="chip">EUR/USD &middot; 1.1644</span>
+      <span class="chip">GOLD &middot; $4,405</span>
+      <span class="chip">WTI &middot; $91.48</span>
+    </div>
+  </div>
+</div>
+
+<!-- EDITOR'S BRIEF -->
+<div class="container">
+  <div class="editors-brief">
+    A stronger-than-expected August jobs report reignited Federal Reserve rate hike fears on Monday, sending equity indices modestly lower while the VIX jumped nearly 8% in a single session. Rates remain firmly elevated — the 10-year Treasury yield at 4.78% and WTI crude above $91 are compounding the higher-for-longer narrative, with gold near $4,400 serving as the clearest expression of the market's inflation anxiety.
+  </div>
+
+  <!-- SECTION 1: MARKET DRIVERS -->
+  <div class="section">
+    <div class="watch-pill">⚡ WATCH</div>
+    <div class="section-label">Section 01</div>
+    <div class="section-title">Market Drivers</div>
+    <div class="section-body">
+      <ul>
+        <li><strong>Jobs report revives Fed hike fears:</strong> August non-farm payrolls came in above consensus, pushing futures markets to price in a higher probability of an additional Federal Reserve rate increase. Rate-sensitive sectors bore the brunt of the selloff.</li>
+        <li><strong>Booking Holdings (BKNG) falls 6%:</strong> The travel bellwether shed 6.07% after issuing conservative Q3 revenue guidance and warning of macroeconomic headwinds — a signal that higher borrowing costs are beginning to crimp discretionary travel spending.</li>
+        <li><strong>Memory cycle momentum offsets macro drag:</strong> Micron Technology (MU) surged past the $1,000 milestone, rising over 6% on strong memory industry fundamentals driven by accelerating AI infrastructure demand, even as broader indices slipped.</li>
+        <li><strong>Housing market frozen:</strong> Homebuilders (KB Home, Meritage, LGI Homes) saw sharp declines as the 10-year Treasury yield near 4.78% threatens to push 30-year mortgage rates higher, extending the stagnation in housing transactions.</li>
+      </ul>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 2: MACRO -->
+  <div class="section">
+    <div class="watch-pill">⚡ WATCH</div>
+    <div class="section-label">Section 02</div>
+    <div class="section-title">Macro</div>
+    <div class="section-body">
+      <p>The August jobs report materially shifted the Fed tightening calculus, with market participants now assigning a meaningful probability to at least one additional hike. The 10-year Treasury yield at 4.78% — near multi-year highs — reflects the durability of the "higher for longer" rate regime, complicating the Fed's path to a soft landing. Geopolitically, the dollar's relative strength remains a secondary headwind for emerging market economies and multinationals reporting in foreign currencies, while USD/JPY at 153 keeps the Bank of Japan's intervention threshold in focus.</p>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 3: EQUITIES -->
+  <div class="section">
+    <div class="section-label">Section 03</div>
+    <div class="section-title">Equities</div>
+    <div class="section-body">
+      <p>US equity indices closed modestly lower on Monday (Sep 8): <strong>SPY</strong> -0.55% to $765.96, <strong>QQQ</strong> -0.08% to $718.36, and <strong>IWM</strong> -0.45% to $294.67. Small-caps underperformed as higher financing costs disproportionately weigh on smaller, more leveraged companies. Among the session's notable movers, <strong>Intel (INTC)</strong> surged 9.05% to $104.47 on heavy volume, making it one of the most actively traded names; <strong>Nvidia (NVDA)</strong> slipped 2.01% to $225.73 on profit-taking despite continued AI sector enthusiasm. Booking Holdings (BKNG) was the headline loser at -6.07% on conservative guidance, while Micron (MU) continued its AI-driven rally past $1,000.</p>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 4: VOLATILITY -->
+  <div class="section">
+    <div class="section-label">Section 04</div>
+    <div class="section-title">Volatility</div>
+    <div class="section-body">
+      <p><strong>VIX: 15.72</strong> (+7.57% on the day). The CBOE Volatility Index rose sharply in a single session, reflecting a quick repricing of tail risk following the jobs report. At 15.72, the VIX remains in the complacent zone (below 20), suggesting the market is hedging rather than panicking — but the speed of the move warrants attention. A sustained push toward 18–20 would signal a more meaningful shift in sentiment.</p>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 5: FIXED INCOME -->
+  <div class="section">
+    <div class="watch-pill">⚡ WATCH</div>
+    <div class="section-label">Section 05</div>
+    <div class="section-title">Fixed Income</div>
+    <div class="section-body">
+      <p>The <strong>10-year Treasury yield stands at 4.78%</strong> and the <strong>2-year at 4.37%</strong>, producing a 10Y–2Y spread of <strong>+41 basis points</strong> — a steepening curve. After a prolonged inversion that dominated 2022–2024, the curve's return to positive territory normally signals improving economic expectations; however, in the current context it also reflects longer-dated yields rising faster than short-dated ones as the market digests stronger-than-expected growth data. News reports flagging 30-year yields at near 19-year highs underscore the breadth of the move. Mortgage-sensitive sectors — housing, financials — remain under pressure.</p>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 6: CURRENCIES -->
+  <div class="section">
+    <div class="section-label">Section 06</div>
+    <div class="section-title">Currencies</div>
+    <div class="section-body">
+      <p><strong>EUR/USD at 1.1644</strong> reflects a surprisingly resilient euro, even as the hot US jobs print reinforced dollar-bullish expectations. The pair's relative stability may reflect the ECB's own hawkish posture keeping rate differentials from widening further. <strong>USD/JPY at 153.09</strong> sits in the zone that has historically triggered verbal warnings from Japanese officials; a move toward 155 would likely accelerate discussion of direct intervention, as the Bank of Japan faces the difficult task of normalizing policy without triggering a disorderly yen move.</p>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 7: COMMODITIES -->
+  <div class="section">
+    <div class="section-label">Section 07</div>
+    <div class="section-title">Commodities</div>
+    <div class="section-body">
+      <p><strong>Gold at $4,405/oz</strong> remains near historically elevated levels, driven by persistent inflation concerns, de-dollarization trends among central banks, and safe-haven demand amid rate uncertainty. Precious metals mining companies like Wheaton Precious Metals (WPM) are reporting record revenues at these prices. <strong>WTI crude at $91.48/bbl</strong> (most recent daily) reflects OPEC+ production discipline maintaining a supply floor above $90; prices at this level risk re-accelerating headline CPI, directly complicating the Fed's inflation-fighting mandate and potentially forcing the hand of additional monetary tightening.</p>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 8: EARNINGS CALENDAR -->
+  <div class="section">
+    <div class="section-label">Section 08</div>
+    <div class="section-title">Earnings Radar</div>
+    <div class="section-body">
+      <p>Key reports due over the next five trading days (Sep 9–15, 2026):</p>
+      <table class="earnings-table">
+        <thead>
+          <tr>
+            <th>Company</th>
+            <th>Date</th>
+            <th>EPS Estimate</th>
+            <th>Expected Move</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Chewy (CHWY)</strong></td>
+            <td>Sep 9 &mdash; Pre-market</td>
+            <td>$0.18</td>
+            <td>Consumer spending bellwether; pet-retail sensitivity to discretionary cuts</td>
+          </tr>
+          <tr>
+            <td><strong>American Eagle Outfitters (AEO)</strong></td>
+            <td>Sep 9 &mdash; Post-market</td>
+            <td>$0.21</td>
+            <td>Retail sector read; watch back-to-school commentary and margin trends</td>
+          </tr>
+          <tr>
+            <td><strong>Adobe (ADBE)</strong></td>
+            <td>Sep 10 &mdash; Post-market</td>
+            <td>$4.86</td>
+            <td>AI-driven SaaS bellwether; typically ±5–8% post-earnings; Firefly AI monetisation in focus</td>
+          </tr>
+          <tr>
+            <td><strong>Oracle (ORCL)</strong></td>
+            <td>Sep 10 &mdash; Post-market</td>
+            <td>$1.40</td>
+            <td>Cloud &amp; AI infrastructure; OCI growth trajectory closely watched by enterprise tech investors</td>
+          </tr>
+          <tr>
+            <td><strong>Kroger (KR)</strong></td>
+            <td>Sep 11 &mdash; Pre-market</td>
+            <td>$1.05</td>
+            <td>Consumer staples / grocery inflation check; volumes and private-label penetration key metrics</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</div><!-- /.container -->
+
+<!-- FOOTER -->
+<div class="site-footer">
+  <div class="container">
+    <div class="footer-inner">
+      <span class="footer-name">Market Quick Take &middot; Tuesday, 9 September 2026</span>
+      <span class="footer-disclaimer">For informational purposes only. Not investment advice.</span>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
