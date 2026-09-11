@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Market Quick Take — Thursday, 11 September 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+    background: #ffffff;
+    color: #1a2332;
+    font-size: 15px;
+    line-height: 1.8;
+  }
+
+  .container {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  /* MASTHEAD */
+  .masthead {
+    border-top: 3px solid #003366;
+    padding: 32px 0 20px;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  .masthead h1 {
+    font-size: 42px;
+    font-weight: 700;
+    color: #003366;
+    letter-spacing: -0.5px;
+    line-height: 1.1;
+  }
+  .masthead .date {
+    font-size: 13px;
+    font-weight: 400;
+    color: #6b7280;
+    margin-top: 6px;
+  }
+
+  /* SNAPSHOT BAR */
+  .snapshot-bar {
+    background: #f1f5f9;
+    padding: 12px 0;
+    width: 100%;
+    overflow-x: auto;
+  }
+  .snapshot-inner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 0;
+    align-items: center;
+    padding: 0 24px;
+    max-width: 860px;
+    margin: 0 auto;
+  }
+  .chip {
+    font-size: 12px;
+    font-weight: 500;
+    color: #1a2332;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    white-space: nowrap;
+    padding: 0 10px;
+  }
+  .chip:not(:last-child)::after {
+    content: ' |';
+    color: #9ca3af;
+    margin-left: 10px;
+  }
+  .chip .label { color: #6b7280; }
+  .chip .val { margin: 0 3px; }
+  .pos { color: #16a34a; }
+  .neg { color: #dc2626; }
+  .neu { color: #6b7280; }
+
+  /* EDITOR'S BRIEF */
+  .editors-brief {
+    font-size: 18px;
+    font-weight: 400;
+    font-style: italic;
+    color: #374151;
+    max-width: 760px;
+    margin: 28px 0;
+    border-left: 3px solid #003366;
+    padding-left: 16px;
+    line-height: 1.7;
+  }
+
+  /* SECTIONS */
+  .section {
+    margin-bottom: 0;
+  }
+  .section-label {
+    font-size: 11px;
+    font-weight: 500;
+    color: #003366;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 6px;
+  }
+  .section-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1a2332;
+    margin-bottom: 10px;
+    line-height: 1.2;
+  }
+  .section-body {
+    font-size: 15px;
+    font-weight: 400;
+    color: #374151;
+    line-height: 1.8;
+  }
+  .section-body p { margin-bottom: 10px; }
+  .section-body p:last-child { margin-bottom: 0; }
+  .section-body ul {
+    padding-left: 8px;
+    list-style-type: disc;
+    list-style-position: outside;
+    padding-left: 20px;
+  }
+  .section-body ul li { margin-bottom: 6px; }
+
+  .divider {
+    border: none;
+    border-top: 1px solid #e5e7eb;
+    margin: 28px 0;
+  }
+
+  /* WATCH BADGE */
+  .watch-badge {
+    display: inline-block;
+    background: #fef3c7;
+    color: #b45309;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 500;
+    padding: 2px 8px;
+    margin-bottom: 8px;
+    letter-spacing: 0.5px;
+  }
+
+  /* EARNINGS TABLE */
+  .earnings-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    margin-top: 14px;
+  }
+  .earnings-table th {
+    text-align: left;
+    font-weight: 600;
+    color: #003366;
+    border: 1px solid #e5e7eb;
+    padding: 8px 12px;
+    background: #f1f5f9;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  .earnings-table td {
+    border: 1px solid #e5e7eb;
+    padding: 8px 12px;
+    color: #374151;
+    vertical-align: top;
+  }
+  .earnings-table tr:hover td { background: #f9fafb; }
+
+  /* FOOTER */
+  .footer {
+    background: #f1f5f9;
+    border-top: 1px solid #e5e7eb;
+    margin-top: 48px;
+    padding: 20px 0;
+  }
+  .footer-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+  .footer span {
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+  @media (max-width: 600px) {
+    .masthead h1 { font-size: 28px; }
+    .editors-brief { font-size: 16px; }
+    .section-title { font-size: 20px; }
+    .snapshot-inner { gap: 2px 0; }
+    .chip { font-size: 11px; padding: 0 6px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <header class="masthead">
+    <h1>MARKET QUICK TAKE</h1>
+    <p class="date">Thursday, 11 September 2026</p>
+  </header>
+</div>
+
+<div class="snapshot-bar">
+  <div class="snapshot-inner">
+    <span class="chip">
+      <span class="label">SPY</span>
+      <span class="val">757.83</span>
+      <span class="neg">−0.60%</span>
+    </span>
+    <span class="chip">
+      <span class="label">QQQ</span>
+      <span class="val">708.69</span>
+      <span class="neg">−1.06%</span>
+    </span>
+    <span class="chip">
+      <span class="label">IWM</span>
+      <span class="val">287.70</span>
+      <span class="neg">−1.01%</span>
+    </span>
+    <span class="chip">
+      <span class="label">VIX</span>
+      <span class="val">17.84</span>
+      <span class="neg">+7.74%</span>
+    </span>
+    <span class="chip">
+      <span class="label">US10Y</span>
+      <span class="val">4.83%</span>
+      <span class="neg">+0.63%</span>
+    </span>
+    <span class="chip">
+      <span class="label">US2Y</span>
+      <span class="val">4.43%</span>
+      <span class="neg">+0.91%</span>
+    </span>
+    <span class="chip">
+      <span class="label">EUR/USD</span>
+      <span class="val">1.1614</span>
+      <span class="neu">N/A</span>
+    </span>
+    <span class="chip">
+      <span class="label">GOLD</span>
+      <span class="val">$4,353</span>
+      <span class="neu">N/A</span>
+    </span>
+    <span class="chip">
+      <span class="label">WTI</span>
+      <span class="val">$97.26</span>
+      <span class="pos">+3.24%</span>
+    </span>
+  </div>
+</div>
+
+<div class="container">
+
+  <p class="editors-brief">
+    Treasury yields hit a three-year high, triggering a broad equity retreat led by housing and rate-sensitive names while tech underperformed; Apple and memory-chip names bucked the selloff, offering pockets of resilience. Gold held above $4,350 and crude oil pushed toward $100, adding a stagflationary undercurrent to an already anxious session.
+  </p>
+
+  <!-- Section 1: Market Drivers -->
+  <div class="section">
+    <div class="watch-badge">⚡ WATCH</div>
+    <p class="section-label">Section 1</p>
+    <h2 class="section-title">Market Drivers</h2>
+    <div class="section-body">
+      <ul>
+        <li>The 10-year Treasury yield surged to a <strong>three-year high at 4.83%</strong>, the dominant macro force of the session — hammering housing stocks (KB Home, Meritage, LGI Homes), REITs, and leveraged consumer names while pushing mortgage rate fears to the fore.</li>
+        <li>A <strong>robust US jobs report</strong> revived Fed rate hike expectations, reinforcing the "higher for longer" narrative and catching duration-heavy portfolios off guard as the bond selloff accelerated.</li>
+        <li><strong>Micron (MU) and SanDisk (SNDK) defied the tape</strong>, rallying sharply on strong memory-chip demand signals — a reminder that AI-driven semiconductor demand remains a structural counterweight to macro headwinds.</li>
+        <li><strong>Apple (AAPL) +3.56%</strong> was the lone bright spot among mega-caps, adding outsize resilience to SPY despite QQQ and IWM both shedding more than 1%.</li>
+      </ul>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- Section 2: Macro -->
+  <div class="section">
+    <p class="section-label">Section 2</p>
+    <h2 class="section-title">Macro</h2>
+    <div class="section-body">
+      <p>The post-summer macro environment has turned decisively more hawkish: a resilient labor market and stalling disinflation progress have returned Fed tightening risk to the table, with the 10-year yield now at its highest level in three years. The dollar is holding firm — USD/JPY at 154.15 sits in near-intervention territory for Japanese authorities — though euro strength (EUR/USD 1.1614) is capping dollar index gains. Elevated crude oil, pushing toward $100/bbl, adds an additional inflationary impulse that complicates the Fed's path toward rate cuts.</p>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- Section 3: Equities -->
+  <div class="section">
+    <p class="section-label">Section 3</p>
+    <h2 class="section-title">Equities</h2>
+    <div class="section-body">
+      <p>All three major US equity benchmarks closed lower: <strong>SPY −0.60%</strong> to 757.83, <strong>QQQ −1.06%</strong> to 708.69, and <strong>IWM −1.01%</strong> to 287.70. The tech-heavy QQQ lagged on rising discount-rate pressure, while small-caps in IWM bore the brunt of tighter financial-conditions fears.</p>
+      <p><strong>Notable movers:</strong> Intel (INTC) plunged 5.57% on volume of 95 million shares, extending a period of sector rotation weakness. Conversely, Apple (AAPL) gained 3.56% on 69 million shares, providing the most significant upside offset among large-caps and limiting SPY's drawdown.</p>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- Section 4: Volatility -->
+  <div class="section">
+    <p class="section-label">Section 4</p>
+    <h2 class="section-title">Volatility</h2>
+    <div class="section-body">
+      <p>The <strong>CBOE VIX settled at 17.84</strong>, rising 7.74% on the day — a meaningful jump that signals growing unease but stops well short of the fear threshold above 20. The reading places markets in the cautious-but-not-panicking zone, between the complacency floor (&lt;15) and the elevated-fear ceiling (&gt;20). Continued yield pressure or a break in risk assets could push VIX through 20 rapidly.</p>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- Section 5: Fixed Income -->
+  <div class="section">
+    <div class="watch-badge">⚡ WATCH</div>
+    <p class="section-label">Section 5</p>
+    <h2 class="section-title">Fixed Income</h2>
+    <div class="section-body">
+      <p>The <strong>10-year Treasury yield reached 4.83%</strong> — a three-year high — and the <strong>2-year yield moved to 4.43%</strong>, producing a 2Y–10Y spread of +40 basis points. The positively sloped curve reflects a <strong>steepening</strong> dynamic: markets are pricing in near-term tightening risk at the short end while the long end is driven higher by supply pressures and receding rate-cut expectations. TLT (20+ Year Treasury ETF) fell 1.16%, marking fresh 2026 lows. The bond market is now the primary driver of cross-asset volatility.</p>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- Section 6: Currencies -->
+  <div class="section">
+    <p class="section-label">Section 6</p>
+    <h2 class="section-title">Currencies</h2>
+    <div class="section-body">
+      <p><strong>EUR/USD held at 1.1614</strong>, sustaining the euro's recovery above the 1.15 handle as the ECB's comparatively hawkish tone offsets dollar demand driven by surging US yields. The pair's resilience above 1.16 suggests markets are not fully pricing a dollar breakout despite the rate differential widening.</p>
+      <p><strong>USD/JPY firmed to 154.15</strong>, remaining close to levels that have previously prompted verbal intervention from Japanese authorities. The wide US–Japan yield gap continues to underpin yen weakness, and any further move toward 155 would likely draw fresh warnings from the Ministry of Finance.</p>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- Section 7: Commodities -->
+  <div class="section">
+    <p class="section-label">Section 7</p>
+    <h2 class="section-title">Commodities</h2>
+    <div class="section-body">
+      <p><strong>Gold spot stands at $4,353.17/oz</strong>, reflecting record-high territory underpinned by persistent central-bank accumulation, geopolitical risk premia, and a structural hedge against dollar erosion. The yellow metal's strength alongside rising real yields underscores the depth of safe-haven demand in this cycle.</p>
+      <p><strong>WTI crude oil trades at $97.26/bbl</strong> (as of Sep 9), up sharply from $94.21 the prior session (+3.24%), driven by OPEC+ supply discipline and improving Chinese demand signals. The market is watching the psychologically significant $100 level closely; a break above it would amplify inflationary pressure and further complicate the Fed's calculus.</p>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- Section 8: Earnings Radar -->
+  <div class="section">
+    <p class="section-label">Section 8</p>
+    <h2 class="section-title">Earnings Radar</h2>
+    <div class="section-body">
+      <p>Key earnings reports expected over the next five trading days. Lennar's report on Sep 16 carries particular weight given the housing sector's acute sensitivity to rising mortgage rates.</p>
+      <div style="overflow-x:auto;">
+        <table class="earnings-table">
+          <thead>
+            <tr>
+              <th>Company</th>
+              <th>Date</th>
+              <th>Expected Move / Context</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Kroger (KR)</strong></td>
+              <td>Sep 11 — Pre-market</td>
+              <td>EPS est. $1.05 · Consumer staples bellwether; watch for food-price inflation guidance</td>
+            </tr>
+            <tr>
+              <td><strong>Trip.com Group (TCOM)</strong></td>
+              <td>Sep 15 — Post-market</td>
+              <td>EPS est. $0.84 · Key read on China/Asia travel demand recovery trajectory</td>
+            </tr>
+            <tr>
+              <td><strong>Lennar Corp (LEN)</strong></td>
+              <td>Sep 16 — Post-market</td>
+              <td>EPS est. $1.31 · Housing sector under yield pressure; guidance on order trends critical</td>
+            </tr>
+            <tr>
+              <td><strong>Cracker Barrel (CBRL)</strong></td>
+              <td>Sep 16</td>
+              <td>EPS est. $0.20 · Consumer discretionary dining; traffic and margin trends in focus</td>
+            </tr>
+            <tr>
+              <td><strong>Scholastic Corp (SCHL)</strong></td>
+              <td>Sep 17</td>
+              <td>EPS est. −$3.40 · Seasonal back-to-school period; education spending environment key</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+</div><!-- /.container -->
+
+<footer class="footer">
+  <div class="footer-inner">
+    <span style="color:#6b7280;">Market Quick Take · Thursday, 11 September 2026</span>
+    <span style="color:#9ca3af;">For informational purposes only. Not investment advice.</span>
+  </div>
+</footer>
+
+</body>
+</html>
