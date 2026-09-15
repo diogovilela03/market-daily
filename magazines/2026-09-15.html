@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Market Quick Take — 15 September 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg: #ffffff;
+    --text-primary: #1a2332;
+    --text-muted: #6b7280;
+    --accent-navy: #003366;
+    --border: #e5e7eb;
+    --positive: #16a34a;
+    --negative: #dc2626;
+    --watch-amber: #b45309;
+    --snapshot-bg: #f1f5f9;
+    color-scheme: light;
+  }
+
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+    background: var(--bg);
+    color: var(--text-primary);
+    font-size: 15px;
+    line-height: 1.8;
+    margin: 0;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+
+  img { max-width: 100%; }
+  [hidden] { display: none !important; }
+
+  .container {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  /* ── Masthead ── */
+  .masthead {
+    border-top: 3px solid var(--accent-navy);
+    padding: 32px 0 20px;
+    border-bottom: 1px solid var(--border);
+  }
+  .masthead-title {
+    font-weight: 700;
+    font-size: 42px;
+    color: var(--accent-navy);
+    letter-spacing: -0.5px;
+    line-height: 1.1;
+  }
+  .masthead-date {
+    font-size: 13px;
+    color: var(--text-muted);
+    margin-top: 6px;
+  }
+
+  /* ── Snapshot Bar ── */
+  .snapshot-bar {
+    background: var(--snapshot-bg);
+    padding: 12px 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .snapshot-inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: var(--text-primary);
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+  .chip {
+    white-space: nowrap;
+    padding: 3px 10px;
+  }
+  .chip-sep {
+    color: var(--border);
+    padding: 0 2px;
+    user-select: none;
+  }
+  .pos { color: var(--positive); }
+  .neg { color: var(--negative); }
+  .na  { color: var(--text-muted); }
+
+  /* ── Editor's Brief ── */
+  .editors-brief {
+    font-size: 18px;
+    font-style: italic;
+    color: #374151;
+    max-width: 760px;
+    margin: 28px 0;
+    border-left: 3px solid var(--accent-navy);
+    padding-left: 16px;
+    line-height: 1.8;
+  }
+
+  /* ── Section blocks ── */
+  .sections-wrap {
+    padding-top: 4px;
+  }
+  .section-hr {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 28px 0;
+  }
+  .section-label {
+    font-size: 11px;
+    font-weight: 500;
+    color: var(--accent-navy);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 8px;
+  }
+  .watch-pill {
+    display: inline-block;
+    background: #fef3c7;
+    color: var(--watch-amber);
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 500;
+    padding: 2px 8px;
+    margin-bottom: 8px;
+    line-height: 1.6;
+  }
+  .section-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 10px;
+    line-height: 1.25;
+  }
+  .section-body {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #374151;
+  }
+  .section-body ul {
+    padding-left: 20px;
+    margin-top: 4px;
+  }
+  .section-body ul li {
+    margin-bottom: 6px;
+  }
+  .section-body p + p {
+    margin-top: 10px;
+  }
+
+  /* ── Earnings Table ── */
+  .earnings-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid var(--border);
+    font-size: 13px;
+    margin-top: 14px;
+    overflow-x: auto;
+    display: block;
+  }
+  .earnings-table thead { background: var(--snapshot-bg); }
+  .earnings-table th {
+    text-align: left;
+    padding: 9px 14px;
+    font-weight: 600;
+    color: var(--text-primary);
+    border-bottom: 1px solid var(--border);
+    white-space: nowrap;
+  }
+  .earnings-table td {
+    padding: 9px 14px;
+    border-bottom: 1px solid var(--border);
+    color: #374151;
+  }
+  .earnings-table tr:last-child td {
+    border-bottom: none;
+  }
+  .earnings-table tbody tr:hover { background: #f9fafb; }
+
+  /* ── Footer ── */
+  .footer {
+    background: var(--snapshot-bg);
+    border-top: 1px solid var(--border);
+    margin-top: 48px;
+    padding: 20px 0;
+  }
+  .footer-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    font-size: 12px;
+  }
+  .footer-title { color: var(--text-muted); }
+  .footer-disclaimer { color: #9ca3af; }
+
+  /* ── Responsive ── */
+  @media (max-width: 500px) {
+    .masthead-title  { font-size: 28px; }
+    .section-title   { font-size: 20px; }
+    .editors-brief   { font-size: 16px; }
+    .snapshot-inner  { font-size: 11px; }
+    .chip            { padding: 3px 6px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="masthead">
+    <div class="masthead-title">MARKET QUICK TAKE</div>
+    <div class="masthead-date">Monday, 15 September 2026</div>
+  </div>
+</div>
+
+<!-- Snapshot Bar (full-width strip) -->
+<div class="snapshot-bar">
+  <div class="container">
+    <div class="snapshot-inner">
+      <span class="chip">SPY · $760.88 · <span class="neg">-0.45%</span></span>
+      <span class="chip-sep">|</span>
+      <span class="chip">QQQ · $709.18 · <span class="neg">-0.80%</span></span>
+      <span class="chip-sep">|</span>
+      <span class="chip">IWM · $287.91 · <span class="neg">-0.34%</span></span>
+      <span class="chip-sep">|</span>
+      <span class="chip">VIX · 17.10 · <span class="pos">+7.37%</span></span>
+      <span class="chip-sep">|</span>
+      <span class="chip">US10Y · 4.96% · <span class="pos">+0.20%</span></span>
+      <span class="chip-sep">|</span>
+      <span class="chip">US2Y · 4.63% · <span class="pos">+1.54%</span></span>
+      <span class="chip-sep">|</span>
+      <span class="chip">EUR/USD · 1.1539 · <span class="na">N/A</span></span>
+      <span class="chip-sep">|</span>
+      <span class="chip">GOLD · $4,290.87 · <span class="na">N/A</span></span>
+      <span class="chip-sep">|</span>
+      <span class="chip">WTI · $97.26 · <span class="pos">+3.24%</span></span>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+
+  <!-- Editor's Brief -->
+  <p class="editors-brief">
+    A broad risk-off session hit US equities Monday as semiconductor stocks cracked sharply — Nvidia fell 3.4%, Intel shed 5.6%, and the leveraged semis ETF SOXL plunged 17% — while Bank of America's CEO warned of a 10%-plus drop in third-quarter investment banking fees, compounding financial sector pressure. Against a backdrop of a 10-year Treasury yield pressing 4.96% and oil closing in on the $100 threshold, markets are recalibrating growth expectations even as gold's historic run above $4,290 signals that safe-haven demand remains firmly intact.
+  </p>
+
+  <div class="sections-wrap">
+
+    <!-- Section 1: Market Drivers -->
+    <div class="section">
+      <div class="section-label">Section 01</div>
+      <div class="watch-pill">⚡ WATCH</div>
+      <div class="section-title">Market Drivers</div>
+      <div class="section-body">
+        <ul>
+          <li><strong>Semiconductor washout:</strong> Nvidia (NVDA, -3.4%), Intel (INTC, -5.6%), and the 3× leveraged Semiconductor ETF (SOXL, -16.95%) led a sharp de-risking in the technology sector on heavy volume, raising questions about the sustainability of AI-driven capital expenditure cycles heading into Q4.</li>
+          <li><strong>Banking fee guidance shock:</strong> Bank of America's CEO publicly flagged a 10%-plus decline in Q3 investment banking fees, sending BAC shares down 5.1% and dragging the broader financial sector lower; it corroborates a softening in deal and advisory pipelines across Wall Street.</li>
+          <li><strong>Yield-spike aftermath weighs on rate-sensitive names:</strong> Homebuilders (D.R. Horton, Opendoor) and real estate platforms continued to face margin pressure as the recent spike in yields filters through to buyer affordability and profitability outlooks.</li>
+          <li><strong>Labor market resilience maintains Fed hawkish premium:</strong> A previously hot jobs report sustained market pricing for at-least-neutral Fed policy, removing near-term rate-cut expectations and keeping a valuation lid on long-duration growth equities.</li>
+        </ul>
+      </div>
+    </div>
+
+    <hr class="section-hr">
+
+    <!-- Section 2: Macro -->
+    <div class="section">
+      <div class="section-label">Section 02</div>
+      <div class="section-title">Macro</div>
+      <div class="section-body">
+        <p>The macro backdrop remains tilted toward caution. A resilient labor market — reinforced by September's hot payroll print — has kept the Federal Reserve in a holding pattern, suppressing hopes of near-term easing. The yield curve, while no longer inverted at +33 basis points (10Y–2Y), continues to steepen from the short end, reflecting ongoing repricing of terminal rate expectations rather than a clear growth upturn. With WTI crude approaching $97 per barrel — pushing toward the psychologically significant $100 level — the Fed faces an uncomfortable inflationary tail risk that could postpone any dovish pivot well into 2027. Global central bank divergence (ECB, BOJ) adds cross-currency complexity, but the dominant theme is one of higher-for-longer US rates.</p>
+      </div>
+    </div>
+
+    <hr class="section-hr">
+
+    <!-- Section 3: Equities -->
+    <div class="section">
+      <div class="section-label">Section 03</div>
+      <div class="section-title">Equities</div>
+      <div class="section-body">
+        <p>All three major US benchmarks posted losses on Monday. The S&amp;P 500 proxy (SPY) fell 0.45% to $760.88, while the Nasdaq-100 (QQQ) underperformed with a 0.80% decline to $709.18, consistent with the tech sector leading lower. Small-cap stocks (IWM) were relatively resilient, slipping just 0.34% to $287.91.</p>
+        <p><strong>Notable movers:</strong> Nvidia (NVDA) dropped 3.4% to $210.96 on exceptional volume of 130 million shares — the stock's largest single-day decline in weeks — as investors rotated out of AI-exposed positions. Bank of America (BAC) shed 5.1% to $59.47, the most notable financial sector mover after its CEO's investment banking warning reinforced concerns about Q3 earnings quality across the sector.</p>
+      </div>
+    </div>
+
+    <hr class="section-hr">
+
+    <!-- Section 4: Volatility -->
+    <div class="section">
+      <div class="section-label">Section 04</div>
+      <div class="section-title">Volatility</div>
+      <div class="section-body">
+        <p>The CBOE Volatility Index (VIX) rose 7.4% to <strong>17.10</strong>, reflecting a pickup in near-term hedging demand amid semiconductor and financial sector weakness. While the reading remains below the 20 threshold that conventionally signals elevated fear, the acceleration in the VIX — its largest single-session move in several weeks — warrants attention. Implied volatility sitting in the 15–20 zone reflects a market that is cautious but not panicked; a sustained push above 20 would signal a more meaningful shift in risk appetite.</p>
+      </div>
+    </div>
+
+    <hr class="section-hr">
+
+    <!-- Section 5: Fixed Income -->
+    <div class="section">
+      <div class="section-label">Section 05</div>
+      <div class="section-title">Fixed Income</div>
+      <div class="section-body">
+        <p>The 10-year US Treasury yield most recently printed at <strong>4.96%</strong>, while the 2-year sat at <strong>4.63%</strong>, producing a curve spread of +33 basis points — a modestly positive slope reflecting a curve that has steepened from prior inversion. Both yields have risen in recent sessions, with the 2-year gaining approximately 7 basis points in the latest daily move, underscoring persistent market sensitivity to Fed signaling. The elevated rate environment continues to act as a structural headwind for equity valuations, particularly for high-multiple growth names. There is no near-term indication of the curve crossing back through zero, but the pace of short-end repricing remains a key variable to watch.</p>
+      </div>
+    </div>
+
+    <hr class="section-hr">
+
+    <!-- Section 6: Currencies -->
+    <div class="section">
+      <div class="section-label">Section 06</div>
+      <div class="section-title">Currencies</div>
+      <div class="section-body">
+        <p>EUR/USD held at <strong>1.1539</strong>, reflecting a broadly range-bound dollar against the euro as markets weigh the Fed's hawkish pause against a modestly resilient European economy. USD/JPY remained elevated at <strong>154.83</strong>, a level that keeps Japanese authorities alert to FX intervention risk; the pair continues to reflect the stark divergence between the Fed's higher-for-longer posture and the Bank of Japan's cautious normalization path. EUR/USD above 1.15 signals the market is not yet pricing a fresh leg of dollar strength, while dollar-yen above 155 remains a political and monetary flashpoint for Tokyo.</p>
+      </div>
+    </div>
+
+    <hr class="section-hr">
+
+    <!-- Section 7: Commodities -->
+    <div class="section">
+      <div class="section-label">Section 07</div>
+      <div class="section-title">Commodities</div>
+      <div class="section-body">
+        <p>Gold extended its historic run to <strong>$4,290.87 per troy ounce</strong>, hovering near record territory as investors continued to seek shelter from yield uncertainty, geopolitical risk, and the prospect of prolonged monetary tightness. Precious metals streaming company Wheaton Precious Metals recently reported record revenues at these gold price levels, validating the structural demand underpinning the rally.</p>
+        <p>WTI crude oil advanced to <strong>$97.26 per barrel</strong>, approaching the psychologically charged $100 mark. The move reflects OPEC+ supply discipline holding firm against a backdrop of firm global demand, while any further escalation in geopolitical tensions could accelerate the breach above triple digits. Oil at these levels materially complicates the Federal Reserve's inflation calculus heading into year-end.</p>
+      </div>
+    </div>
+
+    <hr class="section-hr">
+
+    <!-- Section 8: Earnings Calendar (renumbered from 9; Digital Assets omitted) -->
+    <div class="section">
+      <div class="section-label">Section 08</div>
+      <div class="section-title">Earnings Radar</div>
+      <div class="section-body">
+        <p>Key reports due over the next five trading days (Sept 15–19). Lennar's print will be closely watched given the current pressure on homebuilders from elevated yields; Trip.com offers a read on Chinese consumer travel demand recovery.</p>
+        <table class="earnings-table" aria-label="Upcoming earnings">
+          <thead>
+            <tr>
+              <th>Company</th>
+              <th>Ticker</th>
+              <th>Date</th>
+              <th>Timing</th>
+              <th>EPS Estimate</th>
+              <th>Expected Move</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Trip.com Group</td>
+              <td>TCOM</td>
+              <td>Sep 15</td>
+              <td>Post-market</td>
+              <td>$0.84</td>
+              <td>±8–12%</td>
+            </tr>
+            <tr>
+              <td>Lennar Corporation</td>
+              <td>LEN</td>
+              <td>Sep 16</td>
+              <td>Post-market</td>
+              <td>$1.30</td>
+              <td>±5–8%</td>
+            </tr>
+            <tr>
+              <td>Endava</td>
+              <td>DAVA</td>
+              <td>Sep 17</td>
+              <td>—</td>
+              <td>$0.05</td>
+              <td>±10–15%</td>
+            </tr>
+            <tr>
+              <td>Hub Group</td>
+              <td>HUBG</td>
+              <td>Sep 17</td>
+              <td>—</td>
+              <td>$0.52</td>
+              <td>±5–8%</td>
+            </tr>
+            <tr>
+              <td>VinFast Auto</td>
+              <td>VFS</td>
+              <td>Sep 17</td>
+              <td>—</td>
+              <td>-$0.26</td>
+              <td>±15–25%</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div><!-- /.sections-wrap -->
+
+</div><!-- /.container -->
+
+<!-- Footer (full-width strip, outside .container) -->
+<div class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <span class="footer-title">Market Quick Take · Monday, 15 September 2026</span>
+      <span class="footer-disclaimer">For informational purposes only. Not investment advice.</span>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
