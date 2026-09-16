@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Market Quick Take</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #ffffff;
+      color: #1a2332;
+    }
+
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 16px;
+    }
+
+    /* Masthead */
+    .masthead {
+      border-top: 3px solid #003366;
+      padding: 32px 0 20px;
+      border-bottom: 1px solid #e5e7eb;
+    }
+    .masthead h1 {
+      font-size: 42px;
+      font-weight: 700;
+      color: #003366;
+      letter-spacing: -1px;
+      line-height: 1;
+    }
+    .masthead-date {
+      font-size: 13px;
+      font-weight: 400;
+      color: #6b7280;
+      margin-top: 6px;
+    }
+
+    /* Snapshot bar */
+    .snapshot-bar {
+      background: #f1f5f9;
+      padding: 12px 0;
+      width: 100%;
+    }
+    .snapshot-inner {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 16px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px 0;
+      align-items: center;
+    }
+    .chip {
+      font-size: 12px;
+      font-weight: 500;
+      color: #1a2332;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+    .chip-sep {
+      color: #9ca3af;
+      padding: 0 10px;
+      font-size: 12px;
+    }
+    .positive { color: #16a34a; }
+    .negative { color: #dc2626; }
+
+    /* Editor's brief */
+    .editors-brief {
+      font-size: 18px;
+      font-style: italic;
+      font-weight: 400;
+      color: #374151;
+      max-width: 760px;
+      margin: 28px 0;
+      border-left: 3px solid #003366;
+      padding-left: 16px;
+      line-height: 1.7;
+    }
+
+    /* Sections */
+    .section-divider {
+      border: none;
+      border-top: 1px solid #e5e7eb;
+      margin: 28px 0;
+    }
+    .watch-pill {
+      display: inline-block;
+      background: #fef3c7;
+      color: #b45309;
+      border-radius: 4px;
+      font-size: 11px;
+      font-weight: 500;
+      padding: 2px 8px;
+      margin-bottom: 10px;
+    }
+    .section-label {
+      font-size: 11px;
+      font-weight: 500;
+      color: #003366;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      margin-bottom: 6px;
+    }
+    .section-title {
+      font-size: 24px;
+      font-weight: 700;
+      color: #1a2332;
+      margin-bottom: 10px;
+    }
+    .section-body {
+      font-size: 15px;
+      font-weight: 400;
+      color: #374151;
+      line-height: 1.8;
+    }
+    .section-body ul {
+      padding-left: 8px;
+      list-style: disc;
+    }
+    .section-body ul li {
+      margin-bottom: 6px;
+      margin-left: 16px;
+    }
+    .section-body p + p {
+      margin-top: 10px;
+    }
+
+    /* Earnings table */
+    .earnings-table {
+      width: 100%;
+      border-collapse: collapse;
+      border: 1px solid #e5e7eb;
+      font-size: 13px;
+      margin-top: 14px;
+    }
+    .earnings-table th {
+      background: #f1f5f9;
+      padding: 8px 12px;
+      text-align: left;
+      font-weight: 600;
+      color: #1a2332;
+      border-bottom: 1px solid #e5e7eb;
+    }
+    .earnings-table td {
+      padding: 8px 12px;
+      border-bottom: 1px solid #e5e7eb;
+      color: #374151;
+    }
+    .earnings-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    /* Footer */
+    .footer {
+      background: #f1f5f9;
+      border-top: 1px solid #e5e7eb;
+      margin-top: 48px;
+      padding: 20px 0;
+    }
+    .footer-inner {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .footer-inner span {
+      font-size: 12px;
+      font-weight: 400;
+    }
+
+    @media (max-width: 600px) {
+      .masthead h1 { font-size: 28px; }
+      .editors-brief { font-size: 16px; }
+      .section-title { font-size: 20px; }
+      .earnings-table { font-size: 12px; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="masthead">
+      <h1>MARKET QUICK TAKE</h1>
+      <p class="masthead-date">Wednesday, 16 September 2026</p>
+    </div>
+  </div>
+
+  <!-- Snapshot Bar -->
+  <div class="snapshot-bar">
+    <div class="snapshot-inner">
+      <span class="chip">SPY &middot; 757.39 &middot; <span class="negative">-0.46%</span></span>
+      <span class="chip-sep">|</span>
+      <span class="chip">QQQ &middot; 704.54 &middot; <span class="negative">-0.65%</span></span>
+      <span class="chip-sep">|</span>
+      <span class="chip">IWM &middot; 285.14 &middot; <span class="negative">-0.70%</span></span>
+      <span class="chip-sep">|</span>
+      <span class="chip">VIX &middot; 17.20 &middot; <span class="positive">+0.58%</span></span>
+      <span class="chip-sep">|</span>
+      <span class="chip">US10Y &middot; 4.97% &middot; <span class="positive">+0.20%</span></span>
+      <span class="chip-sep">|</span>
+      <span class="chip">US2Y &middot; 4.65% &middot; <span class="positive">+0.43%</span></span>
+      <span class="chip-sep">|</span>
+      <span class="chip">EUR/USD &middot; 1.1551</span>
+      <span class="chip-sep">|</span>
+      <span class="chip">GOLD &middot; $4,333.74</span>
+      <span class="chip-sep">|</span>
+      <span class="chip">WTI &middot; $97.26</span>
+    </div>
+  </div>
+
+  <div class="container">
+
+    <!-- Editor's Brief -->
+    <p class="editors-brief">US equities retreated across all major benchmarks Tuesday as a stronger-than-expected jobs report rekindled Federal Reserve tightening fears, lifting the 10-year Treasury yield toward 4.97% and dimming near-term rate-cut hopes. Risk appetite remained constrained as Bank of America flagged double-digit investment banking fee declines and the market braced for Lennar's Q3 results — the opening test of a homebuilder earnings season under pressure from elevated borrowing costs.</p>
+
+    <hr class="section-divider">
+
+    <!-- Section 1: Market Drivers -->
+    <div class="section">
+      <div class="watch-pill">&#9889; WATCH</div>
+      <p class="section-label">Section 01</p>
+      <h2 class="section-title">Market Drivers</h2>
+      <div class="section-body">
+        <ul>
+          <li>A hotter-than-expected US nonfarm payroll print revived Fed tightening expectations, with futures repricing toward at least one additional rate hike before year-end and cutting near-term easing odds materially.</li>
+          <li>Bank of America's CEO flagged at least a 10% drop in Q3 investment banking fees, reinforcing broad caution around financial sector earnings and capital markets activity for the quarter.</li>
+          <li>Yield spike continues to pressure rate-sensitive segments: Opendoor fell 7%, D.R. Horton trades below analyst price targets, and mortgage-adjacent platforms broadly underperformed.</li>
+          <li>The market debate has shifted from "soft landing" to "no landing" — robust economic data keeps growth intact but forces a reassessment of the terminal rate, widening the gap between macro resilience and equity multiples.</li>
+        </ul>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- Section 2: Macro -->
+    <div class="section">
+      <div class="watch-pill">&#9889; WATCH</div>
+      <p class="section-label">Section 02</p>
+      <h2 class="section-title">Macro</h2>
+      <div class="section-body">
+        <p>The US 10-year Treasury yield climbed to 4.97% — approaching the psychologically significant 5% threshold — following a robust jobs report that reinforced a higher-for-longer Federal Reserve posture. The 2-year yield rose in tandem to 4.65%, keeping the curve mildly positively sloped at +32 basis points, a reflection of back-end repricing rather than front-end easing expectations. Markets now assign minimal probability to a Fed rate cut before Q1 2027, and the "higher for longer" narrative has reasserted itself as consensus.</p>
+        <p>Elevated real yields continue to challenge growth equity valuations, compress housing affordability, and widen leverage-sensitive credit spreads. Geopolitical backdrop remains a secondary but persistent tail risk, supporting defensive asset positioning and gold demand.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- Section 3: Equities -->
+    <div class="section">
+      <p class="section-label">Section 03</p>
+      <h2 class="section-title">Equities</h2>
+      <div class="section-body">
+        <p>All three major US equity benchmarks declined Tuesday: SPY fell 0.46% to 757.39, QQQ dropped 0.65% to 704.54, and IWM lost 0.70% to 285.14. Small-caps underperformed modestly, consistent with elevated sensitivity to tighter credit conditions and higher floating-rate debt burdens. NVDA (+0.57%) remained resilient within the most-actively-traded universe, sustained by persistent AI infrastructure investment demand.</p>
+        <p><strong>Notable movers (top gainers/losers):</strong></p>
+        <ul>
+          <li><strong>VEEA +149.3%</strong> (198M shares) — high-volume speculative surge in a thin-float micro-cap; event-driven, not a macro signal.</li>
+          <li><strong>FEED &minus;69.3%</strong> — sharp sell-off on heavy selling pressure; limited large-cap read-through.</li>
+        </ul>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- Section 4: Volatility -->
+    <div class="section">
+      <p class="section-label">Section 04</p>
+      <h2 class="section-title">Volatility</h2>
+      <div class="section-body">
+        <p>The CBOE VIX edged up 0.58% to <strong>17.20</strong>, settling in the neutral zone (15–20). This level signals a market that is cautious but not panicked — investors are hedging modestly against rate uncertainty but have not yet moved into fear-driven protection demand. A sustained close above 20 would indicate elevated stress and the potential for accelerated de-risking. Current levels remain complacent relative to the underlying macro volatility in rates.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- Section 5: Fixed Income -->
+    <div class="section">
+      <p class="section-label">Section 05</p>
+      <h2 class="section-title">Fixed Income</h2>
+      <div class="section-body">
+        <p>The US 10-year Treasury yield stands at <strong>4.97%</strong>, approaching the 5% handle last seen earlier this year, while the 2-year yield sits at <strong>4.65%</strong>. The resulting 2s–10s spread of +32 basis points keeps the curve positively sloped — an un-inversion maintained since mid-2025 — but the steepening dynamic is driven by back-end pressure from revised growth and inflation expectations rather than front-end rate-cut pricing. This bear-steepening environment is historically associated with tightening financial conditions and softer risk asset performance. Investment-grade and high-yield spreads are likely widening in sympathy with the rates move.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- Section 6: Currencies -->
+    <div class="section">
+      <p class="section-label">Section 06</p>
+      <h2 class="section-title">Currencies</h2>
+      <div class="section-body">
+        <p><strong>EUR/USD: 1.1551</strong> — The euro holds above the 1.15 handle, supported by relatively firm ECB messaging and a narrowing in transatlantic rate differentials as the ECB has maintained a tightening bias. The pair is range-bound as both central banks signal data-dependency, limiting directional conviction in the near term.</p>
+        <p><strong>USD/JPY: 155.05</strong> — The yen remains pinned near multi-decade lows against the dollar, a persistent reflection of the stark divergence between the Fed's elevated terminal rate and the Bank of Japan's accommodative stance. BoJ intervention risk is elevated at these levels, with Japanese officials likely monitoring the 155–157 zone closely for any disorderly yen depreciation that could prompt verbal or physical intervention.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- Section 7: Commodities -->
+    <div class="section">
+      <p class="section-label">Section 07</p>
+      <h2 class="section-title">Commodities</h2>
+      <div class="section-body">
+        <p><strong>Gold: $4,333.74/oz</strong> — Precious metals continue to trade at structurally elevated levels, underpinned by geopolitical risk premium, sustained central bank buying (particularly from emerging market central banks diversifying away from USD reserves), and hedging demand against macro tail risks. Gold's resilience despite rising real yields underscores a structural demand shift that defies conventional rate-driven models.</p>
+        <p><strong>WTI Crude: $97.26/bbl</strong> — Oil remains close to the $100 threshold, supported by continued OPEC+ supply discipline and robust US demand data signaled by the strong jobs report. Elevated crude prices complicate the Fed's inflation narrative and reinforce the case for a higher-for-longer policy stance, creating a self-reinforcing tightening feedback loop for energy-intensive sectors.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- Section 8: Earnings Radar (renumbered from 9; Digital Assets omitted — CoinDesk unavailable) -->
+    <div class="section">
+      <p class="section-label">Section 08</p>
+      <h2 class="section-title">Earnings Radar</h2>
+      <div class="section-body">
+        <p>Key earnings expected in the next five trading days (16–22 September 2026):</p>
+        <table class="earnings-table">
+          <thead>
+            <tr>
+              <th>Company</th>
+              <th>Date</th>
+              <th>Expected Move / Context</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Lennar (LEN)</strong></td>
+              <td>Tue, Sep 16</td>
+              <td>Est. EPS $1.30 — Homebuilder margins in focus; yield spike a key headwind</td>
+            </tr>
+            <tr>
+              <td><strong>Hub Group (HUBG)</strong></td>
+              <td>Wed, Sep 17</td>
+              <td>Est. EPS $0.52 — Trucking/intermodal demand signal for logistics sector</td>
+            </tr>
+            <tr>
+              <td><strong>AutoZone (AZO)</strong></td>
+              <td>Mon, Sep 22</td>
+              <td>Est. EPS $54.97 — Auto retail proxy for consumer durable spending resilience</td>
+            </tr>
+            <tr>
+              <td><strong>KB Home (KBH)</strong></td>
+              <td>Mon, Sep 22</td>
+              <td>Est. EPS $0.88 — Second major homebuilder this week; mortgage rate read-through</td>
+            </tr>
+            <tr>
+              <td><strong>Thor Industries (THO)</strong></td>
+              <td>Mon, Sep 22</td>
+              <td>Est. EPS $0.95 — RV demand as proxy for consumer discretionary confidence</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div><!-- end .container -->
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <span style="color:#6b7280;">Market Quick Take &middot; Wednesday, 16 September 2026</span>
+      <span style="color:#9ca3af;">For informational purposes only. Not investment advice.</span>
+    </div>
+  </footer>
+
+</body>
+</html>
