@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Market Quick Take</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #ffffff;
+      color: #1a2332;
+    }
+
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 16px;
+    }
+
+    .masthead {
+      border-top: 3px solid #003366;
+      padding: 32px 0 20px;
+      border-bottom: 1px solid #e5e7eb;
+    }
+
+    .masthead-title {
+      font-size: 42px;
+      font-weight: 700;
+      color: #003366;
+      line-height: 1;
+      letter-spacing: -0.5px;
+    }
+
+    .masthead-date {
+      font-size: 13px;
+      font-weight: 400;
+      color: #6b7280;
+      margin-top: 6px;
+    }
+
+    .snapshot-bar {
+      background: #f1f5f9;
+      padding: 12px 0;
+    }
+
+    .snapshot-inner {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0;
+    }
+
+    .chip {
+      font-size: 12px;
+      font-weight: 500;
+      color: #1a2332;
+      text-transform: uppercase;
+      white-space: nowrap;
+      padding: 2px 8px;
+    }
+
+    .chip-sep {
+      color: #9ca3af;
+      font-size: 12px;
+      padding: 2px 0;
+    }
+
+    .chip-label {
+      color: #6b7280;
+    }
+
+    .positive {
+      color: #16a34a;
+    }
+
+    .negative {
+      color: #dc2626;
+    }
+
+    .neutral {
+      color: #6b7280;
+    }
+
+    .brief {
+      font-size: 18px;
+      font-weight: 400;
+      font-style: italic;
+      color: #374151;
+      max-width: 760px;
+      margin: 28px 0;
+      border-left: 3px solid #003366;
+      padding-left: 16px;
+      line-height: 1.7;
+    }
+
+    .section {
+      margin-bottom: 0;
+    }
+
+    .section-rule {
+      border: none;
+      border-top: 1px solid #e5e7eb;
+      margin: 28px 0;
+    }
+
+    .watch-pill {
+      display: inline-block;
+      background: #fef3c7;
+      color: #b45309;
+      font-size: 11px;
+      font-weight: 500;
+      border-radius: 4px;
+      padding: 2px 8px;
+      margin-bottom: 8px;
+    }
+
+    .section-label {
+      font-size: 11px;
+      font-weight: 500;
+      color: #003366;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      margin-bottom: 6px;
+    }
+
+    .section-title {
+      font-size: 24px;
+      font-weight: 700;
+      color: #1a2332;
+      margin-bottom: 10px;
+      line-height: 1.2;
+    }
+
+    .section-body {
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 1.8;
+      color: #374151;
+    }
+
+    .section-body ul {
+      padding-left: 8px;
+      list-style: disc;
+      list-style-position: inside;
+    }
+
+    .section-body ul li {
+      margin-bottom: 8px;
+    }
+
+    .earnings-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+      font-weight: 400;
+      margin-top: 14px;
+    }
+
+    .earnings-table th {
+      border: 1px solid #e5e7eb;
+      padding: 8px 12px;
+      text-align: left;
+      font-weight: 600;
+      background: #f9fafb;
+      color: #374151;
+    }
+
+    .earnings-table td {
+      border: 1px solid #e5e7eb;
+      padding: 8px 12px;
+      color: #374151;
+    }
+
+    .footer {
+      background: #f1f5f9;
+      border-top: 1px solid #e5e7eb;
+      margin-top: 48px;
+      padding: 20px 0;
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .footer-brand {
+      font-size: 12px;
+      font-weight: 400;
+      color: #6b7280;
+    }
+
+    .footer-disclaimer {
+      font-size: 12px;
+      font-weight: 400;
+      color: #9ca3af;
+    }
+
+    @media (max-width: 600px) {
+      .masthead-title { font-size: 28px; }
+      .brief { font-size: 16px; }
+      .section-title { font-size: 20px; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header class="masthead">
+      <div class="masthead-title">MARKET QUICK TAKE</div>
+      <div class="masthead-date">Thursday, 24 September 2026</div>
+    </header>
+  </div>
+
+  <div class="snapshot-bar">
+    <div class="container">
+      <div class="snapshot-inner">
+        <span class="chip"><span class="chip-label">SPY</span> · <span>$767.81</span> · <span class="negative">−0.72%</span></span>
+        <span class="chip-sep">|</span>
+        <span class="chip"><span class="chip-label">QQQ</span> · <span>$741.21</span> · <span class="negative">−0.84%</span></span>
+        <span class="chip-sep">|</span>
+        <span class="chip"><span class="chip-label">IWM</span> · <span>$281.92</span> · <span class="negative">−1.84%</span></span>
+        <span class="chip-sep">|</span>
+        <span class="chip"><span class="chip-label">VIX</span> · <span>14.21</span> · <span class="negative">−4.64%</span></span>
+        <span class="chip-sep">|</span>
+        <span class="chip"><span class="chip-label">US10Y</span> · <span>4.96%</span> · <span class="neutral">0.00%</span></span>
+        <span class="chip-sep">|</span>
+        <span class="chip"><span class="chip-label">US2Y</span> · <span>4.71%</span> · <span class="negative">−1.05%</span></span>
+        <span class="chip-sep">|</span>
+        <span class="chip"><span class="chip-label">EUR/USD</span> · <span>1.1392</span> · <span class="neutral">N/A</span></span>
+        <span class="chip-sep">|</span>
+        <span class="chip"><span class="chip-label">GOLD</span> · <span>$4,286.46</span> · <span class="neutral">N/A</span></span>
+        <span class="chip-sep">|</span>
+        <span class="chip"><span class="chip-label">WTI</span> · <span>$96.41</span> · <span class="negative">−0.58%</span></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+
+    <p class="brief">The Federal Reserve delivered its first rate hike since 2023, rattling equity markets and pushing the 10-year Treasury yield to 4.96%. Small-caps bore the brunt of the selloff, with IWM falling 1.84%, as rate-sensitive sectors — housing, banking, and energy — repriced sharply lower. Gold held firm above $4,280 while WTI crude surrendered early-week gains, retreating below $97 on revised IEA global demand forecasts.</p>
+
+    <!-- SECTION 1: MARKET DRIVERS -->
+    <div class="section">
+      <div class="watch-pill">⚡ WATCH</div>
+      <div class="section-label">Section 01</div>
+      <h2 class="section-title">Market Drivers</h2>
+      <div class="section-body">
+        <ul>
+          <li>The Fed's first rate hike since 2023 roiled sentiment, sending banks and homebuilders sharply lower — Citigroup fell 3.03%, Wells Fargo dropped 3.92%, and D.R. Horton slid 4.1%, with multiple news articles scoring topic relevance above 0.90 on financial markets and monetary economy themes.</li>
+          <li>Small-cap equities (IWM −1.84%) significantly underperformed mega-cap tech, reflecting the Russell 2000's disproportionate exposure to floating-rate debt and tighter credit conditions in a renewed tightening cycle.</li>
+          <li>The IEA revised global oil demand forecasts lower, pressuring energy producers — Diamondback Energy (FANG) fell 8.28% and Occidental Petroleum (OXY) dropped 5.13%, as WTI crude shed over 5% from its $101.44 weekly high.</li>
+          <li>Berkshire Hathaway disclosed an ~10% stake in homebuilder Lennar, a contrarian value bet against the sector malaise triggered by surging mortgage rates, even as Lennar reported weak earnings and significant margin compression.</li>
+        </ul>
+      </div>
+    </div>
+
+    <hr class="section-rule">
+
+    <!-- SECTION 2: MACRO -->
+    <div class="section">
+      <div class="watch-pill">⚡ WATCH</div>
+      <div class="section-label">Section 02</div>
+      <h2 class="section-title">Macro</h2>
+      <div class="section-body">
+        <p>The Federal Reserve delivered its first rate hike since 2023, snapping the pause cycle that had defined policy through 2024–2025. Major U.S. banks — including JPMorgan, Bank of America, Citigroup, Wells Fargo, and KeyCorp — have already moved to raise their prime lending rates in response. The market is now repricing whether this hike is a one-off recalibration or the start of a renewed tightening cycle; hawkish central bank posture is creating cascading pressure across rate-sensitive sectors, compressing equity risk premiums as yields push toward multi-year highs and funding costs tighten.</p>
+      </div>
+    </div>
+
+    <hr class="section-rule">
+
+    <!-- SECTION 3: EQUITIES -->
+    <div class="section">
+      <div class="section-label">Section 03</div>
+      <h2 class="section-title">Equities</h2>
+      <div class="section-body">
+        <p>SPY declined 0.72% to $767.81, QQQ fell 0.84% to $741.21, and IWM led the selloff at −1.84% to $281.92, signaling outsized stress on smaller companies with greater sensitivity to rising borrowing costs. On the technology front, NVDA slipped 1.47% to $225.51 and INTC fell 1.02% to $122.60 amid broad sector derisking. Quantum computing play IONQ bucked the trend, gaining 4.42% to $42.54. Micron Technology has been a standout performer this cycle, recently surging past the $1,000 per share mark on strong AI server-driven DRAM and high-bandwidth memory demand.</p>
+      </div>
+    </div>
+
+    <hr class="section-rule">
+
+    <!-- SECTION 4: VOLATILITY -->
+    <div class="section">
+      <div class="section-label">Section 04</div>
+      <h2 class="section-title">Volatility</h2>
+      <div class="section-body">
+        <p>The VIX closed at 14.21, declining 4.64% from the prior session and holding firmly in complacent territory below the 15 threshold. Despite surface-level equity selling, the subdued fear gauge signals that institutional participants are treating the rate hike as manageable rather than systemic. Options pricing does not currently reflect broad risk-off capitulation, though any further policy hawkishness or macro shock could rapidly reset the vol regime toward the 20 danger zone.</p>
+      </div>
+    </div>
+
+    <hr class="section-rule">
+
+    <!-- SECTION 5: FIXED INCOME -->
+    <div class="section">
+      <div class="watch-pill">⚡ WATCH</div>
+      <div class="section-label">Section 05</div>
+      <h2 class="section-title">Fixed Income</h2>
+      <div class="section-body">
+        <p>The 10-year Treasury yield stands at 4.96%, with the 2-year at 4.71%, producing a 25-basis-point positive spread — keeping the curve mildly upward-sloping after a prolonged period of near-zero spread. News flow points to yields trading near 3-year highs, with the yield spike directly driving a delayed profit timeline at rate-sensitive companies like Opendoor (−7%) and amplifying pressure on bank net interest margins. Elevated front-end yields are thinning equity risk premiums across sectors, a dynamic the market is actively repricing in the wake of the Fed's resumption of tightening.</p>
+      </div>
+    </div>
+
+    <hr class="section-rule">
+
+    <!-- SECTION 6: CURRENCIES -->
+    <div class="section">
+      <div class="section-label">Section 06</div>
+      <h2 class="section-title">Currencies</h2>
+      <div class="section-body">
+        <p>EUR/USD trades at 1.1392, reflecting measured dollar softness as the Fed hike trajectory had been partially telegraphed. USD/JPY holds at 158.38, keeping the yen structurally weak versus the greenback despite ongoing Bank of Japan normalization rhetoric. The wide U.S.-Japan rate differential continues to anchor carry trade flows into JPY selling; Mizuho Financial Group's recent 3.66% stock gain reflects market expectations of further BoJ tightening that could gradually compress that gap over coming quarters.</p>
+      </div>
+    </div>
+
+    <hr class="section-rule">
+
+    <!-- SECTION 7: COMMODITIES -->
+    <div class="section">
+      <div class="section-label">Section 07</div>
+      <h2 class="section-title">Commodities</h2>
+      <div class="section-body">
+        <p>Gold spot holds firmly at $4,286.46, benefiting from safe-haven demand and residual dollar uncertainty in the post-hike environment, with the metal well-supported above $4,200. WTI crude has pulled back sharply from its weekly high of $101.44 (September 18) to $96.41, erasing more than 5% as the IEA revised global demand forecasts lower and macro headwinds clouded the near-term demand picture. Energy equity weakness — Diamondback Energy (FANG) −8.28%, Occidental Petroleum (OXY) −5.13% — reflects the magnitude of the demand reassessment, with the $95–$97 band now serving as a key crude support zone.</p>
+      </div>
+    </div>
+
+    <hr class="section-rule">
+
+    <!-- SECTION 8: EARNINGS RADAR (renumbered from 9; Section 8 Digital Assets omitted — CoinDesk unavailable) -->
+    <div class="section">
+      <div class="section-label">Section 08</div>
+      <h2 class="section-title">Earnings Radar</h2>
+      <div class="section-body">
+        <p>Key earnings over the next five trading days. Costco and Darden Restaurants report today; Micron Technology's September 30 result will be a pivotal datapoint for AI memory demand narratives given its recent surge past the $1,000 mark.</p>
+        <table class="earnings-table">
+          <thead>
+            <tr>
+              <th>Company</th>
+              <th>Date</th>
+              <th>Expected EPS</th>
+              <th>Timing</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Costco Wholesale (COST)</td>
+              <td>Sep 24</td>
+              <td>$6.48</td>
+              <td>Post-market</td>
+            </tr>
+            <tr>
+              <td>Darden Restaurants (DRI)</td>
+              <td>Sep 24</td>
+              <td>$2.06</td>
+              <td>Pre-market</td>
+            </tr>
+            <tr>
+              <td>TD Synnex (SNX)</td>
+              <td>Sep 24</td>
+              <td>$4.38</td>
+              <td>Pre-market</td>
+            </tr>
+            <tr>
+              <td>Carnival Corporation (CCL)</td>
+              <td>Sep 29</td>
+              <td>$1.36</td>
+              <td>Pre-market</td>
+            </tr>
+            <tr>
+              <td>Micron Technology (MU)</td>
+              <td>Sep 30</td>
+              <td>$31.24</td>
+              <td>Post-market</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <span class="footer-brand">Market Quick Take · Thursday, 24 September 2026</span>
+        <span class="footer-disclaimer">For informational purposes only. Not investment advice.</span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
