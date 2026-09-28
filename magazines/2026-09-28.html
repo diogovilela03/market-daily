@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Market Quick Take · 28 September 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: #ffffff;
+    color: #1a2332;
+  }
+
+  .container {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  /* MASTHEAD */
+  .masthead {
+    border-top: 3px solid #003366;
+    padding: 32px 0 20px;
+    border-bottom: 1px solid #e5e7eb;
+    margin-bottom: 0;
+  }
+  .masthead-title {
+    font-size: 42px;
+    font-weight: 700;
+    color: #003366;
+    line-height: 1.1;
+    letter-spacing: -0.5px;
+  }
+  .masthead-date {
+    font-size: 13px;
+    font-weight: 400;
+    color: #6b7280;
+    margin-top: 6px;
+  }
+
+  /* SNAPSHOT BAR */
+  .snapshot-bar {
+    background: #f1f5f9;
+    padding: 12px 0;
+    width: 100%;
+  }
+  .snapshot-inner {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 0;
+    align-items: center;
+  }
+  .chip {
+    font-size: 12px;
+    font-weight: 500;
+    color: #1a2332;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    white-space: nowrap;
+  }
+  .chip-sep {
+    font-size: 12px;
+    color: #9ca3af;
+    margin: 0 8px;
+  }
+  .pos { color: #16a34a; }
+  .neg { color: #dc2626; }
+  .neutral { color: #6b7280; }
+
+  /* EDITOR'S BRIEF */
+  .editors-brief {
+    font-size: 18px;
+    font-weight: 400;
+    font-style: italic;
+    color: #374151;
+    line-height: 1.7;
+    max-width: 760px;
+    margin: 28px 0;
+    border-left: 3px solid #003366;
+    padding-left: 16px;
+  }
+
+  /* SECTIONS */
+  .section {
+    margin-bottom: 0;
+  }
+  .section-divider {
+    border: none;
+    border-top: 1px solid #e5e7eb;
+    margin: 28px 0;
+  }
+  .watch-pill {
+    display: inline-block;
+    background: #fef3c7;
+    color: #b45309;
+    font-size: 11px;
+    font-weight: 500;
+    padding: 3px 8px;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    letter-spacing: 0.3px;
+  }
+  .section-label {
+    font-size: 11px;
+    font-weight: 500;
+    color: #003366;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 6px;
+  }
+  .section-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1a2332;
+    margin-bottom: 10px;
+    line-height: 1.3;
+  }
+  .section-body {
+    font-size: 15px;
+    font-weight: 400;
+    color: #374151;
+    line-height: 1.8;
+  }
+  .section-body ul {
+    padding-left: 20px;
+  }
+  .section-body li {
+    margin-bottom: 6px;
+  }
+  .section-body p {
+    margin-bottom: 10px;
+  }
+  .section-body p:last-child {
+    margin-bottom: 0;
+  }
+
+  /* EARNINGS TABLE */
+  .earnings-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    font-weight: 400;
+    color: #374151;
+    margin-top: 14px;
+  }
+  .earnings-table th {
+    border: 1px solid #e5e7eb;
+    padding: 8px 12px;
+    text-align: left;
+    background: #f9fafb;
+    font-weight: 600;
+    color: #1a2332;
+  }
+  .earnings-table td {
+    border: 1px solid #e5e7eb;
+    padding: 8px 12px;
+    vertical-align: top;
+  }
+  .earnings-table tr:hover td {
+    background: #f9fafb;
+  }
+
+  /* FOOTER */
+  footer {
+    background: #f1f5f9;
+    border-top: 1px solid #e5e7eb;
+    margin-top: 48px;
+    padding: 20px 0;
+  }
+  .footer-inner {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .footer-brand {
+    font-size: 12px;
+    font-weight: 400;
+    color: #6b7280;
+  }
+  .footer-disclaimer {
+    font-size: 12px;
+    font-weight: 400;
+    color: #9ca3af;
+  }
+
+  @media (max-width: 600px) {
+    .masthead-title { font-size: 28px; }
+    .section-title { font-size: 20px; }
+    .editors-brief { font-size: 16px; }
+    .snapshot-inner { gap: 4px 0; }
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="masthead">
+    <div class="masthead-title">MARKET QUICK TAKE</div>
+    <div class="masthead-date">Monday, 28 September 2026</div>
+  </div>
+</div>
+
+<!-- SNAPSHOT BAR -->
+<div class="snapshot-bar">
+  <div class="snapshot-inner">
+    <span class="chip">SPY · 771.35 · <span class="pos">+0.54%</span></span>
+    <span class="chip-sep">|</span>
+    <span class="chip">QQQ · 744.50 · <span class="pos">+0.46%</span></span>
+    <span class="chip-sep">|</span>
+    <span class="chip">IWM · 281.97 · <span class="pos">+0.11%</span></span>
+    <span class="chip-sep">|</span>
+    <span class="chip">VIX · N/A</span>
+    <span class="chip-sep">|</span>
+    <span class="chip">US10Y · 5.18%</span>
+    <span class="chip-sep">|</span>
+    <span class="chip">US2Y · 4.87%</span>
+    <span class="chip-sep">|</span>
+    <span class="chip">EUR/USD · 1.1379</span>
+    <span class="chip-sep">|</span>
+    <span class="chip">GOLD · $4,162.63</span>
+    <span class="chip-sep">|</span>
+    <span class="chip">WTI · $96.41</span>
+  </div>
+</div>
+
+<div class="container">
+
+  <!-- EDITOR'S BRIEF -->
+  <p class="editors-brief">
+    Markets open the final week of September with a cautious bid — equities inch higher as participants digest the Federal Reserve's first rate hike since 2023, while the 10-year Treasury yield pushes to 5.18%, compressing rate-sensitive sectors and keeping dollar bulls in control. Gold's record run above $4,160 signals that hedges remain in demand even as risk assets manage to hold their footing.
+  </p>
+
+  <!-- SECTION 1: MARKET DRIVERS -->
+  <div class="section">
+    <div class="watch-pill">⚡ WATCH</div>
+    <div class="section-label">Section 1</div>
+    <div class="section-title">Market Drivers</div>
+    <div class="section-body">
+      <ul>
+        <li><strong>Fed pivot reversal dominates sentiment:</strong> Following the September 16 rate hike — the first since 2023 — rate-cut expectations have collapsed. QXO slid 11% in Q2 on housing-linked demand softness; sectors reliant on cheap credit remain on the back foot.</li>
+        <li><strong>Rising yields weigh on rate-sensitive names:</strong> Treasury yields surging to multi-year highs are pressuring homebuilders, airlines, and growth stocks. United Airlines fell 3.95% as higher oil costs and Treasury yields stoked stagflation fears. D.R. Horton dropped 4.1% amid affordability concerns.</li>
+        <li><strong>Berkshire signals value in housing:</strong> Warren Buffett's vehicle spent $212 million to lift its Lennar stake to ~10%, a contrarian bet that the long-term housing demand thesis outweighs near-term mortgage rate pain.</li>
+        <li><strong>Banks reprice higher:</strong> JPMorgan, Bank of America, Citi, Wells Fargo, and KeyCorp raised their prime lending rate to 7.00%, transmitting the Fed's policy tightening directly to consumer and commercial borrowers.</li>
+      </ul>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 2: MACRO -->
+  <div class="section">
+    <div class="watch-pill">⚡ WATCH</div>
+    <div class="section-label">Section 2</div>
+    <div class="section-title">Macro</div>
+    <div class="section-body">
+      <p>The Federal Reserve's September 16 quarter-point hike — its first tightening move since 2023 — has recalibrated the macro landscape: the policy rate is back in restrictive territory and the door to near-term cuts has effectively closed. Major banks have moved the prime rate to 7.00%, and the transmission to mortgage rates, auto loans, and corporate credit lines is accelerating.</p>
+      <p>Stronger-than-expected economic data is sustaining the "higher-for-longer" narrative: resilient labor markets and sticky services inflation give the Fed little reason to pivot quickly. The 10Y–2Y spread has re-steepened modestly to +31 basis points, suggesting bond markets are repricing for durable growth rather than imminent recession, though higher borrowing costs will increasingly test that thesis into Q4.</p>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 3: EQUITIES -->
+  <div class="section">
+    <div class="section-label">Section 3</div>
+    <div class="section-title">Equities</div>
+    <div class="section-body">
+      <p>U.S. equities closed Friday's session modestly higher: SPY +0.54% to 771.35, QQQ +0.46% to 744.50, and IWM +0.11% to 281.97, with small-caps underperforming as rate sensitivity weighs more heavily on the Russell. The broad advance was narrow, with mega-cap tech providing most of the lift while rate-sensitive sectors lagged.</p>
+      <p><strong>Notable movers:</strong></p>
+      <ul>
+        <li><strong>INTC (Intel) –3.45%</strong> to $123.00 on heavy volume (96M shares), pressured by ongoing competitive concerns in the AI chip space and broader sector rotation away from legacy semiconductor names.</li>
+        <li><strong>AAL (American Airlines) +3.90%</strong> to $13.87 with 75M+ shares traded, bouncing on revised capacity guidance and a slightly improved near-term fuel outlook despite elevated crude.</li>
+      </ul>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 4: FIXED INCOME (renumbered from 5) -->
+  <div class="section">
+    <div class="section-label">Section 4</div>
+    <div class="section-title">Fixed Income</div>
+    <div class="section-body">
+      <p>The 10-year Treasury yield reached 5.18% as of September 24, marking a significant move from the 4.96% level just two sessions prior. The 2-year yield stands at 4.87%, placing the 10Y–2Y spread at a modestly positive +31 basis points. The curve is steepening from its prior flat/slightly inverted configuration — a sign that long-end investors are beginning to price in a durable "higher-for-longer" cycle rather than a near-term recession trade.</p>
+      <p>The TLT (20+ Year Treasury ETF) closed at $79.32, reflecting the sustained pressure on duration. Credit spreads via HYG remain relatively contained at $77.86, suggesting the market is not yet pricing systemic credit stress despite the elevated rate environment.</p>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 5: CURRENCIES (renumbered from 6) -->
+  <div class="section">
+    <div class="section-label">Section 5</div>
+    <div class="section-title">Currencies</div>
+    <div class="section-body">
+      <p>EUR/USD trades at 1.1379, maintaining its position above the 1.13 handle as the euro draws modest support from improving European sentiment and narrowing rate differentials at the margin. The pair remains vulnerable if U.S. data continues to outperform, which would give the Fed more room to keep rates elevated.</p>
+      <p>USD/JPY sits at 157.56, near multi-decade highs for the yen, reflecting the persistent divergence between the Bank of Japan's ultra-loose policy stance and the Fed's renewed tightening cycle. Intervention risk is elevated above 158–160, though Tokyo has shown patience in recent months. A break above 158 would likely prompt verbal warnings from Japanese authorities.</p>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 6: COMMODITIES (renumbered from 7) -->
+  <div class="section">
+    <div class="section-label">Section 6</div>
+    <div class="section-title">Commodities</div>
+    <div class="section-body">
+      <p><strong>Gold: $4,162.63/oz</strong> — Bullion continues its remarkable run, trading above $4,160 as investors balance a strong dollar and elevated real yields against persistent geopolitical uncertainty and central bank buying. The metal's resilience at these levels suggests structural demand, not merely speculative positioning; a pullback in yields or fresh safe-haven demand could propel it toward $4,200.</p>
+      <p><strong>WTI Crude: $96.41/bbl</strong> — Oil pulled back from $101.44 (Sep 18) to the mid-$96 range, easing slightly on demand concerns tied to slowing global growth and higher borrowing costs. Supply discipline from OPEC+ and strong travel-season demand have kept the floor elevated above $95. Energy is a key input to the inflation narrative — a sustained move back above $100 would complicate the Fed's calculus considerably.</p>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 7: EARNINGS CALENDAR (renumbered from 9) -->
+  <div class="section">
+    <div class="section-label">Section 7</div>
+    <div class="section-title">Earnings Radar</div>
+    <div class="section-body">
+      <p>The Q3 earnings season begins in earnest over the next five trading days. Key themes to watch: consumer resilience (Carnival, CarMax), semiconductor demand cycle (Micron), and consulting/services spending trajectory (Accenture, Concentrix).</p>
+      <table class="earnings-table">
+        <thead>
+          <tr>
+            <th>Company</th>
+            <th>Date</th>
+            <th>Expected Move / Est. EPS</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>CCL — Carnival Corp</strong></td>
+            <td>Sep 29 (pre-mkt)</td>
+            <td>Est. EPS $1.36 · Cruise demand & yield commentary in focus</td>
+          </tr>
+          <tr>
+            <td><strong>KMX — CarMax</strong></td>
+            <td>Sep 29 (pre-mkt)</td>
+            <td>Est. EPS $0.67 · Used vehicle pricing and consumer credit health</td>
+          </tr>
+          <tr>
+            <td><strong>MU — Micron Technology</strong></td>
+            <td>Sep 30 (post-mkt)</td>
+            <td>Est. EPS $31.24 · AI-driven DRAM/NAND demand outlook key driver</td>
+          </tr>
+          <tr>
+            <td><strong>ACN — Accenture</strong></td>
+            <td>Oct 1 (pre-mkt)</td>
+            <td>Est. EPS $3.19 · IT services bookings and AI consulting pipeline</td>
+          </tr>
+          <tr>
+            <td><strong>NKE — Nike</strong></td>
+            <td>Oct 1 (post-mkt)</td>
+            <td>Est. EPS $0.44 · China recovery, DTC margins, and North America demand</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</div><!-- /.container -->
+
+<footer>
+  <div class="footer-inner">
+    <span class="footer-brand">Market Quick Take · Monday, 28 September 2026</span>
+    <span class="footer-disclaimer">For informational purposes only. Not investment advice.</span>
+  </div>
+</footer>
+
+</body>
+</html>
