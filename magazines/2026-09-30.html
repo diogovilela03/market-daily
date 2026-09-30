@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Market Quick Take · Wednesday, 30 September 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Inter', sans-serif; background: #ffffff; color: #1a2332; }
+
+  /* Layout */
+  .container { max-width: 860px; margin: 0 auto; padding: 0 24px; }
+
+  /* Masthead */
+  .masthead { border-top: 3px solid #003366; padding: 32px 0 20px; border-bottom: 1px solid #e5e7eb; }
+  .masthead h1 { font-weight: 700; font-size: 42px; color: #003366; line-height: 1.1; }
+  .masthead .date { font-weight: 400; font-size: 13px; color: #6b7280; margin-top: 6px; }
+
+  /* Snapshot bar */
+  .snapshot-bar { background: #f1f5f9; padding: 12px 0; }
+  .snapshot-inner { display: flex; flex-wrap: wrap; gap: 4px 0; align-items: center; padding: 0 24px; }
+  .chip { font-weight: 500; font-size: 12px; text-transform: uppercase; color: #1a2332; white-space: nowrap; padding: 0 12px; }
+  .chip:not(:last-child)::after { content: '|'; margin-left: 12px; color: #9ca3af; }
+  .chip .pos { color: #16a34a; }
+  .chip .neg { color: #dc2626; }
+  .chip .na { color: #6b7280; }
+
+  /* Editor's brief */
+  .editors-brief { font-weight: 400; font-style: italic; font-size: 18px; color: #374151; max-width: 760px; margin: 28px 0; border-left: 3px solid #003366; padding-left: 16px; line-height: 1.7; }
+
+  /* Sections */
+  .sections { padding-bottom: 0; }
+  .section { margin-bottom: 0; }
+  .section-divider { border: none; border-top: 1px solid #e5e7eb; margin: 28px 0; }
+  .section-label { font-weight: 500; font-size: 11px; color: #003366; text-transform: uppercase; letter-spacing: 3px; margin-bottom: 6px; display: block; }
+  .section-title { font-weight: 700; font-size: 24px; color: #1a2332; margin-bottom: 10px; }
+  .section-body { font-weight: 400; font-size: 15px; line-height: 1.8; color: #374151; }
+  .section-body ul { padding-left: 20px; }
+  .section-body li { margin-bottom: 6px; }
+  .watch-pill { display: inline-block; background: #fef3c7; color: #b45309; border-radius: 4px; font-weight: 500; font-size: 11px; padding: 2px 8px; margin-bottom: 8px; }
+
+  /* Earnings table */
+  .earnings-table { width: 100%; border-collapse: collapse; border: 1px solid #e5e7eb; font-size: 13px; margin-top: 12px; }
+  .earnings-table th { background: #f1f5f9; font-weight: 600; color: #1a2332; padding: 8px 12px; text-align: left; border-bottom: 1px solid #e5e7eb; }
+  .earnings-table td { padding: 8px 12px; border-bottom: 1px solid #e5e7eb; color: #374151; }
+  .earnings-table tr:last-child td { border-bottom: none; }
+
+  /* Footer */
+  .footer { background: #f1f5f9; border-top: 1px solid #e5e7eb; margin-top: 48px; padding: 20px 0; }
+  .footer-inner { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; }
+  .footer span { font-weight: 400; font-size: 12px; }
+
+  /* Positive/negative colors */
+  .pos { color: #16a34a; }
+  .neg { color: #dc2626; }
+
+  @media (max-width: 600px) {
+    .masthead h1 { font-size: 28px; }
+    .editors-brief { font-size: 16px; }
+    .section-title { font-size: 20px; }
+    .chip { font-size: 11px; padding: 0 6px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- MASTHEAD -->
+<div class="container">
+  <div class="masthead">
+    <h1>MARKET QUICK TAKE</h1>
+    <div class="date">Wednesday, 30 September 2026</div>
+  </div>
+</div>
+
+<!-- SNAPSHOT BAR -->
+<div class="snapshot-bar">
+  <div class="snapshot-inner">
+    <span class="chip">SPY · 764.20 · <span class="neg">-0.18%</span></span>
+    <span class="chip">QQQ · 737.93 · <span class="pos">+0.19%</span></span>
+    <span class="chip">IWM · 279.01 · <span class="neg">-0.36%</span></span>
+    <span class="chip">VIX · <span class="na">N/A</span></span>
+    <span class="chip">US10Y · 5.24%</span>
+    <span class="chip">US2Y · 4.92%</span>
+    <span class="chip">EUR/USD · 1.1358</span>
+    <span class="chip">GOLD · $4,194.77</span>
+    <span class="chip">WTI · $96.41</span>
+  </div>
+</div>
+
+<!-- EDITOR'S BRIEF -->
+<div class="container">
+  <p class="editors-brief">
+    Rising Treasury yields at 5.24% defined Wednesday's session, as fading expectations for Federal Reserve rate cuts reinforced the higher-for-longer narrative and weighed on rate-sensitive sectors from housing to precious metals. Equity markets diverged — QQQ edged higher while SPY and small-cap IWM faced modest headwinds, with Carnival Corporation surging on strong quarterly results. All eyes turn to Micron Technology's post-close report today, followed by Accenture and Nike on Thursday.
+  </p>
+</div>
+
+<!-- SECTIONS -->
+<div class="container sections">
+
+  <!-- Section 1: Market Drivers -->
+  <div class="section">
+    <div class="watch-pill">⚡ WATCH</div>
+    <span class="section-label">Section 1</span>
+    <h2 class="section-title">Market Drivers</h2>
+    <div class="section-body">
+      <ul>
+        <li><strong>Yield-led pressure dominates:</strong> The US 10-year Treasury yield at 5.24% remains the central market force, with fading rate-cut expectations pressuring rate-sensitive names across real estate, housing, and AI infrastructure. Multiple market-moving news stories cited elevated yields as the proximate cause of sector-level dislocations.</li>
+        <li><strong>Enterprise AI spend under scrutiny:</strong> Applied Optoelectronics (AAOI) slid sharply as surging Treasury yields sparked fears of a slowdown in enterprise AI infrastructure spending — a signal that higher-for-longer is beginning to weigh on the AI capex cycle.</li>
+        <li><strong>Precious metals under dollar pressure:</strong> Coeur Mining (CDE) fell 7% amid a broad downturn in gold and silver driven by the stronger US dollar and rising yields — reinforcing the inverse relationship between real rates and metals.</li>
+        <li><strong>Earnings season underway:</strong> Carnival Corporation (CCL) surged 13.5% on strong pre-market results, while Micron Technology (MU) reports after today's close — a key read-through for AI memory demand and broader semiconductor sentiment.</li>
+      </ul>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- Section 2: Macro -->
+  <div class="section">
+    <span class="section-label">Section 2</span>
+    <h2 class="section-title">Macro</h2>
+    <div class="section-body">
+      <p>The Federal Reserve's higher-for-longer posture continues to anchor short-end rates, with the 2-year yield at 4.92% reflecting limited near-term easing expectations heading into Q4 2026. Fading rate-cut bets have strengthened the US dollar broadly — USD/JPY at 156.74 and EUR/USD at 1.1358 — adding headwinds for multinational earnings and commodity prices denominated in dollars. Housing-related equities remain particularly vulnerable, with M/I Homes (MHO) flagged as a "Bear of the Day" amid elevated mortgage rates and negative earnings revisions.</p>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- Section 3: Equities -->
+  <div class="section">
+    <span class="section-label">Section 3</span>
+    <h2 class="section-title">Equities</h2>
+    <div class="section-body">
+      <p>US equity markets closed mixed on the final trading day of September. The S&amp;P 500 proxy SPY edged lower to 764.20 (−0.18%), small caps via IWM fell 0.36% to 279.01 under yield pressure, while tech-heavy QQQ outperformed with a 0.19% gain to 737.93 as mega-cap technology held up despite rate headwinds.</p>
+      <p style="margin-top:10px;"><strong>Notable movers:</strong></p>
+      <ul>
+        <li><strong>IOVA (Iovance Biotherapeutics) +31.5%</strong> to $14.45 on very high volume (77.4M shares) — a standout biotech move likely driven by a clinical or regulatory catalyst.</li>
+        <li><strong>QURE (UniQure) −37.3%</strong> to $24.51 on heavy volume (29.6M shares) — one of the session's largest-cap biotech declines, suggesting a significant negative event.</li>
+        <li><strong>CCL (Carnival Corporation) +13.5%</strong> to $25.14 on 75.2M shares — surging after reporting quarterly earnings pre-market with EPS estimate of $1.36, signalling resilient consumer travel demand despite elevated rates.</li>
+      </ul>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- Section 4: Fixed Income (renumbered from 5) -->
+  <div class="section">
+    <span class="section-label">Section 4</span>
+    <h2 class="section-title">Fixed Income</h2>
+    <div class="section-body">
+      <p>The US Treasury curve steepened modestly, with the 10-year yield at 5.24% and the 2-year at 4.92%, producing a positive spread of +32 basis points. The curve remains off its most inverted levels seen earlier in the cycle, suggesting markets are beginning to price a more normalized long-run rate environment — though at levels that still represent meaningful restraint for borrowers. The long-bond ETF TLT fell 0.50% on the session, confirming ongoing selling pressure at the long end as investors reprice duration risk.</p>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- Section 5: Currencies (renumbered from 6) -->
+  <div class="section">
+    <span class="section-label">Section 5</span>
+    <h2 class="section-title">Currencies</h2>
+    <div class="section-body">
+      <p>EUR/USD traded at 1.1358 as of the European open, holding near recent levels as the euro benefits from improving Eurozone data but faces a ceiling set by the interest rate differential. USD/JPY remained elevated at 156.74, a level that historically attracts attention from the Bank of Japan, where officials have signalled discomfort with excessive yen weakness. The strong dollar narrative — underpinned by the Fed's higher-for-longer stance — is creating headwinds for emerging market currencies and compressing dollar-denominated commodity prices.</p>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- Section 6: Commodities (renumbered from 7) -->
+  <div class="section">
+    <span class="section-label">Section 6</span>
+    <h2 class="section-title">Commodities</h2>
+    <div class="section-body">
+      <p>Gold spot prices held at $4,194.77/oz — a historically elevated level reflecting sustained safe-haven demand, central bank accumulation, and geopolitical risk premiums. However, the combination of a strengthening US dollar and rising real rates (10Y at 5.24%) represents a structural headwind for further gains; Coeur Mining's 7% single-day decline underscores the fragility of precious metals equities in this environment. WTI crude oil last printed at $96.41/bbl, with the most recent daily data point from September 22. The energy complex remains supported by constrained OPEC+ supply, while slowing global growth concerns and a stronger dollar cap upside potential.</p>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- Section 7: Earnings Calendar (renumbered from 9) -->
+  <div class="section">
+    <span class="section-label">Section 7</span>
+    <h2 class="section-title">Earnings Radar</h2>
+    <div class="section-body">
+      <p>Key earnings over the next five trading days (Sep 30 – Oct 6). Micron Technology's report is the marquee event, offering a real-time read on AI memory demand; Nike and Accenture follow Thursday with insights into consumer spend and enterprise IT services.</p>
+      <table class="earnings-table">
+        <thead>
+          <tr>
+            <th>Company</th>
+            <th>Date</th>
+            <th>Timing</th>
+            <th>EPS Estimate</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Micron Technology (MU)</td>
+            <td>Sep 30</td>
+            <td>Post-market</td>
+            <td>$31.24 — AI memory demand in focus; any guidance cut could ripple into semiconductor sector</td>
+          </tr>
+          <tr>
+            <td>Jabil Inc. (JBL)</td>
+            <td>Sep 30</td>
+            <td>Pre-market</td>
+            <td>$3.86 — EMS / AI server supply chain read-through</td>
+          </tr>
+          <tr>
+            <td>Accenture (ACN)</td>
+            <td>Oct 1</td>
+            <td>Pre-market</td>
+            <td>$3.19 — Enterprise IT services bellwether; AI consulting commentary key</td>
+          </tr>
+          <tr>
+            <td>Nike (NKE)</td>
+            <td>Oct 1</td>
+            <td>Post-market</td>
+            <td>$0.44 — Consumer discretionary; China recovery narrative and inventory levels in focus</td>
+          </tr>
+          <tr>
+            <td>Constellation Brands (STZ)</td>
+            <td>Oct 6</td>
+            <td>Post-market</td>
+            <td>$3.63 — Premium beverage demand; tariff and input cost exposure relevant</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</div><!-- end .container.sections -->
+
+<!-- FOOTER -->
+<div class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <span style="color:#6b7280;">Market Quick Take · Wednesday, 30 September 2026</span>
+      <span style="color:#9ca3af;">For informational purposes only. Not investment advice.</span>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
