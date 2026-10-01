@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Market Quick Take · Thursday, 1 October 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: #ffffff;
+    color: #1a2332;
+  }
+
+  .container {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  /* MASTHEAD */
+  .masthead {
+    border-top: 3px solid #003366;
+    padding: 32px 0 20px;
+    border-bottom: 1px solid #e5e7eb;
+    margin-bottom: 0;
+  }
+  .masthead h1 {
+    font-size: 42px;
+    font-weight: 700;
+    color: #003366;
+    letter-spacing: -0.5px;
+    line-height: 1;
+  }
+  .masthead .date {
+    font-size: 13px;
+    font-weight: 400;
+    color: #6b7280;
+    margin-top: 6px;
+  }
+
+  /* SNAPSHOT BAR */
+  .snapshot-bar {
+    background: #f1f5f9;
+    padding: 12px 0;
+    width: 100%;
+  }
+  .snapshot-inner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 0;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: 'Inter', sans-serif;
+    color: #1a2332;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+  }
+  .chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 0 10px;
+    white-space: nowrap;
+  }
+  .chip + .chip::before {
+    content: "|";
+    margin-right: 10px;
+    color: #9ca3af;
+  }
+  .chip .label { color: #6b7280; }
+  .chip .value { font-weight: 600; }
+  .chip .chg-pos { color: #16a34a; }
+  .chip .chg-neg { color: #dc2626; }
+  .chip .chg-na  { color: #9ca3af; }
+
+  /* EDITOR'S BRIEF */
+  .editors-brief {
+    font-size: 18px;
+    font-weight: 400;
+    font-style: italic;
+    color: #374151;
+    max-width: 760px;
+    margin: 28px 0;
+    border-left: 3px solid #003366;
+    padding-left: 16px;
+    line-height: 1.7;
+  }
+
+  /* SECTIONS */
+  .section { margin-bottom: 0; }
+  .section-divider {
+    border: none;
+    border-top: 1px solid #e5e7eb;
+    margin: 28px 0;
+  }
+
+  .watch-pill {
+    display: inline-block;
+    background: #fef3c7;
+    color: #b45309;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 500;
+    padding: 2px 8px;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+  }
+
+  .section-label {
+    font-size: 11px;
+    font-weight: 500;
+    color: #003366;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 4px;
+  }
+
+  .section-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1a2332;
+    margin-bottom: 10px;
+    line-height: 1.2;
+  }
+
+  .section-body {
+    font-size: 15px;
+    font-weight: 400;
+    color: #374151;
+    line-height: 1.8;
+  }
+
+  .section-body ul {
+    padding-left: 8px;
+    list-style: disc;
+    list-style-position: outside;
+    margin-left: 16px;
+  }
+
+  .section-body ul li {
+    margin-bottom: 6px;
+  }
+
+  .pos { color: #16a34a; font-weight: 500; }
+  .neg { color: #dc2626; font-weight: 500; }
+
+  /* EARNINGS TABLE */
+  .earnings-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    font-weight: 400;
+    color: #374151;
+    margin-top: 12px;
+  }
+  .earnings-table th {
+    text-align: left;
+    padding: 8px 12px;
+    border: 1px solid #e5e7eb;
+    background: #f9fafb;
+    font-weight: 600;
+    color: #1a2332;
+  }
+  .earnings-table td {
+    padding: 8px 12px;
+    border: 1px solid #e5e7eb;
+  }
+  .earnings-table tr:hover td {
+    background: #f9fafb;
+  }
+
+  /* FOOTER */
+  .footer {
+    background: #f1f5f9;
+    border-top: 1px solid #e5e7eb;
+    margin-top: 48px;
+    padding: 20px 0;
+  }
+  .footer-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    font-size: 12px;
+    font-weight: 400;
+  }
+  .footer-brand { color: #6b7280; }
+  .footer-disclaimer { color: #9ca3af; }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="masthead">
+    <h1>MARKET QUICK TAKE</h1>
+    <div class="date">Thursday, 1 October 2026</div>
+  </div>
+</div>
+
+<!-- SNAPSHOT BAR -->
+<div class="snapshot-bar">
+  <div class="container">
+    <div class="snapshot-inner">
+      <span class="chip">
+        <span class="label">SPY</span>
+        <span class="value">762.63</span>
+        <span class="chg-neg">−0.21%</span>
+      </span>
+      <span class="chip">
+        <span class="label">QQQ</span>
+        <span class="value">739.77</span>
+        <span class="chg-pos">+0.25%</span>
+      </span>
+      <span class="chip">
+        <span class="label">IWM</span>
+        <span class="value">277.89</span>
+        <span class="chg-neg">−0.40%</span>
+      </span>
+      <span class="chip">
+        <span class="label">VIX</span>
+        <span class="value chg-na">N/A</span>
+      </span>
+      <span class="chip">
+        <span class="label">US10Y</span>
+        <span class="value">5.26%</span>
+        <span class="chg-neg">+2bp</span>
+      </span>
+      <span class="chip">
+        <span class="label">US2Y</span>
+        <span class="value">4.89%</span>
+        <span class="chg-pos">−3bp</span>
+      </span>
+      <span class="chip">
+        <span class="label">EUR/USD</span>
+        <span class="value">1.1321</span>
+      </span>
+      <span class="chip">
+        <span class="label">GOLD</span>
+        <span class="value">$4,180.64</span>
+      </span>
+      <span class="chip">
+        <span class="label">WTI</span>
+        <span class="value">$96.16</span>
+        <span class="chg-neg">−3.23%</span>
+      </span>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+
+  <!-- EDITOR'S BRIEF -->
+  <div class="editors-brief">
+    Q3 ended with markets caught between a resilient tech sector and the weight of the Fed's first rate hike since 2023 — a move that has pushed the 10-year Treasury to 5.26% and repriced risk across rate-sensitive assets. As Q4 opens, WTI crude retreats from $99 toward $96, gold holds historically elevated ground above $4,180, and attention turns to Nike's post-market print and Friday's anticipated NFP release.
+  </div>
+
+  <!-- SECTION 1: MARKET DRIVERS -->
+  <div class="section">
+    <div class="watch-pill">⚡ WATCH</div>
+    <div class="section-label">Section 01</div>
+    <div class="section-title">Market Drivers</div>
+    <div class="section-body">
+      <ul>
+        <li>The Federal Reserve's first rate hike since 2023, delivered in mid-September, extended the tightening cycle and pushed the 10Y Treasury yield to <strong>5.26%</strong> — tightening financial conditions broadly and challenging rate-sensitive sectors including real estate, housing, and growth equities.</li>
+        <li>WTI crude pulled back sharply from <strong>$99.37</strong> to <strong>$96.16</strong> (−3.2%) across the last two sessions, driven by a downward revision to global oil demand forecasts from the IEA and broad macroeconomic anxiety; US-Iran tensions continue to embed a geopolitical risk premium in energy.</li>
+        <li>Small-cap underperformance (IWM <span class="neg">−0.40%</span>) versus a fractionally positive Nasdaq (QQQ <span class="pos">+0.25%</span>) reflects continued rotation into quality large-cap growth amid rate uncertainty.</li>
+        <li>The precious metals mining complex saw significant selling pressure — Wheaton Precious Metals (WPM) fell 5.1% and Coeur Mining (CDE) dropped 7.0% — as higher real rates challenged the economics of gold producers despite spot gold holding above $4,100.</li>
+      </ul>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 2: MACRO -->
+  <div class="section">
+    <div class="section-label">Section 02</div>
+    <div class="section-title">Macro</div>
+    <div class="section-body">
+      <p>The Federal Reserve's September rate hike — its first since 2023 — marks a decisive pivot back toward tightening, with major US banks including JPMorgan, BofA, Citi, and Wells Fargo having raised their prime rates in response. The 10Y yield at 5.26% reflects a market pricing in sustained restrictive policy, exerting pressure on duration-sensitive assets and housing affordability. Geopolitically, US-Iran hostilities that flared during the summer continue to keep a risk premium embedded in energy and defense, with Raytheon's $22.9B Tomahawk missile contract underscoring elevated defense spending expectations. Housing remains under structural pressure as elevated mortgage rates weigh on builders and REITs, even as Berkshire Hathaway's contrarian $212M stake in Lennar signals long-horizon value interest.</p>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 3: EQUITIES -->
+  <div class="section">
+    <div class="section-label">Section 03</div>
+    <div class="section-title">Equities</div>
+    <div class="section-body">
+      <p>US equity benchmarks closed Q3 on a mixed note: the S&amp;P 500 proxy SPY finished at <strong>762.63</strong> (<span class="neg">−0.21%</span>), QQQ at <strong>739.77</strong> (<span class="pos">+0.25%</span>), and the small-cap IWM at <strong>277.89</strong> (<span class="neg">−0.40%</span>). The Nasdaq's modest outperformance reflects continued investor preference for large-cap technology — with NVDA holding at $228.38 and INTC gaining 3.7% — while small-caps remain caught in the crosscurrents of higher rates and softer economic visibility.</p>
+      <p style="margin-top:10px;">Among notable single-stock movers: <strong>LQDA</strong> (Liquidia Corp) plunged <span class="neg">57.2%</span> in heavy volume (22.6M shares traded), while <strong>TGE</strong> surged <span class="pos">85.5%</span> on exceptional turnover of 183M shares, reflecting broad dispersion in small-cap names at quarter-end.</p>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 4: FIXED INCOME -->
+  <div class="section">
+    <div class="section-label">Section 04</div>
+    <div class="section-title">Fixed Income</div>
+    <div class="section-body">
+      <p>The 10-year Treasury yield stands at <strong>5.26%</strong> (+2bp), and the 2-year at <strong>4.89%</strong> (−3bp), producing a positive 10Y–2Y spread of <strong>+37 basis points</strong>. The curve is modestly upward-sloping — not inverted — and the recent divergence between the two tenors (10Y grinding higher while 2Y eases slightly) points toward gradual bear-steepening. Markets are pricing a "higher for longer" Fed posture; near-term, attention focuses on Friday's NFP report as the next catalyst for yield direction. The 30Y segment of the curve and corporate credit spreads (HYG trading at $77.21, −0.19%) bear watching as financial conditions tighten.</p>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 5: CURRENCIES -->
+  <div class="section">
+    <div class="section-label">Section 05</div>
+    <div class="section-title">Currencies</div>
+    <div class="section-body">
+      <p><strong>EUR/USD</strong> trades at <strong>1.1321</strong>, reflecting euro resilience underpinned by ECB credibility, even as US rate differentials provide structural dollar support. <strong>USD/JPY</strong> is at <strong>158.26</strong>, near multi-year highs for the yen-dollar pair, as the Bank of Japan continues to lag the Fed's tightening trajectory. Mizuho and other Japanese financials have seen strength amid expectations of eventual BoJ tightening, and any hawkish shift in BoJ language could trigger a sharp yen appreciation event — a key tail risk for USD/JPY longs and yen-funded carry trades that have built up considerably.</p>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 6: COMMODITIES -->
+  <div class="section">
+    <div class="section-label">Section 06</div>
+    <div class="section-title">Commodities</div>
+    <div class="section-body">
+      <p><strong>Gold</strong> spot holds at <strong>$4,180.64/oz</strong> — a historically elevated level — though the precious metals equity complex faces headwinds from rising real rates that erode the opportunity cost advantage of non-yielding bullion. The gold miner selloff (WPM −5.1%, AU −5.1%, CDE −7.0%) illustrates the divergence between spot prices and mining economics under a high-rate regime.</p>
+      <p style="margin-top:10px;"><strong>WTI crude</strong> retreated to <strong>$96.16/barrel</strong> (<span class="neg">−3.23%</span> from $99.37), pressured by IEA demand downgrades and broader macro anxiety. However, US-Iran tensions and OPEC+ supply discipline provide a meaningful price floor, and Diamondback Energy (FANG) and OXY saw outsized declines on the move, offering potential entry points for energy bulls if geopolitical risk re-escalates.</p>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 7: EARNINGS CALENDAR -->
+  <div class="section">
+    <div class="section-label">Section 07</div>
+    <div class="section-title">Earnings Radar</div>
+    <div class="section-body">
+      <p>Key reports over the next five trading days, with consensus EPS estimates:</p>
+      <table class="earnings-table">
+        <thead>
+          <tr>
+            <th>Company</th>
+            <th>Date</th>
+            <th>Est. EPS</th>
+            <th>Timing</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>ACN</strong> — Accenture</td>
+            <td>Thu Oct 1</td>
+            <td>$3.19</td>
+            <td>Pre-market</td>
+          </tr>
+          <tr>
+            <td><strong>MKC</strong> — McCormick &amp; Co.</td>
+            <td>Thu Oct 1</td>
+            <td>$0.75</td>
+            <td>Pre-market</td>
+          </tr>
+          <tr>
+            <td><strong>NKE</strong> — Nike</td>
+            <td>Thu Oct 1</td>
+            <td>$0.44</td>
+            <td>Post-market</td>
+          </tr>
+          <tr>
+            <td><strong>STZ</strong> — Constellation Brands</td>
+            <td>Mon Oct 6</td>
+            <td>$3.63</td>
+            <td>Post-market</td>
+          </tr>
+          <tr>
+            <td><strong>RPM</strong> — RPM International</td>
+            <td>Mon Oct 6</td>
+            <td>$1.95</td>
+            <td>Pre-market</td>
+          </tr>
+        </tbody>
+      </table>
+      <p style="margin-top:10px; font-size:13px; color:#6b7280;">Also notable: LW (Lamb Weston, Oct 6, est. $0.58) and LEVI (Levi Strauss, Oct 7, est. $0.36). Nike's Q1 FY2027 print after the close today will be closely watched for consumer spending signals and margin recovery progress amid ongoing restructuring.</p>
+    </div>
+  </div>
+
+</div><!-- /.container -->
+
+<!-- FOOTER -->
+<div class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <span class="footer-brand">Market Quick Take · Thursday, 1 October 2026</span>
+      <span class="footer-disclaimer">For informational purposes only. Not investment advice.</span>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
