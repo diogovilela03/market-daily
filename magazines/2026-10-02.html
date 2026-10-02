@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Market Quick Take · 2 October 2026</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Inter', sans-serif; background: #ffffff; color: #1a2332; }
+    .container { max-width: 860px; margin: 0 auto; padding: 0 24px; }
+
+    .masthead { border-top: 3px solid #003366; padding: 32px 0 20px; border-bottom: 1px solid #e5e7eb; }
+    .masthead-title { font-size: 42px; font-weight: 700; color: #003366; line-height: 1; letter-spacing: -1px; }
+    .masthead-date { font-size: 13px; font-weight: 400; color: #6b7280; margin-top: 8px; }
+
+    .snapshot-bar { background: #f1f5f9; padding: 12px 0; width: 100%; }
+    .snapshot-inner { max-width: 860px; margin: 0 auto; padding: 0 24px; display: flex; flex-wrap: wrap; gap: 4px 0; align-items: center; }
+    .chip { font-size: 12px; font-weight: 500; text-transform: uppercase; color: #1a2332; white-space: nowrap; }
+    .chip-sep { color: #9ca3af; margin: 0 8px; font-size: 12px; }
+    .pos { color: #16a34a; }
+    .neg { color: #dc2626; }
+    .na-val { color: #6b7280; }
+
+    .brief { font-size: 18px; font-weight: 400; font-style: italic; color: #374151; line-height: 1.75; max-width: 760px; margin: 28px 0; border-left: 3px solid #003366; padding-left: 16px; }
+
+    .sections { max-width: 860px; }
+    .section { }
+    .section-divider { border: none; border-top: 1px solid #e5e7eb; margin: 28px 0; }
+    .watch-pill { display: inline-block; background: #fef3c7; color: #b45309; font-size: 11px; font-weight: 500; border-radius: 4px; padding: 3px 8px; letter-spacing: 0.5px; margin-bottom: 8px; }
+    .section-label { font-size: 11px; font-weight: 500; color: #003366; text-transform: uppercase; letter-spacing: 3px; margin-bottom: 6px; }
+    .section-title { font-size: 24px; font-weight: 700; color: #1a2332; margin-bottom: 12px; line-height: 1.2; }
+    .section-body { font-size: 15px; font-weight: 400; line-height: 1.8; color: #374151; }
+    .section-body ul { padding-left: 20px; }
+    .section-body ul li { margin-bottom: 8px; }
+    .section-body p + p { margin-top: 12px; }
+
+    .earnings-table { width: 100%; border-collapse: collapse; font-size: 13px; margin-top: 14px; }
+    .earnings-table th { border: 1px solid #e5e7eb; padding: 8px 12px; text-align: left; font-weight: 600; background: #f9fafb; color: #1a2332; }
+    .earnings-table td { border: 1px solid #e5e7eb; padding: 8px 12px; text-align: left; color: #374151; }
+    .earnings-table tr:hover td { background: #f9fafb; }
+    .table-note { margin-top: 10px; font-size: 12px; color: #9ca3af; }
+
+    .footer { background: #f1f5f9; border-top: 1px solid #e5e7eb; margin-top: 48px; padding: 20px 0; }
+    .footer-inner { max-width: 860px; margin: 0 auto; padding: 0 24px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; }
+    .footer-left { font-size: 12px; color: #6b7280; }
+    .footer-right { font-size: 12px; color: #9ca3af; }
+
+    @media (max-width: 600px) {
+      .masthead-title { font-size: 30px; }
+      .section-title { font-size: 20px; }
+      .brief { font-size: 16px; }
+      .snapshot-inner { gap: 4px 0; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="masthead">
+    <div class="masthead-title">MARKET QUICK TAKE</div>
+    <div class="masthead-date">Friday, 2 October 2026</div>
+  </div>
+</div>
+
+<div class="snapshot-bar">
+  <div class="snapshot-inner">
+    <span class="chip">SPY&nbsp;·&nbsp;$763.99&nbsp;·&nbsp;<span class="pos">+0.18%</span></span>
+    <span class="chip-sep">|</span>
+    <span class="chip">QQQ&nbsp;·&nbsp;$742.03&nbsp;·&nbsp;<span class="pos">+0.31%</span></span>
+    <span class="chip-sep">|</span>
+    <span class="chip">IWM&nbsp;·&nbsp;$279.02&nbsp;·&nbsp;<span class="pos">+0.41%</span></span>
+    <span class="chip-sep">|</span>
+    <span class="chip">VIX&nbsp;·&nbsp;<span class="na-val">N/A</span></span>
+    <span class="chip-sep">|</span>
+    <span class="chip">US10Y&nbsp;·&nbsp;5.29%</span>
+    <span class="chip-sep">|</span>
+    <span class="chip">US2Y&nbsp;·&nbsp;4.88%</span>
+    <span class="chip-sep">|</span>
+    <span class="chip">EUR/USD&nbsp;·&nbsp;1.1262</span>
+    <span class="chip-sep">|</span>
+    <span class="chip">GOLD&nbsp;·&nbsp;$4,182.71</span>
+    <span class="chip-sep">|</span>
+    <span class="chip">WTI&nbsp;·&nbsp;$96.16</span>
+  </div>
+</div>
+
+<div class="container">
+
+  <p class="brief">Equities opened October on a constructive note — SPY, QQQ, and IWM all finishing higher despite persistent headwinds from elevated Treasury yields and fading rate-cut expectations. The 10-year yield at 5.29% continues to weigh on rate-sensitive sectors, most visibly homebuilders and credit financials, while gold above $4,180 and WTI near $96 signal lingering macro uncertainty. With today marking the first Friday of October, traders are on high alert for the monthly Nonfarm Payrolls print.</p>
+
+  <div class="sections">
+
+    <div class="section">
+      <div class="section-label">Section 01</div>
+      <div class="section-title">Market Drivers</div>
+      <div class="section-body">
+        <ul>
+          <li><strong>Broad risk-on tone to open Q4:</strong> SPY (+0.18%), QQQ (+0.31%), and IWM (+0.41%) all closed positive on October 1, with small-cap outperformance suggesting selective risk appetite heading into earnings season.</li>
+          <li><strong>Rising yields the key headwind:</strong> The 10-year Treasury pressing 5.29% drove notable weakness in rate-sensitive names: D.R. Horton fell 4.1%, and Wells Fargo downgraded Ally Financial (ALLY) from Overweight to Equal Weight, citing net interest margin compression and a challenging credit environment.</li>
+          <li><strong>Rate-cut expectations continue to fade:</strong> Macro commentary across the news cycle is firmly repricing any 2026 Fed easing, contributing to USD strength (USD/JPY at 157.83) and MUFG -3.47% on Japan macro concerns and BoJ-policy uncertainty.</li>
+          <li><strong>Q3 earnings season imminent:</strong> Corporate attention pivots to results, with PepsiCo, Delta Air Lines, and Constellation Brands among the first major reporters next week. ICE shares edged higher as analysts highlight the company's interest-rate leverage to elevated yields.</li>
+        </ul>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <div class="section">
+      <div class="watch-pill">⚡ WATCH</div>
+      <div class="section-label">Section 02</div>
+      <div class="section-title">Macro</div>
+      <div class="section-body">
+        <p>The Fed pause narrative is firmly embedded in market pricing, with the 10-year Treasury at 5.29% — a level that reflects both the economy's resilience and persistent inflationary pressure. The 2-year stands at 4.88%, leaving the 10Y-2Y spread at a modest +41 basis points — an upward-sloping curve signalling markets believe the Fed is near its terminal rate but see little prospect of near-term cuts. The strong dollar (USD/JPY 157.83) underscores deepening divergence between a hawkish Fed and the Bank of Japan's accommodative stance.</p>
+        <p>Today is the first Friday of October — the traditional Nonfarm Payrolls release day. A labor market print meaningfully stronger than consensus would further push back any remaining 2026 easing expectations and could add upside pressure to the 10-year yield and the dollar.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <div class="section">
+      <div class="section-label">Section 03</div>
+      <div class="section-title">Equities</div>
+      <div class="section-body">
+        <p>SPY closed at $763.99 (+0.18%), QQQ at $742.03 (+0.31%), and IWM at $279.02 (+0.41%), with small-caps leading — a sign of rotation into value and cyclicals even as big-tech holds its ground. Among notable movers: <strong>Corteva (CTVA)</strong> plunged 83.82% to $12.56 on extraordinary volume of 87.8M shares, strongly suggesting a corporate event such as a spin-off, special distribution, or restructuring — traders should verify independently. <strong>NVIDIA (NVDA)</strong> added 1.09% to $230.86 on 97M shares, continuing to attract institutional support as AI-driven semiconductor demand remains a structural tailwind. <strong>Nike (NKE)</strong> declined 0.85% to $35.10, reflecting persistent softness in consumer discretionary spending.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <div class="section">
+      <div class="section-label">Section 04</div>
+      <div class="section-title">Fixed Income</div>
+      <div class="section-body">
+        <p>The US 10-year Treasury yield stands at <strong>5.29%</strong> (up from 5.26% on September 29), while the 2-year yield sits at <strong>4.88%</strong>. The resulting 10Y-2Y spread of <strong>+41 basis points</strong> reflects a modestly normal, steepening curve — a structural shift from the prolonged inversion that characterized the 2023–2025 period. This steepening is driven primarily by long-end selling pressure rather than genuine optimism about near-term rate cuts, as the front end remains anchored by the Fed's hold stance.</p>
+        <p>Persistently elevated long-term yields are transmitting directly into higher mortgage rates, commercial real estate cap rates, and borrowing costs for capital-intensive sectors — dynamics now appearing in earnings revisions and analyst downgrades across rate-sensitive industries.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <div class="section">
+      <div class="section-label">Section 05</div>
+      <div class="section-title">Currencies</div>
+      <div class="section-body">
+        <p><strong>EUR/USD at 1.1262</strong> — the euro holds firm above the 1.12 handle, supported by the ECB's cautious rate stance and a modest improvement in EU economic sentiment, though a stronger-than-expected NFP today could weigh on the pair via renewed USD demand. <strong>USD/JPY at 157.83</strong> — the yen continues to weaken toward multi-month lows as the US-Japan yield differential widens. At this level, Bank of Japan verbal intervention risk is elevated; a sustained move toward 160 would likely prompt either jawboning or direct FX action from Tokyo. Japanese bank stocks (MUFG -3.47% on Oct 1) reflect investor unease over the BoJ's constrained policy options.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <div class="section">
+      <div class="section-label">Section 06</div>
+      <div class="section-title">Commodities</div>
+      <div class="section-body">
+        <p><strong>Gold at $4,182.71/oz</strong> — the precious metal remains at historically elevated levels, driven by persistent central bank reserve diversification, geopolitical hedging demand, and uncertainty around real yields. Notably, gold's resilience in the face of USD strength suggests structural demand from non-dollar reserve managers rather than purely speculative flows. Weakness in precious metals miners (Wheaton Precious Metals -5.11%, Coeur Mining -7.02% in late September) suggests the equity complex is pricing in some near-term profit-taking risk at spot.</p>
+        <p><strong>WTI crude at $96.16/bbl</strong> (September 29 settlement, down from $99.37 on September 28) — oil remains near cyclical highs, with OPEC+ supply discipline and resilient global demand keeping prices elevated. A stronger-than-expected NFP print adding to dollar strength could exert modest downward pressure on dollar-denominated commodities, but the supply-side picture supports the floor near $90.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <div class="section">
+      <div class="section-label">Section 07</div>
+      <div class="section-title">Earnings Radar</div>
+      <div class="section-body">
+        <p>Q3 2026 earnings season opens next week. Key names reporting within the next five trading days:</p>
+        <table class="earnings-table">
+          <thead>
+            <tr>
+              <th>Company</th>
+              <th>Date</th>
+              <th>EPS Estimate</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Constellation Brands (STZ)</td>
+              <td>Mon, 6 Oct</td>
+              <td>$3.63</td>
+            </tr>
+            <tr>
+              <td>RPM International (RPM)</td>
+              <td>Mon, 6 Oct</td>
+              <td>$1.95</td>
+            </tr>
+            <tr>
+              <td>Lamb Weston Holdings (LW)</td>
+              <td>Mon, 6 Oct</td>
+              <td>$0.58</td>
+            </tr>
+            <tr>
+              <td>Levi Strauss &amp; Co. (LEVI)</td>
+              <td>Tue, 7 Oct</td>
+              <td>$0.36</td>
+            </tr>
+            <tr>
+              <td>PepsiCo (PEP)</td>
+              <td>Wed, 8 Oct</td>
+              <td>$2.30</td>
+            </tr>
+            <tr>
+              <td>Delta Air Lines (DAL)</td>
+              <td>Thu, 9 Oct</td>
+              <td>$2.03</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="table-note">EPS estimates sourced from Alpha Vantage Earnings Calendar.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="footer">
+  <div class="footer-inner">
+    <span class="footer-left">Market Quick Take · Friday, 2 October 2026</span>
+    <span class="footer-right">For informational purposes only. Not investment advice.</span>
+  </div>
+</div>
+
+</body>
+</html>
