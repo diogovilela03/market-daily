@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Market Quick Take</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #ffffff;
+      color: #1a2332;
+    }
+
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* ── Masthead ─────────────────────────────────── */
+    .masthead {
+      border-top: 3px solid #003366;
+      padding: 32px 0 20px;
+    }
+
+    .masthead-title {
+      font-size: 42px;
+      font-weight: 700;
+      color: #003366;
+      letter-spacing: -0.5px;
+      line-height: 1.1;
+    }
+
+    .masthead-date {
+      font-size: 13px;
+      font-weight: 400;
+      color: #6b7280;
+      margin-top: 8px;
+    }
+
+    .masthead-divider {
+      border: none;
+      border-bottom: 1px solid #e5e7eb;
+      margin-top: 20px;
+    }
+
+    /* ── Snapshot Bar ─────────────────────────────── */
+    .snapshot-bar {
+      background: #f1f5f9;
+      padding: 12px 0;
+    }
+
+    .snapshot-inner {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      font-size: 12px;
+      font-weight: 500;
+      color: #1a2332;
+      text-transform: uppercase;
+      letter-spacing: 0.3px;
+      gap: 0;
+    }
+
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      padding: 2px 12px;
+      white-space: nowrap;
+      border-right: 1px solid #cbd5e1;
+    }
+
+    .chip:last-child {
+      border-right: none;
+    }
+
+    .chip-sep {
+      margin: 0 4px;
+      color: #9ca3af;
+    }
+
+    /* ── Color utilities ──────────────────────────── */
+    .pos { color: #16a34a; }
+    .neg { color: #dc2626; }
+    .muted { color: #6b7280; }
+
+    /* ── Editor's Brief ───────────────────────────── */
+    .editors-brief {
+      font-size: 18px;
+      font-style: italic;
+      color: #374151;
+      max-width: 760px;
+      margin: 28px 0;
+      border-left: 3px solid #003366;
+      padding-left: 16px;
+      line-height: 1.7;
+    }
+
+    /* ── Sections ─────────────────────────────────── */
+    .section-divider {
+      border: none;
+      border-bottom: 1px solid #e5e7eb;
+      margin: 28px 0;
+    }
+
+    .watch-pill {
+      display: inline-block;
+      background: #fef3c7;
+      color: #b45309;
+      border-radius: 4px;
+      font-size: 11px;
+      font-weight: 500;
+      padding: 2px 8px;
+      margin-bottom: 10px;
+    }
+
+    .section-label {
+      font-size: 11px;
+      font-weight: 500;
+      color: #003366;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      margin-bottom: 6px;
+    }
+
+    .section-title {
+      font-size: 24px;
+      font-weight: 700;
+      color: #1a2332;
+      margin-bottom: 10px;
+    }
+
+    .section-body {
+      font-size: 15px;
+      line-height: 1.8;
+      color: #374151;
+    }
+
+    .section-body p + p {
+      margin-top: 12px;
+    }
+
+    .section-body ul {
+      padding-left: 8px;
+      list-style-position: outside;
+      margin-left: 16px;
+    }
+
+    .section-body ul li {
+      margin-bottom: 8px;
+    }
+
+    /* ── Earnings Table ───────────────────────────── */
+    .earnings-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+      margin-top: 14px;
+    }
+
+    .earnings-table th,
+    .earnings-table td {
+      border: 1px solid #e5e7eb;
+      padding: 9px 14px;
+      text-align: left;
+      vertical-align: middle;
+    }
+
+    .earnings-table thead th {
+      background: #f1f5f9;
+      font-weight: 600;
+      color: #1a2332;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .earnings-table tbody tr:nth-child(even) {
+      background: #fafafa;
+    }
+
+    .earnings-note {
+      margin-top: 12px;
+      font-size: 13px;
+      color: #6b7280;
+      line-height: 1.6;
+    }
+
+    /* ── Footer ───────────────────────────────────── */
+    .footer {
+      background: #f1f5f9;
+      border-top: 1px solid #e5e7eb;
+      margin-top: 48px;
+      padding: 20px 0;
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .footer-inner span {
+      font-size: 12px;
+      font-weight: 400;
+    }
+
+    .footer-brand { color: #6b7280; }
+    .footer-disclaimer { color: #9ca3af; }
+
+    @media (max-width: 600px) {
+      .masthead-title { font-size: 28px; }
+      .section-title { font-size: 20px; }
+      .snapshot-inner { font-size: 11px; }
+      .chip { padding: 2px 8px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ── MASTHEAD ─────────────────────────────────────── -->
+  <div class="container">
+    <header class="masthead">
+      <div class="masthead-title">MARKET QUICK TAKE</div>
+      <div class="masthead-date">Tuesday, 6 October 2026</div>
+      <hr class="masthead-divider">
+    </header>
+  </div>
+
+  <!-- ── SNAPSHOT BAR ──────────────────────────────────── -->
+  <div class="snapshot-bar">
+    <div class="container">
+      <div class="snapshot-inner">
+        <span class="chip">SPY&nbsp;<span class="muted">·</span>&nbsp;$774.83&nbsp;<span class="muted">·</span>&nbsp;<span class="pos">+0.67%</span></span>
+        <span class="chip">QQQ&nbsp;<span class="muted">·</span>&nbsp;$756.20&nbsp;<span class="muted">·</span>&nbsp;<span class="pos">+0.88%</span></span>
+        <span class="chip">IWM&nbsp;<span class="muted">·</span>&nbsp;$283.38&nbsp;<span class="muted">·</span>&nbsp;<span class="pos">+0.66%</span></span>
+        <span class="chip">VIX&nbsp;<span class="muted">·</span>&nbsp;N/A</span>
+        <span class="chip">US10Y&nbsp;<span class="muted">·</span>&nbsp;5.28%&nbsp;<span class="muted">·</span>&nbsp;<span class="pos">+4bps</span></span>
+        <span class="chip">US2Y&nbsp;<span class="muted">·</span>&nbsp;4.83%&nbsp;<span class="muted">·</span>&nbsp;<span class="pos">+5bps</span></span>
+        <span class="chip">EUR/USD&nbsp;<span class="muted">·</span>&nbsp;1.1207</span>
+        <span class="chip">GOLD&nbsp;<span class="muted">·</span>&nbsp;$4,130</span>
+        <span class="chip">WTI&nbsp;<span class="muted">·</span>&nbsp;$96.16</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── MAIN CONTENT ──────────────────────────────────── -->
+  <div class="container">
+
+    <!-- Editor's Brief -->
+    <p class="editors-brief">
+      Rising Treasury yields extended a global bank selloff through early October, with the 10-year rate at 5.28% pressuring financials from London to Tokyo. Equities proved resilient — SPY, QQQ and IWM each advanced 0.66–0.88% on Monday — buoyed by softening labour data and AI infrastructure optimism from Micron's strong quarterly results. Investors now turn to the unofficial start of Q3 earnings season, with Constellation Brands, PepsiCo and Delta Air Lines headlining this week before the major bank parade begins October 13.
+    </p>
+
+    <!-- ── SECTION 1: MARKET DRIVERS ─── -->
+    <div class="section">
+      <span class="watch-pill">⚡ WATCH</span>
+      <div class="section-label">Market Analysis</div>
+      <h2 class="section-title">Market Drivers</h2>
+      <div class="section-body">
+        <ul>
+          <li><strong>Yield-driven global bank selloff:</strong> Sustained elevation in Treasury yields — 10-year at 5.28%, 2-year at 4.83% — triggered sharp declines in financials globally. UK lenders Barclays and Lloyds fell approximately 16% and 13% respectively from recent highs, while Japanese megabanks Mizuho and MUFG shed 4–5% on October 1 as rate differentials and duration mismatches weighed.</li>
+          <li><strong>Bull market catalysts from tech and macro:</strong> Softer US payrolls data reduced near-term rate-hike expectations, providing relief to rate-sensitive equity sectors. Micron Technology's strong quarterly earnings reinforced the AI infrastructure investment thesis, fuelling outperformance in large-cap tech (QQQ led with +0.88%).</li>
+          <li><strong>Consumer trade-down accelerating:</strong> Persistent inflation and elevated borrowing costs are prompting consumer spending shifts toward discount and value retailers. Dollar Tree and peers are positioned as key beneficiaries as households reassess discretionary budgets.</li>
+          <li><strong>Q3 earnings season under scrutiny:</strong> Major financials — beginning with Citigroup on October 13 — face elevated market focus on credit quality: net credit losses, delinquencies and net interest margin in a high-rate environment will set the tone for the sector.</li>
+        </ul>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- ── SECTION 2: MACRO ─── -->
+    <div class="section">
+      <div class="section-label">Macro Environment</div>
+      <h2 class="section-title">Macro</h2>
+      <div class="section-body">
+        <p>The Federal Reserve's higher-for-longer posture continues to dominate market dynamics, with the 10-year Treasury yield at 5.28% and the 2-year at 4.83% — representing a positively sloped curve with a 10Y–2Y spread of +45 basis points. A recent softening in US labour market data has moderated expectations for additional rate hikes, offering equities partial support while long-end inflation risk premiums remain elevated. The Bank of Japan's refusal to meaningfully tighten policy continues to deepen the divergence with Western central banks, keeping USD/JPY under upward pressure at 158.23 and sustaining intervention speculation. PepsiCo's planned price increases — announced after February 2026 cuts — suggest inflation remains stickier in consumer staples than headline indices imply.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- ── SECTION 3: EQUITIES ─── -->
+    <div class="section">
+      <div class="section-label">Equities</div>
+      <h2 class="section-title">Equities</h2>
+      <div class="section-body">
+        <p>US equity indices closed modestly higher Monday, October 5, with the <strong>S&amp;P 500 ETF (SPY)</strong> gaining <span class="pos">+0.67%</span> to <strong>$774.83</strong>, the <strong>Nasdaq 100 ETF (QQQ)</strong> advancing <span class="pos">+0.88%</span> to <strong>$756.20</strong>, and the <strong>Russell 2000 ETF (IWM)</strong> adding <span class="pos">+0.66%</span> to <strong>$283.38</strong>. QQQ's relative outperformance reflects continued strength in large-cap technology and semiconductor names amid the AI buildout narrative.</p>
+        <p><strong>Notable movers:</strong> <strong>NVDA</strong> (NVIDIA) added <span class="pos">+2.11%</span> to $238.90 on 123.6M shares — sustaining its role as the market's AI bellwether — while <strong>INTC</strong> (Intel) slipped <span class="neg">−2.63%</span> to $116.19 on 80.8M shares, continuing to lag as market share concerns in the data-centre segment weigh.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- ── SECTION 4: FIXED INCOME ─── -->
+    <div class="section">
+      <div class="section-label">Fixed Income</div>
+      <h2 class="section-title">Fixed Income</h2>
+      <div class="section-body">
+        <p>US Treasuries remain under pressure. The <strong>10-year yield stands at 5.28%</strong> (up +4 bps from October 1's 5.24%), while the <strong>2-year yield is at 4.83%</strong> (up +5 bps from 4.78%). The <strong>10Y–2Y spread is +45 basis points</strong> — a steepening curve that reflects markets pricing in a softer near-term path for the Fed's policy rate even as long-end inflation expectations and term premiums remain elevated. Yields at 5.28% on the 10-year represent a multi-year high, compressing valuations for growth equities and increasing refinancing risk for floating-rate corporate borrowers. The global bond selloff spilling over into UK and Japanese bank stocks underscores how interlinked rate markets have become.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- ── SECTION 5: CURRENCIES ─── -->
+    <div class="section">
+      <div class="section-label">Currencies</div>
+      <h2 class="section-title">Currencies</h2>
+      <div class="section-body">
+        <p><strong>EUR/USD</strong> trades at <strong>1.1207</strong>, with the euro holding firm against the dollar as the ECB maintains a cautious but data-dependent tone amid cooling eurozone inflation. <strong>USD/JPY</strong> sits at <strong>158.23</strong> — near multi-decade highs for dollar strength against the yen — keeping Bank of Japan verbal intervention risk elevated. The 550+ basis-point rate differential between the Fed and BoJ continues to drive yen weakness, and the depreciation pressure contributed to the underperformance of Japanese financial equities this week as cost-of-capital concerns compound. A sustained break above 160 in USD/JPY would likely prompt more forceful BoJ action.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- ── SECTION 6: COMMODITIES ─── -->
+    <div class="section">
+      <div class="section-label">Commodities</div>
+      <h2 class="section-title">Commodities</h2>
+      <div class="section-body">
+        <p><strong>Gold</strong> trades at a record <strong>$4,130/oz</strong>, defying the conventional inverse relationship with rising real yields. Structural support from central bank accumulation — particularly among EM sovereigns diversifying away from US dollar reserves — and persistent geopolitical risk premiums are keeping bullion elevated even as the opportunity cost of holding non-yielding assets climbs. <strong>WTI crude</strong> is at <strong>$96.16/bbl</strong> (most recent data as of September 29), approaching the psychologically significant $100 threshold; OPEC+ supply discipline and Middle East geopolitical uncertainty keep the energy complex elevated, adding to the Fed's inflationary burden and complicating the case for rate cuts.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- ── SECTION 7: EARNINGS CALENDAR ─── -->
+    <div class="section">
+      <div class="section-label">Earnings Radar</div>
+      <h2 class="section-title">Earnings Calendar</h2>
+      <div class="section-body">
+        <p>Q3 earnings season gets under way this week with a mix of consumer, industrial and airline names before the financials season begins next week. Key reports across the next five trading days:</p>
+        <table class="earnings-table">
+          <thead>
+            <tr>
+              <th>Company</th>
+              <th>Date</th>
+              <th>EPS Estimate</th>
+              <th>Expected Move</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>STZ</strong> — Constellation Brands</td>
+              <td>Tue 6 Oct (PM)</td>
+              <td>$3.62</td>
+              <td>N/A</td>
+            </tr>
+            <tr>
+              <td><strong>RPM</strong> — RPM International</td>
+              <td>Tue 6 Oct (AM)</td>
+              <td>$1.95</td>
+              <td>N/A</td>
+            </tr>
+            <tr>
+              <td><strong>LEVI</strong> — Levi Strauss &amp; Co.</td>
+              <td>Wed 7 Oct (PM)</td>
+              <td>$0.36</td>
+              <td>N/A</td>
+            </tr>
+            <tr>
+              <td><strong>PEP</strong> — PepsiCo</td>
+              <td>Thu 8 Oct (AM)</td>
+              <td>$2.29</td>
+              <td>N/A</td>
+            </tr>
+            <tr>
+              <td><strong>DAL</strong> — Delta Air Lines</td>
+              <td>Fri 9 Oct (AM)</td>
+              <td>$1.96</td>
+              <td>N/A</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="earnings-note">PepsiCo is particularly watched given the company's just-announced plan to raise chip and soda prices (low-to-mid single digit) after February 2026 cuts — management commentary on consumer elasticity and volume trends will frame the consumer staples narrative. Delta's results will offer a read on travel demand resilience amid high jet fuel costs. Major bank earnings begin October 13 with Citigroup, followed by JPMorgan, Wells Fargo, Goldman Sachs and Morgan Stanley — net interest income, credit loss provisions and loan growth guidance will dominate that week.</p>
+      </div>
+    </div>
+
+  </div><!-- /.container -->
+
+  <!-- ── FOOTER ─────────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <span class="footer-brand">Market Quick Take &middot; Tuesday, 6 October 2026</span>
+        <span class="footer-disclaimer">For informational purposes only. Not investment advice.</span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
