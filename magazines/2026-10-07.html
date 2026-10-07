@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Market Quick Take</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background: #ffffff;
+            color: #1a2332;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .container {
+            max-width: 860px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* MASTHEAD */
+        .masthead {
+            border-top: 3px solid #003366;
+            padding: 32px 0 20px;
+        }
+        .masthead-title {
+            font-size: 42px;
+            font-weight: 700;
+            color: #003366;
+            letter-spacing: -0.5px;
+        }
+        .masthead-date {
+            font-size: 13px;
+            font-weight: 400;
+            color: #6b7280;
+            margin-top: 4px;
+        }
+        .masthead-divider {
+            border: none;
+            border-bottom: 1px solid #e5e7eb;
+            margin-top: 20px;
+        }
+
+        /* SNAPSHOT BAR */
+        .snapshot-bar {
+            background: #f1f5f9;
+            padding: 12px 0;
+            width: 100%;
+        }
+        .snapshot-chips {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px 2px;
+            align-items: center;
+            padding: 0 24px;
+            max-width: 860px;
+            margin: 0 auto;
+        }
+        .chip {
+            font-size: 12px;
+            font-weight: 500;
+            color: #1a2332;
+            text-transform: uppercase;
+            white-space: nowrap;
+        }
+        .chip-sep {
+            color: #9ca3af;
+            margin: 0 6px;
+            font-size: 12px;
+        }
+        .chip-label { color: #6b7280; }
+        .chip-value { color: #1a2332; }
+        .pos { color: #16a34a; }
+        .neg { color: #dc2626; }
+        .na { color: #9ca3af; }
+
+        /* EDITOR'S BRIEF */
+        .editors-brief {
+            font-size: 18px;
+            font-weight: 400;
+            font-style: italic;
+            color: #374151;
+            line-height: 1.7;
+            max-width: 760px;
+            margin: 28px 0;
+            border-left: 3px solid #003366;
+            padding-left: 16px;
+        }
+
+        /* SECTIONS */
+        .section {
+            margin-bottom: 0;
+        }
+        .section-divider {
+            border: none;
+            border-bottom: 1px solid #e5e7eb;
+            margin: 28px 0;
+        }
+        .section-label {
+            font-size: 11px;
+            font-weight: 500;
+            color: #003366;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-bottom: 6px;
+        }
+        .section-title {
+            font-size: 24px;
+            font-weight: 700;
+            color: #1a2332;
+            margin-bottom: 10px;
+        }
+        .section-body {
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 1.8;
+            color: #374151;
+        }
+        .section-body ul {
+            padding-left: 8px;
+            list-style-type: disc;
+            list-style-position: inside;
+        }
+        .section-body li {
+            margin-bottom: 6px;
+        }
+        .section-body p + p {
+            margin-top: 10px;
+        }
+
+        /* EARNINGS TABLE */
+        .earnings-table {
+            width: 100%;
+            border-collapse: collapse;
+            border: 1px solid #e5e7eb;
+            font-size: 13px;
+            font-weight: 400;
+            margin-top: 14px;
+        }
+        .earnings-table th {
+            background: #f1f5f9;
+            color: #003366;
+            font-weight: 600;
+            padding: 8px 12px;
+            text-align: left;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        .earnings-table td {
+            padding: 8px 12px;
+            border-bottom: 1px solid #e5e7eb;
+            color: #374151;
+        }
+        .earnings-table tr:last-child td {
+            border-bottom: none;
+        }
+        .earnings-table tr:nth-child(even) td {
+            background: #f9fafb;
+        }
+
+        /* FOOTER */
+        .footer {
+            background: #f1f5f9;
+            border-top: 1px solid #e5e7eb;
+            margin-top: 48px;
+            padding: 20px 0;
+        }
+        .footer-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        .footer-brand {
+            font-size: 12px;
+            font-weight: 400;
+            color: #6b7280;
+        }
+        .footer-disclaimer {
+            font-size: 12px;
+            font-weight: 400;
+            color: #9ca3af;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- MASTHEAD -->
+        <div class="masthead">
+            <div class="masthead-title">MARKET QUICK TAKE</div>
+            <div class="masthead-date">Wednesday, 7 October 2026</div>
+            <hr class="masthead-divider">
+        </div>
+    </div>
+
+    <!-- SNAPSHOT BAR -->
+    <div class="snapshot-bar">
+        <div class="snapshot-chips">
+            <span class="chip"><span class="chip-label">SPY</span>&nbsp;·&nbsp;<span class="chip-value">779.09</span>&nbsp;·&nbsp;<span class="pos">+0.55%</span></span>
+            <span class="chip-sep">|</span>
+            <span class="chip"><span class="chip-label">QQQ</span>&nbsp;·&nbsp;<span class="chip-value">759.66</span>&nbsp;·&nbsp;<span class="pos">+0.46%</span></span>
+            <span class="chip-sep">|</span>
+            <span class="chip"><span class="chip-label">IWM</span>&nbsp;·&nbsp;<span class="chip-value">281.34</span>&nbsp;·&nbsp;<span class="neg">-0.72%</span></span>
+            <span class="chip-sep">|</span>
+            <span class="chip"><span class="chip-label">VIX</span>&nbsp;·&nbsp;<span class="na">N/A</span></span>
+            <span class="chip-sep">|</span>
+            <span class="chip"><span class="chip-label">US10Y</span>&nbsp;·&nbsp;<span class="chip-value">5.31%</span>&nbsp;·&nbsp;<span class="pos">+3bps</span></span>
+            <span class="chip-sep">|</span>
+            <span class="chip"><span class="chip-label">US2Y</span>&nbsp;·&nbsp;<span class="chip-value">4.84%</span>&nbsp;·&nbsp;<span class="pos">+1bp</span></span>
+            <span class="chip-sep">|</span>
+            <span class="chip"><span class="chip-label">EUR/USD</span>&nbsp;·&nbsp;<span class="chip-value">1.1237</span>&nbsp;·&nbsp;<span class="na">—</span></span>
+            <span class="chip-sep">|</span>
+            <span class="chip"><span class="chip-label">GOLD</span>&nbsp;·&nbsp;<span class="chip-value">$4,134</span>&nbsp;·&nbsp;<span class="na">—</span></span>
+            <span class="chip-sep">|</span>
+            <span class="chip"><span class="chip-label">WTI</span>&nbsp;·&nbsp;<span class="chip-value">$96.16</span>&nbsp;·&nbsp;<span class="neg">-3.23%</span></span>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <!-- EDITOR'S BRIEF -->
+        <p class="editors-brief">Large-cap equities advanced modestly on Tuesday as SPY and QQQ pushed higher while small-caps slipped, underscoring a selective risk-on tone as investors position ahead of a pivotal Q3 earnings season. Gold vaulted above $4,100 to fresh record territory even as the 10-year Treasury held near cycle highs at 5.31%, sending a dual signal of residual inflation anxiety and safe-haven demand in a high-rate world.</p>
+
+        <!-- SECTION 1: Market Drivers -->
+        <div class="section">
+            <div class="section-label">Section 1</div>
+            <div class="section-title">Market Drivers</div>
+            <div class="section-body">
+                <ul>
+                    <li>Large-cap leadership persisted with SPY (+0.55%) and QQQ (+0.46%) advancing while IWM fell 0.72%, a bifurcated session favoring mega-cap quality over small-cap cyclicals in a stubbornly high-rate environment.</li>
+                    <li>Gold breaking above $4,100/oz to new all-time highs signals persistent demand for real assets, driven by central bank accumulation, inflation hedging, and geopolitical uncertainty — gold is up sharply from the $3,000 range seen earlier in the cycle.</li>
+                    <li>WTI crude pulled back to $96.16/bbl from near $99 in the prior session, introducing a modest deflationary energy impulse, though oil prices remain historically elevated and supportive of upstream producers.</li>
+                    <li>Q3 earnings season begins in earnest this week — PepsiCo (Oct 8) and Delta Air Lines (Oct 9) lead into the marquee Oct 13 bank reporting day featuring JPMorgan Chase, Goldman Sachs, Citigroup, Johnson &amp; Johnson, and UnitedHealth.</li>
+                </ul>
+            </div>
+        </div>
+
+        <hr class="section-divider">
+
+        <!-- SECTION 2: Macro -->
+        <div class="section">
+            <div class="section-label">Section 2</div>
+            <div class="section-title">Macro</div>
+            <div class="section-body">
+                <p>The 10-year Treasury at 5.31% and the 2-year at 4.84% reflect a market still pricing a higher-for-longer Federal Reserve trajectory, with the 47-basis-point positive 10Y–2Y spread representing a meaningful re-steepening from the deep inversion of the prior cycle. USD/JPY holding at 158.37 keeps the Bank of Japan's tolerance thresholds squarely in focus, as policymakers navigate the tension between yield-curve-control objectives and yen defense — prior BoJ intervention episodes were triggered well below current levels. Gold at record highs reinforces that inflation expectations and reserve diversification remain active institutional positioning themes despite the Fed's extended restrictive stance.</p>
+            </div>
+        </div>
+
+        <hr class="section-divider">
+
+        <!-- SECTION 3: Equities -->
+        <div class="section">
+            <div class="section-label">Section 3</div>
+            <div class="section-title">Equities</div>
+            <div class="section-body">
+                <p>The S&amp;P 500 proxy (SPY) gained 0.55% to $779.09, the Nasdaq 100 proxy (QQQ) advanced 0.46% to $759.66, while the Russell 2000 proxy (IWM) declined 0.72% to $281.34 — a classic large-cap-leads, small-cap-lags session consistent with rising rate sensitivity among smaller balance sheets.</p>
+                <p>Among notable movers, <strong>OPCH</strong> surged 32.65% to $31.00 on 65 million shares of volume, one of the session's standout large-cap moves. <strong>Intel (INTC)</strong> fell 3.18% to $112.50 on over 100 million shares — the most actively traded session in recent memory for the name — as investors continue to reassess the chipmaker's competitive positioning against AMD and Nvidia in AI-accelerator and data-center workloads.</p>
+            </div>
+        </div>
+
+        <hr class="section-divider">
+
+        <!-- SECTION 4: Fixed Income (renumbered from 5, VIX section omitted) -->
+        <div class="section">
+            <div class="section-label">Section 4</div>
+            <div class="section-title">Fixed Income</div>
+            <div class="section-body">
+                <p>The 10-year US Treasury yield stood at <strong>5.31%</strong> and the 2-year at <strong>4.84%</strong>, placing the 10Y–2Y spread at approximately <strong>+47 basis points</strong> — a positively sloped curve that marks a significant shift from the prolonged inversion of recent years. While the steepening nominally improves net interest margin prospects for banks, the elevated absolute level of rates continues to compress multiples in long-duration equities and raises refinancing costs across the leveraged credit complex. Q3 bank earnings beginning October 13 will provide a real-time read on credit quality, deposit retention, and NIM expansion at prevailing yield levels.</p>
+            </div>
+        </div>
+
+        <hr class="section-divider">
+
+        <!-- SECTION 5: Currencies (renumbered from 6) -->
+        <div class="section">
+            <div class="section-label">Section 5</div>
+            <div class="section-title">Currencies</div>
+            <div class="section-body">
+                <p><strong>EUR/USD</strong> traded at 1.1237, maintaining relatively stable footing against the dollar as the eurozone navigates diverging growth dynamics relative to the US. <strong>USD/JPY</strong> at 158.37 places the yen deep in territory that has historically prompted verbal and physical intervention from Japanese authorities — the currency has held above 150 for an extended stretch, keeping the BoJ's policy flexibility debate at the forefront of FX markets. Any surprise shift toward further rate normalization from Tokyo could be a material catalyst for yen strengthening.</p>
+            </div>
+        </div>
+
+        <hr class="section-divider">
+
+        <!-- SECTION 6: Commodities (renumbered from 7) -->
+        <div class="section">
+            <div class="section-label">Section 6</div>
+            <div class="section-title">Commodities</div>
+            <div class="section-body">
+                <p><strong>Gold</strong> hit a new record at <strong>$4,134.12/oz</strong>, cementing its position as the standout commodity of this macro cycle. The persistent bid reflects a confluence of factors: central bank demand from emerging market reserve managers reducing dollar exposure, geopolitical hedging, and an inflation premium that remains elevated even as the Fed holds rates restrictive. <strong>WTI crude</strong> most recently traded at <strong>$96.16/barrel</strong>, having pulled back from near $99.37 in the prior session; oil remains broadly elevated as OPEC+ supply discipline and ongoing geopolitical risk premia underpin the energy complex well above the $70s seen in early 2026.</p>
+            </div>
+        </div>
+
+        <hr class="section-divider">
+
+        <!-- SECTION 7: Earnings Calendar (renumbered from 9) -->
+        <div class="section">
+            <div class="section-label">Section 7</div>
+            <div class="section-title">Earnings Radar</div>
+            <div class="section-body">
+                <p>Q3 earnings season opens this week with consumer and travel bellwethers leading into the marquee financial sector reporting cluster on October 13, when JPMorgan Chase, Goldman Sachs, Citigroup, Johnson &amp; Johnson, and UnitedHealth all report before the open — offering a critical read on credit, investment banking activity, and healthcare cost trends.</p>
+                <table class="earnings-table">
+                    <thead>
+                        <tr>
+                            <th>Company</th>
+                            <th>Date</th>
+                            <th>Expected Move (EPS Estimate)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>PepsiCo (PEP)</strong></td>
+                            <td>Oct 8 · Pre-market</td>
+                            <td>$2.29/share</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Delta Air Lines (DAL)</strong></td>
+                            <td>Oct 9 · Pre-market</td>
+                            <td>$1.96/share</td>
+                        </tr>
+                        <tr>
+                            <td><strong>JPMorgan Chase (JPM)</strong></td>
+                            <td>Oct 13 · Pre-market</td>
+                            <td>$5.88/share</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Goldman Sachs (GS)</strong></td>
+                            <td>Oct 13 · Pre-market</td>
+                            <td>$14.59/share</td>
+                        </tr>
+                        <tr>
+                            <td><strong>UnitedHealth (UNH)</strong></td>
+                            <td>Oct 13 · Pre-market</td>
+                            <td>$4.12/share</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <span class="footer-brand">Market Quick Take · Wednesday, 7 October 2026</span>
+                <span class="footer-disclaimer">For informational purposes only. Not investment advice.</span>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
