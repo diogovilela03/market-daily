@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Market Quick Take — Monday, 12 October 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: #ffffff;
+    color: #1a2332;
+  }
+
+  .container {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 16px;
+  }
+
+  /* MASTHEAD */
+  .masthead {
+    border-top: 3px solid #003366;
+    padding: 32px 0 20px;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  .masthead-title {
+    font-size: 42px;
+    font-weight: 700;
+    color: #003366;
+    letter-spacing: -0.5px;
+    line-height: 1.1;
+  }
+  .masthead-date {
+    font-size: 13px;
+    font-weight: 400;
+    color: #6b7280;
+    margin-top: 6px;
+  }
+
+  /* SNAPSHOT BAR */
+  .snapshot-bar {
+    background: #f1f5f9;
+    padding: 12px 0;
+    width: 100%;
+  }
+  .snapshot-inner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 0;
+    align-items: center;
+    padding: 0 16px;
+    max-width: 860px;
+    margin: 0 auto;
+  }
+  .chip {
+    font-size: 12px;
+    font-weight: 500;
+    color: #1a2332;
+    text-transform: uppercase;
+    white-space: nowrap;
+    padding: 0 10px;
+  }
+  .chip:not(:last-child)::after {
+    content: '|';
+    margin-left: 10px;
+    color: #9ca3af;
+  }
+  .pos { color: #16a34a; }
+  .neg { color: #dc2626; }
+
+  /* EDITOR'S BRIEF */
+  .editors-brief {
+    font-size: 18px;
+    font-weight: 400;
+    font-style: italic;
+    color: #374151;
+    line-height: 1.7;
+    max-width: 760px;
+    margin: 28px 0;
+    border-left: 3px solid #003366;
+    padding-left: 16px;
+  }
+
+  /* SECTIONS */
+  .section {
+    margin-bottom: 0;
+  }
+  .section-label {
+    font-size: 11px;
+    font-weight: 500;
+    color: #003366;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 6px;
+  }
+  .section-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1a2332;
+    margin-bottom: 10px;
+  }
+  .section-body {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.8;
+    color: #374151;
+  }
+  .section-body ul {
+    padding-left: 8px;
+    list-style: disc;
+    list-style-position: inside;
+  }
+  .section-body li {
+    margin-bottom: 6px;
+  }
+
+  .divider {
+    border: none;
+    border-top: 1px solid #e5e7eb;
+    margin: 28px 0;
+  }
+
+  /* WATCH PILL */
+  .watch-pill {
+    display: inline-block;
+    color: #b45309;
+    background: #fef3c7;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 500;
+    padding: 2px 8px;
+    margin-bottom: 8px;
+  }
+
+  /* EARNINGS TABLE */
+  .earnings-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    font-weight: 400;
+    margin-top: 8px;
+  }
+  .earnings-table th {
+    text-align: left;
+    font-weight: 600;
+    color: #1a2332;
+    border: 1px solid #e5e7eb;
+    padding: 8px 12px;
+    background: #f9fafb;
+  }
+  .earnings-table td {
+    border: 1px solid #e5e7eb;
+    padding: 8px 12px;
+    color: #374151;
+  }
+  .earnings-table tr:nth-child(even) td {
+    background: #fafafa;
+  }
+
+  /* FOOTER */
+  .footer {
+    background: #f1f5f9;
+    border-top: 1px solid #e5e7eb;
+    margin-top: 48px;
+    padding: 20px 0;
+  }
+  .footer-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .footer-left {
+    font-size: 12px;
+    font-weight: 400;
+    color: #6b7280;
+  }
+  .footer-right {
+    font-size: 12px;
+    font-weight: 400;
+    color: #9ca3af;
+  }
+
+  @media (max-width: 600px) {
+    .masthead-title { font-size: 28px; }
+    .section-title { font-size: 20px; }
+    .editors-brief { font-size: 16px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- MASTHEAD -->
+<div class="container">
+  <div class="masthead">
+    <div class="masthead-title">MARKET QUICK TAKE</div>
+    <div class="masthead-date">Monday, 12 October 2026</div>
+  </div>
+</div>
+
+<!-- SNAPSHOT BAR -->
+<div class="snapshot-bar">
+  <div class="snapshot-inner">
+    <div class="chip">SPY · $778.57 · <span class="pos">+0.60%</span></div>
+    <div class="chip">QQQ · $751.27 · <span class="pos">+0.49%</span></div>
+    <div class="chip">IWM · $278.94 · <span class="pos">+0.49%</span></div>
+    <div class="chip">VIX · N/A</div>
+    <div class="chip">US10Y · 5.22%</div>
+    <div class="chip">US2Y · 4.75%</div>
+    <div class="chip">EUR/USD · 1.1209</div>
+    <div class="chip">GOLD · $4,184.73</div>
+    <div class="chip">WTI · $96.24</div>
+  </div>
+</div>
+
+<!-- EDITOR'S BRIEF -->
+<div class="container">
+  <div class="editors-brief">
+    US equity markets closed Friday's session with broad-based gains — SPY, QQQ, and IWM all advanced roughly half a percent — as investors position ahead of the busiest week of Q3 earnings season, headlined by JPMorgan, Goldman Sachs, and Wells Fargo on Tuesday. Treasury yields remain anchored at cycle highs, with the 10-year above 5.22% and gold shattering records above $4,184, reflecting persistent inflation anxiety even as risk appetite holds firm.
+  </div>
+
+  <!-- SECTION 1: MARKET DRIVERS -->
+  <div class="section">
+    <div class="section-label">Section 1</div>
+    <div class="section-title">Market Drivers</div>
+    <div class="section-body">
+      <ul>
+        <li>Broad equity rally into the weekend close: SPY (+0.60%), QQQ (+0.49%), and IWM (+0.49%) all advanced in lockstep, signaling synchronized risk-on positioning rather than narrow-sector leadership.</li>
+        <li>Telecom sector under severe pressure: AT&amp;T (T) plunged 9.85% on extraordinary volume of 150M shares and Verizon (VZ) fell 8.75% on 95M shares — the two heaviest volume-weighted losers among the most-active cohort, pointing to sector-specific catalysts around capital expenditure and competitive dynamics.</li>
+        <li>Q3 earnings season ignition: Tuesday brings JPMorgan, Goldman Sachs, Wells Fargo, Citigroup, Johnson &amp; Johnson, and UnitedHealth Group — results from these six names will set the tone for the broader market through mid-month.</li>
+        <li>Commodities remain elevated: WTI crude at $96.24 (approaching the psychologically significant $100 threshold) and gold at a record $4,184.73 suggest markets are pricing persistent inflation premium alongside resilient global demand.</li>
+      </ul>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- SECTION 2: MACRO -->
+  <div class="section">
+    <div class="section-label">Section 2</div>
+    <div class="section-title">Macro</div>
+    <div class="section-body">
+      <p>The US interest rate environment remains in a historically restrictive configuration, with the 10-year Treasury yield at 5.22% and the 2-year at 4.75% — both near multi-year peaks — suggesting the market is not pricing in near-term Fed cuts and may still be probing the terminal rate ceiling. Gold's record ascent above $4,184 reflects a combination of central bank accumulation, de-dollarization flows from emerging markets, and a durable inflation-risk premium that yields alone cannot suppress. The Bank of Japan's policy trajectory remains a key macro wildcard: with USD/JPY at 158.46, sustained yen weakness keeps intervention risk elevated and adds pressure to global carry trades.</p>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- SECTION 3: EQUITIES -->
+  <div class="section">
+    <div class="section-label">Section 3</div>
+    <div class="section-title">Equities</div>
+    <div class="section-body">
+      <p>All three major US equity ETFs advanced on the last trading session (Friday, Oct 9): SPY closed at $778.57 (+0.60%), QQQ at $751.27 (+0.49%), and the small-cap benchmark IWM at $278.94 (+0.49%). The uniform performance across market-cap segments suggests broad participation rather than a flight to safety or speculative concentration.</p>
+      <p style="margin-top:12px;"><strong>Notable movers:</strong></p>
+      <ul style="margin-top:6px;">
+        <li><strong>AT&amp;T (T)</strong> — $22.17, <span class="neg">−9.85%</span> on ~150M shares. Extraordinary volume selloff suggests a significant sector-specific catalyst; the magnitude and volume rank it among the heaviest single-session moves in the large-cap telecom space.</li>
+        <li><strong>VEEA</strong> — $5.70, <span class="pos">+47.29%</span> on ~83M shares. Dramatic short-duration move on outsized volume, consistent with a corporate event or announcement driving a tactical re-rating.</li>
+      </ul>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- SECTION 4: FIXED INCOME -->
+  <div class="section">
+    <div class="section-label">Section 4</div>
+    <div class="section-title">Fixed Income</div>
+    <div class="section-body">
+      <p>The US Treasury curve sits at its most restrictive level in years: the 10-year yield at <strong>5.22%</strong> and the 2-year at <strong>4.75%</strong> produce a positive 10Y–2Y spread of <strong>+47 basis points</strong>, marking an ongoing re-steepening from the prolonged inversion that characterized 2023–2025. While the direction of travel (steepening) is constructive, the absolute level of rates remains unambiguously tight — a 5.22% 10-year acts as a persistent headwind for equity valuations, mortgage demand, and corporate debt refinancing. Fixed income markets will be closely watching Tuesday's bank earnings for signals on net interest income trajectory and credit quality under sustained rate pressure.</p>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- SECTION 5: CURRENCIES -->
+  <div class="section">
+    <div class="section-label">Section 5</div>
+    <div class="section-title">Currencies</div>
+    <div class="section-body">
+      <ul>
+        <li><strong>EUR/USD: 1.1209</strong> — The euro holds near recent multi-month highs against the dollar, supported by narrowing rate differentials as ECB policy expectations stabilize. Dollar softness ahead of major US earnings data creates near-term tailwinds for EUR.</li>
+        <li><strong>USD/JPY: 158.46</strong> — The yen remains under sustained pressure at historically weak levels. With USD/JPY approaching the 160 threshold that previously triggered Bank of Japan intervention in 2024, market participants are closely watching for verbal warnings or policy signaling from Tokyo. Any BoJ normalization move would unwind significant carry positioning.</li>
+      </ul>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- SECTION 6: COMMODITIES -->
+  <div class="section">
+    <div class="section-label">Section 6</div>
+    <div class="section-title">Commodities</div>
+    <div class="section-body">
+      <ul>
+        <li><strong>Gold (XAU/USD): $4,184.73</strong> — Gold continues its historic run, consolidating near all-time record highs. The rally is underpinned by persistent central bank buying (particularly from EM central banks diversifying reserve assets), ongoing de-dollarization demand, and a durable inflation-risk premium that has proven resilient even as the dollar remains broadly stable.</li>
+        <li><strong>WTI Crude: $96.24</strong> — Oil prices remain elevated and are approaching the psychologically significant $100/barrel level, supported by disciplined OPEC+ production management and robust demand from emerging market economies. A sustained break above $100 would add meaningful upside pressure to inflation readings globally.</li>
+      </ul>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- SECTION 7: EARNINGS CALENDAR -->
+  <div class="section">
+    <div class="section-label">Section 7</div>
+    <div class="section-title">Earnings Radar</div>
+    <div class="section-body">
+      <p>A critical slate of Q3 earnings dominates the week. Bank results will be scrutinized for net interest income resilience, credit quality signals, and guidance on the rate environment.</p>
+      <table class="earnings-table">
+        <thead>
+          <tr>
+            <th>Company</th>
+            <th>Date</th>
+            <th>Consensus EPS Est.</th>
+            <th>Expected Move Context</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>JPMorgan Chase (JPM)</strong></td>
+            <td>Oct 13, pre-mkt</td>
+            <td>$5.94</td>
+            <td>Largest US bank; bellwether for consumer credit and NII trajectory under elevated rates</td>
+          </tr>
+          <tr>
+            <td><strong>Goldman Sachs (GS)</strong></td>
+            <td>Oct 13, pre-mkt</td>
+            <td>$12.90</td>
+            <td>Trading revenue and M&amp;A pipeline revival in focus; high bar after prior beats</td>
+          </tr>
+          <tr>
+            <td><strong>Wells Fargo (WFC)</strong></td>
+            <td>Oct 13, pre-mkt</td>
+            <td>$1.85</td>
+            <td>Consumer credit quality and loan-loss provisions key amid stretched household balance sheets</td>
+          </tr>
+          <tr>
+            <td><strong>Bank of America (BAC)</strong></td>
+            <td>Oct 14, pre-mkt</td>
+            <td>$1.11</td>
+            <td>NII sensitivity to the rate curve; deposit stability closely watched</td>
+          </tr>
+          <tr>
+            <td><strong>Morgan Stanley (MS)</strong></td>
+            <td>Oct 14, pre-mkt</td>
+            <td>$2.83</td>
+            <td>Wealth management AUM flows and investment banking activity signal broader deal market recovery</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</div><!-- /.container -->
+
+<!-- FOOTER -->
+<div class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <span class="footer-left">Market Quick Take · Monday, 12 October 2026</span>
+      <span class="footer-right">For informational purposes only. Not investment advice.</span>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
