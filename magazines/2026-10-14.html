@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Market Quick Take — Wednesday, 14 October 2026</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Inter', sans-serif; background: #ffffff; color: #1a2332; }
+    .container { max-width: 860px; margin: 0 auto; padding: 0 20px; }
+
+    .masthead { border-top: 3px solid #003366; padding: 32px 0 20px; border-bottom: 1px solid #e5e7eb; }
+    .masthead__title { font-size: 42px; font-weight: 700; color: #003366; letter-spacing: -0.5px; }
+    .masthead__date { font-size: 13px; font-weight: 400; color: #6b7280; margin-top: 6px; }
+
+    .snapshot-bar { background: #f1f5f9; padding: 12px 0; width: 100%; }
+    .snapshot-bar__inner { max-width: 860px; margin: 0 auto; padding: 0 20px; display: flex; flex-wrap: wrap; gap: 4px 0; align-items: center; }
+    .chip { font-family: 'Inter', sans-serif; font-size: 12px; font-weight: 500; color: #1a2332; text-transform: uppercase; white-space: nowrap; }
+    .chip__sep { color: #9ca3af; margin: 0 8px; }
+    .chip__label { color: #6b7280; }
+    .chip__value { color: #1a2332; }
+    .pos { color: #16a34a; }
+    .neg { color: #dc2626; }
+    .neutral { color: #6b7280; }
+
+    .brief { font-size: 18px; font-style: italic; color: #374151; line-height: 1.7; max-width: 760px; margin: 28px 0; border-left: 3px solid #003366; padding-left: 16px; }
+
+    .section { max-width: 860px; }
+    .section__label { font-size: 11px; font-weight: 500; color: #003366; text-transform: uppercase; letter-spacing: 3px; margin-bottom: 6px; }
+    .section__title { font-size: 24px; font-weight: 700; color: #1a2332; margin-bottom: 10px; }
+    .section__body { font-size: 15px; line-height: 1.8; color: #374151; }
+    .section__body ul { padding-left: 20px; }
+    .section__body li { margin-bottom: 6px; }
+
+    hr.divider { border: none; border-top: 1px solid #e5e7eb; margin: 28px 0; }
+
+    .watch-pill { display: inline-block; color: #b45309; background: #fef3c7; border-radius: 4px; font-size: 11px; font-weight: 500; padding: 2px 8px; margin-bottom: 8px; }
+
+    .earnings-table { width: 100%; border-collapse: collapse; font-size: 13px; margin-top: 12px; }
+    .earnings-table th, .earnings-table td { border: 1px solid #e5e7eb; padding: 8px 12px; text-align: left; }
+    .earnings-table th { background: #f1f5f9; font-weight: 600; color: #1a2332; }
+    .earnings-table td { color: #374151; }
+    .earnings-table tr:nth-child(even) td { background: #fafafa; }
+
+    .footer { background: #f1f5f9; border-top: 1px solid #e5e7eb; margin-top: 48px; padding: 20px 0; }
+    .footer__inner { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; }
+    .footer span { font-size: 12px; font-weight: 400; }
+
+    @media (max-width: 600px) {
+      .masthead__title { font-size: 28px; }
+      .brief { font-size: 16px; }
+      .section__title { font-size: 20px; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="masthead">
+      <div class="masthead__title">MARKET QUICK TAKE</div>
+      <div class="masthead__date">Wednesday, 14 October 2026</div>
+    </div>
+  </div>
+
+  <div class="snapshot-bar">
+    <div class="snapshot-bar__inner">
+      <span class="chip"><span class="chip__label">SPY</span> · <span class="chip__value">$778.01</span> · <span class="neg">-0.01%</span></span>
+      <span class="chip__sep">|</span>
+      <span class="chip"><span class="chip__label">QQQ</span> · <span class="chip__value">$743.57</span> · <span class="neg">-0.33%</span></span>
+      <span class="chip__sep">|</span>
+      <span class="chip"><span class="chip__label">IWM</span> · <span class="chip__value">$276.70</span> · <span class="neg">-0.43%</span></span>
+      <span class="chip__sep">|</span>
+      <span class="chip"><span class="chip__label">VIX</span> · <span class="chip__value neutral">N/A</span></span>
+      <span class="chip__sep">|</span>
+      <span class="chip"><span class="chip__label">US10Y</span> · <span class="chip__value">5.24%</span> · <span class="pos">+0.02</span></span>
+      <span class="chip__sep">|</span>
+      <span class="chip"><span class="chip__label">US2Y</span> · <span class="chip__value">4.80%</span> · <span class="pos">+0.05</span></span>
+      <span class="chip__sep">|</span>
+      <span class="chip"><span class="chip__label">EUR/USD</span> · <span class="chip__value">1.1209</span></span>
+      <span class="chip__sep">|</span>
+      <span class="chip"><span class="chip__label">GOLD</span> · <span class="chip__value">$4,148.74</span></span>
+      <span class="chip__sep">|</span>
+      <span class="chip"><span class="chip__label">WTI</span> · <span class="chip__value">$96.24</span></span>
+    </div>
+  </div>
+
+  <div class="container">
+    <p class="brief">U.S. equity benchmarks closed modestly lower on October 13 as elevated Treasury yields continued to weigh on growth valuations, with the tech-heavy QQQ leading declines at -0.33%. Gold's record advance past $4,100 per ounce and WTI crude holding near $96 signal persistent commodity inflation pressures, even as Q3 earnings season opens in earnest with major financial names reporting pre-market today.</p>
+
+    <div class="section">
+      <div class="section__label">Section 1</div>
+      <div class="section__title">Market Drivers</div>
+      <div class="section__body">
+        <ul>
+          <li>Broad equity indices pulled back mildly on October 13 as the 10-year Treasury yield held at 5.24%, sustaining pressure on growth stock multiples — particularly across the QQQ complex (-0.33%).</li>
+          <li>Small-cap underperformance (IWM -0.43%) reflects ongoing risk-off rotation, as higher-for-longer rates disproportionately weigh on smaller, more leveraged companies with floating-rate liabilities.</li>
+          <li>Gold surged to a new record at $4,148.74/oz, driven by persistent central bank accumulation, elevated geopolitical risk premium, and diminished real yield advantage of competing fixed income assets.</li>
+          <li>Q3 earnings season opens in force today with BAC, BLK, MS, and ASML all reporting pre-market — these results will set the tone for financial sector health and semiconductor capital spending outlooks through year-end.</li>
+        </ul>
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <div class="section">
+      <div class="section__label">Section 2</div>
+      <div class="section__title">Macro</div>
+      <div class="section__body">
+        <p>The Federal Reserve's "higher for longer" posture remains firmly embedded across the yield curve, with the 10-year Treasury at 5.24% and the 2-year at 4.80% — producing a +44bps positive spread that signals markets are pricing only modest easing over the medium term. At these yield levels, the corporate refinancing wall for 2026–2027 becomes increasingly acute for leveraged borrowers. The yen's continued weakness (USD/JPY: 158.26) highlights the stark divergence between the Bank of Japan's accommodative stance and the Fed's hold, raising the spectre of further BOJ intervention should depreciation accelerate toward the 160 level.</p>
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <div class="section">
+      <div class="section__label">Section 3</div>
+      <div class="section__title">Equities</div>
+      <div class="section__body">
+        <p>SPY closed at $778.01 (-0.01%), QQQ at $743.57 (-0.33%), and IWM at $276.70 (-0.43%) in Tuesday's session — a mild but consistent risk-off tone with small-caps leading the pullback. Among notable movers: <strong>INTC</strong> gained +1.44% on exceptionally heavy volume (84.7M shares), continuing a semiconductor sector rotation as investors reassess Intel's AI infrastructure positioning. <strong>NVDA</strong> also edged higher (+0.97%, $228.52) and <strong>SPCX</strong> was the session's most significant decliner among liquid names, falling -4.21% on 67.3M shares. On the speculative fringe, <strong>JBDI</strong> surged +251.79% and <strong>TCRT</strong> +188.57%, both microcap names with idiosyncratic catalysts unlikely to carry broader market signal.</p>
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <div class="section">
+      <div class="section__label">Section 4</div>
+      <div class="section__title">Fixed Income</div>
+      <div class="section__body">
+        <p>The US 10-year Treasury yield stands at 5.24% (as of October 9), with the 2-year at 4.80% — a +44bps spread representing a modestly upward-sloping curve after months of near-flat or inverted territory. The persistence of 5%+ long-end yields tightens financial conditions meaningfully, acting as a continuous headwind for equity multiples and extending the pain for duration-sensitive sectors. Curve direction will be key: further steepening could signal markets are pricing growth re-acceleration, while a flattening move would entrench the higher-for-longer narrative into 2027.</p>
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <div class="section">
+      <div class="section__label">Section 5</div>
+      <div class="section__title">Currencies</div>
+      <div class="section__body">
+        <p><strong>EUR/USD: 1.1209</strong> — the euro holds above the key 1.12 figure, supported by the ECB's own tightening cycle, which has narrowed the rate differential advantage the dollar previously enjoyed. The pair remains in a technically constructive posture above 1.10 support, though any hawkish surprise from the Fed could reassert dollar strength into Q4. <strong>USD/JPY: 158.26</strong> — the yen remains near multi-decade lows, well above the 155 intervention threshold that drew Bank of Japan verbal warnings earlier in the year. At these levels, the risk of coordinated FX intervention or an unexpected BOJ policy shift rises materially; options markets are pricing elevated yen volatility into year-end.</p>
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <div class="section">
+      <div class="section__label">Section 6</div>
+      <div class="section__title">Commodities</div>
+      <div class="section__body">
+        <p><strong>Gold at $4,148.74/oz</strong> continues its secular bull run, extending gains driven by central bank reserve diversification away from dollar-denominated assets, elevated geopolitical uncertainty, and real yield stabilisation at levels that reduce the opportunity cost of holding non-yielding stores of value. The $4,000 level has now established itself as a support floor. <strong>WTI crude at $96.24/bbl</strong> remains firm near the psychologically significant $100 ceiling; OPEC+ production discipline, robust demand from emerging Asian economies, and a persistent geopolitical risk premium are collectively keeping crude elevated despite headwinds from a moderating U.S. industrial cycle.</p>
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <div class="section">
+      <div class="section__label">Section 7</div>
+      <div class="section__title">Earnings Radar</div>
+      <div class="section__body">
+        <p>The next five trading days (October 14–20) mark the opening salvo of Q3 2026 earnings season, dominated by major financials and technology hardware. Consensus EPS estimates and key themes to watch:</p>
+        <table class="earnings-table">
+          <thead>
+            <tr>
+              <th>Company</th>
+              <th>Date</th>
+              <th>Expected Move</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Bank of America (BAC)</td>
+              <td>Oct 14 — Pre-Market</td>
+              <td>EPS est. $1.11 · NII trajectory and consumer credit quality in focus</td>
+            </tr>
+            <tr>
+              <td>BlackRock (BLK)</td>
+              <td>Oct 14 — Pre-Market</td>
+              <td>EPS est. $14.01 · AUM flows, fee trends, and alternatives growth</td>
+            </tr>
+            <tr>
+              <td>ASML Holding (ASML)</td>
+              <td>Oct 14 — Pre-Market</td>
+              <td>EPS est. $12.47 · EUV system bookings and delivery guidance critical</td>
+            </tr>
+            <tr>
+              <td>Morgan Stanley (MS)</td>
+              <td>Oct 14 — Pre-Market</td>
+              <td>EPS est. $2.83 · Wealth management flows and IB advisory recovery</td>
+            </tr>
+            <tr>
+              <td>Bank of NY Mellon (BNY)</td>
+              <td>Oct 15 — Pre-Market</td>
+              <td>EPS est. $2.26 · Custody fee revenue and FX services margin</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <span style="color: #6b7280;">Market Quick Take · Wednesday, 14 October 2026</span>
+        <span style="color: #9ca3af;">For informational purposes only. Not investment advice.</span>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
