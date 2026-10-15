@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Market Quick Take</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Inter', sans-serif; background: #ffffff; color: #1a2332; }
+
+  .container { max-width: 860px; margin: 0 auto; padding: 0 24px; }
+
+  /* MASTHEAD */
+  .masthead { border-top: 3px solid #003366; padding: 32px 0 20px; border-bottom: 1px solid #e5e7eb; }
+  .masthead-title { font-size: 42px; font-weight: 700; color: #003366; line-height: 1.1; letter-spacing: -0.5px; }
+  .masthead-date { font-size: 13px; font-weight: 400; color: #6b7280; margin-top: 6px; }
+
+  /* SNAPSHOT BAR */
+  .snapshot { background: #f1f5f9; padding: 12px 0; width: 100%; }
+  .snapshot-inner { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 0; padding: 0 24px; max-width: 860px; margin: 0 auto; }
+  .chip { display: inline-flex; align-items: center; gap: 4px; font-size: 12px; font-weight: 500; font-family: 'Inter', sans-serif; text-transform: uppercase; color: #1a2332; white-space: nowrap; padding: 0 8px; }
+  .chip-sep { color: #9ca3af; font-size: 12px; }
+  .pos { color: #16a34a; }
+  .neg { color: #dc2626; }
+
+  /* EDITOR'S BRIEF */
+  .editors-brief { font-size: 18px; font-weight: 400; font-style: italic; color: #374151; line-height: 1.7; max-width: 760px; margin: 28px 0; border-left: 3px solid #003366; padding-left: 16px; }
+
+  /* SECTIONS */
+  .sections { max-width: 860px; }
+  .section { padding: 0; }
+  .section-divider { border: none; border-top: 1px solid #e5e7eb; margin: 28px 0; }
+  .watch-pill { display: inline-block; background: #fef3c7; color: #b45309; border-radius: 4px; font-size: 11px; font-weight: 500; font-family: 'Inter', sans-serif; padding: 2px 8px; letter-spacing: 0.5px; margin-bottom: 8px; }
+  .section-label { font-size: 11px; font-weight: 500; color: #003366; text-transform: uppercase; letter-spacing: 3px; margin-bottom: 6px; }
+  .section-title { font-size: 24px; font-weight: 700; color: #1a2332; margin-bottom: 10px; }
+  .section-body { font-size: 15px; font-weight: 400; color: #374151; line-height: 1.8; }
+  .section-body ul { padding-left: 20px; }
+  .section-body ul li { margin-bottom: 6px; }
+
+  /* EARNINGS TABLE */
+  .earnings-table { width: 100%; border-collapse: collapse; font-size: 13px; font-weight: 400; font-family: 'Inter', sans-serif; margin-top: 12px; }
+  .earnings-table th { text-align: left; padding: 8px 12px; border: 1px solid #e5e7eb; background: #f1f5f9; color: #1a2332; font-weight: 600; }
+  .earnings-table td { padding: 8px 12px; border: 1px solid #e5e7eb; color: #374151; }
+  .earnings-table tr:nth-child(even) td { background: #f9fafb; }
+
+  /* FOOTER */
+  .footer { background: #f1f5f9; border-top: 1px solid #e5e7eb; margin-top: 48px; padding: 20px 0; }
+  .footer-inner { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; max-width: 860px; margin: 0 auto; padding: 0 24px; }
+  .footer span { font-size: 12px; font-weight: 400; font-family: 'Inter', sans-serif; }
+
+  @media (max-width: 600px) {
+    .masthead-title { font-size: 28px; }
+    .editors-brief { font-size: 16px; }
+    .section-title { font-size: 20px; }
+    .snapshot-inner { gap: 4px 0; }
+    .footer-inner { flex-direction: column; align-items: flex-start; }
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="masthead">
+    <div class="masthead-title">MARKET QUICK TAKE</div>
+    <div class="masthead-date">Thursday, 15 October 2026</div>
+  </div>
+</div>
+
+<div class="snapshot">
+  <div class="snapshot-inner">
+    <span class="chip">SPY · $769.60 · <span class="neg">-1.08%</span></span>
+    <span class="chip-sep">|</span>
+    <span class="chip">QQQ · $728.95 · <span class="neg">-1.97%</span></span>
+    <span class="chip-sep">|</span>
+    <span class="chip">IWM · $271.37 · <span class="neg">-1.93%</span></span>
+    <span class="chip-sep">|</span>
+    <span class="chip">VIX · N/A</span>
+    <span class="chip-sep">|</span>
+    <span class="chip">US10Y · 5.21%</span>
+    <span class="chip-sep">|</span>
+    <span class="chip">US2Y · 4.79%</span>
+    <span class="chip-sep">|</span>
+    <span class="chip">EUR/USD · 1.1218</span>
+    <span class="chip-sep">|</span>
+    <span class="chip">GOLD · $4,142.17</span>
+    <span class="chip-sep">|</span>
+    <span class="chip">WTI · $96.24</span>
+  </div>
+</div>
+
+<div class="container">
+  <p class="editors-brief">A broad risk-off session swept US equity markets Wednesday as persistently elevated Treasury yields — the 10-year holding firm at 5.21% — continued to compress growth multiples and force a valuation reset across technology and small caps. Semiconductors bore the brunt of the selling while gold's advance to $4,142 underscored deepening demand for hard-asset hedges.</p>
+
+  <div class="sections">
+
+    <!-- Section 1: Market Drivers -->
+    <div class="section">
+      <div class="section-label">Section 01</div>
+      <div class="section-title">Market Drivers</div>
+      <div class="section-body">
+        <ul>
+          <li><strong>Rates anchor risk appetite:</strong> The 10-year Treasury at 5.21% continues to raise the hurdle rate for equities, pressuring growth-oriented sectors and prompting a broad derating across all cap sizes. The positive 42bps spread over 2-year yields signals a steepening curve rather than recession pricing.</li>
+          <li><strong>Tech and semiconductor rout:</strong> NVIDIA (NVDA) declined 3.16% while the 3x leveraged semiconductor ETF SOXL collapsed 13.32% on elevated volume, reflecting investor retreat from high-multiple AI-adjacent names in a restrictive rate environment.</li>
+          <li><strong>CoreWeave unwind:</strong> CRWV fell 15.46% with over 107 million shares traded, pointing to institutional repositioning in next-generation AI infrastructure stocks that had rallied sharply in prior sessions.</li>
+          <li><strong>Financials under pressure:</strong> Bank of America (BAC) dropped 4.71% ahead of Q3 results, raising concerns around net interest margin compression and loan loss provisions as credit conditions tighten heading into year-end.</li>
+        </ul>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- Section 2: Macro -->
+    <div class="section">
+      <div class="section-label">Section 02</div>
+      <div class="section-title">Macro</div>
+      <div class="section-body">
+        <p>The Federal Reserve's higher-for-longer posture remains the dominant macro force, with 2-year yields at 4.79% confirming that markets see limited scope for front-end relief in the near term. The 10-year Treasury's hold near 5.21% reflects ongoing term premium repricing driven by fiscal concerns, robust labour market data, and uncertainty around the Fed's terminal rate. The yield curve's steepening to +42bps (10Y minus 2Y) marks a notable shift from the prolonged inversion seen earlier this cycle, suggesting markets are now tentatively pricing in eventual easing without abandoning the restrictive narrative — a precarious balance that keeps equity investors on edge heading into peak Q3 earnings season.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- Section 3: Equities -->
+    <div class="section">
+      <div class="section-label">Section 03</div>
+      <div class="section-title">Equities</div>
+      <div class="section-body">
+        <p>All three major US equity ETFs declined in Wednesday's session: SPY fell 1.08% to $769.60, QQQ dropped 1.97% to $728.95 underscoring tech's outsized sensitivity to rate moves, and IWM slid 1.93% to $271.37 as small-cap companies — more reliant on floating-rate debt — face a tougher borrowing backdrop at 5%+ rates. Among notable movers, CoreWeave (CRWV) was the session's most consequential decliner at -15.46% on massive volume, signalling a potential unwind of crowded AI-infrastructure positioning. Bank of America (BAC) shed 4.71% ahead of its Q3 earnings report, adding to broader financial sector anxiety as investors reassess credit quality and margin outlook in a sustained high-rate environment.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- Section 4: Fixed Income (original Section 5) -->
+    <div class="section">
+      <div class="section-label">Section 04</div>
+      <div class="section-title">Fixed Income</div>
+      <div class="section-body">
+        <p>The 10-year Treasury yield stood at 5.21% (as of October 13), while the 2-year yield settled at 4.79%, producing a positive 10Y–2Y spread of approximately 42 basis points. This steepening of the curve represents a meaningful departure from the inversion that characterised much of the 2023–2025 period and carries mixed signals: bulls read it as anticipation of Fed cuts restoring the curve's natural slope; bears see it as a fiscal risk premium asserting itself at the long end. Either way, the 5%+ long-rate continues to act as a gravitational force on equity valuations, particularly for duration-sensitive growth names.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- Section 5: Currencies (original Section 6) -->
+    <div class="section">
+      <div class="section-label">Section 05</div>
+      <div class="section-title">Currencies</div>
+      <div class="section-body">
+        <p>EUR/USD traded at 1.1218, reflecting a relatively resilient Euro as ECB policy divergence from the Fed becomes a more discussed theme — with European rate cuts already underway versus the Fed's pause. USD/JPY remained elevated at 158.03, sustaining the yen's structural weakness as the Bank of Japan's ultra-loose monetary stance preserves the carry-trade dynamic: with US short rates at 4.79%, the interest rate differential continues to incentivise yen-funded positions in higher-yielding assets, keeping the yen under pressure absent a BoJ pivot signal.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- Section 6: Commodities (original Section 7) -->
+    <div class="section">
+      <div class="section-label">Section 06</div>
+      <div class="section-title">Commodities</div>
+      <div class="section-body">
+        <p>Gold reached $4,142.17 per troy ounce, maintaining its historic advance as central bank accumulation, safe-haven demand from equity volatility, and concerns over long-term fiat purchasing power underpin the rally. The metal's resilience even as the dollar holds firm underscores structural demand from reserve diversifiers. WTI crude was last reported at $96.24 per barrel (data through October 6), sustaining elevated levels as OPEC+ supply discipline and geopolitical risk premiums in the Middle East counterbalance demand concerns tied to higher global borrowing costs and softer industrial activity in China.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- Section 7: Earnings Calendar (original Section 9) -->
+    <div class="section">
+      <div class="section-label">Section 07</div>
+      <div class="section-title">Earnings Calendar</div>
+      <div class="section-body">
+        <p>Q3 earnings season accelerates over the next five trading days with a mix of financials, industrials, and transportation names. Financials dominate the calendar, and consensus estimates will be tested against NIM headwinds and credit loss provisions in a sustained high-rate environment. Key names to watch:</p>
+        <table class="earnings-table">
+          <thead>
+            <tr>
+              <th>Company</th>
+              <th>Date</th>
+              <th>Time</th>
+              <th>Est. EPS</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>BNY Mellon (BNY)</td>
+              <td>Oct 15</td>
+              <td>Pre-market</td>
+              <td>$2.26</td>
+            </tr>
+            <tr>
+              <td>J.B. Hunt Transport (JBHT)</td>
+              <td>Oct 15</td>
+              <td>Post-market</td>
+              <td>$1.95</td>
+            </tr>
+            <tr>
+              <td>M&amp;T Bank (MTB)</td>
+              <td>Oct 16</td>
+              <td>Pre-market</td>
+              <td>$4.98</td>
+            </tr>
+            <tr>
+              <td>Travelers Companies (TRV)</td>
+              <td>Oct 16</td>
+              <td>Pre-market</td>
+              <td>$6.86</td>
+            </tr>
+            <tr>
+              <td>Truist Financial (TFC)</td>
+              <td>Oct 16</td>
+              <td>Pre-market</td>
+              <td>$1.17</td>
+            </tr>
+            <tr>
+              <td>General Motors (GM)</td>
+              <td>Oct 20</td>
+              <td>Pre-market</td>
+              <td>$3.50</td>
+            </tr>
+            <tr>
+              <td>GE Aerospace (GE)</td>
+              <td>Oct 20</td>
+              <td>Pre-market</td>
+              <td>$2.01</td>
+            </tr>
+            <tr>
+              <td>Capital One Financial (COF)</td>
+              <td>Oct 20</td>
+              <td>Post-market</td>
+              <td>$5.43</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div><!-- /sections -->
+</div><!-- /container -->
+
+<div class="footer">
+  <div class="footer-inner">
+    <span style="color:#6b7280;">Market Quick Take &middot; Thursday, 15 October 2026</span>
+    <span style="color:#9ca3af;">For informational purposes only. Not investment advice.</span>
+  </div>
+</div>
+
+</body>
+</html>
