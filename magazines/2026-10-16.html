@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Market Quick Take · Friday, 16 October 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: #ffffff;
+    color: #1a2332;
+  }
+
+  .container {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  /* MASTHEAD */
+  .masthead {
+    border-top: 3px solid #003366;
+    padding: 32px 0 20px;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  .masthead-title {
+    font-size: 42px;
+    font-weight: 700;
+    color: #003366;
+    line-height: 1.1;
+    letter-spacing: -1px;
+  }
+  .masthead-date {
+    font-size: 13px;
+    font-weight: 400;
+    color: #6b7280;
+    margin-top: 6px;
+  }
+
+  /* SNAPSHOT BAR */
+  .snapshot-bar {
+    background: #f1f5f9;
+    padding: 12px 0;
+    width: 100%;
+  }
+  .snapshot-inner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 2px;
+    align-items: center;
+    padding: 0 24px;
+    max-width: 908px;
+    margin: 0 auto;
+  }
+  .chip {
+    font-size: 12px;
+    font-weight: 500;
+    color: #1a2332;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    white-space: nowrap;
+    padding: 0 8px;
+  }
+  .chip-sep {
+    color: #9ca3af;
+    font-size: 12px;
+    font-weight: 400;
+  }
+  .chip .label { color: #6b7280; }
+  .chip .val { color: #1a2332; }
+  .chip .pos { color: #16a34a; }
+  .chip .neg { color: #dc2626; }
+  .chip .na { color: #9ca3af; }
+
+  /* EDITOR'S BRIEF */
+  .editors-brief {
+    font-size: 18px;
+    font-weight: 400;
+    font-style: italic;
+    color: #374151;
+    max-width: 760px;
+    line-height: 1.7;
+    margin: 28px 0;
+    border-left: 3px solid #003366;
+    padding-left: 16px;
+  }
+
+  /* SECTIONS */
+  .sections {
+    max-width: 860px;
+  }
+  .section { margin-bottom: 0; }
+  .section-divider {
+    border: none;
+    border-top: 1px solid #e5e7eb;
+    margin: 28px 0;
+  }
+  .section-label {
+    font-size: 11px;
+    font-weight: 500;
+    color: #003366;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 6px;
+  }
+  .section-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1a2332;
+    margin-bottom: 10px;
+    line-height: 1.2;
+  }
+  .section-body {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.8;
+    color: #374151;
+  }
+  .section-body ul {
+    padding-left: 20px;
+  }
+  .section-body ul li {
+    margin-bottom: 6px;
+  }
+  .section-body p { margin-bottom: 10px; }
+  .section-body p:last-child { margin-bottom: 0; }
+
+  .watch-pill {
+    display: inline-block;
+    background: #fef3c7;
+    color: #b45309;
+    font-size: 11px;
+    font-weight: 500;
+    border-radius: 4px;
+    padding: 2px 8px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+  }
+
+  .pos-text { color: #16a34a; font-weight: 500; }
+  .neg-text { color: #dc2626; font-weight: 500; }
+
+  /* EARNINGS TABLE */
+  .earnings-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    font-weight: 400;
+    margin-top: 12px;
+    border: 1px solid #e5e7eb;
+  }
+  .earnings-table th {
+    background: #f1f5f9;
+    color: #6b7280;
+    font-weight: 500;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 8px 12px;
+    text-align: left;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  .earnings-table td {
+    padding: 9px 12px;
+    border-bottom: 1px solid #e5e7eb;
+    color: #374151;
+    vertical-align: middle;
+  }
+  .earnings-table tr:last-child td { border-bottom: none; }
+  .earnings-table tr:hover td { background: #f9fafb; }
+  .ticker-badge {
+    font-weight: 600;
+    color: #003366;
+    font-size: 13px;
+  }
+
+  /* FOOTER */
+  .footer {
+    background: #f1f5f9;
+    border-top: 1px solid #e5e7eb;
+    margin-top: 48px;
+    padding: 20px 0;
+  }
+  .footer-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+  .footer-brand {
+    font-size: 12px;
+    font-weight: 400;
+    color: #6b7280;
+  }
+  .footer-disclaimer {
+    font-size: 12px;
+    font-weight: 400;
+    color: #9ca3af;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="masthead">
+    <div class="masthead-title">MARKET QUICK TAKE</div>
+    <div class="masthead-date">Friday, 16 October 2026</div>
+  </div>
+</div>
+
+<!-- SNAPSHOT BAR -->
+<div class="snapshot-bar">
+  <div class="snapshot-inner">
+    <span class="chip"><span class="label">SPY</span> · <span class="val">771.79</span> · <span class="pos">+0.28%</span></span>
+    <span class="chip-sep">|</span>
+    <span class="chip"><span class="label">QQQ</span> · <span class="val">728.00</span> · <span class="neg">−0.13%</span></span>
+    <span class="chip-sep">|</span>
+    <span class="chip"><span class="label">IWM</span> · <span class="val">275.08</span> · <span class="pos">+1.37%</span></span>
+    <span class="chip-sep">|</span>
+    <span class="chip"><span class="label">VIX</span> · <span class="na">N/A</span></span>
+    <span class="chip-sep">|</span>
+    <span class="chip"><span class="label">US10Y</span> · <span class="val">5.19%</span> · <span class="neg">−2bp</span></span>
+    <span class="chip-sep">|</span>
+    <span class="chip"><span class="label">US2Y</span> · <span class="val">4.82%</span> · <span class="pos">+3bp</span></span>
+    <span class="chip-sep">|</span>
+    <span class="chip"><span class="label">EUR/USD</span> · <span class="val">1.1243</span></span>
+    <span class="chip-sep">|</span>
+    <span class="chip"><span class="label">GOLD</span> · <span class="val">$4,185</span></span>
+    <span class="chip-sep">|</span>
+    <span class="chip"><span class="label">WTI</span> · <span class="val">$101.91</span> · <span class="pos">+1.04%</span></span>
+  </div>
+</div>
+
+<div class="container">
+
+  <!-- EDITOR'S BRIEF -->
+  <div class="editors-brief">
+    Small caps surged Friday as investors rotated out of mega-cap tech — IWM gained 1.4% while the Nasdaq slipped — against a backdrop of resilient oil above $100, gold near record highs at $4,185, and elevated Treasury yields with the 10-year holding at 5.19%. Q3 earnings season intensifies next week with Tesla, Netflix, and Texas Instruments all due to report.
+  </div>
+
+  <div class="sections">
+
+    <!-- SECTION 1: MARKET DRIVERS -->
+    <div class="section">
+      <div class="section-label">Section 01</div>
+      <div class="section-title">Market Drivers</div>
+      <div class="section-body">
+        <ul>
+          <li><strong>Small-cap rotation takes hold:</strong> IWM surged 1.37% while QQQ slipped 0.13%, the starkest divergence in weeks. Investors appear to be trimming high-multiple tech exposure as the 10-year yield holds above 5%, favouring domestically oriented smaller names.</li>
+          <li><strong>Banks dominate earnings early:</strong> A heavy slate of financial sector reports — Truist Financial (TFC), M&amp;T Bank (MTB), Travelers (TRV), and Citizens Financial (CFG) — set the tone pre-market, with the broader Financials tone helping underpin the S&amp;P 500.</li>
+          <li><strong>Energy above $100 sustains inflation caution:</strong> WTI crude at $101.91 keeps energy-driven inflation on the radar, complicating the Federal Reserve's path toward rate relief and supporting Treasury yields at multi-year highs.</li>
+          <li><strong>Gold near all-time highs:</strong> Spot gold at $4,185 reflects persistent safe-haven demand amid geopolitical risk and dollar uncertainty, with the euro firming to 1.1243 reinforcing a broad USD softness theme.</li>
+        </ul>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- SECTION 2: MACRO -->
+    <div class="section">
+      <div class="section-label">Section 02</div>
+      <div class="section-title">Macro</div>
+      <div class="section-body">
+        <p>Treasury yields remain historically elevated with the 10-year at 5.19% and the 2-year at 4.82%, maintaining a positively sloped curve (+37bp) that suggests the market does not anticipate imminent recession but continues to price a "higher for longer" Fed posture. The yen weakened further to 157.98 per dollar, reflecting the persistent monetary policy divergence between the Fed and the Bank of Japan, which remains a structural theme pressuring Japanese households and importers. With WTI crude above $100 and gold above $4,000, commodity prices continue to embed an inflation risk premium that may test the Fed's resolve ahead of year-end policy meetings.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- SECTION 3: EQUITIES -->
+    <div class="section">
+      <div class="section-label">Section 03</div>
+      <div class="section-title">Equities</div>
+      <div class="section-body">
+        <p><strong>SPY</strong> <span class="pos-text">+0.28%</span> to 771.79 &nbsp;|&nbsp; <strong>QQQ</strong> <span class="neg-text">−0.13%</span> to 728.00 &nbsp;|&nbsp; <strong>IWM</strong> <span class="pos-text">+1.37%</span> to 275.08</p>
+        <p>The session's sharpest divergence — Russell 2000 outperforming Nasdaq by more than 150bp — points to a rotation from growth to value that bears watching into earnings season. Two notable movers from Thursday's session:</p>
+        <ul>
+          <li><strong>HAIN (The Hain Celestial Group)</strong> <span class="neg-text">−51.09%</span> to $0.28 on volume of 9.9M shares — a catastrophic single-session decline, likely tied to a material adverse development or guidance cut.</li>
+          <li><strong>FMC Corporation</strong> <span class="neg-text">−30.53%</span> to $5.62 on 32.5M shares — agricultural chemicals under severe pressure, suggesting demand destruction or a large earnings miss.</li>
+        </ul>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- SECTION 4: FIXED INCOME (was 5) -->
+    <div class="section">
+      <div class="section-label">Section 04</div>
+      <div class="section-title">Fixed Income</div>
+      <div class="section-body">
+        <p>The US Treasury curve remains positively sloped: the <strong>10-year yield</strong> ticked down 2bp to <strong>5.19%</strong> while the <strong>2-year yield</strong> rose 3bp to <strong>4.82%</strong>, leaving the 10Y–2Y spread at <strong>+37bp</strong>. The mild steepening at the long end, while the short end held firm, is consistent with markets tentatively pricing in eventual easing but refusing to collapse the term premium in the face of persistent inflation. The TLT long-bond ETF was among the most actively traded issues (+1.37%), suggesting some tactical buyers are beginning to re-engage duration at these elevated yield levels.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- SECTION 5: CURRENCIES (was 6) -->
+    <div class="section">
+      <div class="section-label">Section 05</div>
+      <div class="section-title">Currencies</div>
+      <div class="section-body">
+        <p><strong>EUR/USD: 1.1243</strong> — The euro continues to firm against a broadly softer dollar, with the pair at levels that reflect improving European macro confidence relative to a Fed that may be nearing a tightening ceiling. <strong>USD/JPY: 157.98</strong> — The yen remains near multi-decade weak levels, as the Bank of Japan's commitment to its ultra-accommodative yield curve control policy creates persistent cross-market carry opportunity. Any signal from Tokyo of a policy pivot would trigger an aggressive yen repricing; for now, the carry trade remains entrenched.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- SECTION 6: COMMODITIES (was 7) -->
+    <div class="section">
+      <div class="section-label">Section 06</div>
+      <div class="section-title">Commodities</div>
+      <div class="section-body">
+        <p><strong>Gold: $4,185.20/oz</strong> — Spot gold is consolidating at historically elevated levels, driven by a combination of central bank accumulation, geopolitical hedging demand, and structural dollar diversification by sovereign wealth funds. The metal's persistence above $4,000 is notable against a backdrop of still-high real yields. <strong>WTI Crude: $101.91/bbl</strong> — Oil remains above the $100 threshold for a second consecutive session after a sharp run from mid-September lows below $90. OPEC+ production discipline, combined with tightening US SPR stocks and seasonal demand, underpins the current bid. Above $100, energy costs become a significant inflation transmission mechanism that central banks will be watching closely.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- SECTION 7: EARNINGS CALENDAR (was 9) -->
+    <div class="section">
+      <div class="section-label">Section 07</div>
+      <div class="section-title">Earnings Radar</div>
+      <div class="section-body">
+        <p>Q3 earnings season shifts into high gear next week. Key names on the calendar over the next five trading days:</p>
+        <table class="earnings-table">
+          <thead>
+            <tr>
+              <th>Company</th>
+              <th>Date</th>
+              <th>Timing</th>
+              <th>EPS Estimate</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="ticker-badge">TFC</span> Truist Financial</td>
+              <td>Oct 16 (today)</td>
+              <td>Pre-market</td>
+              <td>$1.17</td>
+            </tr>
+            <tr>
+              <td><span class="ticker-badge">NFLX</span> Netflix</td>
+              <td>Oct 20</td>
+              <td>Post-market</td>
+              <td>$0.82</td>
+            </tr>
+            <tr>
+              <td><span class="ticker-badge">TSLA</span> Tesla</td>
+              <td>Oct 21</td>
+              <td>Post-market</td>
+              <td>$0.23</td>
+            </tr>
+            <tr>
+              <td><span class="ticker-badge">TXN</span> Texas Instruments</td>
+              <td>Oct 21</td>
+              <td>Post-market</td>
+              <td>$2.39</td>
+            </tr>
+            <tr>
+              <td><span class="ticker-badge">IBM</span> International Business Machines</td>
+              <td>Oct 21</td>
+              <td>Post-market</td>
+              <td>$2.89</td>
+            </tr>
+          </tbody>
+        </table>
+        <p style="margin-top:12px; font-size:13px; color:#6b7280;">Tesla's $0.23 estimate reflects continued margin compression from aggressive pricing; any beat or positive guidance lift on margins could be a significant catalyst. Netflix investors will be watching subscriber additions alongside the EPS print. Texas Instruments and IBM together will provide a read on semiconductor demand and enterprise IT spending heading into Q4.</p>
+      </div>
+    </div>
+
+  </div><!-- /sections -->
+</div><!-- /container -->
+
+<!-- FOOTER -->
+<div class="footer">
+  <div class="footer-inner">
+    <span class="footer-brand">Market Quick Take · Friday, 16 October 2026</span>
+    <span class="footer-disclaimer">For informational purposes only. Not investment advice.</span>
+  </div>
+</div>
+
+</body>
+</html>
