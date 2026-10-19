@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Market Quick Take — Monday, 19 October 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #ffffff; color: #1a2332; font-family: 'Inter', sans-serif; }
+
+  .container { max-width: 860px; margin: 0 auto; padding: 0 24px; }
+
+  /* MASTHEAD */
+  .masthead { border-top: 3px solid #003366; padding: 32px 0 20px; border-bottom: 1px solid #e5e7eb; }
+  .masthead-title { font-size: 42px; font-weight: 700; color: #003366; line-height: 1.1; }
+  .masthead-date { font-size: 13px; font-weight: 400; color: #6b7280; margin-top: 6px; }
+
+  /* SNAPSHOT BAR */
+  .snapshot-bar { background: #f1f5f9; padding: 12px 0; border-bottom: 1px solid #e5e7eb; }
+  .snapshot-inner { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 0; }
+  .chip { font-size: 12px; font-weight: 500; color: #1a2332; text-transform: uppercase; letter-spacing: 0.02em; white-space: nowrap; padding: 2px 8px; }
+  .chip-sep { color: #9ca3af; padding: 0 2px; font-size: 12px; }
+  .pos { color: #16a34a; }
+  .neg { color: #dc2626; }
+  .neutral { color: #6b7280; }
+
+  /* EDITOR'S BRIEF */
+  .brief { font-size: 18px; font-style: italic; font-weight: 400; color: #374151; line-height: 1.7; max-width: 760px; margin: 28px 0; border-left: 3px solid #003366; padding-left: 16px; }
+
+  /* SECTIONS */
+  .section { margin-bottom: 0; }
+  .section-label { font-size: 11px; font-weight: 500; color: #003366; text-transform: uppercase; letter-spacing: 3px; margin-bottom: 6px; display: block; }
+  .section-title { font-size: 24px; font-weight: 700; color: #1a2332; margin-bottom: 10px; }
+  .section-body { font-size: 15px; font-weight: 400; color: #374151; line-height: 1.8; }
+  .section-body ul { padding-left: 20px; }
+  .section-body ul li { margin-bottom: 4px; }
+  .divider { border: none; border-top: 1px solid #e5e7eb; margin: 28px 0; }
+
+  /* WATCH PILL */
+  .watch-pill { display: inline-block; background: #fef3c7; color: #b45309; font-size: 11px; font-weight: 500; border-radius: 4px; padding: 2px 8px; margin-bottom: 8px; }
+
+  /* EARNINGS TABLE */
+  .earnings-table { width: 100%; border-collapse: collapse; font-size: 13px; font-weight: 400; color: #374151; margin-top: 12px; }
+  .earnings-table th { text-align: left; font-weight: 600; color: #1a2332; border: 1px solid #e5e7eb; padding: 8px 10px; background: #f9fafb; }
+  .earnings-table td { border: 1px solid #e5e7eb; padding: 8px 10px; }
+  .earnings-table tr:nth-child(even) td { background: #fafafa; }
+
+  /* FOOTER */
+  .footer { background: #f1f5f9; border-top: 1px solid #e5e7eb; margin-top: 48px; padding: 20px 0; }
+  .footer-inner { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; }
+  .footer-brand { font-size: 12px; font-weight: 400; color: #6b7280; }
+  .footer-disclaimer { font-size: 12px; font-weight: 400; color: #9ca3af; }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="masthead">
+    <div class="masthead-title">MARKET QUICK TAKE</div>
+    <div class="masthead-date">Monday, 19 October 2026</div>
+  </div>
+</div>
+
+<!-- SNAPSHOT BAR -->
+<div class="snapshot-bar">
+  <div class="container">
+    <div class="snapshot-inner">
+      <span class="chip">SPY · 763.25 · <span class="neg">-1.11%</span></span>
+      <span class="chip-sep">|</span>
+      <span class="chip">QQQ · 709.80 · <span class="neg">-2.50%</span></span>
+      <span class="chip-sep">|</span>
+      <span class="chip">IWM · 270.44 · <span class="neg">-1.69%</span></span>
+      <span class="chip-sep">|</span>
+      <span class="chip">VIX · <span class="neutral">N/A</span></span>
+      <span class="chip-sep">|</span>
+      <span class="chip">US10Y · <span class="neutral">5.10%</span></span>
+      <span class="chip-sep">|</span>
+      <span class="chip">US2Y · <span class="neutral">4.77%</span></span>
+      <span class="chip-sep">|</span>
+      <span class="chip">EUR/USD · <span class="neutral">1.1219</span></span>
+      <span class="chip-sep">|</span>
+      <span class="chip">GOLD · <span class="pos">$4,184.78</span></span>
+      <span class="chip-sep">|</span>
+      <span class="chip">WTI · <span class="pos">$101.91</span></span>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+
+  <!-- EDITOR'S BRIEF -->
+  <p class="brief">
+    US equities retreated sharply on Friday, with the Nasdaq-100 shedding 2.5% as semiconductor stocks led a broad technology selloff — Intel dropped nearly 6% on heavy volume. The week ahead delivers a pivotal earnings gauntlet including Tesla, Meta, and Netflix, all reporting Tuesday, against a backdrop of 10-year Treasury yields stubbornly elevated at 5.10% and crude oil trading above $100 a barrel for the first time in months. Gold's surge to a fresh record near $4,185 an ounce underscores persistent safe-haven demand even as the equity risk premium compresses.
+  </p>
+
+  <!-- SECTION 1: MARKET DRIVERS -->
+  <div class="section">
+    <span class="section-label">Section 1</span>
+    <h2 class="section-title">Market Drivers</h2>
+    <div class="section-body">
+      <ul>
+        <li><strong>Tech-led risk-off:</strong> The Nasdaq-100 fell 2.5% — more than twice the S&amp;P 500's decline — as semiconductor names bore the brunt of selling. Intel (INTC) plunged 5.8% on exceptionally heavy volume (121M shares), while the 3× semiconductor ETF SOXL collapsed 12.8%.</li>
+        <li><strong>Earnings anxiety ahead of mega-cap week:</strong> Markets appear to be de-risking ahead of a dense reporting calendar. Tesla, Meta, IBM, and Netflix all report this week, collectively representing trillions in market capitalisation and likely acting as catalysts for sector-wide repricing.</li>
+        <li><strong>Oil back above $100:</strong> WTI crude trading at $101.91/bbl re-introduces energy costs as an inflation variable, complicating the Federal Reserve's path toward easing and compressing equity multiples on long-duration growth names.</li>
+        <li><strong>Safe-haven flight to gold:</strong> Spot gold breaking above $4,180 signals continued demand for non-correlated assets. The move parallels elevated sovereign yields and persistent geopolitical risk premiums in crude markets.</li>
+      </ul>
+    </div>
+  </div>
+  <hr class="divider">
+
+  <!-- SECTION 2: MACRO -->
+  <div class="section">
+    <span class="section-label">Section 2</span>
+    <h2 class="section-title">Macro</h2>
+    <div class="section-body">
+      <p>The Federal Reserve remains in a wait-and-see posture with the 10-year yield holding at 5.10%, signalling that markets are not pricing imminent rate cuts — a meaningful headwind for growth and technology equities whose valuations depend on lower discount rates. WTI crude back above $100 per barrel revives stagflation concerns: if energy prices remain elevated through Q4, they could delay the disinflation progress the Fed needs to justify easing. No major data releases are scheduled in the next two trading days, leaving the week's tone almost entirely dependent on corporate earnings.</p>
+    </div>
+  </div>
+  <hr class="divider">
+
+  <!-- SECTION 3: EQUITIES -->
+  <div class="section">
+    <span class="section-label">Section 3</span>
+    <h2 class="section-title">Equities</h2>
+    <div class="section-body">
+      <p>All three major US equity benchmarks closed lower on Friday. The S&amp;P 500 proxy SPY fell <span class="neg">1.11%</span> to <strong>763.25</strong>, the Nasdaq-100 proxy QQQ dropped <span class="neg">2.50%</span> to <strong>709.80</strong> — underperforming meaningfully as growth stocks bore disproportionate selling pressure — and small-cap IWM declined <span class="neg">1.69%</span> to <strong>270.44</strong>. Among notable movers, <strong>Intel (INTC)</strong> fell <span class="neg">5.79%</span> to $89.85 on 121 million shares traded, reflecting mounting concerns about competitive positioning against AMD and TSMC. <strong>Nvidia (NVDA)</strong> declined <span class="neg">1.43%</span> to $214.13 with nearly 120 million shares exchanged, while AI-infrastructure play <strong>CRWV</strong> shed <span class="neg">11.91%</span>, suggesting some unwind of the AI premium that dominated summer markets.</p>
+    </div>
+  </div>
+  <hr class="divider">
+
+  <!-- SECTION 4: FIXED INCOME -->
+  <div class="section">
+    <span class="section-label">Section 4</span>
+    <h2 class="section-title">Fixed Income</h2>
+    <div class="section-body">
+      <p>US Treasury yields continue to exert gravitational pull on risk assets. The <strong>10-year yield</strong> stands at <strong>5.10%</strong> (as of 15 October), easing slightly from 5.19% the day prior, while the <strong>2-year yield</strong> sits at <strong>4.77%</strong> — leaving the curve positively sloped by approximately <strong>+33 basis points</strong>. This steepening configuration, while reassuring relative to the acute inversion seen earlier in the cycle, does not indicate a Fed pivot is imminent. Elevated front-end yields mean cash remains a competitive alternative to equities, keeping valuation pressure on the equity risk premium.</p>
+    </div>
+  </div>
+  <hr class="divider">
+
+  <!-- SECTION 5: CURRENCIES -->
+  <div class="section">
+    <span class="section-label">Section 5</span>
+    <h2 class="section-title">Currencies</h2>
+    <div class="section-body">
+      <p>The <strong>euro</strong> is holding firm at <strong>1.1219</strong> against the dollar, a resilient level suggesting that dollar demand from risk-off flows has been modest despite Friday's equity weakness — or that euro-area data has offered offsetting support. More notable is <strong>USD/JPY at 157.98</strong>, with the yen hovering near multi-decade lows as the Bank of Japan's divergent policy stance (keeping ultra-loose conditions while the Fed and ECB remain restrictive) continues to attract carry trades. The BoJ's reluctance to tighten meaningfully keeps downward pressure on the yen and elevates the risk of sudden mean-reversion should risk appetite deteriorate sharply.</p>
+    </div>
+  </div>
+  <hr class="divider">
+
+  <!-- SECTION 6: COMMODITIES -->
+  <div class="section">
+    <span class="section-label">Section 6</span>
+    <h2 class="section-title">Commodities</h2>
+    <div class="section-body">
+      <p><strong>Gold</strong> reached <strong>$4,184.78/oz</strong>, a fresh record high that consolidates the metal's remarkable advance through 2026. The rally is underpinned by three concurrent forces: persistent central bank buying, USD debasement concerns from structural deficit spending, and geopolitical risk premiums. <strong>WTI crude</strong> at <strong>$101.91/bbl</strong> — up from $100.86 the prior session — marks a psychologically significant break above the century mark. Supply constraints from OPEC+ production discipline and elevated demand from emerging market recovery are driving the move, with the pass-through to energy-sensitive inflation components a key variable for the Fed's Q4 calculus.</p>
+    </div>
+  </div>
+  <hr class="divider">
+
+  <!-- SECTION 7: EARNINGS CALENDAR -->
+  <div class="section">
+    <span class="section-label">Section 7</span>
+    <h2 class="section-title">Earnings Radar</h2>
+    <div class="section-body">
+      <p>The week of October 19–23 is one of the most consequential of the Q3 earnings season, with mega-cap technology and industrial bellwethers reporting. Markets will scrutinise guidance language carefully given the macro headwinds of elevated rates and re-accelerating energy costs.</p>
+      <table class="earnings-table">
+        <thead>
+          <tr>
+            <th>Company</th>
+            <th>Date</th>
+            <th>EPS Estimate</th>
+            <th>Time</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Netflix (NFLX)</strong></td>
+            <td>Tue 20 Oct</td>
+            <td>$0.82</td>
+            <td>Post-market</td>
+          </tr>
+          <tr>
+            <td><strong>GE Aerospace (GE)</strong></td>
+            <td>Tue 20 Oct</td>
+            <td>$2.02</td>
+            <td>Pre-market</td>
+          </tr>
+          <tr>
+            <td><strong>Meta Platforms (META)</strong></td>
+            <td>Wed 21 Oct</td>
+            <td>$6.67</td>
+            <td>Post-market</td>
+          </tr>
+          <tr>
+            <td><strong>Tesla (TSLA)</strong></td>
+            <td>Wed 21 Oct</td>
+            <td>$0.21</td>
+            <td>Post-market</td>
+          </tr>
+          <tr>
+            <td><strong>IBM</strong></td>
+            <td>Wed 21 Oct</td>
+            <td>$2.87</td>
+            <td>Post-market</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</div><!-- /container -->
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <span class="footer-brand">Market Quick Take · Monday, 19 October 2026</span>
+      <span class="footer-disclaimer">For informational purposes only. Not investment advice.</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
