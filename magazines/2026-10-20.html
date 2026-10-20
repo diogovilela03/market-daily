@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Market Quick Take — 20 October 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: #ffffff;
+    color: #1a2332;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    line-height: 1.8;
+  }
+
+  .container {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  /* MASTHEAD */
+  .masthead {
+    border-top: 3px solid #003366;
+    padding: 32px 0 20px;
+    border-bottom: 1px solid #e5e7eb;
+    margin-bottom: 0;
+  }
+  .masthead-title {
+    font-size: 42px;
+    font-weight: 700;
+    color: #003366;
+    letter-spacing: -0.5px;
+    line-height: 1.1;
+  }
+  .masthead-date {
+    font-size: 13px;
+    font-weight: 400;
+    color: #6b7280;
+    margin-top: 6px;
+  }
+
+  /* SNAPSHOT BAR */
+  .snapshot-bar {
+    background: #f1f5f9;
+    padding: 12px 0;
+    width: 100%;
+  }
+  .snapshot-inner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 0;
+    align-items: center;
+  }
+  .chip {
+    font-size: 12px;
+    font-weight: 500;
+    color: #1a2332;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    white-space: nowrap;
+    padding: 0 10px;
+  }
+  .chip-sep {
+    color: #9ca3af;
+    font-size: 12px;
+    padding: 0 2px;
+  }
+  .chip .pos { color: #16a34a; }
+  .chip .neg { color: #dc2626; }
+  .chip .na  { color: #6b7280; }
+
+  /* EDITOR'S BRIEF */
+  .editors-brief {
+    font-size: 18px;
+    font-weight: 400;
+    font-style: italic;
+    color: #374151;
+    max-width: 760px;
+    margin: 28px 0;
+    border-left: 3px solid #003366;
+    padding-left: 16px;
+    line-height: 1.7;
+  }
+
+  /* SECTIONS */
+  .section-label {
+    font-size: 11px;
+    font-weight: 500;
+    color: #003366;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 6px;
+  }
+  .section-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1a2332;
+    margin-bottom: 10px;
+    line-height: 1.2;
+  }
+  .section-body {
+    font-size: 15px;
+    font-weight: 400;
+    color: #374151;
+    line-height: 1.8;
+  }
+  .section-body ul {
+    list-style: disc;
+    padding-left: 20px;
+  }
+  .section-body ul li {
+    margin-bottom: 4px;
+  }
+  .section-divider {
+    border: none;
+    border-top: 1px solid #e5e7eb;
+    margin: 28px 0;
+  }
+
+  /* WATCH PILL */
+  .watch-pill {
+    display: inline-block;
+    background: #fef3c7;
+    color: #b45309;
+    font-size: 11px;
+    font-weight: 500;
+    border-radius: 4px;
+    padding: 2px 8px;
+    margin-bottom: 8px;
+  }
+
+  /* EARNINGS TABLE */
+  .earnings-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    font-weight: 400;
+    color: #374151;
+    margin-top: 12px;
+  }
+  .earnings-table th {
+    border: 1px solid #e5e7eb;
+    padding: 8px 12px;
+    text-align: left;
+    font-weight: 600;
+    color: #1a2332;
+    background: #f9fafb;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  .earnings-table td {
+    border: 1px solid #e5e7eb;
+    padding: 8px 12px;
+    vertical-align: top;
+  }
+  .earnings-table tr:hover td {
+    background: #f9fafb;
+  }
+  .today-row td {
+    font-weight: 500;
+  }
+
+  /* FOOTER */
+  .footer {
+    background: #f1f5f9;
+    border-top: 1px solid #e5e7eb;
+    margin-top: 48px;
+    padding: 20px 0;
+  }
+  .footer-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .footer-brand {
+    font-size: 12px;
+    font-weight: 400;
+    color: #6b7280;
+  }
+  .footer-disclaimer {
+    font-size: 12px;
+    font-weight: 400;
+    color: #9ca3af;
+  }
+</style>
+</head>
+<body>
+
+<!-- MASTHEAD -->
+<div class="container">
+  <div class="masthead">
+    <div class="masthead-title">MARKET QUICK TAKE</div>
+    <div class="masthead-date">Tuesday, 20 October 2026</div>
+  </div>
+</div>
+
+<!-- SNAPSHOT BAR -->
+<div class="snapshot-bar">
+  <div class="container">
+    <div class="snapshot-inner">
+      <span class="chip">SPY &middot; 766.48 &middot; <span class="pos">+0.42%</span></span>
+      <span class="chip-sep">|</span>
+      <span class="chip">QQQ &middot; 718.36 &middot; <span class="pos">+1.21%</span></span>
+      <span class="chip-sep">|</span>
+      <span class="chip">IWM &middot; 271.28 &middot; <span class="pos">+0.31%</span></span>
+      <span class="chip-sep">|</span>
+      <span class="chip">VIX &middot; <span class="na">N/A</span></span>
+      <span class="chip-sep">|</span>
+      <span class="chip">US10Y &middot; 5.09% &middot; <span class="neg">-0.20%</span></span>
+      <span class="chip-sep">|</span>
+      <span class="chip">US2Y &middot; 4.74% &middot; <span class="neg">-0.63%</span></span>
+      <span class="chip-sep">|</span>
+      <span class="chip">EUR/USD &middot; 1.1233 &middot; <span class="na">N/A</span></span>
+      <span class="chip-sep">|</span>
+      <span class="chip">GOLD &middot; $4,128.97 &middot; <span class="na">N/A</span></span>
+      <span class="chip-sep">|</span>
+      <span class="chip">WTI &middot; $101.91 &middot; <span class="pos">+1.04%</span></span>
+    </div>
+  </div>
+</div>
+
+<!-- EDITOR'S BRIEF -->
+<div class="container">
+  <p class="editors-brief">
+    Technology stocks led a broad equity advance as markets enter peak earnings season, with the Nasdaq 100 surging 1.2% ahead of major reports from Meta, Tesla, and IBM later this week. Elevated Treasury yields — the 10-year holding at 5.09% — and gold's relentless climb past $4,100 per ounce together underscore an economy navigating persistent inflation pressures and geopolitical uncertainty.
+  </p>
+
+  <!-- SECTION 1: MARKET DRIVERS -->
+  <div class="section-label">Section 1</div>
+  <div class="section-title">Market Drivers</div>
+  <div class="section-body">
+    <ul>
+      <li><strong>Peak earnings season begins:</strong> Q3 reporting season accelerates this week with GE Aerospace and GM reporting pre-market today, followed by Meta and Tesla post-market Wednesday — setting the tone for the broader market narrative.</li>
+      <li><strong>Tech-led equity rally:</strong> QQQ outperformed materially (+1.21%) versus the broader SPY (+0.42%) and small-cap IWM (+0.31%), reflecting continued rotation into mega-cap growth names ahead of earnings catalysts.</li>
+      <li><strong>Commodities bid:</strong> WTI crude above $101 and gold at all-time highs above $4,100 signal persistent supply-side pressures and safe-haven demand that markets are weighing against equity risk appetite.</li>
+      <li><strong>Yield curve steepening:</strong> The 2Y–10Y spread widened to +35bps as the 10-year yield (5.09%) holds its premium over the 2-year (4.74%), suggesting markets are pricing in durable growth with residual inflation risk at the long end.</li>
+    </ul>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 2: MACRO -->
+  <div class="section-label">Section 2</div>
+  <div class="section-title">Macro</div>
+  <div class="section-body">
+    <p>The Federal Reserve's high-for-longer posture remains entrenched, with the 10-year Treasury yield at 5.09% reflecting both resilient economic data and lingering inflation above target. The yield curve has un-inverted meaningfully — the 2Y–10Y spread at +35bps — a structural shift from the protracted inversion of prior quarters that historically signals a credit cycle inflection point. Meanwhile, WTI crude above $100 per barrel introduces renewed upside risk to energy-driven CPI components, complicating the Fed's path toward a first rate cut. Geopolitical tensions in the Middle East and Eastern Europe continue to underpin commodity prices and safe-haven flows into gold.</p>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 3: EQUITIES -->
+  <div class="section-label">Section 3</div>
+  <div class="section-title">Equities</div>
+  <div class="section-body">
+    <p>All three major US equity benchmarks finished Monday in positive territory: <strong>SPY +0.42%</strong> to 766.48, <strong>QQQ +1.21%</strong> to 718.36, and <strong>IWM +0.31%</strong> to 271.28. The outperformance in QQQ reflects concentrated buying in technology and AI-related names heading into the busiest week of earnings season. Two notable movers: <strong>Cleveland-Cliffs (CLF) surged +16.42%</strong> following better-than-expected Q3 results and raised guidance, with volume exceeding 88 million shares — among the market's most active. <strong>Intel (INTC) gained +2.43%</strong> amid a broad semiconductor rally (SOXL +5.43%), with Nvidia (NVDA) adding +1.38%, as investors positioned for upside surprises from chip names reporting later this month.</p>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 4: FIXED INCOME (renumbered from 5) -->
+  <div class="section-label">Section 4</div>
+  <div class="section-title">Fixed Income</div>
+  <div class="section-body">
+    <p>The US Treasury curve continues its steepening trend with the <strong>10-year yield at 5.09%</strong> and the <strong>2-year yield at 4.74%</strong>, a positive spread of approximately 35 basis points. This marks a notable departure from the prolonged inversion that characterized much of the prior two years, suggesting the market is beginning to price in a normalization cycle rather than an imminent recession. At 5.09%, the 10-year represents a meaningful real yield hurdle for equity valuations — particularly for duration-sensitive growth stocks — and adds to the appeal of short-duration fixed income as an alternative to equities. Both yields edged slightly lower on the day as bond buyers returned cautiously ahead of key earnings and economic data.</p>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 5: CURRENCIES (renumbered from 6) -->
+  <div class="section-label">Section 5</div>
+  <div class="section-title">Currencies</div>
+  <div class="section-body">
+    <p><strong>EUR/USD trades at 1.1233</strong>, holding above the 1.12 handle as the euro benefits from a marginally softer dollar and supportive ECB rhetoric around maintaining restrictive policy into year-end. <strong>USD/JPY at 158.05</strong> keeps the yen near multi-decade lows, a reflection of the Bank of Japan's reluctance to meaningfully tighten even as the Fed stands pat — a divergence that continues to attract carry traders and pressure Japanese import costs. The yen's weakness at this level historically triggers intervention risk from Japanese authorities, making USD/JPY a key pair to monitor as Tokyo approaches its fiscal year-end.</p>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 6: COMMODITIES (renumbered from 7) -->
+  <div class="section-label">Section 6</div>
+  <div class="section-title">Commodities</div>
+  <div class="section-body">
+    <p><strong>Gold at $4,128.97/oz</strong> — a level that represents a historic milestone — continues its structural bull run driven by persistent central bank accumulation, inflation hedging demand, and de-dollarization flows from EM sovereign buyers. The move well above $4,000 reflects a market that has fundamentally repriced gold's floor. <strong>WTI crude at $101.91/bbl</strong> (+1.04% on the day) remains elevated above the $100 psychological level, buoyed by OPEC+ supply discipline and seasonal refinery demand heading into winter. Sustained crude above $100 feeds into headline CPI and could keep the Fed anchored longer than markets currently expect — a key macro risk to monitor.</p>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 7: EARNINGS CALENDAR (renumbered from 9) -->
+  <div class="section-label">Section 7</div>
+  <div class="section-title">Earnings Radar</div>
+  <div class="section-body">
+    <p>Peak earnings season is underway. The next five trading days bring a concentration of marquee industrial, financial, and technology names that will materially shape Q3 expectations and forward guidance.</p>
+    <table class="earnings-table">
+      <thead>
+        <tr>
+          <th>Company</th>
+          <th>Date</th>
+          <th>Timing</th>
+          <th>EPS Estimate</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="today-row">
+          <td>GE Aerospace (GE)</td>
+          <td>Oct 20</td>
+          <td>Pre-market</td>
+          <td>$2.02</td>
+        </tr>
+        <tr class="today-row">
+          <td>General Motors (GM)</td>
+          <td>Oct 20</td>
+          <td>Pre-market</td>
+          <td>$3.52</td>
+        </tr>
+        <tr class="today-row">
+          <td>Halliburton (HAL)</td>
+          <td>Oct 20</td>
+          <td>Pre-market</td>
+          <td>$0.58</td>
+        </tr>
+        <tr class="today-row">
+          <td>Capital One (COF)</td>
+          <td>Oct 20</td>
+          <td>Post-market</td>
+          <td>$5.45</td>
+        </tr>
+        <tr class="today-row">
+          <td>Intuitive Surgical (ISRG)</td>
+          <td>Oct 20</td>
+          <td>Post-market</td>
+          <td>$2.13</td>
+        </tr>
+        <tr>
+          <td>AT&amp;T (T)</td>
+          <td>Oct 21</td>
+          <td>Pre-market</td>
+          <td>$0.61</td>
+        </tr>
+        <tr>
+          <td>Meta Platforms (META)</td>
+          <td>Oct 21</td>
+          <td>Post-market</td>
+          <td>$6.67</td>
+        </tr>
+        <tr>
+          <td>Tesla (TSLA)</td>
+          <td>Oct 21</td>
+          <td>Post-market</td>
+          <td>$0.21</td>
+        </tr>
+        <tr>
+          <td>IBM (IBM)</td>
+          <td>Oct 21</td>
+          <td>Post-market</td>
+          <td>$2.87</td>
+        </tr>
+        <tr>
+          <td>Honeywell (HON)</td>
+          <td>Oct 22</td>
+          <td>Pre-market</td>
+          <td>$2.17</td>
+        </tr>
+        <tr>
+          <td>American Express (AXP)</td>
+          <td>Oct 23</td>
+          <td>Pre-market</td>
+          <td>$4.47</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</div><!-- end .container -->
+
+<!-- FOOTER -->
+<div class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <span class="footer-brand">Market Quick Take &middot; Tuesday, 20 October 2026</span>
+      <span class="footer-disclaimer">For informational purposes only. Not investment advice.</span>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
