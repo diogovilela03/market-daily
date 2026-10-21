@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Market Quick Take</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Inter', sans-serif; background: #ffffff; color: #1a2332; }
+
+  .container { max-width: 860px; margin: 0 auto; padding: 0 24px; }
+
+  /* MASTHEAD */
+  .masthead { border-top: 3px solid #003366; padding: 32px 0 20px; border-bottom: 1px solid #e5e7eb; }
+  .masthead-title { font-weight: 700; font-size: 42px; color: #003366; line-height: 1; }
+  .masthead-date { font-weight: 400; font-size: 13px; color: #6b7280; margin-top: 6px; }
+
+  /* SNAPSHOT BAR */
+  .snapshot-bar { background: #f1f5f9; padding: 12px 0; width: 100%; }
+  .snapshot-inner { display: flex; flex-wrap: wrap; gap: 4px 0; align-items: center; padding: 0 24px; max-width: 860px; margin: 0 auto; }
+  .chip { font-size: 12px; font-weight: 500; font-family: 'Inter', sans-serif; color: #1a2332; text-transform: uppercase; white-space: nowrap; padding: 0 10px; }
+  .chip-sep { color: #9ca3af; font-size: 12px; padding: 0; }
+  .pos { color: #16a34a; }
+  .neg { color: #dc2626; }
+  .neu { color: #6b7280; }
+
+  /* EDITOR'S BRIEF */
+  .brief { font-style: italic; font-size: 18px; font-weight: 400; color: #374151; line-height: 1.7; max-width: 760px; margin: 28px 0; border-left: 3px solid #003366; padding-left: 16px; }
+
+  /* SECTIONS */
+  .sections { max-width: 860px; }
+  .section-label { font-size: 11px; font-weight: 500; color: #003366; text-transform: uppercase; letter-spacing: 3px; }
+  .section-title { font-size: 24px; font-weight: 700; color: #1a2332; margin-bottom: 10px; }
+  .section-body { font-size: 15px; font-weight: 400; color: #374151; line-height: 1.8; }
+  .section-body ul { list-style: disc; padding-left: 20px; }
+  .section-body ul li { margin-bottom: 4px; }
+  .divider { border: none; border-top: 1px solid #e5e7eb; margin: 28px 0; }
+
+  /* WATCH BADGE */
+  .watch-badge { display: inline-block; background: #fef3c7; color: #b45309; border-radius: 4px; font-size: 11px; font-weight: 500; font-family: 'Inter', sans-serif; padding: 2px 8px; margin-bottom: 6px; }
+
+  /* EARNINGS TABLE */
+  .earnings-table { width: 100%; border-collapse: collapse; font-size: 13px; font-weight: 400; color: #374151; margin-top: 12px; }
+  .earnings-table th { text-align: left; font-weight: 600; color: #1a2332; padding: 8px 12px; background: #f1f5f9; border: 1px solid #e5e7eb; }
+  .earnings-table td { padding: 8px 12px; border: 1px solid #e5e7eb; }
+  .earnings-table tr:nth-child(even) td { background: #f9fafb; }
+
+  /* FOOTER */
+  .footer { background: #f1f5f9; border-top: 1px solid #e5e7eb; margin-top: 48px; padding: 20px 0; }
+  .footer-inner { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; }
+  .footer-left { font-size: 12px; font-weight: 400; color: #6b7280; }
+  .footer-right { font-size: 12px; font-weight: 400; color: #9ca3af; }
+</style>
+</head>
+<body>
+
+<!-- MASTHEAD -->
+<div class="container">
+  <div class="masthead">
+    <div class="masthead-title">MARKET QUICK TAKE</div>
+    <div class="masthead-date">Wednesday, 21 October 2026</div>
+  </div>
+</div>
+
+<!-- SNAPSHOT BAR -->
+<div class="snapshot-bar">
+  <div class="snapshot-inner">
+    <span class="chip">SPY · 769.05 · <span class="pos">+0.34%</span></span>
+    <span class="chip-sep">|</span>
+    <span class="chip">QQQ · 717.63 · <span class="neg">−0.10%</span></span>
+    <span class="chip-sep">|</span>
+    <span class="chip">IWM · 275.78 · <span class="pos">+1.66%</span></span>
+    <span class="chip-sep">|</span>
+    <span class="chip">VIX · N/A</span>
+    <span class="chip-sep">|</span>
+    <span class="chip">US10Y · 5.15%</span>
+    <span class="chip-sep">|</span>
+    <span class="chip">US2Y · 4.77%</span>
+    <span class="chip-sep">|</span>
+    <span class="chip">EUR/USD · 1.1223</span>
+    <span class="chip-sep">|</span>
+    <span class="chip">GOLD · $4,114.03</span>
+    <span class="chip-sep">|</span>
+    <span class="chip">WTI · $101.91</span>
+  </div>
+</div>
+
+<!-- EDITOR'S BRIEF -->
+<div class="container">
+  <div class="brief">
+    Small-cap equities surged to lead Monday's session as IWM added 1.66% while QQQ edged marginally lower, signalling a rotation out of megacap technology into value and cyclicals ahead of a pivotal earnings evening. With META, Tesla and IBM all reporting after the close, the tape is coiled around Q3 results even as WTI's push above $100 per barrel and a 10-year yield above 5% keep macro headwinds firmly in the picture.
+  </div>
+
+  <!-- SECTIONS -->
+  <div class="sections">
+
+    <!-- SECTION 1: MARKET DRIVERS -->
+    <div class="section-label">Section 1</div>
+    <h2 class="section-title">Market Drivers</h2>
+    <div class="section-body">
+      <ul>
+        <li><strong>Small-cap rotation:</strong> IWM (+1.66%) dramatically outpaced SPY (+0.34%) and a barely positive QQQ (−0.10%), suggesting institutional rotation from high-multiple growth into rate-sensitive smaller companies despite elevated yields.</li>
+        <li><strong>Earnings season at peak intensity:</strong> Three market-moving names — META (est. EPS $6.67), Tesla (est. EPS $0.21) and IBM (est. EPS $2.87) — all report after Tuesday's close, keeping intraday positioning defensive and options premiums elevated.</li>
+        <li><strong>Commodities driving inflation narrative:</strong> WTI crude holding above $100/bbl (+$1.05 on the session) re-ignites concerns about second-round inflation effects, complicating the Fed's path toward rate cuts and keeping the 10-year yield anchored above 5%.</li>
+        <li><strong>Single-stock dispersion high:</strong> Braze (BRZE) surged 51.7% on strong quarterly results with 64.5 million shares traded, reflecting broad earnings-driven dispersion — a hallmark of late-cycle equity markets.</li>
+      </ul>
+    </div>
+    <hr class="divider">
+
+    <!-- SECTION 2: MACRO -->
+    <div class="section-label">Section 2</div>
+    <h2 class="section-title">Macro</h2>
+    <div class="section-body">
+      <p>The Federal Reserve's higher-for-longer posture remains intact as the 10-year Treasury yield held at 5.15%, its third consecutive session near multi-year highs. The 2-year yield at 4.77% keeps the curve in positive territory (+38 basis points), a modest steepening that reflects markets beginning to price longer-dated term premium rather than near-term easing. USD/JPY extending to 158.17 underscores the divergence between Fed restraint and the Bank of Japan's reluctance to tighten aggressively, keeping intervention risk elevated above the 158–160 zone. Crude oil's sustained break above $100 per barrel adds a stagflationary overlay that complicates the soft-landing thesis heading into year-end.</p>
+    </div>
+    <hr class="divider">
+
+    <!-- SECTION 3: EQUITIES -->
+    <div class="section-label">Section 3</div>
+    <h2 class="section-title">Equities</h2>
+    <div class="section-body">
+      <p>US equities delivered a bifurcated session on Tuesday (Oct 20). The S&amp;P 500 proxy SPY added 0.34% to close at 769.05, while the Nasdaq-100 tracker QQQ dipped marginally to 717.63 (−0.10%), dragged by large-cap tech underperformance ahead of megacap earnings. The standout was the Russell 2000 via IWM, which surged 1.66% to 275.78 — its strongest single-day outperformance versus large-cap benchmarks in several sessions — as investors rotated toward domestic cyclicals less sensitive to global macro crosswinds.</p>
+      <p style="margin-top: 10px;"><strong>Notable movers:</strong> <strong>Braze (BRZE)</strong> exploded 51.7% on Q3 earnings that materially exceeded consensus, with volume of 64.5 million shares (roughly 50× average daily turnover). <strong>ATGL</strong> (Alpha Technology Group) added 52.6%. On the downside, <strong>CJMB</strong> collapsed 65.6% and <strong>GME warrants (GME+)</strong> shed 44.8%, reflecting idiosyncratic deleveraging in speculative names.</p>
+    </div>
+    <hr class="divider">
+
+    <!-- SECTION 4: FIXED INCOME -->
+    <div class="section-label">Section 4</div>
+    <h2 class="section-title">Fixed Income</h2>
+    <div class="section-body">
+      <p>US Treasury yields remain at cycle highs. The 10-year yield held at <strong>5.15%</strong> while the 2-year settled at <strong>4.77%</strong>, leaving the curve positively sloped by 38 basis points and continuing to steepen from the near-zero and inverted levels seen through most of 2024–2025. A steepening curve at these absolute yield levels reflects term premium re-pricing rather than rate-cut optimism — investors are demanding more compensation for holding duration, not pricing in looser policy. For equity markets, a 5%+ risk-free rate continues to compress multiples for long-duration growth assets and raises the hurdle rate for capital allocation decisions heading into Q4 planning cycles.</p>
+    </div>
+    <hr class="divider">
+
+    <!-- SECTION 5: CURRENCIES -->
+    <div class="section-label">Section 5</div>
+    <h2 class="section-title">Currencies</h2>
+    <div class="section-body">
+      <p><strong>EUR/USD</strong> held firm at <strong>1.1223</strong>, near multi-month highs against the dollar, as improving Eurozone data has narrowed the rate differential narrative — though the pair remains range-bound ahead of the next ECB decision. <strong>USD/JPY</strong> trades at <strong>158.17</strong>, within striking distance of the 160 level that previously prompted Bank of Japan intervention. The yen's persistent weakness reflects the BOJ's cautious tightening pace against the Fed's extended hold; any acceleration in Japanese inflation data or hawkish BOJ communications could trigger sharp yen appreciation. FX desks are closely watching this level as the most likely site of official intervention in G10 markets.</p>
+    </div>
+    <hr class="divider">
+
+    <!-- SECTION 6: COMMODITIES -->
+    <div class="section-label">Section 6</div>
+    <h2 class="section-title">Commodities</h2>
+    <div class="section-body">
+      <p><strong>Gold</strong> trades at <strong>$4,114.03/oz</strong>, near record territory, supported by a combination of central bank accumulation, de-dollarization flows from emerging markets, and residual geopolitical risk premium. The metal's strength despite a high-yield environment underscores its evolving role as a diversifier against systemic risk rather than a pure inflation hedge. <strong>WTI crude</strong> holds at <strong>$101.91/bbl</strong> (latest data as of Oct 14), sustained above the psychologically significant $100 level by continued OPEC+ supply discipline and elevated Middle East risk premium. Oil above $100 reinforces inflationary pressures and materially reduces the probability of near-term Fed easing, with energy-sector earnings set to benefit disproportionately from the current price environment.</p>
+    </div>
+    <hr class="divider">
+
+    <!-- SECTION 7: EARNINGS CALENDAR -->
+    <div class="section-label">Section 7</div>
+    <h2 class="section-title">Earnings Radar</h2>
+    <div class="section-body">
+      <p>The next five trading days (Oct 21–27) represent the busiest stretch of Q3 earnings season, anchored by two of the market's most closely watched names — Meta Platforms and Tesla — both reporting tonight after the close.</p>
+      <table class="earnings-table">
+        <thead>
+          <tr>
+            <th>Company</th>
+            <th>Date</th>
+            <th>Timing</th>
+            <th>Expected EPS</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Tesla (TSLA)</strong></td>
+            <td>Oct 21</td>
+            <td>Post-market</td>
+            <td>$0.21 — low bar after margin pressure; focus on delivery guidance and energy storage</td>
+          </tr>
+          <tr>
+            <td><strong>Meta Platforms (META)</strong></td>
+            <td>Oct 21</td>
+            <td>Post-market</td>
+            <td>$6.67 — AI monetisation and advertising revenue trajectory key; options imply ~±6% move</td>
+          </tr>
+          <tr>
+            <td><strong>IBM</strong></td>
+            <td>Oct 21</td>
+            <td>Post-market</td>
+            <td>$2.87 — consulting demand and hybrid cloud growth in focus; dividend sustainability watch</td>
+          </tr>
+          <tr>
+            <td><strong>Lockheed Martin (LMT)</strong></td>
+            <td>Oct 22</td>
+            <td>Pre-market</td>
+            <td>$7.49 — defense backlog and F-35 delivery rates; geopolitical tailwinds supportive</td>
+          </tr>
+          <tr>
+            <td><strong>Visa (V)</strong></td>
+            <td>Oct 27</td>
+            <td>Post-market</td>
+            <td>$3.43 — cross-border volumes and consumer spending resilience the key read-through</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div><!-- /sections -->
+</div><!-- /container -->
+
+<!-- FOOTER -->
+<div class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <span class="footer-left">Market Quick Take · Wednesday, 21 October 2026</span>
+      <span class="footer-right">For informational purposes only. Not investment advice.</span>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
