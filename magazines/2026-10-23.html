@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Market Quick Take · Friday, 23 October 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #ffffff;
+      color: #1a2332;
+    }
+
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* MASTHEAD */
+    .masthead {
+      border-top: 3px solid #003366;
+      padding: 32px 0 20px;
+      border-bottom: 1px solid #e5e7eb;
+    }
+    .masthead h1 {
+      font-size: 42px;
+      font-weight: 700;
+      color: #003366;
+      letter-spacing: -0.5px;
+      line-height: 1;
+    }
+    .masthead .date {
+      font-size: 13px;
+      font-weight: 400;
+      color: #6b7280;
+      margin-top: 8px;
+    }
+
+    /* SNAPSHOT BAR */
+    .snapshot-bar {
+      background: #f1f5f9;
+      padding: 12px 0;
+      width: 100%;
+    }
+    .snapshot-inner {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px 0;
+      align-items: center;
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    .chip {
+      font-size: 12px;
+      font-weight: 500;
+      color: #1a2332;
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+      white-space: nowrap;
+      padding: 2px 6px;
+    }
+    .chip-sep {
+      color: #9ca3af;
+      padding: 2px 2px;
+      font-size: 12px;
+    }
+    .chip .pos { color: #16a34a; }
+    .chip .neg { color: #dc2626; }
+
+    /* EDITOR'S BRIEF */
+    .editors-brief {
+      font-size: 18px;
+      font-weight: 400;
+      font-style: italic;
+      color: #374151;
+      max-width: 760px;
+      margin: 28px 0;
+      border-left: 3px solid #003366;
+      padding-left: 16px;
+      line-height: 1.7;
+    }
+
+    /* SECTIONS */
+    .section {
+      margin-bottom: 0;
+    }
+    .section-label {
+      font-size: 11px;
+      font-weight: 500;
+      color: #003366;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      margin-bottom: 6px;
+    }
+    .section-title {
+      font-size: 24px;
+      font-weight: 700;
+      color: #1a2332;
+      margin-bottom: 10px;
+      line-height: 1.2;
+    }
+    .section-body {
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 1.8;
+      color: #374151;
+    }
+    .section-body ul {
+      padding-left: 8px;
+      list-style: disc;
+      margin-left: 16px;
+    }
+    .section-body ul li {
+      margin-bottom: 6px;
+    }
+    .divider {
+      border: none;
+      border-top: 1px solid #e5e7eb;
+      margin: 28px 0;
+    }
+
+    /* WATCH PILL */
+    .watch-pill {
+      display: inline-block;
+      background: #fef3c7;
+      color: #b45309;
+      border-radius: 4px;
+      font-size: 11px;
+      font-weight: 500;
+      padding: 3px 8px;
+      margin-bottom: 8px;
+    }
+
+    /* COLOR HELPERS */
+    .pos { color: #16a34a; }
+    .neg { color: #dc2626; }
+
+    /* EARNINGS TABLE */
+    .earnings-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+      font-weight: 400;
+      margin-top: 12px;
+    }
+    .earnings-table th {
+      border: 1px solid #e5e7eb;
+      padding: 8px 12px;
+      text-align: left;
+      font-weight: 600;
+      color: #1a2332;
+      background: #f9fafb;
+    }
+    .earnings-table td {
+      border: 1px solid #e5e7eb;
+      padding: 8px 12px;
+      color: #374151;
+    }
+    .earnings-table tr:nth-child(even) td {
+      background: #f9fafb;
+    }
+
+    /* FOOTER */
+    .footer {
+      background: #f1f5f9;
+      border-top: 1px solid #e5e7eb;
+      margin-top: 48px;
+      padding: 20px 0;
+    }
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .footer span {
+      font-size: 12px;
+      font-weight: 400;
+    }
+    .footer .footer-title { color: #6b7280; }
+    .footer .footer-disclaimer { color: #9ca3af; }
+
+    @media (max-width: 600px) {
+      .masthead h1 { font-size: 28px; }
+      .editors-brief { font-size: 16px; }
+      .section-title { font-size: 20px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- MASTHEAD -->
+  <div class="container">
+    <div class="masthead">
+      <h1>MARKET QUICK TAKE</h1>
+      <p class="date">Friday, 23 October 2026</p>
+    </div>
+  </div>
+
+  <!-- SNAPSHOT BAR -->
+  <div class="snapshot-bar">
+    <div class="snapshot-inner">
+      <span class="chip">SPY · $763.96 · <span class="neg">−1.18%</span></span>
+      <span class="chip-sep">|</span>
+      <span class="chip">QQQ · $704.47 · <span class="neg">−2.86%</span></span>
+      <span class="chip-sep">|</span>
+      <span class="chip">IWM · $276.67 · <span class="pos">+0.07%</span></span>
+      <span class="chip-sep">|</span>
+      <span class="chip">VIX · N/A</span>
+      <span class="chip-sep">|</span>
+      <span class="chip">US10Y · 5.13%</span>
+      <span class="chip-sep">|</span>
+      <span class="chip">US2Y · 4.81%</span>
+      <span class="chip-sep">|</span>
+      <span class="chip">EUR/USD · 1.1208</span>
+      <span class="chip-sep">|</span>
+      <span class="chip">GOLD · $4,016</span>
+      <span class="chip-sep">|</span>
+      <span class="chip">WTI · $107.89</span>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <div class="container">
+
+    <!-- EDITOR'S BRIEF -->
+    <p class="editors-brief">
+      Technology stocks bore the brunt of Friday's selling as semiconductor names led a sharp drawdown in QQQ (−2.86%) while small-caps held flat — a telling divergence that signals institutional rotation ahead of next week's critical mega-cap earnings from Microsoft, Alphabet, and Amazon. Gold above $4,000 and crude above $107 underscore the inflationary backdrop keeping the Fed on hold.
+    </p>
+
+    <!-- SECTION 1: Market Drivers -->
+    <div class="section">
+      <p class="section-label">Section 1</p>
+      <h2 class="section-title">Market Drivers</h2>
+      <div class="section-body">
+        <ul>
+          <li>Mega-cap technology is sharply lower, with QQQ falling 2.86% versus SPY's 1.18% decline; small-caps (IWM +0.07%) are essentially flat, pointing to a rotation out of large-cap growth into value and cyclical names.</li>
+          <li>Semiconductor stocks under significant pressure: NVDA fell 4.4% and INTC dropped 8.0% following its latest earnings, while the 3× leveraged SOX ETF (SOXL) shed 20.4% — the sector is bearing the brunt of today's risk-off move.</li>
+          <li>Gold trading above $4,000/oz at $4,016 while WTI crude holds at $107.89/bbl, reflecting persistent inflation expectations and an elevated geopolitical risk premium in commodity markets.</li>
+          <li>Mega-cap earnings season reaches its most critical juncture next week — Microsoft, Alphabet, and Amazon all report — and today's sector volatility likely reflects active repositioning ahead of results.</li>
+        </ul>
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <!-- SECTION 2: Macro -->
+    <div class="section">
+      <p class="section-label">Section 2</p>
+      <h2 class="section-title">Macro</h2>
+      <div class="section-body">
+        <p>The US 10-year Treasury yield stands at 5.13% with the 2-year at 4.81%, producing a modestly positive curve spread of +32 basis points — a slight steepening after an extended period of inversion. Gold's push above $4,000/oz and WTI crude holding above $107 suggest markets remain wary of stubborn inflation, constraining the Fed's ability to ease. The elevated rate environment and commodity-price pressure continue to weigh on long-duration equity valuations, particularly in growth-heavy sectors like technology.</p>
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <!-- SECTION 3: Equities -->
+    <div class="section">
+      <p class="section-label">Section 3</p>
+      <h2 class="section-title">Equities</h2>
+      <div class="section-body">
+        <p>SPY closed at <strong>$763.96 (−1.18%)</strong>, QQQ at <strong>$704.47 (−2.86%)</strong>, and IWM at <strong>$276.67 (+0.07%)</strong>, illustrating a clear divergence between large-cap tech and the broader market. The session's most notable movers were <strong>NVDA</strong>, which fell <span class="neg">4.40%</span> amid sector-wide semiconductor caution, and <strong>INTC</strong>, down <span class="neg">8.04%</span> following an earnings report that raised concerns about margin recovery. The most actively traded names included NOK (<span class="neg">−14.92%</span>) and SPCX (<span class="neg">−9.14%</span>), while SOXL's 20.4% decline highlights extreme semiconductor leverage being aggressively unwound.</p>
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <!-- SECTION 4: Fixed Income -->
+    <div class="section">
+      <p class="section-label">Section 4</p>
+      <h2 class="section-title">Fixed Income</h2>
+      <div class="section-body">
+        <p>The <strong>10-year Treasury yield is at 5.13%</strong> and the <strong>2-year at 4.81%</strong>, yielding a 2Y–10Y spread of <strong>+32 basis points</strong>. The curve is in a modestly normal slope with a steepening bias, having reversed the prolonged inversion seen earlier in the cycle. At these nominal levels, real yields remain deeply restrictive and continue to act as a structural headwind to equity multiples, particularly in long-duration growth sectors. The slight uptick in both tenors over the past week (10Y: from 5.09% on Oct 16 to 5.13% Oct 21; 2Y: from 4.74% to 4.81%) suggests ongoing upward yield pressure.</p>
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <!-- SECTION 5: Currencies -->
+    <div class="section">
+      <p class="section-label">Section 5</p>
+      <h2 class="section-title">Currencies</h2>
+      <div class="section-body">
+        <p><strong>EUR/USD: 1.1208</strong> — the euro is holding firm above 1.12, supported by narrowing rate differentials as European yields have climbed in tandem with US rates. <strong>USD/JPY: 157.09</strong> — the yen remains near multi-year lows, reflecting the Bank of Japan's continued caution about hiking aggressively relative to the Fed and ECB. Persistent yen weakness is a source of imported inflation for Japan and a signal that BOJ policy divergence remains intact despite periodic verbal intervention from Tokyo.</p>
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <!-- SECTION 6: Commodities -->
+    <div class="section">
+      <p class="section-label">Section 6</p>
+      <h2 class="section-title">Commodities</h2>
+      <div class="section-body">
+        <p><strong>Gold: $4,016.02/oz</strong> — the metal is trading firmly above the $4,000 psychological level, reflecting sustained demand as both a hedge against elevated inflation and a geopolitical risk buffer. <strong>WTI crude: $107.89/bbl</strong> — oil maintains elevated pressure on energy-sensitive sectors and consumer inflation, as OPEC+ supply discipline and persistent global demand continue to support prices well above the $100 threshold. The combination of a strong gold price and elevated crude underscores the stagflationary backdrop that continues to constrain monetary policy flexibility.</p>
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <!-- SECTION 7: Earnings Calendar -->
+    <div class="section">
+      <p class="section-label">Section 7</p>
+      <h2 class="section-title">Earnings Radar</h2>
+      <div class="section-body">
+        <p>The coming week is the heaviest of the Q3 2026 reporting season, with Microsoft, Alphabet, and Amazon all on deck. Consensus expectations are elevated following strong guidance cycles, making any shortfall or cautious outlook a potential catalyst for further tech sector volatility.</p>
+        <table class="earnings-table">
+          <thead>
+            <tr>
+              <th>Company</th>
+              <th>Date</th>
+              <th>Expected Move (EPS est.)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>AXP</strong> — American Express</td>
+              <td>Thu, 23 Oct</td>
+              <td>Est. EPS $4.47</td>
+            </tr>
+            <tr>
+              <td><strong>SLB</strong> — SLB Ltd</td>
+              <td>Thu, 23 Oct</td>
+              <td>Est. EPS $0.62</td>
+            </tr>
+            <tr>
+              <td><strong>V</strong> — Visa</td>
+              <td>Tue, 27 Oct</td>
+              <td>Est. EPS $3.43</td>
+            </tr>
+            <tr>
+              <td><strong>MSFT</strong> — Microsoft</td>
+              <td>Wed, 28 Oct</td>
+              <td>Est. EPS $4.71</td>
+            </tr>
+            <tr>
+              <td><strong>GOOG/L</strong> — Alphabet</td>
+              <td>Wed, 28 Oct</td>
+              <td>Est. EPS $2.94</td>
+            </tr>
+            <tr>
+              <td><strong>AMZN</strong> — Amazon</td>
+              <td>Thu, 29 Oct</td>
+              <td>Est. EPS $2.02</td>
+            </tr>
+            <tr>
+              <td><strong>MA</strong> — Mastercard</td>
+              <td>Thu, 29 Oct</td>
+              <td>Est. EPS $5.14</td>
+            </tr>
+            <tr>
+              <td><strong>INTC</strong> — Intel</td>
+              <td>Thu, 29 Oct</td>
+              <td>Est. EPS $0.28</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div><!-- /.container -->
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <span class="footer-title">Market Quick Take · Friday, 23 October 2026</span>
+        <span class="footer-disclaimer">For informational purposes only. Not investment advice.</span>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
