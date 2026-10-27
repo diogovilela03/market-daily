@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Market Quick Take</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: #ffffff;
+    color: #1a2332;
+  }
+
+  .container {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  /* MASTHEAD */
+  .masthead {
+    border-top: 3px solid #003366;
+    padding: 32px 0 20px;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  .masthead-title {
+    font-size: 42px;
+    font-weight: 700;
+    color: #003366;
+    letter-spacing: -0.5px;
+    line-height: 1.1;
+  }
+  .masthead-date {
+    font-size: 13px;
+    font-weight: 400;
+    color: #6b7280;
+    margin-top: 6px;
+  }
+
+  /* SNAPSHOT BAR */
+  .snapshot-bar {
+    background: #f1f5f9;
+    padding: 12px 0;
+    width: 100%;
+  }
+  .snapshot-inner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 0;
+    align-items: center;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+  .chip {
+    font-size: 12px;
+    font-weight: 500;
+    font-family: 'Inter', sans-serif;
+    color: #1a2332;
+    text-transform: uppercase;
+    white-space: nowrap;
+    padding: 0 8px;
+  }
+  .chip-sep {
+    color: #9ca3af;
+    font-size: 12px;
+    padding: 0 2px;
+  }
+  .pos { color: #16a34a; }
+  .neg { color: #dc2626; }
+
+  /* EDITOR'S BRIEF */
+  .editors-brief {
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 400;
+    color: #374151;
+    line-height: 1.7;
+    max-width: 760px;
+    margin: 28px 0;
+    border-left: 3px solid #003366;
+    padding-left: 16px;
+  }
+
+  /* SECTIONS */
+  .section {
+    margin-bottom: 0;
+  }
+  .section-label {
+    font-size: 11px;
+    font-weight: 500;
+    color: #003366;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    display: block;
+    margin-bottom: 6px;
+  }
+  .section-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1a2332;
+    margin-bottom: 10px;
+    line-height: 1.2;
+  }
+  .section-body {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #374151;
+  }
+  .section-body ul {
+    padding-left: 20px;
+  }
+  .section-body li {
+    margin-bottom: 6px;
+  }
+  .section-divider {
+    border: none;
+    border-top: 1px solid #e5e7eb;
+    margin: 28px 0;
+  }
+  .watch-pill {
+    display: inline-block;
+    background: #fef3c7;
+    color: #b45309;
+    font-size: 11px;
+    font-weight: 500;
+    border-radius: 4px;
+    padding: 2px 8px;
+    margin-bottom: 8px;
+    font-family: 'Inter', sans-serif;
+  }
+
+  /* EARNINGS TABLE */
+  .earnings-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    font-weight: 400;
+    margin-top: 12px;
+  }
+  .earnings-table th {
+    border: 1px solid #e5e7eb;
+    padding: 8px 12px;
+    text-align: left;
+    font-weight: 600;
+    background: #f9fafb;
+    color: #374151;
+  }
+  .earnings-table td {
+    border: 1px solid #e5e7eb;
+    padding: 8px 12px;
+    color: #374151;
+  }
+  .earnings-table tr:nth-child(even) td {
+    background: #fafafa;
+  }
+
+  /* FOOTER */
+  .footer {
+    background: #f1f5f9;
+    border-top: 1px solid #e5e7eb;
+    margin-top: 48px;
+    padding: 20px 0;
+  }
+  .footer-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .footer span {
+    font-size: 12px;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+  }
+  .footer-brand { color: #6b7280; }
+  .footer-disclaimer { color: #9ca3af; }
+
+  @media (max-width: 600px) {
+    .masthead-title { font-size: 28px; }
+    .editors-brief { font-size: 16px; }
+    .section-title { font-size: 20px; }
+    .snapshot-inner { gap: 6px 0; }
+    .chip { font-size: 11px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- MASTHEAD -->
+<div class="container">
+  <div class="masthead">
+    <div class="masthead-title">MARKET QUICK TAKE</div>
+    <div class="masthead-date">Tuesday, 27 October 2026</div>
+  </div>
+</div>
+
+<!-- SNAPSHOT BAR -->
+<div class="snapshot-bar">
+  <div class="snapshot-inner">
+    <span class="chip">SPY · $765.37 · <span class="pos">+0.71%</span></span>
+    <span class="chip-sep">|</span>
+    <span class="chip">QQQ · $712.20 · <span class="pos">+1.11%</span></span>
+    <span class="chip-sep">|</span>
+    <span class="chip">IWM · $276.99 · <span class="pos">+0.45%</span></span>
+    <span class="chip-sep">|</span>
+    <span class="chip">VIX · N/A</span>
+    <span class="chip-sep">|</span>
+    <span class="chip">US10Y · 5.00%</span>
+    <span class="chip-sep">|</span>
+    <span class="chip">US2Y · 4.69%</span>
+    <span class="chip-sep">|</span>
+    <span class="chip">EUR/USD · 1.1161</span>
+    <span class="chip-sep">|</span>
+    <span class="chip">GOLD · $4,004.88</span>
+    <span class="chip-sep">|</span>
+    <span class="chip">WTI · $107.89</span>
+  </div>
+</div>
+
+<!-- EDITOR'S BRIEF -->
+<div class="container">
+  <p class="editors-brief">
+    US equities advanced broadly on Monday, with tech leading gains as the QQQ outperformed. A sharp selloff in Brazilian assets dominated the session's most-active list, weighing on EM sentiment while domestic large-caps continued to grind higher. The 10-year yield hovering at 5.00% remains the central tension for equity valuations as Q3 earnings season enters its busiest week.
+  </p>
+
+  <!-- SECTION 1: MARKET DRIVERS -->
+  <div class="section">
+    <span class="section-label">Section 01</span>
+    <div class="section-title">Market Drivers</div>
+    <div class="section-body">
+      <ul>
+        <li><strong>Risk-on rotation into tech:</strong> The QQQ gained 1.11%, outpacing the broader S&amp;P proxy (SPY +0.71%) and small caps (IWM +0.45%), signaling continued investor preference for large-cap growth amid a solid Q3 earnings backdrop.</li>
+        <li><strong>Brazilian asset collapse:</strong> EWZ (Brazil ETF) fell 19.8%, XP Inc. shed 48.4%, BBD lost 28.1%, and ITUB declined 20.5% in heavy volume — the session's dominant dislocation. A macro or political shock in Brazil appears to be the catalyst.</li>
+        <li><strong>Gold breaks $4,000:</strong> Spot gold crossed the historic $4,000/oz threshold at $4,004.88, reflecting persistent safe-haven demand and dollar uncertainty despite a broadly risk-on equity tape.</li>
+        <li><strong>Elevated crude:</strong> WTI at $107.89/bbl remains near multi-year highs, sustaining inflationary pressure and keeping the Fed's path uncertain heading into year-end.</li>
+      </ul>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 2: MACRO -->
+  <div class="section">
+    <span class="section-label">Section 02</span>
+    <div class="section-title">Macro</div>
+    <div class="section-body">
+      <p>The Federal Reserve remains in a data-dependent holding pattern, with the 10-year yield at 5.00% signaling that markets have priced in a prolonged higher-for-longer rate environment. The 2Y/10Y spread of +31 basis points reflects a re-steepening curve — a shift away from the deep inversion seen in prior cycles — though elevated front-end rates at 4.69% continue to compress risk premiums. WTI crude near $108 adds a persistent inflationary overhang that complicates any dovish pivot narrative into year-end.</p>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 3: EQUITIES -->
+  <div class="section">
+    <span class="section-label">Section 03</span>
+    <div class="section-title">Equities</div>
+    <div class="section-body">
+      <p>US indices closed higher: <strong>SPY +0.71%</strong> to $765.37, <strong>QQQ +1.11%</strong> to $712.20, and <strong>IWM +0.45%</strong> to $276.99. Tech's outperformance over small caps points to continued flight to quality within equities rather than a broad risk-on move.</p>
+      <p style="margin-top:12px;"><strong>Notable movers:</strong></p>
+      <ul style="margin-top:8px;">
+        <li><strong>AZTR +111.2%</strong> — Azitra Inc. surged on extraordinary volume (144M shares), likely driven by a clinical or regulatory catalyst. No AV news feed available to confirm.</li>
+        <li><strong>CLRO +52.9%</strong> — ClearOne Inc. rallied on heavy volume (81M shares), a notable move for this small-cap audio/comms company.</li>
+        <li><strong>XP -48.4%</strong> — XP Inc. (Brazilian financial platform) collapsed on massive volume (132M), in line with a broader Brazilian market selloff. EWZ and BBD also hit hard.</li>
+        <li><strong>XXII -55.3%</strong> — 22nd Century Group declined sharply on 34.5M volume, consistent with sector-specific headwinds.</li>
+      </ul>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 4: FIXED INCOME -->
+  <div class="section">
+    <span class="watch-pill">⚡ WATCH</span>
+    <span class="section-label">Section 04</span>
+    <div class="section-title">Fixed Income</div>
+    <div class="section-body">
+      <p>The <strong>10-year Treasury yield stands at 5.00%</strong> (as of 10/23), a psychologically significant threshold that has historically triggered equity de-rating when sustained. The <strong>2-year yield is at 4.69%</strong>, producing a <strong>+31 bps positive spread</strong> (10Y–2Y) — the curve has definitively re-steepened from inversion. This steepening is a WATCH condition, as it historically signals either an economic acceleration or a stressed long-end driven by term premium expansion. With 10Y at 5.00%, any further move higher would intensify pressure on equity multiples, particularly in rate-sensitive sectors.</p>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 5: CURRENCIES -->
+  <div class="section">
+    <span class="section-label">Section 05</span>
+    <div class="section-title">Currencies</div>
+    <div class="section-body">
+      <p><strong>EUR/USD at 1.1161</strong> — the euro remains firmly above parity, reflecting a stabilized ECB policy backdrop and continued dollar softness relative to its 2022 peak cycle. <strong>USD/JPY at 157.81</strong> remains near multi-decade highs for the pair, as the Bank of Japan's ultra-loose policy divergence from the Fed persists. Yen weakness at these levels historically triggers intervention speculation; any BOJ commentary or MoF jawboning would be a market catalyst. The Brazilian real selloff implied by the sharp declines in EWZ and XP warrants monitoring for EM currency contagion.</p>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 6: COMMODITIES -->
+  <div class="section">
+    <span class="watch-pill">⚡ WATCH</span>
+    <span class="section-label">Section 06</span>
+    <div class="section-title">Commodities</div>
+    <div class="section-body">
+      <p><strong>Gold at $4,004.88/oz</strong> — the yellow metal has crossed the $4,000 threshold for the first time, a milestone that historically attracts momentum flows and media attention. The move reflects a combination of geopolitical hedging, central bank accumulation, and dollar-hedge demand. <strong>WTI crude at $107.89/bbl</strong> remains elevated, supported by constrained OPEC+ supply and robust demand. Crude above $100 is a direct inflation input that limits the Fed's room to maneuver. Both commodities are flashing WATCH conditions: gold at a historic round number and crude sustaining inflationary pressure.</p>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 7: EARNINGS CALENDAR -->
+  <div class="section">
+    <span class="section-label">Section 07</span>
+    <div class="section-title">Earnings Calendar — Next 5 Trading Days</div>
+    <div class="section-body">
+      <p>The following notable companies were scheduled to report on or around 2026-10-26 (after-market). Full upcoming week data was not available from the fetched feed. Key names to watch include Cadence Design Systems, Hartford Financial, and Amkor Technology from the Q3 reporting cycle.</p>
+      <table class="earnings-table">
+        <thead>
+          <tr>
+            <th>Company</th>
+            <th>Date</th>
+            <th>Expected Move (EPS Est.)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Cadence Design Systems (CDNS)</td>
+            <td>Oct 26 (PM)</td>
+            <td>EPS Est. $1.61</td>
+          </tr>
+          <tr>
+            <td>Hartford Financial (HIG)</td>
+            <td>Oct 26 (PM)</td>
+            <td>EPS Est. $3.15</td>
+          </tr>
+          <tr>
+            <td>Amkor Technology (AMKR)</td>
+            <td>Oct 26 (PM)</td>
+            <td>EPS Est. $0.79</td>
+          </tr>
+          <tr>
+            <td>Celestica (CLS)</td>
+            <td>Oct 26 (PM)</td>
+            <td>EPS Est. $2.88</td>
+          </tr>
+          <tr>
+            <td>BioMarin Pharmaceutical (BMRN)</td>
+            <td>Oct 26</td>
+            <td>EPS Est. $0.52</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <hr class="section-divider" style="margin-bottom:0;">
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <span class="footer-brand">Market Quick Take · Tuesday, 27 October 2026</span>
+      <span class="footer-disclaimer">For informational purposes only. Not investment advice.</span>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
