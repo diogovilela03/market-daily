@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Market Quick Take</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: #ffffff;
+    color: #1a2332;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    line-height: 1.8;
+  }
+
+  .container {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  /* MASTHEAD */
+  .masthead {
+    border-top: 3px solid #003366;
+    padding: 32px 0 20px;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  .masthead h1 {
+    font-size: 42px;
+    font-weight: 700;
+    color: #003366;
+    letter-spacing: -0.5px;
+    line-height: 1.1;
+  }
+  .masthead .date {
+    font-size: 13px;
+    font-weight: 400;
+    color: #6b7280;
+    margin-top: 6px;
+  }
+
+  /* SNAPSHOT BAR */
+  .snapshot-bar {
+    background: #f1f5f9;
+    padding: 12px 0;
+    overflow-x: auto;
+  }
+  .snapshot-inner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 4px;
+    align-items: center;
+    padding: 0 24px;
+  }
+  .chip {
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #1a2332;
+    white-space: nowrap;
+    letter-spacing: 0.2px;
+  }
+  .chip .sep { color: #9ca3af; margin: 0 6px; }
+  .chip .positive { color: #16a34a; }
+  .chip .negative { color: #dc2626; }
+  .chip .neutral { color: #6b7280; }
+  .chip-divider { color: #d1d5db; font-weight: 300; font-size: 14px; }
+
+  /* EDITOR'S BRIEF */
+  .editors-brief {
+    font-size: 18px;
+    font-style: italic;
+    color: #374151;
+    line-height: 1.6;
+    max-width: 760px;
+    margin: 28px 0;
+    border-left: 3px solid #003366;
+    padding-left: 16px;
+  }
+
+  /* SECTIONS */
+  .section {
+    margin-bottom: 0;
+  }
+  hr.section-divider {
+    border: none;
+    border-top: 1px solid #e5e7eb;
+    margin: 28px 0;
+  }
+  .section-label {
+    font-size: 11px;
+    font-weight: 500;
+    color: #003366;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 4px;
+  }
+  .section-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1a2332;
+    margin-bottom: 10px;
+  }
+  .section-body {
+    color: #374151;
+    font-size: 15px;
+    line-height: 1.8;
+  }
+  .section-body ul {
+    padding-left: 20px;
+    list-style: disc;
+  }
+  .section-body ul li {
+    margin-bottom: 4px;
+  }
+  .watch-pill {
+    display: inline-block;
+    color: #b45309;
+    background: #fef3c7;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 500;
+    padding: 2px 8px;
+    margin-bottom: 6px;
+    letter-spacing: 0.3px;
+  }
+  .positive-text { color: #16a34a; font-weight: 500; }
+  .negative-text { color: #dc2626; font-weight: 500; }
+
+  /* EARNINGS TABLE */
+  .earnings-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    margin-top: 12px;
+  }
+  .earnings-table th {
+    text-align: left;
+    padding: 8px 12px;
+    border: 1px solid #e5e7eb;
+    background: #f1f5f9;
+    font-weight: 600;
+    color: #1a2332;
+  }
+  .earnings-table td {
+    padding: 8px 12px;
+    border: 1px solid #e5e7eb;
+    color: #374151;
+  }
+  .earnings-table tr:nth-child(even) td { background: #f9fafb; }
+
+  /* FOOTER */
+  .page-footer {
+    background: #f1f5f9;
+    border-top: 1px solid #e5e7eb;
+    margin-top: 48px;
+    padding: 20px 0;
+  }
+  .footer-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .footer-inner span {
+    font-size: 12px;
+    font-weight: 400;
+  }
+  .footer-brand { color: #6b7280; }
+  .footer-disclaimer { color: #9ca3af; }
+
+  @media (max-width: 600px) {
+    .masthead h1 { font-size: 28px; }
+    .editors-brief { font-size: 16px; }
+    .section-title { font-size: 20px; }
+    .snapshot-inner { gap: 4px 2px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- MASTHEAD -->
+<div class="container">
+  <div class="masthead">
+    <h1>MARKET QUICK TAKE</h1>
+    <p class="date">Friday, 30 October 2026</p>
+  </div>
+</div>
+
+<!-- SNAPSHOT BAR -->
+<div class="snapshot-bar">
+  <div class="snapshot-inner">
+    <span class="chip">SPY<span class="sep">·</span>$769.36<span class="sep">·</span><span class="negative">−0.38%</span></span>
+    <span class="chip-divider">|</span>
+    <span class="chip">QQQ<span class="sep">·</span>$715.34<span class="sep">·</span><span class="negative">−1.42%</span></span>
+    <span class="chip-divider">|</span>
+    <span class="chip">IWM<span class="sep">·</span>$284.01<span class="sep">·</span><span class="positive">+0.97%</span></span>
+    <span class="chip-divider">|</span>
+    <span class="chip">VIX<span class="sep">·</span><span class="neutral">N/A</span></span>
+    <span class="chip-divider">|</span>
+    <span class="chip">US10Y<span class="sep">·</span>5.05%<span class="sep">·</span><span class="negative">+6bps</span></span>
+    <span class="chip-divider">|</span>
+    <span class="chip">US2Y<span class="sep">·</span>4.67%<span class="sep">·</span><span class="positive">−3bps</span></span>
+    <span class="chip-divider">|</span>
+    <span class="chip">EUR/USD<span class="sep">·</span>1.1189<span class="sep">·</span><span class="neutral">N/A</span></span>
+    <span class="chip-divider">|</span>
+    <span class="chip">GOLD<span class="sep">·</span>$3,986<span class="sep">·</span><span class="neutral">N/A</span></span>
+    <span class="chip-divider">|</span>
+    <span class="chip">WTI<span class="sep">·</span>$103.37<span class="sep">·</span><span class="neutral">N/A</span></span>
+  </div>
+</div>
+
+<!-- MAIN CONTENT -->
+<div class="container">
+
+  <!-- EDITOR'S BRIEF -->
+  <p class="editors-brief">
+    Alphabet cratered 12.6% and ServiceNow plunged nearly 27% after their Q3 reports disappointed on forward guidance, dragging the Nasdaq sharply lower while small caps staged a quiet outperformance. With ExxonMobil and Chevron set to report before the open, energy's resilience amid $103 crude keeps the broader tape from deeper losses. Gold hovers just below $4,000/oz, an emerging flashpoint as a 10-year yield holding at 5.05% keeps real-rate pressure firmly in play.
+  </p>
+
+  <!-- SECTION 1: MARKET DRIVERS -->
+  <div class="section">
+    <p class="section-label">Section 1</p>
+    <h2 class="section-title">Market Drivers</h2>
+    <div class="section-body">
+      <ul>
+        <li><strong>Megacap earnings shock:</strong> Alphabet (GOOGL) fell <span class="negative-text">12.6%</span> and ServiceNow (NOW) collapsed <span class="negative-text">27.0%</span> after both companies missed on forward revenue guidance, triggering broad risk-off selling across growth names.</li>
+        <li><strong>Small cap resilience:</strong> IWM outperformed with a <span class="positive-text">+0.97%</span> gain — domestic, rate-sensitive small caps benefiting from a slight easing in 2-year yields, diverging from the tech-heavy Nasdaq.</li>
+        <li><strong>Energy sector in focus:</strong> WTI crude at $103.37/bbl remains elevated as OPEC+ supply discipline holds. ExxonMobil and Chevron report today, with consensus estimates pointing to strong Q3 free cash flow generation.</li>
+        <li><strong>Rates remain restrictive:</strong> The 10-year Treasury at 5.05% and the 2-year at 4.67% underscore that the Federal Reserve is in no hurry to ease, leaving a 38bps positive slope — steepening modestly from last week's flat structure.</li>
+      </ul>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 2: MACRO -->
+  <div class="section">
+    <p class="section-label">Section 2</p>
+    <h2 class="section-title">Macro</h2>
+    <div class="section-body">
+      <p>The US yield curve is in a modest steepening mode, with the 10-year at 5.05% and the 2-year at 4.67% — a positive spread of 38 basis points that signals the market expects long-run rates to remain higher for longer without pricing in imminent recession. The Federal Reserve's posture remains explicitly data-dependent and restrictive; with no FOMC meeting until November, the next major catalyst is payrolls and CPI. Geopolitically, the OPEC+ coalition has held output discipline firm, keeping crude north of $100 and reinforcing the "higher energy prices, stickier inflation" narrative that keeps rate cuts off the near-term table.</p>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 3: EQUITIES -->
+  <div class="section">
+    <span class="watch-pill">⚡ WATCH</span>
+    <p class="section-label">Section 3</p>
+    <h2 class="section-title">Equities</h2>
+    <div class="section-body">
+      <p>The S&P 500 (SPY) slipped <span class="negative-text">0.38%</span> to $769.36, cushioned by energy and value names offsetting tech losses. The Nasdaq 100 (QQQ) bore the brunt, declining <span class="negative-text">1.42%</span> to $715.34 as megacap earnings disappointments unwound crowded long positions. Small caps (IWM) bucked the trend, adding <span class="positive-text">0.97%</span> to $284.01.</p>
+      <p style="margin-top:10px;"><strong>Notable movers:</strong></p>
+      <ul>
+        <li><strong>Alphabet (GOOGL):</strong> <span class="negative-text">−12.6%</span> to $283.82 on the highest volume in months — Q3 cloud growth decelerated more than feared and advertising revenue missed estimates, triggering a broad-based selloff in AI-adjacent names.</li>
+        <li><strong>ServiceNow (NOW):</strong> <span class="negative-text">−27.0%</span> to $109.64 — the enterprise software giant's cautious FY guidance spooked investors in an already frothy SaaS multiple environment, setting a sobering tone for the rest of earnings season.</li>
+      </ul>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 4: FIXED INCOME (was 5) -->
+  <div class="section">
+    <p class="section-label">Section 4</p>
+    <h2 class="section-title">Fixed Income</h2>
+    <div class="section-body">
+      <p>US Treasury yields remain in restrictive territory: the 10-year note sits at <strong>5.05%</strong> (+6bps from Wednesday's close), and the 2-year yield eased modestly to <strong>4.67%</strong> (−3bps). The curve's 2s10s spread stands at <strong>+38bps</strong>, firmly in positive territory — a steepening dynamic that reflects the market's view that near-term growth risk is limited but long-run inflation expectations are drifting higher. With the Fed on hold and no October FOMC meeting, duration risk remains elevated heading into next week's key macro prints.</p>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 5: CURRENCIES (was 6) -->
+  <div class="section">
+    <p class="section-label">Section 5</p>
+    <h2 class="section-title">Currencies</h2>
+    <div class="section-body">
+      <p><strong>EUR/USD</strong> trades at <strong>1.1189</strong>, hovering near multi-month highs as dollar demand softens modestly on cross-currents between elevated US rates and a resilient eurozone inflation print earlier this week. <strong>USD/JPY</strong> at <strong>157.61</strong> keeps the yen under persistent pressure — the Bank of Japan's reluctance to accelerate its rate normalisation timetable leaves the pair vulnerable to further yen weakness should US data continue to surprise to the upside. Markets will watch for any MOF verbal intervention if the pair approaches the 160 level.</p>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 6: COMMODITIES (was 7) -->
+  <div class="section">
+    <span class="watch-pill">⚡ WATCH</span>
+    <p class="section-label">Section 6</p>
+    <h2 class="section-title">Commodities</h2>
+    <div class="section-body">
+      <p><strong>Gold</strong> (XAU/USD) trades at <strong>$3,986/oz</strong>, hovering just below the psychologically significant $4,000 threshold. The metal's resilience in the face of a 5%+ 10-year yield underscores structural demand from central bank reserve diversification and geopolitical risk hedging — a breakout above $4,000 would be a significant technical and sentiment milestone.</p>
+      <p style="margin-top:10px;"><strong>WTI crude</strong> trades at <strong>$103.37/bbl</strong> (latest settlement), pulling back from the recent $109 intraday peak as demand concerns temper the OPEC+ supply discipline narrative. Energy companies report earnings today (XOM, CVX), and their commentary on Q4 production guidance and capital return plans will be closely watched for the sector's near-term directional cue.</p>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 7: EARNINGS CALENDAR (was 9) -->
+  <div class="section">
+    <p class="section-label">Section 7</p>
+    <h2 class="section-title">Earnings Radar</h2>
+    <div class="section-body">
+      <p>Key reports over the next five trading days. Energy giants headline today, followed by Apple and the semiconductor complex early next week.</p>
+      <table class="earnings-table">
+        <thead>
+          <tr>
+            <th>Company</th>
+            <th>Ticker</th>
+            <th>Date</th>
+            <th>EPS Estimate</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>ExxonMobil</td>
+            <td>XOM</td>
+            <td>Oct 30 (Today)</td>
+            <td>$3.90</td>
+          </tr>
+          <tr>
+            <td>Chevron</td>
+            <td>CVX</td>
+            <td>Oct 30 (Today)</td>
+            <td>$4.78</td>
+          </tr>
+          <tr>
+            <td>Apple</td>
+            <td>AAPL</td>
+            <td>Nov 2</td>
+            <td>$1.98</td>
+          </tr>
+          <tr>
+            <td>Advanced Micro Devices</td>
+            <td>AMD</td>
+            <td>Nov 3</td>
+            <td>$1.68</td>
+          </tr>
+          <tr>
+            <td>Amgen</td>
+            <td>AMGN</td>
+            <td>Nov 3</td>
+            <td>$5.74</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</div><!-- /.container -->
+
+<!-- FOOTER -->
+<div class="page-footer">
+  <div class="container">
+    <div class="footer-inner">
+      <span class="footer-brand">Market Quick Take &nbsp;·&nbsp; Friday, 30 October 2026</span>
+      <span class="footer-disclaimer">For informational purposes only. Not investment advice.</span>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
