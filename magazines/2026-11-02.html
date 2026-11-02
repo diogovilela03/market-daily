@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Market Quick Take · 2 November 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: #ffffff;
+    color: #1a2332;
+  }
+
+  .container {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  /* MASTHEAD */
+  .masthead {
+    border-top: 3px solid #003366;
+    padding: 32px 0 20px;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  .masthead h1 {
+    font-size: 42px;
+    font-weight: 700;
+    color: #003366;
+    letter-spacing: -0.5px;
+    line-height: 1.1;
+  }
+  .masthead .date {
+    font-size: 13px;
+    font-weight: 400;
+    color: #6b7280;
+    margin-top: 6px;
+  }
+
+  /* SNAPSHOT BAR */
+  .snapshot-bar {
+    width: 100%;
+    background: #f1f5f9;
+    padding: 12px 0;
+  }
+  .snapshot-inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2px 0;
+    padding: 0 24px;
+    max-width: 860px;
+    margin: 0 auto;
+  }
+  .chip {
+    font-size: 12px;
+    font-weight: 500;
+    color: #1a2332;
+    text-transform: uppercase;
+    white-space: nowrap;
+    padding: 2px 8px;
+  }
+  .chip-sep {
+    color: #9ca3af;
+    font-size: 12px;
+    padding: 2px 2px;
+  }
+  .pos { color: #16a34a; }
+  .neg { color: #dc2626; }
+  .na  { color: #6b7280; }
+
+  /* EDITOR'S BRIEF */
+  .editors-brief {
+    font-size: 18px;
+    font-weight: 400;
+    font-style: italic;
+    color: #374151;
+    max-width: 760px;
+    margin: 28px 0;
+    border-left: 3px solid #003366;
+    padding-left: 16px;
+    line-height: 1.7;
+  }
+
+  /* SECTIONS */
+  .sections {
+    max-width: 860px;
+  }
+  hr.section-divider {
+    border: none;
+    border-top: 1px solid #e5e7eb;
+    margin: 28px 0;
+  }
+  .section-label {
+    font-size: 11px;
+    font-weight: 500;
+    color: #003366;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 8px;
+  }
+  .section-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1a2332;
+    margin-bottom: 10px;
+    line-height: 1.25;
+  }
+  .section-body {
+    font-size: 15px;
+    font-weight: 400;
+    color: #374151;
+    line-height: 1.8;
+  }
+  .section-body ul {
+    padding-left: 8px;
+    list-style: disc;
+    list-style-position: outside;
+    padding-left: 20px;
+  }
+  .section-body ul li {
+    margin-bottom: 6px;
+  }
+  .watch-pill {
+    display: inline-block;
+    color: #b45309;
+    background: #fef3c7;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 500;
+    padding: 2px 8px;
+    margin-bottom: 8px;
+  }
+
+  /* EARNINGS TABLE */
+  .earnings-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    font-weight: 400;
+    margin-top: 12px;
+  }
+  .earnings-table th {
+    text-align: left;
+    border: 1px solid #e5e7eb;
+    padding: 8px 12px;
+    background: #f9fafb;
+    font-weight: 600;
+    color: #1a2332;
+  }
+  .earnings-table td {
+    border: 1px solid #e5e7eb;
+    padding: 8px 12px;
+    color: #374151;
+  }
+
+  /* FOOTER */
+  .footer {
+    width: 100%;
+    background: #f1f5f9;
+    border-top: 1px solid #e5e7eb;
+    margin-top: 48px;
+    padding: 20px 0;
+  }
+  .footer-inner {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .footer-left  { font-size: 12px; font-weight: 400; color: #6b7280; }
+  .footer-right { font-size: 12px; font-weight: 400; color: #9ca3af; }
+</style>
+</head>
+<body>
+
+<!-- MASTHEAD -->
+<div class="container">
+  <div class="masthead">
+    <h1>MARKET QUICK TAKE</h1>
+    <div class="date">Monday, 2 November 2026</div>
+  </div>
+</div>
+
+<!-- SNAPSHOT BAR -->
+<div class="snapshot-bar">
+  <div class="snapshot-inner">
+    <span class="chip">SPY · $755.72 · <span class="neg">−1.77%</span></span>
+    <span class="chip-sep">|</span>
+    <span class="chip">QQQ · $690.49 · <span class="neg">−3.47%</span></span>
+    <span class="chip-sep">|</span>
+    <span class="chip">IWM · $279.33 · <span class="neg">−1.65%</span></span>
+    <span class="chip-sep">|</span>
+    <span class="chip">VIX · <span class="na">N/A</span></span>
+    <span class="chip-sep">|</span>
+    <span class="chip">US10Y · 4.98%</span>
+    <span class="chip-sep">|</span>
+    <span class="chip">US2Y · 4.61%</span>
+    <span class="chip-sep">|</span>
+    <span class="chip">EUR/USD · 1.1197</span>
+    <span class="chip-sep">|</span>
+    <span class="chip">GOLD · $3,906.59</span>
+    <span class="chip-sep">|</span>
+    <span class="chip">WTI · $103.37</span>
+  </div>
+</div>
+
+<!-- EDITOR'S BRIEF -->
+<div class="container">
+  <p class="editors-brief">
+    A sharp broad-market selloff dominated Friday's session, with the Nasdaq bearing the heaviest losses as semiconductor stocks cratered in the wake of Intel's catastrophic earnings-driven plunge of nearly 29%. Elevated Treasury yields approaching 5% on the 10-year note continue to compress valuation multiples on growth equities, while safe-haven gold at $3,907 and oil above $103 signal persistent macro uncertainty heading into a pivotal earnings week.
+  </p>
+</div>
+
+<!-- SECTIONS -->
+<div class="container sections">
+
+  <!-- Section 1: Market Drivers -->
+  <div class="section-label">Section 1</div>
+  <div class="section-title">Market Drivers</div>
+  <div class="section-body">
+    <ul>
+      <li><strong>Semiconductor rout:</strong> Intel (INTC) cratered 28.6% — the largest single-day drop for a mega-cap name this cycle — dragging SOXL (3× semiconductor ETF) down nearly 25% and Nvidia lower by 4.2%, as the entire chip complex repriced on dire forward guidance.</li>
+      <li><strong>Rate pressure persists:</strong> The 10-year Treasury yield held near 4.98%, keeping rate-sensitive growth and technology valuations under pressure and reinforcing the "higher-for-longer" narrative ahead of this week's Fed communications.</li>
+      <li><strong>Risk-off across the board:</strong> All three major U.S. equity benchmarks declined, with the Nasdaq (QQQ −3.47%) underperforming the S&amp;P 500 (SPY −1.77%) and Russell 2000 (IWM −1.65%), confirming concentrated selling in high-beta, high-duration assets.</li>
+      <li><strong>Commodity inflation:</strong> WTI crude above $103/bbl and gold near $3,907/oz reinforce the view that inflationary dynamics — whether supply-driven or geopolitical — remain a live headwind for Fed policy normalization.</li>
+    </ul>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- Section 2: Macro -->
+  <div class="section-label">Section 2</div>
+  <div class="section-title">Macro</div>
+  <div class="section-body">
+    <p>The U.S. 10-year yield at 4.98% sits near multi-year highs, reflecting persistent expectations of an extended restrictive monetary policy stance even as growth concerns accumulate. The 2-year yield at 4.61% leaves the curve modestly positive (+37 bps 10Y–2Y spread), signaling that near-term rate-cut expectations remain restrained while the long end continues to price in resilient nominal growth. With oil above $103/bbl sustaining energy-price inflation, the Fed faces limited room to pivot despite equity market stress, and any further deterioration in risk sentiment this week will sharpen the debate between rate stability and financial-system support.</p>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- Section 3: Equities -->
+  <div class="section-label">Section 3</div>
+  <div class="section-title">Equities</div>
+  <div class="section-body">
+    <p>All three major U.S. equity benchmarks closed sharply lower on Friday, October 30. The S&amp;P 500 proxy (SPY) fell 1.77% to $755.72, the Nasdaq (QQQ) dropped 3.47% to $690.49, and the Russell 2000 small-cap index (IWM) lost 1.65% to $279.33.</p>
+    <p style="margin-top:10px;"><strong>Notable movers:</strong></p>
+    <ul style="margin-top:8px;">
+      <li><strong>Intel (INTC) −28.6%</strong> to $65.76 on massive volume (448M shares). The stock suffered its worst single-session collapse in years following earnings results that appears to have included deeply disappointing forward revenue guidance, triggering a cascade of institutional selling. The move knocked the SOXL semiconductor ETF down nearly 25% in sympathy.</li>
+      <li><strong>Nvidia (NVDA) −4.2%</strong> to $204.64 on 165M shares. Contagion from the broader semiconductor selloff pressured the AI infrastructure bellwether despite its own business fundamentals remaining intact; the stock remains a key barometer for AI capital expenditure sentiment.</li>
+    </ul>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- Section 4: Fixed Income (was 5) -->
+  <div class="section-label">Section 4</div>
+  <div class="section-title">Fixed Income</div>
+  <div class="section-body">
+    <p>The 10-year U.S. Treasury yield stands at <strong>4.98%</strong> as of October 29, within striking distance of the psychologically significant 5% threshold that historically triggers renewed volatility across credit and equity markets. The 2-year note yields <strong>4.61%</strong>, placing the 10Y–2Y spread at a positive <strong>+37 basis points</strong> — the curve is modestly normal and gently steepening, having exited prolonged inversion territory earlier this cycle. The steepening dynamic reflects long-end yields rising faster than the front end, driven by term premium expansion and concerns about fiscal sustainability. A breach of 5% on the 10-year would likely accelerate equity market de-rating, particularly in growth and technology sectors.</p>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- Section 5: Currencies (was 6) -->
+  <div class="section-label">Section 5</div>
+  <div class="section-title">Currencies</div>
+  <div class="section-body">
+    <p>The euro trades at <strong>EUR/USD 1.1197</strong>, reflecting relative resilience in European risk appetite despite a broadly risk-off global backdrop — a level that suggests the ECB's policy path is viewed as more predictable than the Fed's near-term trajectory. The Japanese yen remains substantially weak at <strong>USD/JPY 157.77</strong>, a level that has historically prompted verbal or outright intervention by the Bank of Japan; with U.S. yields near 5%, the yen carry trade remains highly attractive, sustaining pressure on JPY. Any sharp reversal in U.S. yields or a BOJ policy surprise could unwind the carry trade abruptly and amplify global volatility.</p>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- Section 6: Commodities (was 7) -->
+  <div class="section-label">Section 6</div>
+  <div class="section-title">Commodities</div>
+  <div class="section-body">
+    <p><strong>Gold</strong> spot prices at <strong>$3,906.59/oz</strong> represent elevated levels consistent with sustained safe-haven and inflation-hedge demand. Gold at nearly $3,907 reflects a confluence of drivers: sticky inflation expectations, geopolitical risk premiums, central bank reserve diversification away from the U.S. dollar, and growing concerns about long-run fiscal trajectories in major economies.</p>
+    <p style="margin-top:10px;"><strong>WTI crude oil</strong> at <strong>$103.37/bbl</strong> (as of October 27) remains firmly above $100 — a level that amplifies input-cost inflation across the economy and complicates the Fed's path toward price stability. Supply constraints, whether from OPEC+ discipline or geopolitical disruptions, appear to be outweighing demand concerns in the near term. Elevated energy costs add a stagflationary undertone to the macro picture.</p>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- Section 7: Earnings Calendar (was 9) -->
+  <div class="section-label">Section 7</div>
+  <div class="section-title">Earnings Radar</div>
+  <div class="section-body">
+    <p>A critical week for mega-cap earnings begins today, with Apple reporting after the close. AMD and Shopify follow on Tuesday, Datadog and Qualcomm on Wednesday — giving the market a comprehensive read on consumer hardware, semiconductors, e-commerce, and enterprise software within 72 hours. Consensus estimates are shown; actual-vs-estimate gaps and forward guidance will be the primary market catalysts this week.</p>
+    <table class="earnings-table">
+      <thead>
+        <tr>
+          <th>Company</th>
+          <th>Date</th>
+          <th>Timing</th>
+          <th>EPS Estimate</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>AAPL</strong> — Apple</td>
+          <td>Mon 2 Nov</td>
+          <td>Post-market</td>
+          <td>$1.98</td>
+        </tr>
+        <tr>
+          <td><strong>PLTR</strong> — Palantir</td>
+          <td>Mon 2 Nov</td>
+          <td>Post-market</td>
+          <td>$0.33</td>
+        </tr>
+        <tr>
+          <td><strong>AMD</strong> — Advanced Micro Devices</td>
+          <td>Tue 3 Nov</td>
+          <td>Post-market</td>
+          <td>$1.68</td>
+        </tr>
+        <tr>
+          <td><strong>SHOP</strong> — Shopify</td>
+          <td>Tue 3 Nov</td>
+          <td>Pre-market</td>
+          <td>$0.33</td>
+        </tr>
+        <tr>
+          <td><strong>DDOG</strong> — Datadog</td>
+          <td>Wed 4 Nov</td>
+          <td>Pre-market</td>
+          <td>$0.18</td>
+        </tr>
+        <tr>
+          <td><strong>QCOM</strong> — Qualcomm</td>
+          <td>Wed 4 Nov</td>
+          <td>Post-market</td>
+          <td>$1.46</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</div><!-- /.sections -->
+
+<!-- FOOTER -->
+<div class="footer">
+  <div class="footer-inner">
+    <span class="footer-left">Market Quick Take · Monday, 2 November 2026</span>
+    <span class="footer-right">For informational purposes only. Not investment advice.</span>
+  </div>
+</div>
+
+</body>
+</html>
