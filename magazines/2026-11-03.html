@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Market Quick Take</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: #ffffff;
+    color: #1a2332;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    line-height: 1.8;
+  }
+
+  .container {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  /* MASTHEAD */
+  .masthead {
+    border-top: 3px solid #003366;
+    padding: 32px 0 20px;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  .masthead-title {
+    font-size: 42px;
+    font-weight: 700;
+    color: #003366;
+    letter-spacing: -1px;
+    line-height: 1;
+  }
+  .masthead-date {
+    font-size: 13px;
+    font-weight: 400;
+    color: #6b7280;
+    margin-top: 8px;
+  }
+
+  /* SNAPSHOT BAR */
+  .snapshot-bar {
+    background: #f1f5f9;
+    padding: 12px 0;
+    width: 100%;
+  }
+  .snapshot-inner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 0;
+    align-items: center;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+  .chip {
+    font-size: 12px;
+    font-weight: 500;
+    color: #1a2332;
+    text-transform: uppercase;
+    white-space: nowrap;
+    padding: 0 10px;
+  }
+  .chip + .chip::before {
+    content: '|';
+    margin-right: 10px;
+    color: #9ca3af;
+  }
+  .chip .pos { color: #16a34a; }
+  .chip .neg { color: #dc2626; }
+  .chip .na  { color: #6b7280; }
+
+  /* EDITOR'S BRIEF */
+  .editors-brief {
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 400;
+    color: #374151;
+    max-width: 760px;
+    margin: 28px 0;
+    border-left: 3px solid #003366;
+    padding-left: 16px;
+    line-height: 1.7;
+  }
+
+  /* SECTIONS */
+  .section { margin-bottom: 0; }
+  .section-label {
+    font-size: 11px;
+    font-weight: 500;
+    color: #003366;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 6px;
+  }
+  .section-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1a2332;
+    margin-bottom: 10px;
+    line-height: 1.25;
+  }
+  .section-body {
+    font-size: 15px;
+    font-weight: 400;
+    color: #374151;
+    line-height: 1.8;
+  }
+  .section-body ul {
+    padding-left: 8px;
+    list-style: disc inside;
+  }
+  .section-body ul li {
+    margin-bottom: 4px;
+  }
+
+  .watch-pill {
+    display: inline-block;
+    background: #fef3c7;
+    color: #b45309;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 500;
+    padding: 2px 8px;
+    margin-bottom: 8px;
+  }
+
+  .divider {
+    border: none;
+    border-top: 1px solid #e5e7eb;
+    margin: 28px 0;
+  }
+
+  /* EARNINGS TABLE */
+  .earnings-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    font-weight: 400;
+    color: #374151;
+    margin-top: 12px;
+  }
+  .earnings-table th {
+    border: 1px solid #e5e7eb;
+    padding: 8px 12px;
+    text-align: left;
+    font-weight: 600;
+    color: #1a2332;
+    background: #f9fafb;
+  }
+  .earnings-table td {
+    border: 1px solid #e5e7eb;
+    padding: 8px 12px;
+  }
+  .earnings-table tr:nth-child(even) td {
+    background: #fafafa;
+  }
+
+  .pos { color: #16a34a; }
+  .neg { color: #dc2626; }
+
+  /* FOOTER */
+  .footer {
+    background: #f1f5f9;
+    border-top: 1px solid #e5e7eb;
+    margin-top: 48px;
+    padding: 20px 0;
+  }
+  .footer-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .footer-brand {
+    font-size: 12px;
+    font-weight: 400;
+    color: #6b7280;
+  }
+  .footer-disclaimer {
+    font-size: 12px;
+    font-weight: 400;
+    color: #9ca3af;
+  }
+</style>
+</head>
+<body>
+
+<!-- MASTHEAD -->
+<div class="container">
+  <div class="masthead">
+    <div class="masthead-title">MARKET QUICK TAKE</div>
+    <div class="masthead-date">Tuesday, 3 November 2026</div>
+  </div>
+</div>
+
+<!-- SNAPSHOT BAR -->
+<div class="snapshot-bar">
+  <div class="snapshot-inner">
+    <span class="chip">SPY &middot; 752.10 &middot; <span class="neg">-0.48%</span></span>
+    <span class="chip">QQQ &middot; 681.09 &middot; <span class="neg">-1.36%</span></span>
+    <span class="chip">IWM &middot; 279.14 &middot; <span class="neg">-0.07%</span></span>
+    <span class="chip">VIX &middot; <span class="na">N/A</span></span>
+    <span class="chip">US10Y &middot; 4.94% &middot; <span class="neg">-4bps</span></span>
+    <span class="chip">US2Y &middot; 4.56% &middot; <span class="neg">-5bps</span></span>
+    <span class="chip">EUR/USD &middot; 1.1196</span>
+    <span class="chip">GOLD &middot; $3,911</span>
+    <span class="chip">WTI &middot; $103.37 &middot; <span class="neg">-1.79%</span></span>
+  </div>
+</div>
+
+<!-- MAIN CONTENT -->
+<div class="container">
+
+  <!-- EDITOR'S BRIEF -->
+  <p class="editors-brief">
+    Technology stocks led a broad equity pullback Monday, with the Nasdaq-heavy QQQ shedding 1.36% as semiconductor names faced heavy selling pressure. Treasury yields eased modestly from recent highs while crude oil slipped toward $103, though gold near $3,911 reflects sustained demand for defensive assets heading into a busy earnings week.
+  </p>
+
+  <!-- SECTION 1: Market Drivers -->
+  <div class="section">
+    <div class="section-label">Section 1</div>
+    <div class="section-title">Market Drivers</div>
+    <div class="section-body">
+      <ul>
+        <li>Tech and semiconductor weakness drove the session, with QQQ underperforming significantly versus the broader large-cap SPY; INTC shed 8.80% on heavy volume (226M shares), dragging chip-adjacent names lower.</li>
+        <li>Small-caps (IWM -0.07%) showed notable resilience relative to large-cap tech, suggesting the selloff was concentrated in high-multiple growth names rather than a broad risk-off move.</li>
+        <li>WTI crude at $103.37/bbl keeps energy costs elevated; combined with a 10-year yield near 5%, the macro backdrop remains a headwind for long-duration equity valuations.</li>
+        <li>Gold at $3,911/oz maintains its premium, signalling persistent demand for hard-asset hedges amid uncertainty around the rate path and geopolitical backdrop.</li>
+      </ul>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- SECTION 2: Macro -->
+  <div class="section">
+    <div class="section-label">Section 2</div>
+    <div class="section-title">Macro</div>
+    <div class="section-body">
+      <p>The 10-year Treasury yield eased to 4.94% from 4.98%, but remains uncomfortably close to the 5% threshold that has historically pressured equity risk premiums. The 2s10s curve stands at a positive +38 basis points — a decisive re-steepening from last year's inversion — reflecting market pricing of a higher-for-longer Fed against a gradually normalising long end. USD/JPY at 157.82 underscores the persistent policy divergence between the Federal Reserve and the Bank of Japan, keeping yen-funded carry trades active and amplifying cross-asset volatility risk.</p>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- SECTION 3: Equities -->
+  <div class="section">
+    <div class="section-label">Section 3</div>
+    <div class="section-title">Equities</div>
+    <div class="section-body">
+      <p>SPY closed at 752.10 (-0.48%), QQQ at 681.09 (-1.36%), and IWM at 279.14 (-0.07%), with tech the clear underperformer. <strong>Intel (INTC)</strong> was the standout decliner among large-caps, falling 8.80% on volume of 226 million shares — one of its heaviest trading sessions — likely reflecting continued market concern over competitive positioning in the AI chip space. On the other side, <strong>EVgo (EVGO)</strong> surged 46.83% with 71.9 million shares traded, leading the EV charging infrastructure sector as momentum buyers stepped in following a recent oversold stretch.</p>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- SECTION 4: Fixed Income -->
+  <div class="section">
+    <div class="section-label">Section 4</div>
+    <div class="section-title">Fixed Income</div>
+    <div class="section-body">
+      <p>The US 10-year Treasury yield declined 4 basis points to <strong>4.94%</strong>, while the 2-year yield fell 5 basis points to <strong>4.56%</strong>, leaving the 2s10s spread at <strong>+38bps</strong> — firmly in positive territory. The curve is steepening, not flattening, as the long end reprices a soft-landing scenario where the Fed holds rates elevated while long-run growth expectations stay supported. A 10-year yield sustainably below 5% would be a constructive signal for equity multiples; any re-acceleration toward 5.10–5.25% would renew pressure on rate-sensitive sectors.</p>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- SECTION 5: Currencies -->
+  <div class="section">
+    <div class="section-label">Section 5</div>
+    <div class="section-title">Currencies</div>
+    <div class="section-body">
+      <p><strong>EUR/USD</strong> trades at <strong>1.1196</strong>, holding in the upper range of recent months as the dollar faces modest headwinds from easing Treasury yields. The euro's resilience reflects relative stability in European rates markets, though any re-escalation in US yield volatility could swiftly reverse dollar weakness. <strong>USD/JPY</strong> at <strong>157.82</strong> remains significantly above the 150 level where the Bank of Japan has historically intervened; with the BOJ gradually normalising policy, the pair is a key flashpoint — any hawkish BOJ surprise could trigger rapid yen appreciation and unwind carry-funded positions across risk assets.</p>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- SECTION 6: Commodities -->
+  <div class="section">
+    <div class="section-label">Section 6</div>
+    <div class="section-title">Commodities</div>
+    <div class="section-body">
+      <p><strong>Gold</strong> trades at <strong>$3,911/oz</strong>, consolidating near record highs as central bank buying, geopolitical risk premiums, and real-rate dynamics converge to sustain demand. The metal's elevation above $3,900 signals that investors are willing to pay for optionality against macro tail risks despite elevated opportunity cost from high nominal yields. <strong>WTI crude</strong> at <strong>$103.37/bbl</strong> (latest session data: Oct 27) declined 1.79% from the prior session's $105.25, reflecting some demand-side caution; however, at over $100/bbl, energy costs continue to feed into headline inflation and complicate the Fed's path to rate cuts.</p>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- SECTION 7: Earnings Calendar -->
+  <div class="section">
+    <div class="section-label">Section 7</div>
+    <div class="section-title">Earnings Radar</div>
+    <div class="section-body">
+      <p>A heavy earnings slate lands this week, anchored by major technology and financial names. AMD and Amgen report after the close today; Aflac, Allstate, and Albemarle follow Tuesday.</p>
+      <table class="earnings-table">
+        <thead>
+          <tr>
+            <th>Company</th>
+            <th>Date</th>
+            <th>EPS Estimate</th>
+            <th>Timing</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>AMD</strong> — Advanced Micro Devices</td>
+            <td>Nov 3 (Today)</td>
+            <td>$1.68</td>
+            <td>Post-market</td>
+          </tr>
+          <tr>
+            <td><strong>AMGN</strong> — Amgen</td>
+            <td>Nov 3 (Today)</td>
+            <td>$5.74</td>
+            <td>Post-market</td>
+          </tr>
+          <tr>
+            <td><strong>AIG</strong> — American International Group</td>
+            <td>Nov 3 (Today)</td>
+            <td>$1.85</td>
+            <td>Post-market</td>
+          </tr>
+          <tr>
+            <td><strong>AFL</strong> — Aflac</td>
+            <td>Nov 4</td>
+            <td>$1.80</td>
+            <td>N/A</td>
+          </tr>
+          <tr>
+            <td><strong>ALL</strong> — Allstate</td>
+            <td>Nov 4</td>
+            <td>$7.03</td>
+            <td>N/A</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</div><!-- end .container -->
+
+<!-- FOOTER -->
+<div class="footer">
+  <div class="container footer-inner">
+    <span class="footer-brand">Market Quick Take &middot; Tuesday, 3 November 2026</span>
+    <span class="footer-disclaimer">For informational purposes only. Not investment advice.</span>
+  </div>
+</div>
+
+</body>
+</html>
