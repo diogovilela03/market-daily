@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Market Quick Take</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: #ffffff;
+    color: #1a2332;
+  }
+
+  .container {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  /* MASTHEAD */
+  .masthead {
+    border-top: 3px solid #003366;
+    padding: 32px 0 20px;
+  }
+  .masthead h1 {
+    font-size: 42px;
+    font-weight: 700;
+    color: #003366;
+    letter-spacing: -0.5px;
+    line-height: 1;
+  }
+  .masthead .date {
+    font-size: 13px;
+    font-weight: 400;
+    color: #6b7280;
+    margin-top: 6px;
+  }
+  .masthead-divider {
+    border: none;
+    border-bottom: 1px solid #e5e7eb;
+    margin-top: 20px;
+  }
+
+  /* SNAPSHOT BAR */
+  .snapshot-bar {
+    background: #f1f5f9;
+    padding: 12px 0;
+    width: 100%;
+  }
+  .snapshot-bar .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 0;
+    align-items: center;
+  }
+  .chip {
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #1a2332;
+    white-space: nowrap;
+    padding: 0 10px;
+  }
+  .chip + .chip {
+    border-left: 1px solid #cbd5e1;
+  }
+  .chip .change.pos { color: #16a34a; }
+  .chip .change.neg { color: #dc2626; }
+  .chip .change.na  { color: #6b7280; }
+
+  /* EDITOR'S BRIEF */
+  .editors-brief {
+    font-size: 18px;
+    font-weight: 400;
+    font-style: italic;
+    color: #374151;
+    max-width: 760px;
+    margin: 28px 0;
+    border-left: 3px solid #003366;
+    padding-left: 16px;
+    line-height: 1.7;
+  }
+
+  /* SECTIONS */
+  .section-label {
+    font-size: 11px;
+    font-weight: 500;
+    color: #003366;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 6px;
+  }
+  .section-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1a2332;
+    margin-bottom: 10px;
+    line-height: 1.2;
+  }
+  .section-body {
+    font-size: 15px;
+    font-weight: 400;
+    color: #374151;
+    line-height: 1.8;
+  }
+  .section-body ul {
+    padding-left: 18px;
+    margin-top: 6px;
+  }
+  .section-body ul li {
+    margin-bottom: 4px;
+  }
+  .section-divider {
+    border: none;
+    border-bottom: 1px solid #e5e7eb;
+    margin: 28px 0;
+  }
+
+  /* WATCH PILL */
+  .watch-pill {
+    display: inline-block;
+    background: #fef3c7;
+    color: #b45309;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 500;
+    padding: 2px 8px;
+    margin-bottom: 8px;
+  }
+
+  /* EARNINGS TABLE */
+  .earnings-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    font-weight: 400;
+    margin-top: 12px;
+  }
+  .earnings-table th {
+    text-align: left;
+    font-weight: 600;
+    color: #1a2332;
+    border: 1px solid #e5e7eb;
+    padding: 8px 12px;
+    background: #f1f5f9;
+  }
+  .earnings-table td {
+    border: 1px solid #e5e7eb;
+    padding: 8px 12px;
+    color: #374151;
+  }
+  .earnings-table tr:nth-child(even) td { background: #fafafa; }
+
+  /* VALUE COLORS */
+  .pos { color: #16a34a; }
+  .neg { color: #dc2626; }
+
+  /* FOOTER */
+  .footer {
+    background: #f1f5f9;
+    border-top: 1px solid #e5e7eb;
+    margin-top: 48px;
+    padding: 20px 0;
+  }
+  .footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .footer span {
+    font-size: 12px;
+    font-weight: 400;
+  }
+  .footer .brand { color: #6b7280; }
+  .footer .disclaimer { color: #9ca3af; }
+</style>
+</head>
+<body>
+
+<!-- MASTHEAD -->
+<div class="container">
+  <div class="masthead">
+    <h1>MARKET QUICK TAKE</h1>
+    <div class="date">Monday, 9 November 2026</div>
+    <hr class="masthead-divider">
+  </div>
+</div>
+
+<!-- SNAPSHOT BAR -->
+<div class="snapshot-bar">
+  <div class="container">
+    <span class="chip">SPY · 735.29 · <span class="change pos">+0.31%</span></span>
+    <span class="chip">QQQ · 656.10 · <span class="change pos">+1.40%</span></span>
+    <span class="chip">IWM · 273.67 · <span class="change pos">+0.99%</span></span>
+    <span class="chip">VIX · <span class="change na">N/A</span></span>
+    <span class="chip">US10Y · 4.84% · <span class="change neg">-0.06</span></span>
+    <span class="chip">US2Y · 4.46% · <span class="change neg">-0.12</span></span>
+    <span class="chip">EUR/USD · 1.1169</span>
+    <span class="chip">GOLD · $4,102.78</span>
+    <span class="chip">WTI · $99.64</span>
+  </div>
+</div>
+
+<!-- EDITOR'S BRIEF -->
+<div class="container">
+  <p class="editors-brief">
+    Markets closed the prior week on a constructive note as AI and semiconductor names rebounded sharply, led by NVDA and INTC, while crude oil pulled back from recent highs on Iran diplomacy hopes following the US midterm elections. With the 10-year yield easing to 4.84% and a steepening curve, attention this week turns to a dense earnings calendar and what stronger-than-expected payrolls data means for the Fed's rate path.
+  </p>
+
+  <!-- SECTION 1: MARKET DRIVERS -->
+  <div class="section-label">Section 1</div>
+  <h2 class="section-title">Market Drivers</h2>
+  <div class="section-body">
+    <ul>
+      <li><strong>AI rebound lifts tech:</strong> Semiconductor stocks staged a sharp recovery on 6 November after a sell-off tied to Intel's weak Q4 guidance. NVDA gained ~4% and the Philadelphia Semiconductor Index advanced ~4%, with INTC recovering 7.7% from the prior day's lows.</li>
+      <li><strong>Iran diplomacy deflates crude:</strong> US midterm election results were read by traders as lowering the probability of further US-Iran military escalation, triggering an ~8% single-session drop in crude. WTI retreated from $107 to the high-$90s range.</li>
+      <li><strong>Payrolls beat raises Fed uncertainty:</strong> Stronger-than-expected November employment data revived debate over how long the Fed will keep rates elevated, capping the equity rally and keeping Treasury yields sticky.</li>
+      <li><strong>Gold consolidates near $4,100:</strong> Spot gold extended its rebound above $4,100 as the dollar softened and yields eased, though a crude-oil rebound on 6 November briefly weighed on the metal by rekindling inflation concerns.</li>
+    </ul>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 2: MACRO -->
+  <div class="section-label">Section 2</div>
+  <h2 class="section-title">Macro</h2>
+  <div class="section-body">
+    <p>
+      The Federal Reserve's rate path remains the central macro debate: strong payroll data late in the week clouded the prospects for near-term cuts, even as the yield curve has steepened meaningfully — the 10Y/2Y spread widened to +38 bps from deeply negative territory earlier this year. Geopolitics remain a live risk variable; Iran-related diplomacy drove a rare single-session double-digit crude move, illustrating how Middle East developments can rapidly reprice energy inflation assumptions. With the US midterms now resolved, markets will focus on fiscal trajectory and whether the administration's posture toward further sanctions or negotiations shapes oil supply expectations through year-end.
+    </p>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 3: EQUITIES -->
+  <div class="section-label">Section 3</div>
+  <h2 class="section-title">Equities</h2>
+  <div class="section-body">
+    <p>
+      US equities finished the prior session in positive territory across the board. The S&amp;P 500 proxy SPY gained <span class="pos">+0.31%</span> to 735.29, while the Nasdaq-100 ETF QQQ led with a <span class="pos">+1.40%</span> advance to 656.10, driven by the tech rebound. Small-cap IWM added <span class="pos">+0.99%</span> to 273.67, suggesting broadening participation beyond mega-cap tech.
+    </p>
+    <p style="margin-top: 10px;">
+      <strong>Notable movers from the most-active list:</strong>
+    </p>
+    <ul>
+      <li><strong>INTC (Intel) <span class="pos">+7.71%</span> to $56.28</strong> — Shares rebounded from a sharp post-guidance decline as buyers stepped in ahead of the broader chip-sector recovery; volume of 172M shares confirmed institutional participation.</li>
+      <li><strong>SOXL (3× Semiconductor Bull ETF) <span class="pos">+12.43%</span> to $45.95</strong> — Leveraged semiconductor exposure surged as the AI-related recovery in NVDA (+2.78% to $186.64) and broader chip names pulled in momentum flows; SOXS (inverse) fell 12.7% concurrently.</li>
+    </ul>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 4: FIXED INCOME -->
+  <div class="section-label">Section 4</div>
+  <h2 class="section-title">Fixed Income</h2>
+  <div class="section-body">
+    <p>
+      The 10-year Treasury yield eased to <strong>4.84%</strong> from 4.90% the prior session, while the 2-year yield fell more sharply to <strong>4.46%</strong> from 4.58%, producing a 2Y/10Y spread of <strong>+38 basis points</strong> — a meaningfully positive curve that continues to steepen from the inversion that persisted through much of 2025. The move in the short end likely reflects the market's growing conviction that the Fed's tightening cycle has crested, even as payrolls strength keeps any near-term pivot in doubt. The steepening curve is broadly constructive for bank net interest margins and signals reduced recession risk in the bond market's view.
+    </p>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 5: CURRENCIES -->
+  <div class="section-label">Section 5</div>
+  <h2 class="section-title">Currencies</h2>
+  <div class="section-body">
+    <p>
+      The euro held firm at <strong>EUR/USD 1.1169</strong>, supported by receding geopolitical risk premium and a softer US dollar as yields fell from recent highs. The yen remained weak at <strong>USD/JPY 158.12</strong> — a level that keeps speculation alive about Bank of Japan intervention, though no action has materialised as the BoJ maintains its yield curve control posture. The combination of elevated US-Japan rate differentials and the BoJ's reluctance to tighten aggressively continues to suppress the yen, with 158–160 widely watched as a threshold that could prompt jawboning from Japanese officials.
+    </p>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 6: COMMODITIES -->
+  <div class="section-label">Section 6</div>
+  <h2 class="section-title">Commodities</h2>
+  <div class="section-body">
+    <p>
+      <strong>Gold ($4,102.78/oz):</strong> Spot gold extended its rebound above the $4,100 mark, underpinned by softening Treasury yields and a weaker dollar. The yellow metal briefly spiked to $4,146 on 5 November before retreating as crude recovered, illustrating the inverse relationship between oil-driven inflation expectations and gold's rate-driven appeal. Morgan Stanley's $5,200/oz second-half 2026 target now hinges on whether lower energy prices reduce inflation pressure and attract renewed ETF inflows.
+    </p>
+    <p style="margin-top: 10px;">
+      <strong>WTI Crude ($99.64/bbl):</strong> West Texas Intermediate pulled back sharply from $107+ levels as Iran diplomacy hopes after the US midterm elections removed a war-risk premium. Crude remains near the psychologically important $100 mark; any reversal of diplomatic progress or new OPEC+ supply adjustments could quickly re-test the $105–$110 range.
+    </p>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 7: EARNINGS CALENDAR -->
+  <div class="section-label">Section 7</div>
+  <h2 class="section-title">Earnings Radar</h2>
+  <div class="section-body">
+    <p>A concentrated slate of energy, infrastructure, finance, and technology reporters arrives this week, with AI infrastructure plays CoreWeave and Applied Materials particularly in focus given the recent semiconductor volatility.</p>
+    <table class="earnings-table">
+      <thead>
+        <tr>
+          <th>Company</th>
+          <th>Date</th>
+          <th>EPS Estimate</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Constellation Energy (CEG)</td>
+          <td>Mon, Nov 9 — Pre-mkt</td>
+          <td>$3.90</td>
+        </tr>
+        <tr>
+          <td>OXY — Occidental Petroleum</td>
+          <td>Mon, Nov 9 — Post-mkt</td>
+          <td>$1.43</td>
+        </tr>
+        <tr>
+          <td>KKR &amp; Company (KKR)</td>
+          <td>Mon, Nov 9 — Pre-mkt</td>
+          <td>$1.41</td>
+        </tr>
+        <tr>
+          <td>CoreWeave (CRWV)</td>
+          <td>Tue, Nov 10 — Post-mkt</td>
+          <td>−$1.45</td>
+        </tr>
+        <tr>
+          <td>Applied Materials (AMAT)</td>
+          <td>Wed, Nov 12 — Post-mkt</td>
+          <td>$4.06</td>
+        </tr>
+        <tr>
+          <td>Cisco Systems (CSCO)</td>
+          <td>Wed, Nov 12 — Post-mkt</td>
+          <td>$1.15</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+  <div class="container">
+    <span class="brand">Market Quick Take · Monday, 9 November 2026</span>
+    <span class="disclaimer">For informational purposes only. Not investment advice.</span>
+  </div>
+</div>
+
+</body>
+</html>
