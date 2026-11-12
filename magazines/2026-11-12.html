@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Market Quick Take · 12 November 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: #ffffff;
+    color: #1a2332;
+  }
+
+  .container {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  /* MASTHEAD */
+  .masthead {
+    border-top: 3px solid #003366;
+    padding: 32px 0 20px;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  .masthead-title {
+    font-size: 42px;
+    font-weight: 700;
+    color: #003366;
+    letter-spacing: -0.5px;
+    line-height: 1.1;
+  }
+  .masthead-date {
+    font-size: 13px;
+    font-weight: 400;
+    color: #6b7280;
+    margin-top: 6px;
+  }
+
+  /* SNAPSHOT BAR */
+  .snapshot-bar {
+    background: #f1f5f9;
+    padding: 12px 0;
+    width: 100%;
+  }
+  .snapshot-inner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 0;
+    align-items: center;
+  }
+  .chip {
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #1a2332;
+    white-space: nowrap;
+    padding: 0 10px;
+  }
+  .chip + .chip::before {
+    content: '|';
+    margin-right: 10px;
+    color: #9ca3af;
+  }
+  .chip-label { color: #6b7280; }
+  .chip-value { margin: 0 2px; }
+  .chip-change { }
+  .positive { color: #16a34a; }
+  .negative { color: #dc2626; }
+  .neutral { color: #6b7280; }
+
+  /* EDITOR'S BRIEF */
+  .editors-brief {
+    font-size: 18px;
+    font-weight: 400;
+    font-style: italic;
+    color: #374151;
+    line-height: 1.65;
+    max-width: 760px;
+    margin: 28px 0;
+    border-left: 3px solid #003366;
+    padding-left: 16px;
+  }
+
+  /* SECTIONS */
+  .section-label {
+    font-size: 11px;
+    font-weight: 500;
+    color: #003366;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 6px;
+    display: block;
+  }
+  .section-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1a2332;
+    margin-bottom: 10px;
+    line-height: 1.2;
+  }
+  .section-body {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.8;
+    color: #374151;
+  }
+  .section-body ul {
+    padding-left: 8px;
+    list-style: disc;
+    list-style-position: inside;
+  }
+  .section-body li {
+    margin-bottom: 6px;
+  }
+  .section-divider {
+    border: none;
+    border-top: 1px solid #e5e7eb;
+    margin: 28px 0;
+  }
+
+  /* WATCH pill */
+  .watch-pill {
+    display: inline-block;
+    background: #fef3c7;
+    color: #b45309;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 500;
+    padding: 2px 8px;
+    margin-bottom: 8px;
+    letter-spacing: 0.5px;
+  }
+
+  /* EARNINGS TABLE */
+  .earnings-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #e5e7eb;
+    font-size: 13px;
+    font-weight: 400;
+  }
+  .earnings-table th {
+    background: #f1f5f9;
+    color: #374151;
+    font-weight: 600;
+    padding: 8px 12px;
+    text-align: left;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  .earnings-table td {
+    padding: 8px 12px;
+    border-bottom: 1px solid #e5e7eb;
+    color: #374151;
+  }
+  .earnings-table tr:last-child td { border-bottom: none; }
+  .earnings-table .ticker { font-weight: 600; color: #1a2332; }
+  .earnings-table .estimate { color: #003366; font-weight: 500; }
+
+  /* FOOTER */
+  .footer {
+    background: #f1f5f9;
+    border-top: 1px solid #e5e7eb;
+    margin-top: 48px;
+    padding: 20px 0;
+  }
+  .footer-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .footer-brand {
+    font-size: 12px;
+    font-weight: 400;
+    color: #6b7280;
+  }
+  .footer-disclaimer {
+    font-size: 12px;
+    font-weight: 400;
+    color: #9ca3af;
+  }
+</style>
+</head>
+<body>
+
+<!-- MASTHEAD -->
+<div class="container">
+  <div class="masthead">
+    <div class="masthead-title">MARKET QUICK TAKE</div>
+    <div class="masthead-date">Thursday, 12 November 2026</div>
+  </div>
+</div>
+
+<!-- SNAPSHOT BAR -->
+<div class="snapshot-bar">
+  <div class="container">
+    <div class="snapshot-inner">
+      <div class="chip">
+        <span class="chip-label">SPY</span>
+        <span class="chip-value"> · 759.81 · </span>
+        <span class="chip-change positive">+1.32%</span>
+      </div>
+      <div class="chip">
+        <span class="chip-label">QQQ</span>
+        <span class="chip-value"> · 690.38 · </span>
+        <span class="chip-change positive">+2.31%</span>
+      </div>
+      <div class="chip">
+        <span class="chip-label">IWM</span>
+        <span class="chip-value"> · 283.09 · </span>
+        <span class="chip-change positive">+0.89%</span>
+      </div>
+      <div class="chip">
+        <span class="chip-label">VIX</span>
+        <span class="chip-value"> · </span>
+        <span class="chip-change neutral">N/A</span>
+      </div>
+      <div class="chip">
+        <span class="chip-label">US10Y</span>
+        <span class="chip-value"> · 4.88%</span>
+      </div>
+      <div class="chip">
+        <span class="chip-label">US2Y</span>
+        <span class="chip-value"> · 4.56%</span>
+      </div>
+      <div class="chip">
+        <span class="chip-label">EUR/USD</span>
+        <span class="chip-value"> · 1.1079</span>
+      </div>
+      <div class="chip">
+        <span class="chip-label">GOLD</span>
+        <span class="chip-value"> · $3,960.60</span>
+      </div>
+      <div class="chip">
+        <span class="chip-label">WTI</span>
+        <span class="chip-value"> · $99.64</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- EDITOR'S BRIEF -->
+<div class="container">
+  <p class="editors-brief">
+    Equities staged a broad-based rally Wednesday, led by large-cap technology as NVIDIA's earnings countdown drew buyers into semiconductors — with QQQ surging 2.31% against SPY's 1.32% gain. Yields remain structurally elevated with the 10-year at 4.88%, while gold's approach toward $4,000/oz and WTI near $100/bbl signal lingering commodity and macro risk premiums.
+  </p>
+
+  <!-- SECTION 1: MARKET DRIVERS -->
+  <span class="section-label">Section 01</span>
+  <h2 class="section-title">Market Drivers</h2>
+  <div class="section-body">
+    <ul>
+      <li><strong>Semiconductor surge:</strong> The Philadelphia Semiconductor proxy (SOXL) gained 17.86% on heavy volume as investors positioned ahead of NVIDIA's earnings on November 17. INTC added 7.46%, while CRWV jumped 24.71%, reflecting broad momentum in the AI infrastructure trade.</li>
+      <li><strong>Tech outperformance:</strong> QQQ's 2.31% advance significantly outpaced the broader SPY gain of 1.32% and small-cap IWM at 0.89%, signalling a rotation back into mega-cap growth amid persistent rate pressure on smaller companies.</li>
+      <li><strong>Commodity pressure building:</strong> Gold pressing toward $3,960/oz and WTI crude approaching the $100/bbl psychological threshold are adding an inflationary undercurrent, keeping rate expectations from drifting lower.</li>
+      <li><strong>Earnings season in focus:</strong> With AMAT and CSCO reporting after the bell, and NVDA, Disney, and Home Depot all due later this week, earnings risk is a dominant near-term driver across sectors.</li>
+    </ul>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 2: MACRO -->
+  <span class="section-label">Section 02</span>
+  <h2 class="section-title">Macro</h2>
+  <div class="section-body">
+    <p>The rate backdrop remains unambiguously restrictive, with the 10-year Treasury at 4.88% and the 2-year at 4.56%, leaving real yields elevated across the curve. The yield curve has steepened modestly to a +32bps positive spread, suggesting markets may be pricing in an eventual easing cycle while acknowledging that the Fed has little room to pivot near-term. USD/JPY above 159 continues to highlight the divergence between the Fed's hold-and-watch posture and the Bank of Japan's cautious normalisation path, sustaining yen carry dynamics that could unwind sharply on any dovish US data surprise.</p>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 3: EQUITIES -->
+  <span class="section-label">Section 03</span>
+  <h2 class="section-title">Equities</h2>
+  <div class="section-body">
+    <p>SPY gained 1.32% to close at 759.81, while QQQ outperformed sharply with a 2.31% move to 690.38 — confirming tech's renewed leadership. Small-caps (IWM +0.89% to 283.09) trailed the large-cap indices, a pattern consistent with a high-rate environment that disproportionately pressures smaller, credit-dependent firms.</p>
+    <p style="margin-top: 12px;"><strong>Notable movers:</strong></p>
+    <ul style="margin-top: 8px;">
+      <li><strong>NVIDIA (NVDA) +2.87%</strong> to $173.73 on volume of 267M shares — the highest on the most-active list among large-caps, reflecting broad pre-earnings positioning ahead of its November 17 report (consensus EPS: $2.49).</li>
+      <li><strong>SOXL (Direxion Semi Bull 3×) +17.86%</strong> to $66.07 on 219M shares, underscoring the intensity of leveraged demand in the semiconductor complex. Inverse SOXS fell 18.12%.</li>
+    </ul>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 4: FIXED INCOME (renumbered from 5) -->
+  <span class="section-label">Section 04</span>
+  <h2 class="section-title">Fixed Income</h2>
+  <div class="section-body">
+    <p>The US 10-year Treasury yield stands at <strong>4.88%</strong>, while the 2-year yields <strong>4.56%</strong>, producing a <strong>+32bps</strong> positive spread — a curve that has steepened from near-inversion levels seen earlier in the cycle. The steepening reflects the market's tentative acceptance that short rates may peak while long-end inflation and fiscal risk premiums remain sticky. At current levels, Treasuries continue to compete credibly with equities on a risk-adjusted basis, limiting the multiple expansion available to growth stocks despite Wednesday's rally.</p>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 5: CURRENCIES (renumbered from 6) -->
+  <span class="section-label">Section 05</span>
+  <h2 class="section-title">Currencies</h2>
+  <div class="section-body">
+    <p><strong>EUR/USD at 1.1079</strong> reflects relative dollar resilience underpinned by the Fed's higher-for-longer stance and structurally elevated US yields versus European peers. The pair has stabilised above 1.10, suggesting the market is not pricing an aggressive USD breakout but respecting support for the euro on any European growth surprise. <strong>USD/JPY at 159.83</strong> remains in extended yen-weakness territory; the BOJ's cautious pace of policy normalisation versus the Fed's elevated hold keeps carry trades active, though any sharp US data downturn could trigger rapid JPY short-covering and dislocated cross-asset moves.</p>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 6: COMMODITIES (renumbered from 7) -->
+  <span class="section-label">Section 06</span>
+  <h2 class="section-title">Commodities</h2>
+  <div class="section-body">
+    <p><strong>Gold spot at $3,960.60/oz</strong> is within striking distance of the $4,000 psychological milestone, sustained by central bank accumulation trends, persistent geopolitical uncertainty, and demand from investors hedging dollar debasement risk. The metal's advance despite elevated real yields is notably unusual and underscores structural demand shifts. <strong>WTI crude at $99.64/bbl</strong> is flirting with the $100 threshold, a level that carries both psychological and policy significance — a sustained breach could renew consumer inflation pressure and complicate the Fed's data-dependent calculus heading into the December meeting.</p>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 7: EARNINGS CALENDAR (renumbered from 9) -->
+  <span class="section-label">Section 07</span>
+  <h2 class="section-title">Earnings Radar</h2>
+  <div class="section-body" style="margin-bottom: 16px;">
+    <p>Key earnings over the next five trading days (Nov 12–18). NVIDIA is the marquee event — its data-centre revenue guidance will set the tone for the entire AI infrastructure trade.</p>
+  </div>
+  <table class="earnings-table">
+    <thead>
+      <tr>
+        <th>Company</th>
+        <th>Date</th>
+        <th>Time</th>
+        <th>Consensus EPS</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="ticker">AMAT</span> — Applied Materials</td>
+        <td>Nov 12</td>
+        <td>Post-market</td>
+        <td class="estimate">$4.06</td>
+      </tr>
+      <tr>
+        <td><span class="ticker">CSCO</span> — Cisco Systems</td>
+        <td>Nov 12</td>
+        <td>Post-market</td>
+        <td class="estimate">$1.15</td>
+      </tr>
+      <tr>
+        <td><span class="ticker">DIS</span> — Walt Disney</td>
+        <td>Nov 17</td>
+        <td>Pre-market</td>
+        <td class="estimate">$1.67</td>
+      </tr>
+      <tr>
+        <td><span class="ticker">HD</span> — Home Depot</td>
+        <td>Nov 17</td>
+        <td>Pre-market</td>
+        <td class="estimate">$3.86</td>
+      </tr>
+      <tr>
+        <td><span class="ticker">NVDA</span> — NVIDIA</td>
+        <td>Nov 17</td>
+        <td>Post-market</td>
+        <td class="estimate">$2.49</td>
+      </tr>
+      <tr>
+        <td><span class="ticker">TGT</span> — Target</td>
+        <td>Nov 18</td>
+        <td>Pre-market</td>
+        <td class="estimate">$2.03</td>
+      </tr>
+      <tr>
+        <td><span class="ticker">LOW</span> — Lowe's</td>
+        <td>Nov 18</td>
+        <td>Pre-market</td>
+        <td class="estimate">$2.85</td>
+      </tr>
+      <tr>
+        <td><span class="ticker">PANW</span> — Palo Alto Networks</td>
+        <td>Nov 18</td>
+        <td>Post-market</td>
+        <td class="estimate">$0.52</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div><!-- end .container -->
+
+<!-- FOOTER -->
+<div class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <span class="footer-brand">Market Quick Take · Thursday, 12 November 2026</span>
+      <span class="footer-disclaimer">For informational purposes only. Not investment advice.</span>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
