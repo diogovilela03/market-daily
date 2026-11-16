@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Market Quick Take · 16 November 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: #ffffff;
+    color: #1a2332;
+  }
+
+  .container {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  /* MASTHEAD */
+  .masthead {
+    border-top: 3px solid #003366;
+    padding: 32px 0 20px;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  .masthead-title {
+    font-size: 42px;
+    font-weight: 700;
+    color: #003366;
+    letter-spacing: -0.5px;
+    line-height: 1;
+  }
+  .masthead-date {
+    font-size: 13px;
+    font-weight: 400;
+    color: #6b7280;
+    margin-top: 8px;
+  }
+
+  /* SNAPSHOT BAR */
+  .snapshot-bar {
+    background: #f1f5f9;
+    padding: 12px 0;
+    width: 100%;
+  }
+  .snapshot-inner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 0;
+    align-items: center;
+  }
+  .chip {
+    font-size: 12px;
+    font-weight: 500;
+    color: #1a2332;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    white-space: nowrap;
+    padding: 0 10px;
+  }
+  .chip + .chip::before {
+    content: '|';
+    margin-right: 10px;
+    color: #9ca3af;
+  }
+  .pos { color: #16a34a; }
+  .neg { color: #dc2626; }
+  .chip span.label { color: #6b7280; }
+
+  /* EDITOR'S BRIEF */
+  .editors-brief {
+    font-size: 18px;
+    font-weight: 400;
+    font-style: italic;
+    color: #374151;
+    max-width: 760px;
+    margin: 28px 0;
+    border-left: 3px solid #003366;
+    padding-left: 16px;
+    line-height: 1.7;
+  }
+
+  /* SECTIONS */
+  .section {
+    margin: 0;
+  }
+  .section-divider {
+    border: none;
+    border-top: 1px solid #e5e7eb;
+    margin: 28px 0;
+  }
+  .section-label {
+    font-size: 11px;
+    font-weight: 500;
+    color: #003366;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 6px;
+  }
+  .section-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1a2332;
+    margin-bottom: 10px;
+    line-height: 1.2;
+  }
+  .section-body {
+    font-size: 15px;
+    font-weight: 400;
+    color: #374151;
+    line-height: 1.8;
+  }
+  .section-body ul {
+    padding-left: 8px;
+    list-style: disc;
+    list-style-position: inside;
+  }
+  .section-body ul li {
+    margin-bottom: 6px;
+  }
+  .section-body p + p {
+    margin-top: 10px;
+  }
+
+  /* WATCH PILL */
+  .watch-pill {
+    display: inline-block;
+    background: #fef3c7;
+    color: #b45309;
+    font-size: 11px;
+    font-weight: 500;
+    border-radius: 4px;
+    padding: 2px 8px;
+    margin-bottom: 6px;
+  }
+
+  /* EARNINGS TABLE */
+  .earnings-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    margin-top: 12px;
+  }
+  .earnings-table th {
+    text-align: left;
+    font-weight: 600;
+    color: #1a2332;
+    padding: 8px 12px;
+    border: 1px solid #e5e7eb;
+    background: #f1f5f9;
+  }
+  .earnings-table td {
+    padding: 8px 12px;
+    border: 1px solid #e5e7eb;
+    color: #374151;
+    vertical-align: top;
+  }
+  .earnings-table tr:nth-child(even) td {
+    background: #f9fafb;
+  }
+
+  /* FOOTER */
+  .footer {
+    background: #f1f5f9;
+    border-top: 1px solid #e5e7eb;
+    margin-top: 48px;
+    padding: 20px 0;
+  }
+  .footer-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .footer-brand {
+    font-size: 12px;
+    font-weight: 400;
+    color: #6b7280;
+  }
+  .footer-disclaimer {
+    font-size: 12px;
+    font-weight: 400;
+    color: #9ca3af;
+  }
+</style>
+</head>
+<body>
+
+<!-- MASTHEAD -->
+<div class="container">
+  <div class="masthead">
+    <div class="masthead-title">MARKET QUICK TAKE</div>
+    <div class="masthead-date">Monday, 16 November 2026 &nbsp;·&nbsp; Data as of Friday 13 November close</div>
+  </div>
+</div>
+
+<!-- SNAPSHOT BAR -->
+<div class="snapshot-bar">
+  <div class="container">
+    <div class="snapshot-inner">
+      <div class="chip"><span class="label">SPY</span> · 754.37 · <span class="neg">-0.36%</span></div>
+      <div class="chip"><span class="label">QQQ</span> · 679.89 · <span class="neg">-1.20%</span></div>
+      <div class="chip"><span class="label">IWM</span> · 277.54 · <span class="neg">-0.32%</span></div>
+      <div class="chip"><span class="label">VIX</span> · N/A</div>
+      <div class="chip"><span class="label">US10Y</span> · 5.10%</div>
+      <div class="chip"><span class="label">US2Y</span> · 4.86%</div>
+      <div class="chip"><span class="label">EUR/USD</span> · 1.1024</div>
+      <div class="chip"><span class="label">GOLD</span> · $3,855</div>
+      <div class="chip"><span class="label">WTI</span> · $89.62</div>
+    </div>
+  </div>
+</div>
+
+<!-- EDITOR'S BRIEF -->
+<div class="container">
+  <div class="editors-brief">
+    Equities ended Friday's session in the red as the 10-year Treasury yield climbed to 5.10%, reviving valuation pressure on growth stocks — the Nasdaq shed more than 1% with semiconductors leading the decline. Dollar strength reached notable levels against the yen as markets brace for a heavy earnings week anchored by NVIDIA's report on Monday evening.
+  </div>
+</div>
+
+<!-- MAIN SECTIONS -->
+<div class="container">
+
+  <!-- SECTION 1: MARKET DRIVERS -->
+  <div class="section">
+    <div class="section-label">Section 1</div>
+    <div class="section-title">Market Drivers</div>
+    <div class="section-body">
+      <ul>
+        <li>Rising Treasury yields dominated Friday's tape — the 10-year reached 5.10% (up from 4.98% on Tuesday), reigniting rate-driven multiple compression across technology and growth equities.</li>
+        <li>Semiconductor stocks bore the heaviest selling: NVIDIA fell 2.0% to $162.85 on massive volume (360M shares) ahead of its fiscal Q3 earnings report scheduled for after the close on November 17; the 3× leveraged SOXL ETF plunged 10.97%, signalling broad sector risk-off.</li>
+        <li>Dollar strength broadened against the yen — USD/JPY extended to 159.49, approaching levels that have historically attracted Bank of Japan commentary, compressing the yen carry trade and pressuring EM assets.</li>
+        <li>Gold held firm above $3,855/oz, underscoring persistent haven demand despite a rising-rate backdrop, while WTI crude slipped to $89.62 — well off its early-November peak near $94 — on easing near-term supply concerns.</li>
+      </ul>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 2: MACRO -->
+  <div class="section">
+    <div class="section-label">Section 2</div>
+    <div class="section-title">Macro</div>
+    <div class="section-body">
+      <p>The Federal Reserve's higher-for-longer posture is now being priced into the long end of the curve with renewed conviction — the 10-year yield at 5.10% represents a meaningful tightening of financial conditions independently of Fed action. The 2-year yield at 4.86% produces a 24bp positive term spread, suggesting markets expect rates to remain elevated while incrementally pricing in longer-duration risk. The dollar's relentless climb (USD/JPY 159.49) reflects the wide US-Japan yield differential and continues to put pressure on the Bank of Japan's yield-curve-control framework; any shift in BOJ policy could transmit quickly to global duration and risk assets.</p>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 3: EQUITIES -->
+  <div class="section">
+    <div class="section-label">Section 3</div>
+    <div class="section-title">Equities</div>
+    <div class="section-body">
+      <p>All three major US equity benchmarks closed lower Friday. SPY ended at 754.37 (−0.36%), QQQ at 679.89 (−1.20%), and IWM at 277.54 (−0.32%) — the Nasdaq's underperformance reflects rate sensitivity in mega-cap technology. QQQ has now retraced roughly 10% from its late-October highs above $715.</p>
+      <p>Among notable movers, <strong>NVIDIA (NVDA)</strong> declined 2.0% to $162.85 on the heaviest volume of any large-cap name (360M shares), as investors position cautiously ahead of Monday's earnings. <strong>Intel (INTC)</strong> fell 2.5% to $59.66 on significant volume, echoing broad semiconductor sector weakness confirmed by SOXL's 10.97% single-day drop.</p>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 4: FIXED INCOME (renumbered from 5) -->
+  <div class="section">
+    <div class="section-label">Section 4</div>
+    <div class="section-title">Fixed Income</div>
+    <div class="section-body">
+      <p>The US 10-year Treasury yield stands at <strong>5.10%</strong> (as of November 12), up sharply from 4.88% at the start of the week — a move of 22bp in three sessions. The 2-year yield reached <strong>4.86%</strong>, giving a 2Y–10Y term spread of <strong>+24bp</strong>: positively sloped, with mild steepening underway. The normal curve shape suggests markets are not yet pricing near-term recession but are demanding a rising term premium as supply-demand dynamics for US Treasuries remain strained. The 10-year at 5.10% is a psychologically important threshold — a sustained break above this level would increase the probability of renewed equity de-rating.</p>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 5: CURRENCIES (renumbered from 6) -->
+  <div class="section">
+    <div class="section-label">Section 5</div>
+    <div class="section-title">Currencies</div>
+    <div class="section-body">
+      <p><strong>EUR/USD</strong> trades at 1.1024, with the euro maintaining a marginal foothold above 1.10 against a broadly firmer dollar. Near-term euro direction will be driven by ECB guidance and eurozone growth data as growth differentials with the US remain unfavorable for the common currency.</p>
+      <p><strong>USD/JPY</strong> extended to 159.49 — its highest level in several months — as the gap between US yields (10Y: 5.10%) and Japanese government bond yields remains near historic wides. The move approaches levels (160+) that previously prompted Bank of Japan intervention discussions and unscheduled comments from Japanese officials. Any verbal or actual BOJ action could trigger a rapid reversal in yen crosses and unwind carry positions.</p>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 6: COMMODITIES (renumbered from 7) -->
+  <div class="section">
+    <div class="section-label">Section 6</div>
+    <div class="section-title">Commodities</div>
+    <div class="section-body">
+      <p><strong>Gold</strong> spot holds at $3,855.07/oz — a resilient level given the headwinds of a strong dollar and elevated real rates. The metal's sustained altitude reflects persistent geopolitical risk premia and central bank accumulation trends that continue to underpin demand independent of the rate cycle.</p>
+      <p><strong>WTI crude</strong> last traded at $89.62/bbl, down from $94.37 on November 6 — a decline of roughly 5% over the week. The retreat signals either easing of supply fears or demand destruction concerns emerging as global growth expectations moderate. OPEC+ policy and Middle East developments remain key swing factors for near-term price direction.</p>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 7: EARNINGS CALENDAR (renumbered from 9) -->
+  <div class="section">
+    <div class="section-label">Section 7</div>
+    <div class="section-title">Earnings Radar</div>
+    <div class="section-body">
+      <p>A marquee earnings week begins immediately — NVIDIA's report after Monday's close is the pivotal event, with the AI infrastructure bellwether expected to deliver $2.49 EPS. Any guidance revision or data-centre commentary will set the tone for the semiconductor sector and potentially the broader market. Consumer discretionary takes centre stage Tuesday–Wednesday with Home Depot, Lowe's, and Target reporting, followed by Walmart on Wednesday — a rare window into the state of the US consumer heading into the holiday season.</p>
+      <table class="earnings-table">
+        <thead>
+          <tr>
+            <th>Company</th>
+            <th>Date</th>
+            <th>Est. EPS</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>NVIDIA (NVDA)</strong></td>
+            <td>Mon 17 Nov</td>
+            <td>$2.49</td>
+          </tr>
+          <tr>
+            <td>Home Depot (HD)</td>
+            <td>Mon 17 Nov</td>
+            <td>$3.87</td>
+          </tr>
+          <tr>
+            <td>Walt Disney (DIS)</td>
+            <td>Mon 17 Nov</td>
+            <td>$1.67</td>
+          </tr>
+          <tr>
+            <td>Lowe's (LOW)</td>
+            <td>Tue 18 Nov</td>
+            <td>$2.86</td>
+          </tr>
+          <tr>
+            <td>Target (TGT)</td>
+            <td>Tue 18 Nov</td>
+            <td>$2.03</td>
+          </tr>
+          <tr>
+            <td>Palo Alto Networks (PANW)</td>
+            <td>Tue 18 Nov</td>
+            <td>$0.52</td>
+          </tr>
+          <tr>
+            <td>Walmart (WMT)</td>
+            <td>Wed 19 Nov</td>
+            <td>$0.64</td>
+          </tr>
+          <tr>
+            <td>Keysight Technologies (KEYS)</td>
+            <td>Wed 19 Nov</td>
+            <td>$3.09</td>
+          </tr>
+          <tr>
+            <td>PDD Holdings (PDD)</td>
+            <td>Wed 19 Nov</td>
+            <td>$2.61</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</div><!-- /.container -->
+
+<!-- FOOTER -->
+<div class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <span class="footer-brand">Market Quick Take · Monday, 16 November 2026</span>
+      <span class="footer-disclaimer">For informational purposes only. Not investment advice.</span>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
