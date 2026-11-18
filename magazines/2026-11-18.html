@@ -1,1 +1,202 @@
-PLACEHOLDER
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Market Quick Take</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #ffffff; color: #1a2332; font-family: 'Inter', sans-serif; }
+
+  .container { max-width: 860px; margin: 0 auto; padding: 0 24px; }
+
+  .masthead { border-top: 3px solid #003366; padding: 32px 0 20px; border-bottom: 1px solid #e5e7eb; }
+  .masthead-title { font-size: 42px; font-weight: 700; color: #003366; letter-spacing: -0.5px; }
+  .masthead-date { font-size: 13px; font-weight: 400; color: #6b7280; margin-top: 6px; }
+
+  .snapshot-bar { background: #f1f5f9; padding: 12px 0; }
+  .snapshot-inner { display: flex; flex-wrap: wrap; align-items: center; }
+  .chip { font-size: 12px; font-weight: 500; color: #1a2332; text-transform: uppercase; padding: 4px 12px; white-space: nowrap; line-height: 1.6; }
+  .chip + .chip::before { content: '|'; margin-right: 12px; color: #9ca3af; }
+  .pos { color: #16a34a; }
+  .neg { color: #dc2626; }
+  .muted { color: #6b7280; }
+
+  .editors-brief { font-size: 18px; font-weight: 400; font-style: italic; color: #374151; max-width: 760px; margin: 28px 0; border-left: 3px solid #003366; padding-left: 16px; line-height: 1.7; }
+
+  .section { }
+  .section-label { font-size: 11px; font-weight: 500; color: #003366; text-transform: uppercase; letter-spacing: 3px; margin-bottom: 6px; }
+  .section-title { font-size: 24px; font-weight: 700; color: #1a2332; margin-bottom: 10px; }
+  .section-body { font-size: 15px; font-weight: 400; line-height: 1.8; color: #374151; }
+  .section-body ul { padding-left: 20px; }
+  .section-body ul li { margin-bottom: 6px; }
+  .section-body p + p { margin-top: 10px; }
+
+  .divider { border: none; border-top: 1px solid #e5e7eb; margin: 28px 0; }
+
+  .watch-pill { display: inline-block; color: #b45309; background: #fef3c7; border-radius: 4px; font-size: 11px; font-weight: 500; padding: 2px 8px; margin-bottom: 8px; }
+
+  .earnings-table { width: 100%; border-collapse: collapse; border: 1px solid #e5e7eb; font-size: 13px; font-weight: 400; margin-top: 12px; }
+  .earnings-table th { background: #f1f5f9; color: #1a2332; font-weight: 600; padding: 10px 14px; text-align: left; border-bottom: 1px solid #e5e7eb; }
+  .earnings-table td { padding: 9px 14px; border-bottom: 1px solid #e5e7eb; color: #374151; }
+  .earnings-table tr:last-child td { border-bottom: none; }
+
+  footer { background: #f1f5f9; border-top: 1px solid #e5e7eb; margin-top: 48px; padding: 20px 0; }
+  .footer-inner { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; }
+  .footer-brand { font-size: 12px; font-weight: 400; color: #6b7280; }
+  .footer-disclaimer { font-size: 12px; font-weight: 400; color: #9ca3af; }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="masthead">
+    <div class="masthead-title">MARKET QUICK TAKE</div>
+    <div class="masthead-date">Wednesday, 18 November 2026</div>
+  </div>
+</div>
+
+<div class="snapshot-bar">
+  <div class="container">
+    <div class="snapshot-inner">
+      <span class="chip">SPY · $732.44 · <span class="neg">−1.01%</span></span>
+      <span class="chip">QQQ · $656.95 · <span class="neg">−0.73%</span></span>
+      <span class="chip">IWM · $269.05 · <span class="neg">−1.43%</span></span>
+      <span class="chip">VIX · N/A</span>
+      <span class="chip">US10Y · 5.12%</span>
+      <span class="chip">US2Y · 4.83%</span>
+      <span class="chip">EUR/USD · 1.0981</span>
+      <span class="chip">GOLD · $3,774</span>
+      <span class="chip">WTI · $89.62</span>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+
+  <p class="editors-brief">U.S. equities sold off across the board on Tuesday, with small caps bearing the brunt of pressure as the Russell 2000 shed 1.43% while the S&amp;P 500 and Nasdaq 100 declined 1.01% and 0.73% respectively. With the 10-year Treasury yield holding at 5.12% — firmly in restrictive territory — the path of least resistance for rate-sensitive growth assets remains challenged heading into a busy week of retail earnings.</p>
+
+  <div class="section">
+    <div class="section-label">01 · Analysis</div>
+    <div class="section-title">Market Drivers</div>
+    <div class="section-body">
+      <ul>
+        <li>Broad-based equity weakness dominated Tuesday's session: SPY (−1.01%), QQQ (−0.73%), and IWM (−1.43%) all closed in the red, with small caps underperforming as elevated borrowing costs disproportionately pressure smaller, more leveraged businesses.</li>
+        <li>The 10-year Treasury yield at 5.12% continues to act as a structural ceiling for equity valuations, sustaining restrictive financial conditions and compressing the equity risk premium.</li>
+        <li>USD/JPY trading at 159.27 reflects persistent divergence between Fed and BoJ policy stances; the pair approaches levels historically associated with verbal or direct BoJ intervention.</li>
+        <li>Gold at $3,774/oz remains near multi-year highs, signalling sustained safe-haven demand driven by geopolitical uncertainty, central bank accumulation, and macro tail-risk hedging.</li>
+      </ul>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <div class="section">
+    <div class="section-label">02 · Analysis</div>
+    <div class="section-title">Macro</div>
+    <div class="section-body">
+      <p>The Federal Reserve's “higher for longer” posture remains firmly embedded in market pricing, with the 10-year Treasury at 5.12% and the 2-year at 4.83% producing a +29 basis point positive curve spread — a mildly steepening but historically compressed shape. While positive slope suggests markets are not yet pricing imminent recession, the absolute yield level continues to tighten financial conditions and suppress risk appetite. USD/JPY at 159.27 underscores the Bank of Japan's outlier accommodative stance; with the pair approaching 160, BoJ verbal intervention risk is elevated and any sharp retracement could carry cross-asset implications.</p>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <div class="section">
+    <div class="section-label">03 · Analysis</div>
+    <div class="section-title">Equities</div>
+    <div class="section-body">
+      <p>All three major U.S. equity benchmarks closed lower on November 17: <strong>SPY</strong> fell $7.51 to $732.44 (−1.01%), <strong>QQQ</strong> shed $4.80 to $656.95 (−0.73%), and <strong>IWM</strong> declined $3.89 to $269.05 (−1.43%). Small caps' relative underperformance reflects heightened sensitivity to the elevated rate environment and tighter credit conditions for smaller issuers.</p>
+      <p>Among notable single-name movers: <strong>SLS</strong> surged +156.4% to $19.15 on extraordinary volume of 116 million shares, consistent with a major catalyst event (clinical, M&amp;A, or regulatory). <strong>CUE</strong> (Cue Biopharma) collapsed −79.9% to $2.83 on 4 million shares, extending a dramatic drawdown in line with adverse clinical or business-development news.</p>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <div class="section">
+    <div class="section-label">04 · Analysis</div>
+    <div class="section-title">Fixed Income</div>
+    <div class="section-body">
+      <p>The U.S. Treasury curve sits in mildly positive territory: the <strong>10-year yield at 5.12%</strong> and the <strong>2-year at 4.83%</strong> produce a +29 basis point spread. The curve's positive slope — having recently been deeply inverted — may reflect shifting expectations that easing is a distant but eventual reality. At 5.12%, the 10-year remains well above levels consistent with neutral monetary policy, sustaining the restrictive impulse on corporate borrowing costs, mortgage rates, and equity discount rates. The absence of a fresh inversion signal is modestly constructive for the economic outlook, but the absolute rate environment remains a headwind.</p>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <div class="section">
+    <div class="section-label">05 · Analysis</div>
+    <div class="section-title">Currencies</div>
+    <div class="section-body">
+      <p><strong>EUR/USD at 1.0981</strong> holds modestly below the 1.10 figure, with the euro finding limited support amid European growth concerns and an ECB easing path that lags market expectations. The dollar retains structural strength from the yield differential backdrop. <strong>USD/JPY at 159.27</strong> continues to test multi-decade yen weakness — approaching the 160 threshold that previously triggered direct BoJ FX intervention in 2024. Market participants remain alert to any official commentary from Tokyo, as a snap retracement in USD/JPY could carry significant cross-asset knock-on effects into risk assets and JGB markets.</p>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <div class="section">
+    <div class="section-label">06 · Analysis</div>
+    <div class="section-title">Commodities</div>
+    <div class="section-body">
+      <p>Gold (XAU/USD) extended its elevated positioning to <strong>$3,774.34/oz</strong>, reflecting sustained demand for hard-asset safe-haven allocation. The metal's strength at these levels points to structural buying from central banks, geopolitical risk premia, and expectations that real yields will eventually recede from current peaks. WTI crude oil's most recent closing level stands at <strong>$89.62/bbl</strong> (as of November 11), with energy markets influenced by OPEC+ production discipline, dollar strength dynamics, and demand-side uncertainty from decelerating global industrial output.</p>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <div class="section">
+    <div class="section-label">07 · Earnings Radar</div>
+    <div class="section-title">Earnings Calendar</div>
+    <div class="section-body">
+      <p>Key earnings releases over the next five trading days. Retail bellwethers Lowe's and Target report today (November 18), offering a read on the U.S. consumer amid persistent cost pressures. Intuit and PDD Holdings follow Wednesday, while Dell rounds out the week with AI infrastructure demand commentary in focus.</p>
+      <table class="earnings-table">
+        <thead>
+          <tr>
+            <th>Company</th>
+            <th>Date</th>
+            <th>EPS Estimate</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Lowe's Companies (LOW)</td>
+            <td>Nov 18 · Pre-Market</td>
+            <td>$2.86</td>
+          </tr>
+          <tr>
+            <td>Target Corporation (TGT)</td>
+            <td>Nov 18 · Pre-Market</td>
+            <td>$2.04</td>
+          </tr>
+          <tr>
+            <td>PDD Holdings (PDD)</td>
+            <td>Nov 19 · Pre-Market</td>
+            <td>$2.61</td>
+          </tr>
+          <tr>
+            <td>Intuit (INTU)</td>
+            <td>Nov 19 · Post-Market</td>
+            <td>$2.47</td>
+          </tr>
+          <tr>
+            <td>Dell Technologies (DELL)</td>
+            <td>Nov 24 · Post-Market</td>
+            <td>$6.41</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <span class="footer-brand">Market Quick Take · Wednesday, 18 November 2026</span>
+      <span class="footer-disclaimer">For informational purposes only. Not investment advice.</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
