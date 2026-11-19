@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Market Quick Take</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: #ffffff;
+    color: #1a2332;
+  }
+
+  .container {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  /* MASTHEAD */
+  .masthead {
+    border-top: 3px solid #003366;
+    padding: 32px 0 20px;
+  }
+  .masthead h1 {
+    font-size: 42px;
+    font-weight: 700;
+    color: #003366;
+    line-height: 1.1;
+    letter-spacing: -0.5px;
+  }
+  .masthead .date {
+    font-size: 13px;
+    font-weight: 400;
+    color: #6b7280;
+    margin-top: 6px;
+  }
+  .masthead-divider {
+    border: none;
+    border-bottom: 1px solid #e5e7eb;
+    margin-top: 20px;
+  }
+
+  /* SNAPSHOT BAR */
+  .snapshot-bar {
+    background: #f1f5f9;
+    padding: 12px 0;
+    width: 100%;
+  }
+  .snapshot-inner {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 0;
+    align-items: center;
+  }
+  .chip {
+    font-size: 12px;
+    font-weight: 500;
+    color: #1a2332;
+    text-transform: uppercase;
+    white-space: nowrap;
+    padding: 0 10px;
+    border-right: 1px solid #cbd5e1;
+  }
+  .chip:last-child { border-right: none; }
+  .chip .chip-label { color: #6b7280; }
+  .chip .chip-value { font-weight: 600; }
+  .pos { color: #16a34a; }
+  .neg { color: #dc2626; }
+
+  /* EDITOR'S BRIEF */
+  .editors-brief {
+    font-size: 18px;
+    font-weight: 400;
+    font-style: italic;
+    color: #374151;
+    line-height: 1.7;
+    max-width: 760px;
+    margin: 28px 0;
+    border-left: 3px solid #003366;
+    padding-left: 16px;
+  }
+
+  /* SECTIONS */
+  .section {
+    margin-bottom: 0;
+  }
+  .section-divider {
+    border: none;
+    border-bottom: 1px solid #e5e7eb;
+    margin: 28px 0;
+  }
+  .section-label {
+    font-size: 11px;
+    font-weight: 500;
+    color: #003366;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 6px;
+  }
+  .section-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1a2332;
+    margin-bottom: 10px;
+  }
+  .section-body {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.8;
+    color: #374151;
+  }
+  .section-body ul {
+    padding-left: 8px;
+    list-style: disc;
+    list-style-position: inside;
+  }
+  .section-body ul li {
+    margin-bottom: 6px;
+  }
+  .watch-pill {
+    display: inline-block;
+    background: #fef3c7;
+    color: #b45309;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 500;
+    padding: 2px 8px;
+    margin-bottom: 8px;
+  }
+
+  /* EARNINGS TABLE */
+  .earnings-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #e5e7eb;
+    font-size: 13px;
+    font-weight: 400;
+    margin-top: 12px;
+  }
+  .earnings-table th {
+    background: #f1f5f9;
+    color: #003366;
+    font-weight: 600;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 8px 12px;
+    text-align: left;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  .earnings-table td {
+    padding: 8px 12px;
+    border-bottom: 1px solid #e5e7eb;
+    color: #374151;
+  }
+  .earnings-table tr:last-child td { border-bottom: none; }
+  .earnings-table tr:nth-child(even) td { background: #f9fafb; }
+
+  /* FOOTER */
+  .footer {
+    background: #f1f5f9;
+    border-top: 1px solid #e5e7eb;
+    margin-top: 48px;
+    padding: 20px 0;
+  }
+  .footer-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .footer span {
+    font-size: 12px;
+    font-weight: 400;
+  }
+  .footer .footer-title { color: #6b7280; }
+  .footer .footer-disclaimer { color: #9ca3af; }
+</style>
+</head>
+<body>
+
+<!-- MASTHEAD -->
+<div class="container">
+  <div class="masthead">
+    <h1>MARKET QUICK TAKE</h1>
+    <div class="date">Wednesday, 19 November 2026</div>
+  </div>
+  <hr class="masthead-divider">
+</div>
+
+<!-- SNAPSHOT BAR -->
+<div class="snapshot-bar">
+  <div class="snapshot-inner">
+    <div class="chip">
+      <span class="chip-label">SPY · </span>
+      <span class="chip-value">730.20</span>
+      <span> · </span><span class="neg">−0.31%</span>
+    </div>
+    <div class="chip">
+      <span class="chip-label">QQQ · </span>
+      <span class="chip-value">659.51</span>
+      <span> · </span><span class="pos">+0.39%</span>
+    </div>
+    <div class="chip">
+      <span class="chip-label">IWM · </span>
+      <span class="chip-value">270.12</span>
+      <span> · </span><span class="pos">+0.40%</span>
+    </div>
+    <div class="chip">
+      <span class="chip-label">VIX · </span>
+      <span class="chip-value">N/A</span>
+    </div>
+    <div class="chip">
+      <span class="chip-label">US10Y · </span>
+      <span class="chip-value">5.10%</span>
+    </div>
+    <div class="chip">
+      <span class="chip-label">US2Y · </span>
+      <span class="chip-value">4.80%</span>
+    </div>
+    <div class="chip">
+      <span class="chip-label">EUR/USD · </span>
+      <span class="chip-value">1.0976</span>
+    </div>
+    <div class="chip">
+      <span class="chip-label">GOLD · </span>
+      <span class="chip-value">$3,734</span>
+    </div>
+    <div class="chip">
+      <span class="chip-label">WTI · </span>
+      <span class="chip-value">$89.53</span>
+    </div>
+  </div>
+</div>
+
+<!-- CONTENT -->
+<div class="container">
+
+  <!-- EDITOR'S BRIEF -->
+  <p class="editors-brief">
+    Equities delivered a split verdict on Wednesday — tech and small caps advanced while the broader S&P 500 edged lower — as the 10-year Treasury yield held near 5.10%, sustaining a high-rate backdrop that continues to filter through valuations. Gold trading above $3,700 and USD/JPY flirting with 160 signal that defensive positioning and dollar strength remain dominant themes heading into a dense earnings afternoon.
+  </p>
+
+  <!-- SECTION 1: MARKET DRIVERS -->
+  <div class="section">
+    <div class="section-label">Section 1</div>
+    <div class="section-title">Market Drivers</div>
+    <div class="section-body">
+      <ul>
+        <li>Tech divergence widened: QQQ added 0.39% while SPY shed 0.31%, extending a rotation into mega-cap growth names that have outperformed the equal-weight universe in recent weeks.</li>
+        <li>Elevated long-end yields (10Y at 5.10%) continue to cap multiple expansion; real rates remain restrictive even as inflation expectations edge lower, keeping equity bulls cautious on broad market exposure.</li>
+        <li>NVDA, the market's bellwether for AI-driven capex sentiment, was the most actively traded name on the session and declined 2.89%, raising questions about the durability of the AI spend cycle heading into 2027 guidance seasons.</li>
+        <li>A heavy earnings calendar — Alibaba, PDD Holdings, Intuit, Ross Stores, and Keysight all report today — introduces material event risk that may have driven pre-market repositioning and contributed to the intra-day divergence.</li>
+      </ul>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 2: MACRO -->
+  <div class="section">
+    <div class="section-label">Section 2</div>
+    <div class="section-title">Macro</div>
+    <div class="section-body">
+      <p>The US rates complex remains the dominant macro force, with the 10-year Treasury yield at 5.10% sustaining financial conditions that are meaningfully tighter than the prior two years. The Fed's higher-for-longer stance appears entrenched, with no catalyst for a near-term pivot visible in current data. USD/JPY pressing toward 160 adds a currency dimension — the Bank of Japan faces a difficult calculus between defending the yen and tolerating higher domestic borrowing costs, and any intervention decision could trigger sharp cross-asset volatility. Meanwhile, gold's sustained bid above $3,700/oz reflects ongoing demand for hard assets amid elevated nominal yields, suggesting institutional hedging rather than purely speculative momentum.</p>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 3: EQUITIES -->
+  <div class="section">
+    <div class="section-label">Section 3</div>
+    <div class="section-title">Equities</div>
+    <div class="section-body">
+      <p>The S&P 500 proxy (SPY) closed at $730.20, down 0.31% from Tuesday's $732.44, while the Nasdaq 100 (QQQ) advanced 0.39% to $659.51, affirming that large-cap tech continues to anchor performance. Small caps outpaced both on a percentage basis, with IWM gaining 0.40% to $270.12, suggesting selective risk appetite in cyclical and domestic-oriented names.</p>
+      <p style="margin-top: 10px;"><strong>Notable movers:</strong> NVDA declined 2.89% on massive volume (339M shares), signalling continued churn in semiconductor names after a prolonged re-rating. AKAN surged 96.59% on heavy volume (105M shares), one of several micro-cap names that posted triple-digit gains, likely on catalyst-driven moves rather than macro factors.</p>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 4: FIXED INCOME -->
+  <div class="section">
+    <div class="section-label">Section 4</div>
+    <div class="section-title">Fixed Income</div>
+    <div class="section-body">
+      <p>The 10-year Treasury yield stands at 5.10% (down from 5.12% the prior session), while the 2-year yields 4.80% (down from 4.83%), producing a 30bps positive curve slope. The curve is not inverted — a regime shift from the inversion that characterized much of 2022–2024 — but remains historically compressed relative to pre-2022 norms. A steepening trend over the past few sessions reflects the market's repricing of the long end, partly driven by term premium demands from investors wary of elevated deficits and limited appetite for extended duration at current levels. Corporate credit spreads are not directly available today, but the sustained 5% handle on 10-year paper continues to offer compelling risk-free competition to equity earnings yields.</p>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 5: CURRENCIES -->
+  <div class="section">
+    <div class="section-label">Section 5</div>
+    <div class="section-title">Currencies</div>
+    <div class="section-body">
+      <p>EUR/USD trades at 1.0976, holding above parity but under moderate dollar pressure as the rate differential between the US and the eurozone continues to favour USD-denominated assets. The pair remains range-bound, with any ECB dovish signals likely to push it toward the 1.08 handle. USD/JPY at 159.68 is the more acute story — the pair is approaching levels that historically prompted Bank of Japan verbal intervention and, in 2022–2024, actual FX operations. With Japanese officials publicly concerned about excessive yen weakness, the pair's proximity to 160 warrants close monitoring; a sharp reversal triggered by intervention would transmit swiftly through risk assets.</p>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 6: COMMODITIES -->
+  <div class="section">
+    <div class="section-label">Section 6</div>
+    <div class="section-title">Commodities</div>
+    <div class="section-body">
+      <p>Gold at $3,734.18/oz remains at historically elevated levels, maintaining a sustained bid that reflects a combination of central bank accumulation (particularly from EM reserve managers), geopolitical risk premiums, and investor demand for inflation hedges outside the traditional fixed-income complex. Despite high real rates — which historically suppress gold — the metal's resilience suggests structural demand shifts are underway.</p>
+      <p style="margin-top: 10px;">WTI crude at $89.53/bbl is recovering modestly from $89.24 the prior session. The mid-$89 handle reflects OPEC+ production discipline holding the floor, balanced against demand headwinds from slowing global manufacturing PMIs. Any material upside break above $92 would reintroduce inflation concerns for the Fed, while a dip below $85 could signal demand deterioration ahead of the year-end demand season.</p>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 7: EARNINGS CALENDAR -->
+  <div class="section">
+    <div class="section-label">Section 7</div>
+    <div class="section-title">Earnings Radar</div>
+    <div class="section-body">
+      <p>A dense reporting cycle over the next five trading days brings results from several large-cap and high-profile names across consumer, tech, and industrials sectors.</p>
+      <table class="earnings-table">
+        <thead>
+          <tr>
+            <th>Company</th>
+            <th>Date</th>
+            <th>EPS Estimate</th>
+            <th>Timing</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Alibaba (BABA)</strong></td>
+            <td>Wed, Nov 19</td>
+            <td>$1.56</td>
+            <td>Pre-market</td>
+          </tr>
+          <tr>
+            <td><strong>PDD Holdings (PDD)</strong></td>
+            <td>Wed, Nov 19</td>
+            <td>$2.61</td>
+            <td>Pre-market</td>
+          </tr>
+          <tr>
+            <td><strong>Intuit (INTU)</strong></td>
+            <td>Wed, Nov 19</td>
+            <td>$2.47</td>
+            <td>Post-market</td>
+          </tr>
+          <tr>
+            <td><strong>Ross Stores (ROST)</strong></td>
+            <td>Wed, Nov 19</td>
+            <td>$1.85</td>
+            <td>Post-market</td>
+          </tr>
+          <tr>
+            <td><strong>Keysight Technologies (KEYS)</strong></td>
+            <td>Wed, Nov 19</td>
+            <td>$3.09</td>
+            <td>Post-market</td>
+          </tr>
+          <tr>
+            <td>Hewlett Packard Enterprise (HPE)</td>
+            <td>Mon, Nov 23</td>
+            <td>$1.17</td>
+            <td>Post-market</td>
+          </tr>
+          <tr>
+            <td>Zoom Communications (ZM)</td>
+            <td>Mon, Nov 23</td>
+            <td>$1.00</td>
+            <td>Post-market</td>
+          </tr>
+          <tr>
+            <td>Dell Technologies (DELL)</td>
+            <td>Tue, Nov 24</td>
+            <td>$6.41</td>
+            <td>Post-market</td>
+          </tr>
+          <tr>
+            <td>Workday (WDAY)</td>
+            <td>Tue, Nov 24</td>
+            <td>$1.28</td>
+            <td>Post-market</td>
+          </tr>
+          <tr>
+            <td>HP Inc. (HPQ)</td>
+            <td>Tue, Nov 24</td>
+            <td>$0.74</td>
+            <td>Post-market</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</div><!-- /container -->
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <span class="footer-title">Market Quick Take · Wednesday, 19 November 2026</span>
+      <span class="footer-disclaimer">For informational purposes only. Not investment advice.</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
