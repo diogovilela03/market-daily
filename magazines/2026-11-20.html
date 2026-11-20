@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Market Quick Take</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: #ffffff;
+    color: #1a2332;
+  }
+
+  .masthead-wrap {
+    border-top: 3px solid #003366;
+    padding: 0 16px;
+  }
+
+  .container {
+    max-width: 860px;
+    margin: 0 auto;
+  }
+
+  .masthead {
+    padding: 32px 0 20px;
+    border-bottom: 1px solid #e5e7eb;
+  }
+
+  .masthead h1 {
+    font-size: 42px;
+    font-weight: 700;
+    color: #003366;
+    line-height: 1;
+    letter-spacing: -0.5px;
+  }
+
+  .masthead .date {
+    font-size: 13px;
+    font-weight: 400;
+    color: #6b7280;
+    margin-top: 6px;
+  }
+
+  .snapshot-wrap {
+    background: #f1f5f9;
+    padding: 12px 16px;
+  }
+
+  .snapshot-inner {
+    max-width: 860px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px 0;
+    align-items: center;
+  }
+
+  .chip {
+    font-size: 12px;
+    font-weight: 500;
+    color: #1a2332;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    white-space: nowrap;
+    padding: 2px 10px;
+  }
+
+  .chip:not(:last-child)::after {
+    content: '|';
+    margin-left: 10px;
+    color: #9ca3af;
+  }
+
+  .pos { color: #16a34a; }
+  .neg { color: #dc2626; }
+
+  .sections {
+    padding: 0 16px;
+  }
+
+  .editor-brief {
+    font-size: 18px;
+    font-weight: 400;
+    font-style: italic;
+    color: #374151;
+    max-width: 760px;
+    margin: 28px 0;
+    border-left: 3px solid #003366;
+    padding-left: 16px;
+    line-height: 1.7;
+  }
+
+  .section {
+    margin-bottom: 0;
+  }
+
+  .section-label {
+    font-size: 11px;
+    font-weight: 500;
+    color: #003366;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 6px;
+  }
+
+  .section-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1a2332;
+    margin-bottom: 10px;
+    line-height: 1.2;
+  }
+
+  .section-body {
+    font-size: 15px;
+    font-weight: 400;
+    color: #374151;
+    line-height: 1.8;
+  }
+
+  .section-body ul {
+    padding-left: 8px;
+    list-style: disc;
+    list-style-position: outside;
+    margin-left: 16px;
+  }
+
+  .section-body ul li {
+    margin-bottom: 6px;
+  }
+
+  .watch-pill {
+    display: inline-block;
+    background: #fef3c7;
+    color: #b45309;
+    font-size: 11px;
+    font-weight: 500;
+    border-radius: 4px;
+    padding: 2px 8px;
+    margin-bottom: 8px;
+  }
+
+  hr.divider {
+    border: none;
+    border-top: 1px solid #e5e7eb;
+    margin: 28px 0;
+  }
+
+  .earnings-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    margin-top: 12px;
+  }
+
+  .earnings-table th {
+    text-align: left;
+    font-weight: 600;
+    color: #1a2332;
+    padding: 8px 12px;
+    border: 1px solid #e5e7eb;
+    background: #f9fafb;
+  }
+
+  .earnings-table td {
+    padding: 8px 12px;
+    border: 1px solid #e5e7eb;
+    color: #374151;
+  }
+
+  .earnings-table tr:nth-child(even) td {
+    background: #f9fafb;
+  }
+
+  footer {
+    background: #f1f5f9;
+    border-top: 1px solid #e5e7eb;
+    margin-top: 48px;
+    padding: 20px 16px;
+  }
+
+  .footer-inner {
+    max-width: 860px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .footer-inner span {
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+  .footer-date { color: #6b7280; }
+  .footer-disclaimer { color: #9ca3af; }
+
+  @media (max-width: 600px) {
+    .masthead h1 { font-size: 28px; }
+    .editor-brief { font-size: 16px; }
+    .section-title { font-size: 20px; }
+    .chip { font-size: 11px; padding: 2px 6px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="masthead-wrap">
+  <div class="container">
+    <div class="masthead">
+      <h1>MARKET QUICK TAKE</h1>
+      <p class="date">Thursday, 20 November 2026</p>
+    </div>
+  </div>
+</div>
+
+<div class="snapshot-wrap">
+  <div class="snapshot-inner">
+    <div class="chip">SPY &middot; 715.87 &middot; <span class="neg">-1.96%</span></div>
+    <div class="chip">QQQ &middot; 645.04 &middot; <span class="neg">-2.19%</span></div>
+    <div class="chip">IWM &middot; 264.22 &middot; <span class="neg">-2.18%</span></div>
+    <div class="chip">VIX &middot; N/A</div>
+    <div class="chip">US10Y &middot; 5.07%</div>
+    <div class="chip">US2Y &middot; 4.80%</div>
+    <div class="chip">EUR/USD &middot; 1.0990</div>
+    <div class="chip">GOLD &middot; 3,551</div>
+    <div class="chip">WTI &middot; 89.53</div>
+  </div>
+</div>
+
+<div class="sections">
+  <div class="container">
+
+    <p class="editor-brief">A broad risk-off session swept US equities on Thursday, with all three major indices shedding roughly 2% as semiconductor names led the retreat — AMD fell nearly 8% and NVDA gave back over 3% amid persistent pressure from long-end Treasury yields pinned above 5%. Safe-haven assets held firm, with gold near $3,551 underscoring investor caution heading into a heavy earnings week.</p>
+
+    <!-- Section 1: Market Drivers -->
+    <div class="section">
+      <p class="section-label">Section 01</p>
+      <h2 class="section-title">Market Drivers</h2>
+      <div class="section-body">
+        <ul>
+          <li><strong>Semiconductor sector selloff:</strong> AMD plunged 7.72% on 70.5M shares, its sharpest single-day decline in recent weeks, pulling NVDA (-3.30%) and the 3× leveraged SOXL (-8.04%) lower. The move pressured QQQ disproportionately and reinforced a rotation away from high-multiple tech.</li>
+          <li><strong>ANT surges on massive volume:</strong> ANT shares rocketed +17.07% with 847 million shares traded — the highest volume on the board — signaling a major company-specific catalyst, potentially related to a listing event or significant corporate development.</li>
+          <li><strong>Rates acting as a valuation ceiling:</strong> The 10-year Treasury yield held near 5.07%, a level that continues to compress equity risk premiums. Inverse ETFs SPDN (+2.08%) and SQQQ (+6.62%) attracted heavy buying, confirming broad hedging activity.</li>
+          <li><strong>Small-caps matched large-cap losses:</strong> IWM declined 2.18%, reflecting broad selling rather than a narrow mega-cap story, with the equal-weight nature of the decline pointing to macro rather than idiosyncratic forces.</li>
+        </ul>
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <!-- Section 2: Macro -->
+    <div class="section">
+      <p class="section-label">Section 02</p>
+      <h2 class="section-title">Macro</h2>
+      <div class="section-body">
+        <p>The macro backdrop remains defined by stubborn long-end yields: the 10-year Treasury at 5.07% and the 2-year at 4.80% place the 2Y–10Y spread at a modestly positive +27 basis points, a gradual normalization from prior inversion that nonetheless leaves absolute borrowing costs high. With no Fed decision or major CPI/NFP release on the immediate horizon, markets are navigating a data-light period where the prevailing rate level — not near-term policy shifts — drives the daily tone. USD/JPY at 159.21 reflects the sustained yield differential between the US and Japan, keeping intervention risk elevated in Tokyo, while EUR/USD near 1.0990 suggests relative euro stability despite global risk-off pressures.</p>
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <!-- Section 3: Equities -->
+    <div class="section">
+      <p class="section-label">Section 03</p>
+      <h2 class="section-title">Equities</h2>
+      <div class="section-body">
+        <p>All three major index ETFs closed sharply lower: <strong>SPY</strong> at $715.87 (<span class="neg">-1.96%</span>), <strong>QQQ</strong> at $645.04 (<span class="neg">-2.19%</span>), and <strong>IWM</strong> at $264.22 (<span class="neg">-2.18%</span>). The uniform decline across market caps indicates a macro-driven rather than sector-rotation dynamic.</p>
+        <p style="margin-top:12px;"><strong>Notable movers:</strong> <strong>ANT</strong> led the most-actively-traded board with a <span class="pos">+17.07%</span> surge on 847M shares — extraordinary volume by any measure — pointing to a significant event-driven catalyst. On the downside, <strong>AMD</strong> was the standout decliner among large-caps, falling <span class="neg">-7.72%</span> ($489.19) on 70.5M shares in what appears to be sector-wide pressure on semiconductor AI plays. INTC bucked the trend with a modest <span class="pos">+1.92%</span> gain.</p>
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <!-- Section 4: Fixed Income (was 5) -->
+    <div class="section">
+      <p class="section-label">Section 04</p>
+      <h2 class="section-title">Fixed Income</h2>
+      <div class="section-body">
+        <p>The US Treasury curve remains in a modestly positive slope: the <strong>10-year yield stands at 5.07%</strong> (as of November 18) while the <strong>2-year yield holds at 4.80%</strong>, producing a 2Y–10Y spread of <strong>+27 basis points</strong>. The curve is gently steepening — a signal that markets may be beginning to price in future Fed easing — but the absolute level of rates remains historically elevated, sustaining meaningful pressure on equity valuations and credit markets. At 5.07%, the 10-year yield exceeds the S&amp;P 500 earnings yield for many index members, reinforcing the case for caution in long-duration equities.</p>
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <!-- Section 5: Currencies (was 6) -->
+    <div class="section">
+      <p class="section-label">Section 05</p>
+      <h2 class="section-title">Currencies</h2>
+      <div class="section-body">
+        <p><strong>EUR/USD</strong> traded at 1.0990, holding near recent levels as the US dollar maintained its broad bid amid risk-off positioning. The euro's relative stability suggests European data has not been the dominant driver. <strong>USD/JPY</strong> climbed to 159.21 — well into the zone that Japanese authorities have historically cited as a trigger for verbal or direct intervention. The yen's persistent weakness is a function of the still-wide US-Japan rate differential; until the Bank of Japan accelerates policy normalization or the Fed signals cuts, JPY depreciation pressure is likely to persist, keeping FX intervention risk elevated.</p>
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <!-- Section 6: Commodities (was 7) -->
+    <div class="section">
+      <p class="section-label">Section 06</p>
+      <h2 class="section-title">Commodities</h2>
+      <div class="section-body">
+        <p><strong>Gold spot</strong> held near <strong>$3,551/oz</strong>, reflecting persistent safe-haven demand amid elevated equity volatility and macro uncertainty. The metal's resilience at historically high levels suggests investors continue to hedge against rate uncertainty, geopolitical risk, and currency debasement. <strong>WTI crude</strong> last traded at <strong>$89.53/bbl</strong> (as of November 17), declining from the $94–$100 range seen in early November. The pullback aligns with softer near-term demand signals and potential oversupply concerns, though prices remain well above levels seen earlier in the year — keeping energy a significant driver of inflation expectations.</p>
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <!-- Section 7: Earnings Calendar (was 9) -->
+    <div class="section">
+      <p class="section-label">Section 07</p>
+      <h2 class="section-title">Earnings Radar</h2>
+      <div class="section-body">
+        <p>Key reporters over the next five trading days. With the semiconductor sector under significant pressure, results from ADI and HPE will be closely watched for confirmation of AI hardware demand trends. DELL's PC and infrastructure server business will offer a read on enterprise IT spending. Deere's guidance will be a bellwether for agriculture and equipment cycles.</p>
+        <table class="earnings-table">
+          <thead>
+            <tr>
+              <th>Company</th>
+              <th>Ticker</th>
+              <th>Report Date</th>
+              <th>EPS Estimate</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Dell Technologies</td>
+              <td>DELL</td>
+              <td>Nov 24 (post-mkt)</td>
+              <td>$6.41</td>
+            </tr>
+            <tr>
+              <td>Deere &amp; Company</td>
+              <td>DE</td>
+              <td>Nov 25 (pre-mkt)</td>
+              <td>$4.07</td>
+            </tr>
+            <tr>
+              <td>Analog Devices</td>
+              <td>ADI</td>
+              <td>Nov 24 (pre-mkt)</td>
+              <td>$3.89</td>
+            </tr>
+            <tr>
+              <td>Abercrombie &amp; Fitch</td>
+              <td>ANF</td>
+              <td>Nov 24 (pre-mkt)</td>
+              <td>$3.14</td>
+            </tr>
+            <tr>
+              <td>Hewlett Packard Enterprise</td>
+              <td>HPE</td>
+              <td>Nov 23 (post-mkt)</td>
+              <td>$1.17</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div><!-- /.container -->
+</div><!-- /.sections -->
+
+<footer>
+  <div class="footer-inner container">
+    <span class="footer-date">Market Quick Take &middot; Thursday, 20 November 2026</span>
+    <span class="footer-disclaimer">For informational purposes only. Not investment advice.</span>
+  </div>
+</footer>
+
+</body>
+</html>
