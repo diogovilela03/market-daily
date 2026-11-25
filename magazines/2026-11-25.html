@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Market Quick Take · 25 November 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: #ffffff;
+    color: #1a2332;
+  }
+
+  .container {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 16px;
+  }
+
+  /* MASTHEAD */
+  .masthead {
+    border-top: 3px solid #003366;
+    padding: 32px 0 20px;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  .masthead h1 {
+    font-weight: 700;
+    font-size: 42px;
+    color: #003366;
+    line-height: 1.1;
+    letter-spacing: -0.5px;
+  }
+  .masthead .date {
+    font-weight: 400;
+    font-size: 13px;
+    color: #6b7280;
+    margin-top: 6px;
+  }
+
+  /* SNAPSHOT BAR */
+  .snapshot-bar {
+    background: #f1f5f9;
+    padding: 12px 0;
+    width: 100%;
+  }
+  .snapshot-inner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 0;
+    align-items: center;
+    padding: 0 16px;
+    max-width: 860px;
+    margin: 0 auto;
+  }
+  .chip {
+    font-weight: 500;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #1a2332;
+    white-space: nowrap;
+    padding: 0 10px;
+  }
+  .chip + .chip::before {
+    content: '|';
+    margin-right: 10px;
+    color: #9ca3af;
+  }
+  .chip-label { color: #1a2332; }
+  .chip-val { color: #1a2332; margin: 0 2px; }
+  .pos { color: #16a34a; }
+  .neg { color: #dc2626; }
+  .na  { color: #6b7280; }
+
+  /* EDITOR'S BRIEF */
+  .editors-brief {
+    font-style: italic;
+    font-size: 18px;
+    font-weight: 400;
+    color: #374151;
+    line-height: 1.7;
+    max-width: 760px;
+    margin: 28px 0;
+    border-left: 3px solid #003366;
+    padding-left: 16px;
+  }
+
+  /* SECTIONS */
+  .section { margin-bottom: 0; }
+
+  .section-hr {
+    border: none;
+    border-top: 1px solid #e5e7eb;
+    margin: 28px 0;
+  }
+
+  .section-label {
+    font-weight: 500;
+    font-size: 11px;
+    color: #003366;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 6px;
+    display: block;
+  }
+
+  .section-title {
+    font-weight: 700;
+    font-size: 24px;
+    color: #1a2332;
+    margin-bottom: 10px;
+    line-height: 1.2;
+  }
+
+  .section-body {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.8;
+    color: #374151;
+  }
+
+  .section-body ul {
+    padding-left: 20px;
+    margin-top: 4px;
+  }
+
+  .section-body ul li {
+    margin-bottom: 4px;
+  }
+
+  /* WATCH PILL */
+  .watch-pill {
+    display: inline-block;
+    background: #fef3c7;
+    color: #b45309;
+    font-weight: 500;
+    font-size: 11px;
+    border-radius: 4px;
+    padding: 2px 8px;
+    margin-bottom: 8px;
+    letter-spacing: 0.3px;
+  }
+
+  /* EARNINGS TABLE */
+  .earnings-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    margin-top: 12px;
+  }
+  .earnings-table th {
+    text-align: left;
+    font-weight: 600;
+    color: #1a2332;
+    border: 1px solid #e5e7eb;
+    padding: 8px 12px;
+    background: #f9fafb;
+  }
+  .earnings-table td {
+    border: 1px solid #e5e7eb;
+    padding: 8px 12px;
+    color: #374151;
+    vertical-align: top;
+  }
+  .earnings-table tr:nth-child(even) td {
+    background: #f9fafb;
+  }
+
+  /* FOOTER */
+  .footer {
+    background: #f1f5f9;
+    border-top: 1px solid #e5e7eb;
+    margin-top: 48px;
+    padding: 20px 0;
+  }
+  .footer-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .footer-brand {
+    font-size: 12px;
+    font-weight: 400;
+    color: #6b7280;
+  }
+  .footer-disclaimer {
+    font-size: 12px;
+    font-weight: 400;
+    color: #9ca3af;
+  }
+</style>
+</head>
+<body>
+
+<!-- MASTHEAD -->
+<div class="container">
+  <div class="masthead">
+    <h1>MARKET QUICK TAKE</h1>
+    <div class="date">Wednesday, 25 November 2026</div>
+  </div>
+</div>
+
+<!-- SNAPSHOT BAR -->
+<div class="snapshot-bar">
+  <div class="snapshot-inner">
+    <span class="chip">
+      <span class="chip-label">SPY</span>
+      <span class="chip-val"> · $718.78 · </span>
+      <span class="neg">▼ −0.49%</span>
+    </span>
+    <span class="chip">
+      <span class="chip-label">QQQ</span>
+      <span class="chip-val"> · $638.10 · </span>
+      <span class="neg">▼ −1.99%</span>
+    </span>
+    <span class="chip">
+      <span class="chip-label">IWM</span>
+      <span class="chip-val"> · $267.14 · </span>
+      <span class="pos">▲ +0.53%</span>
+    </span>
+    <span class="chip">
+      <span class="chip-label">VIX</span>
+      <span class="chip-val"> · </span>
+      <span class="na">N/A</span>
+    </span>
+    <span class="chip">
+      <span class="chip-label">US10Y</span>
+      <span class="chip-val"> · 4.92%</span>
+    </span>
+    <span class="chip">
+      <span class="chip-label">US2Y</span>
+      <span class="chip-val"> · 4.63%</span>
+    </span>
+    <span class="chip">
+      <span class="chip-label">EUR/USD</span>
+      <span class="chip-val"> · 1.0943</span>
+    </span>
+    <span class="chip">
+      <span class="chip-label">GOLD</span>
+      <span class="chip-val"> · $3,520.70</span>
+    </span>
+    <span class="chip">
+      <span class="chip-label">WTI</span>
+      <span class="chip-val"> · $89.53</span>
+    </span>
+  </div>
+</div>
+
+<!-- EDITOR'S BRIEF -->
+<div class="container">
+  <p class="editors-brief">
+    A sharp semiconductor-driven selloff weighed on Nasdaq-heavy names Tuesday, sending QQQ down nearly 2% as NVDA shed almost 6% on heavy volume. Small caps bucked the trend with IWM eking out a modest gain, suggesting rotation into value and cyclicals even as elevated Treasury yields — 10Y at 4.92% — continue to pressure high-multiple growth stocks.
+  </p>
+
+  <!-- SECTION 1: MARKET DRIVERS -->
+  <div class="section">
+    <span class="section-label">Section 1</span>
+    <h2 class="section-title">Market Drivers</h2>
+    <div class="section-body">
+      <ul>
+        <li><strong>Semiconductor washout:</strong> NVDA fell 5.86% on nearly 380M shares traded, while the leveraged SOXL ETF collapsed 24.56% and its inverse SOXS surged 24.21%, pointing to aggressive sector-level repositioning into the holiday week. INTC shed 8.15% and SNDK dropped 11.13%.</li>
+        <li><strong>Mega-cap tech vs. small cap divergence:</strong> QQQ (−1.99%) dramatically underperformed SPY (−0.49%) and IWM (+0.53%), a dispersion rarely seen outside macro regime shifts. Market breadth appears to favour value and small-cap rotation as the holiday-shortened week brings thinner liquidity.</li>
+        <li><strong>Rate backdrop remains restrictive:</strong> The 10-year Treasury held at 4.92%, near recent multi-year highs, keeping the cost-of-capital pressure squarely on duration-sensitive growth names. The 2Y at 4.63% leaves the curve in its steepest configuration of recent weeks.</li>
+        <li><strong>Gold at record territory:</strong> Spot gold at $3,520.70/oz reflects sustained demand for hard assets amid persistent fiscal concerns and an elevated rate environment, while WTI crude at $89.53/bbl signals ongoing energy market tightness.</li>
+      </ul>
+    </div>
+  </div>
+
+  <hr class="section-hr">
+
+  <!-- SECTION 2: MACRO -->
+  <div class="section">
+    <span class="section-label">Section 2</span>
+    <h2 class="section-title">Macro</h2>
+    <div class="section-body">
+      <p>
+        Treasury yields remain elevated with the 10-year at 4.92%, reflecting a Fed posture that continues to lean restrictive despite moderating inflation — markets are pricing in a prolonged "higher-for-longer" environment with cuts still distant on the horizon. The 2Y–10Y spread at +29bps is a modest positive slope but remains far below historical norms, underscoring market skepticism about durable growth in a costly capital environment. With Thanksgiving shortening the trading week, macro catalysts are sparse domestically, though any unexpected data surprises or geopolitical headlines could have outsized impact in thin-volume conditions.
+      </p>
+    </div>
+  </div>
+
+  <hr class="section-hr">
+
+  <!-- SECTION 3: EQUITIES -->
+  <div class="section">
+    <span class="section-label">Section 3</span>
+    <h2 class="section-title">Equities</h2>
+    <div class="section-body">
+      <p>
+        <strong>SPY</strong> closed at $718.78 (−0.49%), a modest drawdown reflecting broad but contained selling pressure. <strong>QQQ</strong> was harder hit at $638.10 (−1.99%), dragged lower by concentrated mega-cap technology weakness. <strong>IWM</strong> stood out with a gain to $267.14 (+0.53%), outperforming as investors rotated into small-cap domestic names less exposed to rate-sensitive growth multiples.
+      </p>
+      <p style="margin-top:10px;">
+        <strong>Notable mover — NVDA (▼ −5.86%):</strong> NVIDIA shed nearly $10 on the session with 379M shares trading hands, one of its most active sessions in recent months. The move coincided with broad semiconductor sector pressure and elevated SOXL/SOXS leveraged ETF flows. <strong>INSM (▲ +14.13%)</strong> was a bright spot in the healthcare space, trading 78M shares on what appears to be a catalyst-driven move.
+      </p>
+    </div>
+  </div>
+
+  <hr class="section-hr">
+
+  <!-- SECTION 4: FIXED INCOME -->
+  <div class="section">
+    <span class="section-label">Section 4</span>
+    <h2 class="section-title">Fixed Income</h2>
+    <div class="section-body">
+      <p>
+        The US 10-year Treasury yield held at <strong>4.92%</strong> while the 2-year sat at <strong>4.63%</strong>, producing a 10Y–2Y spread of <strong>+29bps</strong> — a steepening configuration that marks a normalisation from the deep inversion seen through much of 2023–2024. While no longer technically inverted, the spread remains well below the 100–150bps historically associated with a healthy growth cycle, keeping market participants cautious on the medium-term economic outlook. With no major Fed speakers scheduled ahead of the Thanksgiving holiday, the bond market is likely to consolidate at current levels absent a fresh catalyst.
+      </p>
+    </div>
+  </div>
+
+  <hr class="section-hr">
+
+  <!-- SECTION 5: CURRENCIES -->
+  <div class="section">
+    <span class="section-label">Section 5</span>
+    <h2 class="section-title">Currencies</h2>
+    <div class="section-body">
+      <p>
+        <strong>EUR/USD</strong> traded at 1.0943, holding near the lower end of its recent range as the dollar retains a modest bid from relative rate differentials — the Fed remaining on hold while the ECB has been more accommodative. <strong>USD/JPY</strong> at 159.30 stays elevated near multi-decade highs for the yen, as the Bank of Japan's slow pace of policy normalisation continues to weigh on the currency. Any acceleration in BoJ rate signalling or intervention risk would be a key catalyst to watch for a JPY recovery.
+      </p>
+    </div>
+  </div>
+
+  <hr class="section-hr">
+
+  <!-- SECTION 6: COMMODITIES -->
+  <div class="section">
+    <span class="section-label">Section 6</span>
+    <h2 class="section-title">Commodities</h2>
+    <div class="section-body">
+      <p>
+        <strong>Gold</strong> (XAU/USD) at <strong>$3,520.70/oz</strong> continues to trade at historically elevated levels, underpinned by central bank accumulation, persistent geopolitical risks, and investor demand as a hedge against both inflation and fiscal deterioration. The metal has largely decoupled from the typical inverse relationship with real rates, suggesting structural rather than merely tactical demand. <strong>WTI crude</strong> at <strong>$89.53/bbl</strong> (most recent data: 17 Nov) reflects ongoing supply discipline from OPEC+ and resilient global demand, though the approaching holiday period may dampen near-term activity in energy markets. Supply-side developments and Middle East geopolitical risk remain the key price drivers.
+      </p>
+    </div>
+  </div>
+
+  <hr class="section-hr">
+
+  <!-- SECTION 7: EARNINGS CALENDAR -->
+  <div class="section">
+    <span class="section-label">Section 7</span>
+    <h2 class="section-title">Earnings Radar</h2>
+    <div class="section-body">
+      <p>Key reports over the next five trading days. With the holiday week compressing the schedule, attention shifts to a cluster of major technology and software names reporting after the break.</p>
+      <table class="earnings-table">
+        <thead>
+          <tr>
+            <th>Company</th>
+            <th>Date</th>
+            <th>EPS Est.</th>
+            <th>Timing</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>DE</strong> — Deere &amp; Company</td>
+            <td>25 Nov 2026</td>
+            <td>$4.07</td>
+            <td>Pre-market</td>
+          </tr>
+          <tr>
+            <td><strong>CRWD</strong> — CrowdStrike Holdings</td>
+            <td>1 Dec 2026</td>
+            <td>$0.00</td>
+            <td>Post-market</td>
+          </tr>
+          <tr>
+            <td><strong>MRVL</strong> — Marvell Technology</td>
+            <td>1 Dec 2026</td>
+            <td>$0.79</td>
+            <td>Post-market</td>
+          </tr>
+          <tr>
+            <td><strong>CRM</strong> — Salesforce</td>
+            <td>2 Dec 2026</td>
+            <td>$2.41</td>
+            <td>Post-market</td>
+          </tr>
+          <tr>
+            <td><strong>SNOW</strong> — Snowflake</td>
+            <td>2 Dec 2026</td>
+            <td>−$0.32</td>
+            <td>Post-market</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</div><!-- /.container -->
+
+<!-- FOOTER -->
+<div class="footer">
+  <div class="container footer-inner">
+    <span class="footer-brand">Market Quick Take · Wednesday, 25 November 2026</span>
+    <span class="footer-disclaimer">For informational purposes only. Not investment advice.</span>
+  </div>
+</div>
+
+</body>
+</html>
