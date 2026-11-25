@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Market Quick Take</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: #ffffff;
+    color: #1a2332;
+  }
+
+  .container {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  /* MASTHEAD */
+  .masthead {
+    border-top: 3px solid #003366;
+    padding: 32px 0 20px;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  .masthead-title {
+    font-size: 42px;
+    font-weight: 700;
+    color: #003366;
+    letter-spacing: -0.5px;
+    line-height: 1;
+  }
+  .masthead-date {
+    font-size: 13px;
+    font-weight: 400;
+    color: #6b7280;
+    margin-top: 8px;
+  }
+
+  /* SNAPSHOT BAR */
+  .snapshot-bar {
+    background: #f1f5f9;
+    padding: 12px 0;
+    width: 100%;
+  }
+  .snapshot-inner {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 0;
+    align-items: center;
+  }
+  .chip {
+    font-size: 12px;
+    font-weight: 500;
+    color: #1a2332;
+    text-transform: uppercase;
+    white-space: nowrap;
+    padding: 0 10px;
+  }
+  .chip:first-child { padding-left: 0; }
+  .chip-sep {
+    color: #9ca3af;
+    font-size: 12px;
+    font-weight: 400;
+  }
+  .pos { color: #16a34a; }
+  .neg { color: #dc2626; }
+  .neutral { color: #6b7280; }
+
+  /* EDITOR'S BRIEF */
+  .editors-brief {
+    font-size: 18px;
+    font-weight: 400;
+    font-style: italic;
+    color: #374151;
+    max-width: 760px;
+    margin: 28px 0;
+    border-left: 3px solid #003366;
+    padding-left: 16px;
+    line-height: 1.7;
+  }
+
+  /* SECTIONS */
+  .sections {
+    max-width: 860px;
+  }
+  .section { margin-bottom: 0; }
+  .section-divider {
+    border: none;
+    border-top: 1px solid #e5e7eb;
+    margin: 28px 0;
+  }
+  .section-label {
+    font-size: 11px;
+    font-weight: 500;
+    color: #003366;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 6px;
+  }
+  .section-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1a2332;
+    margin-bottom: 10px;
+  }
+  .section-body {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.8;
+    color: #374151;
+  }
+  .section-body ul {
+    padding-left: 20px;
+    margin-top: 4px;
+  }
+  .section-body ul li {
+    margin-bottom: 6px;
+  }
+  .watch-pill {
+    display: inline-block;
+    background: #fef3c7;
+    color: #b45309;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 500;
+    padding: 2px 8px;
+    margin-bottom: 8px;
+  }
+
+  /* EARNINGS TABLE */
+  .earnings-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    font-weight: 400;
+    color: #374151;
+    margin-top: 12px;
+  }
+  .earnings-table th {
+    text-align: left;
+    font-weight: 600;
+    color: #1a2332;
+    padding: 8px 12px;
+    border: 1px solid #e5e7eb;
+    background: #f9fafb;
+  }
+  .earnings-table td {
+    padding: 8px 12px;
+    border: 1px solid #e5e7eb;
+    vertical-align: top;
+  }
+  .earnings-table tr:nth-child(even) td {
+    background: #f9fafb;
+  }
+
+  /* FOOTER */
+  .footer {
+    background: #f1f5f9;
+    border-top: 1px solid #e5e7eb;
+    margin-top: 48px;
+    padding: 20px 0;
+  }
+  .footer-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .footer span {
+    font-size: 12px;
+    font-weight: 400;
+  }
+  .footer-brand { color: #6b7280; }
+  .footer-disclaimer { color: #9ca3af; }
+</style>
+</head>
+<body>
+
+<!-- MASTHEAD -->
+<div class="container">
+  <div class="masthead">
+    <div class="masthead-title">MARKET QUICK TAKE</div>
+    <div class="masthead-date">Tuesday, 24 November 2026</div>
+  </div>
+</div>
+
+<!-- SNAPSHOT BAR -->
+<div class="snapshot-bar">
+  <div class="snapshot-inner">
+    <span class="chip">SPY · 722.29 · <span class="pos">+4.71%</span></span>
+    <span class="chip-sep">|</span>
+    <span class="chip">QQQ · 651.03 · <span class="pos">+7.00%</span></span>
+    <span class="chip-sep">|</span>
+    <span class="chip">IWM · 265.74 · <span class="pos">+3.56%</span></span>
+    <span class="chip-sep">|</span>
+    <span class="chip">VIX · <span class="neutral">N/A</span></span>
+    <span class="chip-sep">|</span>
+    <span class="chip">US10Y · 4.92% · <span class="neg">−12bp</span></span>
+    <span class="chip-sep">|</span>
+    <span class="chip">US2Y · 4.63% · <span class="neg">−13bp</span></span>
+    <span class="chip-sep">|</span>
+    <span class="chip">EUR/USD · 1.0905</span>
+    <span class="chip-sep">|</span>
+    <span class="chip">GOLD · $3,622.57</span>
+    <span class="chip-sep">|</span>
+    <span class="chip">WTI · $89.53 · <span class="pos">+0.32%</span></span>
+  </div>
+</div>
+
+<!-- EDITOR'S BRIEF -->
+<div class="container">
+  <div class="editors-brief">
+    Nvidia's blowout fiscal-quarter earnings detonated one of the most powerful single-session AI-driven rallies in recent memory, lifting all three major index proxies by 3–7% and sending semiconductor proxies soaring by double digits. The move reaffirmed the market's conviction that AI infrastructure spending remains robust — and that NVDA remains its proxy trade of choice.
+  </div>
+
+  <!-- SECTIONS -->
+  <div class="sections">
+
+    <!-- Section 1: Market Drivers -->
+    <div class="section">
+      <div class="section-label">Section 1</div>
+      <div class="section-title">Market Drivers</div>
+      <div class="section-body">
+        <ul>
+          <li><strong>NVDA earnings catalyst:</strong> Nvidia surged 31.5% on 772 million shares — roughly 3× its average daily volume — after reporting results that dramatically exceeded consensus estimates, with AI data-centre revenue leading the beat.</li>
+          <li><strong>Semiconductor sympathy rally:</strong> AI and chip-adjacent instruments amplified the move: SOXL (3× semi ETF) +40%, NVDL (2× long NVDA) +62%, NVDX +63%, while Intel (INTC) added 16% in a halo-effect trade on 163M shares.</li>
+          <li><strong>Broad risk-on rotation:</strong> QQQ's +7% gain versus IWM's +3.6% confirms aggressive rotation into large-cap growth; the spread between the two suggests capital-weight concentration rather than indiscriminate buying.</li>
+          <li><strong>Leveraged volatility:</strong> Extreme dislocations in leveraged products (NVDQ −63%, SOXS −41%) underscore the high-conviction, directional nature of the session and the acute pain for short positioning.</li>
+        </ul>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- Section 2: Macro -->
+    <div class="section">
+      <div class="section-label">Section 2</div>
+      <div class="section-title">Macro</div>
+      <div class="section-body">
+        <p>The Federal Reserve remains in a data-dependent posture with no near-term policy catalyst on the immediate horizon. Treasury yields eased modestly — the 10-year down 12 basis points to 4.92% and the 2-year off 13bps to 4.63% — a mild flight from safety as capital rotated decisively into equities. With the yield curve in modest steepening territory and the AI-driven earnings cycle re-accelerating, the macro backdrop offers few countervailing headwinds to the equity bull case in the near term, though the absolute level of yields remains a persistent drag on rate-sensitive sectors and valuation multiples.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- Section 3: Equities -->
+    <div class="section">
+      <div class="section-label">Section 3</div>
+      <div class="section-title">Equities</div>
+      <div class="section-body">
+        <p>SPY gained 4.71% to close at 722.29; QQQ surged 7.00% to 651.03; IWM added 3.56% to 265.74. The session's dominant mover was <strong>NVDA (+31.5%, 772M shares)</strong>, the highest-volume US equity of the session by a wide margin and a defining catalyst for the broader tape. As a notable gainer, <strong>INTC (+16.3%, 163M shares)</strong> benefited from semiconductor sympathy flows. On the losing side, <strong>NVD (3× inverse NVDA, −63%)</strong> and <strong>NVDQ (2× inverse NVDA, −63%)</strong> suffered severe drawdowns as short-side pressure unwound rapidly — a signal of how heavily the inverse-NVDA trade had been positioned heading into earnings.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- Section 4: Fixed Income (renumbered from 5) -->
+    <div class="section">
+      <div class="section-label">Section 4</div>
+      <div class="section-title">Fixed Income</div>
+      <div class="section-body">
+        <p>The US 10-year Treasury yield stands at <strong>4.92%</strong> (down 12bps from the prior session's 5.04%), while the 2-year yields <strong>4.63%</strong> (down 13bps from 4.76%). The resulting <strong>+29bp positive slope</strong> (10Y minus 2Y) represents a steepening curve and marks a continuation of the un-inversion dynamic that began earlier this year. Despite the equity euphoria, long-end yields remain historically elevated — a reflection of persistent "higher for longer" Fed expectations and ongoing term-premium repricing. No inversion signal present.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- Section 5: Currencies (renumbered from 6) -->
+    <div class="section">
+      <div class="section-label">Section 5</div>
+      <div class="section-title">Currencies</div>
+      <div class="section-body">
+        <p><strong>EUR/USD</strong> is holding at 1.0905, maintaining the 1.09 handle in a consolidative pattern that reflects a broadly steady dollar environment despite the equity surge. <strong>USD/JPY</strong> sits at 159.27, near multi-month highs for the pair, as yen weakness persists amid the Bank of Japan's cautious pace of policy normalisation versus US rate resilience. The 160.00 level warrants close monitoring — a threshold historically associated with Bank of Japan intervention risk. Any breach could trigger rapid yen support operations and cross-asset volatility.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- Section 6: Commodities (renumbered from 7) -->
+    <div class="section">
+      <div class="section-label">Section 6</div>
+      <div class="section-title">Commodities</div>
+      <div class="section-body">
+        <p><strong>Gold</strong> is trading at <strong>$3,622.57/oz</strong>, sustaining elevated levels that reflect a confluence of persistent geopolitical risk premia, central bank reserve diversification demand, and the broader de-dollarisation trend among emerging market economies. <strong>WTI crude</strong> is at <strong>$89.53/bbl</strong> (as of the most recent daily close), holding near multi-month highs balanced between OPEC+ supply discipline and softening demand signals from slowing global manufacturing PMIs. Energy markets remain watchful of any escalation in Middle East logistics routes that could add a supply-disruption premium to the front-month contract.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- Section 7: Earnings Calendar (renumbered from 9) -->
+    <div class="section">
+      <div class="section-label">Section 7</div>
+      <div class="section-title">Earnings Radar</div>
+      <div class="section-body">
+        <p>Key earnings due over the next five trading days (Nov 24–28). With NVDA now in the rearview mirror, attention turns to enterprise software and retail bellwethers that will offer a read on corporate IT spend and consumer resilience.</p>
+        <table class="earnings-table">
+          <thead>
+            <tr>
+              <th>Company</th>
+              <th>Date</th>
+              <th>Timing</th>
+              <th>Expected Move (EPS Est.)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Dell Technologies (DELL)</strong></td>
+              <td>Nov 24</td>
+              <td>Post-market</td>
+              <td>$6.55 — AI server revenue in focus post-NVDA beat</td>
+            </tr>
+            <tr>
+              <td><strong>Workday (WDAY)</strong></td>
+              <td>Nov 24</td>
+              <td>Post-market</td>
+              <td>$1.28 — enterprise SaaS spend a key read</td>
+            </tr>
+            <tr>
+              <td><strong>Medtronic (MDT)</strong></td>
+              <td>Nov 24</td>
+              <td>Pre-market</td>
+              <td>$1.34 — medtech margins and procedure volumes</td>
+            </tr>
+            <tr>
+              <td><strong>Best Buy (BBY)</strong></td>
+              <td>Nov 24</td>
+              <td>Pre-market</td>
+              <td>$1.48 — consumer electronics demand gauge</td>
+            </tr>
+            <tr>
+              <td><strong>Deere &amp; Company (DE)</strong></td>
+              <td>Nov 25</td>
+              <td>Pre-market</td>
+              <td>$4.07 — agri equipment cycle and farm income outlook</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div><!-- /sections -->
+</div><!-- /container -->
+
+<!-- FOOTER -->
+<div class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <span class="footer-brand">Market Quick Take · Tuesday, 24 November 2026</span>
+      <span class="footer-disclaimer">For informational purposes only. Not investment advice.</span>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
