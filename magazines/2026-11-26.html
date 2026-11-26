@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Market Quick Take · 26 November 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: #ffffff;
+    color: #1a2332;
+  }
+
+  .container {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 16px;
+  }
+
+  /* MASTHEAD */
+  .masthead {
+    border-top: 3px solid #003366;
+    padding: 32px 0 20px;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  .masthead h1 {
+    font-weight: 700;
+    font-size: 42px;
+    color: #003366;
+    line-height: 1.1;
+    letter-spacing: -0.5px;
+  }
+  .masthead .date {
+    font-weight: 400;
+    font-size: 13px;
+    color: #6b7280;
+    margin-top: 6px;
+  }
+
+  /* SNAPSHOT BAR */
+  .snapshot-bar {
+    background: #f1f5f9;
+    padding: 12px 0;
+    width: 100%;
+  }
+  .snapshot-inner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 0;
+    align-items: center;
+    padding: 0 16px;
+    max-width: 860px;
+    margin: 0 auto;
+  }
+  .chip {
+    font-weight: 500;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #1a2332;
+    white-space: nowrap;
+    padding: 0 10px;
+  }
+  .chip + .chip::before {
+    content: '|';
+    margin-right: 10px;
+    color: #9ca3af;
+  }
+  .chip-label { color: #1a2332; }
+  .chip-val { color: #1a2332; margin: 0 2px; }
+  .pos { color: #16a34a; }
+  .neg { color: #dc2626; }
+  .na  { color: #6b7280; }
+
+  /* EDITOR'S BRIEF */
+  .editors-brief {
+    font-style: italic;
+    font-size: 18px;
+    font-weight: 400;
+    color: #374151;
+    line-height: 1.7;
+    max-width: 760px;
+    margin: 28px 0;
+    border-left: 3px solid #003366;
+    padding-left: 16px;
+  }
+
+  /* SECTIONS */
+  .section { margin-bottom: 0; }
+
+  .section-hr {
+    border: none;
+    border-top: 1px solid #e5e7eb;
+    margin: 28px 0;
+  }
+
+  .section-label {
+    font-weight: 500;
+    font-size: 11px;
+    color: #003366;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 6px;
+    display: block;
+  }
+
+  .section-title {
+    font-weight: 700;
+    font-size: 24px;
+    color: #1a2332;
+    margin-bottom: 10px;
+    line-height: 1.2;
+  }
+
+  .section-body {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.8;
+    color: #374151;
+  }
+
+  .section-body ul {
+    padding-left: 20px;
+    margin-top: 4px;
+  }
+
+  .section-body ul li {
+    margin-bottom: 4px;
+  }
+
+  .section-body p + p {
+    margin-top: 10px;
+  }
+
+  /* WATCH PILL */
+  .watch-pill {
+    display: inline-block;
+    background: #fef3c7;
+    color: #b45309;
+    font-weight: 500;
+    font-size: 11px;
+    border-radius: 4px;
+    padding: 2px 8px;
+    margin-bottom: 8px;
+    letter-spacing: 0.3px;
+  }
+
+  /* EARNINGS TABLE */
+  .earnings-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    margin-top: 12px;
+  }
+  .earnings-table th {
+    text-align: left;
+    font-weight: 600;
+    color: #1a2332;
+    border: 1px solid #e5e7eb;
+    padding: 8px 12px;
+    background: #f9fafb;
+  }
+  .earnings-table td {
+    border: 1px solid #e5e7eb;
+    padding: 8px 12px;
+    color: #374151;
+    vertical-align: top;
+  }
+  .earnings-table tr:nth-child(even) td {
+    background: #f9fafb;
+  }
+
+  /* FOOTER */
+  .footer {
+    background: #f1f5f9;
+    border-top: 1px solid #e5e7eb;
+    margin-top: 48px;
+    padding: 20px 0;
+  }
+  .footer-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .footer-brand {
+    font-size: 12px;
+    font-weight: 400;
+    color: #6b7280;
+  }
+  .footer-disclaimer {
+    font-size: 12px;
+    font-weight: 400;
+    color: #9ca3af;
+  }
+
+  @media (max-width: 600px) {
+    .masthead h1 { font-size: 28px; }
+    .chip { font-size: 10px; padding: 0 6px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- MASTHEAD -->
+<div class="container">
+  <div class="masthead">
+    <h1>MARKET QUICK TAKE</h1>
+    <div class="date">Thursday, 26 November 2026</div>
+  </div>
+</div>
+
+<!-- SNAPSHOT BAR -->
+<div class="snapshot-bar">
+  <div class="snapshot-inner">
+    <span class="chip">
+      <span class="chip-label">SPY</span>
+      <span class="chip-val"> · $716.70 · </span>
+      <span class="neg">▼ −0.29%</span>
+    </span>
+    <span class="chip">
+      <span class="chip-label">QQQ</span>
+      <span class="chip-val"> · $633.93 · </span>
+      <span class="neg">▼ −0.65%</span>
+    </span>
+    <span class="chip">
+      <span class="chip-label">IWM</span>
+      <span class="chip-val"> · $268.87 · </span>
+      <span class="pos">▲ +0.65%</span>
+    </span>
+    <span class="chip">
+      <span class="chip-label">VIX</span>
+      <span class="chip-val"> · </span>
+      <span class="na">N/A</span>
+    </span>
+    <span class="chip">
+      <span class="chip-label">US10Y</span>
+      <span class="chip-val"> · 4.91%</span>
+    </span>
+    <span class="chip">
+      <span class="chip-label">US2Y</span>
+      <span class="chip-val"> · 4.63%</span>
+    </span>
+    <span class="chip">
+      <span class="chip-label">EUR/USD</span>
+      <span class="chip-val"> · 1.0974</span>
+    </span>
+    <span class="chip">
+      <span class="chip-label">GOLD</span>
+      <span class="chip-val"> · $3,568</span>
+    </span>
+    <span class="chip">
+      <span class="chip-label">WTI</span>
+      <span class="chip-val"> · $82.24</span>
+    </span>
+  </div>
+</div>
+
+<!-- MAIN CONTENT -->
+<div class="container">
+
+  <!-- EDITOR'S BRIEF -->
+  <p class="editors-brief">
+    With US markets closed today for Thanksgiving, the final pre-holiday session on Wednesday closed with a stark divergence: semiconductor names dragged the Nasdaq lower as NVDA shed nearly 4%, while small-cap stocks outperformed markedly — a rotation signal that hints at shifting institutional positioning. Elevated Treasury yields near 4.91%, a weakening yen at 159 per dollar, and gold holding near $3,568 all point to a macro backdrop that remains complex heading into the year-end earnings sprint.
+  </p>
+
+  <!-- SECTION 1: MARKET DRIVERS -->
+  <div class="section">
+    <span class="section-label">Section 1</span>
+    <div class="section-title">Market Drivers</div>
+    <div class="section-body">
+      <ul>
+        <li><strong>Tech vs. small-cap divergence:</strong> QQQ fell 0.65% while IWM gained 0.65% on Wednesday — a 130bp single-session spread that is among the widest of recent weeks, reflecting institutional rotation from mega-cap growth into domestic cyclical names ahead of the holiday.</li>
+        <li><strong>Semiconductor complex under pressure:</strong> NVDA declined 3.91% on 357 million shares and SNDK dropped 5.57% on 121 million shares, dragging the leveraged SOXL semiconductor ETF down 1.81%. Broad chip weakness may reflect cautious positioning ahead of MRVL and other sector prints due next week.</li>
+        <li><strong>Hydrogen energy bucked the trend:</strong> Plug Power (PLUG) surged 14.3% on 125 million shares, outperforming as sector rotation and speculative flows targeted beaten-down clean-energy names in a thinning pre-holiday tape.</li>
+        <li><strong>Heavy ETF volume into the holiday:</strong> SPY traded 73 million shares and QQQ 82 million — above typical pre-Thanksgiving levels — suggesting active institutional repositioning rather than a passive drift into the long weekend.</li>
+      </ul>
+    </div>
+  </div>
+
+  <hr class="section-hr">
+
+  <!-- SECTION 2: MACRO -->
+  <div class="section">
+    <span class="section-label">Section 2</span>
+    <div class="section-title">Macro</div>
+    <div class="section-body">
+      <p>Treasury yields ticked fractionally lower to 4.91% on the 10-year benchmark (from 4.92% the prior session) while the 2-year held steady at 4.63%, maintaining a +28bp positive slope. The curve has gradually re-steepened from its prior inversion phase, though the spread remains historically compressed — a signal that markets are not yet pricing a dramatic Fed pivot. The Fed's higher-for-longer posture appears embedded in front-end rates; without clear disinflation evidence in upcoming CPI and PCE prints, the bar for meaningful easing remains high.</p>
+      <p>USD/JPY at 159.17 reflects the persistent Fed-BoJ policy divergence. As the pair approaches the 160 level — a threshold that has previously triggered Bank of Japan verbal and direct intervention — currency risk merits close attention. Any BoJ pivot or surprise rate action could generate sharp reversal dynamics across yen crosses and global risk assets.</p>
+    </div>
+  </div>
+
+  <hr class="section-hr">
+
+  <!-- SECTION 3: EQUITIES -->
+  <div class="section">
+    <span class="section-label">Section 3</span>
+    <div class="section-title">Equities</div>
+    <div class="section-body">
+      <p>The S&amp;P 500 proxy (SPY) declined 0.29% to <strong>$716.70</strong>, the Nasdaq-100 (QQQ) fell 0.65% to <strong>$633.93</strong>, and the Russell 2000 (IWM) outperformed with a gain of 0.65% to <strong>$268.87</strong>. The IWM/QQQ divergence of 130bps on the final pre-holiday session is a potential rotation signal worth monitoring when markets reopen Friday.</p>
+      <p><strong>Notable movers from Wednesday's session:</strong></p>
+      <ul>
+        <li><strong>NVDA −3.91%</strong> ($149.30, 357M shares): The leading AI chipmaker saw significant distribution on above-average volume. The move raises near-term demand questions ahead of key semiconductor earnings (MRVL reports Dec 1) and may reflect sector-wide profit-taking after a strong run.</li>
+        <li><strong>SNDK −5.57%</strong> ($73.61, 121M shares): SanDisk faced heavy selling, potentially tied to inventory concerns in the NAND/flash memory segment as enterprise IT spending comes under scrutiny. The move adds to pressure across the storage and memory sub-sector.</li>
+      </ul>
+    </div>
+  </div>
+
+  <hr class="section-hr">
+
+  <!-- SECTION 4: FIXED INCOME -->
+  <div class="section">
+    <span class="section-label">Section 4</span>
+    <div class="section-title">Fixed Income</div>
+    <div class="section-body">
+      <p>The 10-year US Treasury yield stands at <strong>4.91%</strong> and the 2-year at <strong>4.63%</strong>, placing the 10Y–2Y spread at <strong>+28 basis points</strong> — a modestly positive slope that marks a significant shift from the prolonged inversion seen in the prior cycle. The curve's re-steepening has been driven more by the long end rising than by the short end falling, which is a less constructive dynamic for equities than a bull-steepening scenario would be.</p>
+      <p>At these yield levels, duration risk remains elevated: 10-year Treasuries remain well below their historical fair-value range on some models, and any further supply-driven or inflation-driven push higher would meaningfully pressure equity multiples, particularly in long-duration growth names. The holiday-shortened week ahead may see thin liquidity amplify moves in fixed income when US markets reopen Friday.</p>
+    </div>
+  </div>
+
+  <hr class="section-hr">
+
+  <!-- SECTION 5: CURRENCIES -->
+  <div class="section">
+    <span class="section-label">Section 5</span>
+    <div class="section-title">Currencies</div>
+    <div class="section-body">
+      <p><strong>EUR/USD at 1.0974</strong>: The euro holds just below the 1.10 handle, finding relative stability against the dollar despite persistent European growth headwinds. ECB rate-cut expectations continue to weigh, while dollar softness from any shift in US rate expectations could provide periodic support. The pair remains in a broadly rangebound pattern, with 1.10 as near-term topside resistance.</p>
+      <p><strong>USD/JPY at 159.17</strong>: The yen continues to weaken materially, approaching levels that have historically prompted Bank of Japan intervention. The pair is trading roughly 20 yen above where it was a year ago, driven by the stark divergence between the Fed's restrictive stance and the BoJ's ultra-accommodative policy. Any BoJ communication shift or unscheduled rate action could trigger a rapid and volatile reversal; traders should monitor BoJ officials' remarks closely. The 160 level remains a critical threshold to watch.</p>
+    </div>
+  </div>
+
+  <hr class="section-hr">
+
+  <!-- SECTION 6: COMMODITIES -->
+  <div class="section">
+    <span class="section-label">Section 6</span>
+    <div class="section-title">Commodities</div>
+    <div class="section-body">
+      <p><strong>Gold at $3,568.08/oz</strong>: Bullion remains near historic highs, underpinned by a combination of central bank diversification away from USD reserves, geopolitical risk premia, and persistent inflation hedging demand. The $3,500 level — once considered a distant target — has become a durable floor in recent sessions. The strength of the move suggests structural flows (central bank buying, ETF accumulation) are driving prices as much as any near-term macro catalyst.</p>
+      <p><strong>WTI crude at $82.24/bbl</strong>: Crude edged up from $81.42 the prior session (+1.0%), holding comfortably above the $80 psychological level. OPEC+ supply restraint remains the primary support factor, while demand signals are mixed: US industrial activity has been uneven, and Chinese refinery throughput data provides only a partial offset. The energy complex faces a tug-of-war between supply discipline and demand uncertainty as markets head into the seasonally slower year-end period.</p>
+    </div>
+  </div>
+
+  <hr class="section-hr">
+
+  <!-- SECTION 7: EARNINGS RADAR -->
+  <div class="section">
+    <span class="section-label">Section 7</span>
+    <div class="section-title">Earnings Radar</div>
+    <div class="section-body">
+      <p>US markets are closed today (Thanksgiving). The holiday-shortened Friday session reopens the tape, with a heavy tech and consumer earnings sprint in the following week. Key reports in the next 5 trading days (Nov 27 – Dec 3):</p>
+      <table class="earnings-table">
+        <thead>
+          <tr>
+            <th>Company</th>
+            <th>Date</th>
+            <th>Expected Move / Context</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Marvell Technology (MRVL)</strong></td>
+            <td>Dec 1 · PM</td>
+            <td>EPS est. $0.79. AI data-centre semiconductor play; investor focus on custom ASIC demand and hyperscaler capex commentary. NVDA's Wednesday selloff raises the stakes.</td>
+          </tr>
+          <tr>
+            <td><strong>MongoDB (MDB)</strong></td>
+            <td>Dec 1 · PM</td>
+            <td>EPS est. $0.08. Cloud database operator; market will scrutinise Atlas growth rates and AI workload integration momentum amid a tighter enterprise budget environment.</td>
+          </tr>
+          <tr>
+            <td><strong>Salesforce (CRM)</strong></td>
+            <td>Dec 2 · PM</td>
+            <td>EPS est. $2.41. The largest enterprise software name this week; agentic AI monetisation and Agentforce adoption metrics will drive the reaction — expectations are elevated.</td>
+          </tr>
+          <tr>
+            <td><strong>Snowflake (SNOW)</strong></td>
+            <td>Dec 2 · PM</td>
+            <td>EPS est. −$0.32. Data cloud platform reporting alongside CRM; AI-driven workload growth vs. cost scrutiny and consumption model volatility will be key swing factors.</td>
+          </tr>
+          <tr>
+            <td><strong>Lululemon (LULU)</strong></td>
+            <td>Dec 3 · PM</td>
+            <td>EPS est. $0.98. Consumer discretionary bellwether; holiday-season guidance and North America same-store sales trajectory will determine whether the stock can recover from its year-to-date underperformance.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</div><!-- /container -->
+
+<!-- FOOTER -->
+<div class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <span class="footer-brand">Market Quick Take · Thursday, 26 November 2026</span>
+      <span class="footer-disclaimer">For informational purposes only. Not investment advice.</span>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
