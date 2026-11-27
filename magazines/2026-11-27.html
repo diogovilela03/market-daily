@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Market Quick Take — November 27, 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: #ffffff;
+    color: #1a2332;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    line-height: 1.8;
+  }
+
+  .container {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  /* MASTHEAD */
+  .masthead {
+    border-top: 3px solid #003366;
+    padding: 32px 0 20px;
+  }
+  .masthead h1 {
+    font-size: 42px;
+    font-weight: 700;
+    color: #003366;
+    letter-spacing: -0.5px;
+    line-height: 1.1;
+  }
+  .masthead .date {
+    font-size: 13px;
+    font-weight: 400;
+    color: #6b7280;
+    margin-top: 6px;
+  }
+  .masthead-divider {
+    border: none;
+    border-bottom: 1px solid #e5e7eb;
+    margin-top: 20px;
+  }
+
+  /* SNAPSHOT BAR */
+  .snapshot-bar {
+    width: 100%;
+    background: #f1f5f9;
+    padding: 12px 0;
+  }
+  .snapshot-inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 4px 0;
+    padding: 0 24px;
+    max-width: 860px;
+    margin: 0 auto;
+  }
+  .chip {
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #1a2332;
+    white-space: nowrap;
+    padding: 0 8px;
+  }
+  .chip:first-child { padding-left: 0; }
+  .chip-sep {
+    color: #9ca3af;
+    font-size: 12px;
+    padding: 0 2px;
+  }
+  .pos { color: #16a34a; }
+  .neg { color: #dc2626; }
+  .neutral { color: #6b7280; }
+
+  /* EDITOR'S BRIEF */
+  .editors-brief {
+    font-size: 18px;
+    font-weight: 400;
+    font-style: italic;
+    color: #374151;
+    max-width: 760px;
+    margin: 28px 0;
+    border-left: 3px solid #003366;
+    padding-left: 16px;
+    line-height: 1.7;
+  }
+
+  /* SECTIONS */
+  .section {
+    margin-bottom: 0;
+  }
+  .section-label {
+    font-size: 11px;
+    font-weight: 500;
+    color: #003366;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 6px;
+    display: block;
+  }
+  .section-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1a2332;
+    margin-bottom: 10px;
+    line-height: 1.25;
+  }
+  .section-body {
+    font-size: 15px;
+    font-weight: 400;
+    color: #374151;
+    line-height: 1.8;
+  }
+  .section-body p + p { margin-top: 10px; }
+  .section-body ul {
+    list-style: disc;
+    padding-left: 20px;
+  }
+  .section-body li { margin-bottom: 6px; }
+
+  /* WATCH PILL */
+  .watch-pill {
+    display: inline-block;
+    background: #fef3c7;
+    color: #b45309;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 500;
+    padding: 2px 8px;
+    margin-bottom: 8px;
+  }
+
+  /* DIVIDER */
+  .section-divider {
+    border: none;
+    border-bottom: 1px solid #e5e7eb;
+    margin: 28px 0;
+  }
+
+  /* EARNINGS TABLE */
+  .earnings-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    font-weight: 400;
+    color: #374151;
+    margin-top: 12px;
+  }
+  .earnings-table th {
+    text-align: left;
+    font-weight: 600;
+    color: #1a2332;
+    padding: 8px 12px;
+    border: 1px solid #e5e7eb;
+    background: #f9fafb;
+  }
+  .earnings-table td {
+    padding: 8px 12px;
+    border: 1px solid #e5e7eb;
+  }
+  .earnings-table tr:hover td { background: #f9fafb; }
+
+  /* FOOTER */
+  .footer {
+    width: 100%;
+    background: #f1f5f9;
+    border-top: 1px solid #e5e7eb;
+    margin-top: 48px;
+    padding: 20px 0;
+  }
+  .footer-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 0 24px;
+    max-width: 860px;
+    margin: 0 auto;
+  }
+  .footer span {
+    font-size: 12px;
+    font-weight: 400;
+  }
+  .footer .brand { color: #6b7280; }
+  .footer .disclaimer { color: #9ca3af; }
+</style>
+</head>
+<body>
+
+<!-- MASTHEAD -->
+<div class="container">
+  <div class="masthead">
+    <h1>MARKET QUICK TAKE</h1>
+    <p class="date">Thursday, 27 November 2026</p>
+  </div>
+  <hr class="masthead-divider">
+</div>
+
+<!-- SNAPSHOT BAR -->
+<div class="snapshot-bar">
+  <div class="snapshot-inner">
+    <span class="chip">SPY · $716.70 · <span class="neg">-0.29%</span></span>
+    <span class="chip-sep">|</span>
+    <span class="chip">QQQ · $633.93 · <span class="neg">-0.65%</span></span>
+    <span class="chip-sep">|</span>
+    <span class="chip">IWM · $268.87 · <span class="pos">+0.65%</span></span>
+    <span class="chip-sep">|</span>
+    <span class="chip">VIX · <span class="neutral">N/A</span></span>
+    <span class="chip-sep">|</span>
+    <span class="chip">US10Y · 4.91%</span>
+    <span class="chip-sep">|</span>
+    <span class="chip">US2Y · 4.63%</span>
+    <span class="chip-sep">|</span>
+    <span class="chip">EUR/USD · 1.0984</span>
+    <span class="chip-sep">|</span>
+    <span class="chip">GOLD · $3,659</span>
+    <span class="chip-sep">|</span>
+    <span class="chip">WTI · $82.24</span>
+  </div>
+</div>
+
+<!-- MAIN CONTENT -->
+<div class="container">
+
+  <!-- EDITOR'S BRIEF -->
+  <p class="editors-brief">
+    Markets entered the Thanksgiving break on an uneven footing: large-cap tech stumbled as NVDA shed nearly 4% and QQQ slipped 0.65%, while small-caps outperformed with IWM gaining 0.65%, signalling a rotation toward value and cyclicals. Bond yields remain stubbornly elevated — the 10-year at 4.91% — and gold near $3,660 reflects persistent safe-haven demand heading into year-end.
+  </p>
+
+  <!-- SECTION 1: MARKET DRIVERS -->
+  <div class="section">
+    <span class="section-label">Section 1</span>
+    <h2 class="section-title">Market Drivers</h2>
+    <div class="section-body">
+      <ul>
+        <li><strong>Semiconductor pressure:</strong> NVDA declined 3.91% to $149.30 on 357 million shares — one of the heaviest volumes of the week — dragging QQQ lower as AI-infrastructure valuations face renewed scrutiny heading into year-end portfolio rebalancing.</li>
+        <li><strong>Small-cap rotation:</strong> IWM rose 0.65% while SPY fell 0.29% and QQQ lost 0.65%, a divergence that points to investors rotating out of mega-cap growth into smaller, more domestically oriented names as rate-cut expectations recalibrate.</li>
+        <li><strong>Clean energy bid:</strong> PLUG Energy surged 14.34% to $1.065 on over 125 million shares, the latest episode of outsized short-covering and retail-driven momentum in the hydrogen and fuel-cell complex.</li>
+        <li><strong>Defensive demand sustained:</strong> Gold near $3,659/oz and muted equity breadth signal that institutional hedging remains active despite the absence of acute systemic stress during a holiday-shortened week.</li>
+      </ul>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 2: MACRO -->
+  <div class="section">
+    <span class="section-label">Section 2</span>
+    <h2 class="section-title">Macro</h2>
+    <div class="section-body">
+      <p>The Federal Reserve's higher-for-longer posture is visibly entrenched in the yield curve: the 10-year Treasury at 4.91% and the 2-year at 4.63% represent elevated nominal rates that continue to pressure equity multiples, particularly in long-duration growth sectors. The 28-basis-point positive slope marks a meaningful un-inversion from the deep inversion that persisted through 2024–2025, though the absolute level of yields remains a constraint on consumer credit, housing, and corporate capex plans heading into 2027. US markets observed Thanksgiving on Thursday November 27, with trading resuming in an abbreviated Black Friday session, keeping macro flow thin into the weekend.</p>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 3: EQUITIES -->
+  <div class="section">
+    <span class="section-label">Section 3</span>
+    <h2 class="section-title">Equities</h2>
+    <div class="section-body">
+      <p>SPY closed at $716.70 (-0.29%) and QQQ at $633.93 (-0.65%) on Tuesday November 25 — the last full trading session before the Thanksgiving holiday — reflecting modest profit-taking in large-cap tech ahead of the break. IWM was the notable outperformer at $268.87 (+0.65%), confirming the small-cap bid that has periodically challenged Nasdaq dominance. NVDA was the marquee mover, declining 3.91% to $149.30 on exceptional volume (357M shares), extending a pullback from its recent highs as the AI-capex cycle narrative faces incremental skepticism. On the upside, PLUG Energy added 14.34% to $1.065, continuing its volatile pattern of sharp intraday moves driven by short-covering and retail activity in the hydrogen energy theme.</p>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 4: FIXED INCOME (renumbered from 5) -->
+  <div class="section">
+    <span class="section-label">Section 4</span>
+    <h2 class="section-title">Fixed Income</h2>
+    <div class="section-body">
+      <p>The 10-year Treasury yield stands at 4.91% as of November 24, edging down 1 basis point from the prior session's 4.92% but remaining near multi-year highs. The 2-year holds at 4.63%, unchanged from November 23, leaving the 2s10s spread at a positive 28 basis points. The curve has fully un-inverted from the persistent inversion that characterized 2024, though the absolute yield level keeps the opportunity cost of risk assets elevated. Markets will watch for any surprise in upcoming labor or inflation prints that could shift the trajectory of Fed policy into 2027.</p>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 5: CURRENCIES (renumbered from 6) -->
+  <div class="section">
+    <span class="section-label">Section 5</span>
+    <h2 class="section-title">Currencies</h2>
+    <div class="section-body">
+      <p>EUR/USD trades at 1.0984, holding near the mid-range of its recent corridor as the dollar retains modest structural support from the yield differential with European sovereigns. USD/JPY at 159.31 keeps the Bank of Japan's verbal intervention threshold firmly in view; with JGB yields still far below their US counterparts, the yen's weakness reflects a structural carry dynamic that policymakers have been reluctant to aggressively counter. Holiday-thinned liquidity in US markets limited significant FX moves ahead of month-end rebalancing flows, which may produce sharper moves as November closes.</p>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 6: COMMODITIES (renumbered from 7) -->
+  <div class="section">
+    <span class="section-label">Section 6</span>
+    <h2 class="section-title">Commodities</h2>
+    <div class="section-body">
+      <p>Gold spot holds at $3,659.16/oz, near historic highs, underpinned by continued central bank accumulation, persistent geopolitical uncertainty, and the market's reading of long-term dollar debasement risk. The metal's elevation despite positive real yields signals structural demand rather than purely a rate-driven trade. WTI crude fell to $82.24/bbl — down sharply from the $94–$100 range seen in early November — as OPEC+ supply management concerns and softening global demand projections weigh on the complex. The pullback in crude offers a modest disinflationary tailwind for the Fed as it navigates its data-dependent path into 2027.</p>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 7: EARNINGS CALENDAR (renumbered from 9) -->
+  <div class="section">
+    <span class="section-label">Section 7</span>
+    <h2 class="section-title">Earnings Radar</h2>
+    <div class="section-body">
+      <p>The coming five trading days bring a concentrated cluster of enterprise software and semiconductor reporters that will serve as bellwethers for AI-infrastructure spend and cloud growth narratives heading into year-end.</p>
+      <table class="earnings-table">
+        <thead>
+          <tr>
+            <th>Company</th>
+            <th>Date</th>
+            <th>Expected Move (EPS Est.)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Marvell Technology (MRVL)</td>
+            <td>Dec 1 · Post-Market</td>
+            <td>$0.79</td>
+          </tr>
+          <tr>
+            <td>NetApp (NTAP)</td>
+            <td>Dec 1 · Post-Market</td>
+            <td>$2.14</td>
+          </tr>
+          <tr>
+            <td>Okta (OKTA)</td>
+            <td>Dec 1 · Post-Market</td>
+            <td>$0.43</td>
+          </tr>
+          <tr>
+            <td>Salesforce (CRM)</td>
+            <td>Dec 2 · Post-Market</td>
+            <td>$2.41</td>
+          </tr>
+          <tr>
+            <td>Snowflake (SNOW)</td>
+            <td>Dec 2 · Post-Market</td>
+            <td>-$0.32</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</div><!-- /.container -->
+
+<!-- FOOTER -->
+<div class="footer">
+  <div class="footer-inner">
+    <span class="brand">Market Quick Take · Thursday, 27 November 2026</span>
+    <span class="disclaimer">For informational purposes only. Not investment advice.</span>
+  </div>
+</div>
+
+</body>
+</html>
